@@ -1,0 +1,14 @@
+Direction (int)
+0 = Up
+1 = Left
+2 = Down
+3 = Right
+
+Action (int)
+0 = Idle
+1 = Walk
+2 = Slash
+3 = Bow
+4 = Die
+
+ChangeAnim (trigger)
