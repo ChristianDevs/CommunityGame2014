@@ -36,8 +36,6 @@ public class SingleAnimTest : MonoBehaviour {
 			GetComponent<Animator>().SetInteger("Action", (int)Act);
 			GetComponent<Animator>().SetBool("ChangeAnim", true);
 
-			if (GetComponent<Animator>().GetAnimatorTransitionInfo().
-
 			lastChange = Time.time + 3f;
 
 			Dir++;
