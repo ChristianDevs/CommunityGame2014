@@ -4,7 +4,7 @@ using System.Collections;
 public class GomProjectile : GomObject {
 
     // We'll probably use our own basic game physics and not try to hack around box2d
-    public Vector2 dir;
+    public Vector3 dir;
     public float speed = 1;
 
     // Note this could be positive or negative...
@@ -14,6 +14,14 @@ public class GomProjectile : GomObject {
     public bool isGround = true;
 
     public PropertyStats stats;
+
+	private GameObject tgt;
+
+	void SetTarget(GameObject newTarget) {
+		tgt = newTarget;
+		dir = tgt.transform.position;
+		dir.Normalize();
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -33,10 +41,28 @@ public class GomProjectile : GomObject {
         // Obviously this is just an example... projectiles could have any form of complex movement depending
         // on what is designed.
         // This is just an example
-        transform.position = transform.position + (Vector3)dir * (speed + stats.speed) * Time.fixedDeltaTime;
+        transform.position = transform.position + (new Vector3(-1, 0, 0) * (speed + stats.speed) * Time.fixedDeltaTime);
         speed += accel * Time.fixedDeltaTime;
 
-        if (speed < 0)
+        if (speed < 0) {
             Destroy(gameObject);
+			return;
+		}
+
+		if (tgt == null) {
+			Destroy(gameObject);
+			return;
+		}
+
+		if ((transform.position.x > 25) || (transform.position.x < -25) || (transform.position.y > 25) || (transform.position.y < -25)) {
+			Destroy(gameObject);
+			return;
+		}
+
+		if (Vector3.Distance (transform.position, tgt.transform.position) < 1) {
+			tgt.SendMessage("DamageMelee", stats, SendMessageOptions.DontRequireReceiver);
+			Destroy(gameObject);
+			return;
+		}
     }
 }

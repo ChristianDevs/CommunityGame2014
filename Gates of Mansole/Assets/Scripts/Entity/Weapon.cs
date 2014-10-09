@@ -2,10 +2,12 @@
 using System.Collections;
 
 [RequireComponent(typeof(AudioSource))]
-public abstract class Weapon : MonoBehaviour {
+public class Weapon : MonoBehaviour {
     public AudioClip[] sounds;
     public float rechargeTime = 1.0f;
-    public float recharge { get; set; }
-
-    public abstract void Trigger();
+	public float recharge { get; set; }
+	public int range;
+	public int damageRadius;
+	public UnitAnimation._action actionAnim;
+	public GameObject projectile;
 }

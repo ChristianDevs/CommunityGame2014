@@ -7,9 +7,27 @@ public class GomUnit : GomObject {
     public PropertyStats stats;
     public PropertyExp exp;
     public int health;
+	public float speed;
+	public Vector2 curTile;
+	public Vector2 moveTile;
+	public Weapon weapon;
+	
+	public enum _state {
+		Idle,
+		Advance,
+		SetupMove,
+		Move,
+		Attacking,
+		Engage,
+		Dead,
+	}
+	public _state State;
+	public _state NextState;
 
-    private Weapon weapon;
-
+	private float deltaX;
+	private float deltaY;
+	private float attackTimer;
+	private float dieTimer;
 
     public void DamageMelee(PropertyStats stats) {
         // Whatever - arbitrary damage calculation
@@ -41,9 +59,189 @@ public class GomUnit : GomObject {
         }
     }
 
-	// Use this for initialization
-	void Start () {
-        weapon = gameObject.GetComponent<Weapon>();
+	public bool CanMove() {
+		return ((State == _state.Idle) && (NextState == _state.Idle));
+	}
+
+	void SetCurrentTile(Vector2 tile) {
+		curTile = tile;
+	}
+
+	void Move(Vector2 newTile) {
+		NextState = _state.SetupMove;
+		moveTile = newTile;
+	}
+
+	void Attack() {
+		NextState = _state.Attacking;
+	}
+
+	void Die() {
+		NextState = _state.Dead;
+		dieTimer = Time.time;
+		this.SendMessage("SetAction", UnitAnimation._action.Die, SendMessageOptions.DontRequireReceiver);
+		this.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
 	}
 	
+	// Use this for initialization
+	void Start () {
+		if (faction == Faction.Good) {
+			this.SendMessage("SetDirection", UnitAnimation._direction.DirLeft, SendMessageOptions.DontRequireReceiver);
+			this.SendMessage("SetAction", UnitAnimation._action.Idle, SendMessageOptions.DontRequireReceiver);
+			this.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
+		} else if (faction == Faction.Bad) {
+			this.SendMessage("SetDirection", UnitAnimation._direction.DirRight, SendMessageOptions.DontRequireReceiver);
+			this.SendMessage("SetAction", UnitAnimation._action.Idle, SendMessageOptions.DontRequireReceiver);
+			this.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
+		}
+		
+		State = _state.Idle;
+		NextState = State;
+	}
+	
+	void Update() {
+		// Don't update the unit until the animation has been changed
+		if (NextState != State) {
+			if (GetComponent<UnitAnimation>().isAnimationChanged() == true) {
+				State = NextState;
+			} else {
+				return;
+			}
+		}
+
+		switch (State) {
+		case _state.Idle:
+			break;
+		case _state.SetupMove:
+			SetupMoveUnit();
+			break;
+		case _state.Move:
+			MoveUnit ();
+			break;
+		case _state.Advance:
+			break;
+		case _state.Attacking:
+			AttackUnit();
+			break;
+		case _state.Engage:
+			EngageUnit();
+			break;
+		case _state.Dead:
+			DeadUnit();
+			break;
+		}
+	}
+
+	void DeadUnit() {
+		if ((dieTimer + 1.5f) < Time.time) {
+			Destroy(gameObject);
+		}
+	}
+
+	void AttackUnit() {
+		this.SendMessage("SetAction", weapon.actionAnim, SendMessageOptions.DontRequireReceiver);
+		this.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
+		NextState = _state.Engage;
+		attackTimer = Time.time;
+	}
+
+	void EngageUnit() {
+		if ((attackTimer + weapon.rechargeTime) < Time.time) {
+			NextState = _state.Idle;
+		}
+	}
+
+	void SetupMoveUnit() {
+		UnitAnimation._direction dir;
+		int tileXDelta;
+		int tileYDelta;
+
+		tileXDelta = (int)moveTile.x - (int)curTile.x;
+		tileYDelta = (int)moveTile.y - (int)curTile.y;
+		
+		if ((tileXDelta == 0) && (tileYDelta == 0)) {
+			return;
+		}
+		
+		deltaX = (float)tileXDelta;
+		deltaY = (float)tileYDelta;
+		
+		if (Mathf.Abs(tileXDelta) > Mathf.Abs(tileYDelta)) {
+			if (tileXDelta > 0) {
+				dir = UnitAnimation._direction.DirRight;
+			} else {
+				dir = UnitAnimation._direction.DirLeft;
+			}
+		} else {
+			if (tileYDelta > 0) {
+				dir = UnitAnimation._direction.DirUp;
+			} else {
+				dir = UnitAnimation._direction.DirDown;
+			}
+		}
+		
+		this.SendMessage("SetDirection", dir, SendMessageOptions.DontRequireReceiver);
+		this.SendMessage("SetAction", UnitAnimation._action.Walk, SendMessageOptions.DontRequireReceiver);
+		this.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
+		NextState = _state.Move;
+	}
+
+	void MoveUnit() {
+		float xSpeed;
+		float ySpeed;
+
+		xSpeed = 0;
+		ySpeed = 0;
+
+		if (deltaX > 0) {
+			xSpeed = speed * Time.deltaTime;
+			deltaX -= xSpeed;
+
+			if (deltaX < 0) {
+				xSpeed = deltaX;
+				deltaX = 0;
+			}
+		} else if (deltaX < 0) {
+			xSpeed = speed * Time.deltaTime * -1;
+			deltaX -= xSpeed;
+			
+			if (deltaX > 0) {
+				xSpeed = -deltaX;
+				deltaX = 0;
+			}
+		}
+
+		if (deltaY > 0) {
+			ySpeed = speed * Time.deltaTime;
+			deltaY -= ySpeed;
+			
+			if (deltaY < 0) {
+				ySpeed = deltaY;
+				deltaY = 0;
+			}
+		} else if (deltaY < 0) {
+			ySpeed = speed * Time.deltaTime * -1;
+			deltaY -= ySpeed;
+			
+			if (deltaY > 0) {
+				ySpeed = -deltaY;
+				deltaY = 0;
+			}
+		}
+		
+		//Debug.Log(xSpeed + ":" + ySpeed + "> <" + deltaX + ":" + deltaY);
+		if ((xSpeed == 0) && (ySpeed == 0)) {
+			curTile = moveTile;
+			if (faction == Faction.Good) {
+				this.SendMessage("SetDirection", UnitAnimation._direction.DirLeft, SendMessageOptions.DontRequireReceiver);
+			} else {
+				this.SendMessage("SetDirection", UnitAnimation._direction.DirRight, SendMessageOptions.DontRequireReceiver);
+			}
+			this.SendMessage("SetAction", UnitAnimation._action.Idle, SendMessageOptions.DontRequireReceiver);
+			this.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
+			NextState = _state.Idle;
+		} else {
+			transform.position = new Vector3 (transform.position.x + xSpeed, transform.position.y + ySpeed, transform.position.z);
+		}
+	}
 }

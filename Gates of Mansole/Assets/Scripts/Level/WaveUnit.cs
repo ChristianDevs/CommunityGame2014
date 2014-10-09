@@ -5,6 +5,7 @@ using System.Collections;
 public class WaveUnit {
     public float time = 0;
     public GameObject prefab;
+	public bool created = false;
 
     // Add more here as we determine how waves will work
 }

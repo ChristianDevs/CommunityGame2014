@@ -1,0 +1,2299 @@
+fileFormatVersion: 2
+guid: c490ec5595a03f54c9ef3368441ace34
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: ui_big_pieces_0_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 496
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 496
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 496
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 496
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_4
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 496
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_5
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 496
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_6
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 508
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_7
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 510
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_8
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 508
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_9
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 514
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_10
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 514
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_11
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 514
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_12
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 514
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_13
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 514
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_14
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 514
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_15
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 514
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_16
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 514
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_17
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 514
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_18
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 514
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_19
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 514
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_20
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 514
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_21
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_22
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_23
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 512
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_24
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 518
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_25
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 519
+        width: 40
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_26
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 518
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_27
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 519
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_28
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 519
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_29
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 519
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_30
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 481
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_31
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 481
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_32
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 481
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_33
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 498
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_34
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 498
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_35
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 498
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_36
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 498
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_37
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 498
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_38
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 498
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_39
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 498
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_40
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 498
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_41
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 498
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_42
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 498
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_43
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 498
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_44
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 498
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_45
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 487
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_46
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 488
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_47
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 487
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_48
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 494
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_49
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 494
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_50
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 494
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_51
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 482
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_52
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 482
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_53
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 482
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_54
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 482
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_55
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 482
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_56
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 482
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_57
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 482
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_58
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 482
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_59
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 482
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_60
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 482
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_61
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 482
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_62
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 482
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_63
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 456
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_64
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 456
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_65
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 456
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_66
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 458
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_67
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 459
+        width: 40
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_68
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 458
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_69
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 476
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_70
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 477
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_71
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 479
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_72
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 449
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_73
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 449
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_74
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 449
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_75
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 449
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_76
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 456
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_77
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 456
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_78
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 458
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_79
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 461
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_80
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 461
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_81
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 462
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_82
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 451
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_83
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 451
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_84
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 452
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_85
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 445
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_86
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 444
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_87
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 443
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_88
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 443
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_89
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 433
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_90
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 433
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_91
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 433
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_92
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 433
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_93
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 436
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_94
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 436
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_95
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 436
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_96
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 423
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_97
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 423
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_98
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 423
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_99
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 408
+        width: 343
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_100
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 426
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_101
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 426
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_102
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 426
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_103
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 426
+        width: 46
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_104
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 426
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_105
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 434
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_106
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 434
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_107
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 417
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_108
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 417
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_109
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 417
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_110
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 417
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_111
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 420
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_112
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 421
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_113
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 422
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_114
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 420
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_115
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 401
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_116
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 401
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_117
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 401
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_118
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 401
+        width: 46
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_119
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 401
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_120
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_121
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_122
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_123
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 320
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_124
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 320
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_125
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 320
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_126
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 320
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_127
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 376
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_128
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 376
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_129
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 324
+        width: 84
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_130
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 368
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_131
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 368
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_132
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 326
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_133
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 370
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_134
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 370
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_135
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 348
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_136
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 348
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_137
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 350
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_138
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 350
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_139
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 341
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_140
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 341
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_141
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 341
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_142
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 341
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_143
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 341
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_144
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 340
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_145
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 337
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_146
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 328
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_147
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 328
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_148
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 330
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_149
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 330
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_150
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 316
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_151
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 316
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_152
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 316
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_153
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 316
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_154
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 316
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_155
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 334
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_156
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 311
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_157
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 328
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_158
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 308
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_159
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 240
+        width: 54
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_160
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 240
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_161
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 240
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_162
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 238
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_163
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 238
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_164
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 238
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_165
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 238
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_166
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 238
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_167
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 238
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_168
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 238
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_169
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 238
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_170
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 238
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_171
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 242
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_172
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 242
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_173
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 242
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_174
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 150
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_175
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 199
+        width: 54
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_176
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 199
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_177
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 199
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_178
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 201
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_179
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 201
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_180
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 201
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_181
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 201
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_182
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 201
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_183
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 201
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_184
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 201
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_185
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 201
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_186
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 201
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_187
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 199
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_188
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 199
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_189
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 199
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_190
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 158
+        width: 54
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_191
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 158
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_192
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 158
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_193
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 162
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_194
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 162
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_195
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 162
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_196
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 162
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_197
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 162
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_198
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 162
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_199
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 162
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_200
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 162
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_201
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 162
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_202
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 156
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_203
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 156
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_204
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 156
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_205
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 104
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_206
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 104
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_207
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 104
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_208
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 104
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_209
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 104
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_210
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 104
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_211
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 104
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_212
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 104
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_213
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 104
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_214
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 118
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_215
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 118
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_216
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 116
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_217
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 116
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_218
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 119
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_219
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 106
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_220
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 93
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_221
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 61
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_222
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 61
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_223
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 61
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_224
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 61
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_225
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 61
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_226
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 61
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_227
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 61
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_228
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 61
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_229
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 61
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_230
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_231
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 91
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_232
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 88
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_233
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 88
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_234
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 87
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_235
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 89
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_236
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 88
+        width: 20
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_237
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 58
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_238
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 45
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_239
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 43
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_240
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 18
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_241
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 18
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_242
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 18
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_243
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 18
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_244
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 18
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_245
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 18
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_246
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 18
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_247
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 18
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_248
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 18
+        width: 18
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ui_big_pieces_0_249
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 28
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
