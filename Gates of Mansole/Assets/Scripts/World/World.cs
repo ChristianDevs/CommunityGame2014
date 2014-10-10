@@ -13,11 +13,31 @@ public class World : MonoBehaviour {
 	private GameObject[][] tileContents;
 	private GameObject selectedUnit;
 	private Vector2 selectedTile;
+    private GameObject currentLevel;
+    private int currentLevelNum;
+    private int totalAttackers;
+    private int defeatedAttackers;
+    private int letThroughAttackers;
+
+    int GetTotalAttackers(GameObject lvl) {
+        int ret = 0;
+
+		WaveList wl;
+
+        wl = currentLevel.GetComponent<WaveList>();
+
+        foreach (Wave wv in wl.waves) {
+            ret += wv.units.Length;
+        }
+
+        return ret;
+    }
 
 	// Use this for initialization
 	void Start () {
 		selectedUnit = null;
 
+        // Initialize Tiles
 		tileContents = new GameObject[(int)gridSize.y][];
 		for (int col = 0; col < (int)gridSize.y; col++) {
 			tileContents[col] = new GameObject[(int)gridSize.x];
@@ -26,6 +46,18 @@ public class World : MonoBehaviour {
 				tileContents[col][row] = null;
 			}
 		}
+
+        if (Levels.Length > 0) {
+            // Initialize Current Level
+            currentLevelNum = 0;
+            currentLevel = Levels[currentLevelNum];
+        } else {
+            currentLevel = null;
+        }
+
+        letThroughAttackers = 0;
+        defeatedAttackers = 0;
+        totalAttackers = GetTotalAttackers(currentLevel);
 	}
 
 	void TileClick(Vector2 tile) {
@@ -58,13 +90,16 @@ public class World : MonoBehaviour {
 	void Update () {
 
 		// Check if any waves need releasing
-		foreach (GameObject level in Levels) {
+		if (currentLevel != null) {
 			WaveList wl;
 
-			wl = level.GetComponent<WaveList>();
+            wl = currentLevel.GetComponent<WaveList>();
 
+            // Go through each wave and see if it is time to start that wave
 			foreach (Wave wv in wl.waves) {
 				if (wv.waitTime < Time.time) {
+
+                    // Go through each unit and see if it is time to spawn it
 					foreach(WaveUnit ut in wv.units) {
 						if (ut.created == false) {
 							if ((wv.waitTime + ut.time) < Time.time) {
@@ -85,6 +120,17 @@ public class World : MonoBehaviour {
 					}
 				}
 			}
+
+            // Check game over conditions
+            if (letThroughAttackers >= wl.AttackersLetThrough) {
+                // Player lost the level
+                Debug.Log("Lost the Level!");
+                currentLevel = null;
+            } else if ((defeatedAttackers + letThroughAttackers) >= totalAttackers) {
+                // Player beat the level
+                Debug.Log("Beat the Level!");
+                currentLevel = null;
+            }
 		}
 	}
 
@@ -93,16 +139,19 @@ public class World : MonoBehaviour {
 		// Update units in the tiles
 		for (int row = 0; row < gridSize.y; row++) {
 			for (int col = 0; col < gridSize.x; col++) {
+                // If the tile is not empty then see if the unit needs to do something
 				if (tileContents[row][col] != null) {
 					if (tileContents[row][col].GetComponent<GomUnit>().health <= 0) {
 						// Unit is defeated
 						tileContents[row][col].SendMessage("Die", null, SendMessageOptions.DontRequireReceiver);
 						tileContents[row][col] = null;
+                        defeatedAttackers++;
 					} else if (tileContents[row][col].GetComponent<GomUnit>().CanMove()) {
 						if (col >= maxTile) {
 							// Unit passed off the screen
 							Destroy (tileContents[row][col]);
 							tileContents[row][col] = null;
+                            letThroughAttackers++;
 						} else if (CanUnitAttackLeftRight(row, col) == true) {
 							// Unit can attack
 							AttackLeftNearestEnemy(row, col);
