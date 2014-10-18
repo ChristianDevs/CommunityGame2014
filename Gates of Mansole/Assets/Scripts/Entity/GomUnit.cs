@@ -28,6 +28,7 @@ public class GomUnit : GomObject {
 	private float deltaY;
 	private float attackTimer;
 	private float dieTimer;
+    public UnitAnimation._direction idleDir;
 
     public void DamageMelee(PropertyStats stats) {
         // Whatever - arbitrary damage calculation
@@ -63,9 +64,21 @@ public class GomUnit : GomObject {
 		return ((State == _state.Idle) && (NextState == _state.Idle));
 	}
 
+    void SetFaction(GomObject.Faction newFaction) {
+        faction = newFaction;
+    }
+
 	void SetCurrentTile(Vector2 tile) {
 		curTile = tile;
 	}
+
+    void SetIdleDirection(UnitAnimation._direction dir) {
+        idleDir = dir;
+
+        this.SendMessage("SetDirection", idleDir, SendMessageOptions.DontRequireReceiver);
+        this.SendMessage("SetAction", UnitAnimation._action.Idle, SendMessageOptions.DontRequireReceiver);
+        this.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
+    }
 
 	void Move(Vector2 newTile) {
 		NextState = _state.SetupMove;
@@ -85,16 +98,6 @@ public class GomUnit : GomObject {
 	
 	// Use this for initialization
 	void Start () {
-		if (faction == Faction.Good) {
-			this.SendMessage("SetDirection", UnitAnimation._direction.DirLeft, SendMessageOptions.DontRequireReceiver);
-			this.SendMessage("SetAction", UnitAnimation._action.Idle, SendMessageOptions.DontRequireReceiver);
-			this.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
-		} else if (faction == Faction.Bad) {
-			this.SendMessage("SetDirection", UnitAnimation._direction.DirRight, SendMessageOptions.DontRequireReceiver);
-			this.SendMessage("SetAction", UnitAnimation._action.Idle, SendMessageOptions.DontRequireReceiver);
-			this.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
-		}
-		
 		State = _state.Idle;
 		NextState = State;
 	}
@@ -232,11 +235,7 @@ public class GomUnit : GomObject {
 		//Debug.Log(xSpeed + ":" + ySpeed + "> <" + deltaX + ":" + deltaY);
 		if ((xSpeed == 0) && (ySpeed == 0)) {
 			curTile = moveTile;
-			if (faction == Faction.Good) {
-				this.SendMessage("SetDirection", UnitAnimation._direction.DirLeft, SendMessageOptions.DontRequireReceiver);
-			} else {
-				this.SendMessage("SetDirection", UnitAnimation._direction.DirRight, SendMessageOptions.DontRequireReceiver);
-			}
+            this.SendMessage("SetDirection", idleDir, SendMessageOptions.DontRequireReceiver);
 			this.SendMessage("SetAction", UnitAnimation._action.Idle, SendMessageOptions.DontRequireReceiver);
 			this.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
 			NextState = _state.Idle;

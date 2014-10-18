@@ -5,28 +5,33 @@ public class World : MonoBehaviour {
 
 	public Vector2 gridSize;
 	public float TileUnitOffset;
-	public GameObject playerUnit;
-	public GameObject enemyUnit;
+	public GameObject bowUnit;
+	public GameObject swordUnit;
 	public GameObject[] Levels;
 	public int maxTile;
+    public bool isLevelDone;
+
+    public int totalAI;
+    public int totalAttackers;
+    public int totalDefenders;
+    public int defeatedAttackers;
+    public int defeatedDefenders;
+    public int letThroughAttackers;
+    public bool isPlayerAttacker;
 
 	private GameObject[][] tileContents;
 	private GameObject selectedUnit;
 	private Vector2 selectedTile;
     private GameObject currentLevel;
     private int currentLevelNum;
-    private int totalAttackers;
-    private int defeatedAttackers;
-    private int letThroughAttackers;
+    private WaveList._direction curLevelAttackerDir;
+    private UnitAnimation._direction attackerDir;
+    private UnitAnimation._direction defenderDir;
 
-    int GetTotalAttackers(GameObject lvl) {
+    int GetTotalWaveUnits(GameObject lvl) {
         int ret = 0;
 
-		WaveList wl;
-
-        wl = currentLevel.GetComponent<WaveList>();
-
-        foreach (Wave wv in wl.waves) {
+        foreach (Wave wv in currentLevel.GetComponent<WaveList>().waves) {
             ret += wv.units.Length;
         }
 
@@ -57,12 +62,28 @@ public class World : MonoBehaviour {
 
         letThroughAttackers = 0;
         defeatedAttackers = 0;
-        totalAttackers = GetTotalAttackers(currentLevel);
+        defeatedDefenders = 0;
+        totalAttackers = 0;
+        totalDefenders = 0;
+        totalAI = GetTotalWaveUnits(currentLevel);
+
+        isPlayerAttacker = currentLevel.GetComponent<WaveList>().isPlayerAttacker;
+        curLevelAttackerDir = currentLevel.GetComponent<WaveList>().attackerDir;
+        isLevelDone = false;
+
+        if (curLevelAttackerDir == WaveList._direction.Left) {
+            attackerDir = UnitAnimation._direction.DirLeft;
+            defenderDir = UnitAnimation._direction.DirRight;
+        } else if (curLevelAttackerDir == WaveList._direction.Right) {
+            attackerDir = UnitAnimation._direction.DirRight;
+            defenderDir = UnitAnimation._direction.DirLeft;
+        }
 	}
 
 	void TileClick(Vector2 tile) {
 		if ((selectedUnit != null) &&
-		    (tileContents[(int)tile.y][(int)tile.x] == null)) {
+		    (tileContents[(int)tile.y][(int)tile.x] == null) &&
+            (selectedUnit.GetComponent<GomUnit>().faction == GomObject.Faction.Good)) {
 			selectedUnit.SendMessage("Move", tile, SendMessageOptions.DontRequireReceiver);
 
 			tileContents[(int)tile.y][(int)tile.x] = selectedUnit;
@@ -70,14 +91,15 @@ public class World : MonoBehaviour {
 			selectedUnit = null;
 			//Debug.Log("Move to <" + tile.x + "," + tile.y + ">");
 		} else if (tileContents[(int)tile.y][(int)tile.x] == null) {
-			Vector3 worldPos;
-			
-			worldPos.x = Mathf.Ceil(tile.x) - (gridSize.x * 0.5f) + TileUnitOffset;
-			worldPos.y = (Mathf.Ceil(tile.y) - (gridSize.y * 0.5f)) + TileUnitOffset;
-			worldPos.z = 0;
-			
-			tileContents[(int)tile.y][(int)tile.x] = Instantiate(playerUnit, worldPos, Quaternion.identity) as GameObject;
-			tileContents[(int)tile.y][(int)tile.x].SendMessage("SetCurrentTile", tile, SendMessageOptions.DontRequireReceiver);
+            if (isPlayerAttacker == true) {
+                SpawnUnit(swordUnit, (int)tile.y, (int)tile.x, GomObject.Faction.Good);
+                tileContents[(int)tile.y][(int)tile.x].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
+                totalAttackers++;
+            } else {
+                SpawnUnit(bowUnit, (int)tile.y, (int)tile.x, GomObject.Faction.Good);
+                tileContents[(int)tile.y][(int)tile.x].SendMessage("SetIdleDirection", defenderDir, SendMessageOptions.DontRequireReceiver);
+                totalDefenders++;
+            }
 			//Debug.Log("Spawn <" + tile.x + "," + tile.y + ">");
 		} else {
 			selectedUnit = tileContents[(int)tile.y][(int)tile.x];
@@ -102,19 +124,49 @@ public class World : MonoBehaviour {
                     // Go through each unit and see if it is time to spawn it
 					foreach(WaveUnit ut in wv.units) {
 						if (ut.created == false) {
-							if ((wv.waitTime + ut.time) < Time.time) {
-								Vector3 worldPos;
-								int row;
+                            if ((wv.waitTime + ut.time) < Time.time) {
+                                int row;
+                                int col;
 
-								row = Random.Range(0, (int)gridSize.y);
-								
-								worldPos.x = Mathf.Ceil(0) - (gridSize.x * 0.5f) + TileUnitOffset;
-								worldPos.y = (Mathf.Ceil(row) - (gridSize.y * 0.5f)) + TileUnitOffset;
-								worldPos.z = 0;
+                                switch (ut.SpawnLocType) {
+                                case WaveUnit._spawnLocType.RandRow:
+                                    if (curLevelAttackerDir == WaveList._direction.Right) {
+                                        col = 0;
+                                    } else if (curLevelAttackerDir == WaveList._direction.Left) {
+                                        col = maxTile - 1;
+                                    } else {
+                                        col = 0;
+                                    }
+                                    row = Random.Range(0, (int)gridSize.y);
+                                    break;
+                                case WaveUnit._spawnLocType.RandTile:
+                                    row = 0;
+                                    col = 0;
+                                    break;
+                                case WaveUnit._spawnLocType.SpecifiedRow:
+                                    row = 0;
+                                    col = 0;
+                                    break;
+                                case WaveUnit._spawnLocType.SpecifiedTile:
+                                    row = (int)ut.Tile.x;
+                                    col = (int)ut.Tile.y;
+                                    break;
+                                default:
+                                    row = 0;
+                                    col = 0;
+                                    break;
+                                }
 
-								tileContents[row][0] = Instantiate(enemyUnit, worldPos, Quaternion.identity) as GameObject;
-								tileContents[row][0].SendMessage("SetCurrentTile", new Vector2(0, row), SendMessageOptions.DontRequireReceiver);
-								ut.created = true;
+                                if (isPlayerAttacker == true) {
+                                    SpawnUnit(bowUnit, row, col, GomObject.Faction.Bad);
+                                    tileContents[row][col].SendMessage("SetIdleDirection", defenderDir, SendMessageOptions.DontRequireReceiver);
+                                    totalDefenders++;
+                                } else {
+                                    SpawnUnit(swordUnit, row, col, GomObject.Faction.Bad);
+                                    tileContents[row][col].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
+                                    totalAttackers++;
+                                }
+                                ut.created = true;
 							}
 						}
 					}
@@ -122,14 +174,21 @@ public class World : MonoBehaviour {
 			}
 
             // Check game over conditions
-            if (letThroughAttackers >= wl.AttackersLetThrough) {
-                // Player lost the level
-                Debug.Log("Lost the Level!");
-                currentLevel = null;
-            } else if ((defeatedAttackers + letThroughAttackers) >= totalAttackers) {
-                // Player beat the level
-                Debug.Log("Beat the Level!");
-                currentLevel = null;
+            if (isLevelDone == false) {
+                if (isPlayerAttacker == true) {
+                    if (letThroughAttackers >= wl.AttackersLetThrough) {
+                        Debug.Log("Beat the Level!");
+                        isLevelDone = true;
+                    }
+                } else {
+                    if (letThroughAttackers >= wl.AttackersLetThrough) {
+                        Debug.Log("Lost the Level!");
+                        isLevelDone = true;
+                    } else if ((defeatedAttackers + letThroughAttackers) >= totalAI) {
+                        Debug.Log("Beat the Level!");
+                        isLevelDone = true;
+                    }
+                }
             }
 		}
 	}
@@ -143,25 +202,65 @@ public class World : MonoBehaviour {
 				if (tileContents[row][col] != null) {
 					if (tileContents[row][col].GetComponent<GomUnit>().health <= 0) {
 						// Unit is defeated
+                        if (isPlayerAttacker == true) {
+                            if (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Good) {
+                                totalAttackers--;
+                                defeatedAttackers++;
+                            } else {
+                                totalDefenders--;
+                            }
+                        } else {
+                            if (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Good) {
+                                totalDefenders--;
+                            } else {
+                                totalAttackers--;
+                                defeatedAttackers++;
+                            }
+                        }
+
 						tileContents[row][col].SendMessage("Die", null, SendMessageOptions.DontRequireReceiver);
 						tileContents[row][col] = null;
-                        defeatedAttackers++;
 					} else if (tileContents[row][col].GetComponent<GomUnit>().CanMove()) {
-						if (col >= maxTile) {
-							// Unit passed off the screen
-							Destroy (tileContents[row][col]);
-							tileContents[row][col] = null;
-                            letThroughAttackers++;
-						} else if (CanUnitAttackLeftRight(row, col) == true) {
+						if (CanUnitAttackLeftRight(row, col) == true) {
 							// Unit can attack
 							AttackLeftNearestEnemy(row, col);
 						} else if (tileContents[row][col + 1] == null) {
 							// Unit can move
-							if (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Bad) {
-								// Advance "bad" units to the right
-								tileContents[row][col].SendMessage("Move", new Vector2(col + 1, row), SendMessageOptions.DontRequireReceiver);
-								tileContents[row][col + 1] = tileContents[row][col];
-								tileContents[row][col] = null;
+							if (((tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Good) &&
+                                currentLevel.GetComponent<WaveList>().isPlayerAttacker) ||
+                                ((tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Bad) &&
+                                !currentLevel.GetComponent<WaveList>().isPlayerAttacker)) {
+
+                                switch(curLevelAttackerDir) {
+                                case WaveList._direction.Right:
+                                    // Advance attacker units to the right
+                                    if (col >= maxTile) {
+                                        // Unit passed off the screen
+                                        Destroy(tileContents[row][col]);
+                                        tileContents[row][col] = null;
+                                        letThroughAttackers++;
+                                    } else {
+                                        tileContents[row][col].SendMessage("Move", new Vector2(col + 1, row), SendMessageOptions.DontRequireReceiver);
+                                        tileContents[row][col + 1] = tileContents[row][col];
+                                        tileContents[row][col] = null;
+                                    }
+                                    break;
+                                case WaveList._direction.Left:
+                                    if (col == 0) {
+                                        // Unit passed off the screen
+                                        Destroy(tileContents[row][col]);
+                                        tileContents[row][col] = null;
+                                        letThroughAttackers++;
+                                    } else {
+                                        // Advance attacker units to the right
+                                        tileContents[row][col].SendMessage("Move", new Vector2(col - 1, row), SendMessageOptions.DontRequireReceiver);
+                                        tileContents[row][col - 1] = tileContents[row][col];
+                                        tileContents[row][col] = null;
+                                    }
+                                    break;
+                                default:
+                                    break;
+                                }
 							}
 						}
 					}
@@ -173,7 +272,7 @@ public class World : MonoBehaviour {
 	bool CanUnitAttackLeftRight(int row, int col) {
 		GomUnit attacker;
 
-		attacker = tileContents [row] [col].GetComponent<GomUnit>();
+		attacker = tileContents[row][col].GetComponent<GomUnit>();
 
 		if (attacker.weapon == null) {
 			return false;
@@ -183,7 +282,7 @@ public class World : MonoBehaviour {
 		for (int i = col; i >= (col - attacker.weapon.range); i--) {
 
 			if (i < 0) {
-				return false;
+				break;
 			}
 
 			if (tileContents[row][i] != null) {
@@ -198,7 +297,7 @@ public class World : MonoBehaviour {
 		for (int i = col; i <= (col + attacker.weapon.range); i++) {
 			
 			if (i > (gridSize.x) - 1) {
-				return false;
+				break;
 			}
 
 			if (tileContents[row][i] != null) {
@@ -215,13 +314,13 @@ public class World : MonoBehaviour {
 	void AttackLeftNearestEnemy(int row, int col) {
 		GomUnit attacker;
 		
-		attacker = tileContents [row] [col].GetComponent<GomUnit>();
+		attacker = tileContents[row][col].GetComponent<GomUnit>();
 
 		// Attack to the left
 		for (int i = col; i >= (col - attacker.weapon.range); i--) {
 			
 			if (i < 0) {
-				return;
+				break;
 			}
 			
 			if (tileContents[row][i] != null) {
@@ -232,6 +331,10 @@ public class World : MonoBehaviour {
 					if ((attacker.weapon != null) && (attacker.weapon.projectile != null)) {
 						projectile = Instantiate(attacker.weapon.projectile, attacker.transform.position, Quaternion.identity) as GameObject;
 						projectile.SendMessage("SetTarget", tileContents[row][i], SendMessageOptions.DontRequireReceiver);
+
+                        if (attackerDir == UnitAnimation._direction.DirLeft) {
+                            projectile.transform.Rotate(new Vector3(180, 0, 0));
+                        }
 					} else {
 						tileContents[row][i].SendMessage("DamageMelee", attacker.stats, SendMessageOptions.DontRequireReceiver);
 					}
@@ -245,7 +348,7 @@ public class World : MonoBehaviour {
 		for (int i = col; i <= (col + attacker.weapon.range); i++) {
 			
 			if (i > (gridSize.x) - 1) {
-				return;
+				break;
 			}
 			
 			if (tileContents[row][i] != null) {
@@ -265,4 +368,16 @@ public class World : MonoBehaviour {
 			}
 		}
 	}
+
+    void SpawnUnit(GameObject unitPrefab, int tileRow, int tileCol, GomObject.Faction faction) {
+        Vector3 worldPos;
+
+        worldPos.x = Mathf.Ceil(tileCol) - (gridSize.x * 0.5f) + TileUnitOffset;
+        worldPos.y = (Mathf.Ceil(tileRow) - (gridSize.y * 0.5f)) + TileUnitOffset;
+        worldPos.z = 0;
+
+        tileContents[tileRow][tileCol] = Instantiate(unitPrefab, worldPos, Quaternion.identity) as GameObject;
+        tileContents[tileRow][tileCol].SendMessage("SetCurrentTile", new Vector2(tileCol, tileRow), SendMessageOptions.DontRequireReceiver);
+        tileContents[tileRow][tileCol].SendMessage("SetFaction", faction, SendMessageOptions.DontRequireReceiver);
+    }
 }

@@ -18,14 +18,30 @@ public class GomProjectile : GomObject {
 	private GameObject tgt;
 
 	void SetTarget(GameObject newTarget) {
+        float newX;
+        float newY;
 		tgt = newTarget;
-		dir = tgt.transform.position;
-		dir.Normalize();
+
+        newX = 0;
+        newY = 0;
+
+        if (tgt.transform.position.x > transform.position.x) {
+            newX = 1;
+        } else if (tgt.transform.position.x < transform.position.x) {
+            newX = -1;
+        }
+
+        if (tgt.transform.position.y > transform.position.y) {
+            newY = 1;
+        } else if (tgt.transform.position.y < transform.position.y) {
+            newY = -1;
+        }
+
+        dir = new Vector3(newX, newY, 0);
 	}
 
 	// Use this for initialization
 	void Start () {
-        dir.Normalize();
 	}
 	
 	// Update is called once per frame
@@ -34,14 +50,8 @@ public class GomProjectile : GomObject {
 	}
 
     void FixedUpdate () {
-        // @@ It may make more sense to keep projectile movement data in the Logic* code for each projectile type, unless
-        // they all act a common way.
 
-        // We may end up doing work on rigidbody2d with no friction instead of directly to transform
-        // Obviously this is just an example... projectiles could have any form of complex movement depending
-        // on what is designed.
-        // This is just an example
-        transform.position = transform.position + (new Vector3(-1, 0, 0) * (speed + stats.speed) * Time.fixedDeltaTime);
+        transform.position = transform.position + (dir * (speed + stats.speed) * Time.fixedDeltaTime);
         speed += accel * Time.fixedDeltaTime;
 
         if (speed < 0) {

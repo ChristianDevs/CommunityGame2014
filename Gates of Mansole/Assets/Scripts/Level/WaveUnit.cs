@@ -3,9 +3,18 @@ using System.Collections;
 
 [System.Serializable]
 public class WaveUnit {
+
+	public enum _spawnLocType
+    {
+        RandRow,
+		RandTile,
+		SpecifiedTile,
+		SpecifiedRow
+	};
+
     public float time = 0;
     public GameObject prefab;
 	public bool created = false;
-
-    // Add more here as we determine how waves will work
+	public _spawnLocType SpawnLocType;
+	public Vector2 Tile;
 }
