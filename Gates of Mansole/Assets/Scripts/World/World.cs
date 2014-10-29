@@ -397,13 +397,14 @@ public class World : MonoBehaviour {
 			if (tileContents[row][i] != null) {
 				if (tileContents[row][i].GetComponent<GomUnit>().faction != attacker.faction) {
 					GameObject projectile;
+					tileContents[row][i].SendMessage ("SetAttacker", attacker, SendMessageOptions.DontRequireReceiver);
 					attacker.SendMessage("Attack", null, SendMessageOptions.DontRequireReceiver);
 
 					if ((attacker.weapon != null) && (attacker.weapon.projectile != null)) {
 						projectile = Instantiate(attacker.weapon.projectile, attacker.transform.position, Quaternion.identity) as GameObject;
 						projectile.SendMessage("SetTarget", tileContents[row][i], SendMessageOptions.DontRequireReceiver);
-
-                        if (attackerDir == UnitAnimation._direction.DirLeft) {
+                        
+						if (attackerDir == UnitAnimation._direction.DirLeft) {
                             projectile.transform.Rotate(new Vector3(180, 0, 0));
                         }
 					} else {
@@ -425,6 +426,7 @@ public class World : MonoBehaviour {
 			if (tileContents[row][i] != null) {
 				if (tileContents[row][i].GetComponent<GomUnit>().faction != attacker.faction) {
 					GameObject projectile;
+					tileContents[row][i].SendMessage ("SetAttacker", attacker, SendMessageOptions.DontRequireReceiver);
 					attacker.SendMessage("Attack", null, SendMessageOptions.DontRequireReceiver);
 					
 					if ((attacker.weapon != null) && (attacker.weapon.projectile != null)) {

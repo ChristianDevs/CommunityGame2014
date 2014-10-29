@@ -11,7 +11,8 @@ public class GomUnit : GomObject {
 	public Vector2 curTile;
 	public Vector2 moveTile;
 	public Weapon weapon;
-	
+	public int kills;
+
 	public enum _state {
 		Idle,
 		Advance,
@@ -28,6 +29,7 @@ public class GomUnit : GomObject {
 	private float deltaY;
 	private float attackTimer;
 	private float dieTimer;
+	private GomUnit attacker;
     public UnitAnimation._direction idleDir;
 
     public void DamageMelee(PropertyStats stats) {
@@ -57,8 +59,16 @@ public class GomUnit : GomObject {
         if (health <= 0) {
             health = 0;
             alive = false;
+			attacker.SendMessage("IncrementKills", SendMessageOptions.DontRequireReceiver);
         }
     }
+	void SetAttacker(GomUnit src) {
+		attacker = src;
+		}
+
+	void IncrementKills() {
+		kills++;
+	}
 
 	public bool CanMove() {
 		return ((State == _state.Idle) && (NextState == _state.Idle));
