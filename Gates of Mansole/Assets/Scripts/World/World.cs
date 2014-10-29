@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class World : MonoBehaviour {
 
@@ -7,7 +8,13 @@ public class World : MonoBehaviour {
 	public float TileUnitOffset;
 	public GameObject bowUnit;
 	public GameObject swordUnit;
+    public GameObject bowUI;
+    public GameObject bowSquare;
+    public GameObject swordUI;
+    public GameObject swordSquare;
 	public GameObject[] Levels;
+    public GameObject winMessage;
+    public GameObject loseMessage;
 	public int maxTile;
     public bool isLevelDone;
 
@@ -27,6 +34,8 @@ public class World : MonoBehaviour {
     private WaveList._direction curLevelAttackerDir;
     private UnitAnimation._direction attackerDir;
     private UnitAnimation._direction defenderDir;
+    private List<GameObject> unitsUIinst;
+    private GameObject selectedUiUnit;
 
     int GetTotalWaveUnits(GameObject lvl) {
         int ret = 0;
@@ -78,6 +87,16 @@ public class World : MonoBehaviour {
             attackerDir = UnitAnimation._direction.DirRight;
             defenderDir = UnitAnimation._direction.DirLeft;
         }
+
+        unitsUIinst = new List<GameObject>();
+
+        unitsUIinst.Add(Instantiate(bowUI, bowSquare.transform.position, Quaternion.identity) as GameObject);
+        unitsUIinst.Add(Instantiate(swordUI, swordSquare.transform.position, Quaternion.identity) as GameObject);
+
+        selectedUiUnit = null;
+
+        winMessage.SetActive(false);
+        loseMessage.SetActive(false);
 	}
 
 	void TileClick(Vector2 tile) {
@@ -90,17 +109,6 @@ public class World : MonoBehaviour {
 			tileContents[(int)selectedTile.y][(int)selectedTile.x] = null;
 			selectedUnit = null;
 			//Debug.Log("Move to <" + tile.x + "," + tile.y + ">");
-		} else if (tileContents[(int)tile.y][(int)tile.x] == null) {
-            if (isPlayerAttacker == true) {
-                SpawnUnit(swordUnit, (int)tile.y, (int)tile.x, GomObject.Faction.Good);
-                tileContents[(int)tile.y][(int)tile.x].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
-                totalAttackers++;
-            } else {
-                SpawnUnit(bowUnit, (int)tile.y, (int)tile.x, GomObject.Faction.Good);
-                tileContents[(int)tile.y][(int)tile.x].SendMessage("SetIdleDirection", defenderDir, SendMessageOptions.DontRequireReceiver);
-                totalDefenders++;
-            }
-			//Debug.Log("Spawn <" + tile.x + "," + tile.y + ">");
 		} else {
 			selectedUnit = tileContents[(int)tile.y][(int)tile.x];
 			selectedTile = tile;
@@ -177,18 +185,81 @@ public class World : MonoBehaviour {
             if (isLevelDone == false) {
                 if (isPlayerAttacker == true) {
                     if (letThroughAttackers >= wl.AttackersLetThrough) {
-                        Debug.Log("Beat the Level!");
+                        winMessage.SetActive(true);
                         isLevelDone = true;
                     }
                 } else {
                     if (letThroughAttackers >= wl.AttackersLetThrough) {
-                        Debug.Log("Lost the Level!");
+                        loseMessage.SetActive(true);
                         isLevelDone = true;
                     } else if ((defeatedAttackers + letThroughAttackers) >= totalAI) {
-                        Debug.Log("Beat the Level!");
+                        winMessage.SetActive(true);
                         isLevelDone = true;
                     }
                 }
+            }
+
+            // Check Menu Squares
+            if (Input.GetMouseButtonDown(0)) {
+                RaycastHit hitSquare;
+
+                if (isLevelDone == true) {
+                    Application.LoadLevel("Title");
+                }
+
+                if (Physics.Raycast(UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition), out hitSquare)) {
+                    if (hitSquare.transform.name == bowSquare.transform.name) {
+                        selectedUiUnit = unitsUIinst[0];
+                    }
+
+                    if (hitSquare.transform.name == swordSquare.transform.name) {
+                        selectedUiUnit = unitsUIinst[1];
+                    }
+                }
+            }
+
+            if (selectedUiUnit != null) {
+                Vector3 newPos;
+
+                newPos = UnityEngine.Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                newPos.x = Mathf.Floor(newPos.x) + 0.5f;
+                newPos.y = Mathf.Floor(newPos.y) + 0.5f;
+                newPos.z = 0;
+
+                selectedUiUnit.transform.position = newPos;
+            }
+
+            if (Input.GetMouseButtonUp(0)) {
+                Vector2 tile;
+                Vector3 viewPort;
+
+                viewPort = UnityEngine.Camera.main.ScreenToViewportPoint(Input.mousePosition);
+                tile = new Vector2(Mathf.Floor(viewPort.x * gridSize.x), Mathf.Floor(viewPort.y * gridSize.y));
+
+                if ((tile.x < gridSize.x) && (tile.y < gridSize.y)) {
+                    UnitAnimation._direction dir;
+
+                    if (isPlayerAttacker == true) {
+                        totalAttackers++;
+                        dir = attackerDir;
+                    }
+                    else {
+                        totalDefenders++;
+                        dir = defenderDir;
+                    }
+
+                    if (selectedUiUnit == unitsUIinst[0]) {
+                        SpawnUnit(bowUnit, (int)tile.y, (int)tile.x, GomObject.Faction.Good);
+                        tileContents[(int)tile.y][(int)tile.x].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
+                    } else {
+                        SpawnUnit(swordUnit, (int)tile.y, (int)tile.x, GomObject.Faction.Good);
+                        tileContents[(int)tile.y][(int)tile.x].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
+                    }
+                }
+
+                selectedUiUnit = null;
+                unitsUIinst[0].transform.position = bowSquare.transform.position;
+                unitsUIinst[1].transform.position = swordSquare.transform.position;
             }
 		}
 	}
@@ -371,6 +442,11 @@ public class World : MonoBehaviour {
 
     void SpawnUnit(GameObject unitPrefab, int tileRow, int tileCol, GomObject.Faction faction) {
         Vector3 worldPos;
+
+        // 2 units cannot occupy the same tile
+        if (tileContents[tileRow][tileCol] != null) {
+            return;
+        }
 
         worldPos.x = Mathf.Ceil(tileCol) - (gridSize.x * 0.5f) + TileUnitOffset;
         worldPos.y = (Mathf.Ceil(tileRow) - (gridSize.y * 0.5f)) + TileUnitOffset;
