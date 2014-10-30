@@ -16,6 +16,7 @@ public class GomUnit : GomObject {
     public GameObject BarEmptyMid;
     public GameObject BarEmptyRight;
     public GameObject BarGreen;
+	public int kills;
 	
 	public enum _state {
 		Idle,
@@ -33,6 +34,7 @@ public class GomUnit : GomObject {
 	private float deltaY;
 	private float attackTimer;
 	private float dieTimer;
+	private GomUnit attacker;
     private UnitAnimation._direction idleDir;
     private GameObject HpLeftBar;
     private GameObject HpMidBar;
@@ -69,9 +71,18 @@ public class GomUnit : GomObject {
         if (health <= 0) {
             health = 0;
             alive = false;
+			attacker.SendMessage("IncrementKills", SendMessageOptions.DontRequireReceiver);
         }
         updateHealthBars();
-    }
+	}
+
+	void SetAttacker(GomUnit src) {
+		attacker = src;
+	}
+	
+	void IncrementKills() {
+		kills++;
+	}
 
     void updateHealthBars() {
         float percentLeft;

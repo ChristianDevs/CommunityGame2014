@@ -385,12 +385,13 @@ public class World : MonoBehaviour {
 
 		return false;
 	}
-
+	
+	
 	void AttackLeftRightNearestEnemy(int row, int col) {
 		GomUnit attacker;
 		
 		attacker = tileContents[row][col].GetComponent<GomUnit>();
-
+		
 		// Attack to the left
 		for (int i = col; i >= (col - attacker.weapon.range); i--) {
 			
@@ -401,24 +402,25 @@ public class World : MonoBehaviour {
 			if (tileContents[row][i] != null) {
 				if (tileContents[row][i].GetComponent<GomUnit>().faction != attacker.faction) {
 					GameObject projectile;
+					tileContents[row][i].SendMessage ("SetAttacker", attacker, SendMessageOptions.DontRequireReceiver);
 					attacker.SendMessage("Attack", null, SendMessageOptions.DontRequireReceiver);
-
+					
 					if ((attacker.weapon != null) && (attacker.weapon.projectile != null)) {
 						projectile = Instantiate(attacker.weapon.projectile, attacker.transform.position, Quaternion.identity) as GameObject;
 						projectile.SendMessage("SetTarget", tileContents[row][i], SendMessageOptions.DontRequireReceiver);
-
-                        if (attackerDir == UnitAnimation._direction.DirLeft) {
-                            projectile.transform.Rotate(new Vector3(180, 0, 0));
-                        }
+						
+						if (attackerDir == UnitAnimation._direction.DirLeft) {
+							projectile.transform.Rotate(new Vector3(180, 0, 0));
+						}
 					} else {
 						tileContents[row][i].SendMessage("DamageMelee", attacker.stats, SendMessageOptions.DontRequireReceiver);
 					}
-
+					
 					return;
 				}
 			}
 		}
-
+		
 		// Attack to the right
 		for (int i = col; i <= (col + attacker.weapon.range); i++) {
 			
@@ -429,6 +431,7 @@ public class World : MonoBehaviour {
 			if (tileContents[row][i] != null) {
 				if (tileContents[row][i].GetComponent<GomUnit>().faction != attacker.faction) {
 					GameObject projectile;
+					tileContents[row][i].SendMessage ("SetAttacker", attacker, SendMessageOptions.DontRequireReceiver);
 					attacker.SendMessage("Attack", null, SendMessageOptions.DontRequireReceiver);
 					
 					if ((attacker.weapon != null) && (attacker.weapon.projectile != null)) {
@@ -437,7 +440,7 @@ public class World : MonoBehaviour {
 					} else {
 						tileContents[row][i].SendMessage("DamageMelee", attacker.stats, SendMessageOptions.DontRequireReceiver);
 					}
-
+					
 					return;
 				}
 			}
