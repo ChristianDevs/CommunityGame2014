@@ -166,13 +166,15 @@ public class World : MonoBehaviour {
                                 }
 
                                 if (isPlayerAttacker == true) {
-                                    SpawnUnit(bowUnit, row, col, GomObject.Faction.Bad);
-                                    tileContents[row][col].SendMessage("SetIdleDirection", defenderDir, SendMessageOptions.DontRequireReceiver);
-                                    totalDefenders++;
+                                    if (SpawnUnit(bowUnit, row, col, GomObject.Faction.Bad)) {
+                                        tileContents[row][col].SendMessage("SetIdleDirection", defenderDir, SendMessageOptions.DontRequireReceiver);
+                                        totalDefenders++;
+                                    }
                                 } else {
-                                    SpawnUnit(swordUnit, row, col, GomObject.Faction.Bad);
-                                    tileContents[row][col].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
-                                    totalAttackers++;
+                                    if (SpawnUnit(swordUnit, row, col, GomObject.Faction.Bad)) {
+                                        tileContents[row][col].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
+                                        totalAttackers++;
+                                    }
                                 }
                                 ut.created = true;
 							}
@@ -186,6 +188,7 @@ public class World : MonoBehaviour {
                 if (isPlayerAttacker == true) {
                     if (letThroughAttackers >= wl.AttackersLetThrough) {
                         winMessage.SetActive(true);
+                        Player.completeLevel(Player.currentLevel);
                         isLevelDone = true;
                     }
                 } else {
@@ -194,6 +197,7 @@ public class World : MonoBehaviour {
                         isLevelDone = true;
                     } else if ((defeatedAttackers + letThroughAttackers) >= totalAI) {
                         winMessage.SetActive(true);
+                        Player.completeLevel(Player.currentLevel);
                         isLevelDone = true;
                     }
                 }
@@ -204,7 +208,7 @@ public class World : MonoBehaviour {
                 RaycastHit hitSquare;
 
                 if (isLevelDone == true) {
-                    Application.LoadLevel("Title");
+                    Application.LoadLevel("LevelSelect");
                 }
 
                 if (Physics.Raycast(UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition), out hitSquare)) {
@@ -294,43 +298,43 @@ public class World : MonoBehaviour {
 					} else if (tileContents[row][col].GetComponent<GomUnit>().CanMove()) {
 						if (CanUnitAttackLeftRight(row, col) == true) {
 							// Unit can attack
-							AttackLeftNearestEnemy(row, col);
-						} else if (tileContents[row][col + 1] == null) {
+                            AttackLeftRightNearestEnemy(row, col);
+						} else {
 							// Unit can move
-							if (((tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Good) &&
+                            if (((tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Good) &&
                                 currentLevel.GetComponent<WaveList>().isPlayerAttacker) ||
                                 ((tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Bad) &&
                                 !currentLevel.GetComponent<WaveList>().isPlayerAttacker)) {
 
-                                switch(curLevelAttackerDir) {
-                                case WaveList._direction.Right:
-                                    // Advance attacker units to the right
+                                if ((curLevelAttackerDir == WaveList._direction.Right) &&
+                                    (tileContents[row][col + 1] == null)) {
                                     if (col >= maxTile) {
                                         // Unit passed off the screen
                                         Destroy(tileContents[row][col]);
                                         tileContents[row][col] = null;
                                         letThroughAttackers++;
                                     } else {
-                                        tileContents[row][col].SendMessage("Move", new Vector2(col + 1, row), SendMessageOptions.DontRequireReceiver);
-                                        tileContents[row][col + 1] = tileContents[row][col];
-                                        tileContents[row][col] = null;
+                                        if (tileContents[row][col + 1] == null) {
+                                            // Advance attacker units to the right
+                                            tileContents[row][col].SendMessage("Move", new Vector2(col + 1, row), SendMessageOptions.DontRequireReceiver);
+                                            tileContents[row][col + 1] = tileContents[row][col];
+                                            tileContents[row][col] = null;
+                                        }
                                     }
-                                    break;
-                                case WaveList._direction.Left:
+                                } else if (curLevelAttackerDir == WaveList._direction.Left) {
                                     if (col == 0) {
                                         // Unit passed off the screen
                                         Destroy(tileContents[row][col]);
                                         tileContents[row][col] = null;
                                         letThroughAttackers++;
                                     } else {
-                                        // Advance attacker units to the right
-                                        tileContents[row][col].SendMessage("Move", new Vector2(col - 1, row), SendMessageOptions.DontRequireReceiver);
-                                        tileContents[row][col - 1] = tileContents[row][col];
-                                        tileContents[row][col] = null;
+                                        if (tileContents[row][col - 1] == null) {
+                                            // Advance attacker units to the right
+                                            tileContents[row][col].SendMessage("Move", new Vector2(col - 1, row), SendMessageOptions.DontRequireReceiver);
+                                            tileContents[row][col - 1] = tileContents[row][col];
+                                            tileContents[row][col] = null;
+                                        }
                                     }
-                                    break;
-                                default:
-                                    break;
                                 }
 							}
 						}
@@ -382,7 +386,7 @@ public class World : MonoBehaviour {
 		return false;
 	}
 
-	void AttackLeftNearestEnemy(int row, int col) {
+	void AttackLeftRightNearestEnemy(int row, int col) {
 		GomUnit attacker;
 		
 		attacker = tileContents[row][col].GetComponent<GomUnit>();
@@ -440,12 +444,12 @@ public class World : MonoBehaviour {
 		}
 	}
 
-    void SpawnUnit(GameObject unitPrefab, int tileRow, int tileCol, GomObject.Faction faction) {
+    bool SpawnUnit(GameObject unitPrefab, int tileRow, int tileCol, GomObject.Faction faction) {
         Vector3 worldPos;
 
         // 2 units cannot occupy the same tile
         if (tileContents[tileRow][tileCol] != null) {
-            return;
+            return false;
         }
 
         worldPos.x = Mathf.Ceil(tileCol) - (gridSize.x * 0.5f) + TileUnitOffset;
@@ -455,5 +459,7 @@ public class World : MonoBehaviour {
         tileContents[tileRow][tileCol] = Instantiate(unitPrefab, worldPos, Quaternion.identity) as GameObject;
         tileContents[tileRow][tileCol].SendMessage("SetCurrentTile", new Vector2(tileCol, tileRow), SendMessageOptions.DontRequireReceiver);
         tileContents[tileRow][tileCol].SendMessage("SetFaction", faction, SendMessageOptions.DontRequireReceiver);
+
+        return true;
     }
 }

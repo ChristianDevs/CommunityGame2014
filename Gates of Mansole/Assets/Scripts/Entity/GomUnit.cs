@@ -10,7 +10,12 @@ public class GomUnit : GomObject {
 	public float speed;
 	public Vector2 curTile;
 	public Vector2 moveTile;
-	public Weapon weapon;
+    public Weapon weapon;
+
+    public GameObject BarEmptyLeft;
+    public GameObject BarEmptyMid;
+    public GameObject BarEmptyRight;
+    public GameObject BarGreen;
 	
 	public enum _state {
 		Idle,
@@ -28,7 +33,13 @@ public class GomUnit : GomObject {
 	private float deltaY;
 	private float attackTimer;
 	private float dieTimer;
-    public UnitAnimation._direction idleDir;
+    private UnitAnimation._direction idleDir;
+    private GameObject HpLeftBar;
+    private GameObject HpMidBar;
+    private GameObject HpRightBar;
+    private GameObject HpGreenBar;
+    private Vector3 HpBarPos;
+    private float HpBarMidScale;
 
     public void DamageMelee(PropertyStats stats) {
         // Whatever - arbitrary damage calculation
@@ -53,11 +64,24 @@ public class GomUnit : GomObject {
     }
 
     void Damage(int amt) {
+
         health -= amt;
         if (health <= 0) {
             health = 0;
             alive = false;
         }
+        updateHealthBars();
+    }
+
+    void updateHealthBars() {
+        float percentLeft;
+        float BarXPos;
+
+        percentLeft = (float)health / (float)stats.maxHealth;
+        BarXPos = HpLeftBar.transform.position.x + (((HpRightBar.transform.position.x - HpLeftBar.transform.position.x) * 0.5f) * percentLeft);
+
+        HpGreenBar.transform.position = new Vector3(BarXPos, HpMidBar.transform.position.y, HpMidBar.transform.position.z);
+        HpGreenBar.transform.localScale = new Vector3(HpBarMidScale * percentLeft, 0.5f, 1);
     }
 
 	public bool CanMove() {
@@ -100,6 +124,24 @@ public class GomUnit : GomObject {
 	void Start () {
 		State = _state.Idle;
 		NextState = State;
+
+        HpBarPos = new Vector3(transform.position.x - 0.5f, transform.position.y + 0.4f);
+        HpBarMidScale = 7.5f;
+
+        // Instantiate the health bars
+        HpLeftBar = Instantiate(BarEmptyLeft, HpBarPos, Quaternion.identity) as GameObject;
+        HpMidBar = Instantiate(BarEmptyMid, HpBarPos + new Vector3(0.4f, 0, 0), Quaternion.identity) as GameObject;
+        HpRightBar = Instantiate(BarEmptyRight, HpBarPos + new Vector3(0.8f, 0, 0), Quaternion.identity) as GameObject;
+        HpGreenBar = Instantiate(BarGreen, HpBarPos + new Vector3(0.4f, 0, 0), Quaternion.identity) as GameObject;
+        HpGreenBar.transform.localScale = new Vector3(HpBarMidScale, 0.5f, 1);
+
+        // Make the health bars follow the unit
+        HpLeftBar.transform.parent = transform;
+        HpMidBar.transform.parent = transform;
+        HpRightBar.transform.parent = transform;
+        HpGreenBar.transform.parent = transform;
+
+        updateHealthBars();
 	}
 	
 	void Update() {
