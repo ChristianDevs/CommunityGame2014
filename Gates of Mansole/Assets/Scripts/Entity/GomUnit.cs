@@ -88,10 +88,10 @@ public class GomUnit : GomObject {
 	}
 
 	void RewardShards(int val) {
-		if (faction == Faction.Good) {
+		if (faction == Faction.Player) {
 			Player.spiritShards += val;
 			Player.totalShards += val;
-			Debug.Log ("Player gained " + Player.spiritShards + " shards!");
+			Debug.Log ("Player gained " + Player.spiritShards + " spirit shards and " + Player.totalShards + " total shards.");
 		}
 	}
 

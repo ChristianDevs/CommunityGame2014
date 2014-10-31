@@ -162,12 +162,12 @@ public class World : MonoBehaviour {
                                 ut.created = true;
                                 if ((row < gridSize.row) && (col < gridSize.col)) {
                                     if (isPlayerAttacker == true) {
-                                        if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Bad)) {
+                                        if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
                                             tileContents[row][col].SendMessage("SetIdleDirection", defenderDir, SendMessageOptions.DontRequireReceiver);
                                             totalDefenders++;
                                         }
                                     } else {
-                                        if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Bad)) {
+                                        if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
                                             tileContents[row][col].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
                                             totalAttackers++;
                                         } else {
@@ -250,10 +250,10 @@ public class World : MonoBehaviour {
                     }
 
                     if (selectedUiUnit == unitsUIinst[0]) {
-                        SpawnUnit(bowUnit, (int)tile.row, (int)tile.col, GomObject.Faction.Good);
+                        SpawnUnit(bowUnit, (int)tile.row, (int)tile.col, GomObject.Faction.Player);
                         tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
                     } else {
-                        SpawnUnit(swordUnit, (int)tile.row, (int)tile.col, GomObject.Faction.Good);
+                        SpawnUnit(swordUnit, (int)tile.row, (int)tile.col, GomObject.Faction.Player);
                         tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
                     }
                 }
@@ -275,14 +275,14 @@ public class World : MonoBehaviour {
 					if (tileContents[row][col].GetComponent<GomUnit>().health <= 0) {
 						// Unit is defeated
                         if (isPlayerAttacker == true) {
-                            if (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Good) {
+                            if (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) {
                                 totalAttackers--;
                                 defeatedAttackers++;
                             } else {
                                 totalDefenders--;
                             }
                         } else {
-                            if (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Good) {
+                            if (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) {
                                 totalDefenders--;
                             } else {
                                 totalAttackers--;
@@ -298,9 +298,9 @@ public class World : MonoBehaviour {
                             AttackLeftRightNearestEnemy(row, col);
 						} else {
 							// Unit can move
-                            if (((tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Good) &&
+                            if (((tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) &&
                                 currentLevel.GetComponent<WaveList>().isPlayerAttacker) ||
-                                ((tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Bad) &&
+                                ((tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy) &&
                                 !currentLevel.GetComponent<WaveList>().isPlayerAttacker)) {
 
                                 if (curLevelAttackerDir == WaveList._direction.Right) {
@@ -450,7 +450,7 @@ public class World : MonoBehaviour {
             return false;
         }
 
-		if (faction == GomObject.Faction.Good) {
+		if (faction == GomObject.Faction.Player) {
 			if (unitPrefab.GetComponent<GomUnit>().cost > Player.spiritShards)
 				return false;
 			else {

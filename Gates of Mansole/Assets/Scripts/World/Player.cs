@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
-	const float CONVERSION_RATE = 0.2; // shards to orbs
+	const float CONVERSION_RATE = 0.2f; // shards to orbs
 
     static public int level1Complete;
     static public int level2Complete;
@@ -55,7 +55,7 @@ public class Player : MonoBehaviour {
     }
 
 	static public void convertShards() {
-		spiritOrbs = (int)Mathf.Floor (spiritOrbs * CONVERSION_RATE);
+		spiritOrbs = (int)Mathf.Floor (totalShards * CONVERSION_RATE);
 		PlayerPrefs.GetInt("spiritOrbs", spiritOrbs);
 		spiritShards = 0;
 		totalShards = 0;
