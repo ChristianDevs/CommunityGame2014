@@ -11,6 +11,8 @@ public class GomUnit : GomObject {
 	public Vector2 curTile;
 	public Vector2 moveTile;
     public Weapon weapon;
+	public int value; // in shards - for rewarding
+	public int cost; // in shards - for purchasing
 
     public GameObject BarEmptyLeft;
     public GameObject BarEmptyMid;
@@ -72,6 +74,7 @@ public class GomUnit : GomObject {
             health = 0;
             alive = false;
 			attacker.SendMessage("IncrementKills", SendMessageOptions.DontRequireReceiver);
+			attacker.SendMessage("RewardShards", value, SendMessageOptions.DontRequireReceiver);
         }
         updateHealthBars();
 	}
@@ -82,6 +85,14 @@ public class GomUnit : GomObject {
 	
 	void IncrementKills() {
 		kills++;
+	}
+
+	void RewardShards(int val) {
+		if (faction == Faction.Player) {
+			Player.spiritShards += val;
+			Player.totalShards += val;
+			Debug.Log ("Player gained " + Player.spiritShards + " spirit shards and " + Player.totalShards + " total shards.");
+		}
 	}
 
     void updateHealthBars() {
