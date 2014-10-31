@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-static public class Player {
+public class Player : MonoBehaviour {
 
     static public int level1Complete;
     static public int level2Complete;

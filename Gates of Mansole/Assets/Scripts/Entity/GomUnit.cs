@@ -35,7 +35,7 @@ public class GomUnit : GomObject {
 	private float attackTimer;
 	private float dieTimer;
 	private GomUnit attacker;
-    private UnitAnimation._direction idleDir;
+    public UnitAnimation._direction idleDir;
     private GameObject HpLeftBar;
     private GameObject HpMidBar;
     private GameObject HpRightBar;
