@@ -79,6 +79,7 @@ public class World : MonoBehaviour {
             currentLevel = null;
         }
 
+		Player.spiritShards = Player.totalShards = 10;
         letThroughAttackers = 0;
         defeatedAttackers = 0;
         defeatedDefenders = 0;
@@ -448,6 +449,15 @@ public class World : MonoBehaviour {
         if (tileContents[tileRow][tileCol] != null) {
             return false;
         }
+
+		if (faction == GomObject.Faction.Good) {
+			if (unitPrefab.GetComponent<GomUnit>().cost > Player.spiritShards)
+				return false;
+			else {
+				Player.spiritShards -= unitPrefab.GetComponent<GomUnit>().cost;
+				Debug.Log (Player.spiritShards + " shards left.");
+			}
+		}
 
         xTilePos = map.GetComponent<UiTiles>().lanes[tileRow].GetComponent<UiRow>().rowTiles[tileCol].transform.position.x;
         yTilePos = map.GetComponent<UiTiles>().lanes[tileRow].GetComponent<UiRow>().rowTiles[tileCol].transform.position.y;

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public abstract class GomObject : MonoBehaviour {
@@ -9,6 +9,6 @@ public abstract class GomObject : MonoBehaviour {
     public bool alive = true;
 
     // Objects will need to be classified by side - not just units... projectiles, traps, everything...
-    public enum Faction { Good, Bad };
+    public enum Faction { Player, Enemy };
     public Faction faction;
 }
