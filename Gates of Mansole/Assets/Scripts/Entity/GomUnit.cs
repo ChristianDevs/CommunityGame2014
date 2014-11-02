@@ -18,6 +18,7 @@ public class GomUnit : GomObject {
     public GameObject BarEmptyMid;
     public GameObject BarEmptyRight;
     public GameObject BarGreen;
+	public GameObject BarRed;
 	public int kills;
 	
 	public enum _state {
@@ -41,7 +42,8 @@ public class GomUnit : GomObject {
     private GameObject HpLeftBar;
     private GameObject HpMidBar;
     private GameObject HpRightBar;
-    private GameObject HpGreenBar;
+	private GameObject HpBarColor;
+    private GameObject HpBarFill;
     private Vector3 HpBarPos;
     private float HpBarMidScale;
 
@@ -73,8 +75,8 @@ public class GomUnit : GomObject {
         if (health <= 0) {
             health = 0;
             alive = false;
-			attacker.SendMessage("IncrementKills", SendMessageOptions.DontRequireReceiver);
-			attacker.SendMessage("RewardShards", value, SendMessageOptions.DontRequireReceiver);
+			attacker.IncrementKills();
+			attacker.RewardShards(value);
         }
         updateHealthBars();
 	}
@@ -102,8 +104,8 @@ public class GomUnit : GomObject {
         percentLeft = (float)health / (float)stats.maxHealth;
         BarXPos = HpLeftBar.transform.position.x + (((HpRightBar.transform.position.x - HpLeftBar.transform.position.x) * 0.5f) * percentLeft);
 
-        HpGreenBar.transform.position = new Vector3(BarXPos, HpMidBar.transform.position.y, HpMidBar.transform.position.z);
-        HpGreenBar.transform.localScale = new Vector3(HpBarMidScale * percentLeft, 0.5f, 1);
+        HpBarFill.transform.position = new Vector3(BarXPos, HpMidBar.transform.position.y, HpMidBar.transform.position.z);
+        HpBarFill.transform.localScale = new Vector3(HpBarMidScale * percentLeft, 0.5f, 1);
     }
 
 	public bool CanMove() {
@@ -112,7 +114,15 @@ public class GomUnit : GomObject {
 
     void SetFaction(GomObject.Faction newFaction) {
         faction = newFaction;
+		setBarFill ();
     }
+
+	void setBarFill() {
+		if (faction == Faction.Player)
+			HpBarColor = BarGreen;
+		else
+			HpBarColor = BarRed;
+	}
 
 	void SetCurrentTile(Vector2 tile) {
 		curTile = tile;
@@ -154,14 +164,14 @@ public class GomUnit : GomObject {
         HpLeftBar = Instantiate(BarEmptyLeft, HpBarPos, Quaternion.identity) as GameObject;
         HpMidBar = Instantiate(BarEmptyMid, HpBarPos + new Vector3(0.4f, 0, 0), Quaternion.identity) as GameObject;
         HpRightBar = Instantiate(BarEmptyRight, HpBarPos + new Vector3(0.8f, 0, 0), Quaternion.identity) as GameObject;
-        HpGreenBar = Instantiate(BarGreen, HpBarPos + new Vector3(0.4f, 0, 0), Quaternion.identity) as GameObject;
-        HpGreenBar.transform.localScale = new Vector3(HpBarMidScale, 0.5f, 1);
+        HpBarFill = Instantiate(HpBarColor, HpBarPos + new Vector3(0.4f, 0, 0), Quaternion.identity) as GameObject;
+        HpBarFill.transform.localScale = new Vector3(HpBarMidScale, 0.5f, 1);
 
         // Make the health bars follow the unit
         HpLeftBar.transform.parent = transform;
         HpMidBar.transform.parent = transform;
         HpRightBar.transform.parent = transform;
-        HpGreenBar.transform.parent = transform;
+        HpBarFill.transform.parent = transform;
 
         updateHealthBars();
 	}

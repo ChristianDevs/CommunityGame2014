@@ -80,6 +80,8 @@ public class World : MonoBehaviour {
         }
 
 		Player.spiritShards = Player.totalShards = 10;
+		bowUnit.GetComponent<GomUnit> ().stats.resetUnitStats ();
+		swordUnit.GetComponent<GomUnit> ().stats.resetUnitStats ();
         letThroughAttackers = 0;
         defeatedAttackers = 0;
         defeatedDefenders = 0;
@@ -333,6 +335,15 @@ public class World : MonoBehaviour {
                                     }
                                 }
 							}
+						}
+					}
+					// update unit stats
+					if (tileContents[row][col]) {
+						if (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) {
+							if (tileContents[row][col].name.Equals (swordUnit.name+"(Clone)"))
+								swordUnit.GetComponent<GomUnit>().stats.updateUnitStats(tileContents[row][col]);
+							else if (tileContents[row][col].name.Equals (bowUnit.name+"(Clone)"))
+								bowUnit.GetComponent<GomUnit>().stats.updateUnitStats(tileContents[row][col]);
 						}
 					}
 				}
