@@ -37,6 +37,8 @@ public class World : MonoBehaviour {
     private GameObject selectedUiUnit;
     private UiTile gridSize;
 
+	public float levelStartTime;
+
     int GetTotalWaveUnits(GameObject lvl) {
         int ret = 0;
 
@@ -110,6 +112,8 @@ public class World : MonoBehaviour {
 
         winMessage.SetActive(false);
         loseMessage.SetActive(false);
+
+		levelStartTime = Time.time;
 	}
 	
 	// Update is called once per frame
@@ -123,7 +127,7 @@ public class World : MonoBehaviour {
 
             // Go through each wave and see if it is time to start that wave
 			foreach (Wave wv in wl.waves) {
-				if (wv.waitTime < Time.time) {
+				if (wv.waitTime + levelStartTime < Time.time) {
 
                     // Go through each unit and see if it is time to spawn it
 					foreach(WaveUnit ut in wv.units) {
