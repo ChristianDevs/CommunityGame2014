@@ -40,7 +40,6 @@ public class GomUnit : GomObject {
 	private float dieTimer;
 	private GomUnit attacker;
     public UnitAnimation._direction idleDir;
-	private PropertyStats stats;
     private GameObject HpLeftBar;
     private GameObject HpMidBar;
     private GameObject HpRightBar;
@@ -52,8 +51,8 @@ public class GomUnit : GomObject {
     public void DamageMelee(PropertyStats stats) {
         // Whatever - arbitrary damage calculation
         int minDamage = Random.Range(0, 2);  // always a chance of doing something
-        int variation = Random.Range(0, stats.attack / 5 + 1);
-        int baseDamage = stats.attack - this.stats.defense;
+        int variation = Random.Range(0, getStats().attack / 5 + 1);
+		int baseDamage = getStats().attack - this.getStats().defense; Debug.Log ("damaged unit's attack is: " + this.getStats().attack);
         Damage(minDamage + baseDamage + variation);
     }
 
@@ -61,14 +60,14 @@ public class GomUnit : GomObject {
         // Whatever - arbitrary damage calculation
         int minDamage = Random.Range(0, 1);  // always a chance of doing something
         int variation = 0;
-        int baseDamage = stats.spirit - this.stats.armor;
+        int baseDamage = getStats().spirit - this.getStats().armor;
         Damage(minDamage + baseDamage + variation);
     }
 
     public void Heal(int amt) {
-        health += amt + this.stats.armor;  // Side effect of spiritual armor (I'm just making stuff up here...)
-        if (health > this.stats.maxHealth)
-            health = this.stats.maxHealth;
+        health += amt + this.getStats().armor;  // Side effect of spiritual armor (I'm just making stuff up here...)
+        if (health > this.getStats().maxHealth)
+            health = this.getStats().maxHealth;
     }
 
     void Damage(int amt) {
@@ -103,7 +102,7 @@ public class GomUnit : GomObject {
         float percentLeft;
         float BarXPos;
 
-        percentLeft = (float)health / (float)stats.maxHealth;
+        percentLeft = (float)health / (float)getStats().maxHealth;
         BarXPos = HpLeftBar.transform.position.x + (((HpRightBar.transform.position.x - HpLeftBar.transform.position.x) * 0.5f) * percentLeft);
 
         HpBarFill.transform.position = new Vector3(BarXPos, HpMidBar.transform.position.y, HpMidBar.transform.position.z);
@@ -117,27 +116,21 @@ public class GomUnit : GomObject {
     void SetFaction(GomObject.Faction newFaction) {
         faction = newFaction;
 
-		setStats ();
-
 		setBarColor ();
     }
-
-	void setStats() {
-		if (faction == Faction.Player)
-			stats = playerStats;
-		else
-			stats = enemyStats;
-	}
-
-	public PropertyStats getStats() {
-		return stats;
-	}
-
+	
 	void setBarColor() {
 		if (faction == Faction.Player)
 			HpBarColor = BarGreen;
 		else
 			HpBarColor = BarRed;
+	}
+
+	public PropertyStats getStats() {
+		if (faction == Faction.Player)
+			return playerStats;
+		else
+			return enemyStats;
 	}
 
 	void SetCurrentTile(Vector2 tile) {
