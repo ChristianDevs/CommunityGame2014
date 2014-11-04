@@ -11,6 +11,7 @@ public class World : MonoBehaviour {
     public GameObject bowSquare;
     public GameObject swordUI;
     public GameObject swordSquare;
+	public GameObject unitUI;
     public GameObject map;
 	public GameObject[] Levels;
     public GameObject winMessage;
@@ -98,9 +99,23 @@ public class World : MonoBehaviour {
         if (curLevelAttackerDir == WaveList._direction.Left) {
             attackerDir = UnitAnimation._direction.DirLeft;
             defenderDir = UnitAnimation._direction.DirRight;
+			if(!isPlayerAttacker){
+				//Switch side Unit UI is on
+				Transform t = unitUI.GetComponent<Transform>();
+				t.position=new Vector3(-13,0,0);
+				t = map.GetComponent<Transform>();
+				t.position=new Vector3(-5,-4,0);
+			}
         } else if (curLevelAttackerDir == WaveList._direction.Right) {
             attackerDir = UnitAnimation._direction.DirRight;
             defenderDir = UnitAnimation._direction.DirLeft;
+			if(isPlayerAttacker){
+				//Switch side Unit UI is on
+				Transform t = unitUI.GetComponent<Transform>();
+				t.position=new Vector3(-13,0,0);
+				t = map.GetComponent<Transform>();
+				t.position=new Vector3(-5,-4,0);
+			}
         }
 
         unitsUIinst = new List<GameObject>();
