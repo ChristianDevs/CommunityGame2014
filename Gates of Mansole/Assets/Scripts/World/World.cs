@@ -37,6 +37,8 @@ public class World : MonoBehaviour {
     private GameObject selectedUiUnit;
     private UiTile gridSize;
 
+	public float levelStartTime;
+
     int GetTotalWaveUnits(GameObject lvl) {
         int ret = 0;
 
@@ -80,8 +82,8 @@ public class World : MonoBehaviour {
         }
 
 		Player.spiritShards = Player.totalShards = 10;
-		bowUnit.GetComponent<GomUnit> ().stats.resetUnitStats ();
-		swordUnit.GetComponent<GomUnit> ().stats.resetUnitStats ();
+		bowUnit.GetComponent<GomUnit> ().getStats ().resetUnitStats ();
+		swordUnit.GetComponent<GomUnit> ().getStats ().resetUnitStats ();
         letThroughAttackers = 0;
         defeatedAttackers = 0;
         defeatedDefenders = 0;
@@ -110,6 +112,8 @@ public class World : MonoBehaviour {
 
         winMessage.SetActive(false);
         loseMessage.SetActive(false);
+
+		levelStartTime = Time.time;
 	}
 	
 	// Update is called once per frame
@@ -123,7 +127,7 @@ public class World : MonoBehaviour {
 
             // Go through each wave and see if it is time to start that wave
 			foreach (Wave wv in wl.waves) {
-				if (wv.waitTime < Time.time) {
+				if (wv.waitTime + levelStartTime < Time.time) {
 
                     // Go through each unit and see if it is time to spawn it
 					foreach(WaveUnit ut in wv.units) {
@@ -252,11 +256,11 @@ public class World : MonoBehaviour {
                     }
 
                     if (selectedUiUnit == unitsUIinst[0]) {
-                        SpawnUnit(bowUnit, (int)tile.row, (int)tile.col, GomObject.Faction.Player);
-                        tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
+                        if (SpawnUnit(bowUnit, (int)tile.row, (int)tile.col, GomObject.Faction.Player))
+                        	tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
                     } else {
-                        SpawnUnit(swordUnit, (int)tile.row, (int)tile.col, GomObject.Faction.Player);
-                        tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
+                        if (SpawnUnit(swordUnit, (int)tile.row, (int)tile.col, GomObject.Faction.Player))
+                        	tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
                     }
                 }
 
@@ -339,12 +343,10 @@ public class World : MonoBehaviour {
 					}
 					// update unit stats
 					if (tileContents[row][col]) {
-						if (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) {
-							if (tileContents[row][col].name.Equals (swordUnit.name+"(Clone)"))
-								swordUnit.GetComponent<GomUnit>().stats.updateUnitStats(tileContents[row][col]);
-							else if (tileContents[row][col].name.Equals (bowUnit.name+"(Clone)"))
-								bowUnit.GetComponent<GomUnit>().stats.updateUnitStats(tileContents[row][col]);
-						}
+						if (tileContents[row][col].name.Equals (swordUnit.name+"(Clone)"))
+							swordUnit.GetComponent<GomUnit>().getStats ().updateUnitStats(tileContents[row][col]);
+						else if (tileContents[row][col].name.Equals (bowUnit.name+"(Clone)"))
+							bowUnit.GetComponent<GomUnit>().getStats ().updateUnitStats(tileContents[row][col]);
 					}
 				}
 			}
@@ -416,7 +418,7 @@ public class World : MonoBehaviour {
 						projectile = Instantiate(attacker.weapon.projectile, attacker.transform.position, Quaternion.identity) as GameObject;
 						projectile.SendMessage("SetTarget", tileContents[row][i], SendMessageOptions.DontRequireReceiver);
 					} else {
-						tileContents[row][i].SendMessage("DamageMelee", attacker.stats, SendMessageOptions.DontRequireReceiver);
+						tileContents[row][i].SendMessage("DamageMelee", attacker.getStats(), SendMessageOptions.DontRequireReceiver);
 					}
 					
 					return;
@@ -442,7 +444,7 @@ public class World : MonoBehaviour {
 						projectile.SendMessage("SetTarget", tileContents[row][i], SendMessageOptions.DontRequireReceiver);
                         projectile.transform.Rotate(new Vector3(0, 0, 180));
 					} else {
-						tileContents[row][i].SendMessage("DamageMelee", attacker.stats, SendMessageOptions.DontRequireReceiver);
+						tileContents[row][i].SendMessage("DamageMelee", attacker.getStats(), SendMessageOptions.DontRequireReceiver);
 					}
 					
 					return;
@@ -458,12 +460,15 @@ public class World : MonoBehaviour {
 
         // 2 units cannot occupy the same tile
         if (tileContents[tileRow][tileCol] != null) {
+			Debug.Log ("another unit is already occupying this tile!");
             return false;
         }
 
 		if (faction == GomObject.Faction.Player) {
-			if (unitPrefab.GetComponent<GomUnit>().cost > Player.spiritShards)
+			if (unitPrefab.GetComponent<GomUnit>().cost > Player.spiritShards) {
+				Debug.Log ("don't have enough Spirit Shards!");
 				return false;
+			}
 			else {
 				Player.spiritShards -= unitPrefab.GetComponent<GomUnit>().cost;
 				Debug.Log (Player.spiritShards + " shards left.");
