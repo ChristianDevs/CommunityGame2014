@@ -4,7 +4,8 @@ using System.Collections;
 public class GomUnit : GomObject {
 
     public string entityName;
-    public PropertyStats stats;
+    public PropertyStats playerStats;
+	public PropertyStats enemyStats;
     public PropertyExp exp;
     public int health;
 	public float speed;
@@ -39,6 +40,7 @@ public class GomUnit : GomObject {
 	private float dieTimer;
 	private GomUnit attacker;
     public UnitAnimation._direction idleDir;
+	private PropertyStats stats;
     private GameObject HpLeftBar;
     private GameObject HpMidBar;
     private GameObject HpRightBar;
@@ -93,7 +95,7 @@ public class GomUnit : GomObject {
 		if (faction == Faction.Player) {
 			Player.spiritShards += val;
 			Player.totalShards += val;
-			Debug.Log ("Player gained " + Player.spiritShards + " spirit shards and " + Player.totalShards + " total shards.");
+			Debug.Log ("Player now has " + Player.spiritShards + " spirit shards and " + Player.totalShards + " total shards.");
 		}
 	}
 
@@ -114,10 +116,24 @@ public class GomUnit : GomObject {
 
     void SetFaction(GomObject.Faction newFaction) {
         faction = newFaction;
-		setBarFill ();
+
+		setStats ();
+
+		setBarColor ();
     }
 
-	void setBarFill() {
+	void setStats() {
+		if (faction == Faction.Player)
+			stats = playerStats;
+		else
+			stats = enemyStats;
+	}
+
+	public PropertyStats getStats() {
+		return stats;
+	}
+
+	void setBarColor() {
 		if (faction == Faction.Player)
 			HpBarColor = BarGreen;
 		else

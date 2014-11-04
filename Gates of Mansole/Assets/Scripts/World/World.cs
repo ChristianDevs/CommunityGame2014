@@ -82,8 +82,8 @@ public class World : MonoBehaviour {
         }
 
 		Player.spiritShards = Player.totalShards = 10;
-		bowUnit.GetComponent<GomUnit> ().stats.resetUnitStats ();
-		swordUnit.GetComponent<GomUnit> ().stats.resetUnitStats ();
+		bowUnit.GetComponent<GomUnit> ().getStats().resetUnitStats ();
+		swordUnit.GetComponent<GomUnit> ().getStats().resetUnitStats ();
         letThroughAttackers = 0;
         defeatedAttackers = 0;
         defeatedDefenders = 0;
@@ -343,12 +343,10 @@ public class World : MonoBehaviour {
 					}
 					// update unit stats
 					if (tileContents[row][col]) {
-						if (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) {
-							if (tileContents[row][col].name.Equals (swordUnit.name+"(Clone)"))
-								swordUnit.GetComponent<GomUnit>().stats.updateUnitStats(tileContents[row][col]);
-							else if (tileContents[row][col].name.Equals (bowUnit.name+"(Clone)"))
-								bowUnit.GetComponent<GomUnit>().stats.updateUnitStats(tileContents[row][col]);
-						}
+						if (tileContents[row][col].name.Equals (swordUnit.name+"(Clone)"))
+							swordUnit.GetComponent<GomUnit>().getStats().updateUnitStats(tileContents[row][col]);
+						else if (tileContents[row][col].name.Equals (bowUnit.name+"(Clone)"))
+							bowUnit.GetComponent<GomUnit>().getStats().updateUnitStats(tileContents[row][col]);
 					}
 				}
 			}
@@ -420,7 +418,7 @@ public class World : MonoBehaviour {
 						projectile = Instantiate(attacker.weapon.projectile, attacker.transform.position, Quaternion.identity) as GameObject;
 						projectile.SendMessage("SetTarget", tileContents[row][i], SendMessageOptions.DontRequireReceiver);
 					} else {
-						tileContents[row][i].SendMessage("DamageMelee", attacker.stats, SendMessageOptions.DontRequireReceiver);
+						tileContents[row][i].SendMessage("DamageMelee", attacker.getStats(), SendMessageOptions.DontRequireReceiver);
 					}
 					
 					return;
@@ -446,7 +444,7 @@ public class World : MonoBehaviour {
 						projectile.SendMessage("SetTarget", tileContents[row][i], SendMessageOptions.DontRequireReceiver);
                         projectile.transform.Rotate(new Vector3(0, 0, 180));
 					} else {
-						tileContents[row][i].SendMessage("DamageMelee", attacker.stats, SendMessageOptions.DontRequireReceiver);
+						tileContents[row][i].SendMessage("DamageMelee", attacker.getStats(), SendMessageOptions.DontRequireReceiver);
 					}
 					
 					return;

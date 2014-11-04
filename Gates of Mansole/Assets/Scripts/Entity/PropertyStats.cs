@@ -21,7 +21,7 @@ public class PropertyStats {
 		level++;
 		attack += 5;
 		maxHealth += 10;
-
+		Debug.Log (unit + " type units upgraded to level " + level + "! spirit shards remaining: " + Player.spiritShards);
 	}
 	
 	public void resetUnitStats() {
@@ -31,7 +31,7 @@ public class PropertyStats {
 	}
 
 	public void updateUnitStats(GameObject unit) {
-		PropertyStats unitStats = unit.GetComponent<GomUnit> ().stats;
+		PropertyStats unitStats = unit.GetComponent<GomUnit> ().getStats();
 		unitStats.speed = speed;
 		unitStats.attack = attack;
 		unitStats.defense = defense;
