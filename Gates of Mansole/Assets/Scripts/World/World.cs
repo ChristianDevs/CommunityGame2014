@@ -256,11 +256,11 @@ public class World : MonoBehaviour {
                     }
 
                     if (selectedUiUnit == unitsUIinst[0]) {
-                        SpawnUnit(bowUnit, (int)tile.row, (int)tile.col, GomObject.Faction.Player);
-                        tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
+                        if (SpawnUnit(bowUnit, (int)tile.row, (int)tile.col, GomObject.Faction.Player))
+                        	tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
                     } else {
-                        SpawnUnit(swordUnit, (int)tile.row, (int)tile.col, GomObject.Faction.Player);
-                        tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
+                        if (SpawnUnit(swordUnit, (int)tile.row, (int)tile.col, GomObject.Faction.Player))
+                        	tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
                     }
                 }
 
@@ -460,12 +460,15 @@ public class World : MonoBehaviour {
 
         // 2 units cannot occupy the same tile
         if (tileContents[tileRow][tileCol] != null) {
+			Debug.Log ("another unit is already occupying this tile!");
             return false;
         }
 
 		if (faction == GomObject.Faction.Player) {
-			if (unitPrefab.GetComponent<GomUnit>().cost > Player.spiritShards)
+			if (unitPrefab.GetComponent<GomUnit>().cost > Player.spiritShards) {
+				Debug.Log ("don't have enough Spirit Shards!");
 				return false;
+			}
 			else {
 				Player.spiritShards -= unitPrefab.GetComponent<GomUnit>().cost;
 				Debug.Log (Player.spiritShards + " shards left.");
