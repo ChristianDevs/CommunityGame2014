@@ -4,7 +4,8 @@ using System.Collections;
 public class GomUnit : GomObject {
 
     public string entityName;
-    public PropertyStats stats;
+    public PropertyStats playerStats;
+	public PropertyStats enemyStats;
     public PropertyExp exp;
     public int health;
 	public float speed;
@@ -50,8 +51,8 @@ public class GomUnit : GomObject {
     public void DamageMelee(PropertyStats stats) {
         // Whatever - arbitrary damage calculation
         int minDamage = Random.Range(0, 2);  // always a chance of doing something
-        int variation = Random.Range(0, stats.attack / 5 + 1);
-        int baseDamage = stats.attack - this.stats.defense;
+        int variation = Random.Range(0, getStats().attack / 5 + 1);
+		int baseDamage = getStats().attack - this.getStats().defense; Debug.Log ("damaged unit's attack is: " + this.getStats().attack);
         Damage(minDamage + baseDamage + variation);
     }
 
@@ -59,14 +60,14 @@ public class GomUnit : GomObject {
         // Whatever - arbitrary damage calculation
         int minDamage = Random.Range(0, 1);  // always a chance of doing something
         int variation = 0;
-        int baseDamage = stats.spirit - this.stats.armor;
+        int baseDamage = getStats().spirit - this.getStats().armor;
         Damage(minDamage + baseDamage + variation);
     }
 
     public void Heal(int amt) {
-        health += amt + this.stats.armor;  // Side effect of spiritual armor (I'm just making stuff up here...)
-        if (health > this.stats.maxHealth)
-            health = this.stats.maxHealth;
+        health += amt + this.getStats().armor;  // Side effect of spiritual armor (I'm just making stuff up here...)
+        if (health > this.getStats().maxHealth)
+            health = this.getStats().maxHealth;
     }
 
     void Damage(int amt) {
@@ -93,7 +94,7 @@ public class GomUnit : GomObject {
 		if (faction == Faction.Player) {
 			Player.spiritShards += val;
 			Player.totalShards += val;
-			Debug.Log ("Player gained " + Player.spiritShards + " spirit shards and " + Player.totalShards + " total shards.");
+			Debug.Log ("Player now has " + Player.spiritShards + " spirit shards and " + Player.totalShards + " total shards.");
 		}
 	}
 
@@ -101,7 +102,7 @@ public class GomUnit : GomObject {
         float percentLeft;
         float BarXPos;
 
-        percentLeft = (float)health / (float)stats.maxHealth;
+        percentLeft = (float)health / (float)getStats().maxHealth;
         BarXPos = HpLeftBar.transform.position.x + (((HpRightBar.transform.position.x - HpLeftBar.transform.position.x) * 0.5f) * percentLeft);
 
         HpBarFill.transform.position = new Vector3(BarXPos, HpMidBar.transform.position.y, HpMidBar.transform.position.z);
@@ -114,14 +115,22 @@ public class GomUnit : GomObject {
 
     void SetFaction(GomObject.Faction newFaction) {
         faction = newFaction;
-		setBarFill ();
-    }
 
-	void setBarFill() {
+		setBarColor ();
+    }
+	
+	void setBarColor() {
 		if (faction == Faction.Player)
 			HpBarColor = BarGreen;
 		else
 			HpBarColor = BarRed;
+	}
+
+	public PropertyStats getStats() {
+		if (faction == Faction.Player)
+			return playerStats;
+		else
+			return enemyStats;
 	}
 
 	void SetCurrentTile(Vector2 tile) {

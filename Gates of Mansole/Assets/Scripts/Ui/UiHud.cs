@@ -38,7 +38,7 @@ public class UiHud : MonoBehaviour {
 		}
 
 		if (unit) {
-			PropertyStats unitStats = unit.GetComponent<GomUnit>().stats;
+			PropertyStats unitStats = unit.GetComponent<GomUnit>().getStats();
 			if (Player.spiritShards >= unitStats.upgradeCost) {
 				if ((unitStats.level < unitStats.maxLevel)) {
 					unitStats.upgradeUnit(unit.GetComponent<GomUnit>().entityName); 
