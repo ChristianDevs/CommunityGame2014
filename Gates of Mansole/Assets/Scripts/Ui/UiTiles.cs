@@ -3,7 +3,6 @@ using System.Collections;
 
 public class UiTiles : MonoBehaviour {
 
-    public GameObject world;
     public GameObject[] lanes;
 
 	private bool isTilePress;
