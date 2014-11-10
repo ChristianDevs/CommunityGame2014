@@ -11,7 +11,6 @@ public class World : MonoBehaviour {
     public GameObject bowSquare;
     public GameObject swordUI;
     public GameObject swordSquare;
-	public GameObject unitUI;
     public GameObject map;
 	public GameObject[] Levels;
     public GameObject winMessage;
@@ -99,23 +98,9 @@ public class World : MonoBehaviour {
         if (curLevelAttackerDir == WaveList._direction.Left) {
             attackerDir = UnitAnimation._direction.DirLeft;
             defenderDir = UnitAnimation._direction.DirRight;
-			if(!isPlayerAttacker){
-				//Switch side Unit UI is on
-				Transform t = unitUI.GetComponent<Transform>();
-				t.position=new Vector3(-13,0,0);
-				t = map.GetComponent<Transform>();
-				t.position=new Vector3(-5,-4,0);
-			}
         } else if (curLevelAttackerDir == WaveList._direction.Right) {
             attackerDir = UnitAnimation._direction.DirRight;
             defenderDir = UnitAnimation._direction.DirLeft;
-			if(isPlayerAttacker){
-				//Switch side Unit UI is on
-				Transform t = unitUI.GetComponent<Transform>();
-				t.position=new Vector3(-13,0,0);
-				t = map.GetComponent<Transform>();
-				t.position=new Vector3(-5,-4,0);
-			}
         }
 
         unitsUIinst = new List<GameObject>();
@@ -249,7 +234,8 @@ public class World : MonoBehaviour {
                 tile = map.GetComponent<UiTiles>().GetMouseOverTile();
 
                 if ((tile.row != -1) && (tile.col != -1)) {
-                    newPos = new Vector3(map.transform.position.x + (float)tile.col + 0.5f, map.transform.position.y + (float)tile.row + 0.5f);
+                    newPos = new Vector3(map.transform.position.x + ((float)tile.col * map.transform.localScale.x),
+                                         map.transform.position.y + ((float)tile.row * map.transform.localScale.y) + TileUnitOffset);
                     selectedUiUnit.transform.position = newPos;
                 }
             }
@@ -493,13 +479,14 @@ public class World : MonoBehaviour {
         xTilePos = map.GetComponent<UiTiles>().lanes[tileRow].GetComponent<UiRow>().rowTiles[tileCol].transform.position.x;
         yTilePos = map.GetComponent<UiTiles>().lanes[tileRow].GetComponent<UiRow>().rowTiles[tileCol].transform.position.y;
 
-        worldPos.x = xTilePos + TileUnitOffset;
+        worldPos.x = xTilePos;
         worldPos.y = yTilePos + TileUnitOffset;
         worldPos.z = 0;
 
         tileContents[tileRow][tileCol] = Instantiate(unitPrefab, worldPos, Quaternion.identity) as GameObject;
         tileContents[tileRow][tileCol].SendMessage("SetCurrentTile", new Vector2(tileCol, tileRow), SendMessageOptions.DontRequireReceiver);
         tileContents[tileRow][tileCol].SendMessage("SetFaction", faction, SendMessageOptions.DontRequireReceiver);
+        tileContents[tileRow][tileCol].SendMessage("SetMoveXScale", map.transform.localScale.x, SendMessageOptions.DontRequireReceiver);
 
         return true;
     }

@@ -47,6 +47,7 @@ public class GomUnit : GomObject {
     private GameObject HpBarFill;
     private Vector3 HpBarPos;
     private float HpBarMidScale;
+    private float moveXScale;
 
     public void DamageMelee(PropertyStats stats) {
         // Whatever - arbitrary damage calculation
@@ -137,6 +138,10 @@ public class GomUnit : GomObject {
 		curTile = tile;
 	}
 
+    void SetMoveXScale(float newScale) {
+        moveXScale = newScale;
+    }
+
     void SetIdleDirection(UnitAnimation._direction dir) {
         idleDir = dir;
 
@@ -166,15 +171,15 @@ public class GomUnit : GomObject {
 		State = _state.Idle;
 		NextState = State;
 
-        HpBarPos = new Vector3(transform.position.x - 0.5f, transform.position.y + 0.4f);
+        HpBarPos = new Vector3(transform.position.x - 0.4f, transform.position.y + 0.4f);
         HpBarMidScale = 7.5f;
 
         // Instantiate the health bars
         HpLeftBar = Instantiate(BarEmptyLeft, HpBarPos, Quaternion.identity) as GameObject;
-        HpMidBar = Instantiate(BarEmptyMid, HpBarPos + new Vector3(0.4f, 0, 0), Quaternion.identity) as GameObject;
-        HpRightBar = Instantiate(BarEmptyRight, HpBarPos + new Vector3(0.8f, 0, 0), Quaternion.identity) as GameObject;
-        HpBarFill = Instantiate(HpBarColor, HpBarPos + new Vector3(0.4f, 0, 0), Quaternion.identity) as GameObject;
-        HpBarFill.transform.localScale = new Vector3(HpBarMidScale, 0.5f, 1);
+        HpMidBar = Instantiate(BarEmptyMid, HpBarPos + new Vector3(0.4f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
+        HpRightBar = Instantiate(BarEmptyRight, HpBarPos + new Vector3(0.8f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
+        HpBarFill = Instantiate(HpBarColor, HpBarPos + new Vector3(0.4f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
+        HpBarFill.transform.localScale = new Vector3(HpBarMidScale, 0.5f * transform.localScale.x, 1);
 
         // Make the health bars follow the unit
         HpLeftBar.transform.parent = transform;
@@ -248,9 +253,9 @@ public class GomUnit : GomObject {
 		if ((tileXDelta == 0) && (tileYDelta == 0)) {
 			return;
 		}
-		
-		deltaX = (float)tileXDelta;
-		deltaY = (float)tileYDelta;
+
+        deltaX = (float)tileXDelta * moveXScale;
+        deltaY = (float)tileYDelta * moveXScale;
 		
 		if (Mathf.Abs(tileXDelta) > Mathf.Abs(tileYDelta)) {
 			if (tileXDelta > 0) {

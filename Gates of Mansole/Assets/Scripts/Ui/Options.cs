@@ -2,10 +2,8 @@
 using System.Collections;
 
 public class Options : MonoBehaviour {
-	public GameObject optionsObject;
 	public GameObject world;
 	public GameObject menu;
-	public string sceneName;
 	// Use this for initialization
 	void Start () {
 	
@@ -22,7 +20,7 @@ public class Options : MonoBehaviour {
 			menu.SetActive(false);
 			break;
 		case "Restart":
-			Application.LoadLevel(sceneName);
+			Application.LoadLevel(Application.loadedLevelName);
 			break;
 		case "Quit":
 			Application.LoadLevel("LevelSelect");
