@@ -1,12 +1,9 @@
 ﻿<Properties GitUserInfo="UsingMD">
   <AuthorInfo Name="brandav" Email="bdmccowan@gmail.com" Copyright="Brandon" Company="" Trademark="" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Entity\GomUnit.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Ui\UILayer.cs">
     <Files>
-      <File FileName="Assets\Scripts\Entity\GomUnit.cs" Line="51" Column="51" />
-      <File FileName="Assets\Scripts\Entity\PropertyStats.cs" Line="29" Column="13" />
-      <File FileName="Assets\Scripts\Ui\UiHud.cs" Line="42" Column="55" />
-      <File FileName="Assets\Scripts\World\World.cs" Line="347" Column="8" />
+      <File FileName="Assets\Scripts\Ui\UILayer.cs" Line="11" Column="51" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
