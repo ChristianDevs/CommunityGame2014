@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -37,7 +37,8 @@ public class World : MonoBehaviour {
     private GameObject selectedUiUnit;
     private UiTile gridSize;
 
-	public float levelStartTime;
+	private float levelStartTime;
+	public GameObject unitInfoUi;
 
     int GetTotalWaveUnits(GameObject lvl) {
         int ret = 0;
@@ -240,6 +241,16 @@ public class World : MonoBehaviour {
                 }
             }
 
+			//Send unit info
+			if (Input.GetMouseButtonDown(0)) {
+				UiTile tile;
+				
+				tile = map.GetComponent<UiTiles>().GetMouseOverTile();
+				
+				if ((tile.col < gridSize.col) && (tile.row < gridSize.row) && (tile.col >= 0) && (tile.row >= 0)) {
+					unitInfoUi.SendMessage("SelectUnit",tileContents[(int)tile.row][(int)tile.col],SendMessageOptions.DontRequireReceiver);
+				}
+			}
             if (Input.GetMouseButtonUp(0) && (selectedUiUnit != null)) {
                 UiTile tile;
 
