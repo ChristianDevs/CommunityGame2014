@@ -3,6 +3,7 @@ using System.Collections;
 
 public class UiUnitSelect : MonoBehaviour {
 	
+	public GameObject nameText;
 	public GameObject factionText;
 	public GameObject expText;
 	public GameObject attackText;
@@ -22,6 +23,7 @@ public class UiUnitSelect : MonoBehaviour {
 
 	void SelectUnit(GameObject go){
 		GomUnit gom = go.GetComponent<GomUnit>();
+		nameText.GetComponent<TextMesh> ().text = "Name: ";//+gom.name;
 		factionText.GetComponent<TextMesh>().text = "Faction: "+gom.faction.ToString();
 		expText.GetComponent<TextMesh>().text = "Level: "+gom.exp.level;
 		attackText.GetComponent<TextMesh>().text = "x"+gom.getStats().attack;
