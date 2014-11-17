@@ -1,6 +1,31 @@
 fileFormatVersion: 2
 guid: 3a3a88dd35e5d02498897b47c4527b04
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: HEAD_plate_armor_helmet_0
+    21300002: HEAD_plate_armor_helmet_1
+    21300004: HEAD_plate_armor_helmet_2
+    21300006: HEAD_plate_armor_helmet_3
+    21300008: HEAD_plate_armor_helmet_4
+    21300010: HEAD_plate_armor_helmet_5
+    21300012: HEAD_plate_armor_helmet_6
+    21300014: HEAD_plate_armor_helmet_7
+    21300016: HEAD_plate_armor_helmet_8
+    21300018: HEAD_plate_armor_helmet_9
+    21300020: HEAD_plate_armor_helmet_10
+    21300022: HEAD_plate_armor_helmet_11
+    21300024: HEAD_plate_armor_helmet_12
+    21300026: HEAD_plate_armor_helmet_13
+    21300028: HEAD_plate_armor_helmet_14
+    21300030: HEAD_plate_armor_helmet_15
+    21300032: HEAD_plate_armor_helmet_16
+    21300034: HEAD_plate_armor_helmet_17
+    21300036: HEAD_plate_armor_helmet_18
+    21300038: HEAD_plate_armor_helmet_19
+    21300040: HEAD_plate_armor_helmet_20
+    21300042: HEAD_plate_armor_helmet_21
+    21300044: HEAD_plate_armor_helmet_22
+    21300046: HEAD_plate_armor_helmet_23
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +80,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_1
       rect:
         serializedVersion: 2
@@ -63,6 +90,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_2
       rect:
         serializedVersion: 2
@@ -72,6 +100,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_3
       rect:
         serializedVersion: 2
@@ -81,6 +110,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_4
       rect:
         serializedVersion: 2
@@ -90,6 +120,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_5
       rect:
         serializedVersion: 2
@@ -99,6 +130,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_6
       rect:
         serializedVersion: 2
@@ -108,6 +140,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_7
       rect:
         serializedVersion: 2
@@ -117,6 +150,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_8
       rect:
         serializedVersion: 2
@@ -126,6 +160,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_9
       rect:
         serializedVersion: 2
@@ -135,6 +170,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_10
       rect:
         serializedVersion: 2
@@ -144,6 +180,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_11
       rect:
         serializedVersion: 2
@@ -153,6 +190,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_12
       rect:
         serializedVersion: 2
@@ -162,6 +200,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_13
       rect:
         serializedVersion: 2
@@ -171,6 +210,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_14
       rect:
         serializedVersion: 2
@@ -180,6 +220,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_15
       rect:
         serializedVersion: 2
@@ -189,6 +230,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_16
       rect:
         serializedVersion: 2
@@ -198,6 +240,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_17
       rect:
         serializedVersion: 2
@@ -207,6 +250,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_18
       rect:
         serializedVersion: 2
@@ -216,6 +260,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_19
       rect:
         serializedVersion: 2
@@ -225,6 +270,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_20
       rect:
         serializedVersion: 2
@@ -234,6 +280,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_21
       rect:
         serializedVersion: 2
@@ -243,6 +290,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_22
       rect:
         serializedVersion: 2
@@ -252,6 +300,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HEAD_plate_armor_helmet_23
       rect:
         serializedVersion: 2
@@ -261,5 +310,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

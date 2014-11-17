@@ -7,8 +7,6 @@ Direction (int)
 Action (int)
 0 = Idle
 1 = Walk
-2 = Slash
-3 = Bow
-4 = Die
+2 = Slash3 = Die
 
 ChangeAnim (trigger)

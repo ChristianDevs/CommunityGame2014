@@ -1,6 +1,59 @@
 fileFormatVersion: 2
 guid: 7ccac57eff2bcf14e85e7dae109d0e5b
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: WEAPON_bow_0
+    21300002: WEAPON_bow_1
+    21300004: WEAPON_bow_2
+    21300006: WEAPON_bow_3
+    21300008: WEAPON_bow_4
+    21300010: WEAPON_bow_5
+    21300012: WEAPON_bow_6
+    21300014: WEAPON_bow_7
+    21300016: WEAPON_bow_8
+    21300018: WEAPON_bow_9
+    21300020: WEAPON_bow_10
+    21300022: WEAPON_bow_11
+    21300024: WEAPON_bow_12
+    21300026: WEAPON_bow_13
+    21300028: WEAPON_bow_14
+    21300030: WEAPON_bow_15
+    21300032: WEAPON_bow_16
+    21300034: WEAPON_bow_17
+    21300036: WEAPON_bow_18
+    21300038: WEAPON_bow_19
+    21300040: WEAPON_bow_20
+    21300042: WEAPON_bow_21
+    21300044: WEAPON_bow_22
+    21300046: WEAPON_bow_23
+    21300048: WEAPON_bow_24
+    21300050: WEAPON_bow_25
+    21300052: WEAPON_bow_26
+    21300054: WEAPON_bow_27
+    21300056: WEAPON_bow_28
+    21300058: WEAPON_bow_29
+    21300060: WEAPON_bow_30
+    21300062: WEAPON_bow_31
+    21300064: WEAPON_bow_32
+    21300066: WEAPON_bow_33
+    21300068: WEAPON_bow_34
+    21300070: WEAPON_bow_35
+    21300072: WEAPON_bow_36
+    21300074: WEAPON_bow_37
+    21300076: WEAPON_bow_38
+    21300078: WEAPON_bow_39
+    21300080: WEAPON_bow_40
+    21300082: WEAPON_bow_41
+    21300084: WEAPON_bow_42
+    21300086: WEAPON_bow_43
+    21300088: WEAPON_bow_44
+    21300090: WEAPON_bow_45
+    21300092: WEAPON_bow_46
+    21300094: WEAPON_bow_47
+    21300096: WEAPON_bow_48
+    21300098: WEAPON_bow_49
+    21300100: WEAPON_bow_50
+    21300102: WEAPON_bow_51
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +88,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +108,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_1
       rect:
         serializedVersion: 2
@@ -63,6 +118,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_2
       rect:
         serializedVersion: 2
@@ -72,6 +128,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_3
       rect:
         serializedVersion: 2
@@ -81,6 +138,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_4
       rect:
         serializedVersion: 2
@@ -90,6 +148,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_5
       rect:
         serializedVersion: 2
@@ -99,6 +158,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_6
       rect:
         serializedVersion: 2
@@ -108,6 +168,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_7
       rect:
         serializedVersion: 2
@@ -117,6 +178,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_8
       rect:
         serializedVersion: 2
@@ -126,6 +188,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_9
       rect:
         serializedVersion: 2
@@ -135,6 +198,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_10
       rect:
         serializedVersion: 2
@@ -144,6 +208,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_11
       rect:
         serializedVersion: 2
@@ -153,6 +218,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_12
       rect:
         serializedVersion: 2
@@ -162,6 +228,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_13
       rect:
         serializedVersion: 2
@@ -171,6 +238,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_14
       rect:
         serializedVersion: 2
@@ -180,6 +248,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_15
       rect:
         serializedVersion: 2
@@ -189,6 +258,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_16
       rect:
         serializedVersion: 2
@@ -198,6 +268,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_17
       rect:
         serializedVersion: 2
@@ -207,6 +278,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_18
       rect:
         serializedVersion: 2
@@ -216,6 +288,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_19
       rect:
         serializedVersion: 2
@@ -225,6 +298,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_20
       rect:
         serializedVersion: 2
@@ -234,6 +308,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_21
       rect:
         serializedVersion: 2
@@ -243,6 +318,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_22
       rect:
         serializedVersion: 2
@@ -252,6 +328,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_23
       rect:
         serializedVersion: 2
@@ -261,6 +338,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_24
       rect:
         serializedVersion: 2
@@ -270,6 +348,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_25
       rect:
         serializedVersion: 2
@@ -279,6 +358,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_26
       rect:
         serializedVersion: 2
@@ -288,6 +368,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_27
       rect:
         serializedVersion: 2
@@ -297,6 +378,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_28
       rect:
         serializedVersion: 2
@@ -306,6 +388,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_29
       rect:
         serializedVersion: 2
@@ -315,6 +398,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_30
       rect:
         serializedVersion: 2
@@ -324,6 +408,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_31
       rect:
         serializedVersion: 2
@@ -333,6 +418,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_32
       rect:
         serializedVersion: 2
@@ -342,6 +428,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_33
       rect:
         serializedVersion: 2
@@ -351,6 +438,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_34
       rect:
         serializedVersion: 2
@@ -360,6 +448,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_35
       rect:
         serializedVersion: 2
@@ -369,6 +458,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_36
       rect:
         serializedVersion: 2
@@ -378,6 +468,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_37
       rect:
         serializedVersion: 2
@@ -387,6 +478,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_38
       rect:
         serializedVersion: 2
@@ -396,6 +488,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_39
       rect:
         serializedVersion: 2
@@ -405,6 +498,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_40
       rect:
         serializedVersion: 2
@@ -414,6 +508,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_41
       rect:
         serializedVersion: 2
@@ -423,6 +518,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_42
       rect:
         serializedVersion: 2
@@ -432,6 +528,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_43
       rect:
         serializedVersion: 2
@@ -441,6 +538,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_44
       rect:
         serializedVersion: 2
@@ -450,6 +548,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_45
       rect:
         serializedVersion: 2
@@ -459,6 +558,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_46
       rect:
         serializedVersion: 2
@@ -468,6 +568,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_47
       rect:
         serializedVersion: 2
@@ -477,6 +578,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_48
       rect:
         serializedVersion: 2
@@ -486,6 +588,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_49
       rect:
         serializedVersion: 2
@@ -495,6 +598,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_50
       rect:
         serializedVersion: 2
@@ -504,6 +608,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_bow_51
       rect:
         serializedVersion: 2
@@ -513,5 +618,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

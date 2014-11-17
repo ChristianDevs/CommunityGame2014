@@ -1,6 +1,43 @@
 fileFormatVersion: 2
 guid: 3b1cbd481a102b04eb6dba0a0053e04d
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: BODY_male_0
+    21300002: BODY_male_1
+    21300004: BODY_male_2
+    21300006: BODY_male_3
+    21300008: BODY_male_4
+    21300010: BODY_male_5
+    21300012: BODY_male_6
+    21300014: BODY_male_7
+    21300016: BODY_male_8
+    21300018: BODY_male_9
+    21300020: BODY_male_10
+    21300022: BODY_male_11
+    21300024: BODY_male_12
+    21300026: BODY_male_13
+    21300028: BODY_male_14
+    21300030: BODY_male_15
+    21300032: BODY_male_16
+    21300034: BODY_male_17
+    21300036: BODY_male_18
+    21300038: BODY_male_19
+    21300040: BODY_male_20
+    21300042: BODY_male_21
+    21300044: BODY_male_22
+    21300046: BODY_male_23
+    21300048: BODY_male_24
+    21300050: BODY_male_25
+    21300052: BODY_male_26
+    21300054: BODY_male_27
+    21300056: BODY_male_28
+    21300058: BODY_male_29
+    21300060: BODY_male_30
+    21300062: BODY_male_31
+    21300064: BODY_male_32
+    21300066: BODY_male_33
+    21300068: BODY_male_34
+    21300070: BODY_male_35
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +92,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_1
       rect:
         serializedVersion: 2
@@ -63,6 +102,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_2
       rect:
         serializedVersion: 2
@@ -72,6 +112,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_3
       rect:
         serializedVersion: 2
@@ -81,6 +122,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_4
       rect:
         serializedVersion: 2
@@ -90,6 +132,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_5
       rect:
         serializedVersion: 2
@@ -99,6 +142,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_6
       rect:
         serializedVersion: 2
@@ -108,6 +152,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_7
       rect:
         serializedVersion: 2
@@ -117,6 +162,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_8
       rect:
         serializedVersion: 2
@@ -126,6 +172,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_9
       rect:
         serializedVersion: 2
@@ -135,6 +182,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_10
       rect:
         serializedVersion: 2
@@ -144,6 +192,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_11
       rect:
         serializedVersion: 2
@@ -153,6 +202,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_12
       rect:
         serializedVersion: 2
@@ -162,6 +212,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_13
       rect:
         serializedVersion: 2
@@ -171,6 +222,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_14
       rect:
         serializedVersion: 2
@@ -180,6 +232,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_15
       rect:
         serializedVersion: 2
@@ -189,6 +242,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_16
       rect:
         serializedVersion: 2
@@ -198,6 +252,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_17
       rect:
         serializedVersion: 2
@@ -207,6 +262,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_18
       rect:
         serializedVersion: 2
@@ -216,6 +272,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_19
       rect:
         serializedVersion: 2
@@ -225,6 +282,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_20
       rect:
         serializedVersion: 2
@@ -234,6 +292,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_21
       rect:
         serializedVersion: 2
@@ -243,6 +302,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_22
       rect:
         serializedVersion: 2
@@ -252,6 +312,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_23
       rect:
         serializedVersion: 2
@@ -261,6 +322,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_24
       rect:
         serializedVersion: 2
@@ -270,6 +332,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_25
       rect:
         serializedVersion: 2
@@ -279,6 +342,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_26
       rect:
         serializedVersion: 2
@@ -288,6 +352,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_27
       rect:
         serializedVersion: 2
@@ -297,6 +362,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_28
       rect:
         serializedVersion: 2
@@ -306,6 +372,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_29
       rect:
         serializedVersion: 2
@@ -315,6 +382,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_30
       rect:
         serializedVersion: 2
@@ -324,6 +392,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_31
       rect:
         serializedVersion: 2
@@ -333,6 +402,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_32
       rect:
         serializedVersion: 2
@@ -342,6 +412,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_33
       rect:
         serializedVersion: 2
@@ -351,6 +422,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_34
       rect:
         serializedVersion: 2
@@ -360,6 +432,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BODY_male_35
       rect:
         serializedVersion: 2
@@ -369,5 +442,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

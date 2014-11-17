@@ -1,6 +1,43 @@
 fileFormatVersion: 2
 guid: da0f83bf3c4cbe64f83bb250b64ae65d
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: HANDS_plate_armor_gloves_0
+    21300002: HANDS_plate_armor_gloves_1
+    21300004: HANDS_plate_armor_gloves_2
+    21300006: HANDS_plate_armor_gloves_3
+    21300008: HANDS_plate_armor_gloves_4
+    21300010: HANDS_plate_armor_gloves_5
+    21300012: HANDS_plate_armor_gloves_6
+    21300014: HANDS_plate_armor_gloves_7
+    21300016: HANDS_plate_armor_gloves_8
+    21300018: HANDS_plate_armor_gloves_9
+    21300020: HANDS_plate_armor_gloves_10
+    21300022: HANDS_plate_armor_gloves_11
+    21300024: HANDS_plate_armor_gloves_12
+    21300026: HANDS_plate_armor_gloves_13
+    21300028: HANDS_plate_armor_gloves_14
+    21300030: HANDS_plate_armor_gloves_15
+    21300032: HANDS_plate_armor_gloves_16
+    21300034: HANDS_plate_armor_gloves_17
+    21300036: HANDS_plate_armor_gloves_18
+    21300038: HANDS_plate_armor_gloves_19
+    21300040: HANDS_plate_armor_gloves_20
+    21300042: HANDS_plate_armor_gloves_21
+    21300044: HANDS_plate_armor_gloves_22
+    21300046: HANDS_plate_armor_gloves_23
+    21300048: HANDS_plate_armor_gloves_24
+    21300050: HANDS_plate_armor_gloves_25
+    21300052: HANDS_plate_armor_gloves_26
+    21300054: HANDS_plate_armor_gloves_27
+    21300056: HANDS_plate_armor_gloves_28
+    21300058: HANDS_plate_armor_gloves_29
+    21300060: HANDS_plate_armor_gloves_30
+    21300062: HANDS_plate_armor_gloves_31
+    21300064: HANDS_plate_armor_gloves_32
+    21300066: HANDS_plate_armor_gloves_33
+    21300068: HANDS_plate_armor_gloves_34
+    21300070: HANDS_plate_armor_gloves_35
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +92,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_1
       rect:
         serializedVersion: 2
@@ -63,6 +102,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_2
       rect:
         serializedVersion: 2
@@ -72,6 +112,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_3
       rect:
         serializedVersion: 2
@@ -81,6 +122,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_4
       rect:
         serializedVersion: 2
@@ -90,6 +132,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_5
       rect:
         serializedVersion: 2
@@ -99,6 +142,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_6
       rect:
         serializedVersion: 2
@@ -108,6 +152,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_7
       rect:
         serializedVersion: 2
@@ -117,6 +162,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_8
       rect:
         serializedVersion: 2
@@ -126,6 +172,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_9
       rect:
         serializedVersion: 2
@@ -135,6 +182,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_10
       rect:
         serializedVersion: 2
@@ -144,6 +192,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_11
       rect:
         serializedVersion: 2
@@ -153,6 +202,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_12
       rect:
         serializedVersion: 2
@@ -162,6 +212,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_13
       rect:
         serializedVersion: 2
@@ -171,6 +222,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_14
       rect:
         serializedVersion: 2
@@ -180,6 +232,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_15
       rect:
         serializedVersion: 2
@@ -189,6 +242,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_16
       rect:
         serializedVersion: 2
@@ -198,6 +252,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_17
       rect:
         serializedVersion: 2
@@ -207,6 +262,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_18
       rect:
         serializedVersion: 2
@@ -216,6 +272,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_19
       rect:
         serializedVersion: 2
@@ -225,6 +282,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_20
       rect:
         serializedVersion: 2
@@ -234,6 +292,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_21
       rect:
         serializedVersion: 2
@@ -243,6 +302,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_22
       rect:
         serializedVersion: 2
@@ -252,6 +312,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_23
       rect:
         serializedVersion: 2
@@ -261,6 +322,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_24
       rect:
         serializedVersion: 2
@@ -270,6 +332,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_25
       rect:
         serializedVersion: 2
@@ -279,6 +342,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_26
       rect:
         serializedVersion: 2
@@ -288,6 +352,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_27
       rect:
         serializedVersion: 2
@@ -297,6 +362,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_28
       rect:
         serializedVersion: 2
@@ -306,6 +372,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_29
       rect:
         serializedVersion: 2
@@ -315,6 +382,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_30
       rect:
         serializedVersion: 2
@@ -324,6 +392,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_31
       rect:
         serializedVersion: 2
@@ -333,6 +402,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_32
       rect:
         serializedVersion: 2
@@ -342,6 +412,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_33
       rect:
         serializedVersion: 2
@@ -351,6 +422,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_34
       rect:
         serializedVersion: 2
@@ -360,6 +432,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: HANDS_plate_armor_gloves_35
       rect:
         serializedVersion: 2
@@ -369,5 +442,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

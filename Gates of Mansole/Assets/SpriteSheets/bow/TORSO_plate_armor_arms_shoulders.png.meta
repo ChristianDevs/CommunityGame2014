@@ -1,6 +1,59 @@
 fileFormatVersion: 2
 guid: 4632d3adbdc074645ae1bdbcc40c0127
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: TORSO_plate_armor_arms_shoulders_0
+    21300002: TORSO_plate_armor_arms_shoulders_1
+    21300004: TORSO_plate_armor_arms_shoulders_2
+    21300006: TORSO_plate_armor_arms_shoulders_3
+    21300008: TORSO_plate_armor_arms_shoulders_4
+    21300010: TORSO_plate_armor_arms_shoulders_5
+    21300012: TORSO_plate_armor_arms_shoulders_6
+    21300014: TORSO_plate_armor_arms_shoulders_7
+    21300016: TORSO_plate_armor_arms_shoulders_8
+    21300018: TORSO_plate_armor_arms_shoulders_9
+    21300020: TORSO_plate_armor_arms_shoulders_10
+    21300022: TORSO_plate_armor_arms_shoulders_11
+    21300024: TORSO_plate_armor_arms_shoulders_12
+    21300026: TORSO_plate_armor_arms_shoulders_13
+    21300028: TORSO_plate_armor_arms_shoulders_14
+    21300030: TORSO_plate_armor_arms_shoulders_15
+    21300032: TORSO_plate_armor_arms_shoulders_16
+    21300034: TORSO_plate_armor_arms_shoulders_17
+    21300036: TORSO_plate_armor_arms_shoulders_18
+    21300038: TORSO_plate_armor_arms_shoulders_19
+    21300040: TORSO_plate_armor_arms_shoulders_20
+    21300042: TORSO_plate_armor_arms_shoulders_21
+    21300044: TORSO_plate_armor_arms_shoulders_22
+    21300046: TORSO_plate_armor_arms_shoulders_23
+    21300048: TORSO_plate_armor_arms_shoulders_24
+    21300050: TORSO_plate_armor_arms_shoulders_25
+    21300052: TORSO_plate_armor_arms_shoulders_26
+    21300054: TORSO_plate_armor_arms_shoulders_27
+    21300056: TORSO_plate_armor_arms_shoulders_28
+    21300058: TORSO_plate_armor_arms_shoulders_29
+    21300060: TORSO_plate_armor_arms_shoulders_30
+    21300062: TORSO_plate_armor_arms_shoulders_31
+    21300064: TORSO_plate_armor_arms_shoulders_32
+    21300066: TORSO_plate_armor_arms_shoulders_33
+    21300068: TORSO_plate_armor_arms_shoulders_34
+    21300070: TORSO_plate_armor_arms_shoulders_35
+    21300072: TORSO_plate_armor_arms_shoulders_36
+    21300074: TORSO_plate_armor_arms_shoulders_37
+    21300076: TORSO_plate_armor_arms_shoulders_38
+    21300078: TORSO_plate_armor_arms_shoulders_39
+    21300080: TORSO_plate_armor_arms_shoulders_40
+    21300082: TORSO_plate_armor_arms_shoulders_41
+    21300084: TORSO_plate_armor_arms_shoulders_42
+    21300086: TORSO_plate_armor_arms_shoulders_43
+    21300088: TORSO_plate_armor_arms_shoulders_44
+    21300090: TORSO_plate_armor_arms_shoulders_45
+    21300092: TORSO_plate_armor_arms_shoulders_46
+    21300094: TORSO_plate_armor_arms_shoulders_47
+    21300096: TORSO_plate_armor_arms_shoulders_48
+    21300098: TORSO_plate_armor_arms_shoulders_49
+    21300100: TORSO_plate_armor_arms_shoulders_50
+    21300102: TORSO_plate_armor_arms_shoulders_51
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +88,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +108,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_1
       rect:
         serializedVersion: 2
@@ -63,6 +118,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_2
       rect:
         serializedVersion: 2
@@ -72,6 +128,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_3
       rect:
         serializedVersion: 2
@@ -81,6 +138,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_4
       rect:
         serializedVersion: 2
@@ -90,6 +148,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_5
       rect:
         serializedVersion: 2
@@ -99,6 +158,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_6
       rect:
         serializedVersion: 2
@@ -108,6 +168,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_7
       rect:
         serializedVersion: 2
@@ -117,6 +178,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_8
       rect:
         serializedVersion: 2
@@ -126,6 +188,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_9
       rect:
         serializedVersion: 2
@@ -135,6 +198,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_10
       rect:
         serializedVersion: 2
@@ -144,6 +208,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_11
       rect:
         serializedVersion: 2
@@ -153,6 +218,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_12
       rect:
         serializedVersion: 2
@@ -162,6 +228,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_13
       rect:
         serializedVersion: 2
@@ -171,6 +238,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_14
       rect:
         serializedVersion: 2
@@ -180,6 +248,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_15
       rect:
         serializedVersion: 2
@@ -189,6 +258,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_16
       rect:
         serializedVersion: 2
@@ -198,6 +268,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_17
       rect:
         serializedVersion: 2
@@ -207,6 +278,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_18
       rect:
         serializedVersion: 2
@@ -216,6 +288,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_19
       rect:
         serializedVersion: 2
@@ -225,6 +298,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_20
       rect:
         serializedVersion: 2
@@ -234,6 +308,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_21
       rect:
         serializedVersion: 2
@@ -243,6 +318,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_22
       rect:
         serializedVersion: 2
@@ -252,6 +328,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_23
       rect:
         serializedVersion: 2
@@ -261,6 +338,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_24
       rect:
         serializedVersion: 2
@@ -270,6 +348,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_25
       rect:
         serializedVersion: 2
@@ -279,6 +358,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_26
       rect:
         serializedVersion: 2
@@ -288,6 +368,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_27
       rect:
         serializedVersion: 2
@@ -297,6 +378,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_28
       rect:
         serializedVersion: 2
@@ -306,6 +388,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_29
       rect:
         serializedVersion: 2
@@ -315,6 +398,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_30
       rect:
         serializedVersion: 2
@@ -324,6 +408,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_31
       rect:
         serializedVersion: 2
@@ -333,6 +418,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_32
       rect:
         serializedVersion: 2
@@ -342,6 +428,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_33
       rect:
         serializedVersion: 2
@@ -351,6 +438,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_34
       rect:
         serializedVersion: 2
@@ -360,6 +448,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_35
       rect:
         serializedVersion: 2
@@ -369,6 +458,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_36
       rect:
         serializedVersion: 2
@@ -378,6 +468,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_37
       rect:
         serializedVersion: 2
@@ -387,6 +478,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_38
       rect:
         serializedVersion: 2
@@ -396,6 +488,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_39
       rect:
         serializedVersion: 2
@@ -405,6 +498,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_40
       rect:
         serializedVersion: 2
@@ -414,6 +508,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_41
       rect:
         serializedVersion: 2
@@ -423,6 +518,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_42
       rect:
         serializedVersion: 2
@@ -432,6 +528,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_43
       rect:
         serializedVersion: 2
@@ -441,6 +538,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_44
       rect:
         serializedVersion: 2
@@ -450,6 +548,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_45
       rect:
         serializedVersion: 2
@@ -459,6 +558,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_46
       rect:
         serializedVersion: 2
@@ -468,6 +568,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_47
       rect:
         serializedVersion: 2
@@ -477,6 +578,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_48
       rect:
         serializedVersion: 2
@@ -486,6 +588,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_49
       rect:
         serializedVersion: 2
@@ -495,6 +598,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_50
       rect:
         serializedVersion: 2
@@ -504,6 +608,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TORSO_plate_armor_arms_shoulders_51
       rect:
         serializedVersion: 2
@@ -513,5 +618,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

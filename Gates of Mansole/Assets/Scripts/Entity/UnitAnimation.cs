@@ -13,8 +13,7 @@ public class UnitAnimation : MonoBehaviour {
 	public enum _action {
 		Idle,
 		Walk,
-		Slash,
-		Bow,
+		Attack,
 		Die
 	}
 	
