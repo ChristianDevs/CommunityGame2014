@@ -73,6 +73,7 @@
      <Compile Include="Assets\Scripts\Ui\Options.cs" />
      <Compile Include="Assets\Scripts\Ui\UILayer.cs" />
      <Compile Include="Assets\Scripts\Ui\UiAbility.cs" />
+     <Compile Include="Assets\Scripts\Ui\UiBackToLevelSelect.cs" />
      <Compile Include="Assets\Scripts\Ui\UiHud.cs" />
      <Compile Include="Assets\Scripts\Ui\UiLevelSelect.cs" />
      <Compile Include="Assets\Scripts\Ui\UiMenu.cs" />
@@ -85,6 +86,7 @@
      <Compile Include="Assets\Scripts\Ui\UiUnitSelect.cs" />
      <Compile Include="Assets\Scripts\UnitTest\AllAnimTest.cs" />
      <Compile Include="Assets\Scripts\UnitTest\SingleAnimTest.cs" />
+     <Compile Include="Assets\Scripts\Upgrade.cs" />
      <Compile Include="Assets\Scripts\World\Camera.cs" />
      <Compile Include="Assets\Scripts\World\Player.cs" />
      <Compile Include="Assets\Scripts\World\World.cs" />

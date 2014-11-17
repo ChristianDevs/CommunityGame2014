@@ -52,10 +52,13 @@ public class UiLevelSelect : MonoBehaviour {
 	}
 
     void buttonPush(string buttonName) {
-        switch (buttonName) {
-            case "Back":
-                Application.LoadLevel("Title");
-                break;
+		switch (buttonName) {
+			case "Back":
+				Application.LoadLevel("Title");
+				break;
+			case "UpgradeShop":
+				Application.LoadLevel("Upgrade");
+				break;
             case "Level1":
                 Player.currentLevel = 1;
                 Application.LoadLevel("DefendSceneLeft");
