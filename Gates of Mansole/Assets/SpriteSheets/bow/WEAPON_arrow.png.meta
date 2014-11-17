@@ -1,6 +1,41 @@
 fileFormatVersion: 2
 guid: eeeb1e7b7125c8248a7e235b82cfa8b0
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: WEAPON_arrow_0
+    21300002: WEAPON_arrow_1
+    21300004: WEAPON_arrow_2
+    21300006: WEAPON_arrow_3
+    21300008: WEAPON_arrow_4
+    21300010: WEAPON_arrow_5
+    21300012: WEAPON_arrow_6
+    21300014: WEAPON_arrow_7
+    21300016: WEAPON_arrow_8
+    21300018: WEAPON_arrow_9
+    21300020: WEAPON_arrow_10
+    21300022: WEAPON_arrow_11
+    21300024: WEAPON_arrow_12
+    21300026: WEAPON_arrow_13
+    21300028: WEAPON_arrow_14
+    21300030: WEAPON_arrow_15
+    21300032: WEAPON_arrow_16
+    21300034: WEAPON_arrow_17
+    21300036: WEAPON_arrow_18
+    21300038: WEAPON_arrow_19
+    21300040: WEAPON_arrow_20
+    21300042: WEAPON_arrow_21
+    21300044: WEAPON_arrow_22
+    21300046: WEAPON_arrow_23
+    21300048: WEAPON_arrow_24
+    21300050: WEAPON_arrow_25
+    21300052: WEAPON_arrow_26
+    21300054: WEAPON_arrow_27
+    21300056: WEAPON_arrow_28
+    21300058: WEAPON_arrow_29
+    21300060: WEAPON_arrow_30
+    21300062: WEAPON_arrow_31
+    21300064: WEAPON_arrow_32
+    21300066: WEAPON_arrow_33
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +70,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +90,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_1
       rect:
         serializedVersion: 2
@@ -63,6 +100,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_2
       rect:
         serializedVersion: 2
@@ -72,6 +110,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_3
       rect:
         serializedVersion: 2
@@ -81,6 +120,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_4
       rect:
         serializedVersion: 2
@@ -90,6 +130,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_5
       rect:
         serializedVersion: 2
@@ -99,6 +140,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_6
       rect:
         serializedVersion: 2
@@ -108,6 +150,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_7
       rect:
         serializedVersion: 2
@@ -117,6 +160,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_8
       rect:
         serializedVersion: 2
@@ -126,6 +170,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_9
       rect:
         serializedVersion: 2
@@ -135,6 +180,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_10
       rect:
         serializedVersion: 2
@@ -144,6 +190,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_11
       rect:
         serializedVersion: 2
@@ -153,6 +200,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_12
       rect:
         serializedVersion: 2
@@ -162,6 +210,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_13
       rect:
         serializedVersion: 2
@@ -171,6 +220,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_14
       rect:
         serializedVersion: 2
@@ -180,6 +230,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_15
       rect:
         serializedVersion: 2
@@ -189,6 +240,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_16
       rect:
         serializedVersion: 2
@@ -198,6 +250,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_17
       rect:
         serializedVersion: 2
@@ -207,6 +260,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_18
       rect:
         serializedVersion: 2
@@ -216,6 +270,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_19
       rect:
         serializedVersion: 2
@@ -225,6 +280,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_20
       rect:
         serializedVersion: 2
@@ -234,6 +290,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_21
       rect:
         serializedVersion: 2
@@ -243,6 +300,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_22
       rect:
         serializedVersion: 2
@@ -252,6 +310,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_23
       rect:
         serializedVersion: 2
@@ -261,6 +320,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_24
       rect:
         serializedVersion: 2
@@ -270,6 +330,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_25
       rect:
         serializedVersion: 2
@@ -279,6 +340,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_26
       rect:
         serializedVersion: 2
@@ -288,6 +350,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_27
       rect:
         serializedVersion: 2
@@ -297,6 +360,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_28
       rect:
         serializedVersion: 2
@@ -306,6 +370,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_29
       rect:
         serializedVersion: 2
@@ -315,6 +380,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_30
       rect:
         serializedVersion: 2
@@ -324,6 +390,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_31
       rect:
         serializedVersion: 2
@@ -333,6 +400,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_32
       rect:
         serializedVersion: 2
@@ -342,6 +410,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_arrow_33
       rect:
         serializedVersion: 2
@@ -351,5 +420,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

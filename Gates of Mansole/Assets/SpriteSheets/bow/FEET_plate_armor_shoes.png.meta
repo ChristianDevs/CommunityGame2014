@@ -1,6 +1,59 @@
 fileFormatVersion: 2
 guid: bf373b214b04dcd4bbe2ea4dd092cab6
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: FEET_plate_armor_shoes_0
+    21300002: FEET_plate_armor_shoes_1
+    21300004: FEET_plate_armor_shoes_2
+    21300006: FEET_plate_armor_shoes_3
+    21300008: FEET_plate_armor_shoes_4
+    21300010: FEET_plate_armor_shoes_5
+    21300012: FEET_plate_armor_shoes_6
+    21300014: FEET_plate_armor_shoes_7
+    21300016: FEET_plate_armor_shoes_8
+    21300018: FEET_plate_armor_shoes_9
+    21300020: FEET_plate_armor_shoes_10
+    21300022: FEET_plate_armor_shoes_11
+    21300024: FEET_plate_armor_shoes_12
+    21300026: FEET_plate_armor_shoes_13
+    21300028: FEET_plate_armor_shoes_14
+    21300030: FEET_plate_armor_shoes_15
+    21300032: FEET_plate_armor_shoes_16
+    21300034: FEET_plate_armor_shoes_17
+    21300036: FEET_plate_armor_shoes_18
+    21300038: FEET_plate_armor_shoes_19
+    21300040: FEET_plate_armor_shoes_20
+    21300042: FEET_plate_armor_shoes_21
+    21300044: FEET_plate_armor_shoes_22
+    21300046: FEET_plate_armor_shoes_23
+    21300048: FEET_plate_armor_shoes_24
+    21300050: FEET_plate_armor_shoes_25
+    21300052: FEET_plate_armor_shoes_26
+    21300054: FEET_plate_armor_shoes_27
+    21300056: FEET_plate_armor_shoes_28
+    21300058: FEET_plate_armor_shoes_29
+    21300060: FEET_plate_armor_shoes_30
+    21300062: FEET_plate_armor_shoes_31
+    21300064: FEET_plate_armor_shoes_32
+    21300066: FEET_plate_armor_shoes_33
+    21300068: FEET_plate_armor_shoes_34
+    21300070: FEET_plate_armor_shoes_35
+    21300072: FEET_plate_armor_shoes_36
+    21300074: FEET_plate_armor_shoes_37
+    21300076: FEET_plate_armor_shoes_38
+    21300078: FEET_plate_armor_shoes_39
+    21300080: FEET_plate_armor_shoes_40
+    21300082: FEET_plate_armor_shoes_41
+    21300084: FEET_plate_armor_shoes_42
+    21300086: FEET_plate_armor_shoes_43
+    21300088: FEET_plate_armor_shoes_44
+    21300090: FEET_plate_armor_shoes_45
+    21300092: FEET_plate_armor_shoes_46
+    21300094: FEET_plate_armor_shoes_47
+    21300096: FEET_plate_armor_shoes_48
+    21300098: FEET_plate_armor_shoes_49
+    21300100: FEET_plate_armor_shoes_50
+    21300102: FEET_plate_armor_shoes_51
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +88,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +108,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_1
       rect:
         serializedVersion: 2
@@ -63,6 +118,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_2
       rect:
         serializedVersion: 2
@@ -72,6 +128,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_3
       rect:
         serializedVersion: 2
@@ -81,6 +138,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_4
       rect:
         serializedVersion: 2
@@ -90,6 +148,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_5
       rect:
         serializedVersion: 2
@@ -99,6 +158,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_6
       rect:
         serializedVersion: 2
@@ -108,6 +168,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_7
       rect:
         serializedVersion: 2
@@ -117,6 +178,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_8
       rect:
         serializedVersion: 2
@@ -126,6 +188,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_9
       rect:
         serializedVersion: 2
@@ -135,6 +198,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_10
       rect:
         serializedVersion: 2
@@ -144,6 +208,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_11
       rect:
         serializedVersion: 2
@@ -153,6 +218,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_12
       rect:
         serializedVersion: 2
@@ -162,6 +228,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_13
       rect:
         serializedVersion: 2
@@ -171,6 +238,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_14
       rect:
         serializedVersion: 2
@@ -180,6 +248,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_15
       rect:
         serializedVersion: 2
@@ -189,6 +258,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_16
       rect:
         serializedVersion: 2
@@ -198,6 +268,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_17
       rect:
         serializedVersion: 2
@@ -207,6 +278,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_18
       rect:
         serializedVersion: 2
@@ -216,6 +288,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_19
       rect:
         serializedVersion: 2
@@ -225,6 +298,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_20
       rect:
         serializedVersion: 2
@@ -234,6 +308,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_21
       rect:
         serializedVersion: 2
@@ -243,6 +318,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_22
       rect:
         serializedVersion: 2
@@ -252,6 +328,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_23
       rect:
         serializedVersion: 2
@@ -261,6 +338,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_24
       rect:
         serializedVersion: 2
@@ -270,6 +348,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_25
       rect:
         serializedVersion: 2
@@ -279,6 +358,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_26
       rect:
         serializedVersion: 2
@@ -288,6 +368,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_27
       rect:
         serializedVersion: 2
@@ -297,6 +378,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_28
       rect:
         serializedVersion: 2
@@ -306,6 +388,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_29
       rect:
         serializedVersion: 2
@@ -315,6 +398,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_30
       rect:
         serializedVersion: 2
@@ -324,6 +408,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_31
       rect:
         serializedVersion: 2
@@ -333,6 +418,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_32
       rect:
         serializedVersion: 2
@@ -342,6 +428,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_33
       rect:
         serializedVersion: 2
@@ -351,6 +438,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_34
       rect:
         serializedVersion: 2
@@ -360,6 +448,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_35
       rect:
         serializedVersion: 2
@@ -369,6 +458,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_36
       rect:
         serializedVersion: 2
@@ -378,6 +468,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_37
       rect:
         serializedVersion: 2
@@ -387,6 +478,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_38
       rect:
         serializedVersion: 2
@@ -396,6 +488,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_39
       rect:
         serializedVersion: 2
@@ -405,6 +498,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_40
       rect:
         serializedVersion: 2
@@ -414,6 +508,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_41
       rect:
         serializedVersion: 2
@@ -423,6 +518,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_42
       rect:
         serializedVersion: 2
@@ -432,6 +528,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_43
       rect:
         serializedVersion: 2
@@ -441,6 +538,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_44
       rect:
         serializedVersion: 2
@@ -450,6 +548,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_45
       rect:
         serializedVersion: 2
@@ -459,6 +558,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_46
       rect:
         serializedVersion: 2
@@ -468,6 +568,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_47
       rect:
         serializedVersion: 2
@@ -477,6 +578,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_48
       rect:
         serializedVersion: 2
@@ -486,6 +588,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_49
       rect:
         serializedVersion: 2
@@ -495,6 +598,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_50
       rect:
         serializedVersion: 2
@@ -504,6 +608,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: FEET_plate_armor_shoes_51
       rect:
         serializedVersion: 2
@@ -513,5 +618,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
