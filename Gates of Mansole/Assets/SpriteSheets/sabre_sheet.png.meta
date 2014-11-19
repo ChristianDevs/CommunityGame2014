@@ -1,30 +1,6 @@
 fileFormatVersion: 2
 guid: 2dcb23f3013993c479fc4c34295cf986
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: sabre_sheet_0
-    21300002: sabre_sheet_1
-    21300004: sabre_sheet_2
-    21300006: sabre_sheet_3
-    21300008: sabre_sheet_4
-    21300010: sabre_sheet_5
-    21300012: sabre_sheet_6
-    21300014: sabre_sheet_7
-    21300016: sabre_sheet_8
-    21300018: sabre_sheet_9
-    21300020: sabre_sheet_10
-    21300022: sabre_sheet_11
-    21300024: sabre_sheet_12
-    21300026: sabre_sheet_13
-    21300028: sabre_sheet_14
-    21300030: sabre_sheet_15
-    21300032: sabre_sheet_16
-    21300034: sabre_sheet_17
-    21300036: sabre_sheet_18
-    21300038: sabre_sheet_19
-    21300040: sabre_sheet_20
-    21300042: sabre_sheet_21
-    21300044: sabre_sheet_22
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -59,7 +35,6 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
@@ -79,7 +54,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_1
       rect:
         serializedVersion: 2
@@ -89,7 +63,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_2
       rect:
         serializedVersion: 2
@@ -99,7 +72,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_3
       rect:
         serializedVersion: 2
@@ -109,7 +81,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_4
       rect:
         serializedVersion: 2
@@ -119,7 +90,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_5
       rect:
         serializedVersion: 2
@@ -129,7 +99,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_6
       rect:
         serializedVersion: 2
@@ -139,7 +108,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_7
       rect:
         serializedVersion: 2
@@ -149,7 +117,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_8
       rect:
         serializedVersion: 2
@@ -159,7 +126,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_9
       rect:
         serializedVersion: 2
@@ -169,7 +135,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_10
       rect:
         serializedVersion: 2
@@ -179,7 +144,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_11
       rect:
         serializedVersion: 2
@@ -189,7 +153,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_12
       rect:
         serializedVersion: 2
@@ -199,7 +162,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_13
       rect:
         serializedVersion: 2
@@ -209,7 +171,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_14
       rect:
         serializedVersion: 2
@@ -219,7 +180,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_15
       rect:
         serializedVersion: 2
@@ -229,7 +189,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_16
       rect:
         serializedVersion: 2
@@ -239,7 +198,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_17
       rect:
         serializedVersion: 2
@@ -249,7 +207,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_18
       rect:
         serializedVersion: 2
@@ -259,7 +216,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_19
       rect:
         serializedVersion: 2
@@ -269,7 +225,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_20
       rect:
         serializedVersion: 2
@@ -279,7 +234,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_21
       rect:
         serializedVersion: 2
@@ -289,7 +243,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: sabre_sheet_22
       rect:
         serializedVersion: 2
@@ -299,6 +252,5 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
