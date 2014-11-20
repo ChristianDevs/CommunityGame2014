@@ -52,8 +52,8 @@ public class GomUnit : GomObject {
     public void DamageMelee(PropertyStats stats) {
         // Whatever - arbitrary damage calculation
         int minDamage = Random.Range(0, 2);  // always a chance of doing something
-        int variation = Random.Range(0, getStats().attack / 5 + 1);
-		int baseDamage = getStats().attack - this.getStats().defense; Debug.Log ("damaged unit's attack is: " + this.getStats().attack);
+        int variation = Random.Range(0, attacker.getStats().attack / 5 + 1);
+		int baseDamage = attacker.getStats().attack - this.getStats().defense; Debug.Log ("damaged unit's attack is: " + this.getStats().attack);
         Damage(minDamage + baseDamage + variation);
     }
 
@@ -61,7 +61,7 @@ public class GomUnit : GomObject {
         // Whatever - arbitrary damage calculation
         int minDamage = Random.Range(0, 1);  // always a chance of doing something
         int variation = 0;
-        int baseDamage = getStats().spirit - this.getStats().armor;
+        int baseDamage = attacker.getStats().spirit - this.getStats().armor;
         Damage(minDamage + baseDamage + variation);
     }
 
@@ -128,10 +128,11 @@ public class GomUnit : GomObject {
 	}
 
 	public PropertyStats getStats() {
-		if (faction == Faction.Player)
+		if (faction == Faction.Player) {
 			return playerStats;
-		else
+		} else {
 			return enemyStats;
+		}
 	}
 
 	void SetCurrentTile(Vector2 tile) {
