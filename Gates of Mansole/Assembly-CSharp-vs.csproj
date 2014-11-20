@@ -90,6 +90,7 @@
      <Compile Include="Assets\Scripts\World\Camera.cs" />
      <Compile Include="Assets\Scripts\World\Player.cs" />
      <Compile Include="Assets\Scripts\World\World.cs" />
+     <Compile Include="Assets\UnitSpawnMenuController.cs" />
      <None Include="Assets\Animations\AnimationKey.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
