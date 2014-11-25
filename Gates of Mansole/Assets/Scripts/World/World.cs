@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class World : MonoBehaviour {
 	//Comment to overwrite
 	public float TileUnitOffset;
-    public GameObject[] squares;
+    public List<GameObject> squares;
     public GameObject map;
 	public GameObject[] Levels;
     public GameObject winMessage;
@@ -84,7 +84,7 @@ public class World : MonoBehaviour {
 			uType = unitType.GetComponent<UiUnitType> ();
 
 			if (uType != null) {
-				uType.getStats ().resetUnitStats ();
+				uType.resetUnitStats();
 			} else {
 				//Debug.Log("No UiUnitType Component");
 			}
@@ -219,7 +219,7 @@ public class World : MonoBehaviour {
                 }
 
                 if (Physics.Raycast(UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition), out hitSquare)) {
-					for(int i=0;i<squares.Length;++i)
+					for(int i=0;i<squares.Count;++i)
                     if (hitSquare.transform.name == squares[i].transform.name) {
                         selectedUiUnit = unitsUIinst[i];
                     }
