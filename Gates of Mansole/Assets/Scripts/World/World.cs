@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class World : MonoBehaviour {
 
 	public float TileUnitOffset;
-	public GameObject[] unitTypes;
     public GameObject[] squares;
     public GameObject map;
 	public GameObject[] Levels;
@@ -33,6 +32,7 @@ public class World : MonoBehaviour {
     private UiTile gridSize;
 	
 	public List<GameObject> unitsUIinst;
+	public List<GameObject> unitTypes;
 	private float levelStartTime;
 	public GameObject unitInfoUi;
 
@@ -80,7 +80,14 @@ public class World : MonoBehaviour {
 
 		Player.spiritShards = Player.totalShards = 20;
 		foreach (GameObject unitType in unitTypes) {
-			unitType.GetComponent<GomUnit> ().getStats ().resetUnitStats ();
+			UiUnitType uType;
+			uType = unitType.GetComponent<UiUnitType> ();
+
+			if (uType != null) {
+				uType.getStats ().resetUnitStats ();
+			} else {
+				Debug.Log("No UiUnitType Component");
+			}
 		}
         letThroughAttackers = 0;
         defeatedAttackers = 0;
@@ -259,14 +266,14 @@ public class World : MonoBehaviour {
                         dir = defenderDir;
                     }
 
-					for(int i=0;i<unitTypes.Length;++i){
+					for(int i=0;i<unitsUIinst.Count;++i){
 						if (selectedUiUnit == unitsUIinst[i]) {
-							if (SpawnUnit(unitTypes[i], (int)tile.row, (int)tile.col, GomObject.Faction.Player))
+							if (SpawnUnit(unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(), (int)tile.row, (int)tile.col, GomObject.Faction.Player))
 	                        	tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
 	                    }
 					}
                 }
-				for(int i=0;i<unitTypes.Length;++i){
+				for(int i=0;i<unitsUIinst.Count;++i){
 					if (selectedUiUnit == unitsUIinst[i]) {
 						selectedUiUnit.transform.position = new Vector3((float)(-6+(1.5*i)),(float)-5.2,(float)0);
 					}
@@ -347,7 +354,7 @@ public class World : MonoBehaviour {
 					}
 					// update unit stats
 					if (tileContents[row][col]) {
-						for(int i=0;i<unitTypes.Length;++i)
+						for(int i=0;i<unitTypes.Count;++i)
 							if (tileContents[row][col].name.Equals (unitTypes[i].name+"(Clone)")){
 								PropertyStats playerStats = unitTypes [i].GetComponent<GomUnit> ().playerStats;
 								PropertyStats enemyStats = unitTypes [i].GetComponent<GomUnit> ().enemyStats;

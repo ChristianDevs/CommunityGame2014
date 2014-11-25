@@ -11,8 +11,8 @@ public class Player : MonoBehaviour {
     static public int level4Complete;
     static public int currentLevel;
 	static public int spiritShards; // currency to purchase units/upgrades during gameplay
-	static public int totalShards; // tracks shards gained during gameplay - used for conversions
-	static public int spiritOrbs; // currency to purchase upgrades outside of gameplay
+	static public int totalShards;  // tracks shards gained during gameplay - used for conversions
+	static public int spiritOrbs;   // currency to purchase upgrades outside of gameplay
 
     static public void resetPlayer() {
         level1Complete = 0;

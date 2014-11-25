@@ -15,4 +15,5 @@ public class WaveList : MonoBehaviour {
     public bool isPlayerAttacker = false;
     public _direction attackerDir = _direction.Right;
     public Wave[] waves;
+	public UiUnitType[] enemyUnitTypes;
 }
