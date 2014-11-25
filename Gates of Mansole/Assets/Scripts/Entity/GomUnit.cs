@@ -193,13 +193,13 @@ public class GomUnit : GomObject {
 	
 	void Update() {
 		// Don't update the unit until the animation has been changed
-		if (NextState != State) {
+		//if (NextState != State) {
 			//if (GetComponent<UnitAnimation>().isAnimationChanged() == true) {
 				State = NextState;
 			//} else {
 				//return;
 			//}
-		}
+		//}
 
 		switch (State) {
 		case _state.Idle:
