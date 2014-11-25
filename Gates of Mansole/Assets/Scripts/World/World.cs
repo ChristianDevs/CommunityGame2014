@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class World : MonoBehaviour {
-
+	//Comment to overwrite
 	public float TileUnitOffset;
     public GameObject[] squares;
     public GameObject map;
@@ -86,7 +86,7 @@ public class World : MonoBehaviour {
 			if (uType != null) {
 				uType.getStats ().resetUnitStats ();
 			} else {
-				Debug.Log("No UiUnitType Component");
+				//Debug.Log("No UiUnitType Component");
 			}
 		}
         letThroughAttackers = 0;

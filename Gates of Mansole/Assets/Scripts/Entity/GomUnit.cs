@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class GomUnit : GomObject {
-
+	//Comment to overwrite
     public string entityName;
     public PropertyStats playerStats;
 	public PropertyStats enemyStats;

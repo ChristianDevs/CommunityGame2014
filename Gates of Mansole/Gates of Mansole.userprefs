@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\aaa\CommunityGame2014\Gates of Mansole\Assets\Scripts\Entity\GomUnit.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\World\World.cs">
     <Files>
-      <File FileName="..\..\..\aaa\CommunityGame2014\Gates of Mansole\Assets\Scripts\Entity\GomObject.cs" Line="1" Column="1" />
-      <File FileName="..\..\..\aaa\CommunityGame2014\Gates of Mansole\Assets\Scripts\Entity\GomUnit.cs" Line="217" Column="5" />
+      <File FileName="Assets\Scripts\Entity\GomUnit.cs" Line="197" Column="6" />
+      <File FileName="Assets\Scripts\World\World.cs" Line="89" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
