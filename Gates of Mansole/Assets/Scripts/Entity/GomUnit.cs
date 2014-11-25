@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class GomUnit : GomObject {
-
+	//Comment to overwrite
     public string entityName;
     public PropertyStats playerStats;
 	public PropertyStats enemyStats;
@@ -193,13 +193,13 @@ public class GomUnit : GomObject {
 	
 	void Update() {
 		// Don't update the unit until the animation has been changed
-		if (NextState != State) {
-			if (GetComponent<UnitAnimation>().isAnimationChanged() == true) {
+		//if (NextState != State) {
+			//if (GetComponent<UnitAnimation>().isAnimationChanged() == true) {
 				State = NextState;
-			} else {
-				return;
-			}
-		}
+			//} else {
+				//return;
+			//}
+		//}
 
 		switch (State) {
 		case _state.Idle:
@@ -324,9 +324,9 @@ public class GomUnit : GomObject {
 		//Debug.Log(xSpeed + ":" + ySpeed + "> <" + deltaX + ":" + deltaY);
 		if ((xSpeed == 0) && (ySpeed == 0)) {
 			curTile = moveTile;
-            this.SendMessage("SetDirection", idleDir, SendMessageOptions.DontRequireReceiver);
-			this.SendMessage("SetAction", UnitAnimation._action.Idle, SendMessageOptions.DontRequireReceiver);
-			this.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
+            //this.SendMessage("SetDirection", idleDir, SendMessageOptions.DontRequireReceiver);
+			//this.SendMessage("SetAction", UnitAnimation._action.Idle, SendMessageOptions.DontRequireReceiver);
+			//this.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
 			NextState = _state.Idle;
 		} else {
 			transform.position = new Vector3 (transform.position.x + xSpeed, transform.position.y + ySpeed, transform.position.z);
