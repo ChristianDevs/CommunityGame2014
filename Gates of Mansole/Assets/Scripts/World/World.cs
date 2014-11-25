@@ -78,7 +78,7 @@ public class World : MonoBehaviour {
             currentLevel = null;
         }
 
-		Player.spiritShards = Player.totalShards = 20;
+		Player.spiritShards = Player.totalShards = 10;
 		foreach (GameObject unitType in unitTypes) {
 			UiUnitType uType;
 			uType = unitType.GetComponent<UiUnitType> ();
@@ -320,7 +320,7 @@ public class World : MonoBehaviour {
                                 ((tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy) &&
                                 !currentLevel.GetComponent<WaveList>().isPlayerAttacker)) {
 
-                                if (curLevelAttackerDir == WaveList._direction.Right) {
+								if (curLevelAttackerDir == WaveList._direction.Right) {
                                     if ((col + 1) >= gridSize.col) {
                                         // Unit passed off the screen
                                         Destroy(tileContents[row][col]);
@@ -332,7 +332,9 @@ public class World : MonoBehaviour {
                                             tileContents[row][col].SendMessage("Move", new Vector2(col + 1, row), SendMessageOptions.DontRequireReceiver);
                                             tileContents[row][col + 1] = tileContents[row][col];
                                             tileContents[row][col] = null;
-                                        }
+										}else{
+											tileContents[row][col].SendMessage("SetIdleDirection",tileContents[row][col].GetComponent<GomUnit>().idleDir,SendMessageOptions.DontRequireReceiver);
+										}
                                     }
                                 } else if (curLevelAttackerDir == WaveList._direction.Left) {
                                     if (col == 0) {
@@ -346,9 +348,11 @@ public class World : MonoBehaviour {
                                             tileContents[row][col].SendMessage("Move", new Vector2(col - 1, row), SendMessageOptions.DontRequireReceiver);
                                             tileContents[row][col - 1] = tileContents[row][col];
                                             tileContents[row][col] = null;
-                                        }
+										}else{
+											tileContents[row][col].SendMessage("SetIdleDirection",tileContents[row][col].GetComponent<GomUnit>().idleDir,SendMessageOptions.DontRequireReceiver);
+										}
                                     }
-                                }
+								}
 							}
 						}
 					}
