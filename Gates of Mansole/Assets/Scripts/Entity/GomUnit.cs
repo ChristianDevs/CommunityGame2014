@@ -194,7 +194,7 @@ public class GomUnit : GomObject {
 	void Update() {
 		// Don't update the unit until the animation has been changed
 		if (NextState != State) {
-			//if (GetComponent<UnitAnimation>().isAnimationChanged() == true) {
+			if (GetComponent<UnitAnimation>().isAnimationChanged() == true) {
 				State = NextState;
 			//} else {
 				//return;
