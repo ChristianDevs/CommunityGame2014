@@ -70,6 +70,7 @@
      <Compile Include="Assets\Scripts\State\StateMenu.cs" />
      <Compile Include="Assets\Scripts\State\StateTitle.cs" />
      <Compile Include="Assets\Scripts\Ui\Button.cs" />
+     <Compile Include="Assets\Scripts\Ui\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\Ui\Options.cs" />
      <Compile Include="Assets\Scripts\Ui\UILayer.cs" />
      <Compile Include="Assets\Scripts\Ui\UiAbility.cs" />
@@ -84,13 +85,14 @@
      <Compile Include="Assets\Scripts\Ui\UiTiles.cs" />
      <Compile Include="Assets\Scripts\Ui\UiTitle.cs" />
      <Compile Include="Assets\Scripts\Ui\UiUnitSelect.cs" />
+     <Compile Include="Assets\Scripts\Ui\UiUnitType.cs" />
+     <Compile Include="Assets\Scripts\Ui\UnitSpawnMenuController.cs" />
      <Compile Include="Assets\Scripts\UnitTest\AllAnimTest.cs" />
      <Compile Include="Assets\Scripts\UnitTest\SingleAnimTest.cs" />
      <Compile Include="Assets\Scripts\Upgrade.cs" />
      <Compile Include="Assets\Scripts\World\Camera.cs" />
      <Compile Include="Assets\Scripts\World\Player.cs" />
      <Compile Include="Assets\Scripts\World\World.cs" />
-     <Compile Include="Assets\UnitSpawnMenuController.cs" />
      <None Include="Assets\Animations\AnimationKey.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

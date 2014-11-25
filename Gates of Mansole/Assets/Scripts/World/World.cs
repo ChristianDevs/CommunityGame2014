@@ -78,7 +78,7 @@ public class World : MonoBehaviour {
             currentLevel = null;
         }
 
-		Player.spiritShards = Player.totalShards = 20;
+		Player.spiritShards = Player.totalShards = 10;
 		foreach (GameObject unitType in unitTypes) {
 			UiUnitType uType;
 			uType = unitType.GetComponent<UiUnitType> ();
