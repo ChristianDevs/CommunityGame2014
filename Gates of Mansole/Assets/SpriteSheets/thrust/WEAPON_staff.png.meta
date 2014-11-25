@@ -1,39 +1,6 @@
 fileFormatVersion: 2
 guid: 97e57126e0d1b434b8632f71a02ff0b0
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: WEAPON_staff_0
-    21300002: WEAPON_staff_1
-    21300004: WEAPON_staff_2
-    21300006: WEAPON_staff_3
-    21300008: WEAPON_staff_4
-    21300010: WEAPON_staff_5
-    21300012: WEAPON_staff_6
-    21300014: WEAPON_staff_7
-    21300016: WEAPON_staff_8
-    21300018: WEAPON_staff_9
-    21300020: WEAPON_staff_10
-    21300022: WEAPON_staff_11
-    21300024: WEAPON_staff_12
-    21300026: WEAPON_staff_13
-    21300028: WEAPON_staff_14
-    21300030: WEAPON_staff_15
-    21300032: WEAPON_staff_16
-    21300034: WEAPON_staff_17
-    21300036: WEAPON_staff_18
-    21300038: WEAPON_staff_19
-    21300040: WEAPON_staff_20
-    21300042: WEAPON_staff_21
-    21300044: WEAPON_staff_22
-    21300046: WEAPON_staff_23
-    21300048: WEAPON_staff_24
-    21300050: WEAPON_staff_25
-    21300052: WEAPON_staff_26
-    21300054: WEAPON_staff_27
-    21300056: WEAPON_staff_28
-    21300058: WEAPON_staff_29
-    21300060: WEAPON_staff_30
-    21300062: WEAPON_staff_31
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -68,7 +35,6 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
@@ -88,7 +54,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_1
       rect:
         serializedVersion: 2
@@ -98,7 +63,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_2
       rect:
         serializedVersion: 2
@@ -108,7 +72,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_3
       rect:
         serializedVersion: 2
@@ -118,7 +81,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_4
       rect:
         serializedVersion: 2
@@ -128,7 +90,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_5
       rect:
         serializedVersion: 2
@@ -138,7 +99,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_6
       rect:
         serializedVersion: 2
@@ -148,7 +108,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_7
       rect:
         serializedVersion: 2
@@ -158,7 +117,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_8
       rect:
         serializedVersion: 2
@@ -168,7 +126,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_9
       rect:
         serializedVersion: 2
@@ -178,7 +135,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_10
       rect:
         serializedVersion: 2
@@ -188,7 +144,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_11
       rect:
         serializedVersion: 2
@@ -198,7 +153,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_12
       rect:
         serializedVersion: 2
@@ -208,7 +162,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_13
       rect:
         serializedVersion: 2
@@ -218,7 +171,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_14
       rect:
         serializedVersion: 2
@@ -228,7 +180,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_15
       rect:
         serializedVersion: 2
@@ -238,7 +189,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_16
       rect:
         serializedVersion: 2
@@ -248,7 +198,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_17
       rect:
         serializedVersion: 2
@@ -258,7 +207,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_18
       rect:
         serializedVersion: 2
@@ -268,7 +216,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_19
       rect:
         serializedVersion: 2
@@ -278,7 +225,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_20
       rect:
         serializedVersion: 2
@@ -288,7 +234,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_21
       rect:
         serializedVersion: 2
@@ -298,7 +243,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_22
       rect:
         serializedVersion: 2
@@ -308,7 +252,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_23
       rect:
         serializedVersion: 2
@@ -318,7 +261,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_24
       rect:
         serializedVersion: 2
@@ -328,7 +270,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_25
       rect:
         serializedVersion: 2
@@ -338,7 +279,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_26
       rect:
         serializedVersion: 2
@@ -348,7 +288,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_27
       rect:
         serializedVersion: 2
@@ -358,7 +297,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_28
       rect:
         serializedVersion: 2
@@ -368,7 +306,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_29
       rect:
         serializedVersion: 2
@@ -378,7 +315,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_30
       rect:
         serializedVersion: 2
@@ -388,7 +324,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: WEAPON_staff_31
       rect:
         serializedVersion: 2
@@ -398,6 +333,5 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

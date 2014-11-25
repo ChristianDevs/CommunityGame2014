@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Player : MonoBehaviour {
 
@@ -13,23 +14,60 @@ public class Player : MonoBehaviour {
 	static public int spiritShards; // currency to purchase units/upgrades during gameplay
 	static public int totalShards;  // tracks shards gained during gameplay - used for conversions
 	static public int spiritOrbs;   // currency to purchase upgrades outside of gameplay
+	static public List<GameObject> unitTypes;
 
-    static public void resetPlayer() {
+    static public void resetPlayer(GameObject[] newUnitTypes) {
         level1Complete = 0;
         level2Complete = 0;
         level3Complete = 0;
         level4Complete = 0;
 		spiritOrbs = 0;
 
+		unitTypes = new List<GameObject>();
+		foreach (GameObject ut in newUnitTypes) {
+			if (ut.GetComponent<UiUnitType>().UnitName == "Bow") {
+				ut.GetComponent<UiUnitType>().level = 2;
+			} else {
+				ut.GetComponent<UiUnitType>().level = 0;
+			}
+			unitTypes.Add(ut);
+		}
+
         PlayerPrefs.DeleteAll();
     }
 
-    static public void loadPlayer() {
+	static public void loadPlayer(GameObject[] newUnitTypes) {
+		Debug.Log ("Loading");
         level1Complete = PlayerPrefs.GetInt("level1Complete");
         level2Complete = PlayerPrefs.GetInt("level2Complete");
         level3Complete = PlayerPrefs.GetInt("level3Complete");
         level4Complete = PlayerPrefs.GetInt("level4Complete");
+		spiritOrbs = PlayerPrefs.GetInt("spiritOrbs");
+
+		unitTypes = new List<GameObject>();
+		foreach (GameObject ut in newUnitTypes) {
+			unitTypes.Add(ut);
+		}
+
+		for (int i = 0; i < unitTypes.Count; i++) {
+			UiUnitType uiUnit;
+
+			uiUnit = unitTypes[i].GetComponent<UiUnitType>();
+			uiUnit.level = PlayerPrefs.GetInt (uiUnit.UnitName + "level");
+		}
     }
+
+	static public void upgradeUnit(UiUnitType upgradeUnit) {
+		for (int i = 0; i < unitTypes.Count; i++) {
+			if (unitTypes[i].GetComponent<UiUnitType>().UnitName == upgradeUnit.UnitName) {
+				UiUnitType uiUnit;
+
+				uiUnit = unitTypes[i].GetComponent<UiUnitType>();
+				PlayerPrefs.SetInt(uiUnit.UnitName + "level", uiUnit.level);
+				break;
+			}
+		}
+	}
 
     static public void completeLevel(int levelNum) {
 		convertShards ();
@@ -61,5 +99,6 @@ public class Player : MonoBehaviour {
 		spiritShards = 0;
 		totalShards = 0;
 		Debug.Log (spiritOrbs + " orbs gained.");
+		PlayerPrefs.SetInt ("spiritOrbs", spiritOrbs);
 	}
 }

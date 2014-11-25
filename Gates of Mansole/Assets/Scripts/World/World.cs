@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class World : MonoBehaviour {
 
 	public float TileUnitOffset;
-    public GameObject[] squares;
+	public List<GameObject> squares;
     public GameObject map;
 	public GameObject[] Levels;
     public GameObject winMessage;
@@ -78,16 +78,11 @@ public class World : MonoBehaviour {
             currentLevel = null;
         }
 
-		Player.spiritShards = Player.totalShards = 10;
+		Player.spiritShards = Player.totalShards = 100;
 		foreach (GameObject unitType in unitTypes) {
 			UiUnitType uType;
 			uType = unitType.GetComponent<UiUnitType> ();
-
-			if (uType != null) {
-				uType.getStats ().resetUnitStats ();
-			} else {
-				Debug.Log("No UiUnitType Component");
-			}
+			uType.resetUnitStats();
 		}
         letThroughAttackers = 0;
         defeatedAttackers = 0;
@@ -219,7 +214,7 @@ public class World : MonoBehaviour {
                 }
 
                 if (Physics.Raycast(UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition), out hitSquare)) {
-					for(int i=0;i<squares.Length;++i)
+					for(int i=0;i<squares.Count;++i)
                     if (hitSquare.transform.name == squares[i].transform.name) {
                         selectedUiUnit = unitsUIinst[i];
                     }
@@ -268,8 +263,10 @@ public class World : MonoBehaviour {
 
 					for(int i=0;i<unitsUIinst.Count;++i){
 						if (selectedUiUnit == unitsUIinst[i]) {
-							if (SpawnUnit(unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(), (int)tile.row, (int)tile.col, GomObject.Faction.Player))
+							if (SpawnUnit(unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(), (int)tile.row, (int)tile.col, GomObject.Faction.Player)) {
 	                        	tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
+								tileContents[(int)tile.row][(int)tile.col].transform.name = unitTypes[i].GetComponent<UiUnitType>().UnitName;
+							}
 	                    }
 					}
                 }
@@ -320,7 +317,7 @@ public class World : MonoBehaviour {
                                 ((tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy) &&
                                 !currentLevel.GetComponent<WaveList>().isPlayerAttacker)) {
 
-								if (curLevelAttackerDir == WaveList._direction.Right) {
+                                if (curLevelAttackerDir == WaveList._direction.Right) {
                                     if ((col + 1) >= gridSize.col) {
                                         // Unit passed off the screen
                                         Destroy(tileContents[row][col]);
@@ -332,9 +329,7 @@ public class World : MonoBehaviour {
                                             tileContents[row][col].SendMessage("Move", new Vector2(col + 1, row), SendMessageOptions.DontRequireReceiver);
                                             tileContents[row][col + 1] = tileContents[row][col];
                                             tileContents[row][col] = null;
-										}else{
-											tileContents[row][col].SendMessage("SetIdleDirection",tileContents[row][col].GetComponent<GomUnit>().idleDir,SendMessageOptions.DontRequireReceiver);
-										}
+                                        }
                                     }
                                 } else if (curLevelAttackerDir == WaveList._direction.Left) {
                                     if (col == 0) {
@@ -348,23 +343,22 @@ public class World : MonoBehaviour {
                                             tileContents[row][col].SendMessage("Move", new Vector2(col - 1, row), SendMessageOptions.DontRequireReceiver);
                                             tileContents[row][col - 1] = tileContents[row][col];
                                             tileContents[row][col] = null;
-										}else{
-											tileContents[row][col].SendMessage("SetIdleDirection",tileContents[row][col].GetComponent<GomUnit>().idleDir,SendMessageOptions.DontRequireReceiver);
-										}
+                                        }
                                     }
-								}
+                                }
 							}
 						}
 					}
 					// update unit stats
 					if (tileContents[row][col]) {
-						for(int i=0;i<unitTypes.Count;++i)
-							if (tileContents[row][col].name.Equals (unitTypes[i].name+"(Clone)")){
+						for(int i=0;i<unitTypes.Count;++i) {
+							if (tileContents[row][col].name.Equals (unitTypes[i].name)){
 								PropertyStats playerStats = unitTypes [i].GetComponent<GomUnit> ().playerStats;
 								PropertyStats enemyStats = unitTypes [i].GetComponent<GomUnit> ().enemyStats;
 								PropertyStats stats = (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) ? playerStats : enemyStats;
 								stats.updateUnitStats(tileContents[row][col]);
 							}
+						}
 					}
 				}
 			}
