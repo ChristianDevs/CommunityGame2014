@@ -101,4 +101,9 @@ public class Player : MonoBehaviour {
 		Debug.Log (spiritOrbs + " orbs gained.");
 		PlayerPrefs.SetInt ("spiritOrbs", spiritOrbs);
 	}
+
+	static void AddOrbs(int amt) {
+		spiritOrbs += amt;
+		PlayerPrefs.SetInt("spiritOrbs", spiritOrbs);
+	}
 }

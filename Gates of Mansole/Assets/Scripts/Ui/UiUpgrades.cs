@@ -58,8 +58,8 @@ public class UiUpgrades : MonoBehaviour {
 
 						for (int j = 0; j < Player.unitTypes.Count; j++) {
 							if (unitTypeName == Player.unitTypes[j].GetComponent<UiUnitType>().UnitName) {
-								UpdateDisplay();
 								selectedUnitType = j;
+								UpdateDisplay();
 							}
 						}
 					}
@@ -74,19 +74,21 @@ public class UiUpgrades : MonoBehaviour {
 			Application.LoadLevel("LevelSelect");
 			break;
 		case "Upgrade":
-			float x = startUnitX + (selectedUnitType * incUnitX);
-			float y = startUnitY + ((Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().level + 1) * incUnitY);
+			if (Player.spiritOrbs > ((Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().level * 2) + 2)) {
+				float x = startUnitX + (selectedUnitType * incUnitX);
+				float y = startUnitY + ((Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().level + 1) * incUnitY);
 
-			Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().level++;
-			Player.upgradeUnit(Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>());
-			Debug.Log("Upgraded Unit " + selectedUnitType);
+				Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().level++;
+				Player.upgradeUnit(Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>());
+				Debug.Log("Upgraded Unit " + selectedUnitType);
 
-			upgradeWindows.Add(Instantiate(unitWindow, new Vector3(x, y), Quaternion.identity) as GameObject);
-			upgradeWindows[upgradeWindows.Count-1].transform.name =
-				Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().UnitName +
-				Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().level;
-			upgrades.Add(Instantiate(Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().getRandomUnit(), new Vector3(x, y), Quaternion.identity) as GameObject);
-			upgrades[upgrades.Count-1].GetComponent<GomUnit>().enabled = false;
+				upgradeWindows.Add(Instantiate(unitWindow, new Vector3(x, y), Quaternion.identity) as GameObject);
+				upgradeWindows[upgradeWindows.Count-1].transform.name =
+					Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().UnitName +
+					Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().level;
+				upgrades.Add(Instantiate(Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().getRandomUnit(), new Vector3(x, y), Quaternion.identity) as GameObject);
+				upgrades[upgrades.Count-1].GetComponent<GomUnit>().enabled = false;
+			}
 			break;
 		default:
 			break;
@@ -105,6 +107,10 @@ public class UiUpgrades : MonoBehaviour {
 		
 		textToDisplay += "Level: ";
 		textToDisplay += ut.level;
+		textToDisplay += "\n";
+
+		textToDisplay += "Upgrade Cost: ";
+		textToDisplay += ut.level * 2 + 2;
 		textToDisplay += "\n";
 
 		unitInfoText.text = textToDisplay;
