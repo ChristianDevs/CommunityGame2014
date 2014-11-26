@@ -90,6 +90,7 @@ public class UiUpgrades : MonoBehaviour {
 				upgrades.Add(Instantiate(Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().getRandomUnit(), new Vector3(x, y), Quaternion.identity) as GameObject);
 				upgrades[upgrades.Count-1].GetComponent<GomUnit>().enabled = false;
 				Player.AddOrbs(-orbCost);
+				UpdateDisplay();
 			}
 			break;
 		default:
