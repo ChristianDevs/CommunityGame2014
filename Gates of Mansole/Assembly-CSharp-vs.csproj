@@ -79,6 +79,7 @@
      <Compile Include="Assets\Scripts\Ui\UiMenu.cs" />
      <Compile Include="Assets\Scripts\Ui\UiPaused.cs" />
      <Compile Include="Assets\Scripts\Ui\UiRow.cs" />
+     <Compile Include="Assets\Scripts\Ui\UiSpiritOrbs.cs" />
      <Compile Include="Assets\Scripts\Ui\UiSpiritShard.cs" />
      <Compile Include="Assets\Scripts\Ui\UiTile.cs" />
      <Compile Include="Assets\Scripts\Ui\UiTiles.cs" />
