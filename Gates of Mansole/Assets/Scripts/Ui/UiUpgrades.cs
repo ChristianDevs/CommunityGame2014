@@ -74,7 +74,8 @@ public class UiUpgrades : MonoBehaviour {
 			Application.LoadLevel("LevelSelect");
 			break;
 		case "Upgrade":
-			if (Player.spiritOrbs > ((Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().level * 2) + 2)) {
+			int orbCost = (Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().level * 2) + 2;
+			if (Player.spiritOrbs > orbCost) {
 				float x = startUnitX + (selectedUnitType * incUnitX);
 				float y = startUnitY + ((Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().level + 1) * incUnitY);
 
@@ -88,6 +89,7 @@ public class UiUpgrades : MonoBehaviour {
 					Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().level;
 				upgrades.Add(Instantiate(Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().getRandomUnit(), new Vector3(x, y), Quaternion.identity) as GameObject);
 				upgrades[upgrades.Count-1].GetComponent<GomUnit>().enabled = false;
+				Player.AddOrbs(-orbCost);
 			}
 			break;
 		default:

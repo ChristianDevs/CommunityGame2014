@@ -21,7 +21,7 @@ public class Player : MonoBehaviour {
         level2Complete = 0;
         level3Complete = 0;
         level4Complete = 0;
-		spiritOrbs = 0;
+		spiritOrbs = 10;
 
 		unitTypes = new List<GameObject>();
 		foreach (GameObject ut in newUnitTypes) {
@@ -102,7 +102,7 @@ public class Player : MonoBehaviour {
 		PlayerPrefs.SetInt ("spiritOrbs", spiritOrbs);
 	}
 
-	static void AddOrbs(int amt) {
+	static public void AddOrbs(int amt) {
 		spiritOrbs += amt;
 		PlayerPrefs.SetInt("spiritOrbs", spiritOrbs);
 	}
