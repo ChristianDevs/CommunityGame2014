@@ -6,11 +6,10 @@ public class UiUpgrades : MonoBehaviour {
 
 	public TextMesh unitInfoText;
 	public GameObject unitWindow;
-	public GameObject backButton;
-	public int startUnitX;
-	public int startUnitY;
-	public int incUnitX;
-	public int incUnitY;
+	public float startUnitX;
+	public float startUnitY;
+	public float incUnitX;
+	public float incUnitY;
 
 	private List<GameObject> upgrades;
 	private List<GameObject> upgradeWindows;
@@ -59,7 +58,7 @@ public class UiUpgrades : MonoBehaviour {
 
 						for (int j = 0; j < Player.unitTypes.Count; j++) {
 							if (unitTypeName == Player.unitTypes[j].GetComponent<UiUnitType>().UnitName) {
-								unitInfoText.text = unitTypeName;
+								UpdateDisplay();
 								selectedUnitType = j;
 							}
 						}
@@ -92,5 +91,22 @@ public class UiUpgrades : MonoBehaviour {
 		default:
 			break;
 		}
+	}
+
+	void UpdateDisplay() {
+		string textToDisplay;
+		UiUnitType ut;
+
+		ut = Player.unitTypes [selectedUnitType].GetComponent<UiUnitType>();
+
+		textToDisplay = "Name: ";
+		textToDisplay += ut.UnitName;
+		textToDisplay += "\n";
+		
+		textToDisplay += "Level: ";
+		textToDisplay += ut.level;
+		textToDisplay += "\n";
+
+		unitInfoText.text = textToDisplay;
 	}
 }
