@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class GomUnit : GomObject {
@@ -39,6 +39,7 @@ public class GomUnit : GomObject {
 	private float attackTimer;
 	private float dieTimer;
 	private GomUnit attacker;
+    public GameObject world;
     public UnitAnimation._direction idleDir;
     private GameObject HpLeftBar;
     private GameObject HpMidBar;
@@ -98,6 +99,10 @@ public class GomUnit : GomObject {
 			Debug.Log ("Player now has " + Player.spiritShards + " spirit shards and " + Player.totalShards + " total shards.");
 		}
 	}
+
+    void SetWorld(GameObject newWorld) {
+        world = newWorld;
+    }
 
     void updateHealthBars() {
         float percentLeft;
@@ -166,12 +171,14 @@ public class GomUnit : GomObject {
 		this.SendMessage("SetAction", UnitAnimation._action.Die, SendMessageOptions.DontRequireReceiver);
 		this.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
 	}
+
+    void Awake() {
+        State = _state.Idle;
+        NextState = State;
+    }
 	
 	// Use this for initialization
 	void Start () {
-		State = _state.Idle;
-		NextState = State;
-
         HpBarPos = new Vector3(transform.position.x - 0.4f, transform.position.y + 0.4f);
         HpBarMidScale = 7.5f;
 
@@ -193,16 +200,19 @@ public class GomUnit : GomObject {
 	
 	void Update() {
 		// Don't update the unit until the animation has been changed
-		//if (NextState != State) {
-			//if (GetComponent<UnitAnimation>().isAnimationChanged() == true) {
+		if (NextState != State) {
+			if (GetComponent<UnitAnimation>().isAnimationChanged() == true) {
 				State = NextState;
-			//} else {
-				//return;
-			//}
-		//}
+			} else {
+				return;
+			}
+		}
 
 		switch (State) {
 		case _state.Idle:
+            this.SendMessage("SetDirection", idleDir, SendMessageOptions.DontRequireReceiver);
+			this.SendMessage("SetAction", UnitAnimation._action.Idle, SendMessageOptions.DontRequireReceiver);
+			this.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
 			break;
 		case _state.SetupMove:
 			SetupMoveUnit();
@@ -322,14 +332,13 @@ public class GomUnit : GomObject {
 		}
 		
 		//Debug.Log(xSpeed + ":" + ySpeed + "> <" + deltaX + ":" + deltaY);
-		if ((xSpeed == 0) && (ySpeed == 0)) {
+        if ((deltaX == 0) && (deltaY == 0)) {
 			curTile = moveTile;
-            //this.SendMessage("SetDirection", idleDir, SendMessageOptions.DontRequireReceiver);
-			//this.SendMessage("SetAction", UnitAnimation._action.Idle, SendMessageOptions.DontRequireReceiver);
-			//this.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
 			NextState = _state.Idle;
-		} else {
-			transform.position = new Vector3 (transform.position.x + xSpeed, transform.position.y + ySpeed, transform.position.z);
+            State = NextState;
+            world.GetComponent<World>().UnitAI((int)curTile.y, (int)curTile.x);
 		}
+
+	    transform.position = new Vector3 (transform.position.x + xSpeed, transform.position.y + ySpeed, transform.position.z);
 	}
 }
