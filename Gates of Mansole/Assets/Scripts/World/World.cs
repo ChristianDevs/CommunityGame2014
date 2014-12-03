@@ -287,89 +287,103 @@ public class World : MonoBehaviour {
 		// Update units in the tiles
 		for (int row = 0; row < gridSize.row; row++) {
 			for (int col = 0; col < gridSize.col; col++) {
-                // If the tile is not empty then see if the unit needs to do something
-				if (tileContents[row][col] != null) {
-					if (tileContents[row][col].GetComponent<GomUnit>().health <= 0) {
-						// Unit is defeated
-                        if (isPlayerAttacker == true) {
-                            if (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) {
-                                totalAttackers--;
-                                defeatedAttackers++;
-                            } else {
-                                totalDefenders--;
-                            }
-                        } else {
-                            if (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) {
-                                totalDefenders--;
-                            } else {
-                                totalAttackers--;
-                                defeatedAttackers++;
-                            }
-                        }
-
-						tileContents[row][col].SendMessage("Die", null, SendMessageOptions.DontRequireReceiver);
-						tileContents[row][col] = null;
-					} else if (tileContents[row][col].GetComponent<GomUnit>().CanMove()) {
-						if (CanUnitAttackLeftRight(row, col) == true) {
-							// Unit can attack
-                            AttackLeftRightNearestEnemy(row, col);
-						} else {
-							// Unit can move
-                            if (((tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) &&
-                                currentLevel.GetComponent<WaveList>().isPlayerAttacker) ||
-                                ((tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy) &&
-                                !currentLevel.GetComponent<WaveList>().isPlayerAttacker)) {
-
-								if (curLevelAttackerDir == WaveList._direction.Right) {
-                                    if ((col + 1) >= gridSize.col) {
-                                        // Unit passed off the screen
-                                        Destroy(tileContents[row][col]);
-                                        tileContents[row][col] = null;
-                                        letThroughAttackers++;
-                                    } else {
-                                        if (tileContents[row][col + 1] == null) {
-                                            // Advance attacker units to the right
-                                            tileContents[row][col].SendMessage("Move", new Vector2(col + 1, row), SendMessageOptions.DontRequireReceiver);
-                                            tileContents[row][col + 1] = tileContents[row][col];
-                                            tileContents[row][col] = null;
-										}else{
-											tileContents[row][col].SendMessage("SetIdleDirection",tileContents[row][col].GetComponent<GomUnit>().idleDir,SendMessageOptions.DontRequireReceiver);
-										}
-                                    }
-                                } else if (curLevelAttackerDir == WaveList._direction.Left) {
-                                    if (col == 0) {
-                                        // Unit passed off the screen
-                                        Destroy(tileContents[row][col]);
-                                        tileContents[row][col] = null;
-                                        letThroughAttackers++;
-                                    } else {
-                                        if (tileContents[row][col - 1] == null) {
-                                            // Advance attacker units to the right
-                                            tileContents[row][col].SendMessage("Move", new Vector2(col - 1, row), SendMessageOptions.DontRequireReceiver);
-                                            tileContents[row][col - 1] = tileContents[row][col];
-                                            tileContents[row][col] = null;
-										}else{
-											tileContents[row][col].SendMessage("SetIdleDirection",tileContents[row][col].GetComponent<GomUnit>().idleDir,SendMessageOptions.DontRequireReceiver);
-										}
-                                    }
-								}
-							}
-						}
-					}
-					// update unit stats
-					if (tileContents[row][col]) {
-						for(int i=0;i<unitTypes.Count;++i)
-							if (tileContents[row][col].name.Equals (unitTypes[i].name+"(Clone)")){
-								PropertyStats playerStats = unitTypes [i].GetComponent<GomUnit> ().playerStats;
-								PropertyStats enemyStats = unitTypes [i].GetComponent<GomUnit> ().enemyStats;
-								PropertyStats stats = (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) ? playerStats : enemyStats;
-								stats.updateUnitStats(tileContents[row][col]);
-							}
-					}
-				}
+                UnitAI(row, col);
 			}
 		}
 	}
+
+    public void UnitAI(int row, int col) {
+        // If the tile is not empty then see if the unit needs to do something
+        if (tileContents[row][col] != null) {
+            if (tileContents[row][col].GetComponent<GomUnit>().health <= 0) {
+                // Unit is defeated
+                if (isPlayerAttacker == true) {
+                    if (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) {
+                        totalAttackers--;
+                        defeatedAttackers++;
+                    }
+                    else {
+                        totalDefenders--;
+                    }
+                }
+                else {
+                    if (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) {
+                        totalDefenders--;
+                    }
+                    else {
+                        totalAttackers--;
+                        defeatedAttackers++;
+                    }
+                }
+
+                tileContents[row][col].SendMessage("Die", null, SendMessageOptions.DontRequireReceiver);
+                tileContents[row][col] = null;
+            }
+            else if (tileContents[row][col].GetComponent<GomUnit>().CanMove()) {
+                if (CanUnitAttackLeftRight(row, col) == true) {
+                    // Unit can attack
+                    AttackLeftRightNearestEnemy(row, col);
+                }
+                else {
+                    // Unit can move
+                    if (((tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) &&
+                        currentLevel.GetComponent<WaveList>().isPlayerAttacker) ||
+                        ((tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy) &&
+                        !currentLevel.GetComponent<WaveList>().isPlayerAttacker)) {
+
+                        if (curLevelAttackerDir == WaveList._direction.Right) {
+                            if ((col + 1) >= gridSize.col) {
+                                // Unit passed off the screen
+                                Destroy(tileContents[row][col]);
+                                tileContents[row][col] = null;
+                                letThroughAttackers++;
+                            }
+                            else {
+                                if (tileContents[row][col + 1] == null) {
+                                    // Advance attacker units to the right
+                                    tileContents[row][col].SendMessage("Move", new Vector2(col + 1, row), SendMessageOptions.DontRequireReceiver);
+                                    tileContents[row][col + 1] = tileContents[row][col];
+                                    tileContents[row][col] = null;
+                                }
+                                else {
+                                    tileContents[row][col].SendMessage("SetIdleDirection", tileContents[row][col].GetComponent<GomUnit>().idleDir, SendMessageOptions.DontRequireReceiver);
+                                }
+                            }
+                        }
+                        else if (curLevelAttackerDir == WaveList._direction.Left) {
+                            if (col == 0) {
+                                // Unit passed off the screen
+                                Destroy(tileContents[row][col]);
+                                tileContents[row][col] = null;
+                                letThroughAttackers++;
+                            }
+                            else {
+                                if (tileContents[row][col - 1] == null) {
+                                    // Advance attacker units to the right
+                                    tileContents[row][col].SendMessage("Move", new Vector2(col - 1, row), SendMessageOptions.DontRequireReceiver);
+                                    tileContents[row][col - 1] = tileContents[row][col];
+                                    tileContents[row][col] = null;
+                                }
+                                else {
+                                    tileContents[row][col].SendMessage("SetIdleDirection", tileContents[row][col].GetComponent<GomUnit>().idleDir, SendMessageOptions.DontRequireReceiver);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // update unit stats
+            if (tileContents[row][col]) {
+                for (int i = 0; i < unitTypes.Count; ++i)
+                    if (tileContents[row][col].name.Equals(unitTypes[i].name + "(Clone)")) {
+                        PropertyStats playerStats = unitTypes[i].GetComponent<GomUnit>().playerStats;
+                        PropertyStats enemyStats = unitTypes[i].GetComponent<GomUnit>().enemyStats;
+                        PropertyStats stats = (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) ? playerStats : enemyStats;
+                        stats.updateUnitStats(tileContents[row][col]);
+                    }
+            }
+        }
+    }
 
 	bool CanUnitAttackLeftRight(int row, int col) {
 		GomUnit attacker;
@@ -504,6 +518,7 @@ public class World : MonoBehaviour {
 		tileContents[tileRow][tileCol].GetComponent<GomUnit>().enabled = true;
         tileContents[tileRow][tileCol].SendMessage("SetCurrentTile", new Vector2(tileCol, tileRow), SendMessageOptions.DontRequireReceiver);
         tileContents[tileRow][tileCol].SendMessage("SetFaction", faction, SendMessageOptions.DontRequireReceiver);
+        tileContents[tileRow][tileCol].SendMessage("SetWorld", gameObject, SendMessageOptions.DontRequireReceiver);
         tileContents[tileRow][tileCol].SendMessage("SetMoveXScale", map.transform.localScale.x, SendMessageOptions.DontRequireReceiver);
 
         return true;
