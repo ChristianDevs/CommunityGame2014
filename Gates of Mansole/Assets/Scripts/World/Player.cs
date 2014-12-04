@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -17,11 +17,14 @@ public class Player : MonoBehaviour {
 	static public List<GameObject> unitTypes;
 
     static public void resetPlayer(GameObject[] newUnitTypes) {
+        PlayerPrefs.DeleteAll();
+
         level1Complete = 0;
         level2Complete = 0;
         level3Complete = 0;
         level4Complete = 0;
-		spiritOrbs = 10;
+
+        AddOrbs(10);
 
 		unitTypes = new List<GameObject>();
 		foreach (GameObject ut in newUnitTypes) {
@@ -30,14 +33,13 @@ public class Player : MonoBehaviour {
 			} else {
 				ut.GetComponent<UiUnitType>().level = 0;
 			}
-			unitTypes.Add(ut);
+            unitTypes.Add(ut);
+            upgradeUnit(ut.GetComponent<UiUnitType>());
 		}
 
-        PlayerPrefs.DeleteAll();
     }
 
 	static public void loadPlayer(GameObject[] newUnitTypes) {
-		Debug.Log ("Loading");
         level1Complete = PlayerPrefs.GetInt("level1Complete");
         level2Complete = PlayerPrefs.GetInt("level2Complete");
         level3Complete = PlayerPrefs.GetInt("level3Complete");
@@ -53,7 +55,7 @@ public class Player : MonoBehaviour {
 			UiUnitType uiUnit;
 
 			uiUnit = unitTypes[i].GetComponent<UiUnitType>();
-			uiUnit.level = PlayerPrefs.GetInt (uiUnit.UnitName + "level");
+        		uiUnit.level = PlayerPrefs.GetInt(uiUnit.UnitName + "level");
 		}
     }
 
@@ -62,7 +64,7 @@ public class Player : MonoBehaviour {
 			if (unitTypes[i].GetComponent<UiUnitType>().UnitName == upgradeUnit.UnitName) {
 				UiUnitType uiUnit;
 
-				uiUnit = unitTypes[i].GetComponent<UiUnitType>();
+                uiUnit = unitTypes[i].GetComponent<UiUnitType>();
 				PlayerPrefs.SetInt(uiUnit.UnitName + "level", uiUnit.level);
 				break;
 			}
