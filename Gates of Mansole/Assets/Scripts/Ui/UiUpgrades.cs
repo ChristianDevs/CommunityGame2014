@@ -75,7 +75,7 @@ public class UiUpgrades : MonoBehaviour {
 			break;
 		case "Upgrade":
 			int orbCost = (Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().level * 2) + 2;
-			if (Player.spiritOrbs > orbCost) {
+			if (Player.spiritOrbs >= orbCost) {
 				float x = startUnitX + (selectedUnitType * incUnitX);
 				float y = startUnitY + ((Player.unitTypes[selectedUnitType].GetComponent<UiUnitType>().level + 1) * incUnitY);
 
