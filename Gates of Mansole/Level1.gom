@@ -1,0 +1,66 @@
+AttackersLetThrough:3
+IsPlayerAttacker:False
+AttackerDir:Left
+Map:Keep
+StartShards:9
+Wave:
+    WaitTime:0
+    WaveUnit:
+        Time:0
+        Unit:Sword
+        SpawnLoc:RandRow
+        Tile:0:0
+Wave:
+    WaitTime:7
+    WaveUnit:
+        Time:0
+        Unit:Sword
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:1
+        Unit:Sword
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:2
+        Unit:Sword
+        SpawnLoc:RandRow
+        Tile:0:0
+Wave:
+    WaitTime:15
+    WaveUnit:
+        Time:0
+        Unit:Sword
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:1
+        Unit:Sword
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:1
+        Unit:Sword
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:2
+        Unit:Sword
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:3
+        Unit:Sword
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:3
+        Unit:Sword
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:3
+        Unit:Sword
+        SpawnLoc:RandRow
+        Tile:0:0

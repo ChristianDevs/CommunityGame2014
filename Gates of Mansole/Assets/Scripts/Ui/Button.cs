@@ -9,6 +9,7 @@ public class Button : MonoBehaviour {
 	public GameObject HighlightImage;
 	public GameObject controller;
 	public bool isPressed;
+    public GameObject textMeshObj;
 
 	void Start () {
 		isPressed = false;

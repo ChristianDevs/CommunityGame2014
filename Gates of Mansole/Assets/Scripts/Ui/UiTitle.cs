@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class UiTitle : MonoBehaviour {
 
@@ -7,7 +8,16 @@ public class UiTitle : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        string[] levelData;
+
 		Screen.orientation = ScreenOrientation.Landscape;
+
+        levelData = System.IO.File.ReadAllLines("Data.gom");
+
+        Player.levelFileNames = new List<string>();
+        foreach (string ln in levelData) {
+            Player.levelFileNames.Add(ln);
+        }
 	}
 	
 	// Update is called once per frame

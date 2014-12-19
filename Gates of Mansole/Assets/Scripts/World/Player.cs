@@ -6,23 +6,21 @@ public class Player : MonoBehaviour {
 
 	const float CONVERSION_RATE = 0.2f; // shards to orbs
 
-    static public int level1Complete;
-    static public int level2Complete;
-    static public int level3Complete;
-    static public int level4Complete;
+    static public List<int> levelComplete;
     static public int currentLevel;
 	static public int spiritShards; // currency to purchase units/upgrades during gameplay
 	static public int totalShards;  // tracks shards gained during gameplay - used for conversions
 	static public int spiritOrbs;   // currency to purchase upgrades outside of gameplay
 	static public List<GameObject> unitTypes;
+    static public string nextLevelFile;
+    static public List<string> levelFileNames;
 
     static public void resetPlayer(GameObject[] newUnitTypes) {
         PlayerPrefs.DeleteAll();
-
-        level1Complete = 0;
-        level2Complete = 0;
-        level3Complete = 0;
-        level4Complete = 0;
+        levelComplete = new List<int>();
+        foreach (string fileName in levelFileNames) {
+            levelComplete.Add(0);
+        }
 
         AddOrbs(10);
 
@@ -39,11 +37,11 @@ public class Player : MonoBehaviour {
 
     }
 
-	static public void loadPlayer(GameObject[] newUnitTypes) {
-        level1Complete = PlayerPrefs.GetInt("level1Complete");
-        level2Complete = PlayerPrefs.GetInt("level2Complete");
-        level3Complete = PlayerPrefs.GetInt("level3Complete");
-        level4Complete = PlayerPrefs.GetInt("level4Complete");
+    static public void loadPlayer(GameObject[] newUnitTypes) {
+        levelComplete = new List<int>();
+        foreach (string fileName in levelFileNames) {
+            levelComplete.Add(PlayerPrefs.GetInt(fileName));
+        }
 		spiritOrbs = PlayerPrefs.GetInt("spiritOrbs");
 
 		unitTypes = new List<GameObject>();
@@ -74,24 +72,25 @@ public class Player : MonoBehaviour {
     static public void completeLevel(int levelNum) {
 		convertShards ();
 
-        switch (levelNum) {
-            case 1:
-                level1Complete = 1;
-                PlayerPrefs.SetInt("level1Complete", 1);
-                break;
-            case 2:
-                level2Complete = 1;
-                PlayerPrefs.SetInt("level2Complete", 1);
-                break;
-            case 3:
-                level3Complete = 1;
-                PlayerPrefs.SetInt("level3Complete", 1);
-                break;
-            case 4:
-                level4Complete = 1;
-                PlayerPrefs.SetInt("level4Complete", 1);
-                break;
+        if (levelNum >= levelFileNames.Count) {
+            return;
         }
+
+        Debug.Log("Completing " + levelFileNames[levelNum]);
+        levelComplete[levelNum] = 1;
+        PlayerPrefs.SetInt(levelFileNames[levelNum], 1);
+    }
+
+    static public int getNumLevelsBeaten() {
+        int num = 0;
+
+        foreach (int lvl in levelComplete) {
+            if (lvl > 0) {
+                num++;
+            }
+        }
+
+        return num;
     }
 
 	static public void convertShards() {

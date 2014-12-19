@@ -54,7 +54,7 @@ public class GomUnit : GomObject {
         // Whatever - arbitrary damage calculation
         int minDamage = Random.Range(0, 2);  // always a chance of doing something
         int variation = Random.Range(0, attacker.getStats().attack / 5 + 1);
-		int baseDamage = attacker.getStats().attack - this.getStats().defense; Debug.Log ("damaged unit's attack is: " + this.getStats().attack);
+		int baseDamage = attacker.getStats().attack - this.getStats().defense;
         Damage(minDamage + baseDamage + variation);
     }
 

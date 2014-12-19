@@ -1,45 +1,46 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class UiLevelSelect : MonoBehaviour {
 
     public GameObject level1;
-    public GameObject level2;
-    public GameObject level3;
-    public GameObject level4;
-
     public GameObject BeatGameMessage;
+
+    private List<GameObject> levelButtons;
 
 	// Use this for initialization
 	void Start () {
+        float x;
+        float y;
 
         // Always let the player access level 1
         level1.SetActive(true);
+        levelButtons = new List<GameObject>();
+        levelButtons.Add(level1);
 
-        // Let the player access level 2 when they beat level 1
-        if (Player.level1Complete > 0) {
-            level2.SetActive(true);
-        } else {
-            level2.SetActive(false);
+        x = level1.transform.position.x + 3f;
+        y = level1.transform.position.y;
+
+        for (int i = 1; i < Player.levelFileNames.Count; i++) {
+            //if (Player.levelComplete[i - 1] > 0) {
+                levelButtons.Add(Instantiate(level1, level1.transform.position, Quaternion.identity) as GameObject);
+                levelButtons[i].name = "Level " + (i + 1).ToString();
+                levelButtons[i].GetComponent<Button>().buttonName = levelButtons[i].name;
+                levelButtons[i].GetComponent<Button>().textMeshObj.GetComponent<TextMesh>().text = levelButtons[i].name;
+                levelButtons[i].GetComponent<Button>().controller = gameObject;
+                levelButtons[i].transform.position = new Vector3(x, y, levelButtons[i].transform.position.z);
+
+                x += 3;
+
+                if (x > 6) {
+                    y -= 1;
+                    x = level1.transform.position.x;
+                }
+            //}
         }
 
-        // Let the player access level 3 when they beat level 2
-        if (Player.level2Complete > 0) {
-            level3.SetActive(true);
-        }
-        else {
-            level3.SetActive(false);
-        }
-
-        // Let the player access level 4 when they beat level 3
-        if (Player.level3Complete > 0) {
-            level4.SetActive(true);
-        }
-        else {
-            level4.SetActive(false);
-        }
-
-        if (Player.level4Complete > 0) {
+        if (Player.getNumLevelsBeaten() >= Player.levelComplete.Count) {
             BeatGameMessage.SetActive(true);
         } else {
             BeatGameMessage.SetActive(false);
@@ -59,23 +60,17 @@ public class UiLevelSelect : MonoBehaviour {
 			case "UpgradeShop":
 				Application.LoadLevel("Upgrade");
 				break;
-            case "Level1":
-                Player.currentLevel = 1;
-                Application.LoadLevel("DefendSceneLeft");
-                break;
-            case "Level2":
-                Player.currentLevel = 2;
-                Application.LoadLevel("DefendSceneRight");
-                break;
-            case "Level3":
-                Player.currentLevel = 3;
-                Application.LoadLevel("AttackSceneLeft");
-                break;
-            case "Level4":
-                Player.currentLevel = 4;
-                Application.LoadLevel("AttackSceneRight");
+            case "Auto":
+                Player.currentLevel = 0;
+                Player.nextLevelFile = Player.levelFileNames[0];
+                Application.LoadLevel("AutoLevel");
                 break;
             default:
+                if (buttonName.StartsWith("Level")) {
+                    Player.nextLevelFile = Player.levelFileNames[int.Parse(buttonName.Split(' ')[1]) - 1];
+                    Debug.Log(Player.nextLevelFile);
+                    Application.LoadLevel("AutoLevel");
+                }
                 break;
         }
     }

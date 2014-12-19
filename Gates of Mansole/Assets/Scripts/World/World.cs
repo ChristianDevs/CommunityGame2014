@@ -35,6 +35,8 @@ public class World : MonoBehaviour {
 	public List<GameObject> unitTypes;
 	private float levelStartTime;
 	public GameObject unitInfoUi;
+    public GameObject[] maps;
+
 
     int GetTotalWaveUnits(GameObject lvl) {
         int ret = 0;
@@ -49,77 +51,92 @@ public class World : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         selectedUnit = null;
-
-        gridSize = new UiTile();
-        gridSize.row = map.GetComponent<UiTiles>().lanes.Length;
-
-        if (map.GetComponent<UiTiles>().lanes.Length > 0) {
-            gridSize.col = map.GetComponent<UiTiles>().lanes[0].GetComponent<UiRow>().rowTiles.Length;
-        }
-        else {
-            gridSize.col = 0;
-        }
-
-        // Initialize Tiles
-        tileContents = new GameObject[gridSize.row][];
-        for (int row = 0; row < gridSize.row; row++) {
-            tileContents[row] = new GameObject[gridSize.col];
-
-            for (int col = 0; col < gridSize.col; col++) {
-				tileContents[row][col] = null;
-			}
-		}
-
-        if (Levels.Length > 0) {
-            // Initialize Current Level
-            currentLevelNum = 0;
-            currentLevel = Levels[currentLevelNum];
-        } else {
-            currentLevel = null;
-        }
-
-		Player.spiritShards = Player.totalShards = 10;
-		foreach (GameObject unitType in unitTypes) {
-			UiUnitType uType;
-			uType = unitType.GetComponent<UiUnitType> ();
-
-			if (uType != null) {
-				uType.resetUnitStats();
-			} else {
-				//Debug.Log("No UiUnitType Component");
-			}
-		}
         letThroughAttackers = 0;
         defeatedAttackers = 0;
         defeatedDefenders = 0;
         totalAttackers = 0;
         totalDefenders = 0;
-        totalAI = GetTotalWaveUnits(currentLevel);
-
-        isPlayerAttacker = currentLevel.GetComponent<WaveList>().isPlayerAttacker;
-        curLevelAttackerDir = currentLevel.GetComponent<WaveList>().attackerDir;
         isLevelDone = false;
-
-        if (curLevelAttackerDir == WaveList._direction.Left) {
-            attackerDir = UnitAnimation._direction.DirLeft;
-            defenderDir = UnitAnimation._direction.DirRight;
-        } else if (curLevelAttackerDir == WaveList._direction.Right) {
-            attackerDir = UnitAnimation._direction.DirRight;
-            defenderDir = UnitAnimation._direction.DirLeft;
-        }
-
-        
-
         selectedUiUnit = null;
 
         winMessage.SetActive(false);
         loseMessage.SetActive(false);
 
 		levelStartTime = Time.time;
+
+        foreach (GameObject mp in maps) {
+            mp.SetActive(false);
+        }
+
+        if (Levels.Length > 0) {
+            // Initialize Current Level
+            currentLevelNum = 0;
+            currentLevel = Levels[currentLevelNum];
+        }
+        else {
+            currentLevel = null;
+        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (Player.nextLevelFile != "") {
+            currentLevel.GetComponent<WaveList>().loadGameFile(Player.nextLevelFile, unitTypes);
+            Player.nextLevelFile = "";
+
+            foreach (GameObject unitType in unitTypes) {
+                UiUnitType uType;
+                uType = unitType.GetComponent<UiUnitType>();
+
+                if (uType != null) {
+                    uType.resetUnitStats();
+                }
+            }
+
+            Player.spiritShards = Player.totalShards = currentLevel.GetComponent<WaveList>().startShards;
+
+            totalAI = GetTotalWaveUnits(currentLevel);
+
+            isPlayerAttacker = currentLevel.GetComponent<WaveList>().isPlayerAttacker;
+            curLevelAttackerDir = currentLevel.GetComponent<WaveList>().attackerDir;
+
+            foreach (GameObject mp in maps) {
+                if (mp.GetComponent<UiTiles>().mapName == currentLevel.GetComponent<WaveList>().map) {
+                    mp.SetActive(true);
+                    map = mp;
+                }
+            }
+
+            gridSize = new UiTile();
+            gridSize.row = map.GetComponent<UiTiles>().lanes.Length;
+
+            if (map.GetComponent<UiTiles>().lanes.Length > 0) {
+                gridSize.col = map.GetComponent<UiTiles>().lanes[0].GetComponent<UiRow>().rowTiles.Length;
+            }
+            else {
+                gridSize.col = 0;
+            }
+
+            // Initialize Tiles
+            tileContents = new GameObject[gridSize.row][];
+            for (int row = 0; row < gridSize.row; row++) {
+                tileContents[row] = new GameObject[gridSize.col];
+
+                for (int col = 0; col < gridSize.col; col++) {
+                    tileContents[row][col] = null;
+                }
+            }
+
+            if (curLevelAttackerDir == WaveList._direction.Left) {
+                attackerDir = UnitAnimation._direction.DirLeft;
+                defenderDir = UnitAnimation._direction.DirRight;
+            }
+            else if (curLevelAttackerDir == WaveList._direction.Right) {
+                attackerDir = UnitAnimation._direction.DirRight;
+                defenderDir = UnitAnimation._direction.DirLeft;
+            }
+        }
 
 		// Check if any waves need releasing
 		if (currentLevel != null) {
@@ -134,7 +151,7 @@ public class World : MonoBehaviour {
                     // Go through each unit and see if it is time to spawn it
 					foreach(WaveUnit ut in wv.units) {
 						if (ut.created == false) {
-                            if ((wv.waitTime + ut.time) < Time.time) {
+                            if ((wv.waitTime + ut.time + levelStartTime) < Time.time) {
                                 int row;
                                 int col;
 
@@ -284,6 +301,10 @@ public class World : MonoBehaviour {
 	}
 
 	void LateUpdate() {
+        if (gridSize == null) {
+            return;
+        }
+
 		// Update units in the tiles
 		for (int row = 0; row < gridSize.row; row++) {
 			for (int col = 0; col < gridSize.col; col++) {
