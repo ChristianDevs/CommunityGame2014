@@ -23,7 +23,7 @@ public class UiLevelSelect : MonoBehaviour {
         y = level1.transform.position.y;
 
         for (int i = 1; i < Player.levelFileNames.Count; i++) {
-            //if (Player.levelComplete[i - 1] > 0) {
+            if (Player.levelComplete[i - 1] > 0) {
                 levelButtons.Add(Instantiate(level1, level1.transform.position, Quaternion.identity) as GameObject);
                 levelButtons[i].name = "Level " + (i + 1).ToString();
                 levelButtons[i].GetComponent<Button>().buttonName = levelButtons[i].name;
@@ -37,7 +37,7 @@ public class UiLevelSelect : MonoBehaviour {
                     y -= 1;
                     x = level1.transform.position.x;
                 }
-            //}
+            }
         }
 
         if (Player.getNumLevelsBeaten() >= Player.levelComplete.Count) {
