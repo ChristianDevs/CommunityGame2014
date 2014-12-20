@@ -109,8 +109,7 @@ public class GomUnit : GomObject {
         float BarXPos;
 
         percentLeft = (float)health / (float)getStats().maxHealth;
-        BarXPos = HpLeftBar.transform.position.x + (((HpRightBar.transform.position.x - HpLeftBar.transform.position.x) * 0.5f) * percentLeft);
-
+        BarXPos = HpMidBar.transform.position.x - ((1 - percentLeft) * 0.5f * (HpRightBar.transform.position.x - HpLeftBar.transform.position.x + 0.15f));
         HpBarFill.transform.position = new Vector3(BarXPos, HpMidBar.transform.position.y, HpMidBar.transform.position.z);
         HpBarFill.transform.localScale = new Vector3(HpBarMidScale * percentLeft, 0.5f, 1);
     }
@@ -179,15 +178,15 @@ public class GomUnit : GomObject {
 	
 	// Use this for initialization
 	void Start () {
-        HpBarPos = new Vector3(transform.position.x - 0.4f, transform.position.y + 0.4f);
-        HpBarMidScale = 7.5f;
+        HpBarPos = new Vector3(transform.position.x - 0.3f, transform.position.y + 0.4f);
+        HpBarMidScale = 5.75f;
 
         // Instantiate the health bars
         HpLeftBar = Instantiate(BarEmptyLeft, HpBarPos, Quaternion.identity) as GameObject;
-        HpMidBar = Instantiate(BarEmptyMid, HpBarPos + new Vector3(0.4f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
-        HpRightBar = Instantiate(BarEmptyRight, HpBarPos + new Vector3(0.8f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
-        HpBarFill = Instantiate(HpBarColor, HpBarPos + new Vector3(0.4f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
-        HpBarFill.transform.localScale = new Vector3(HpBarMidScale, 0.5f * transform.localScale.x, 1);
+        HpMidBar = Instantiate(BarEmptyMid, HpBarPos + new Vector3(0.3f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
+        HpRightBar = Instantiate(BarEmptyRight, HpBarPos + new Vector3(0.6f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
+        HpBarFill = Instantiate(HpBarColor, HpBarPos + new Vector3(0.3f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
+        HpBarFill.transform.localScale = new Vector3(HpBarMidScale, 0.4f * transform.localScale.x, 1);
 
         // Make the health bars follow the unit
         HpLeftBar.transform.parent = transform;
