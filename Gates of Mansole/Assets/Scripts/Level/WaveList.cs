@@ -13,6 +13,13 @@ public class WaveList : MonoBehaviour {
         Right
     }
 
+    public class _statement {
+        public string Speaker;
+        public string LeftImage;
+        public string RightImage;
+        public string dialogue;
+    };
+
     public bool started = false;  // When true, waves begin
     public int AttackersLetThrough;
     public bool isPlayerAttacker = false;
@@ -21,6 +28,8 @@ public class WaveList : MonoBehaviour {
 	public UiUnitType[] enemyUnitTypes;
     public string map;
     public int startShards;
+    public List<_statement> preLevelDialogue;
+    public List<_statement> postLevelDialogue;
 
     private List<GameObject> unitTypes;
 
@@ -79,12 +88,74 @@ public class WaveList : MonoBehaviour {
                 case "wave":
                     i = parseAllWaves(levelData, i + 1);
                     break;
+                case "predialogue":
+                    preLevelDialogue = new List<_statement>();
+                    i = parseDialogue(levelData, preLevelDialogue, i + 1);
+                    break;
+                case "postdialogue":
+                    postLevelDialogue = new List<_statement>();
+                    i = parseDialogue(levelData, postLevelDialogue, i + 1);
+                    break;
                 default:
                     return false;
             }
         }
 
         return true;
+    }
+
+    int parseDialogue(string[] levelData, List<_statement> dialogue, int index) {
+        bool isDone = false;
+        int i = 0;
+        _statement stmt;
+
+        Debug.Log("Parsing Dialogue");
+
+        stmt = new _statement();
+
+        for (i = index + 1; i < levelData.Length; i++) {
+            string key = "";
+            string val = "";
+
+            key = levelData[i].Split(seps)[0].Trim().ToLower();
+
+            if (levelData[i].Split(seps).Length > 1) {
+                val = levelData[i].Split(seps)[1];
+            }
+
+            switch (key) {
+                case "speaker":
+                    stmt.Speaker = val;
+                    break;
+                case "leftimage":
+                    stmt.LeftImage = val;
+                    break;
+                case "rightimage":
+                    stmt.RightImage = val;
+                    break;
+                case "dialogue":
+                    stmt.dialogue = val;
+                    break;
+                case "statement":
+                    dialogue.Add(stmt);
+                    stmt = new _statement();
+                    break;
+                default:
+                    dialogue.Add(stmt);
+                    isDone = true;
+                    break;
+            }
+
+            if (isDone) {
+                break;
+            }
+        }
+
+        if (i >= levelData.Length) {
+            dialogue.Add(stmt);
+        }
+
+        return i - 1;
     }
 
     int parseAllWaves(string[] levelData, int index) {
@@ -105,7 +176,7 @@ public class WaveList : MonoBehaviour {
 
         waves = fileWaves.ToArray();
 
-        return i;
+        return i - 1;
     }
 
     int parseWave(string[] levelData, int index, List<Wave> fileWaves) {

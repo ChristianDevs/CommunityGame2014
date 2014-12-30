@@ -36,7 +36,21 @@ public class World : MonoBehaviour {
 	private float levelStartTime;
 	public GameObject unitInfoUi;
     public GameObject[] maps;
+    private int dialogueIndex;
+    public TextMesh dialogueText;
+    public SpriteRenderer leftImage;
+    public SpriteRenderer rightImage;
+    public GameObject dialogueWindow;
+    public int dialogueLineSize;
+    public Sprite[] Images;
 
+    public enum _WorldState {
+        Setup,
+        PreDialogue,
+        Play,
+        PostDialogue
+    }
+    _WorldState state;
 
     int GetTotalWaveUnits(GameObject lvl) {
         int ret = 0;
@@ -62,7 +76,8 @@ public class World : MonoBehaviour {
         winMessage.SetActive(false);
         loseMessage.SetActive(false);
 
-		levelStartTime = Time.time;
+		levelStartTime = 0;
+        state = _WorldState.Setup;
 
         foreach (GameObject mp in maps) {
             mp.SetActive(false);
@@ -81,9 +96,48 @@ public class World : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        switch (state) {
+            case _WorldState.Setup:
+                handleSetup();
+                state = _WorldState.PreDialogue;
+                dialogueIndex = -1;
+                dialogueWindow.SetActive(true);
+                break;
+            case _WorldState.PreDialogue:
+                if (handleDialogue(currentLevel.GetComponent<WaveList>().preLevelDialogue)) {
+                    state = _WorldState.Play;
+                    levelStartTime = Time.time;
+                    dialogueIndex = -1;
+                    dialogueWindow.SetActive(false);
+                }
+                break;
+            case _WorldState.Play:
+                handlePlay();
+                break;
+            case _WorldState.PostDialogue:
+                if (handleDialogue(currentLevel.GetComponent<WaveList>().postLevelDialogue)) {
+                    Application.LoadLevel("LevelSelect");
+                }
+                break;
+        }
+	}
+
+	void LateUpdate() {
+        if (gridSize == null) {
+            return;
+        }
+
+		// Update units in the tiles
+		for (int row = 0; row < gridSize.row; row++) {
+			for (int col = 0; col < gridSize.col; col++) {
+                UnitAI(row, col);
+			}
+		}
+	}
+
+    void handleSetup() {
         if (Player.nextLevelFile != "") {
             currentLevel.GetComponent<WaveList>().loadGameFile(Player.nextLevelFile, unitTypes);
-            Player.nextLevelFile = "";
 
             foreach (GameObject unitType in unitTypes) {
                 UiUnitType uType;
@@ -137,51 +191,131 @@ public class World : MonoBehaviour {
                 defenderDir = UnitAnimation._direction.DirLeft;
             }
         }
+    }
 
-		// Check if any waves need releasing
-		if (currentLevel != null) {
-			WaveList wl;
+    bool handleDialogue(List<WaveList._statement> dialogue) {
+        if (dialogue == null) {
+            return true;
+        }
+
+        if (dialogue.Count < 1) {
+            return true;
+        }
+
+        if (dialogueIndex == -1) {
+            dialogueIndex = 0;
+            dialogueText.text = processDialogue(dialogue[dialogueIndex].Speaker, dialogue[dialogueIndex].dialogue);
+
+            if (dialogue[dialogueIndex].LeftImage == "None") {
+                leftImage.sprite = null;
+            } else if (int.Parse(dialogue[dialogueIndex].LeftImage) < Images.Length) {
+                leftImage.sprite = Images[int.Parse(dialogue[dialogueIndex].LeftImage)];
+            }
+
+            if (dialogue[dialogueIndex].RightImage == "None") {
+                rightImage.sprite = null;
+            } else if (int.Parse(dialogue[dialogueIndex].RightImage) < Images.Length) {
+                rightImage.sprite = Images[int.Parse(dialogue[dialogueIndex].RightImage)];
+            }
+        }
+
+        if (Input.GetMouseButtonDown(0)) {
+            dialogueIndex++;
+
+            if (dialogueIndex < dialogue.Count) {
+                dialogueText.text = processDialogue(dialogue[dialogueIndex].Speaker, dialogue[dialogueIndex].dialogue);
+
+                if (dialogue[dialogueIndex].LeftImage == "None") {
+                    leftImage.sprite = null;
+                }
+                else if (int.Parse(dialogue[dialogueIndex].LeftImage) < Images.Length) {
+                    leftImage.sprite = Images[int.Parse(dialogue[dialogueIndex].LeftImage)];
+                }
+
+                if (dialogue[dialogueIndex].RightImage == "None") {
+                    rightImage.sprite = null;
+                }
+                else if (int.Parse(dialogue[dialogueIndex].RightImage) < Images.Length) {
+                    rightImage.sprite = Images[int.Parse(dialogue[dialogueIndex].RightImage)];
+                }
+            } else {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    string processDialogue(string speaker, string text) {
+        string newText = "";
+        int lineLenth = 0;
+        char[] seps = { ' ' };
+
+        newText += speaker;
+        newText += ":\n\n";
+
+        foreach (string word in text.Split(seps)) {
+            if ((lineLenth + word.Length) >= dialogueLineSize) {
+                newText += "\n";
+                lineLenth = word.Length + 1;
+            } else {
+                lineLenth += word.Length + 1;
+            }
+
+            newText += word;
+            newText += " ";
+        }
+
+        return newText;
+    }
+
+    void handlePlay() {
+        // Check if any waves need releasing
+        if (currentLevel != null) {
+            WaveList wl;
 
             wl = currentLevel.GetComponent<WaveList>();
 
             // Go through each wave and see if it is time to start that wave
-			foreach (Wave wv in wl.waves) {
-				if (wv.waitTime + levelStartTime < Time.time) {
+            foreach (Wave wv in wl.waves) {
+                if (wv.waitTime + levelStartTime < Time.time) {
 
                     // Go through each unit and see if it is time to spawn it
-					foreach(WaveUnit ut in wv.units) {
-						if (ut.created == false) {
+                    foreach (WaveUnit ut in wv.units) {
+                        if (ut.created == false) {
                             if ((wv.waitTime + ut.time + levelStartTime) < Time.time) {
                                 int row;
                                 int col;
 
                                 switch (ut.SpawnLocType) {
-                                case WaveUnit._spawnLocType.RandRow:
-                                    if (curLevelAttackerDir == WaveList._direction.Right) {
+                                    case WaveUnit._spawnLocType.RandRow:
+                                        if (curLevelAttackerDir == WaveList._direction.Right) {
+                                            col = 0;
+                                        }
+                                        else if (curLevelAttackerDir == WaveList._direction.Left) {
+                                            col = gridSize.col - 1;
+                                        }
+                                        else {
+                                            col = 0;
+                                        }
+                                        row = Random.Range(0, (int)gridSize.row);
+                                        break;
+                                    case WaveUnit._spawnLocType.RandTile:
+                                        row = 0;
                                         col = 0;
-                                    } else if (curLevelAttackerDir == WaveList._direction.Left) {
-                                        col = gridSize.col - 1;
-                                    } else {
+                                        break;
+                                    case WaveUnit._spawnLocType.SpecifiedRow:
+                                        row = (int)ut.Tile.x;
                                         col = 0;
-                                    }
-                                    row = Random.Range(0, (int)gridSize.row);
-                                    break;
-                                case WaveUnit._spawnLocType.RandTile:
-                                    row = 0;
-                                    col = 0;
-                                    break;
-                                case WaveUnit._spawnLocType.SpecifiedRow:
-                                    row = 0;
-                                    col = 0;
-                                    break;
-                                case WaveUnit._spawnLocType.SpecifiedTile:
-                                    row = (int)ut.Tile.x;
-                                    col = (int)ut.Tile.y;
-                                    break;
-                                default:
-                                    row = 0;
-                                    col = 0;
-                                    break;
+                                        break;
+                                    case WaveUnit._spawnLocType.SpecifiedTile:
+                                        row = (int)ut.Tile.x;
+                                        col = (int)ut.Tile.y;
+                                        break;
+                                    default:
+                                        row = 0;
+                                        col = 0;
+                                        break;
                                 }
 
                                 ut.created = true;
@@ -191,21 +325,23 @@ public class World : MonoBehaviour {
                                             tileContents[row][col].SendMessage("SetIdleDirection", defenderDir, SendMessageOptions.DontRequireReceiver);
                                             totalDefenders++;
                                         }
-                                    } else {
+                                    }
+                                    else {
                                         if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
                                             tileContents[row][col].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
                                             totalAttackers++;
-                                        } else {
+                                        }
+                                        else {
                                             // Just to keep the game from getting stuck
                                             defeatedAttackers++;
                                         }
                                     }
                                 }
-							}
-						}
-					}
-				}
-			}
+                            }
+                        }
+                    }
+                }
+            }
 
             // Check game over conditions
             if (isLevelDone == false) {
@@ -215,11 +351,13 @@ public class World : MonoBehaviour {
                         Player.completeLevel(Player.currentLevel);
                         isLevelDone = true;
                     }
-                } else {
+                }
+                else {
                     if (letThroughAttackers >= wl.AttackersLetThrough) {
                         loseMessage.SetActive(true);
                         isLevelDone = true;
-                    } else if ((defeatedAttackers + letThroughAttackers) >= totalAI) {
+                    }
+                    else if ((defeatedAttackers + letThroughAttackers) >= totalAI) {
                         winMessage.SetActive(true);
                         Player.completeLevel(Player.currentLevel);
                         isLevelDone = true;
@@ -232,14 +370,17 @@ public class World : MonoBehaviour {
                 RaycastHit hitSquare;
 
                 if (isLevelDone == true) {
-                    Application.LoadLevel("LevelSelect");
+                    state = _WorldState.PostDialogue;
+                    if (currentLevel.GetComponent<WaveList>().postLevelDialogue.Count > 0) {
+                        dialogueWindow.SetActive(true);
+                    }
                 }
 
                 if (Physics.Raycast(UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition), out hitSquare)) {
-					for(int i=0;i<squares.Count;++i)
-                    if (hitSquare.transform.name == squares[i].transform.name) {
-                        selectedUiUnit = unitsUIinst[i];
-                    }
+                    for (int i = 0; i < squares.Count; ++i)
+                        if (hitSquare.transform.name == squares[i].transform.name) {
+                            selectedUiUnit = unitsUIinst[i];
+                        }
                 }
             }
 
@@ -256,16 +397,16 @@ public class World : MonoBehaviour {
                 }
             }
 
-			//Send unit info
-			if (Input.GetMouseButtonDown(0)) {
-				UiTile tile;
-				
-				tile = map.GetComponent<UiTiles>().GetMouseOverTile();
-				
-				if ((tile.col < gridSize.col) && (tile.row < gridSize.row) && (tile.col >= 0) && (tile.row >= 0)) {
-					if(tileContents[(int)tile.row][(int)tile.col] != null) unitInfoUi.SendMessage("SelectUnit",tileContents[(int)tile.row][(int)tile.col],SendMessageOptions.DontRequireReceiver);
-				}
-			}
+            //Send unit info
+            if (Input.GetMouseButtonDown(0)) {
+                UiTile tile;
+
+                tile = map.GetComponent<UiTiles>().GetMouseOverTile();
+
+                if ((tile.col < gridSize.col) && (tile.row < gridSize.row) && (tile.col >= 0) && (tile.row >= 0)) {
+                    if (tileContents[(int)tile.row][(int)tile.col] != null) unitInfoUi.SendMessage("SelectUnit", tileContents[(int)tile.row][(int)tile.col], SendMessageOptions.DontRequireReceiver);
+                }
+            }
             if (Input.GetMouseButtonUp(0) && (selectedUiUnit != null)) {
 
                 UiTile tile;
@@ -278,40 +419,28 @@ public class World : MonoBehaviour {
                     if (isPlayerAttacker == true) {
                         totalAttackers++;
                         dir = attackerDir;
-                    } else {
+                    }
+                    else {
                         totalDefenders++;
                         dir = defenderDir;
                     }
 
-					for(int i=0;i<unitsUIinst.Count;++i){
-						if (selectedUiUnit == unitsUIinst[i]) {
-							if (SpawnUnit(unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(), (int)tile.row, (int)tile.col, GomObject.Faction.Player))
-	                        	tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
-	                    }
-					}
+                    for (int i = 0; i < unitsUIinst.Count; ++i) {
+                        if (selectedUiUnit == unitsUIinst[i]) {
+                            if (SpawnUnit(unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(), (int)tile.row, (int)tile.col, GomObject.Faction.Player))
+                                tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
+                        }
+                    }
                 }
-				for(int i=0;i<unitsUIinst.Count;++i){
-					if (selectedUiUnit == unitsUIinst[i]) {
-						selectedUiUnit.transform.position = new Vector3((float)(-6+(1.5*i)),(float)-5.2,(float)0);
-					}
-				}
+                for (int i = 0; i < unitsUIinst.Count; ++i) {
+                    if (selectedUiUnit == unitsUIinst[i]) {
+                        selectedUiUnit.transform.position = new Vector3((float)(-6 + (1.5 * i)), (float)-5.2, (float)0);
+                    }
+                }
                 selectedUiUnit = null;
             }
-		}
-	}
-
-	void LateUpdate() {
-        if (gridSize == null) {
-            return;
         }
-
-		// Update units in the tiles
-		for (int row = 0; row < gridSize.row; row++) {
-			for (int col = 0; col < gridSize.col; col++) {
-                UnitAI(row, col);
-			}
-		}
-	}
+    }
 
     public void UnitAI(int row, int col) {
         // If the tile is not empty then see if the unit needs to do something

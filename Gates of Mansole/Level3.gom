@@ -1,66 +1,129 @@
-AttackersLetThrough:3
-IsPlayerAttacker:False
-AttackerDir:Left
-Map:Keep
-StartShards:9
+AttackersLetThrough:5
+IsPlayerAttacker:True
+AttackerDir:Right
+Map:Dirt
+StartShards:15
+PreDialogue:
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Welcome to the battlefield lieutenant captain.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:I sure hope you brought some staff units with you. These lines of wand units are thick as fog.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:You can see the enemy has already made their formation. All you need is to get 5 units through their lines.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:But the more of the enemy you defeat on the battlefield, the more Spirit Orbs you gain.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:May the grace of King Shaddai go with us.
 Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:7
+        Unit:Wand
+        SpawnLoc:SpecifiedTile
+        Tile:0:11
     WaveUnit:
         Time:0
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:2
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:15
+        Unit:Wand
+        SpawnLoc:SpecifiedTile
+        Tile:1:11
     WaveUnit:
         Time:0
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
+        Unit:Wand
+        SpawnLoc:SpecifiedTile
+        Tile:2:11
     WaveUnit:
-        Time:1
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
+        Time:0
+        Unit:Wand
+        SpawnLoc:SpecifiedTile
+        Tile:3:11
     WaveUnit:
-        Time:1
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
+        Time:0
+        Unit:Wand
+        SpawnLoc:SpecifiedTile
+        Tile:4:11
     WaveUnit:
-        Time:2
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
+        Time:0
+        Unit:Wand
+        SpawnLoc:SpecifiedTile
+        Tile:5:11
     WaveUnit:
-        Time:3
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
+        Time:0
+        Unit:Wand
+        SpawnLoc:SpecifiedTile
+        Tile:6:11
     WaveUnit:
-        Time:3
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
+        Time:0
+        Unit:Wand
+        SpawnLoc:SpecifiedTile
+        Tile:7:11
     WaveUnit:
-        Time:3
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
+        Time:0
+        Unit:Wand
+        SpawnLoc:SpecifiedTile
+        Tile:0:12
+    WaveUnit:
+        Time:0
+        Unit:Wand
+        SpawnLoc:SpecifiedTile
+        Tile:1:12
+    WaveUnit:
+        Time:0
+        Unit:Wand
+        SpawnLoc:SpecifiedTile
+        Tile:2:12
+    WaveUnit:
+        Time:0
+        Unit:Wand
+        SpawnLoc:SpecifiedTile
+        Tile:3:12
+    WaveUnit:
+        Time:0
+        Unit:Wand
+        SpawnLoc:SpecifiedTile
+        Tile:4:12
+    WaveUnit:
+        Time:0
+        Unit:Wand
+        SpawnLoc:SpecifiedTile
+        Tile:5:12
+    WaveUnit:
+        Time:0
+        Unit:Wand
+        SpawnLoc:SpecifiedTile
+        Tile:6:12
+    WaveUnit:
+        Time:0
+        Unit:Wand
+        SpawnLoc:SpecifiedTile
+        Tile:7:12
+PostDialogue:
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Great work penetrating their defenses. Now we siege the guard post.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:My scouts report that they are defending it with staff units.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:The best counter to staff units are spearmen because of how quick they are. Go unlock some before we battle them.

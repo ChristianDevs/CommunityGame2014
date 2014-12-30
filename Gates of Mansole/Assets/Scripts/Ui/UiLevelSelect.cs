@@ -60,14 +60,10 @@ public class UiLevelSelect : MonoBehaviour {
 			case "UpgradeShop":
 				Application.LoadLevel("Upgrade");
 				break;
-            case "Auto":
-                Player.currentLevel = 0;
-                Player.nextLevelFile = Player.levelFileNames[0];
-                Application.LoadLevel("AutoLevel");
-                break;
             default:
                 if (buttonName.StartsWith("Level")) {
-                    Player.nextLevelFile = Player.levelFileNames[int.Parse(buttonName.Split(' ')[1]) - 1];
+                    Player.currentLevel = int.Parse(buttonName.Split(' ')[1]) - 1;
+                    Player.nextLevelFile = Player.levelFileNames[Player.currentLevel];
                     Debug.Log(Player.nextLevelFile);
                     Application.LoadLevel("AutoLevel");
                 }

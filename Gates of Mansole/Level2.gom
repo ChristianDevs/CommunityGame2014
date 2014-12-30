@@ -1,8 +1,29 @@
 AttackersLetThrough:3
 IsPlayerAttacker:False
-AttackerDir:Left
-Map:Keep
+AttackerDir:Right
+Map:Town
 StartShards:12
+PreDialogue:
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:I trust you unlocked the wand units, you will need them.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:There are numerous reports of a band of swordsman causing problems in the town square.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Wand units are great at taking down heavily armored units like swordsman.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Use them to protect the good citizens of the town. And may the grace of King Shaddai go with you.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -64,3 +85,24 @@ Wave:
         Unit:Sword
         SpawnLoc:RandRow
         Tile:0:0
+PostDialogue:
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:You sure made quick work of those swordsmen. I am sure they will think twice before causing problems here again.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:But while you were dealing with the swordsmen I got a report of Sinians storming a guard post outside of own.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:They seem to have a lot of Wand units, so go unlock some staff units and meet me outside the gate.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Sinians will not take any ground from us. Not while I am captain!

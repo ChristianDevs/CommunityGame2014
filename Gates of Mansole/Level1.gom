@@ -1,66 +1,158 @@
 AttackersLetThrough:3
 IsPlayerAttacker:False
 AttackerDir:Left
-Map:Keep
+Map:Dirt
 StartShards:9
+PreDialogue:
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Congratulations on your promotion to lieutenant captain! Of course with a new title comes new responsibility.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Defending the City of Mansoul from dangers both within and without is our duty. And we must carry it out to the best of our abilities.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Long have the Sinians threatened our city. Were it not for our resistance, we would succumb to their assaults.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:The Sinians do not know King Shaddai as their Lord, nor do they obey His laws.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:What is that?
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:What is that? Sometimes Mansoul citizens don't obey His laws either?
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Yes, you are right. Sometimes people are disobedient.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:But the citizens have placed King Shaddai's laws above them and strive to obey them.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:And it gives us all the rewards of peace, harmony, and the joy of a wonderful city.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:The wicked Sinians reject King Shaddai's laws. As long as Mansoul is a part of King Shaddai's kingdom, they will never have a place here.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:I have just received a report of Sinians attacking the countryside. Take some archers and repel their attack.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Wait until you see the whites of their eyes, then drag and drop an archer to resist them.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Take heart! I know you will succeed. May the grace of King Shaddai go with you.
 Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Sword
+        Unit:Spear
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
     WaitTime:7
     WaveUnit:
         Time:0
-        Unit:Sword
+        Unit:Spear
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:1
-        Unit:Sword
+        Unit:Spear
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:2
-        Unit:Sword
+        Unit:Spear
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
     WaitTime:15
     WaveUnit:
         Time:0
-        Unit:Sword
+        Unit:Spear
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:1
-        Unit:Sword
+        Unit:Spear
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:1
-        Unit:Sword
+        Unit:Spear
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:2
-        Unit:Sword
+        Unit:Spear
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Sword
+        Unit:Spear
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Sword
+        Unit:Spear
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Sword
+        Unit:Spear
         SpawnLoc:RandRow
         Tile:0:0
+PostDialogue:
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Well done! I knew you wouldn't let me down.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:The archer is the best defense against advancing spearman.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:It costs Spirit Shards to place soldiers on the battlefield.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Victory will yield Spirit Orbs. Those may be exchanged to unlock more soldiers and abilities.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Before your next task, go to the Upgrade Shop and unlock the Wand Unit.

@@ -1,66 +1,134 @@
 AttackersLetThrough:3
-IsPlayerAttacker:False
+IsPlayerAttacker:True
 AttackerDir:Left
 Map:Keep
-StartShards:9
+StartShards:18
+PreDialogue:
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:With spear units on our side we will cut through the staff formation easily!
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Once into the keep we can take control. May the grace of King Shaddai go with us.
 Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Sword
-        SpawnLoc:RandRow
+        Unit:Staff
+        SpawnLoc:SpecifiedTile
         Tile:0:0
-Wave:
-    WaitTime:7
     WaveUnit:
         Time:0
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:2
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:15
+        Unit:Staff
+        SpawnLoc:SpecifiedTile
+        Tile:1:0
     WaveUnit:
         Time:0
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
+        Unit:Staff
+        SpawnLoc:SpecifiedTile
+        Tile:2:0
     WaveUnit:
-        Time:1
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
+        Time:0
+        Unit:Staff
+        SpawnLoc:SpecifiedTile
+        Tile:3:0
     WaveUnit:
-        Time:1
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
+        Time:0
+        Unit:Staff
+        SpawnLoc:SpecifiedTile
+        Tile:4:0
     WaveUnit:
-        Time:2
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
+        Time:0
+        Unit:Staff
+        SpawnLoc:SpecifiedTile
+        Tile:5:0
     WaveUnit:
-        Time:3
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
+        Time:0
+        Unit:Staff
+        SpawnLoc:SpecifiedTile
+        Tile:6:0
     WaveUnit:
-        Time:3
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
+        Time:0
+        Unit:Staff
+        SpawnLoc:SpecifiedTile
+        Tile:7:0
     WaveUnit:
-        Time:3
-        Unit:Sword
-        SpawnLoc:RandRow
-        Tile:0:0
+        Time:0
+        Unit:Staff
+        SpawnLoc:SpecifiedTile
+        Tile:0:1
+    WaveUnit:
+        Time:0
+        Unit:Staff
+        SpawnLoc:SpecifiedTile
+        Tile:1:1
+    WaveUnit:
+        Time:0
+        Unit:Staff
+        SpawnLoc:SpecifiedTile
+        Tile:2:1
+    WaveUnit:
+        Time:0
+        Unit:Staff
+        SpawnLoc:SpecifiedTile
+        Tile:3:1
+    WaveUnit:
+        Time:0
+        Unit:Staff
+        SpawnLoc:SpecifiedTile
+        Tile:4:1
+    WaveUnit:
+        Time:0
+        Unit:Staff
+        SpawnLoc:SpecifiedTile
+        Tile:5:1
+    WaveUnit:
+        Time:0
+        Unit:Staff
+        SpawnLoc:SpecifiedTile
+        Tile:6:1
+    WaveUnit:
+        Time:0
+        Unit:Staff
+        SpawnLoc:SpecifiedTile
+        Tile:7:1
+PostDialogue:
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:We made it through.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Wait...
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Wait... What is that?
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Wait... What is that? Did you hear something?
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Wait... What is that? Did you hear something? An Ambush!!!
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:They are coming at us with archers. Quick, unlock swordsmen and send them to the front line.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:They are armored and won't take much damage from the archers.

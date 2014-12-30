@@ -30,13 +30,13 @@ public class UnitSpawnMenuController : MonoBehaviour {
 			world.unitTypes.Add(unitsPrefab[i]);
 			units.Add(uiUnit);
 			Button buttonCom = button.GetComponent<Button>();
-			button.transform.localScale = new Vector3((float)0.5,(float)0.5,(float)1);
+			button.transform.localScale = new Vector3((float)0.5,(float)0.75,(float)1);
 			buttonCom.buttonName=""+i;
 			button.name=""+i;
 			buttonCom.controller = this.gameObject;
 			TextMesh textCom = text.GetComponent<TextMesh>();
 			text.transform.localScale = new Vector3((float)0.5,(float)0.5,(float)1);
-			textCom.fontSize = 32;
+			textCom.fontSize = 48;
 			textCom.text = "Upgrade";
 			
 			if (unitsPrefab[i].GetComponent<UiUnitType>().level <= 0){

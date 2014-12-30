@@ -1,0 +1,170 @@
+AttackersLetThrough:5
+IsPlayerAttacker:False
+AttackerDir:Right
+Map:Keep
+StartShards:21
+PreDialogue:
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:With these new upgrades you should be able to win the battle.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Be warned that the enemy is employing all the different unit types to try and win.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:So before you put units on the field of battle, see what enemy is coming.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Then use the right unit to counter it.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:With these new upgrades you should be able to win the battle.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:May the grace of King Shaddai go with us.
+Wave:
+    WaitTime:0
+    WaveUnit:
+        Time:0
+        Unit:Spear
+        SpawnLoc:SpecifiedRow
+        Tile:0:0
+    WaveUnit:
+        Time:1
+        Unit:Spear
+        SpawnLoc:SpecifiedRow
+        Tile:2:2
+    WaveUnit:
+        Time:2
+        Unit:Spear
+        SpawnLoc:SpecifiedRow
+        Tile:1:1
+Wave:
+    WaitTime:10
+    WaveUnit:
+        Time:0
+        Unit:Sword
+        SpawnLoc:SpecifiedRow
+        Tile:6:6
+    WaveUnit:
+        Time:1
+        Unit:Sword
+        SpawnLoc:SpecifiedRow
+        Tile:7:7
+    WaveUnit:
+        Time:2
+        Unit:Sword
+        SpawnLoc:SpecifiedRow
+        Tile:5:5
+Wave:
+    WaitTime:20
+    WaveUnit:
+        Time:0
+        Unit:Staff
+        SpawnLoc:SpecifiedRow
+        Tile:4:4
+    WaveUnit:
+        Time:0
+        Unit:Wand
+        SpawnLoc:SpecifiedRow
+        Tile:3:3
+    WaveUnit:
+        Time:3
+        Unit:Staff
+        SpawnLoc:SpecifiedRow
+        Tile:4:4
+    WaveUnit:
+        Time:7
+        Unit:Staff
+        SpawnLoc:SpecifiedRow
+        Tile:4:4
+    WaveUnit:
+        Time:5
+        Unit:Wand
+        SpawnLoc:SpecifiedRow
+        Tile:3:3
+    WaveUnit:
+        Time:9
+        Unit:Wand
+        SpawnLoc:SpecifiedRow
+        Tile:3:3
+Wave:
+    WaitTime:40
+    WaveUnit:
+        Time:0
+        Unit:Spear
+        SpawnLoc:SpecifiedRow
+        Tile:0:0
+    WaveUnit:
+        Time:0
+        Unit:Spear
+        SpawnLoc:SpecifiedRow
+        Tile:2:2
+    WaveUnit:
+        Time:0
+        Unit:Spear
+        SpawnLoc:SpecifiedRow
+        Tile:1:1
+    WaveUnit:
+        Time:0
+        Unit:Sword
+        SpawnLoc:SpecifiedRow
+        Tile:6:6
+    WaveUnit:
+        Time:0
+        Unit:Sword
+        SpawnLoc:SpecifiedRow
+        Tile:7:7
+    WaveUnit:
+        Time:0
+        Unit:Sword
+        SpawnLoc:SpecifiedRow
+        Tile:5:5
+    WaveUnit:
+        Time:0
+        Unit:Staff
+        SpawnLoc:SpecifiedRow
+        Tile:4:4
+    WaveUnit:
+        Time:0
+        Unit:Wand
+        SpawnLoc:SpecifiedRow
+        Tile:3:3
+PostDialogue:
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Well done lieutenant captain!
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:We've retaken the guard post. But our duty doesn't end here.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:The Sinians are ever restless to infiltrate the city. But we must stop them.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Use what you've learned and you are sure to resist them. Never give in.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Good work this day. I can see you will make a fine lieutenant!
