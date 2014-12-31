@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class UiTitle : MonoBehaviour {
 
 	public GameObject[] unitTypes;
+    public GameObject[] abilities;
 
 	// Use this for initialization
 	void Start () {
@@ -28,11 +29,11 @@ public class UiTitle : MonoBehaviour {
     void buttonPush(string buttonName) {
         switch (buttonName) {
             case "New":
-				Player.resetPlayer(unitTypes);
+                Player.resetPlayer(unitTypes, abilities);
                 Application.LoadLevel("LevelSelect");
                 break;
             case "Continue":
-				Player.loadPlayer(unitTypes);
+                Player.loadPlayer(unitTypes, abilities);
                 Application.LoadLevel("LevelSelect");
                 break;
             case "Quit":

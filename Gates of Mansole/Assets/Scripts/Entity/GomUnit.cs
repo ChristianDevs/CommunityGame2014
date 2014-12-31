@@ -78,11 +78,18 @@ public class GomUnit : GomObject {
         if (health <= 0) {
             health = 0;
             alive = false;
-			attacker.IncrementKills();
-			attacker.RewardShards(value);
+
+            if (attacker != null) {
+                attacker.IncrementKills();
+                attacker.RewardShards(value);
+            }
         }
         updateHealthBars();
 	}
+
+    void SetAttacker() {
+        attacker = null;
+    }
 
 	void SetAttacker(GomUnit src) {
 		attacker = src;

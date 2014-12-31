@@ -12,10 +12,11 @@ public class Player : MonoBehaviour {
 	static public int totalShards;  // tracks shards gained during gameplay - used for conversions
 	static public int spiritOrbs;   // currency to purchase upgrades outside of gameplay
 	static public List<GameObject> unitTypes;
+    static public List<GameObject> abilities;
     static public string nextLevelFile;
     static public List<string> levelFileNames;
 
-    static public void resetPlayer(GameObject[] newUnitTypes) {
+    static public void resetPlayer(GameObject[] newUnitTypes, GameObject[] newAbilities) {
         PlayerPrefs.DeleteAll();
         levelComplete = new List<int>();
         foreach (string fileName in levelFileNames) {
@@ -35,9 +36,16 @@ public class Player : MonoBehaviour {
             upgradeUnit(ut.GetComponent<UiUnitType>());
 		}
 
+        abilities = new List<GameObject>();
+        foreach (GameObject ab in newAbilities) {
+            ab.GetComponent<Ability>().level = 0;
+            abilities.Add(ab);
+            upgradeAbility(ab.GetComponent<Ability>());
+            Debug.Log(ab.GetComponent<Ability>().abilityName + ":" + ab.GetComponent<Ability>().level);
+        }
     }
 
-    static public void loadPlayer(GameObject[] newUnitTypes) {
+    static public void loadPlayer(GameObject[] newUnitTypes, GameObject[] newAbilities) {
         levelComplete = new List<int>();
         foreach (string fileName in levelFileNames) {
             levelComplete.Add(PlayerPrefs.GetInt(fileName));
@@ -53,11 +61,23 @@ public class Player : MonoBehaviour {
 			UiUnitType uiUnit;
 
 			uiUnit = unitTypes[i].GetComponent<UiUnitType>();
-        		uiUnit.level = PlayerPrefs.GetInt(uiUnit.UnitName + "level");
+        	uiUnit.level = PlayerPrefs.GetInt(uiUnit.UnitName + "level");
 		}
+
+        abilities = new List<GameObject>();
+        foreach (GameObject ab in newAbilities) {
+            abilities.Add(ab);
+        }
+
+        for (int i = 0; i < abilities.Count; i++) {
+            Ability tempAbility;
+
+            tempAbility = abilities[i].GetComponent<Ability>();
+            tempAbility.level = PlayerPrefs.GetInt(tempAbility.abilityName + "level");
+        }
     }
 
-	static public void upgradeUnit(UiUnitType upgradeUnit) {
+    static public void upgradeUnit(UiUnitType upgradeUnit) {
 		for (int i = 0; i < unitTypes.Count; i++) {
 			if (unitTypes[i].GetComponent<UiUnitType>().UnitName == upgradeUnit.UnitName) {
 				UiUnitType uiUnit;
@@ -68,6 +88,18 @@ public class Player : MonoBehaviour {
 			}
 		}
 	}
+
+    static public void upgradeAbility(Ability upgradeAbility) {
+        for (int i = 0; i < abilities.Count; i++) {
+            if (abilities[i].GetComponent<Ability>().abilityName == upgradeAbility.abilityName) {
+                Ability uiAbility;
+
+                uiAbility = abilities[i].GetComponent<Ability>();
+                PlayerPrefs.SetInt(uiAbility.abilityName + "level", uiAbility.level);
+                break;
+            }
+        }
+    }
 
     static public void completeLevel(int levelNum) {
 		convertShards ();

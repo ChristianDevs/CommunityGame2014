@@ -18,6 +18,7 @@ public class UnitAnimation : MonoBehaviour {
 	}
 	
 	public GameObject[] animObjects;
+    private float dieTime = -1;
 
 	void SetDirection(_direction changeDir) {
 		foreach (GameObject go in animObjects) {
@@ -37,6 +38,10 @@ public class UnitAnimation : MonoBehaviour {
 		}
 	}
 
+    void DieTimer(float timeout) {
+        dieTime = Time.time + timeout;
+    }
+
 	public bool isAnimationChanged() {
 		bool ret;
 
@@ -50,4 +55,12 @@ public class UnitAnimation : MonoBehaviour {
 
 		return ret;
 	}
+
+    void Update() {
+        if (dieTime > 0) {
+            if (Time.time > dieTime) {
+                Destroy(gameObject);
+            }
+        }
+    }
 }

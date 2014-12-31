@@ -3,12 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class UnitSpawnMenuController : MonoBehaviour {
-	public string[] unitsName;
 	public GameObject[] unitsPrefab;
 	public GameObject menuPrefab;
 	public GameObject buttonPrefab;
 	public GameObject textPrefab;
+    public GameObject[] abilityPrefab;
 	public World world;
+    public float unitMenuInterval;
 
 	private List<GameObject> units;
 
@@ -18,10 +19,10 @@ public class UnitSpawnMenuController : MonoBehaviour {
 		world.squares = new List<GameObject>();
 		units = new List<GameObject>();
 		for(int i=0;i<unitsPrefab.Length;++i){
-			GameObject square = Instantiate(menuPrefab,new Vector3((float)(-6+(1.5*i)),(float)-5.2,(float)0),Quaternion.identity) as GameObject;
-			GameObject uiUnit = Instantiate(unitsPrefab[i].GetComponent<UiUnitType>().getRandomUnit(),new Vector3((float)(-6+(1.5*i)),(float)-5.2,(float)0),Quaternion.identity) as GameObject;
-			GameObject button = Instantiate(buttonPrefab,new Vector3((float)(-6+(1.5*i)),(float)-6,(float)0),Quaternion.identity) as GameObject;
-			GameObject text = Instantiate(textPrefab,new Vector3((float)(-6+(1.5*i)),(float)-6,(float)0),Quaternion.identity) as GameObject;
+            GameObject square = Instantiate(menuPrefab, new Vector3((float)(-6 + (unitMenuInterval * i)), (float)-5.2, (float)0), Quaternion.identity) as GameObject;
+            GameObject uiUnit = Instantiate(unitsPrefab[i].GetComponent<UiUnitType>().getRandomUnit(), new Vector3((float)(-6 + (unitMenuInterval * i)), (float)-5.2, (float)0), Quaternion.identity) as GameObject;
+            GameObject button = Instantiate(buttonPrefab, new Vector3((float)(-6 + (unitMenuInterval * i)), (float)-5.85, (float)0), Quaternion.identity) as GameObject;
+            GameObject text = Instantiate(textPrefab, new Vector3((float)(-6 + (unitMenuInterval * i)), (float)-5.85, (float)0), Quaternion.identity) as GameObject;
 			square.name = unitsPrefab[i].GetComponent<UiUnitType>().UnitName;
 			world.squares.Add(square);
 			GomUnit gom2 = uiUnit.GetComponent<GomUnit>();
@@ -46,14 +47,34 @@ public class UnitSpawnMenuController : MonoBehaviour {
 				text.SetActive(false);
 			}
 		}
+
+        // Load each ability
+        world.abilityUIinst = new List<GameObject>();
+        world.abilities = new List<GameObject>();
+        for (int i = 0; i < abilityPrefab.Length; ++i) {
+            GameObject square = Instantiate(menuPrefab, new Vector3((float)(-6 + (unitMenuInterval * (i + unitsPrefab.Length))), (float)-5.2, (float)0), Quaternion.identity) as GameObject;
+            GameObject uiAbility = Instantiate(abilityPrefab[i].GetComponent<Ability>().sprite, new Vector3((float)(-6 + (unitMenuInterval * (i + unitsPrefab.Length))), (float)-5.2, (float)0), Quaternion.identity) as GameObject;
+            square.name = abilityPrefab[i].GetComponent<Ability>().abilityName;
+            world.squares.Add(square);
+            world.abilityUIinst.Add(uiAbility);
+            world.abilities.Add(abilityPrefab[i]);
+
+            if (abilityPrefab[i].GetComponent<Ability>().level <= 0) {
+                square.SetActive(false);
+                uiAbility.SetActive(false);
+            }
+        }
+
+        world.unitMenuInterval = unitMenuInterval;
 	}
+
 	void buttonPush(string buttonName){
 		int unitType = int.Parse(buttonName);
-		PropertyStats unitStats = units[unitType].GetComponent<GomUnit>().playerStats;
-		if ((Player.spiritShards >= unitStats.upgradeCost) &&
-		    (unitStats.level <= unitsPrefab[unitType].GetComponent<UiUnitType>().level)) {
+        PropertyStats unitStats = units[unitType].GetComponent<GomUnit>().playerStats;
+        if ((Player.spiritShards >= unitStats.upgradeCost) &&
+            (unitStats.level <= unitsPrefab[unitType].GetComponent<UiUnitType>().level)) {
 
-			unitStats.upgradeUnit(units[unitType].GetComponent<GomUnit>().entityName);
-		}
+            unitStats.upgradeUnit(units[unitType].GetComponent<GomUnit>().entityName);
+        }
 	}
 }

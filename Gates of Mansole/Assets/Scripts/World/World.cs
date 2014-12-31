@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class World : MonoBehaviour {
 	//Comment to overwrite
 	public float TileUnitOffset;
-    public List<GameObject> squares;
     public GameObject map;
 	public GameObject[] Levels;
     public GameObject winMessage;
@@ -29,10 +28,15 @@ public class World : MonoBehaviour {
     private UnitAnimation._direction attackerDir;
     private UnitAnimation._direction defenderDir;
     private GameObject selectedUiUnit;
+    private GameObject selectedUiAbility;
+    private GameObject selectedAbility;
     private UiTile gridSize;
-	
+
+    public List<GameObject> squares;
 	public List<GameObject> unitsUIinst;
 	public List<GameObject> unitTypes;
+    public List<GameObject> abilityUIinst;
+    public List<GameObject> abilities;
 	private float levelStartTime;
 	public GameObject unitInfoUi;
     public GameObject[] maps;
@@ -43,6 +47,7 @@ public class World : MonoBehaviour {
     public GameObject dialogueWindow;
     public int dialogueLineSize;
     public Sprite[] Images;
+    public float unitMenuInterval;
 
     public enum _WorldState {
         Setup,
@@ -377,13 +382,33 @@ public class World : MonoBehaviour {
                 }
 
                 if (Physics.Raycast(UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition), out hitSquare)) {
-                    for (int i = 0; i < squares.Count; ++i)
-                        if (hitSquare.transform.name == squares[i].transform.name) {
-                            selectedUiUnit = unitsUIinst[i];
+                    foreach (GameObject square in squares) {
+                        // User selected a menu, find out what it is
+                        if (hitSquare.transform.name == square.transform.name) {
+                            // Check if user selected a unit type
+                            for (int i = 0; i < unitTypes.Count; ++i) {
+                                if (hitSquare.transform.name == unitTypes[i].GetComponent<UiUnitType>().UnitName) {
+                                    selectedUiUnit = unitsUIinst[i];
+                                    break;
+                                }
+                            }
+
+                            // Check if user selected an ability
+                            for (int i = 0; i < abilities.Count; ++i) {
+                                if (hitSquare.transform.name == abilities[i].GetComponent<Ability>().abilityName) {
+                                    selectedUiAbility = abilityUIinst[i];
+                                    selectedAbility = abilities[i];
+                                    break;
+                                }
+                            }
+
+                            break;
                         }
+                    }
                 }
             }
 
+            // User wants to spawn a unit
             if (selectedUiUnit != null) {
                 UiTile tile;
                 Vector3 newPos;
@@ -394,6 +419,28 @@ public class World : MonoBehaviour {
                     newPos = new Vector3(map.transform.position.x + ((float)tile.col * map.transform.localScale.x),
                                          map.transform.position.y + ((float)tile.row * map.transform.localScale.y) + TileUnitOffset);
                     selectedUiUnit.transform.position = newPos;
+                }
+
+                if (Input.GetMouseButtonUp(0)) {
+                    handleSelectedUnitType();
+                }
+            }
+
+            // User wants to use an ability
+            if (selectedUiAbility != null) {
+                switch (selectedAbility.GetComponent<Ability>().abilityType) {
+                    case Ability._type.rowDamage:
+                        handleRowDamageAbility();
+                        break;
+                    case Ability._type.radiusDamage:
+                        handleRadiusDamageAbility();
+                        break;
+                    case Ability._type.freezeEnemyUnit:
+                        handleFreezeEnemyUnitAbility();
+                        break;
+                    case Ability._type.ShieldUnit:
+                        handleShieldUnitAbility();
+                        break;
                 }
             }
 
@@ -407,39 +454,113 @@ public class World : MonoBehaviour {
                     if (tileContents[(int)tile.row][(int)tile.col] != null) unitInfoUi.SendMessage("SelectUnit", tileContents[(int)tile.row][(int)tile.col], SendMessageOptions.DontRequireReceiver);
                 }
             }
-            if (Input.GetMouseButtonUp(0) && (selectedUiUnit != null)) {
+        }
+    }
 
-                UiTile tile;
+    void handleSelectedUnitType() {
+        UiTile tile;
 
-                tile = map.GetComponent<UiTiles>().GetMouseOverTile();
+        tile = map.GetComponent<UiTiles>().GetMouseOverTile();
 
-                if ((tile.col < gridSize.col) && (tile.row < gridSize.row) && (tile.col >= 0) && (tile.row >= 0)) {
-                    UnitAnimation._direction dir;
+        if ((tile.col < gridSize.col) && (tile.row < gridSize.row) && (tile.col >= 0) && (tile.row >= 0)) {
+            UnitAnimation._direction dir;
 
-                    if (isPlayerAttacker == true) {
-                        totalAttackers++;
-                        dir = attackerDir;
+            if (isPlayerAttacker == true) {
+                totalAttackers++;
+                dir = attackerDir;
+            }
+            else {
+                totalDefenders++;
+                dir = defenderDir;
+            }
+
+            for (int i = 0; i < unitsUIinst.Count; ++i) {
+                if (selectedUiUnit == unitsUIinst[i]) {
+                    if (SpawnUnit(unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(), (int)tile.row, (int)tile.col, GomObject.Faction.Player)) {
+                        tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
                     }
-                    else {
-                        totalDefenders++;
-                        dir = defenderDir;
-                    }
+                    break;
+                }
+            }
+        }
+        for (int i = 0; i < unitsUIinst.Count; ++i) {
+            if (selectedUiUnit == unitsUIinst[i]) {
+                selectedUiUnit.transform.position = new Vector3((float)(-6 + (unitMenuInterval * i)), (float)-5.2, (float)0);
+                break;
+            }
+        }
+        selectedUiUnit = null;
+    }
 
-                    for (int i = 0; i < unitsUIinst.Count; ++i) {
-                        if (selectedUiUnit == unitsUIinst[i]) {
-                            if (SpawnUnit(unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(), (int)tile.row, (int)tile.col, GomObject.Faction.Player))
-                                tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
+    void handleRowDamageAbility() {
+        UiTile tile;
+        Vector3 newPos;
+
+        tile = map.GetComponent<UiTiles>().GetMouseOverTile();
+
+        if ((tile.row != -1) && (tile.col != -1)) {
+            newPos = new Vector3(map.transform.position.x,
+                                 map.transform.position.y + ((float)tile.row * map.transform.localScale.y) + TileUnitOffset);
+            selectedUiAbility.transform.position = newPos;
+        }
+
+        if (Input.GetMouseButtonUp(0)) {
+
+            if ((tile.row >= 0) && (tile.row < gridSize.row) && (selectedAbility.GetComponent<Ability>().cost <= Player.spiritShards)) {
+                float xTilePos;
+                float yTilePos;
+
+                Debug.Log(selectedAbility.GetComponent<Ability>().abilityName);
+
+                Player.spiritShards -= selectedAbility.GetComponent<Ability>().cost;
+
+                xTilePos = map.GetComponent<UiTiles>().lanes[tile.row].GetComponent<UiRow>().rowTiles[0].transform.position.x;
+                yTilePos = map.GetComponent<UiTiles>().lanes[tile.row].GetComponent<UiRow>().rowTiles[0].transform.position.y;
+
+                GameObject abilityInst = Instantiate(selectedAbility, new Vector3(xTilePos, yTilePos + TileUnitOffset, 0), Quaternion.identity) as GameObject;
+
+                abilityInst.SendMessage("SetDirection", UnitAnimation._direction.DirRight, SendMessageOptions.DontRequireReceiver);
+                abilityInst.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
+                abilityInst.SendMessage("DieTimer", 2f, SendMessageOptions.DontRequireReceiver);
+
+                for (int colInd = 0; colInd < gridSize.col; colInd++) {
+                    if (tileContents[tile.row][colInd] != null) {
+                        if (tileContents[tile.row][colInd].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy) {
+                            tileContents[tile.row][colInd].SendMessage("SetAttacker", null, SendMessageOptions.DontRequireReceiver);
+                            tileContents[tile.row][colInd].SendMessage("Damage", selectedAbility.GetComponent<Ability>().damage, SendMessageOptions.DontRequireReceiver);
                         }
                     }
                 }
-                for (int i = 0; i < unitsUIinst.Count; ++i) {
-                    if (selectedUiUnit == unitsUIinst[i]) {
-                        selectedUiUnit.transform.position = new Vector3((float)(-6 + (1.5 * i)), (float)-5.2, (float)0);
-                    }
-                }
-                selectedUiUnit = null;
             }
+
+            for (int i = 0; i < abilityUIinst.Count; ++i) {
+                if (selectedUiAbility == abilityUIinst[i]) {
+                    selectedUiAbility.transform.position = new Vector3((float)(-6 + (unitMenuInterval * (unitsUIinst.Count + i))), (float)-5.2, (float)0);
+                    break;
+                }
+            }
+
+            selectedAbility = null;
+            selectedUiAbility = null;
         }
+    }
+
+    void handleRadiusDamageAbility() {
+        Debug.Log("Raduis Damage");
+        selectedAbility = null;
+        selectedUiAbility = null;
+    }
+
+    void handleFreezeEnemyUnitAbility() {
+        Debug.Log("Freeze Enemy Unit");
+        selectedAbility = null;
+        selectedUiAbility = null;
+    }
+
+    void handleShieldUnitAbility() {
+        Debug.Log("Shield Unit");
+        selectedAbility = null;
+        selectedUiAbility = null;
     }
 
     public void UnitAI(int row, int col) {
