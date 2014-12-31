@@ -393,17 +393,22 @@ public class World : MonoBehaviour {
                 }
             }
 
-            // Check Menu Squares
             if (Input.GetMouseButtonDown(0)) {
                 RaycastHit hitSquare;
 
+                // Handle the level being done
                 if (isLevelDone == true) {
-                    state = _WorldState.PostDialogue;
-                    if (currentLevel.GetComponent<WaveList>().postLevelDialogue.Count > 0) {
-                        dialogueWindow.SetActive(true);
+                    if (winMessage.activeSelf == true) {
+                        state = _WorldState.PostDialogue;
+                        if (currentLevel.GetComponent<WaveList>().postLevelDialogue.Count > 0) {
+                            dialogueWindow.SetActive(true);
+                        }
+                    } else {
+                        Application.LoadLevel("LevelSelect");
                     }
                 }
 
+                // Check Menu Squares
                 if (Physics.Raycast(UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition), out hitSquare)) {
                     foreach (GameObject square in squares) {
                         // User selected a menu, find out what it is
