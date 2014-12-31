@@ -87,7 +87,7 @@ public class GomUnit : GomObject {
         updateHealthBars();
 	}
 
-    void SetAttacker() {
+    void SetAttackerNoArgs() {
         attacker = null;
     }
 
