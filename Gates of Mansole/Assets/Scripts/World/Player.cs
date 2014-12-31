@@ -23,6 +23,7 @@ public class Player : MonoBehaviour {
             levelComplete.Add(0);
         }
 
+        spiritOrbs = 0;
         AddOrbs(10);
 
 		unitTypes = new List<GameObject>();
