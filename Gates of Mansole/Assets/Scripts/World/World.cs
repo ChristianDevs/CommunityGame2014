@@ -352,17 +352,40 @@ public class World : MonoBehaviour {
             if (isLevelDone == false) {
                 if (isPlayerAttacker == true) {
                     if (letThroughAttackers >= wl.AttackersLetThrough) {
+                        // Player got enough attackers through
                         winMessage.SetActive(true);
                         Player.completeLevel(Player.currentLevel);
                         isLevelDone = true;
+                    } else if (totalAttackers == 0) {
+                        bool canAfford = false;
+
+                        // Check if the player has enough spirit shards to spawn a unit
+                        foreach (GameObject ut in unitTypes) {
+                            if (Player.spiritShards >= ut.GetComponent<UiUnitType>().getRandomUnit().GetComponent<GomUnit>().cost) {
+                                canAfford = true;
+                            }
+                        }
+
+                        // Check if the player has enough spirit shards to use an ability
+                        foreach (GameObject ab in abilities) {
+                            if (Player.spiritShards >= ab.GetComponent<Ability>().cost) {
+                                canAfford = true;
+                            }
+                        }
+
+                        if (canAfford == false) {
+                            // Player ran out of resources
+                            loseMessage.SetActive(true);
+                            isLevelDone = true;
+                        }
                     }
-                }
-                else {
+                } else {
                     if (letThroughAttackers >= wl.AttackersLetThrough) {
+                        // Player let too many attackers through
                         loseMessage.SetActive(true);
                         isLevelDone = true;
-                    }
-                    else if ((defeatedAttackers + letThroughAttackers) >= totalAI) {
+                    } else if ((defeatedAttackers + letThroughAttackers) >= totalAI) {
+                        // Player defeated all attackers
                         winMessage.SetActive(true);
                         Player.completeLevel(Player.currentLevel);
                         isLevelDone = true;
@@ -526,7 +549,7 @@ public class World : MonoBehaviour {
                 for (int colInd = 0; colInd < gridSize.col; colInd++) {
                     if (tileContents[tile.row][colInd] != null) {
                         if (tileContents[tile.row][colInd].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy) {
-                            tileContents[tile.row][colInd].SendMessage("SetAttacker", null, SendMessageOptions.DontRequireReceiver);
+                            tileContents[tile.row][colInd].SendMessage("SetAttackerNoArgs", null, SendMessageOptions.DontRequireReceiver);
                             tileContents[tile.row][colInd].SendMessage("Damage", selectedAbility.GetComponent<Ability>().damage, SendMessageOptions.DontRequireReceiver);
                         }
                     }
