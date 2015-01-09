@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Options : MonoBehaviour {
+public class UiOptions : MonoBehaviour {
 	public GameObject world;
 	public GameObject menu;
 	// Use this for initialization
