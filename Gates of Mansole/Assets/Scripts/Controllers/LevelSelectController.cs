@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class UiLevelSelect : MonoBehaviour {
+public class LevelSelectController : MonoBehaviour {
 
     public GameObject level1;
     public GameObject BeatGameMessage;
@@ -26,9 +26,9 @@ public class UiLevelSelect : MonoBehaviour {
             if (Player.levelComplete[i - 1] > 0) {
                 levelButtons.Add(Instantiate(level1, level1.transform.position, Quaternion.identity) as GameObject);
                 levelButtons[i].name = "Level " + (i + 1).ToString();
-                levelButtons[i].GetComponent<Button>().buttonName = levelButtons[i].name;
-                levelButtons[i].GetComponent<Button>().textMeshObj.GetComponent<TextMesh>().text = levelButtons[i].name;
-                levelButtons[i].GetComponent<Button>().controller = gameObject;
+                levelButtons[i].GetComponent<UiButton>().buttonName = levelButtons[i].name;
+                levelButtons[i].GetComponent<UiButton>().textMeshObj.GetComponent<TextMesh>().text = levelButtons[i].name;
+                levelButtons[i].GetComponent<UiButton>().controller = gameObject;
                 levelButtons[i].transform.position = new Vector3(x, y, levelButtons[i].transform.position.z);
 
                 x += 3;

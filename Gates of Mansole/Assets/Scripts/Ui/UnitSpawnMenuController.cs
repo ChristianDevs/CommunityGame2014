@@ -8,7 +8,7 @@ public class UnitSpawnMenuController : MonoBehaviour {
 	public GameObject buttonPrefab;
 	public GameObject textPrefab;
     public GameObject[] abilityPrefab;
-	public World world;
+	public WorldController world;
     public float unitMenuInterval;
 
 	private List<GameObject> units;
@@ -30,7 +30,7 @@ public class UnitSpawnMenuController : MonoBehaviour {
 			world.unitsUIinst.Add(uiUnit);
 			world.unitTypes.Add(unitsPrefab[i]);
 			units.Add(uiUnit);
-			Button buttonCom = button.GetComponent<Button>();
+			UiButton buttonCom = button.GetComponent<UiButton>();
 			button.transform.localScale = new Vector3((float)0.5,(float)0.75,(float)1);
 			buttonCom.buttonName=""+i;
 			button.name=""+i;

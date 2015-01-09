@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class UiTitle : MonoBehaviour {
+public class TitleController : MonoBehaviour {
 
 	public GameObject[] unitTypes;
     public GameObject[] abilities;

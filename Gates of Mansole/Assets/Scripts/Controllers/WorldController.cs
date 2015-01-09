@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class World : MonoBehaviour {
+public class WorldController : MonoBehaviour {
 	//Comment to overwrite
 	public float TileUnitOffset;
     public GameObject map;

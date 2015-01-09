@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class UiUpgrades : MonoBehaviour {
+public class UpgradeController : MonoBehaviour {
 
     enum _UpgradeMode {
         Units,

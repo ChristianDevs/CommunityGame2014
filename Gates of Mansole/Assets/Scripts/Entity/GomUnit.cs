@@ -342,7 +342,7 @@ public class GomUnit : GomObject {
 			curTile = moveTile;
 			NextState = _state.Idle;
             State = NextState;
-            world.GetComponent<World>().UnitAI((int)curTile.y, (int)curTile.x);
+            world.GetComponent<WorldController>().UnitAI((int)curTile.y, (int)curTile.x);
 		}
 
 	    transform.position = new Vector3 (transform.position.x + xSpeed, transform.position.y + ySpeed, transform.position.z);
