@@ -106,7 +106,7 @@ public class WorldController : MonoBehaviour {
                 handleSetup();
                 state = _WorldState.PreDialogue;
                 dialogueIndex = -1;
-                dialogueWindow.SetActive(true);
+				dialogueWindow.SetActive(true);
                 break;
             case _WorldState.PreDialogue:
                 if (handleDialogue(currentLevel.GetComponent<WaveList>().preLevelDialogue)) {
@@ -161,7 +161,7 @@ public class WorldController : MonoBehaviour {
             curLevelAttackerDir = currentLevel.GetComponent<WaveList>().attackerDir;
 
             foreach (GameObject mp in maps) {
-                if (mp.GetComponent<UiTiles>().mapName == currentLevel.GetComponent<WaveList>().map) {
+				if (mp.GetComponent<UiTiles>().mapName.TrimEnd() == currentLevel.GetComponent<WaveList>().map) {
                     mp.SetActive(true);
                     map = mp;
                 }
@@ -279,7 +279,7 @@ public class WorldController : MonoBehaviour {
         if (currentLevel != null) {
             WaveList wl;
 
-            wl = currentLevel.GetComponent<WaveList>();
+			wl = currentLevel.GetComponent<WaveList>();
 
             // Go through each wave and see if it is time to start that wave
             foreach (Wave wv in wl.waves) {
@@ -331,15 +331,14 @@ public class WorldController : MonoBehaviour {
                                             totalDefenders++;
                                         }
                                     }
-                                    else {
+									else {
                                         if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
                                             tileContents[row][col].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
-                                            totalAttackers++;
-                                        }
-                                        else {
+											totalAttackers++;
+                                        } else {
                                             // Just to keep the game from getting stuck
-                                            defeatedAttackers++;
-                                        }
+											defeatedAttackers++;
+										}
                                     }
                                 }
                             }
@@ -789,11 +788,17 @@ public class WorldController : MonoBehaviour {
         float xTilePos;
         float yTilePos;
 
+
         // 2 units cannot occupy the same tile
         if (tileContents[tileRow][tileCol] != null) {
 			Debug.Log ("another unit is already occupying this tile!");
             return false;
         }
+
+		if (unitPrefab == null) {
+			Debug.Log("Prefab is null");
+			return false;
+		}
 
 		if (faction == GomObject.Faction.Player) {
 			if (unitPrefab.GetComponent<GomUnit>().cost > Player.spiritShards) {
@@ -815,11 +820,10 @@ public class WorldController : MonoBehaviour {
 
         tileContents[tileRow][tileCol] = Instantiate(unitPrefab, worldPos, Quaternion.identity) as GameObject;
 		tileContents[tileRow][tileCol].GetComponent<GomUnit>().enabled = true;
-        tileContents[tileRow][tileCol].SendMessage("SetCurrentTile", new Vector2(tileCol, tileRow), SendMessageOptions.DontRequireReceiver);
-        tileContents[tileRow][tileCol].SendMessage("SetFaction", faction, SendMessageOptions.DontRequireReceiver);
-        tileContents[tileRow][tileCol].SendMessage("SetWorld", gameObject, SendMessageOptions.DontRequireReceiver);
+		tileContents[tileRow][tileCol].SendMessage("SetCurrentTile", new Vector2(tileCol, tileRow), SendMessageOptions.DontRequireReceiver);
+		tileContents[tileRow][tileCol].SendMessage("SetFaction", faction, SendMessageOptions.DontRequireReceiver);
+		tileContents[tileRow][tileCol].SendMessage("SetWorld", gameObject, SendMessageOptions.DontRequireReceiver);
         tileContents[tileRow][tileCol].SendMessage("SetMoveXScale", map.transform.localScale.x, SendMessageOptions.DontRequireReceiver);
-
         return true;
     }
 }

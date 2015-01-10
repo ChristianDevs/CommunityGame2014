@@ -7,18 +7,34 @@ public class TitleController : MonoBehaviour {
 	public GameObject[] unitTypes;
     public GameObject[] abilities;
 
+	private bool isDone;
+
 	// Use this for initialization
 	void Start () {
-        string[] levelData;
+		isDone = false;
+		StartCoroutine (Init ());
+	}
 
-		Screen.orientation = ScreenOrientation.Landscape;
-
-        levelData = System.IO.File.ReadAllLines("Data.gom");
-
-        Player.levelFileNames = new List<string>();
-        foreach (string ln in levelData) {
-            Player.levelFileNames.Add(ln);
-        }
+	public IEnumerator Init() {
+		string filePath;
+		string[] levelData;
+		string[] seps = {"\n"};
+		
+		filePath = Application.streamingAssetsPath + "/Data.gom";
+		
+		if (filePath.Contains("://"))
+		{
+			WWW www = new WWW (filePath);
+			yield return www;
+			levelData = www.text.Split(seps, System.StringSplitOptions.RemoveEmptyEntries);
+		} else {
+			levelData = System.IO.File.ReadAllLines(filePath);
+		}
+		
+		Player.levelFileNames = new List<string>();
+		foreach (string ln in levelData) {
+			Player.levelFileNames.Add(Application.streamingAssetsPath + "/" + ln);
+		}
 	}
 	
 	// Update is called once per frame
