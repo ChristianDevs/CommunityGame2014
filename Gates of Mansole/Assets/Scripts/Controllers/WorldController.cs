@@ -49,10 +49,23 @@ public class WorldController : MonoBehaviour {
     public Sprite[] Images;
     public float unitMenuInterval;
 
+	private float OrbCurAmount;
+	private float ShardCurAmount;
+	private float ConvertStepIntervalTime;
+	private float convertTime;
+
+	private enum _ConvertState {
+		PreWait,
+		Converting,
+		Done
+	}
+	_ConvertState cvState;
+
     public enum _WorldState {
         Setup,
         PreDialogue,
         Play,
+		CollectOrbs,
         PostDialogue
     }
     _WorldState state;
@@ -119,6 +132,9 @@ public class WorldController : MonoBehaviour {
             case _WorldState.Play:
                 handlePlay();
                 break;
+			case _WorldState.CollectOrbs:
+				handleCollectOrbs();
+				break;
             case _WorldState.PostDialogue:
                 if (handleDialogue(currentLevel.GetComponent<WaveList>().postLevelDialogue)) {
                     Application.LoadLevel("LevelSelect");
@@ -351,10 +367,8 @@ public class WorldController : MonoBehaviour {
             if (isLevelDone == false) {
                 if (isPlayerAttacker == true) {
                     if (letThroughAttackers >= wl.AttackersLetThrough) {
-                        // Player got enough attackers through
-                        winMessage.SetActive(true);
-                        Player.completeLevel(Player.currentLevel);
-                        isLevelDone = true;
+						// Player got enough attackers through
+						winLevel();
                     } else if (totalAttackers == 0) {
                         bool canAfford = false;
 
@@ -373,21 +387,17 @@ public class WorldController : MonoBehaviour {
                         }
 
                         if (canAfford == false) {
-                            // Player ran out of resources
-                            loseMessage.SetActive(true);
-                            isLevelDone = true;
+							// Player ran out of resources
+							loseLevel();
                         }
                     }
                 } else {
                     if (letThroughAttackers >= wl.AttackersLetThrough) {
                         // Player let too many attackers through
-                        loseMessage.SetActive(true);
-                        isLevelDone = true;
+						loseLevel();
                     } else if ((defeatedAttackers + letThroughAttackers) >= totalAI) {
                         // Player defeated all attackers
-                        winMessage.SetActive(true);
-                        Player.completeLevel(Player.currentLevel);
-                        isLevelDone = true;
+						winLevel();
                     }
                 }
             }
@@ -398,7 +408,7 @@ public class WorldController : MonoBehaviour {
                 // Handle the level being done
                 if (isLevelDone == true) {
                     if (winMessage.activeSelf == true) {
-                        state = _WorldState.PostDialogue;
+                        state = _WorldState.CollectOrbs;
                         if (currentLevel.GetComponent<WaveList>().postLevelDialogue.Count > 0) {
                             dialogueWindow.SetActive(true);
                         }
@@ -484,6 +494,23 @@ public class WorldController : MonoBehaviour {
         }
     }
 
+	void winLevel() {
+		winMessage.SetActive(true);
+		ShardCurAmount = Player.totalShards;
+		Player.completeLevel(Player.currentLevel);
+		isLevelDone = true;
+		dialogueText.text = "";
+		leftImage.sprite = null;
+		rightImage.sprite = null;
+		cvState = _ConvertState.PreWait;
+		convertTime = Time.time;
+	}
+
+	void loseLevel() {
+		loseMessage.SetActive(true);
+		isLevelDone = true;
+	}
+
     void handleSelectedUnitType() {
         UiTile tile;
 
@@ -518,6 +545,42 @@ public class WorldController : MonoBehaviour {
         }
         selectedUiUnit = null;
     }
+
+	void handleCollectOrbs() {
+
+		switch(cvState) {
+		case _ConvertState.PreWait:
+			if ((convertTime + 2f) < Time.time) {
+				cvState = _ConvertState.Converting;
+				OrbCurAmount = 0;
+				convertTime = Time.time;
+			}
+			break;
+		case _ConvertState.Converting:
+			if ((convertTime + 0.3f) < Time.time) {
+				OrbCurAmount++;
+				ShardCurAmount -= 1 / Player.CONVERSION_RATE;
+			}
+
+			if (ShardCurAmount <= 0) {
+				ShardCurAmount = 0;
+				cvState = _ConvertState.Done;
+			}
+			break;
+		case _ConvertState.Done:
+			
+			if (Input.GetMouseButtonDown(0)) {
+				state = _WorldState.PostDialogue;
+			}
+			break;
+		}
+		
+		dialogueText.text = "Total Spirit Shards\n";
+		dialogueText.text += ShardCurAmount;
+		dialogueText.text += "\n";
+		dialogueText.text += "Gained Spirit Orbs\n";
+		dialogueText.text += OrbCurAmount;
+	}
 
     void handleRowDamageAbility() {
         UiTile tile;
