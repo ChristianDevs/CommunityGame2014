@@ -55,8 +55,7 @@ public class GomUnit : GomObject {
         int minDamage = Random.Range(0, 2);  // always a chance of doing something
         int variation = Random.Range(0, attacker.getStats().attack / 5 + 1);
 		int baseDamage = attacker.getStats().attack - this.getStats().defense;
-        Damage(minDamage + baseDamage + variation);
-		float advantageMultiplier = (float)(minDamage + baseDamage + variation)*getMultiplier ();
+        float advantageMultiplier = (float)(minDamage + baseDamage + variation)*getMultiplier ();
 		Damage ((int)advantageMultiplier);
 	}
 
