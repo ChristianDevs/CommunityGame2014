@@ -17,13 +17,16 @@ public class PropertyStats {
 	public int upgradeCost = 10; // in Spirit Shards
 
 	public void upgradeUnit(string unit) {
-		Player.spiritShards -= upgradeCost;
 		level++;
 		attack += 5;
 		maxHealth += 10;
 		Debug.Log (unit + " type units upgraded to level " + level + "! spirit shards remaining: " + Player.spiritShards);
 	}
-	
+
+	public void purchaseUpgrade(int cost) {
+		Player.spiritShards -= cost;
+	}
+
 	public void resetUnitStats() {
 		level = 1;
 		attack = 10;

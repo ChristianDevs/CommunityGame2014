@@ -733,16 +733,21 @@ public class WorldController : MonoBehaviour {
                     }
                 }
             }
-            // update unit stats
-            if (tileContents[row][col]) {
-                for (int i = 0; i < unitTypes.Count; ++i)
-                    if (tileContents[row][col].name.Equals(unitTypes[i].name + "(Clone)")) {
-                        PropertyStats playerStats = unitTypes[i].GetComponent<GomUnit>().playerStats;
-                        PropertyStats enemyStats = unitTypes[i].GetComponent<GomUnit>().enemyStats;
-                        PropertyStats stats = (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) ? playerStats : enemyStats;
-                        stats.updateUnitStats(tileContents[row][col]);
-                    }
-            }
+			// update unit stats
+			if (tileContents[row][col]) {
+
+				PropertyStats playerStats = tileContents[row][col].GetComponent<GomUnit>().playerStats;
+				PropertyStats enemyStats = tileContents[row][col].GetComponent<GomUnit>().enemyStats;
+				PropertyStats stats = (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) ? playerStats : enemyStats;
+
+				for (int i = 0; i < unitTypes.Count; i++) {
+					if (tileContents[row][col].GetComponent<GomUnit>().entityName.StartsWith(unitTypes[i].GetComponent<UiUnitType>().UnitName)){
+						for (int j = 0; j < unitTypes[i].GetComponent<UiUnitType>().Units.Length; j++){
+							stats.updateUnitStats(tileContents[row][col]);
+						}
+					}
+				}
+			}
         }
     }
 

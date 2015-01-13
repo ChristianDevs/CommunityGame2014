@@ -70,11 +70,18 @@ public class UnitSpawnMenuController : MonoBehaviour {
 
 	void buttonPush(string buttonName){
 		int unitType = int.Parse(buttonName);
-        PropertyStats unitStats = units[unitType].GetComponent<GomUnit>().playerStats;
-        if ((Player.spiritShards >= unitStats.upgradeCost) &&
-            (unitStats.level <= unitsPrefab[unitType].GetComponent<UiUnitType>().level)) {
+		PropertyStats unitStats = units[unitType].GetComponent<GomUnit>().playerStats;
 
-            unitStats.upgradeUnit(units[unitType].GetComponent<GomUnit>().entityName);
-        }
+		if ((Player.spiritShards >= unitStats.upgradeCost) &&
+		    (unitStats.level < unitsPrefab[unitType].GetComponent<UiUnitType>().maxLevel)) {
+			for (int i = 0; i < unitsPrefab[unitType].GetComponent<UiUnitType>().Units.Length; i++) {
+				PropertyStats stats = unitsPrefab[unitType].GetComponent<UiUnitType>().Units[i].GetComponent<GomUnit>().playerStats;
+				stats.upgradeUnit(units[unitType].GetComponent<GomUnit>().entityName);
+			
+				Debug.Log ("upgraded "+unitsPrefab[unitType].GetComponent<UiUnitType>().Units[i].name);
+			}
+			unitStats.purchaseUpgrade(unitStats.upgradeCost);
+			Debug.Log ("shards left "+Player.spiritShards);
+		}
 	}
 }
