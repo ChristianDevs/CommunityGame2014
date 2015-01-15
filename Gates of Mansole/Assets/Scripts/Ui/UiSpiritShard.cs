@@ -6,14 +6,22 @@ public class UiSpiritShard : MonoBehaviour {
 
 	public GameObject textTexture;
 
+    private bool showCustom = false;
+
 
 	// Use this for initialization
 	void Start () {
-		textTexture.GetComponent<TextMesh>().text="x"+Player.spiritShards;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		textTexture.GetComponent<TextMesh>().text="x"+Player.spiritShards;
+        if (showCustom == false) {
+            textTexture.GetComponent<TextMesh>().text = "x" + Player.spiritShards;
+        }
 	}
+
+    void SetCustomValue(int val) {
+        showCustom = true;
+        textTexture.GetComponent<TextMesh>().text = "x" + val;
+    }
 }

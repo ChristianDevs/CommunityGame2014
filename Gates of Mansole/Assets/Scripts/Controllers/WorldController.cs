@@ -49,10 +49,23 @@ public class WorldController : MonoBehaviour {
     public Sprite[] Images;
     public float unitMenuInterval;
 
+	private float OrbCurAmount;
+	private float ShardCurAmount;
+	private float ConvertStepIntervalTime;
+	private float convertTime;
+
+	private enum _ConvertState {
+		PreWait,
+		Converting,
+		Done
+	}
+	_ConvertState cvState;
+
     public enum _WorldState {
         Setup,
         PreDialogue,
         Play,
+		CollectOrbs,
         PostDialogue
     }
     _WorldState state;
@@ -106,7 +119,7 @@ public class WorldController : MonoBehaviour {
                 handleSetup();
                 state = _WorldState.PreDialogue;
                 dialogueIndex = -1;
-                dialogueWindow.SetActive(true);
+				dialogueWindow.SetActive(true);
                 break;
             case _WorldState.PreDialogue:
                 if (handleDialogue(currentLevel.GetComponent<WaveList>().preLevelDialogue)) {
@@ -119,6 +132,9 @@ public class WorldController : MonoBehaviour {
             case _WorldState.Play:
                 handlePlay();
                 break;
+			case _WorldState.CollectOrbs:
+				handleCollectOrbs();
+				break;
             case _WorldState.PostDialogue:
                 if (handleDialogue(currentLevel.GetComponent<WaveList>().postLevelDialogue)) {
                     Application.LoadLevel("LevelSelect");
@@ -161,7 +177,7 @@ public class WorldController : MonoBehaviour {
             curLevelAttackerDir = currentLevel.GetComponent<WaveList>().attackerDir;
 
             foreach (GameObject mp in maps) {
-                if (mp.GetComponent<UiTiles>().mapName == currentLevel.GetComponent<WaveList>().map) {
+				if (mp.GetComponent<UiTiles>().mapName.TrimEnd() == currentLevel.GetComponent<WaveList>().map) {
                     mp.SetActive(true);
                     map = mp;
                 }
@@ -279,7 +295,7 @@ public class WorldController : MonoBehaviour {
         if (currentLevel != null) {
             WaveList wl;
 
-            wl = currentLevel.GetComponent<WaveList>();
+			wl = currentLevel.GetComponent<WaveList>();
 
             // Go through each wave and see if it is time to start that wave
             foreach (Wave wv in wl.waves) {
@@ -331,15 +347,14 @@ public class WorldController : MonoBehaviour {
                                             totalDefenders++;
                                         }
                                     }
-                                    else {
+									else {
                                         if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
                                             tileContents[row][col].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
-                                            totalAttackers++;
-                                        }
-                                        else {
+											totalAttackers++;
+                                        } else {
                                             // Just to keep the game from getting stuck
-                                            defeatedAttackers++;
-                                        }
+											defeatedAttackers++;
+										}
                                     }
                                 }
                             }
@@ -352,10 +367,8 @@ public class WorldController : MonoBehaviour {
             if (isLevelDone == false) {
                 if (isPlayerAttacker == true) {
                     if (letThroughAttackers >= wl.AttackersLetThrough) {
-                        // Player got enough attackers through
-                        winMessage.SetActive(true);
-                        Player.completeLevel(Player.currentLevel);
-                        isLevelDone = true;
+						// Player got enough attackers through
+						winLevel();
                     } else if (totalAttackers == 0) {
                         bool canAfford = false;
 
@@ -374,21 +387,17 @@ public class WorldController : MonoBehaviour {
                         }
 
                         if (canAfford == false) {
-                            // Player ran out of resources
-                            loseMessage.SetActive(true);
-                            isLevelDone = true;
+							// Player ran out of resources
+							loseLevel();
                         }
                     }
                 } else {
                     if (letThroughAttackers >= wl.AttackersLetThrough) {
                         // Player let too many attackers through
-                        loseMessage.SetActive(true);
-                        isLevelDone = true;
+						loseLevel();
                     } else if ((defeatedAttackers + letThroughAttackers) >= totalAI) {
                         // Player defeated all attackers
-                        winMessage.SetActive(true);
-                        Player.completeLevel(Player.currentLevel);
-                        isLevelDone = true;
+						winLevel();
                     }
                 }
             }
@@ -399,7 +408,7 @@ public class WorldController : MonoBehaviour {
                 // Handle the level being done
                 if (isLevelDone == true) {
                     if (winMessage.activeSelf == true) {
-                        state = _WorldState.PostDialogue;
+                        state = _WorldState.CollectOrbs;
                         if (currentLevel.GetComponent<WaveList>().postLevelDialogue.Count > 0) {
                             dialogueWindow.SetActive(true);
                         }
@@ -479,11 +488,42 @@ public class WorldController : MonoBehaviour {
                 tile = map.GetComponent<UiTiles>().GetMouseOverTile();
 
                 if ((tile.col < gridSize.col) && (tile.row < gridSize.row) && (tile.col >= 0) && (tile.row >= 0)) {
-                    if (tileContents[(int)tile.row][(int)tile.col] != null) unitInfoUi.SendMessage("SelectUnit", tileContents[(int)tile.row][(int)tile.col], SendMessageOptions.DontRequireReceiver);
+                    if (tileContents[(int)tile.row][(int)tile.col] != null) {
+                        GameObject ut = null;
+
+                        foreach (GameObject unit in unitTypes) {
+                            Debug.Log(tileContents[(int)tile.row][(int)tile.col].GetComponent<GomUnit>().entityName + "::" + unit.GetComponent<UiUnitType>().UnitName);
+                            if (tileContents[(int)tile.row][(int)tile.col].GetComponent<GomUnit>().entityName == unit.GetComponent<UiUnitType>().UnitName) {
+                                ut = unit.GetComponent<UiUnitType>().getRandomUnit();
+                                break;
+                            }
+                        }
+
+                        if (ut != null) {
+                            unitInfoUi.SendMessage("SelectUnit", ut, SendMessageOptions.DontRequireReceiver);
+                        }
+                    }
                 }
             }
         }
     }
+
+	void winLevel() {
+		winMessage.SetActive(true);
+		ShardCurAmount = Player.totalShards;
+		Player.completeLevel(Player.currentLevel);
+		isLevelDone = true;
+		dialogueText.text = "";
+		leftImage.sprite = null;
+		rightImage.sprite = null;
+		cvState = _ConvertState.PreWait;
+		convertTime = Time.time;
+	}
+
+	void loseLevel() {
+		loseMessage.SetActive(true);
+		isLevelDone = true;
+	}
 
     void handleSelectedUnitType() {
         UiTile tile;
@@ -513,12 +553,50 @@ public class WorldController : MonoBehaviour {
         }
         for (int i = 0; i < unitsUIinst.Count; ++i) {
             if (selectedUiUnit == unitsUIinst[i]) {
-                selectedUiUnit.transform.position = new Vector3((float)(-6 + (unitMenuInterval * i)), (float)-5.2, (float)0);
+                selectedUiUnit.transform.position = new Vector3((float)(-6 + (unitMenuInterval * i)), (float)-5.5, (float)0);
                 break;
             }
         }
+
+        selectedUnit = selectedUiUnit;
         selectedUiUnit = null;
     }
+
+	void handleCollectOrbs() {
+
+		switch(cvState) {
+		case _ConvertState.PreWait:
+			if ((convertTime + 2f) < Time.time) {
+				cvState = _ConvertState.Converting;
+				OrbCurAmount = 0;
+				convertTime = Time.time;
+			}
+			break;
+		case _ConvertState.Converting:
+			if ((convertTime + 0.3f) < Time.time) {
+				OrbCurAmount++;
+				ShardCurAmount -= 1 / Player.CONVERSION_RATE;
+			}
+
+			if (ShardCurAmount <= 0) {
+				ShardCurAmount = 0;
+				cvState = _ConvertState.Done;
+			}
+			break;
+		case _ConvertState.Done:
+			
+			if (Input.GetMouseButtonDown(0)) {
+				state = _WorldState.PostDialogue;
+			}
+			break;
+		}
+		
+		dialogueText.text = "Total Spirit Shards\n";
+		dialogueText.text += ShardCurAmount;
+		dialogueText.text += "\n";
+		dialogueText.text += "Gained Spirit Orbs\n";
+		dialogueText.text += OrbCurAmount;
+	}
 
     void handleRowDamageAbility() {
         UiTile tile;
@@ -671,16 +749,21 @@ public class WorldController : MonoBehaviour {
                     }
                 }
             }
-            // update unit stats
-            if (tileContents[row][col]) {
-                for (int i = 0; i < unitTypes.Count; ++i)
-                    if (tileContents[row][col].name.Equals(unitTypes[i].name + "(Clone)")) {
-                        PropertyStats playerStats = unitTypes[i].GetComponent<GomUnit>().playerStats;
-                        PropertyStats enemyStats = unitTypes[i].GetComponent<GomUnit>().enemyStats;
-                        PropertyStats stats = (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) ? playerStats : enemyStats;
-                        stats.updateUnitStats(tileContents[row][col]);
-                    }
-            }
+			// update unit stats
+			if (tileContents[row][col]) {
+
+				PropertyStats playerStats = tileContents[row][col].GetComponent<GomUnit>().playerStats;
+				PropertyStats enemyStats = tileContents[row][col].GetComponent<GomUnit>().enemyStats;
+				PropertyStats stats = (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) ? playerStats : enemyStats;
+
+				for (int i = 0; i < unitTypes.Count; i++) {
+					if (tileContents[row][col].GetComponent<GomUnit>().entityName.StartsWith(unitTypes[i].GetComponent<UiUnitType>().UnitName)){
+						for (int j = 0; j < unitTypes[i].GetComponent<UiUnitType>().Units.Length; j++){
+							stats.updateUnitStats(tileContents[row][col]);
+						}
+					}
+				}
+			}
         }
     }
 
@@ -789,11 +872,17 @@ public class WorldController : MonoBehaviour {
         float xTilePos;
         float yTilePos;
 
+
         // 2 units cannot occupy the same tile
         if (tileContents[tileRow][tileCol] != null) {
 			Debug.Log ("another unit is already occupying this tile!");
             return false;
         }
+
+		if (unitPrefab == null) {
+			Debug.Log("Prefab is null");
+			return false;
+		}
 
 		if (faction == GomObject.Faction.Player) {
 			if (unitPrefab.GetComponent<GomUnit>().cost > Player.spiritShards) {
@@ -815,11 +904,47 @@ public class WorldController : MonoBehaviour {
 
         tileContents[tileRow][tileCol] = Instantiate(unitPrefab, worldPos, Quaternion.identity) as GameObject;
 		tileContents[tileRow][tileCol].GetComponent<GomUnit>().enabled = true;
-        tileContents[tileRow][tileCol].SendMessage("SetCurrentTile", new Vector2(tileCol, tileRow), SendMessageOptions.DontRequireReceiver);
-        tileContents[tileRow][tileCol].SendMessage("SetFaction", faction, SendMessageOptions.DontRequireReceiver);
-        tileContents[tileRow][tileCol].SendMessage("SetWorld", gameObject, SendMessageOptions.DontRequireReceiver);
+		tileContents[tileRow][tileCol].SendMessage("SetCurrentTile", new Vector2(tileCol, tileRow), SendMessageOptions.DontRequireReceiver);
+		tileContents[tileRow][tileCol].SendMessage("SetFaction", faction, SendMessageOptions.DontRequireReceiver);
+		tileContents[tileRow][tileCol].SendMessage("SetWorld", gameObject, SendMessageOptions.DontRequireReceiver);
         tileContents[tileRow][tileCol].SendMessage("SetMoveXScale", map.transform.localScale.x, SendMessageOptions.DontRequireReceiver);
-
         return true;
+    }
+
+    void buttonPush(string buttonName) {
+        switch(buttonName) {
+            case "Upgrade":
+                int unitType = -1;
+
+                if (selectedUnit == null) {
+                    break;
+                }
+
+                for (int i = 0; i < unitsUIinst.Count; i++) {
+                    if (selectedUnit.GetComponent<GomUnit>().name == unitsUIinst[i].GetComponent<GomUnit>().name) {
+                        unitType = i;
+                    }
+                }
+
+                if (unitType == -1) {
+                    break;
+                }
+
+                PropertyStats unitStats = unitsUIinst[unitType].GetComponent<GomUnit>().playerStats;
+
+                if ((Player.spiritShards >= unitStats.upgradeCost) &&
+                    (unitStats.level < unitTypes[unitType].GetComponent<UiUnitType>().maxLevel)) {
+
+                    for (int i = 0; i < unitTypes[unitType].GetComponent<UiUnitType>().Units.Length; i++) {
+                        PropertyStats stats = unitTypes[unitType].GetComponent<UiUnitType>().Units[i].GetComponent<GomUnit>().playerStats;
+                        stats.upgradeUnit(unitsUIinst[unitType].GetComponent<GomUnit>().entityName);
+
+                        Debug.Log("upgraded " + unitTypes[unitType].GetComponent<UiUnitType>().Units[i].name);
+                    }
+                    unitStats.purchaseUpgrade(unitStats.upgradeCost);
+                    Debug.Log("shards left " + Player.spiritShards);
+                }
+                break;
+        }
     }
 }

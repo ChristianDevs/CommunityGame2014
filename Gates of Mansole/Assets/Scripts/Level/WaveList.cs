@@ -36,18 +36,22 @@ public class WaveList : MonoBehaviour {
     public bool loadGameFile(string fileName, List<GameObject> newUnitTypes) {
         Debug.Log("Loading Game File: " + fileName);
         unitTypes = newUnitTypes;
-        return parseLevelFile(fileName);
+		StartCoroutine (parseLevelFile(fileName));
+        return true;
     }
 
-    bool parseLevelFile(string fileName) {
-        string[] levelData;
-
-        levelData = System.IO.File.ReadAllLines(fileName);
-
-        if (levelData.Length < 1) {
-            Debug.Log("Level Parser: Game File Empty");
-            return false;
-        }
+	public IEnumerator parseLevelFile(string fileName) {
+		string[] levelData;
+		string[] LineSeps = {"\n"};
+		
+		if (fileName.Contains("://"))
+		{
+			WWW www = new WWW (fileName);
+			yield return www;
+			levelData = www.text.Split(LineSeps, System.StringSplitOptions.RemoveEmptyEntries);
+		} else {
+			levelData = System.IO.File.ReadAllLines(fileName);
+		}
 
         for (int i = 0; i < levelData.Length; i++) {
             string key = "";
@@ -56,7 +60,7 @@ public class WaveList : MonoBehaviour {
             key = levelData[i].Split(seps)[0].Trim().ToLower();
 
             if (levelData[i].Split(seps).Length > 1) {
-                val = levelData[i].Split(seps)[1];
+                val = levelData[i].Split(seps)[1].Trim();
             }
 
             switch (key) {
@@ -79,7 +83,7 @@ public class WaveList : MonoBehaviour {
                     } else if (val.ToLower() == "right") {
                         attackerDir = _direction.Right;
                     } else {
-                        return false;
+						yield return null;
                     }
                     break;
                 case "map":
@@ -97,11 +101,10 @@ public class WaveList : MonoBehaviour {
                     i = parseDialogue(levelData, postLevelDialogue, i + 1);
                     break;
                 default:
-                    return false;
+					yield return null;
+					break;
             }
         }
-
-        return true;
     }
 
     int parseDialogue(string[] levelData, List<_statement> dialogue, int index) {
@@ -120,7 +123,7 @@ public class WaveList : MonoBehaviour {
             key = levelData[i].Split(seps)[0].Trim().ToLower();
 
             if (levelData[i].Split(seps).Length > 1) {
-                val = levelData[i].Split(seps)[1];
+				val = levelData[i].Split(seps)[1].Trim();
             }
 
             switch (key) {
@@ -235,7 +238,7 @@ public class WaveList : MonoBehaviour {
             key = levelData[i].Split(seps)[0].Trim().ToLower();
 
             if (levelData[i].Split(seps).Length > 1) {
-                val = levelData[i].Split(seps)[1];
+				val = levelData[i].Split(seps)[1].Trim();
             }
 
             switch (key) {

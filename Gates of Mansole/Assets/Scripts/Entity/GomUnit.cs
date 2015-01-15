@@ -55,8 +55,9 @@ public class GomUnit : GomObject {
         int minDamage = Random.Range(0, 2);  // always a chance of doing something
         int variation = Random.Range(0, attacker.getStats().attack / 5 + 1);
 		int baseDamage = attacker.getStats().attack - this.getStats().defense;
-        Damage(minDamage + baseDamage + variation);
-    }
+        float advantageMultiplier = (float)(minDamage + baseDamage + variation)*getMultiplier ();
+		Damage ((int)advantageMultiplier);
+	}
 
     public void DamageSpirit(PropertyStats stats) {
         // Whatever - arbitrary damage calculation
@@ -144,6 +145,36 @@ public class GomUnit : GomObject {
 		} else {
 			return enemyStats;
 		}
+	}
+
+	public float getMultiplier() {
+		float multiplier = 1.0f;
+		switch (attacker.GetComponent<GomUnit>().entityName) {
+		case "BowUnit":
+			if ((entityName == "SpearUnit") || (entityName == "WandUnit"))
+				multiplier+=Random.Range (0.5f,1.0f);
+			break;
+		case "SpearUnit":
+			if ((entityName == "SwordUnit") || (entityName == "StaffUnit"))
+				multiplier+=Random.Range (0.5f,1.0f);
+			break;
+		case "StaffUnit":
+			if ((entityName == "BowUnit") || (entityName == "SwordUnit"))
+				multiplier+=Random.Range (0.5f,1.0f);
+			break;
+		case "SwordUnit":
+			if ((entityName == "BowUnit") || (entityName == "WandUnit"))
+				multiplier+=Random.Range (0.5f,1.0f);
+			break;
+		case "WandUnit":
+			if ((entityName == "SpearUnit") || (entityName == "StaffUnit"))
+				multiplier+=Random.Range (0.5f,1.0f);
+			break;
+		default:
+			break;
+		}
+		
+		return multiplier;
 	}
 
 	void SetCurrentTile(Vector2 tile) {
