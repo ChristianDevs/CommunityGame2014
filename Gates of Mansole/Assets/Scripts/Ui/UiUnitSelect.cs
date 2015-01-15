@@ -24,7 +24,7 @@ public class UiUnitSelect : MonoBehaviour {
             GomUnit gom = unit.GetComponent<GomUnit>();
 
             if (gom != null) {
-                nameText.GetComponent<TextMesh>().text = "Name: " + gom.entityName;
+                nameText.GetComponent<TextMesh>().text = "Name: " + gom.unitType;
                 upgradeText.GetComponent<TextMesh>().text = "To Upgrade: " + gom.getStats().upgradeCost;
                 expText.GetComponent<TextMesh>().text = "Lvl: " + gom.getStats().level;
                 attackText.GetComponent<TextMesh>().text = "x" + gom.getStats().attack;
