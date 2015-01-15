@@ -488,7 +488,21 @@ public class WorldController : MonoBehaviour {
                 tile = map.GetComponent<UiTiles>().GetMouseOverTile();
 
                 if ((tile.col < gridSize.col) && (tile.row < gridSize.row) && (tile.col >= 0) && (tile.row >= 0)) {
-                    if (tileContents[(int)tile.row][(int)tile.col] != null) unitInfoUi.SendMessage("SelectUnit", tileContents[(int)tile.row][(int)tile.col], SendMessageOptions.DontRequireReceiver);
+                    if (tileContents[(int)tile.row][(int)tile.col] != null) {
+                        GameObject ut = null;
+
+                        foreach (GameObject unit in unitTypes) {
+                            Debug.Log(tileContents[(int)tile.row][(int)tile.col].GetComponent<GomUnit>().entityName + "::" + unit.GetComponent<UiUnitType>().UnitName);
+                            if (tileContents[(int)tile.row][(int)tile.col].GetComponent<GomUnit>().entityName == unit.GetComponent<UiUnitType>().UnitName) {
+                                ut = unit.GetComponent<UiUnitType>().getRandomUnit();
+                                break;
+                            }
+                        }
+
+                        if (ut != null) {
+                            unitInfoUi.SendMessage("SelectUnit", ut, SendMessageOptions.DontRequireReceiver);
+                        }
+                    }
                 }
             }
         }
@@ -539,10 +553,12 @@ public class WorldController : MonoBehaviour {
         }
         for (int i = 0; i < unitsUIinst.Count; ++i) {
             if (selectedUiUnit == unitsUIinst[i]) {
-                selectedUiUnit.transform.position = new Vector3((float)(-6 + (unitMenuInterval * i)), (float)-5.2, (float)0);
+                selectedUiUnit.transform.position = new Vector3((float)(-6 + (unitMenuInterval * i)), (float)-5.5, (float)0);
                 break;
             }
         }
+
+        selectedUnit = selectedUiUnit;
         selectedUiUnit = null;
     }
 
@@ -893,5 +909,42 @@ public class WorldController : MonoBehaviour {
 		tileContents[tileRow][tileCol].SendMessage("SetWorld", gameObject, SendMessageOptions.DontRequireReceiver);
         tileContents[tileRow][tileCol].SendMessage("SetMoveXScale", map.transform.localScale.x, SendMessageOptions.DontRequireReceiver);
         return true;
+    }
+
+    void buttonPush(string buttonName) {
+        switch(buttonName) {
+            case "Upgrade":
+                int unitType = -1;
+
+                if (selectedUnit == null) {
+                    break;
+                }
+
+                for (int i = 0; i < unitsUIinst.Count; i++) {
+                    if (selectedUnit.GetComponent<GomUnit>().name == unitsUIinst[i].GetComponent<GomUnit>().name) {
+                        unitType = i;
+                    }
+                }
+
+                if (unitType == -1) {
+                    break;
+                }
+
+                PropertyStats unitStats = unitsUIinst[unitType].GetComponent<GomUnit>().playerStats;
+
+                if ((Player.spiritShards >= unitStats.upgradeCost) &&
+                    (unitStats.level < unitTypes[unitType].GetComponent<UiUnitType>().maxLevel)) {
+
+                    for (int i = 0; i < unitTypes[unitType].GetComponent<UiUnitType>().Units.Length; i++) {
+                        PropertyStats stats = unitTypes[unitType].GetComponent<UiUnitType>().Units[i].GetComponent<GomUnit>().playerStats;
+                        stats.upgradeUnit(unitsUIinst[unitType].GetComponent<GomUnit>().entityName);
+
+                        Debug.Log("upgraded " + unitTypes[unitType].GetComponent<UiUnitType>().Units[i].name);
+                    }
+                    unitStats.purchaseUpgrade(unitStats.upgradeCost);
+                    Debug.Log("shards left " + Player.spiritShards);
+                }
+                break;
+        }
     }
 }
