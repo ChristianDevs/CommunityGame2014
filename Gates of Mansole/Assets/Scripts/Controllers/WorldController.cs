@@ -165,7 +165,8 @@ public class WorldController : MonoBehaviour {
                 uType = unitType.GetComponent<UiUnitType>();
 
                 if (uType != null) {
-                    uType.resetUnitStats();
+                    uType.getPlayerStats().resetUnitStats();
+					uType.getEnemyStats().resetUnitStats();
                 }
             }
 
@@ -492,8 +493,8 @@ public class WorldController : MonoBehaviour {
                         GameObject ut = null;
 
                         foreach (GameObject unit in unitTypes) {
-                            Debug.Log(tileContents[(int)tile.row][(int)tile.col].GetComponent<GomUnit>().entityName + "::" + unit.GetComponent<UiUnitType>().UnitName);
-                            if (tileContents[(int)tile.row][(int)tile.col].GetComponent<GomUnit>().entityName == unit.GetComponent<UiUnitType>().UnitName) {
+                            Debug.Log(tileContents[(int)tile.row][(int)tile.col].GetComponent<GomUnit>().unitType + "::" + unit.GetComponent<UiUnitType>().UnitName);
+                            if (tileContents[(int)tile.row][(int)tile.col].GetComponent<GomUnit>().unitType == unit.GetComponent<UiUnitType>().UnitName) {
                                 ut = unit.GetComponent<UiUnitType>().getRandomUnit();
                                 break;
                             }
@@ -748,7 +749,7 @@ public class WorldController : MonoBehaviour {
                         }
                     }
                 }
-            }
+            }/*
 			// update unit stats
 			if (tileContents[row][col]) {
 
@@ -757,13 +758,13 @@ public class WorldController : MonoBehaviour {
 				PropertyStats stats = (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) ? playerStats : enemyStats;
 
 				for (int i = 0; i < unitTypes.Count; i++) {
-					if (tileContents[row][col].GetComponent<GomUnit>().entityName.StartsWith(unitTypes[i].GetComponent<UiUnitType>().UnitName)){
+					if (tileContents[row][col].GetComponent<GomUnit>().unitType.StartsWith(unitTypes[i].GetComponent<UiUnitType>().UnitName)){
 						for (int j = 0; j < unitTypes[i].GetComponent<UiUnitType>().Units.Length; j++){
-							stats.updateUnitStats(tileContents[row][col]);
+							stats.updateUnitStats(unitTypes[i].GetComponent<UiUnitType>().Units[j]);
 						}
 					}
 				}
-			}
+			}*/
         }
     }
 
@@ -930,21 +931,15 @@ public class WorldController : MonoBehaviour {
                     break;
                 }
 
-                PropertyStats unitStats = unitsUIinst[unitType].GetComponent<GomUnit>().playerStats;
-
-                if ((Player.spiritShards >= unitStats.upgradeCost) &&
-                    (unitStats.level < unitTypes[unitType].GetComponent<UiUnitType>().maxLevel)) {
-
-                    for (int i = 0; i < unitTypes[unitType].GetComponent<UiUnitType>().Units.Length; i++) {
-                        PropertyStats stats = unitTypes[unitType].GetComponent<UiUnitType>().Units[i].GetComponent<GomUnit>().playerStats;
-                        stats.upgradeUnit(unitsUIinst[unitType].GetComponent<GomUnit>().entityName);
-
-                        Debug.Log("upgraded " + unitTypes[unitType].GetComponent<UiUnitType>().Units[i].name);
-                    }
-                    unitStats.purchaseUpgrade(unitStats.upgradeCost);
-                    Debug.Log("shards left " + Player.spiritShards);
-                }
-                break;
+                PropertyStats unitStats = unitTypes[unitType].GetComponent<UiUnitType>().getPlayerStats();
+                
+				if ((Player.spiritShards >= unitStats.upgradeCost) &&
+                    (unitStats.level < unitStats.maxLevel)){
+					unitStats.upgradeUnit(unitTypes[unitType].GetComponent<UiUnitType>().UnitName);
+				    //Debug.Log("upgraded " + unitTypes[unitType].GetComponent<UiUnitType>().UnitName);
+					//Debug.Log("shards left " + Player.spiritShards);
+               	}
+				break;
         }
     }
 }

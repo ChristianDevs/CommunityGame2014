@@ -13,18 +13,15 @@ public class PropertyStats {
     public int spirit = 7;  // spiritual offense, not to be confused with Spirit Shards (currency)
 
 	public int level = 1; // increases upon upgrade
-	public int maxLevel = 3;
+	public int maxLevel = 1;
 	public int upgradeCost = 10; // in Spirit Shards
 
 	public void upgradeUnit(string unit) {
+		Player.spiritShards -= upgradeCost;
 		level++;
 		attack += 5;
 		maxHealth += 10;
 		Debug.Log (unit + " type units upgraded to level " + level + "! spirit shards remaining: " + Player.spiritShards);
-	}
-
-	public void purchaseUpgrade(int cost) {
-		Player.spiritShards -= cost;
 	}
 
 	public void resetUnitStats() {
@@ -35,12 +32,12 @@ public class PropertyStats {
 
 	public void updateUnitStats(GameObject unit) {
 		PropertyStats unitStats = unit.GetComponent<GomUnit> ().getStats();
-		unitStats.speed = speed;
-		unitStats.attack = attack;
-		unitStats.defense = defense;
-		unitStats.armor = armor;
-		unitStats.spirit = spirit;
-		unitStats.level = level;
+		speed = unitStats.speed;
+		attack = unitStats.attack;
+		defense = unitStats.defense;
+		armor = unitStats.armor;
+		spirit = unitStats.spirit;
+		level = unitStats.level;
 		//Debug.Log ("updated unit stats");
 	}
 

@@ -51,7 +51,7 @@ public class UpgradeController : MonoBehaviour {
             upgrades.Add(Instantiate(Player.unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(), new Vector3(x, y), Quaternion.identity) as GameObject);
             upgrades[upgrades.Count - 1].GetComponent<GomUnit>().enabled = false;
 
-            for (int j = 0; j < Player.unitTypes[i].GetComponent<UiUnitType>().level; j++) {
+            for (int j = 0; j < Player.unitTypes[i].GetComponent<UiUnitType>().getPlayerStats().maxLevel; j++) {
                 y += incUnitY;
 
                 upgradeWindows.Add(Instantiate(unitWindow, new Vector3(x, y), Quaternion.identity) as GameObject);
@@ -145,19 +145,19 @@ public class UpgradeController : MonoBehaviour {
 			break;
 		case "Upgrade":
             if (mode == _UpgradeMode.Units) {
-                int orbCost = (Player.unitTypes[selectedType].GetComponent<UiUnitType>().level * 2) + 2;
+                int orbCost = (Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel * 2) + 2;
                 if (Player.spiritOrbs >= orbCost) {
                     float x = startUnitX + (selectedType * incUnitX);
-                    float y = startUnitY + ((Player.unitTypes[selectedType].GetComponent<UiUnitType>().level + 1) * incUnitY);
+                    float y = startUnitY + ((Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel + 1) * incUnitY);
 
-                    Player.unitTypes[selectedType].GetComponent<UiUnitType>().level++;
+                    Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel++;
                     Player.upgradeUnit(Player.unitTypes[selectedType].GetComponent<UiUnitType>());
                     Debug.Log("Upgraded Unit " + selectedType);
 
                     upgradeWindows.Add(Instantiate(unitWindow, new Vector3(x, y), Quaternion.identity) as GameObject);
                     upgradeWindows[upgradeWindows.Count - 1].transform.name =
                         Player.unitTypes[selectedType].GetComponent<UiUnitType>().UnitName +
-                        Player.unitTypes[selectedType].GetComponent<UiUnitType>().level;
+                        Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel;
                     upgrades.Add(Instantiate(Player.unitTypes[selectedType].GetComponent<UiUnitType>().getRandomUnit(), new Vector3(x, y), Quaternion.identity) as GameObject);
                     upgrades[upgrades.Count - 1].GetComponent<GomUnit>().enabled = false;
                     Player.AddOrbs(-orbCost);
@@ -176,7 +176,7 @@ public class UpgradeController : MonoBehaviour {
                     upgradeWindows.Add(Instantiate(unitWindow, new Vector3(x, y), Quaternion.identity) as GameObject);
                     upgradeWindows[upgradeWindows.Count - 1].transform.name =
                         Player.unitTypes[selectedType].GetComponent<UiUnitType>().UnitName +
-                        Player.unitTypes[selectedType].GetComponent<UiUnitType>().level;
+                        Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().level;
                     upgrades.Add(Instantiate(Player.abilities[selectedType].GetComponent<Ability>().sprite, new Vector3(x, y), Quaternion.identity) as GameObject);
                     Player.AddOrbs(-orbCost);
                     UpdateDisplay();
@@ -213,11 +213,11 @@ public class UpgradeController : MonoBehaviour {
             textToDisplay += "\n";
 
             textToDisplay += "Level: ";
-            textToDisplay += ut.level;
+            textToDisplay += ut.getPlayerStats().maxLevel;
             textToDisplay += "\n";
 
             textToDisplay += "Upgrade Cost: ";
-            textToDisplay += ut.level * 2 + 2;
+            textToDisplay += ut.getPlayerStats().maxLevel * 2 + 2;
             textToDisplay += "\n";
         } else if (mode == _UpgradeMode.Abilities) {
             Ability ab;
