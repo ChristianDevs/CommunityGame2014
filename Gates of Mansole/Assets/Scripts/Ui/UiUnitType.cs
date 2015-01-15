@@ -6,8 +6,16 @@ public class UiUnitType : MonoBehaviour {
 	public string UnitName;
 	public GameObject[] Units;
 
-	public int level;
-	public int maxLevel;
+	public PropertyStats playerStats;
+	public PropertyStats enemyStats;
+
+	public PropertyStats getPlayerStats() {
+		return playerStats;
+	}
+
+	public PropertyStats getEnemyStats() {
+		return enemyStats;
+	}
 
 	public GameObject getRandomUnit() {
 		if (Units.Length < 1) {
@@ -15,11 +23,5 @@ public class UiUnitType : MonoBehaviour {
 		}
 
 		return Units[Random.Range(0, Units.Length - 1)];
-	}
-
-	public void resetUnitStats() {
-		foreach (GameObject unit in Units) {
-			unit.GetComponent<GomUnit>().getStats().resetUnitStats();
-		}
 	}
 }

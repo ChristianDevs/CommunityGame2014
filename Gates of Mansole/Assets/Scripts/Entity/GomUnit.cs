@@ -3,9 +3,9 @@ using System.Collections;
 
 public class GomUnit : GomObject {
 	//Comment to overwrite
-    public string entityName;
-    public PropertyStats playerStats;
-	public PropertyStats enemyStats;
+    public string unitType;
+    //public PropertyStats playerStats;
+	//public PropertyStats enemyStats;
     public PropertyExp exp;
     public int health;
 	public float speed;
@@ -49,6 +49,14 @@ public class GomUnit : GomObject {
     private Vector3 HpBarPos;
     private float HpBarMidScale;
     private float moveXScale;
+
+	public enum _Type {
+		kBow = 0,
+		kSpear = 1,
+		kStaff = 2,
+		kSword = 3,
+		kWand = 4,
+	}
 
     public void DamageMelee(PropertyStats stats) {
         // Whatever - arbitrary damage calculation
@@ -138,36 +146,49 @@ public class GomUnit : GomObject {
 		else
 			HpBarColor = BarRed;
 	}
+	
+	public int getType(string type) {
+		if (type.Equals("Bow"))
+			return (int)_Type.kBow;
+		else if (type.Equals("Spear"))
+			return (int)_Type.kSpear;
+		else if (type.Equals("Staff"))
+			return (int)_Type.kStaff;
+		else if (type.Equals ("Sword"))
+			return (int)_Type.kSword;
+		else
+			return (int)_Type.kWand;
+	}
 
 	public PropertyStats getStats() {
 		if (faction == Faction.Player) {
-			return playerStats;
+			return world.GetComponent<WorldController> ().unitTypes [getType (unitType)].GetComponent<UiUnitType> ().getPlayerStats();
 		} else {
-			return enemyStats;
+			return world.GetComponent<WorldController> ().unitTypes [getType (unitType)].GetComponent<UiUnitType> ().getEnemyStats();
 		}
 	}
 
 	public float getMultiplier() {
 		float multiplier = 1.0f;
-		switch (attacker.GetComponent<GomUnit>().entityName) {
-		case "BowUnit":
-			if ((entityName == "SpearUnit") || (entityName == "WandUnit"))
+		switch (attacker.GetComponent<GomUnit>().unitType) {
+		case "Bow":
+			if ((unitType == "Spear") || (unitType == "Wand"))
 				multiplier+=Random.Range (0.5f,1.0f);
 			break;
-		case "SpearUnit":
-			if ((entityName == "SwordUnit") || (entityName == "StaffUnit"))
+		case "Spear":
+			if ((unitType == "Sword") || (unitType == "Staff"))
 				multiplier+=Random.Range (0.5f,1.0f);
 			break;
-		case "StaffUnit":
-			if ((entityName == "BowUnit") || (entityName == "SwordUnit"))
+		case "Staff":
+			if ((unitType == "Bow") || (unitType == "Sword"))
 				multiplier+=Random.Range (0.5f,1.0f);
 			break;
-		case "SwordUnit":
-			if ((entityName == "BowUnit") || (entityName == "WandUnit"))
+		case "Sword":
+			if ((unitType == "Bow") || (unitType == "Wand"))
 				multiplier+=Random.Range (0.5f,1.0f);
 			break;
-		case "WandUnit":
-			if ((entityName == "SpearUnit") || (entityName == "StaffUnit"))
+		case "Wand":
+			if ((unitType == "Spear") || (unitType == "Staff"))
 				multiplier+=Random.Range (0.5f,1.0f);
 			break;
 		default:

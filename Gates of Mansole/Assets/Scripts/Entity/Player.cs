@@ -28,11 +28,9 @@ public class Player : MonoBehaviour {
 
 		unitTypes = new List<GameObject>();
 		foreach (GameObject ut in newUnitTypes) {
-			if (ut.GetComponent<UiUnitType>().UnitName == "Bow") {
-				ut.GetComponent<UiUnitType>().level = 2;
-			} else {
-				ut.GetComponent<UiUnitType>().level = 0;
-			}
+			ut.GetComponent<UiUnitType>().getPlayerStats().hardResetStats();
+			if (ut.GetComponent<UiUnitType>().UnitName.Equals("Bow"))
+			    ut.GetComponent<UiUnitType>().getPlayerStats().maxLevel=1;
             unitTypes.Add(ut);
             upgradeUnit(ut.GetComponent<UiUnitType>());
 		}
@@ -62,7 +60,7 @@ public class Player : MonoBehaviour {
 			UiUnitType uiUnit;
 
 			uiUnit = unitTypes[i].GetComponent<UiUnitType>();
-        	uiUnit.level = PlayerPrefs.GetInt(uiUnit.UnitName + "level");
+        	uiUnit.getPlayerStats().level = PlayerPrefs.GetInt(uiUnit.UnitName + "level");
 		}
 
         abilities = new List<GameObject>();
@@ -84,7 +82,7 @@ public class Player : MonoBehaviour {
 				UiUnitType uiUnit;
 
                 uiUnit = unitTypes[i].GetComponent<UiUnitType>();
-				PlayerPrefs.SetInt(uiUnit.UnitName + "level", uiUnit.level);
+				PlayerPrefs.SetInt(uiUnit.UnitName + "level", uiUnit.getPlayerStats().level);
 				break;
 			}
 		}
