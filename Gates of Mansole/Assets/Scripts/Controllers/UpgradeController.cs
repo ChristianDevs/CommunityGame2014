@@ -175,8 +175,8 @@ public class UpgradeController : MonoBehaviour {
 
                     upgradeWindows.Add(Instantiate(unitWindow, new Vector3(x, y), Quaternion.identity) as GameObject);
                     upgradeWindows[upgradeWindows.Count - 1].transform.name =
-                        Player.unitTypes[selectedType].GetComponent<UiUnitType>().UnitName +
-                        Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().level;
+                        Player.abilities[selectedType].GetComponent<Ability>().abilityName +
+                        Player.abilities[selectedType].GetComponent<Ability>().level;
                     upgrades.Add(Instantiate(Player.abilities[selectedType].GetComponent<Ability>().sprite, new Vector3(x, y), Quaternion.identity) as GameObject);
                     Player.AddOrbs(-orbCost);
                     UpdateDisplay();

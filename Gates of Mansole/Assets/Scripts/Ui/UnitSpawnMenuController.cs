@@ -33,7 +33,7 @@ public class UnitSpawnMenuController : MonoBehaviour {
 			world.unitTypes.Add(unitsPrefab[i]);
 			units.Add(uiUnit);
 			
-			if (unitsPrefab[i].GetComponent<UiUnitType>().getPlayerStats().level <= 0){
+			if (unitsPrefab[i].GetComponent<UiUnitType>().getPlayerStats().maxLevel <= 0){
 				square.SetActive(false);
 				uiUnit.SetActive(false);
                 unitCost.SetActive(false);

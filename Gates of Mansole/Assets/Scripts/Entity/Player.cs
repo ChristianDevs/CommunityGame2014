@@ -28,11 +28,9 @@ public class Player : MonoBehaviour {
 
 		unitTypes = new List<GameObject>();
 		foreach (GameObject ut in newUnitTypes) {
-			if (ut.GetComponent<UiUnitType>().UnitName == "Bow") {
-				ut.GetComponent<UiUnitType>().getPlayerStats().level = 2;
-			} else {
-				ut.GetComponent<UiUnitType>().getPlayerStats().level = 0;
-			}
+			ut.GetComponent<UiUnitType>().getPlayerStats().hardResetStats();
+			if (ut.GetComponent<UiUnitType>().UnitName.Equals("Bow"))
+			    ut.GetComponent<UiUnitType>().getPlayerStats().maxLevel=1;
             unitTypes.Add(ut);
             upgradeUnit(ut.GetComponent<UiUnitType>());
 		}
