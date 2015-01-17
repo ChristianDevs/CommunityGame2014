@@ -10,6 +10,7 @@ public class UiUnitSelect : MonoBehaviour {
 	public GameObject defenseText;
 	public GameObject spiritText;
 	public GameObject speedText;
+	public GameObject world;
 
     private GameObject unit;
 
@@ -22,15 +23,22 @@ public class UiUnitSelect : MonoBehaviour {
     void Update() {
         if (unit != null) {
             GomUnit gom = unit.GetComponent<GomUnit>();
+			PropertyStats stats;
+			UiUnitType uut = world.GetComponent<WorldController>().unitTypes[gom.getType (gom.unitType)].GetComponent<UiUnitType>();
+            if (gom.faction==GomObject.Faction.Player)
+				stats = uut.getPlayerStats();
+			else
+				stats = uut.getEnemyStats();
 
-            if (gom != null) {
-                nameText.GetComponent<TextMesh>().text = "Name: " + gom.entityName;
-                upgradeText.GetComponent<TextMesh>().text = "To Upgrade: " + gom.getStats().upgradeCost;
-                expText.GetComponent<TextMesh>().text = "Lvl: " + gom.getStats().level;
-                attackText.GetComponent<TextMesh>().text = "x" + gom.getStats().attack;
-                defenseText.GetComponent<TextMesh>().text = "x" + gom.getStats().defense;
-                spiritText.GetComponent<TextMesh>().text = "x" + gom.getStats().spirit;
-                speedText.GetComponent<TextMesh>().text = "x" + gom.getStats().speed;
+
+			if (gom != null) {
+                nameText.GetComponent<TextMesh>().text = "Name: " + gom.unitType;
+                upgradeText.GetComponent<TextMesh>().text = "To Upgrade: " + stats.upgradeCost;
+                expText.GetComponent<TextMesh>().text = "Lvl: " + stats.level;
+                attackText.GetComponent<TextMesh>().text = "x" + stats.attack;
+                defenseText.GetComponent<TextMesh>().text = "x" + stats.defense;
+                spiritText.GetComponent<TextMesh>().text = "x" + stats.spirit;
+                speedText.GetComponent<TextMesh>().text = "x" + stats.speed;
             }
         }
 	}

@@ -168,3 +168,38 @@ PostDialogue:
         LeftImage:0
         RightImage:None
         Dialogue:Good work this day. I can see you will make a fine lieutenant!
+    Statement:
+        Speaker:???
+        LeftImage:None
+        RightImage:None
+        Dialogue:Resist?
+    Statement:
+        Speaker:???
+        LeftImage:None
+        RightImage:None
+        Dialogue:Resist? Ha!
+    Statement:
+        Speaker:???
+        LeftImage:None
+        RightImage:None
+        Dialogue:Resist? Ha! Resistance is futile.
+    Statement:
+        Speaker:???
+        LeftImage:None
+        RightImage:1
+        Dialogue:Resistance is the first thing we will get rid of.
+    Statement:
+        Speaker:???
+        LeftImage:None
+        RightImage:1
+        Dialogue:And then...
+    Statement:
+        Speaker:???
+        LeftImage:None
+        RightImage:1
+        Dialogue:And then... Mansoul will belong to us.
+    Statement:
+        Speaker:???
+        LeftImage:None
+        RightImage:1
+        Dialogue:Hahahahaha!
