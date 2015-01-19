@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -21,7 +21,10 @@ public class TitleController : MonoBehaviour {
 		string[] seps = {"\n"};
 		
 		filePath = Application.streamingAssetsPath + "/Data.gom";
-		
+
+        // Web bug where streamingAssetsPath is "Raw" instead of "StreamingAssets"
+        filePath = filePath.Replace("Raw", "StreamingAssets");
+
 		if (filePath.Contains("://"))
 		{
 			WWW www = new WWW (filePath);
@@ -30,10 +33,11 @@ public class TitleController : MonoBehaviour {
 		} else {
 			levelData = System.IO.File.ReadAllLines(filePath);
 		}
-		
+
 		Player.levelFileNames = new List<string>();
 		foreach (string ln in levelData) {
-			Player.levelFileNames.Add(Application.streamingAssetsPath + "/" + ln);
+            // Apply web fix to level files
+			Player.levelFileNames.Add(Application.streamingAssetsPath.Replace("Raw", "StreamingAssets") + "/" + ln);
 		}
 	}
 
