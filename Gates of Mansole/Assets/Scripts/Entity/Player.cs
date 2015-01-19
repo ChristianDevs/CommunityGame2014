@@ -60,7 +60,7 @@ public class Player : MonoBehaviour {
 			UiUnitType uiUnit;
 
 			uiUnit = unitTypes[i].GetComponent<UiUnitType>();
-        	uiUnit.getPlayerStats().level = PlayerPrefs.GetInt(uiUnit.UnitName + "level");
+        	uiUnit.getPlayerStats().maxLevel = PlayerPrefs.GetInt(uiUnit.UnitName + "level");
 		}
 
         abilities = new List<GameObject>();
@@ -82,7 +82,7 @@ public class Player : MonoBehaviour {
 				UiUnitType uiUnit;
 
                 uiUnit = unitTypes[i].GetComponent<UiUnitType>();
-				PlayerPrefs.SetInt(uiUnit.UnitName + "level", uiUnit.getPlayerStats().level);
+                PlayerPrefs.SetInt(uiUnit.UnitName + "level", uiUnit.getPlayerStats().maxLevel);
 				break;
 			}
 		}
