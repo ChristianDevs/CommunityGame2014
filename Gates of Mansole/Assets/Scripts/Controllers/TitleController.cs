@@ -36,11 +36,6 @@ public class TitleController : MonoBehaviour {
 			Player.levelFileNames.Add(Application.streamingAssetsPath + "/" + ln);
 		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
     void buttonPush(string buttonName) {
         switch (buttonName) {
