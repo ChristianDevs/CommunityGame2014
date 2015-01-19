@@ -642,7 +642,7 @@ public class WorldController : MonoBehaviour {
 
             for (int i = 0; i < abilityUIinst.Count; ++i) {
                 if (selectedUiAbility == abilityUIinst[i]) {
-                    selectedUiAbility.transform.position = new Vector3((float)(-6 + (unitMenuInterval * (unitsUIinst.Count + i))), (float)-5.2, (float)0);
+                    selectedUiAbility.transform.position = new Vector3((float)(-6 + (unitMenuInterval * (unitsUIinst.Count + i))), (float)-5.5, (float)0);
                     break;
                 }
             }
