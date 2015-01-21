@@ -8,7 +8,7 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:With spear units on our side we will cut through the staff formation easily!
+        Dialogue:With evangelists on our side we will cut through the elder formation easily!
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -18,82 +18,82 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:0:0
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:1:0
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:2:0
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:3:0
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:4:0
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:5:0
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:6:0
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:7:0
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:0:1
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:1:1
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:2:1
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:3:1
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:4:1
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:5:1
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:6:1
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:7:1
 PostDialogue:
@@ -126,9 +126,9 @@ PostDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:They are coming at us with archers. Quick, unlock swordsmen and send them to the front line.
+        Dialogue:They are coming at us with shepherds. Quick, unlock teachers and send them to the front line.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:They are armored and won't take much damage from the archers.
+        Dialogue:They are armored and won't take much damage from the shepherds.

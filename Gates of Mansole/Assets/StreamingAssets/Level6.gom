@@ -38,108 +38,108 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:0:0
     WaveUnit:
         Time:1
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:2:2
     WaveUnit:
         Time:2
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:1:1
 Wave:
     WaitTime:10
     WaveUnit:
         Time:0
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:6:6
     WaveUnit:
         Time:1
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:7:7
     WaveUnit:
         Time:2
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:5:5
 Wave:
     WaitTime:20
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedRow
         Tile:4:4
     WaveUnit:
         Time:0
-        Unit:Wand
+        Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:3:3
     WaveUnit:
         Time:3
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedRow
         Tile:4:4
     WaveUnit:
         Time:7
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedRow
         Tile:4:4
     WaveUnit:
         Time:5
-        Unit:Wand
+        Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:3:3
     WaveUnit:
         Time:9
-        Unit:Wand
+        Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:3:3
 Wave:
     WaitTime:40
     WaveUnit:
         Time:0
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:0:0
     WaveUnit:
         Time:0
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:2:2
     WaveUnit:
         Time:0
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:1:1
     WaveUnit:
         Time:0
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:6:6
     WaveUnit:
         Time:0
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:7:7
     WaveUnit:
         Time:0
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:5:5
     WaveUnit:
         Time:0
-        Unit:Staff
+        Unit:Elder
         SpawnLoc:SpecifiedRow
         Tile:4:4
     WaveUnit:
         Time:0
-        Unit:Wand
+        Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:3:3
 PostDialogue:

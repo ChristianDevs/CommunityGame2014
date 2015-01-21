@@ -8,17 +8,17 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:I trust you unlocked the wand units, you will need them.
+        Dialogue:I trust you unlocked the orator units, you will need them.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:There are numerous reports of a band of swordsman causing problems in the town square.
+        Dialogue:There are numerous reports of a band of wayward teachers causing problems in the town square.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Wand units are great at taking down heavily armored units like swordsman.
+        Dialogue:Orators units are great at taking down heavily armored units like teachers.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -28,61 +28,61 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
     WaitTime:7
     WaveUnit:
         Time:0
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:1
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:2
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
     WaitTime:15
     WaveUnit:
         Time:0
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:1
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:1
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:2
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Sword
+        Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
 PostDialogue:
@@ -90,17 +90,17 @@ PostDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:You sure made quick work of those swordsmen. I am sure they will think twice before causing problems here again.
+        Dialogue:You sure made quick work of those teachers. I am sure they will think twice before causing problems here again.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:But while you were dealing with the swordsmen I got a report of Sinians storming a guard post outside of own.
+        Dialogue:But while you were dealing with the teachers I got a report of Sinians storming a guard post outside of own.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:They seem to have a lot of Wand units, so go unlock some staff units and meet me outside the gate.
+        Dialogue:They seem to have a lot of orator units, so go unlock some elder units and meet me outside the gate.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0

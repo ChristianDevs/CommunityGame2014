@@ -58,12 +58,12 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:I have just received a report of Sinians attacking the countryside. Take some archers and repel their attack.
+        Dialogue:I have just received a report of Sinians attacking the countryside. Take some sheperds and repel their attack.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Wait until you see the whites of their eyes, then drag and drop an archer to resist them.
+        Dialogue:Wait until you see the whites of their eyes, then drag and drop a shepherd to resist them.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -73,61 +73,61 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
     WaitTime:7
     WaveUnit:
         Time:0
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:1
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:2
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
     WaitTime:15
     WaveUnit:
         Time:0
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:1
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:1
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:2
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Spear
+        Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
 PostDialogue:
@@ -140,7 +140,7 @@ PostDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:The archer is the best defense against advancing spearman.
+        Dialogue:The shepherd is the best defense against advancing evangelists.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -155,4 +155,4 @@ PostDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Before your next task, go to the Upgrade Shop and unlock the Wand Unit.
+        Dialogue:Before your next task, go to the Upgrade Shop and unlock the orator.
