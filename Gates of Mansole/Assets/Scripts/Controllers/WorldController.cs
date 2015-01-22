@@ -22,7 +22,7 @@ public class WorldController : MonoBehaviour {
 	private GameObject[][] tileContents;
 	private GameObject selectedUnit;
 	private Vector2 selectedTile;
-    private GameObject currentLevel;
+    public GameObject currentLevel;
     private int currentLevelNum;
     private WaveList._direction curLevelAttackerDir;
     private UnitAnimation._direction attackerDir;
