@@ -8,7 +8,11 @@ public class UiAttacker : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		TextMesh txt = this.GetComponent<TextMesh> ();
+		int currentDamage = world.GetComponent<WorldController> ().letThroughAttackers;
 		int possibleAttacks = world.GetComponent<WorldController> ().currentLevel.GetComponent<WaveList> ().AttackersLetThrough;
-		txt.text = "Attackers: " + (possibleAttacks - world.GetComponent<WorldController>().letThroughAttackers);
+
+		if (possibleAttacks > currentDamage) {
+			txt.text = "Attackers: " + (possibleAttacks - currentDamage);
+		} else { txt.text = "Attackers: 0";	}
 	}
 }
