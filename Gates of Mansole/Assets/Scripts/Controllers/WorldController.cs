@@ -39,7 +39,6 @@ public class WorldController : MonoBehaviour {
     public List<GameObject> abilities;
 	private float levelStartTime;
 	public GameObject unitInfoUi;
-    public GameObject[] maps;
     private int dialogueIndex;
     public TextMesh dialogueText;
     public SpriteRenderer leftImage;
@@ -48,6 +47,7 @@ public class WorldController : MonoBehaviour {
     public int dialogueLineSize;
     public Sprite[] Images;
     public float unitMenuInterval;
+	public GameObject[] Placeables;
 
 	private float OrbCurAmount;
 	private float ShardCurAmount;
@@ -96,10 +96,6 @@ public class WorldController : MonoBehaviour {
 
 		levelStartTime = 0;
         state = _WorldState.Setup;
-
-        foreach (GameObject mp in maps) {
-            mp.SetActive(false);
-        }
 
         if (Levels.Length > 0) {
             // Initialize Current Level
@@ -158,8 +154,9 @@ public class WorldController : MonoBehaviour {
 
     void handleSetup() {
         if (Player.nextLevelFile != "") {
-            currentLevel.GetComponent<WaveList>().loadGameFile(Player.nextLevelFile, unitTypes);
+            currentLevel.GetComponent<WaveList>().loadGameFile(Player.nextLevelFile, unitTypes, 8);
 
+			// Reset all stats
             foreach (GameObject unitType in unitTypes) {
                 UiUnitType uType;
                 uType = unitType.GetComponent<UiUnitType>();
@@ -170,6 +167,17 @@ public class WorldController : MonoBehaviour {
                 }
             }
 
+			// Generate map lanes
+			map.GetComponent<UiTiles>().lanes = new List<GameObject>();
+			for (int i = 0; i < currentLevel.GetComponent<WaveList>().Lanes.Count; i++) {
+				map.GetComponent<UiTiles>().CreateLane(currentLevel.GetComponent<WaveList>().Lanes[i]);
+			}
+
+			// Place the placeables
+			foreach(WaveList._placeable pl in currentLevel.GetComponent<WaveList>().placeables) {
+				Instantiate(Placeables[pl.num], new Vector3(pl.x, pl.y), Quaternion.identity);
+			}
+
             Player.spiritShards = Player.totalShards = currentLevel.GetComponent<WaveList>().startShards;
 
             totalAI = GetTotalWaveUnits(currentLevel);
@@ -177,17 +185,10 @@ public class WorldController : MonoBehaviour {
             isPlayerAttacker = currentLevel.GetComponent<WaveList>().isPlayerAttacker;
             curLevelAttackerDir = currentLevel.GetComponent<WaveList>().attackerDir;
 
-            foreach (GameObject mp in maps) {
-				if (mp.GetComponent<UiTiles>().mapName.TrimEnd() == currentLevel.GetComponent<WaveList>().map) {
-                    mp.SetActive(true);
-                    map = mp;
-                }
-            }
-
             gridSize = new UiTile();
-            gridSize.row = map.GetComponent<UiTiles>().lanes.Length;
+            gridSize.row = map.GetComponent<UiTiles>().lanes.Count;
 
-            if (map.GetComponent<UiTiles>().lanes.Length > 0) {
+            if (map.GetComponent<UiTiles>().lanes.Count > 0) {
                 gridSize.col = map.GetComponent<UiTiles>().lanes[0].GetComponent<UiRow>().rowTiles.Length;
             }
             else {
@@ -306,58 +307,66 @@ public class WorldController : MonoBehaviour {
                     foreach (WaveUnit ut in wv.units) {
                         if (ut.created == false) {
                             if ((wv.waitTime + ut.time + levelStartTime) < Time.time) {
-                                int row;
-                                int col;
+								bool repeat;
 
-                                switch (ut.SpawnLocType) {
-                                    case WaveUnit._spawnLocType.RandRow:
-                                        if (curLevelAttackerDir == WaveList._direction.Right) {
-                                            col = 0;
-                                        }
-                                        else if (curLevelAttackerDir == WaveList._direction.Left) {
-                                            col = gridSize.col - 1;
-                                        }
-                                        else {
-                                            col = 0;
-                                        }
-                                        row = Random.Range(0, (int)gridSize.row);
-                                        break;
-                                    case WaveUnit._spawnLocType.RandTile:
-                                        row = 0;
-                                        col = 0;
-                                        break;
-                                    case WaveUnit._spawnLocType.SpecifiedRow:
-                                        row = (int)ut.Tile.x;
-                                        col = 0;
-                                        break;
-                                    case WaveUnit._spawnLocType.SpecifiedTile:
-                                        row = (int)ut.Tile.x;
-                                        col = (int)ut.Tile.y;
-                                        break;
-                                    default:
-                                        row = 0;
-                                        col = 0;
-                                        break;
-                                }
+								do {
+	                                int row;
+	                                int col;
 
-                                ut.created = true;
-                                if ((row < gridSize.row) && (col < gridSize.col)) {
-                                    if (isPlayerAttacker == true) {
-                                        if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
-                                            tileContents[row][col].SendMessage("SetIdleDirection", defenderDir, SendMessageOptions.DontRequireReceiver);
-                                            totalDefenders++;
-                                        }
-                                    }
-									else {
-                                        if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
-                                            tileContents[row][col].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
-											totalAttackers++;
-                                        } else {
-                                            // Just to keep the game from getting stuck
-											defeatedAttackers++;
-										}
-                                    }
-                                }
+									repeat = false;
+
+	                                switch (ut.SpawnLocType) {
+	                                    case WaveUnit._spawnLocType.RandRow:
+	                                        if (curLevelAttackerDir == WaveList._direction.Right) {
+	                                            col = 0;
+	                                        }
+	                                        else if (curLevelAttackerDir == WaveList._direction.Left) {
+	                                            col = gridSize.col - 1;
+	                                        }
+	                                        else {
+	                                            col = 0;
+	                                        }
+	                                        row = Random.Range(0, (int)gridSize.row);
+	                                        break;
+	                                    case WaveUnit._spawnLocType.RandTile:
+	                                        row = 0;
+	                                        col = 0;
+	                                        break;
+	                                    case WaveUnit._spawnLocType.SpecifiedRow:
+	                                        row = (int)ut.Tile.x;
+	                                        col = 0;
+	                                        break;
+	                                    case WaveUnit._spawnLocType.SpecifiedTile:
+	                                        row = (int)ut.Tile.x;
+	                                        col = (int)ut.Tile.y;
+	                                        break;
+	                                    default:
+	                                        row = 0;
+	                                        col = 0;
+	                                        break;
+	                                }
+
+	                                ut.created = true;
+	                                if ((row < gridSize.row) && (col < gridSize.col)) {
+	                                    if (isPlayerAttacker == true) {
+	                                        if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
+	                                            tileContents[row][col].SendMessage("SetIdleDirection", defenderDir, SendMessageOptions.DontRequireReceiver);
+	                                            totalDefenders++;
+	                                        }
+	                                    }
+										else {
+	                                        if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
+	                                            tileContents[row][col].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
+												totalAttackers++;
+	                                        } else {
+												// Retry placing the attacking enemy
+												if (ut.SpawnLocType == WaveUnit._spawnLocType.RandRow) {
+													repeat = true;
+												}
+											}
+	                                    }
+	                                }
+								} while (repeat);
                             }
                         }
                     }
@@ -884,7 +893,13 @@ public class WorldController : MonoBehaviour {
 			Debug.Log("Prefab is null");
 			return false;
 		}
+		
+		if (currentLevel.GetComponent<WaveList> ().laneEnable [tileRow] == false) {
+			Debug.Log("Unit attempted to spawn on a disabled lane");
+			return false;
+		}
 
+		// Charge player for the unit
 		if (faction == GomObject.Faction.Player) {
 			if (unitPrefab.GetComponent<GomUnit>().cost > Player.spiritShards) {
 				Debug.Log ("don't have enough Spirit Shards!");

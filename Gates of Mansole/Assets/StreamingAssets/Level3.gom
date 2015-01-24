@@ -1,8 +1,15 @@
 AttackersLetThrough:5
 IsPlayerAttacker:True
 AttackerDir:Right
-Map:Dirt
 StartShards:15
+Lane:0
+Lane:0
+Lane:0
+Lane:0
+Lane:0
+Lane:0
+Lane:0
+Lane:0
 PreDialogue:
     Statement:
         Speaker:Captain Resistance

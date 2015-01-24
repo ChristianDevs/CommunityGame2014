@@ -1,8 +1,15 @@
 AttackersLetThrough:3
 IsPlayerAttacker:False
 AttackerDir:Right
-Map:Town
 StartShards:12
+Lane:1
+Lane:1
+Lane:1
+Lane:1
+Lane:1
+Lane:1
+Lane:1
+Lane:1
 PreDialogue:
     Statement:
         Speaker:Captain Resistance

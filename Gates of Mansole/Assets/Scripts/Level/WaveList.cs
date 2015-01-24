@@ -20,22 +20,33 @@ public class WaveList : MonoBehaviour {
         public string dialogue;
     };
 
+	public class _placeable {
+		public int num;
+		public float x;
+		public float y;
+	}
+
     public bool started = false;  // When true, waves begin
     public int AttackersLetThrough;
     public bool isPlayerAttacker = false;
     public _direction attackerDir = _direction.Right;
     public Wave[] waves;
 	public UiUnitType[] enemyUnitTypes;
-    public string map;
     public int startShards;
     public List<_statement> preLevelDialogue;
     public List<_statement> postLevelDialogue;
+	public List<int> Lanes;
+	public List<bool> laneEnable;
+	public List<float> enemyLevelUpTimes;
+	public List<_placeable> placeables;
 
     private List<GameObject> unitTypes;
 
-    public bool loadGameFile(string fileName, List<GameObject> newUnitTypes) {
+    public bool loadGameFile(string fileName, List<GameObject> newUnitTypes, int numLanes) {
         Debug.Log("Loading Game File: " + fileName);
         unitTypes = newUnitTypes;
+		Lanes = new List<int>();
+		placeables = new List<_placeable> ();
 		StartCoroutine (parseLevelFile(fileName));
         return true;
     }
@@ -86,9 +97,6 @@ public class WaveList : MonoBehaviour {
 						yield return null;
                     }
                     break;
-                case "map":
-                    map = val.ToLower();
-                    break;
                 case "wave":
                     i = parseAllWaves(levelData, i + 1);
                     break;
@@ -99,6 +107,29 @@ public class WaveList : MonoBehaviour {
                 case "postdialogue":
                     postLevelDialogue = new List<_statement>();
                     i = parseDialogue(levelData, postLevelDialogue, i + 1);
+                    break;
+				case "lane":
+					Lanes.Add(int.Parse(val));
+					if (levelData[i].Split(seps).Length > 2) {
+						if (levelData[i].Split(seps)[2].Trim().ToLower() == "disable") {
+							laneEnable.Add(false);
+						} else {
+							laneEnable.Add(true);
+						}
+					} else {
+						laneEnable.Add(true);
+					}
+					break;
+                case "placeable":
+                    if (levelData[i].Split(seps).Length > 3) {
+					_placeable pl = new _placeable();
+
+						pl.num = int.Parse(val);
+						pl.x = float.Parse(levelData[i].Split(seps)[2].Trim());
+						pl.y = float.Parse(levelData[i].Split(seps)[3].Trim());
+
+						placeables.Add(pl);
+					}
                     break;
                 default:
 					yield return null;

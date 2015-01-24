@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class UiTiles : MonoBehaviour {
+	
+	public GameObject[] LaneTerrain;
 
-    public string mapName;
-    public GameObject[] lanes;
+    public List<GameObject> lanes;
 
 	private bool isTilePress;
 	private Vector2 downTile;
@@ -18,6 +20,17 @@ public class UiTiles : MonoBehaviour {
 	void Update () {
 	}
 
+	public void CreateLane(int terrainType) {
+		GameObject lane;
+
+		lane = Instantiate (LaneTerrain [terrainType]) as GameObject;
+		lane.transform.parent = transform;
+		lane.transform.localPosition = new Vector3 (0, lanes.Count);
+		lane.name = "Lane" + lanes.Count;
+
+		lanes.Add (lane);
+	}
+
     public UiTile GetMouseOverTile() {
         UiTile retTile;
         RaycastHit hitTile;
@@ -27,7 +40,7 @@ public class UiTiles : MonoBehaviour {
         retTile.col = -1;
 
         if (Physics.Raycast(UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition), out hitTile)) {
-            for (int row = 0; row < lanes.Length; row++) {
+            for (int row = 0; row < lanes.Count; row++) {
                 UiRow thisRow;
 
                 thisRow = lanes[row].GetComponent<UiRow>();

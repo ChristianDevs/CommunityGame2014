@@ -1,8 +1,15 @@
 AttackersLetThrough:3
 IsPlayerAttacker:True
 AttackerDir:Left
-Map:Keep
 StartShards:18
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
 PreDialogue:
     Statement:
         Speaker:Captain Resistance

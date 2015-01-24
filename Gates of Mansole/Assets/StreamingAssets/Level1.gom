@@ -1,8 +1,17 @@
 AttackersLetThrough:3
 IsPlayerAttacker:False
 AttackerDir:Left
-Map:Dirt
 StartShards:9
+Lane:3:Disable
+Lane:3:Disable
+Lane:0
+Lane:0
+Lane:0
+Lane:0
+Lane:3:Disable
+Lane:3:Disable
+Placeable:0:-3:1.5
+Placeable:1:6:-0.5
 PreDialogue:
     Statement:
         Speaker:Captain Resistance
