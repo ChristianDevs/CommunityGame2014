@@ -10,6 +10,7 @@ Lane:0
 Lane:0
 Lane:3:Disable
 Lane:3:Disable
+UpgradeAtWave:2
 Placeable:0:-3:1.5
 Placeable:1:6:-0.5
 PreDialogue:

@@ -300,8 +300,23 @@ public class WorldController : MonoBehaviour {
 			wl = currentLevel.GetComponent<WaveList>();
 
             // Go through each wave and see if it is time to start that wave
-            foreach (Wave wv in wl.waves) {
+			for (int wvInd = 0; wvInd < wl.waves.Count; wvInd++) {
+				Wave wv = wl.waves[wvInd];
+
                 if (wv.waitTime + levelStartTime < Time.time) {
+
+					if (wl.waveStarted[wvInd] == false) {
+						foreach(int upWave in wl.upgradeAtWave) {
+							if (upWave == wvInd) {
+								Debug.Log("Enemy units get stronger");
+								foreach(GameObject ut in unitTypes) {
+									PropertyStats unitStats = ut.GetComponent<UiUnitType>().getPlayerStats();
+									unitStats.upgradeUnit(ut.GetComponent<UiUnitType>().UnitName);
+								}
+							}
+						}
+						wl.waveStarted[wvInd] = true;
+					}
 
                     // Go through each unit and see if it is time to spawn it
                     foreach (WaveUnit ut in wv.units) {
@@ -950,9 +965,10 @@ public class WorldController : MonoBehaviour {
                 
 				if ((Player.spiritShards >= unitStats.upgradeCost) &&
                     (unitStats.level < unitStats.maxLevel)){
+					Player.spiritShards -= unitStats.upgradeCost;
 					unitStats.upgradeUnit(unitTypes[unitType].GetComponent<UiUnitType>().UnitName);
-				    //Debug.Log("upgraded " + unitTypes[unitType].GetComponent<UiUnitType>().UnitName);
-					//Debug.Log("shards left " + Player.spiritShards);
+				    Debug.Log("Upgraded " + unitTypes[unitType].GetComponent<UiUnitType>().UnitName);
+					Debug.Log("Shards left " + Player.spiritShards);
                	}
 				break;
         }
