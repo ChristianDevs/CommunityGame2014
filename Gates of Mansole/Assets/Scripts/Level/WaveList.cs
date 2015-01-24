@@ -30,7 +30,8 @@ public class WaveList : MonoBehaviour {
     public int AttackersLetThrough;
     public bool isPlayerAttacker = false;
     public _direction attackerDir = _direction.Right;
-    public Wave[] waves;
+	public List<Wave> waves;
+	public List<bool> waveStarted;
 	public UiUnitType[] enemyUnitTypes;
     public int startShards;
     public List<_statement> preLevelDialogue;
@@ -39,6 +40,7 @@ public class WaveList : MonoBehaviour {
 	public List<bool> laneEnable;
 	public List<float> enemyLevelUpTimes;
 	public List<_placeable> placeables;
+	public List<int> upgradeAtWave;
 
     private List<GameObject> unitTypes;
 
@@ -47,6 +49,9 @@ public class WaveList : MonoBehaviour {
         unitTypes = newUnitTypes;
 		Lanes = new List<int>();
 		placeables = new List<_placeable> ();
+		upgradeAtWave = new List<int> ();
+		waveStarted = new List<bool> ();
+		waves = new List<Wave>();
 		StartCoroutine (parseLevelFile(fileName));
         return true;
     }
@@ -131,6 +136,9 @@ public class WaveList : MonoBehaviour {
 						placeables.Add(pl);
 					}
                     break;
+				case "upgradeatwave":
+					upgradeAtWave.Add(int.Parse(val));
+					break;
                 default:
 					yield return null;
 					break;
@@ -193,13 +201,11 @@ public class WaveList : MonoBehaviour {
     }
 
     int parseAllWaves(string[] levelData, int index) {
-        List<Wave> fileWaves;
         int i = index;
 
-        fileWaves = new List<Wave>();
-
         do {
-            i = parseWave(levelData, i, fileWaves);
+			waveStarted.Add(false);
+			i = parseWave(levelData, i, waves);
 
             if ((i >= levelData.Length) || (levelData[i].Split(seps)[0].Trim().ToLower() != "wave")) {
                 break;
@@ -207,8 +213,6 @@ public class WaveList : MonoBehaviour {
 
             i++;
         } while (i < levelData.Length);
-
-        waves = fileWaves.ToArray();
 
         return i - 1;
     }
