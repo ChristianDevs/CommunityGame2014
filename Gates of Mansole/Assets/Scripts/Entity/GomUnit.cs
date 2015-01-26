@@ -50,6 +50,8 @@ public class GomUnit : GomObject {
     private float HpBarMidScale;
     private float moveXScale;
 
+	private bool paused;
+
 	public enum _Type {
 		kBow = 0,
 		kSpear = 1,
@@ -230,9 +232,18 @@ public class GomUnit : GomObject {
 		this.SendMessage("StartAnimation", null, SendMessageOptions.DontRequireReceiver);
 	}
 
+	void Pause() {
+		paused = true;
+	}
+
+	void Unpause() {
+		paused = false;
+	}
+
     void Awake() {
         State = _state.Idle;
         NextState = State;
+		paused = false;
     }
 	
 	// Use this for initialization
@@ -264,6 +275,10 @@ public class GomUnit : GomObject {
 			} else {
 				return;
 			}
+		}
+
+		if (paused) {
+			return;
 		}
 
 		switch (State) {
