@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class UiOptions : MonoBehaviour {
@@ -12,11 +12,13 @@ public class UiOptions : MonoBehaviour {
 	void buttonPush(string buttonName) {
 		switch (buttonName) {
 		case "OpenOptions":
+			world.SendMessage("PauseUnits", null, SendMessageOptions.DontRequireReceiver);
 			world.SetActive(false);
 			menu.SetActive(true);
 		break;
 		case "Continue":
 			world.SetActive(true);
+			world.SendMessage("UnpauseUnits", null, SendMessageOptions.DontRequireReceiver);
 			menu.SetActive(false);
 			break;
 		case "Restart":
