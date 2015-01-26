@@ -152,7 +152,27 @@ public class WorldController : MonoBehaviour {
 		}
 	}
 
-    void handleSetup() {
+	void PauseUnits() {
+		for (int row = 0; row < gridSize.row; row++) {
+			for (int col = 0; col < gridSize.col; col++) {
+				if (tileContents[row][col] != null) {
+					tileContents[row][col].SendMessage("Pause", null, SendMessageOptions.DontRequireReceiver);
+				}
+			}
+		}
+	}
+	
+	void UnpauseUnits() {
+		for (int row = 0; row < gridSize.row; row++) {
+			for (int col = 0; col < gridSize.col; col++) {
+				if (tileContents[row][col] != null) {
+					tileContents[row][col].SendMessage("Unpause", null, SendMessageOptions.DontRequireReceiver);
+				}
+			}
+		}
+	}
+	
+	void handleSetup() {
         if (Player.nextLevelFile != "") {
             currentLevel.GetComponent<WaveList>().loadGameFile(Player.nextLevelFile, unitTypes, 8);
 
