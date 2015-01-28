@@ -1,6 +1,192 @@
 fileFormatVersion: 2
 guid: 68af2f1878271524c96a78d4f3bb0282
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpearDark_0
+    21300002: SpearDark_1
+    21300004: SpearDark_2
+    21300006: SpearDark_3
+    21300008: SpearDark_4
+    21300010: SpearDark_5
+    21300012: SpearDark_6
+    21300014: SpearDark_7
+    21300016: SpearDark_8
+    21300018: SpearDark_9
+    21300020: SpearDark_10
+    21300022: SpearDark_11
+    21300024: SpearDark_12
+    21300026: SpearDark_13
+    21300028: SpearDark_14
+    21300030: SpearDark_15
+    21300032: SpearDark_16
+    21300034: SpearDark_17
+    21300036: SpearDark_18
+    21300038: SpearDark_19
+    21300040: SpearDark_20
+    21300042: SpearDark_21
+    21300044: SpearDark_22
+    21300046: SpearDark_23
+    21300048: SpearDark_24
+    21300050: SpearDark_25
+    21300052: SpearDark_26
+    21300054: SpearDark_27
+    21300056: SpearDark_28
+    21300058: SpearDark_29
+    21300060: SpearDark_30
+    21300062: SpearDark_31
+    21300064: SpearDark_32
+    21300066: SpearDark_33
+    21300068: SpearDark_34
+    21300070: SpearDark_35
+    21300072: SpearDark_36
+    21300074: SpearDark_37
+    21300076: SpearDark_38
+    21300078: SpearDark_39
+    21300080: SpearDark_40
+    21300082: SpearDark_41
+    21300084: SpearDark_42
+    21300086: SpearDark_43
+    21300088: SpearDark_44
+    21300090: SpearDark_45
+    21300092: SpearDark_46
+    21300094: SpearDark_47
+    21300096: SpearDark_48
+    21300098: SpearDark_49
+    21300100: SpearDark_50
+    21300102: SpearDark_51
+    21300104: SpearDark_52
+    21300106: SpearDark_53
+    21300108: SpearDark_54
+    21300110: SpearDark_55
+    21300112: SpearDark_56
+    21300114: SpearDark_57
+    21300116: SpearDark_58
+    21300118: SpearDark_59
+    21300120: SpearDark_60
+    21300122: SpearDark_61
+    21300124: SpearDark_62
+    21300126: SpearDark_63
+    21300128: SpearDark_64
+    21300130: SpearDark_65
+    21300132: SpearDark_66
+    21300134: SpearDark_67
+    21300136: SpearDark_68
+    21300138: SpearDark_69
+    21300140: SpearDark_70
+    21300142: SpearDark_71
+    21300144: SpearDark_72
+    21300146: SpearDark_73
+    21300148: SpearDark_74
+    21300150: SpearDark_75
+    21300152: SpearDark_76
+    21300154: SpearDark_77
+    21300156: SpearDark_78
+    21300158: SpearDark_79
+    21300160: SpearDark_80
+    21300162: SpearDark_81
+    21300164: SpearDark_82
+    21300166: SpearDark_83
+    21300168: SpearDark_84
+    21300170: SpearDark_85
+    21300172: SpearDark_86
+    21300174: SpearDark_87
+    21300176: SpearDark_88
+    21300178: SpearDark_89
+    21300180: SpearDark_90
+    21300182: SpearDark_91
+    21300184: SpearDark_92
+    21300186: SpearDark_93
+    21300188: SpearDark_94
+    21300190: SpearDark_95
+    21300192: SpearDark_96
+    21300194: SpearDark_97
+    21300196: SpearDark_98
+    21300198: SpearDark_99
+    21300200: SpearDark_100
+    21300202: SpearDark_101
+    21300204: SpearDark_102
+    21300206: SpearDark_103
+    21300208: SpearDark_104
+    21300210: SpearDark_105
+    21300212: SpearDark_106
+    21300214: SpearDark_107
+    21300216: SpearDark_108
+    21300218: SpearDark_109
+    21300220: SpearDark_110
+    21300222: SpearDark_111
+    21300224: SpearDark_112
+    21300226: SpearDark_113
+    21300228: SpearDark_114
+    21300230: SpearDark_115
+    21300232: SpearDark_116
+    21300234: SpearDark_117
+    21300236: SpearDark_118
+    21300238: SpearDark_119
+    21300240: SpearDark_120
+    21300242: SpearDark_121
+    21300244: SpearDark_122
+    21300246: SpearDark_123
+    21300248: SpearDark_124
+    21300250: SpearDark_125
+    21300252: SpearDark_126
+    21300254: SpearDark_127
+    21300256: SpearDark_128
+    21300258: SpearDark_129
+    21300260: SpearDark_130
+    21300262: SpearDark_131
+    21300264: SpearDark_132
+    21300266: SpearDark_133
+    21300268: SpearDark_134
+    21300270: SpearDark_135
+    21300272: SpearDark_136
+    21300274: SpearDark_137
+    21300276: SpearDark_138
+    21300278: SpearDark_139
+    21300280: SpearDark_140
+    21300282: SpearDark_141
+    21300284: SpearDark_142
+    21300286: SpearDark_143
+    21300288: SpearDark_144
+    21300290: SpearDark_145
+    21300292: SpearDark_146
+    21300294: SpearDark_147
+    21300296: SpearDark_148
+    21300298: SpearDark_149
+    21300300: SpearDark_150
+    21300302: SpearDark_151
+    21300304: SpearDark_152
+    21300306: SpearDark_153
+    21300308: SpearDark_154
+    21300310: SpearDark_155
+    21300312: SpearDark_156
+    21300314: SpearDark_157
+    21300316: SpearDark_158
+    21300318: SpearDark_159
+    21300320: SpearDark_160
+    21300322: SpearDark_161
+    21300324: SpearDark_162
+    21300326: SpearDark_163
+    21300328: SpearDark_164
+    21300330: SpearDark_165
+    21300332: SpearDark_166
+    21300334: SpearDark_167
+    21300336: SpearDark_168
+    21300338: SpearDark_169
+    21300340: SpearDark_170
+    21300342: SpearDark_171
+    21300344: SpearDark_172
+    21300346: SpearDark_173
+    21300348: SpearDark_174
+    21300350: SpearDark_175
+    21300352: SpearDark_176
+    21300354: SpearDark_177
+    21300356: SpearDark_178
+    21300358: SpearDark_179
+    21300360: SpearDark_180
+    21300362: SpearDark_181
+    21300364: SpearDark_182
+    21300366: SpearDark_183
+    21300368: SpearDark_184
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +221,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +241,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_1
       rect:
         serializedVersion: 2
@@ -63,6 +251,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_2
       rect:
         serializedVersion: 2
@@ -72,6 +261,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_3
       rect:
         serializedVersion: 2
@@ -81,6 +271,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_4
       rect:
         serializedVersion: 2
@@ -90,6 +281,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_5
       rect:
         serializedVersion: 2
@@ -99,6 +291,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_6
       rect:
         serializedVersion: 2
@@ -108,6 +301,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_7
       rect:
         serializedVersion: 2
@@ -117,6 +311,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_8
       rect:
         serializedVersion: 2
@@ -126,6 +321,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_9
       rect:
         serializedVersion: 2
@@ -135,6 +331,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_10
       rect:
         serializedVersion: 2
@@ -144,6 +341,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_11
       rect:
         serializedVersion: 2
@@ -153,6 +351,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_12
       rect:
         serializedVersion: 2
@@ -162,6 +361,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_13
       rect:
         serializedVersion: 2
@@ -171,6 +371,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_14
       rect:
         serializedVersion: 2
@@ -180,6 +381,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_15
       rect:
         serializedVersion: 2
@@ -189,6 +391,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_16
       rect:
         serializedVersion: 2
@@ -198,6 +401,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_17
       rect:
         serializedVersion: 2
@@ -207,6 +411,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_18
       rect:
         serializedVersion: 2
@@ -216,6 +421,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_19
       rect:
         serializedVersion: 2
@@ -225,6 +431,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_20
       rect:
         serializedVersion: 2
@@ -234,6 +441,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_21
       rect:
         serializedVersion: 2
@@ -243,6 +451,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_22
       rect:
         serializedVersion: 2
@@ -252,6 +461,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_23
       rect:
         serializedVersion: 2
@@ -261,6 +471,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_24
       rect:
         serializedVersion: 2
@@ -270,6 +481,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_25
       rect:
         serializedVersion: 2
@@ -279,6 +491,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_26
       rect:
         serializedVersion: 2
@@ -288,6 +501,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_27
       rect:
         serializedVersion: 2
@@ -297,6 +511,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_28
       rect:
         serializedVersion: 2
@@ -306,6 +521,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_29
       rect:
         serializedVersion: 2
@@ -315,6 +531,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_30
       rect:
         serializedVersion: 2
@@ -324,6 +541,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_31
       rect:
         serializedVersion: 2
@@ -333,6 +551,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_32
       rect:
         serializedVersion: 2
@@ -342,6 +561,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_33
       rect:
         serializedVersion: 2
@@ -351,6 +571,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_34
       rect:
         serializedVersion: 2
@@ -360,6 +581,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_35
       rect:
         serializedVersion: 2
@@ -369,6 +591,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_36
       rect:
         serializedVersion: 2
@@ -378,6 +601,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_37
       rect:
         serializedVersion: 2
@@ -387,6 +611,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_38
       rect:
         serializedVersion: 2
@@ -396,6 +621,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_39
       rect:
         serializedVersion: 2
@@ -405,6 +631,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_40
       rect:
         serializedVersion: 2
@@ -414,6 +641,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_41
       rect:
         serializedVersion: 2
@@ -423,6 +651,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_42
       rect:
         serializedVersion: 2
@@ -432,6 +661,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_43
       rect:
         serializedVersion: 2
@@ -441,6 +671,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_44
       rect:
         serializedVersion: 2
@@ -450,6 +681,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_45
       rect:
         serializedVersion: 2
@@ -459,6 +691,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_46
       rect:
         serializedVersion: 2
@@ -468,6 +701,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_47
       rect:
         serializedVersion: 2
@@ -477,6 +711,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_48
       rect:
         serializedVersion: 2
@@ -486,6 +721,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_49
       rect:
         serializedVersion: 2
@@ -495,6 +731,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_50
       rect:
         serializedVersion: 2
@@ -504,6 +741,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_51
       rect:
         serializedVersion: 2
@@ -513,6 +751,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_52
       rect:
         serializedVersion: 2
@@ -522,6 +761,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_53
       rect:
         serializedVersion: 2
@@ -531,6 +771,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_54
       rect:
         serializedVersion: 2
@@ -540,6 +781,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_55
       rect:
         serializedVersion: 2
@@ -549,6 +791,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_56
       rect:
         serializedVersion: 2
@@ -558,6 +801,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_57
       rect:
         serializedVersion: 2
@@ -567,6 +811,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_58
       rect:
         serializedVersion: 2
@@ -576,6 +821,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_59
       rect:
         serializedVersion: 2
@@ -585,6 +831,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_60
       rect:
         serializedVersion: 2
@@ -594,6 +841,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_61
       rect:
         serializedVersion: 2
@@ -603,6 +851,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_62
       rect:
         serializedVersion: 2
@@ -612,6 +861,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_63
       rect:
         serializedVersion: 2
@@ -621,6 +871,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_64
       rect:
         serializedVersion: 2
@@ -630,6 +881,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_65
       rect:
         serializedVersion: 2
@@ -639,6 +891,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_66
       rect:
         serializedVersion: 2
@@ -648,6 +901,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_67
       rect:
         serializedVersion: 2
@@ -657,6 +911,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_68
       rect:
         serializedVersion: 2
@@ -666,6 +921,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_69
       rect:
         serializedVersion: 2
@@ -675,6 +931,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_70
       rect:
         serializedVersion: 2
@@ -684,6 +941,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_71
       rect:
         serializedVersion: 2
@@ -693,6 +951,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_72
       rect:
         serializedVersion: 2
@@ -702,6 +961,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_73
       rect:
         serializedVersion: 2
@@ -711,6 +971,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_74
       rect:
         serializedVersion: 2
@@ -720,6 +981,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_75
       rect:
         serializedVersion: 2
@@ -729,6 +991,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_76
       rect:
         serializedVersion: 2
@@ -738,6 +1001,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_77
       rect:
         serializedVersion: 2
@@ -747,6 +1011,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_78
       rect:
         serializedVersion: 2
@@ -756,6 +1021,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_79
       rect:
         serializedVersion: 2
@@ -765,6 +1031,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_80
       rect:
         serializedVersion: 2
@@ -774,6 +1041,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_81
       rect:
         serializedVersion: 2
@@ -783,6 +1051,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_82
       rect:
         serializedVersion: 2
@@ -792,6 +1061,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_83
       rect:
         serializedVersion: 2
@@ -801,6 +1071,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_84
       rect:
         serializedVersion: 2
@@ -810,6 +1081,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_85
       rect:
         serializedVersion: 2
@@ -819,6 +1091,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_86
       rect:
         serializedVersion: 2
@@ -828,6 +1101,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_87
       rect:
         serializedVersion: 2
@@ -837,6 +1111,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_88
       rect:
         serializedVersion: 2
@@ -846,6 +1121,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_89
       rect:
         serializedVersion: 2
@@ -855,6 +1131,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_90
       rect:
         serializedVersion: 2
@@ -864,6 +1141,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_91
       rect:
         serializedVersion: 2
@@ -873,6 +1151,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_92
       rect:
         serializedVersion: 2
@@ -882,6 +1161,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_93
       rect:
         serializedVersion: 2
@@ -891,6 +1171,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_94
       rect:
         serializedVersion: 2
@@ -900,6 +1181,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_95
       rect:
         serializedVersion: 2
@@ -909,6 +1191,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_96
       rect:
         serializedVersion: 2
@@ -918,6 +1201,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_97
       rect:
         serializedVersion: 2
@@ -927,6 +1211,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_98
       rect:
         serializedVersion: 2
@@ -936,6 +1221,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_99
       rect:
         serializedVersion: 2
@@ -945,6 +1231,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_100
       rect:
         serializedVersion: 2
@@ -954,6 +1241,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_101
       rect:
         serializedVersion: 2
@@ -963,6 +1251,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_102
       rect:
         serializedVersion: 2
@@ -972,6 +1261,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_103
       rect:
         serializedVersion: 2
@@ -981,6 +1271,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_104
       rect:
         serializedVersion: 2
@@ -990,6 +1281,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_105
       rect:
         serializedVersion: 2
@@ -999,6 +1291,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_106
       rect:
         serializedVersion: 2
@@ -1008,6 +1301,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_107
       rect:
         serializedVersion: 2
@@ -1017,6 +1311,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_108
       rect:
         serializedVersion: 2
@@ -1026,6 +1321,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_109
       rect:
         serializedVersion: 2
@@ -1035,6 +1331,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_110
       rect:
         serializedVersion: 2
@@ -1044,6 +1341,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_111
       rect:
         serializedVersion: 2
@@ -1053,6 +1351,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_112
       rect:
         serializedVersion: 2
@@ -1062,6 +1361,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_113
       rect:
         serializedVersion: 2
@@ -1071,6 +1371,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_114
       rect:
         serializedVersion: 2
@@ -1080,6 +1381,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_115
       rect:
         serializedVersion: 2
@@ -1089,6 +1391,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_116
       rect:
         serializedVersion: 2
@@ -1098,6 +1401,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_117
       rect:
         serializedVersion: 2
@@ -1107,6 +1411,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_118
       rect:
         serializedVersion: 2
@@ -1116,6 +1421,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_119
       rect:
         serializedVersion: 2
@@ -1125,6 +1431,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_120
       rect:
         serializedVersion: 2
@@ -1134,6 +1441,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_121
       rect:
         serializedVersion: 2
@@ -1143,6 +1451,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_122
       rect:
         serializedVersion: 2
@@ -1152,6 +1461,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_123
       rect:
         serializedVersion: 2
@@ -1161,6 +1471,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_124
       rect:
         serializedVersion: 2
@@ -1170,6 +1481,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_125
       rect:
         serializedVersion: 2
@@ -1179,6 +1491,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_126
       rect:
         serializedVersion: 2
@@ -1188,6 +1501,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_127
       rect:
         serializedVersion: 2
@@ -1197,6 +1511,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_128
       rect:
         serializedVersion: 2
@@ -1206,6 +1521,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_129
       rect:
         serializedVersion: 2
@@ -1215,6 +1531,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_130
       rect:
         serializedVersion: 2
@@ -1224,6 +1541,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_131
       rect:
         serializedVersion: 2
@@ -1233,6 +1551,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_132
       rect:
         serializedVersion: 2
@@ -1242,6 +1561,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_133
       rect:
         serializedVersion: 2
@@ -1251,6 +1571,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_134
       rect:
         serializedVersion: 2
@@ -1260,6 +1581,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_135
       rect:
         serializedVersion: 2
@@ -1269,6 +1591,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_136
       rect:
         serializedVersion: 2
@@ -1278,6 +1601,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_137
       rect:
         serializedVersion: 2
@@ -1287,6 +1611,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_138
       rect:
         serializedVersion: 2
@@ -1296,6 +1621,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_139
       rect:
         serializedVersion: 2
@@ -1305,6 +1631,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_140
       rect:
         serializedVersion: 2
@@ -1314,6 +1641,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_141
       rect:
         serializedVersion: 2
@@ -1323,6 +1651,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_142
       rect:
         serializedVersion: 2
@@ -1332,6 +1661,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_143
       rect:
         serializedVersion: 2
@@ -1341,6 +1671,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_144
       rect:
         serializedVersion: 2
@@ -1350,6 +1681,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_145
       rect:
         serializedVersion: 2
@@ -1359,6 +1691,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_146
       rect:
         serializedVersion: 2
@@ -1368,6 +1701,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_147
       rect:
         serializedVersion: 2
@@ -1377,6 +1711,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_148
       rect:
         serializedVersion: 2
@@ -1386,6 +1721,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_149
       rect:
         serializedVersion: 2
@@ -1395,6 +1731,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_150
       rect:
         serializedVersion: 2
@@ -1404,6 +1741,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_151
       rect:
         serializedVersion: 2
@@ -1413,6 +1751,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_152
       rect:
         serializedVersion: 2
@@ -1422,6 +1761,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_153
       rect:
         serializedVersion: 2
@@ -1431,6 +1771,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_154
       rect:
         serializedVersion: 2
@@ -1440,6 +1781,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_155
       rect:
         serializedVersion: 2
@@ -1449,6 +1791,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_156
       rect:
         serializedVersion: 2
@@ -1458,6 +1801,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_157
       rect:
         serializedVersion: 2
@@ -1467,6 +1811,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_158
       rect:
         serializedVersion: 2
@@ -1476,6 +1821,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_159
       rect:
         serializedVersion: 2
@@ -1485,6 +1831,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_160
       rect:
         serializedVersion: 2
@@ -1494,6 +1841,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_161
       rect:
         serializedVersion: 2
@@ -1503,6 +1851,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_162
       rect:
         serializedVersion: 2
@@ -1512,6 +1861,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_163
       rect:
         serializedVersion: 2
@@ -1521,6 +1871,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_164
       rect:
         serializedVersion: 2
@@ -1530,6 +1881,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_165
       rect:
         serializedVersion: 2
@@ -1539,6 +1891,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_166
       rect:
         serializedVersion: 2
@@ -1548,6 +1901,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_167
       rect:
         serializedVersion: 2
@@ -1557,6 +1911,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_168
       rect:
         serializedVersion: 2
@@ -1566,6 +1921,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_169
       rect:
         serializedVersion: 2
@@ -1575,6 +1931,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_170
       rect:
         serializedVersion: 2
@@ -1584,6 +1941,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_171
       rect:
         serializedVersion: 2
@@ -1593,6 +1951,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_172
       rect:
         serializedVersion: 2
@@ -1602,6 +1961,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_173
       rect:
         serializedVersion: 2
@@ -1611,6 +1971,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_174
       rect:
         serializedVersion: 2
@@ -1620,6 +1981,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_175
       rect:
         serializedVersion: 2
@@ -1629,6 +1991,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_176
       rect:
         serializedVersion: 2
@@ -1638,6 +2001,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_177
       rect:
         serializedVersion: 2
@@ -1647,6 +2011,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_178
       rect:
         serializedVersion: 2
@@ -1656,6 +2021,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_179
       rect:
         serializedVersion: 2
@@ -1665,6 +2031,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_180
       rect:
         serializedVersion: 2
@@ -1674,6 +2041,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_181
       rect:
         serializedVersion: 2
@@ -1683,6 +2051,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_182
       rect:
         serializedVersion: 2
@@ -1692,6 +2061,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_183
       rect:
         serializedVersion: 2
@@ -1701,6 +2071,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: SpearDark_184
       rect:
         serializedVersion: 2
@@ -1710,5 +2081,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
