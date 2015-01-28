@@ -190,8 +190,8 @@ public class WorldController : MonoBehaviour {
                 uType = unitType.GetComponent<UiUnitType>();
 
                 if (uType != null) {
-                    uType.getPlayerStats().resetUnitStats();
-					uType.getEnemyStats().resetUnitStats();
+                    uType.getPlayerStats().resetUnitStats(uType);
+					uType.getEnemyStats().resetUnitStats(uType);
                 }
             }
 

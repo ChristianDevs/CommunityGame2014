@@ -22,10 +22,31 @@ public class PropertyStats {
 		maxHealth += 10;
 	}
 
-	public void resetUnitStats() {
+	public void resetUnitStats(UiUnitType ut) {
+		// NOTE: if property stats are changed in the prefabs, these must be changed as well
 		level = 1;
-		attack = 10;
-		maxHealth = 50;
+		switch (ut.UnitName){
+		case "Shepherd": // bow
+			maxHealth = 60;
+			attack = 4;
+			break;
+		case "Evangelist": // spear
+			maxHealth = 50;
+			attack = 10;
+			break;
+		case "Elder": // staff
+			maxHealth = 60;
+			attack = 4;
+			break;
+		case "Teacher": // sword
+			maxHealth = 50;
+			attack = 10;
+			break;
+		case "Orator": // wand
+			maxHealth = 60;
+			attack = 4;
+			break;
+		}
 	}
 
 	public void hardResetStats() {
