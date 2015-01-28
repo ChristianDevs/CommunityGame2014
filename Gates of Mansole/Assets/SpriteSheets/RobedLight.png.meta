@@ -1,6 +1,185 @@
 fileFormatVersion: 2
 guid: c6068e5fccb3071488e94b3f1a9c30e4
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: RobedLight_0
+    21300002: RobedLight_1
+    21300004: RobedLight_2
+    21300006: RobedLight_3
+    21300008: RobedLight_4
+    21300010: RobedLight_5
+    21300012: RobedLight_6
+    21300014: RobedLight_7
+    21300016: RobedLight_8
+    21300018: RobedLight_9
+    21300020: RobedLight_10
+    21300022: RobedLight_11
+    21300024: RobedLight_12
+    21300026: RobedLight_13
+    21300028: RobedLight_14
+    21300030: RobedLight_15
+    21300032: RobedLight_16
+    21300034: RobedLight_17
+    21300036: RobedLight_18
+    21300038: RobedLight_19
+    21300040: RobedLight_20
+    21300042: RobedLight_21
+    21300044: RobedLight_22
+    21300046: RobedLight_23
+    21300048: RobedLight_24
+    21300050: RobedLight_25
+    21300052: RobedLight_26
+    21300054: RobedLight_27
+    21300056: RobedLight_28
+    21300058: RobedLight_29
+    21300060: RobedLight_30
+    21300062: RobedLight_31
+    21300064: RobedLight_32
+    21300066: RobedLight_33
+    21300068: RobedLight_34
+    21300070: RobedLight_35
+    21300072: RobedLight_36
+    21300074: RobedLight_37
+    21300076: RobedLight_38
+    21300078: RobedLight_39
+    21300080: RobedLight_40
+    21300082: RobedLight_41
+    21300084: RobedLight_42
+    21300086: RobedLight_43
+    21300088: RobedLight_44
+    21300090: RobedLight_45
+    21300092: RobedLight_46
+    21300094: RobedLight_47
+    21300096: RobedLight_48
+    21300098: RobedLight_49
+    21300100: RobedLight_50
+    21300102: RobedLight_51
+    21300104: RobedLight_52
+    21300106: RobedLight_53
+    21300108: RobedLight_54
+    21300110: RobedLight_55
+    21300112: RobedLight_56
+    21300114: RobedLight_57
+    21300116: RobedLight_58
+    21300118: RobedLight_59
+    21300120: RobedLight_60
+    21300122: RobedLight_61
+    21300124: RobedLight_62
+    21300126: RobedLight_63
+    21300128: RobedLight_64
+    21300130: RobedLight_65
+    21300132: RobedLight_66
+    21300134: RobedLight_67
+    21300136: RobedLight_68
+    21300138: RobedLight_69
+    21300140: RobedLight_70
+    21300142: RobedLight_71
+    21300144: RobedLight_72
+    21300146: RobedLight_73
+    21300148: RobedLight_74
+    21300150: RobedLight_75
+    21300152: RobedLight_76
+    21300154: RobedLight_77
+    21300156: RobedLight_78
+    21300158: RobedLight_79
+    21300160: RobedLight_80
+    21300162: RobedLight_81
+    21300164: RobedLight_82
+    21300166: RobedLight_83
+    21300168: RobedLight_84
+    21300170: RobedLight_85
+    21300172: RobedLight_86
+    21300174: RobedLight_87
+    21300176: RobedLight_88
+    21300178: RobedLight_89
+    21300180: RobedLight_90
+    21300182: RobedLight_91
+    21300184: RobedLight_92
+    21300186: RobedLight_93
+    21300188: RobedLight_94
+    21300190: RobedLight_95
+    21300192: RobedLight_96
+    21300194: RobedLight_97
+    21300196: RobedLight_98
+    21300198: RobedLight_99
+    21300200: RobedLight_100
+    21300202: RobedLight_101
+    21300204: RobedLight_102
+    21300206: RobedLight_103
+    21300208: RobedLight_104
+    21300210: RobedLight_105
+    21300212: RobedLight_106
+    21300214: RobedLight_107
+    21300216: RobedLight_108
+    21300218: RobedLight_109
+    21300220: RobedLight_110
+    21300222: RobedLight_111
+    21300224: RobedLight_112
+    21300226: RobedLight_113
+    21300228: RobedLight_114
+    21300230: RobedLight_115
+    21300232: RobedLight_116
+    21300234: RobedLight_117
+    21300236: RobedLight_118
+    21300238: RobedLight_119
+    21300240: RobedLight_120
+    21300242: RobedLight_121
+    21300244: RobedLight_122
+    21300246: RobedLight_123
+    21300248: RobedLight_124
+    21300250: RobedLight_125
+    21300252: RobedLight_126
+    21300254: RobedLight_127
+    21300256: RobedLight_128
+    21300258: RobedLight_129
+    21300260: RobedLight_130
+    21300262: RobedLight_131
+    21300264: RobedLight_132
+    21300266: RobedLight_133
+    21300268: RobedLight_134
+    21300270: RobedLight_135
+    21300272: RobedLight_136
+    21300274: RobedLight_137
+    21300276: RobedLight_138
+    21300278: RobedLight_139
+    21300280: RobedLight_140
+    21300282: RobedLight_141
+    21300284: RobedLight_142
+    21300286: RobedLight_143
+    21300288: RobedLight_144
+    21300290: RobedLight_145
+    21300292: RobedLight_146
+    21300294: RobedLight_147
+    21300296: RobedLight_148
+    21300298: RobedLight_149
+    21300300: RobedLight_150
+    21300302: RobedLight_151
+    21300304: RobedLight_152
+    21300306: RobedLight_153
+    21300308: RobedLight_154
+    21300310: RobedLight_155
+    21300312: RobedLight_156
+    21300314: RobedLight_157
+    21300316: RobedLight_158
+    21300318: RobedLight_159
+    21300320: RobedLight_160
+    21300322: RobedLight_161
+    21300324: RobedLight_162
+    21300326: RobedLight_163
+    21300328: RobedLight_164
+    21300330: RobedLight_165
+    21300332: RobedLight_166
+    21300334: RobedLight_167
+    21300336: RobedLight_168
+    21300338: RobedLight_169
+    21300340: RobedLight_170
+    21300342: RobedLight_171
+    21300344: RobedLight_172
+    21300346: RobedLight_173
+    21300348: RobedLight_174
+    21300350: RobedLight_175
+    21300352: RobedLight_176
+    21300354: RobedLight_177
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +214,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +234,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_1
       rect:
         serializedVersion: 2
@@ -63,6 +244,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_2
       rect:
         serializedVersion: 2
@@ -72,6 +254,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_3
       rect:
         serializedVersion: 2
@@ -81,6 +264,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_4
       rect:
         serializedVersion: 2
@@ -90,6 +274,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_5
       rect:
         serializedVersion: 2
@@ -99,6 +284,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_6
       rect:
         serializedVersion: 2
@@ -108,6 +294,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_7
       rect:
         serializedVersion: 2
@@ -117,6 +304,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_8
       rect:
         serializedVersion: 2
@@ -126,6 +314,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_9
       rect:
         serializedVersion: 2
@@ -135,6 +324,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_10
       rect:
         serializedVersion: 2
@@ -144,6 +334,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_11
       rect:
         serializedVersion: 2
@@ -153,6 +344,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_12
       rect:
         serializedVersion: 2
@@ -162,6 +354,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_13
       rect:
         serializedVersion: 2
@@ -171,6 +364,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_14
       rect:
         serializedVersion: 2
@@ -180,6 +374,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_15
       rect:
         serializedVersion: 2
@@ -189,6 +384,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_16
       rect:
         serializedVersion: 2
@@ -198,6 +394,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_17
       rect:
         serializedVersion: 2
@@ -207,6 +404,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_18
       rect:
         serializedVersion: 2
@@ -216,6 +414,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_19
       rect:
         serializedVersion: 2
@@ -225,6 +424,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_20
       rect:
         serializedVersion: 2
@@ -234,6 +434,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_21
       rect:
         serializedVersion: 2
@@ -243,6 +444,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_22
       rect:
         serializedVersion: 2
@@ -252,6 +454,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_23
       rect:
         serializedVersion: 2
@@ -261,6 +464,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_24
       rect:
         serializedVersion: 2
@@ -270,6 +474,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_25
       rect:
         serializedVersion: 2
@@ -279,6 +484,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_26
       rect:
         serializedVersion: 2
@@ -288,6 +494,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_27
       rect:
         serializedVersion: 2
@@ -297,6 +504,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_28
       rect:
         serializedVersion: 2
@@ -306,6 +514,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_29
       rect:
         serializedVersion: 2
@@ -315,6 +524,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_30
       rect:
         serializedVersion: 2
@@ -324,6 +534,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_31
       rect:
         serializedVersion: 2
@@ -333,6 +544,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_32
       rect:
         serializedVersion: 2
@@ -342,6 +554,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_33
       rect:
         serializedVersion: 2
@@ -351,6 +564,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_34
       rect:
         serializedVersion: 2
@@ -360,6 +574,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_35
       rect:
         serializedVersion: 2
@@ -369,6 +584,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_36
       rect:
         serializedVersion: 2
@@ -378,6 +594,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_37
       rect:
         serializedVersion: 2
@@ -387,6 +604,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_38
       rect:
         serializedVersion: 2
@@ -396,6 +614,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_39
       rect:
         serializedVersion: 2
@@ -405,6 +624,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_40
       rect:
         serializedVersion: 2
@@ -414,6 +634,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_41
       rect:
         serializedVersion: 2
@@ -423,6 +644,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_42
       rect:
         serializedVersion: 2
@@ -432,6 +654,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_43
       rect:
         serializedVersion: 2
@@ -441,6 +664,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_44
       rect:
         serializedVersion: 2
@@ -450,6 +674,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_45
       rect:
         serializedVersion: 2
@@ -459,6 +684,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_46
       rect:
         serializedVersion: 2
@@ -468,6 +694,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_47
       rect:
         serializedVersion: 2
@@ -477,6 +704,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_48
       rect:
         serializedVersion: 2
@@ -486,6 +714,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_49
       rect:
         serializedVersion: 2
@@ -495,6 +724,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_50
       rect:
         serializedVersion: 2
@@ -504,6 +734,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_51
       rect:
         serializedVersion: 2
@@ -513,6 +744,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_52
       rect:
         serializedVersion: 2
@@ -522,6 +754,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_53
       rect:
         serializedVersion: 2
@@ -531,6 +764,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_54
       rect:
         serializedVersion: 2
@@ -540,6 +774,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_55
       rect:
         serializedVersion: 2
@@ -549,6 +784,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_56
       rect:
         serializedVersion: 2
@@ -558,6 +794,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_57
       rect:
         serializedVersion: 2
@@ -567,6 +804,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_58
       rect:
         serializedVersion: 2
@@ -576,6 +814,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_59
       rect:
         serializedVersion: 2
@@ -585,6 +824,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_60
       rect:
         serializedVersion: 2
@@ -594,6 +834,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_61
       rect:
         serializedVersion: 2
@@ -603,6 +844,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_62
       rect:
         serializedVersion: 2
@@ -612,6 +854,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_63
       rect:
         serializedVersion: 2
@@ -621,6 +864,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_64
       rect:
         serializedVersion: 2
@@ -630,6 +874,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_65
       rect:
         serializedVersion: 2
@@ -639,6 +884,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_66
       rect:
         serializedVersion: 2
@@ -648,6 +894,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_67
       rect:
         serializedVersion: 2
@@ -657,6 +904,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_68
       rect:
         serializedVersion: 2
@@ -666,6 +914,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_69
       rect:
         serializedVersion: 2
@@ -675,6 +924,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_70
       rect:
         serializedVersion: 2
@@ -684,6 +934,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_71
       rect:
         serializedVersion: 2
@@ -693,6 +944,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_72
       rect:
         serializedVersion: 2
@@ -702,6 +954,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_73
       rect:
         serializedVersion: 2
@@ -711,6 +964,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_74
       rect:
         serializedVersion: 2
@@ -720,6 +974,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_75
       rect:
         serializedVersion: 2
@@ -729,6 +984,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_76
       rect:
         serializedVersion: 2
@@ -738,6 +994,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_77
       rect:
         serializedVersion: 2
@@ -747,6 +1004,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_78
       rect:
         serializedVersion: 2
@@ -756,6 +1014,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_79
       rect:
         serializedVersion: 2
@@ -765,6 +1024,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_80
       rect:
         serializedVersion: 2
@@ -774,6 +1034,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_81
       rect:
         serializedVersion: 2
@@ -783,6 +1044,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_82
       rect:
         serializedVersion: 2
@@ -792,6 +1054,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_83
       rect:
         serializedVersion: 2
@@ -801,6 +1064,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_84
       rect:
         serializedVersion: 2
@@ -810,6 +1074,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_85
       rect:
         serializedVersion: 2
@@ -819,6 +1084,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_86
       rect:
         serializedVersion: 2
@@ -828,6 +1094,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_87
       rect:
         serializedVersion: 2
@@ -837,6 +1104,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_88
       rect:
         serializedVersion: 2
@@ -846,6 +1114,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_89
       rect:
         serializedVersion: 2
@@ -855,6 +1124,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_90
       rect:
         serializedVersion: 2
@@ -864,6 +1134,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_91
       rect:
         serializedVersion: 2
@@ -873,6 +1144,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_92
       rect:
         serializedVersion: 2
@@ -882,6 +1154,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_93
       rect:
         serializedVersion: 2
@@ -891,6 +1164,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_94
       rect:
         serializedVersion: 2
@@ -900,6 +1174,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_95
       rect:
         serializedVersion: 2
@@ -909,6 +1184,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_96
       rect:
         serializedVersion: 2
@@ -918,6 +1194,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_97
       rect:
         serializedVersion: 2
@@ -927,6 +1204,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_98
       rect:
         serializedVersion: 2
@@ -936,6 +1214,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_99
       rect:
         serializedVersion: 2
@@ -945,6 +1224,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_100
       rect:
         serializedVersion: 2
@@ -954,6 +1234,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_101
       rect:
         serializedVersion: 2
@@ -963,6 +1244,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_102
       rect:
         serializedVersion: 2
@@ -972,6 +1254,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_103
       rect:
         serializedVersion: 2
@@ -981,6 +1264,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_104
       rect:
         serializedVersion: 2
@@ -990,6 +1274,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_105
       rect:
         serializedVersion: 2
@@ -999,6 +1284,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_106
       rect:
         serializedVersion: 2
@@ -1008,6 +1294,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_107
       rect:
         serializedVersion: 2
@@ -1017,6 +1304,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_108
       rect:
         serializedVersion: 2
@@ -1026,6 +1314,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_109
       rect:
         serializedVersion: 2
@@ -1035,6 +1324,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_110
       rect:
         serializedVersion: 2
@@ -1044,6 +1334,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_111
       rect:
         serializedVersion: 2
@@ -1053,6 +1344,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_112
       rect:
         serializedVersion: 2
@@ -1062,6 +1354,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_113
       rect:
         serializedVersion: 2
@@ -1071,6 +1364,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_114
       rect:
         serializedVersion: 2
@@ -1080,6 +1374,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_115
       rect:
         serializedVersion: 2
@@ -1089,6 +1384,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_116
       rect:
         serializedVersion: 2
@@ -1098,6 +1394,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_117
       rect:
         serializedVersion: 2
@@ -1107,6 +1404,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_118
       rect:
         serializedVersion: 2
@@ -1116,6 +1414,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_119
       rect:
         serializedVersion: 2
@@ -1125,6 +1424,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_120
       rect:
         serializedVersion: 2
@@ -1134,6 +1434,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_121
       rect:
         serializedVersion: 2
@@ -1143,6 +1444,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_122
       rect:
         serializedVersion: 2
@@ -1152,6 +1454,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_123
       rect:
         serializedVersion: 2
@@ -1161,6 +1464,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_124
       rect:
         serializedVersion: 2
@@ -1170,6 +1474,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_125
       rect:
         serializedVersion: 2
@@ -1179,6 +1484,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_126
       rect:
         serializedVersion: 2
@@ -1188,6 +1494,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_127
       rect:
         serializedVersion: 2
@@ -1197,6 +1504,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_128
       rect:
         serializedVersion: 2
@@ -1206,6 +1514,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_129
       rect:
         serializedVersion: 2
@@ -1215,6 +1524,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_130
       rect:
         serializedVersion: 2
@@ -1224,6 +1534,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_131
       rect:
         serializedVersion: 2
@@ -1233,6 +1544,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_132
       rect:
         serializedVersion: 2
@@ -1242,6 +1554,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_133
       rect:
         serializedVersion: 2
@@ -1251,6 +1564,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_134
       rect:
         serializedVersion: 2
@@ -1260,6 +1574,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_135
       rect:
         serializedVersion: 2
@@ -1269,6 +1584,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_136
       rect:
         serializedVersion: 2
@@ -1278,6 +1594,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_137
       rect:
         serializedVersion: 2
@@ -1287,6 +1604,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_138
       rect:
         serializedVersion: 2
@@ -1296,6 +1614,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_139
       rect:
         serializedVersion: 2
@@ -1305,6 +1624,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_140
       rect:
         serializedVersion: 2
@@ -1314,6 +1634,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_141
       rect:
         serializedVersion: 2
@@ -1323,6 +1644,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_142
       rect:
         serializedVersion: 2
@@ -1332,6 +1654,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_143
       rect:
         serializedVersion: 2
@@ -1341,6 +1664,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_144
       rect:
         serializedVersion: 2
@@ -1350,6 +1674,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_145
       rect:
         serializedVersion: 2
@@ -1359,6 +1684,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_146
       rect:
         serializedVersion: 2
@@ -1368,6 +1694,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_147
       rect:
         serializedVersion: 2
@@ -1377,6 +1704,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_148
       rect:
         serializedVersion: 2
@@ -1386,6 +1714,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_149
       rect:
         serializedVersion: 2
@@ -1395,6 +1724,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_150
       rect:
         serializedVersion: 2
@@ -1404,6 +1734,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_151
       rect:
         serializedVersion: 2
@@ -1413,6 +1744,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_152
       rect:
         serializedVersion: 2
@@ -1422,6 +1754,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_153
       rect:
         serializedVersion: 2
@@ -1431,6 +1764,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_154
       rect:
         serializedVersion: 2
@@ -1440,6 +1774,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_155
       rect:
         serializedVersion: 2
@@ -1449,6 +1784,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_156
       rect:
         serializedVersion: 2
@@ -1458,6 +1794,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_157
       rect:
         serializedVersion: 2
@@ -1467,6 +1804,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_158
       rect:
         serializedVersion: 2
@@ -1476,6 +1814,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_159
       rect:
         serializedVersion: 2
@@ -1485,6 +1824,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_160
       rect:
         serializedVersion: 2
@@ -1494,6 +1834,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_161
       rect:
         serializedVersion: 2
@@ -1503,6 +1844,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_162
       rect:
         serializedVersion: 2
@@ -1512,6 +1854,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_163
       rect:
         serializedVersion: 2
@@ -1521,6 +1864,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_164
       rect:
         serializedVersion: 2
@@ -1530,6 +1874,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_165
       rect:
         serializedVersion: 2
@@ -1539,6 +1884,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_166
       rect:
         serializedVersion: 2
@@ -1548,6 +1894,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_167
       rect:
         serializedVersion: 2
@@ -1557,6 +1904,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_168
       rect:
         serializedVersion: 2
@@ -1566,6 +1914,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_169
       rect:
         serializedVersion: 2
@@ -1575,6 +1924,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_170
       rect:
         serializedVersion: 2
@@ -1584,6 +1934,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_171
       rect:
         serializedVersion: 2
@@ -1593,6 +1944,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_172
       rect:
         serializedVersion: 2
@@ -1602,6 +1954,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_173
       rect:
         serializedVersion: 2
@@ -1611,6 +1964,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_174
       rect:
         serializedVersion: 2
@@ -1620,6 +1974,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_175
       rect:
         serializedVersion: 2
@@ -1629,6 +1984,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_176
       rect:
         serializedVersion: 2
@@ -1638,6 +1994,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedLight_177
       rect:
         serializedVersion: 2
@@ -1647,5 +2004,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
