@@ -1,6 +1,185 @@
 fileFormatVersion: 2
 guid: b393fdeddbb8d0846b8233562ae7f029
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: RobedTan_0
+    21300002: RobedTan_1
+    21300004: RobedTan_2
+    21300006: RobedTan_3
+    21300008: RobedTan_4
+    21300010: RobedTan_5
+    21300012: RobedTan_6
+    21300014: RobedTan_7
+    21300016: RobedTan_8
+    21300018: RobedTan_9
+    21300020: RobedTan_10
+    21300022: RobedTan_11
+    21300024: RobedTan_12
+    21300026: RobedTan_13
+    21300028: RobedTan_14
+    21300030: RobedTan_15
+    21300032: RobedTan_16
+    21300034: RobedTan_17
+    21300036: RobedTan_18
+    21300038: RobedTan_19
+    21300040: RobedTan_20
+    21300042: RobedTan_21
+    21300044: RobedTan_22
+    21300046: RobedTan_23
+    21300048: RobedTan_24
+    21300050: RobedTan_25
+    21300052: RobedTan_26
+    21300054: RobedTan_27
+    21300056: RobedTan_28
+    21300058: RobedTan_29
+    21300060: RobedTan_30
+    21300062: RobedTan_31
+    21300064: RobedTan_32
+    21300066: RobedTan_33
+    21300068: RobedTan_34
+    21300070: RobedTan_35
+    21300072: RobedTan_36
+    21300074: RobedTan_37
+    21300076: RobedTan_38
+    21300078: RobedTan_39
+    21300080: RobedTan_40
+    21300082: RobedTan_41
+    21300084: RobedTan_42
+    21300086: RobedTan_43
+    21300088: RobedTan_44
+    21300090: RobedTan_45
+    21300092: RobedTan_46
+    21300094: RobedTan_47
+    21300096: RobedTan_48
+    21300098: RobedTan_49
+    21300100: RobedTan_50
+    21300102: RobedTan_51
+    21300104: RobedTan_52
+    21300106: RobedTan_53
+    21300108: RobedTan_54
+    21300110: RobedTan_55
+    21300112: RobedTan_56
+    21300114: RobedTan_57
+    21300116: RobedTan_58
+    21300118: RobedTan_59
+    21300120: RobedTan_60
+    21300122: RobedTan_61
+    21300124: RobedTan_62
+    21300126: RobedTan_63
+    21300128: RobedTan_64
+    21300130: RobedTan_65
+    21300132: RobedTan_66
+    21300134: RobedTan_67
+    21300136: RobedTan_68
+    21300138: RobedTan_69
+    21300140: RobedTan_70
+    21300142: RobedTan_71
+    21300144: RobedTan_72
+    21300146: RobedTan_73
+    21300148: RobedTan_74
+    21300150: RobedTan_75
+    21300152: RobedTan_76
+    21300154: RobedTan_77
+    21300156: RobedTan_78
+    21300158: RobedTan_79
+    21300160: RobedTan_80
+    21300162: RobedTan_81
+    21300164: RobedTan_82
+    21300166: RobedTan_83
+    21300168: RobedTan_84
+    21300170: RobedTan_85
+    21300172: RobedTan_86
+    21300174: RobedTan_87
+    21300176: RobedTan_88
+    21300178: RobedTan_89
+    21300180: RobedTan_90
+    21300182: RobedTan_91
+    21300184: RobedTan_92
+    21300186: RobedTan_93
+    21300188: RobedTan_94
+    21300190: RobedTan_95
+    21300192: RobedTan_96
+    21300194: RobedTan_97
+    21300196: RobedTan_98
+    21300198: RobedTan_99
+    21300200: RobedTan_100
+    21300202: RobedTan_101
+    21300204: RobedTan_102
+    21300206: RobedTan_103
+    21300208: RobedTan_104
+    21300210: RobedTan_105
+    21300212: RobedTan_106
+    21300214: RobedTan_107
+    21300216: RobedTan_108
+    21300218: RobedTan_109
+    21300220: RobedTan_110
+    21300222: RobedTan_111
+    21300224: RobedTan_112
+    21300226: RobedTan_113
+    21300228: RobedTan_114
+    21300230: RobedTan_115
+    21300232: RobedTan_116
+    21300234: RobedTan_117
+    21300236: RobedTan_118
+    21300238: RobedTan_119
+    21300240: RobedTan_120
+    21300242: RobedTan_121
+    21300244: RobedTan_122
+    21300246: RobedTan_123
+    21300248: RobedTan_124
+    21300250: RobedTan_125
+    21300252: RobedTan_126
+    21300254: RobedTan_127
+    21300256: RobedTan_128
+    21300258: RobedTan_129
+    21300260: RobedTan_130
+    21300262: RobedTan_131
+    21300264: RobedTan_132
+    21300266: RobedTan_133
+    21300268: RobedTan_134
+    21300270: RobedTan_135
+    21300272: RobedTan_136
+    21300274: RobedTan_137
+    21300276: RobedTan_138
+    21300278: RobedTan_139
+    21300280: RobedTan_140
+    21300282: RobedTan_141
+    21300284: RobedTan_142
+    21300286: RobedTan_143
+    21300288: RobedTan_144
+    21300290: RobedTan_145
+    21300292: RobedTan_146
+    21300294: RobedTan_147
+    21300296: RobedTan_148
+    21300298: RobedTan_149
+    21300300: RobedTan_150
+    21300302: RobedTan_151
+    21300304: RobedTan_152
+    21300306: RobedTan_153
+    21300308: RobedTan_154
+    21300310: RobedTan_155
+    21300312: RobedTan_156
+    21300314: RobedTan_157
+    21300316: RobedTan_158
+    21300318: RobedTan_159
+    21300320: RobedTan_160
+    21300322: RobedTan_161
+    21300324: RobedTan_162
+    21300326: RobedTan_163
+    21300328: RobedTan_164
+    21300330: RobedTan_165
+    21300332: RobedTan_166
+    21300334: RobedTan_167
+    21300336: RobedTan_168
+    21300338: RobedTan_169
+    21300340: RobedTan_170
+    21300342: RobedTan_171
+    21300344: RobedTan_172
+    21300346: RobedTan_173
+    21300348: RobedTan_174
+    21300350: RobedTan_175
+    21300352: RobedTan_176
+    21300354: RobedTan_177
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +214,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +234,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_1
       rect:
         serializedVersion: 2
@@ -63,6 +244,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_2
       rect:
         serializedVersion: 2
@@ -72,6 +254,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_3
       rect:
         serializedVersion: 2
@@ -81,6 +264,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_4
       rect:
         serializedVersion: 2
@@ -90,6 +274,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_5
       rect:
         serializedVersion: 2
@@ -99,6 +284,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_6
       rect:
         serializedVersion: 2
@@ -108,6 +294,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_7
       rect:
         serializedVersion: 2
@@ -117,6 +304,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_8
       rect:
         serializedVersion: 2
@@ -126,6 +314,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_9
       rect:
         serializedVersion: 2
@@ -135,6 +324,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_10
       rect:
         serializedVersion: 2
@@ -144,6 +334,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_11
       rect:
         serializedVersion: 2
@@ -153,6 +344,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_12
       rect:
         serializedVersion: 2
@@ -162,6 +354,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_13
       rect:
         serializedVersion: 2
@@ -171,6 +364,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_14
       rect:
         serializedVersion: 2
@@ -180,6 +374,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_15
       rect:
         serializedVersion: 2
@@ -189,6 +384,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_16
       rect:
         serializedVersion: 2
@@ -198,6 +394,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_17
       rect:
         serializedVersion: 2
@@ -207,6 +404,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_18
       rect:
         serializedVersion: 2
@@ -216,6 +414,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_19
       rect:
         serializedVersion: 2
@@ -225,6 +424,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_20
       rect:
         serializedVersion: 2
@@ -234,6 +434,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_21
       rect:
         serializedVersion: 2
@@ -243,6 +444,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_22
       rect:
         serializedVersion: 2
@@ -252,6 +454,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_23
       rect:
         serializedVersion: 2
@@ -261,6 +464,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_24
       rect:
         serializedVersion: 2
@@ -270,6 +474,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_25
       rect:
         serializedVersion: 2
@@ -279,6 +484,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_26
       rect:
         serializedVersion: 2
@@ -288,6 +494,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_27
       rect:
         serializedVersion: 2
@@ -297,6 +504,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_28
       rect:
         serializedVersion: 2
@@ -306,6 +514,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_29
       rect:
         serializedVersion: 2
@@ -315,6 +524,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_30
       rect:
         serializedVersion: 2
@@ -324,6 +534,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_31
       rect:
         serializedVersion: 2
@@ -333,6 +544,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_32
       rect:
         serializedVersion: 2
@@ -342,6 +554,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_33
       rect:
         serializedVersion: 2
@@ -351,6 +564,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_34
       rect:
         serializedVersion: 2
@@ -360,6 +574,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_35
       rect:
         serializedVersion: 2
@@ -369,6 +584,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_36
       rect:
         serializedVersion: 2
@@ -378,6 +594,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_37
       rect:
         serializedVersion: 2
@@ -387,6 +604,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_38
       rect:
         serializedVersion: 2
@@ -396,6 +614,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_39
       rect:
         serializedVersion: 2
@@ -405,6 +624,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_40
       rect:
         serializedVersion: 2
@@ -414,6 +634,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_41
       rect:
         serializedVersion: 2
@@ -423,6 +644,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_42
       rect:
         serializedVersion: 2
@@ -432,6 +654,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_43
       rect:
         serializedVersion: 2
@@ -441,6 +664,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_44
       rect:
         serializedVersion: 2
@@ -450,6 +674,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_45
       rect:
         serializedVersion: 2
@@ -459,6 +684,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_46
       rect:
         serializedVersion: 2
@@ -468,6 +694,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_47
       rect:
         serializedVersion: 2
@@ -477,6 +704,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_48
       rect:
         serializedVersion: 2
@@ -486,6 +714,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_49
       rect:
         serializedVersion: 2
@@ -495,6 +724,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_50
       rect:
         serializedVersion: 2
@@ -504,6 +734,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_51
       rect:
         serializedVersion: 2
@@ -513,6 +744,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_52
       rect:
         serializedVersion: 2
@@ -522,6 +754,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_53
       rect:
         serializedVersion: 2
@@ -531,6 +764,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_54
       rect:
         serializedVersion: 2
@@ -540,6 +774,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_55
       rect:
         serializedVersion: 2
@@ -549,6 +784,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_56
       rect:
         serializedVersion: 2
@@ -558,6 +794,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_57
       rect:
         serializedVersion: 2
@@ -567,6 +804,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_58
       rect:
         serializedVersion: 2
@@ -576,6 +814,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_59
       rect:
         serializedVersion: 2
@@ -585,6 +824,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_60
       rect:
         serializedVersion: 2
@@ -594,6 +834,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_61
       rect:
         serializedVersion: 2
@@ -603,6 +844,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_62
       rect:
         serializedVersion: 2
@@ -612,6 +854,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_63
       rect:
         serializedVersion: 2
@@ -621,6 +864,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_64
       rect:
         serializedVersion: 2
@@ -630,6 +874,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_65
       rect:
         serializedVersion: 2
@@ -639,6 +884,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_66
       rect:
         serializedVersion: 2
@@ -648,6 +894,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_67
       rect:
         serializedVersion: 2
@@ -657,6 +904,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_68
       rect:
         serializedVersion: 2
@@ -666,6 +914,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_69
       rect:
         serializedVersion: 2
@@ -675,6 +924,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_70
       rect:
         serializedVersion: 2
@@ -684,6 +934,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_71
       rect:
         serializedVersion: 2
@@ -693,6 +944,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_72
       rect:
         serializedVersion: 2
@@ -702,6 +954,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_73
       rect:
         serializedVersion: 2
@@ -711,6 +964,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_74
       rect:
         serializedVersion: 2
@@ -720,6 +974,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_75
       rect:
         serializedVersion: 2
@@ -729,6 +984,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_76
       rect:
         serializedVersion: 2
@@ -738,6 +994,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_77
       rect:
         serializedVersion: 2
@@ -747,6 +1004,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_78
       rect:
         serializedVersion: 2
@@ -756,6 +1014,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_79
       rect:
         serializedVersion: 2
@@ -765,6 +1024,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_80
       rect:
         serializedVersion: 2
@@ -774,6 +1034,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_81
       rect:
         serializedVersion: 2
@@ -783,6 +1044,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_82
       rect:
         serializedVersion: 2
@@ -792,6 +1054,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_83
       rect:
         serializedVersion: 2
@@ -801,6 +1064,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_84
       rect:
         serializedVersion: 2
@@ -810,6 +1074,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_85
       rect:
         serializedVersion: 2
@@ -819,6 +1084,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_86
       rect:
         serializedVersion: 2
@@ -828,6 +1094,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_87
       rect:
         serializedVersion: 2
@@ -837,6 +1104,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_88
       rect:
         serializedVersion: 2
@@ -846,6 +1114,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_89
       rect:
         serializedVersion: 2
@@ -855,6 +1124,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_90
       rect:
         serializedVersion: 2
@@ -864,6 +1134,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_91
       rect:
         serializedVersion: 2
@@ -873,6 +1144,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_92
       rect:
         serializedVersion: 2
@@ -882,6 +1154,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_93
       rect:
         serializedVersion: 2
@@ -891,6 +1164,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_94
       rect:
         serializedVersion: 2
@@ -900,6 +1174,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_95
       rect:
         serializedVersion: 2
@@ -909,6 +1184,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_96
       rect:
         serializedVersion: 2
@@ -918,6 +1194,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_97
       rect:
         serializedVersion: 2
@@ -927,6 +1204,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_98
       rect:
         serializedVersion: 2
@@ -936,6 +1214,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_99
       rect:
         serializedVersion: 2
@@ -945,6 +1224,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_100
       rect:
         serializedVersion: 2
@@ -954,6 +1234,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_101
       rect:
         serializedVersion: 2
@@ -963,6 +1244,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_102
       rect:
         serializedVersion: 2
@@ -972,6 +1254,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_103
       rect:
         serializedVersion: 2
@@ -981,6 +1264,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_104
       rect:
         serializedVersion: 2
@@ -990,6 +1274,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_105
       rect:
         serializedVersion: 2
@@ -999,6 +1284,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_106
       rect:
         serializedVersion: 2
@@ -1008,6 +1294,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_107
       rect:
         serializedVersion: 2
@@ -1017,6 +1304,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_108
       rect:
         serializedVersion: 2
@@ -1026,6 +1314,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_109
       rect:
         serializedVersion: 2
@@ -1035,6 +1324,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_110
       rect:
         serializedVersion: 2
@@ -1044,6 +1334,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_111
       rect:
         serializedVersion: 2
@@ -1053,6 +1344,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_112
       rect:
         serializedVersion: 2
@@ -1062,6 +1354,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_113
       rect:
         serializedVersion: 2
@@ -1071,6 +1364,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_114
       rect:
         serializedVersion: 2
@@ -1080,6 +1374,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_115
       rect:
         serializedVersion: 2
@@ -1089,6 +1384,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_116
       rect:
         serializedVersion: 2
@@ -1098,6 +1394,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_117
       rect:
         serializedVersion: 2
@@ -1107,6 +1404,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_118
       rect:
         serializedVersion: 2
@@ -1116,6 +1414,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_119
       rect:
         serializedVersion: 2
@@ -1125,6 +1424,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_120
       rect:
         serializedVersion: 2
@@ -1134,6 +1434,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_121
       rect:
         serializedVersion: 2
@@ -1143,6 +1444,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_122
       rect:
         serializedVersion: 2
@@ -1152,6 +1454,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_123
       rect:
         serializedVersion: 2
@@ -1161,6 +1464,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_124
       rect:
         serializedVersion: 2
@@ -1170,6 +1474,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_125
       rect:
         serializedVersion: 2
@@ -1179,6 +1484,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_126
       rect:
         serializedVersion: 2
@@ -1188,6 +1494,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_127
       rect:
         serializedVersion: 2
@@ -1197,6 +1504,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_128
       rect:
         serializedVersion: 2
@@ -1206,6 +1514,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_129
       rect:
         serializedVersion: 2
@@ -1215,6 +1524,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_130
       rect:
         serializedVersion: 2
@@ -1224,6 +1534,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_131
       rect:
         serializedVersion: 2
@@ -1233,6 +1544,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_132
       rect:
         serializedVersion: 2
@@ -1242,6 +1554,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_133
       rect:
         serializedVersion: 2
@@ -1251,6 +1564,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_134
       rect:
         serializedVersion: 2
@@ -1260,6 +1574,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_135
       rect:
         serializedVersion: 2
@@ -1269,6 +1584,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_136
       rect:
         serializedVersion: 2
@@ -1278,6 +1594,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_137
       rect:
         serializedVersion: 2
@@ -1287,6 +1604,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_138
       rect:
         serializedVersion: 2
@@ -1296,6 +1614,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_139
       rect:
         serializedVersion: 2
@@ -1305,6 +1624,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_140
       rect:
         serializedVersion: 2
@@ -1314,6 +1634,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_141
       rect:
         serializedVersion: 2
@@ -1323,6 +1644,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_142
       rect:
         serializedVersion: 2
@@ -1332,6 +1654,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_143
       rect:
         serializedVersion: 2
@@ -1341,6 +1664,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_144
       rect:
         serializedVersion: 2
@@ -1350,6 +1674,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_145
       rect:
         serializedVersion: 2
@@ -1359,6 +1684,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_146
       rect:
         serializedVersion: 2
@@ -1368,6 +1694,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_147
       rect:
         serializedVersion: 2
@@ -1377,6 +1704,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_148
       rect:
         serializedVersion: 2
@@ -1386,6 +1714,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_149
       rect:
         serializedVersion: 2
@@ -1395,6 +1724,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_150
       rect:
         serializedVersion: 2
@@ -1404,6 +1734,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_151
       rect:
         serializedVersion: 2
@@ -1413,6 +1744,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_152
       rect:
         serializedVersion: 2
@@ -1422,6 +1754,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_153
       rect:
         serializedVersion: 2
@@ -1431,6 +1764,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_154
       rect:
         serializedVersion: 2
@@ -1440,6 +1774,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_155
       rect:
         serializedVersion: 2
@@ -1449,6 +1784,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_156
       rect:
         serializedVersion: 2
@@ -1458,6 +1794,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_157
       rect:
         serializedVersion: 2
@@ -1467,6 +1804,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_158
       rect:
         serializedVersion: 2
@@ -1476,6 +1814,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_159
       rect:
         serializedVersion: 2
@@ -1485,6 +1824,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_160
       rect:
         serializedVersion: 2
@@ -1494,6 +1834,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_161
       rect:
         serializedVersion: 2
@@ -1503,6 +1844,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_162
       rect:
         serializedVersion: 2
@@ -1512,6 +1854,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_163
       rect:
         serializedVersion: 2
@@ -1521,6 +1864,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_164
       rect:
         serializedVersion: 2
@@ -1530,6 +1874,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_165
       rect:
         serializedVersion: 2
@@ -1539,6 +1884,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_166
       rect:
         serializedVersion: 2
@@ -1548,6 +1894,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_167
       rect:
         serializedVersion: 2
@@ -1557,6 +1904,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_168
       rect:
         serializedVersion: 2
@@ -1566,6 +1914,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_169
       rect:
         serializedVersion: 2
@@ -1575,6 +1924,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_170
       rect:
         serializedVersion: 2
@@ -1584,6 +1934,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_171
       rect:
         serializedVersion: 2
@@ -1593,6 +1944,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_172
       rect:
         serializedVersion: 2
@@ -1602,6 +1954,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_173
       rect:
         serializedVersion: 2
@@ -1611,6 +1964,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_174
       rect:
         serializedVersion: 2
@@ -1620,6 +1974,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_175
       rect:
         serializedVersion: 2
@@ -1629,6 +1984,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_176
       rect:
         serializedVersion: 2
@@ -1638,6 +1994,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: RobedTan_177
       rect:
         serializedVersion: 2
@@ -1647,5 +2004,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

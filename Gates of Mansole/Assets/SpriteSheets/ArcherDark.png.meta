@@ -1,6 +1,185 @@
 fileFormatVersion: 2
 guid: 8c63a91d5bda2d140a112bcfc0e49bc3
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: ArcherDark_0
+    21300002: ArcherDark_1
+    21300004: ArcherDark_2
+    21300006: ArcherDark_3
+    21300008: ArcherDark_4
+    21300010: ArcherDark_5
+    21300012: ArcherDark_6
+    21300014: ArcherDark_7
+    21300016: ArcherDark_8
+    21300018: ArcherDark_9
+    21300020: ArcherDark_10
+    21300022: ArcherDark_11
+    21300024: ArcherDark_12
+    21300026: ArcherDark_13
+    21300028: ArcherDark_14
+    21300030: ArcherDark_15
+    21300032: ArcherDark_16
+    21300034: ArcherDark_17
+    21300036: ArcherDark_18
+    21300038: ArcherDark_19
+    21300040: ArcherDark_20
+    21300042: ArcherDark_21
+    21300044: ArcherDark_22
+    21300046: ArcherDark_23
+    21300048: ArcherDark_24
+    21300050: ArcherDark_25
+    21300052: ArcherDark_26
+    21300054: ArcherDark_27
+    21300056: ArcherDark_28
+    21300058: ArcherDark_29
+    21300060: ArcherDark_30
+    21300062: ArcherDark_31
+    21300064: ArcherDark_32
+    21300066: ArcherDark_33
+    21300068: ArcherDark_34
+    21300070: ArcherDark_35
+    21300072: ArcherDark_36
+    21300074: ArcherDark_37
+    21300076: ArcherDark_38
+    21300078: ArcherDark_39
+    21300080: ArcherDark_40
+    21300082: ArcherDark_41
+    21300084: ArcherDark_42
+    21300086: ArcherDark_43
+    21300088: ArcherDark_44
+    21300090: ArcherDark_45
+    21300092: ArcherDark_46
+    21300094: ArcherDark_47
+    21300096: ArcherDark_48
+    21300098: ArcherDark_49
+    21300100: ArcherDark_50
+    21300102: ArcherDark_51
+    21300104: ArcherDark_52
+    21300106: ArcherDark_53
+    21300108: ArcherDark_54
+    21300110: ArcherDark_55
+    21300112: ArcherDark_56
+    21300114: ArcherDark_57
+    21300116: ArcherDark_58
+    21300118: ArcherDark_59
+    21300120: ArcherDark_60
+    21300122: ArcherDark_61
+    21300124: ArcherDark_62
+    21300126: ArcherDark_63
+    21300128: ArcherDark_64
+    21300130: ArcherDark_65
+    21300132: ArcherDark_66
+    21300134: ArcherDark_67
+    21300136: ArcherDark_68
+    21300138: ArcherDark_69
+    21300140: ArcherDark_70
+    21300142: ArcherDark_71
+    21300144: ArcherDark_72
+    21300146: ArcherDark_73
+    21300148: ArcherDark_74
+    21300150: ArcherDark_75
+    21300152: ArcherDark_76
+    21300154: ArcherDark_77
+    21300156: ArcherDark_78
+    21300158: ArcherDark_79
+    21300160: ArcherDark_80
+    21300162: ArcherDark_81
+    21300164: ArcherDark_82
+    21300166: ArcherDark_83
+    21300168: ArcherDark_84
+    21300170: ArcherDark_85
+    21300172: ArcherDark_86
+    21300174: ArcherDark_87
+    21300176: ArcherDark_88
+    21300178: ArcherDark_89
+    21300180: ArcherDark_90
+    21300182: ArcherDark_91
+    21300184: ArcherDark_92
+    21300186: ArcherDark_93
+    21300188: ArcherDark_94
+    21300190: ArcherDark_95
+    21300192: ArcherDark_96
+    21300194: ArcherDark_97
+    21300196: ArcherDark_98
+    21300198: ArcherDark_99
+    21300200: ArcherDark_100
+    21300202: ArcherDark_101
+    21300204: ArcherDark_102
+    21300206: ArcherDark_103
+    21300208: ArcherDark_104
+    21300210: ArcherDark_105
+    21300212: ArcherDark_106
+    21300214: ArcherDark_107
+    21300216: ArcherDark_108
+    21300218: ArcherDark_109
+    21300220: ArcherDark_110
+    21300222: ArcherDark_111
+    21300224: ArcherDark_112
+    21300226: ArcherDark_113
+    21300228: ArcherDark_114
+    21300230: ArcherDark_115
+    21300232: ArcherDark_116
+    21300234: ArcherDark_117
+    21300236: ArcherDark_118
+    21300238: ArcherDark_119
+    21300240: ArcherDark_120
+    21300242: ArcherDark_121
+    21300244: ArcherDark_122
+    21300246: ArcherDark_123
+    21300248: ArcherDark_124
+    21300250: ArcherDark_125
+    21300252: ArcherDark_126
+    21300254: ArcherDark_127
+    21300256: ArcherDark_128
+    21300258: ArcherDark_129
+    21300260: ArcherDark_130
+    21300262: ArcherDark_131
+    21300264: ArcherDark_132
+    21300266: ArcherDark_133
+    21300268: ArcherDark_134
+    21300270: ArcherDark_135
+    21300272: ArcherDark_136
+    21300274: ArcherDark_137
+    21300276: ArcherDark_138
+    21300278: ArcherDark_139
+    21300280: ArcherDark_140
+    21300282: ArcherDark_141
+    21300284: ArcherDark_142
+    21300286: ArcherDark_143
+    21300288: ArcherDark_144
+    21300290: ArcherDark_145
+    21300292: ArcherDark_146
+    21300294: ArcherDark_147
+    21300296: ArcherDark_148
+    21300298: ArcherDark_149
+    21300300: ArcherDark_150
+    21300302: ArcherDark_151
+    21300304: ArcherDark_152
+    21300306: ArcherDark_153
+    21300308: ArcherDark_154
+    21300310: ArcherDark_155
+    21300312: ArcherDark_156
+    21300314: ArcherDark_157
+    21300316: ArcherDark_158
+    21300318: ArcherDark_159
+    21300320: ArcherDark_160
+    21300322: ArcherDark_161
+    21300324: ArcherDark_162
+    21300326: ArcherDark_163
+    21300328: ArcherDark_164
+    21300330: ArcherDark_165
+    21300332: ArcherDark_166
+    21300334: ArcherDark_167
+    21300336: ArcherDark_168
+    21300338: ArcherDark_169
+    21300340: ArcherDark_170
+    21300342: ArcherDark_171
+    21300344: ArcherDark_172
+    21300346: ArcherDark_173
+    21300348: ArcherDark_174
+    21300350: ArcherDark_175
+    21300352: ArcherDark_176
+    21300354: ArcherDark_177
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +214,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +234,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_1
       rect:
         serializedVersion: 2
@@ -63,6 +244,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_2
       rect:
         serializedVersion: 2
@@ -72,6 +254,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_3
       rect:
         serializedVersion: 2
@@ -81,6 +264,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_4
       rect:
         serializedVersion: 2
@@ -90,6 +274,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_5
       rect:
         serializedVersion: 2
@@ -99,6 +284,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_6
       rect:
         serializedVersion: 2
@@ -108,6 +294,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_7
       rect:
         serializedVersion: 2
@@ -117,6 +304,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_8
       rect:
         serializedVersion: 2
@@ -126,6 +314,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_9
       rect:
         serializedVersion: 2
@@ -135,6 +324,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_10
       rect:
         serializedVersion: 2
@@ -144,6 +334,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_11
       rect:
         serializedVersion: 2
@@ -153,6 +344,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_12
       rect:
         serializedVersion: 2
@@ -162,6 +354,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_13
       rect:
         serializedVersion: 2
@@ -171,6 +364,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_14
       rect:
         serializedVersion: 2
@@ -180,6 +374,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_15
       rect:
         serializedVersion: 2
@@ -189,6 +384,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_16
       rect:
         serializedVersion: 2
@@ -198,6 +394,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_17
       rect:
         serializedVersion: 2
@@ -207,6 +404,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_18
       rect:
         serializedVersion: 2
@@ -216,6 +414,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_19
       rect:
         serializedVersion: 2
@@ -225,6 +424,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_20
       rect:
         serializedVersion: 2
@@ -234,6 +434,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_21
       rect:
         serializedVersion: 2
@@ -243,6 +444,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_22
       rect:
         serializedVersion: 2
@@ -252,6 +454,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_23
       rect:
         serializedVersion: 2
@@ -261,6 +464,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_24
       rect:
         serializedVersion: 2
@@ -270,6 +474,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_25
       rect:
         serializedVersion: 2
@@ -279,6 +484,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_26
       rect:
         serializedVersion: 2
@@ -288,6 +494,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_27
       rect:
         serializedVersion: 2
@@ -297,6 +504,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_28
       rect:
         serializedVersion: 2
@@ -306,6 +514,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_29
       rect:
         serializedVersion: 2
@@ -315,6 +524,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_30
       rect:
         serializedVersion: 2
@@ -324,6 +534,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_31
       rect:
         serializedVersion: 2
@@ -333,6 +544,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_32
       rect:
         serializedVersion: 2
@@ -342,6 +554,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_33
       rect:
         serializedVersion: 2
@@ -351,6 +564,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_34
       rect:
         serializedVersion: 2
@@ -360,6 +574,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_35
       rect:
         serializedVersion: 2
@@ -369,6 +584,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_36
       rect:
         serializedVersion: 2
@@ -378,6 +594,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_37
       rect:
         serializedVersion: 2
@@ -387,6 +604,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_38
       rect:
         serializedVersion: 2
@@ -396,6 +614,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_39
       rect:
         serializedVersion: 2
@@ -405,6 +624,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_40
       rect:
         serializedVersion: 2
@@ -414,6 +634,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_41
       rect:
         serializedVersion: 2
@@ -423,6 +644,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_42
       rect:
         serializedVersion: 2
@@ -432,6 +654,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_43
       rect:
         serializedVersion: 2
@@ -441,6 +664,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_44
       rect:
         serializedVersion: 2
@@ -450,6 +674,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_45
       rect:
         serializedVersion: 2
@@ -459,6 +684,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_46
       rect:
         serializedVersion: 2
@@ -468,6 +694,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_47
       rect:
         serializedVersion: 2
@@ -477,6 +704,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_48
       rect:
         serializedVersion: 2
@@ -486,6 +714,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_49
       rect:
         serializedVersion: 2
@@ -495,6 +724,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_50
       rect:
         serializedVersion: 2
@@ -504,6 +734,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_51
       rect:
         serializedVersion: 2
@@ -513,6 +744,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_52
       rect:
         serializedVersion: 2
@@ -522,6 +754,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_53
       rect:
         serializedVersion: 2
@@ -531,6 +764,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_54
       rect:
         serializedVersion: 2
@@ -540,6 +774,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_55
       rect:
         serializedVersion: 2
@@ -549,6 +784,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_56
       rect:
         serializedVersion: 2
@@ -558,6 +794,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_57
       rect:
         serializedVersion: 2
@@ -567,6 +804,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_58
       rect:
         serializedVersion: 2
@@ -576,6 +814,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_59
       rect:
         serializedVersion: 2
@@ -585,6 +824,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_60
       rect:
         serializedVersion: 2
@@ -594,6 +834,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_61
       rect:
         serializedVersion: 2
@@ -603,6 +844,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_62
       rect:
         serializedVersion: 2
@@ -612,6 +854,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_63
       rect:
         serializedVersion: 2
@@ -621,6 +864,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_64
       rect:
         serializedVersion: 2
@@ -630,6 +874,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_65
       rect:
         serializedVersion: 2
@@ -639,6 +884,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_66
       rect:
         serializedVersion: 2
@@ -648,6 +894,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_67
       rect:
         serializedVersion: 2
@@ -657,6 +904,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_68
       rect:
         serializedVersion: 2
@@ -666,6 +914,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_69
       rect:
         serializedVersion: 2
@@ -675,6 +924,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_70
       rect:
         serializedVersion: 2
@@ -684,6 +934,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_71
       rect:
         serializedVersion: 2
@@ -693,6 +944,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_72
       rect:
         serializedVersion: 2
@@ -702,6 +954,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_73
       rect:
         serializedVersion: 2
@@ -711,6 +964,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_74
       rect:
         serializedVersion: 2
@@ -720,6 +974,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_75
       rect:
         serializedVersion: 2
@@ -729,6 +984,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_76
       rect:
         serializedVersion: 2
@@ -738,6 +994,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_77
       rect:
         serializedVersion: 2
@@ -747,6 +1004,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_78
       rect:
         serializedVersion: 2
@@ -756,6 +1014,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_79
       rect:
         serializedVersion: 2
@@ -765,6 +1024,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_80
       rect:
         serializedVersion: 2
@@ -774,6 +1034,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_81
       rect:
         serializedVersion: 2
@@ -783,6 +1044,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_82
       rect:
         serializedVersion: 2
@@ -792,6 +1054,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_83
       rect:
         serializedVersion: 2
@@ -801,6 +1064,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_84
       rect:
         serializedVersion: 2
@@ -810,6 +1074,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_85
       rect:
         serializedVersion: 2
@@ -819,6 +1084,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_86
       rect:
         serializedVersion: 2
@@ -828,6 +1094,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_87
       rect:
         serializedVersion: 2
@@ -837,6 +1104,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_88
       rect:
         serializedVersion: 2
@@ -846,6 +1114,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_89
       rect:
         serializedVersion: 2
@@ -855,6 +1124,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_90
       rect:
         serializedVersion: 2
@@ -864,6 +1134,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_91
       rect:
         serializedVersion: 2
@@ -873,6 +1144,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_92
       rect:
         serializedVersion: 2
@@ -882,6 +1154,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_93
       rect:
         serializedVersion: 2
@@ -891,6 +1164,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_94
       rect:
         serializedVersion: 2
@@ -900,6 +1174,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_95
       rect:
         serializedVersion: 2
@@ -909,6 +1184,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_96
       rect:
         serializedVersion: 2
@@ -918,6 +1194,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_97
       rect:
         serializedVersion: 2
@@ -927,6 +1204,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_98
       rect:
         serializedVersion: 2
@@ -936,6 +1214,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_99
       rect:
         serializedVersion: 2
@@ -945,6 +1224,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_100
       rect:
         serializedVersion: 2
@@ -954,6 +1234,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_101
       rect:
         serializedVersion: 2
@@ -963,6 +1244,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_102
       rect:
         serializedVersion: 2
@@ -972,6 +1254,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_103
       rect:
         serializedVersion: 2
@@ -981,6 +1264,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_104
       rect:
         serializedVersion: 2
@@ -990,6 +1274,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_105
       rect:
         serializedVersion: 2
@@ -999,6 +1284,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_106
       rect:
         serializedVersion: 2
@@ -1008,6 +1294,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_107
       rect:
         serializedVersion: 2
@@ -1017,6 +1304,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_108
       rect:
         serializedVersion: 2
@@ -1026,6 +1314,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_109
       rect:
         serializedVersion: 2
@@ -1035,6 +1324,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_110
       rect:
         serializedVersion: 2
@@ -1044,6 +1334,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_111
       rect:
         serializedVersion: 2
@@ -1053,6 +1344,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_112
       rect:
         serializedVersion: 2
@@ -1062,6 +1354,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_113
       rect:
         serializedVersion: 2
@@ -1071,6 +1364,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_114
       rect:
         serializedVersion: 2
@@ -1080,6 +1374,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_115
       rect:
         serializedVersion: 2
@@ -1089,6 +1384,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_116
       rect:
         serializedVersion: 2
@@ -1098,6 +1394,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_117
       rect:
         serializedVersion: 2
@@ -1107,6 +1404,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_118
       rect:
         serializedVersion: 2
@@ -1116,6 +1414,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_119
       rect:
         serializedVersion: 2
@@ -1125,6 +1424,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_120
       rect:
         serializedVersion: 2
@@ -1134,6 +1434,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_121
       rect:
         serializedVersion: 2
@@ -1143,6 +1444,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_122
       rect:
         serializedVersion: 2
@@ -1152,6 +1454,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_123
       rect:
         serializedVersion: 2
@@ -1161,6 +1464,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_124
       rect:
         serializedVersion: 2
@@ -1170,6 +1474,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_125
       rect:
         serializedVersion: 2
@@ -1179,6 +1484,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_126
       rect:
         serializedVersion: 2
@@ -1188,6 +1494,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_127
       rect:
         serializedVersion: 2
@@ -1197,6 +1504,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_128
       rect:
         serializedVersion: 2
@@ -1206,6 +1514,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_129
       rect:
         serializedVersion: 2
@@ -1215,6 +1524,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_130
       rect:
         serializedVersion: 2
@@ -1224,6 +1534,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_131
       rect:
         serializedVersion: 2
@@ -1233,6 +1544,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_132
       rect:
         serializedVersion: 2
@@ -1242,6 +1554,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_133
       rect:
         serializedVersion: 2
@@ -1251,6 +1564,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_134
       rect:
         serializedVersion: 2
@@ -1260,6 +1574,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_135
       rect:
         serializedVersion: 2
@@ -1269,6 +1584,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_136
       rect:
         serializedVersion: 2
@@ -1278,6 +1594,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_137
       rect:
         serializedVersion: 2
@@ -1287,6 +1604,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_138
       rect:
         serializedVersion: 2
@@ -1296,6 +1614,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_139
       rect:
         serializedVersion: 2
@@ -1305,6 +1624,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_140
       rect:
         serializedVersion: 2
@@ -1314,6 +1634,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_141
       rect:
         serializedVersion: 2
@@ -1323,6 +1644,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_142
       rect:
         serializedVersion: 2
@@ -1332,6 +1654,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_143
       rect:
         serializedVersion: 2
@@ -1341,6 +1664,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_144
       rect:
         serializedVersion: 2
@@ -1350,6 +1674,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_145
       rect:
         serializedVersion: 2
@@ -1359,6 +1684,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_146
       rect:
         serializedVersion: 2
@@ -1368,6 +1694,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_147
       rect:
         serializedVersion: 2
@@ -1377,6 +1704,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_148
       rect:
         serializedVersion: 2
@@ -1386,6 +1714,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_149
       rect:
         serializedVersion: 2
@@ -1395,6 +1724,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_150
       rect:
         serializedVersion: 2
@@ -1404,6 +1734,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_151
       rect:
         serializedVersion: 2
@@ -1413,6 +1744,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_152
       rect:
         serializedVersion: 2
@@ -1422,6 +1754,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_153
       rect:
         serializedVersion: 2
@@ -1431,6 +1764,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_154
       rect:
         serializedVersion: 2
@@ -1440,6 +1774,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_155
       rect:
         serializedVersion: 2
@@ -1449,6 +1784,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_156
       rect:
         serializedVersion: 2
@@ -1458,6 +1794,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_157
       rect:
         serializedVersion: 2
@@ -1467,6 +1804,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_158
       rect:
         serializedVersion: 2
@@ -1476,6 +1814,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_159
       rect:
         serializedVersion: 2
@@ -1485,6 +1824,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_160
       rect:
         serializedVersion: 2
@@ -1494,6 +1834,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_161
       rect:
         serializedVersion: 2
@@ -1503,6 +1844,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_162
       rect:
         serializedVersion: 2
@@ -1512,6 +1854,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_163
       rect:
         serializedVersion: 2
@@ -1521,6 +1864,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_164
       rect:
         serializedVersion: 2
@@ -1530,6 +1874,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_165
       rect:
         serializedVersion: 2
@@ -1539,6 +1884,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_166
       rect:
         serializedVersion: 2
@@ -1548,6 +1894,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_167
       rect:
         serializedVersion: 2
@@ -1557,6 +1904,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_168
       rect:
         serializedVersion: 2
@@ -1566,6 +1914,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_169
       rect:
         serializedVersion: 2
@@ -1575,6 +1924,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_170
       rect:
         serializedVersion: 2
@@ -1584,6 +1934,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_171
       rect:
         serializedVersion: 2
@@ -1593,6 +1944,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_172
       rect:
         serializedVersion: 2
@@ -1602,6 +1954,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_173
       rect:
         serializedVersion: 2
@@ -1611,6 +1964,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_174
       rect:
         serializedVersion: 2
@@ -1620,6 +1974,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_175
       rect:
         serializedVersion: 2
@@ -1629,6 +1984,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_176
       rect:
         serializedVersion: 2
@@ -1638,6 +1994,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherDark_177
       rect:
         serializedVersion: 2
@@ -1647,5 +2004,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

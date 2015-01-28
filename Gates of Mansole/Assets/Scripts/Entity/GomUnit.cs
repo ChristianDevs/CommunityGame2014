@@ -51,6 +51,10 @@ public class GomUnit : GomObject {
     private float moveXScale;
 
 	private bool paused;
+<<<<<<< HEAD
+	private float invincibleEndTime;
+=======
+>>>>>>> origin/master
 
 	public enum _Type {
 		kBow = 0,
@@ -85,6 +89,10 @@ public class GomUnit : GomObject {
 
     void Damage(int amt) {
 
+		if (invincibleEndTime > Time.time) {
+			return;
+		}
+
         health -= amt;
         if (health <= 0) {
             health = 0;
@@ -93,7 +101,11 @@ public class GomUnit : GomObject {
             if (attacker != null) {
                 attacker.IncrementKills();
                 attacker.RewardShards(value);
-            }
+            } else if (faction == Faction.Enemy) {
+				Player.spiritShards += value;
+				Player.totalShards += value;
+				Debug.Log ("Player now has " + Player.spiritShards + " spirit shards and " + Player.totalShards + " total shards.");
+			}
         }
         updateHealthBars();
 	}
@@ -245,6 +257,10 @@ public class GomUnit : GomObject {
         NextState = State;
 		paused = false;
     }
+
+	void SetInvincible(float duration) {
+		invincibleEndTime = Time.time + duration;
+	}
 	
 	// Use this for initialization
 	void Start () {
@@ -265,6 +281,8 @@ public class GomUnit : GomObject {
         HpBarFill.transform.parent = transform;
 
         updateHealthBars();
+
+		invincibleEndTime = 0;
 	}
 	
 	void Update() {

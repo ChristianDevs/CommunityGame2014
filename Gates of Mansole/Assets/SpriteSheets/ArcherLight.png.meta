@@ -1,6 +1,185 @@
 fileFormatVersion: 2
 guid: 8501f41dd0144ed45982cdf1d741e69a
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: ArcherLight_0
+    21300002: ArcherLight_1
+    21300004: ArcherLight_2
+    21300006: ArcherLight_3
+    21300008: ArcherLight_4
+    21300010: ArcherLight_5
+    21300012: ArcherLight_6
+    21300014: ArcherLight_7
+    21300016: ArcherLight_8
+    21300018: ArcherLight_9
+    21300020: ArcherLight_10
+    21300022: ArcherLight_11
+    21300024: ArcherLight_12
+    21300026: ArcherLight_13
+    21300028: ArcherLight_14
+    21300030: ArcherLight_15
+    21300032: ArcherLight_16
+    21300034: ArcherLight_17
+    21300036: ArcherLight_18
+    21300038: ArcherLight_19
+    21300040: ArcherLight_20
+    21300042: ArcherLight_21
+    21300044: ArcherLight_22
+    21300046: ArcherLight_23
+    21300048: ArcherLight_24
+    21300050: ArcherLight_25
+    21300052: ArcherLight_26
+    21300054: ArcherLight_27
+    21300056: ArcherLight_28
+    21300058: ArcherLight_29
+    21300060: ArcherLight_30
+    21300062: ArcherLight_31
+    21300064: ArcherLight_32
+    21300066: ArcherLight_33
+    21300068: ArcherLight_34
+    21300070: ArcherLight_35
+    21300072: ArcherLight_36
+    21300074: ArcherLight_37
+    21300076: ArcherLight_38
+    21300078: ArcherLight_39
+    21300080: ArcherLight_40
+    21300082: ArcherLight_41
+    21300084: ArcherLight_42
+    21300086: ArcherLight_43
+    21300088: ArcherLight_44
+    21300090: ArcherLight_45
+    21300092: ArcherLight_46
+    21300094: ArcherLight_47
+    21300096: ArcherLight_48
+    21300098: ArcherLight_49
+    21300100: ArcherLight_50
+    21300102: ArcherLight_51
+    21300104: ArcherLight_52
+    21300106: ArcherLight_53
+    21300108: ArcherLight_54
+    21300110: ArcherLight_55
+    21300112: ArcherLight_56
+    21300114: ArcherLight_57
+    21300116: ArcherLight_58
+    21300118: ArcherLight_59
+    21300120: ArcherLight_60
+    21300122: ArcherLight_61
+    21300124: ArcherLight_62
+    21300126: ArcherLight_63
+    21300128: ArcherLight_64
+    21300130: ArcherLight_65
+    21300132: ArcherLight_66
+    21300134: ArcherLight_67
+    21300136: ArcherLight_68
+    21300138: ArcherLight_69
+    21300140: ArcherLight_70
+    21300142: ArcherLight_71
+    21300144: ArcherLight_72
+    21300146: ArcherLight_73
+    21300148: ArcherLight_74
+    21300150: ArcherLight_75
+    21300152: ArcherLight_76
+    21300154: ArcherLight_77
+    21300156: ArcherLight_78
+    21300158: ArcherLight_79
+    21300160: ArcherLight_80
+    21300162: ArcherLight_81
+    21300164: ArcherLight_82
+    21300166: ArcherLight_83
+    21300168: ArcherLight_84
+    21300170: ArcherLight_85
+    21300172: ArcherLight_86
+    21300174: ArcherLight_87
+    21300176: ArcherLight_88
+    21300178: ArcherLight_89
+    21300180: ArcherLight_90
+    21300182: ArcherLight_91
+    21300184: ArcherLight_92
+    21300186: ArcherLight_93
+    21300188: ArcherLight_94
+    21300190: ArcherLight_95
+    21300192: ArcherLight_96
+    21300194: ArcherLight_97
+    21300196: ArcherLight_98
+    21300198: ArcherLight_99
+    21300200: ArcherLight_100
+    21300202: ArcherLight_101
+    21300204: ArcherLight_102
+    21300206: ArcherLight_103
+    21300208: ArcherLight_104
+    21300210: ArcherLight_105
+    21300212: ArcherLight_106
+    21300214: ArcherLight_107
+    21300216: ArcherLight_108
+    21300218: ArcherLight_109
+    21300220: ArcherLight_110
+    21300222: ArcherLight_111
+    21300224: ArcherLight_112
+    21300226: ArcherLight_113
+    21300228: ArcherLight_114
+    21300230: ArcherLight_115
+    21300232: ArcherLight_116
+    21300234: ArcherLight_117
+    21300236: ArcherLight_118
+    21300238: ArcherLight_119
+    21300240: ArcherLight_120
+    21300242: ArcherLight_121
+    21300244: ArcherLight_122
+    21300246: ArcherLight_123
+    21300248: ArcherLight_124
+    21300250: ArcherLight_125
+    21300252: ArcherLight_126
+    21300254: ArcherLight_127
+    21300256: ArcherLight_128
+    21300258: ArcherLight_129
+    21300260: ArcherLight_130
+    21300262: ArcherLight_131
+    21300264: ArcherLight_132
+    21300266: ArcherLight_133
+    21300268: ArcherLight_134
+    21300270: ArcherLight_135
+    21300272: ArcherLight_136
+    21300274: ArcherLight_137
+    21300276: ArcherLight_138
+    21300278: ArcherLight_139
+    21300280: ArcherLight_140
+    21300282: ArcherLight_141
+    21300284: ArcherLight_142
+    21300286: ArcherLight_143
+    21300288: ArcherLight_144
+    21300290: ArcherLight_145
+    21300292: ArcherLight_146
+    21300294: ArcherLight_147
+    21300296: ArcherLight_148
+    21300298: ArcherLight_149
+    21300300: ArcherLight_150
+    21300302: ArcherLight_151
+    21300304: ArcherLight_152
+    21300306: ArcherLight_153
+    21300308: ArcherLight_154
+    21300310: ArcherLight_155
+    21300312: ArcherLight_156
+    21300314: ArcherLight_157
+    21300316: ArcherLight_158
+    21300318: ArcherLight_159
+    21300320: ArcherLight_160
+    21300322: ArcherLight_161
+    21300324: ArcherLight_162
+    21300326: ArcherLight_163
+    21300328: ArcherLight_164
+    21300330: ArcherLight_165
+    21300332: ArcherLight_166
+    21300334: ArcherLight_167
+    21300336: ArcherLight_168
+    21300338: ArcherLight_169
+    21300340: ArcherLight_170
+    21300342: ArcherLight_171
+    21300344: ArcherLight_172
+    21300346: ArcherLight_173
+    21300348: ArcherLight_174
+    21300350: ArcherLight_175
+    21300352: ArcherLight_176
+    21300354: ArcherLight_177
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +214,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +234,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_1
       rect:
         serializedVersion: 2
@@ -63,6 +244,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_2
       rect:
         serializedVersion: 2
@@ -72,6 +254,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_3
       rect:
         serializedVersion: 2
@@ -81,6 +264,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_4
       rect:
         serializedVersion: 2
@@ -90,6 +274,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_5
       rect:
         serializedVersion: 2
@@ -99,6 +284,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_6
       rect:
         serializedVersion: 2
@@ -108,6 +294,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_7
       rect:
         serializedVersion: 2
@@ -117,6 +304,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_8
       rect:
         serializedVersion: 2
@@ -126,6 +314,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_9
       rect:
         serializedVersion: 2
@@ -135,6 +324,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_10
       rect:
         serializedVersion: 2
@@ -144,6 +334,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_11
       rect:
         serializedVersion: 2
@@ -153,6 +344,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_12
       rect:
         serializedVersion: 2
@@ -162,6 +354,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_13
       rect:
         serializedVersion: 2
@@ -171,6 +364,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_14
       rect:
         serializedVersion: 2
@@ -180,6 +374,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_15
       rect:
         serializedVersion: 2
@@ -189,6 +384,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_16
       rect:
         serializedVersion: 2
@@ -198,6 +394,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_17
       rect:
         serializedVersion: 2
@@ -207,6 +404,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_18
       rect:
         serializedVersion: 2
@@ -216,6 +414,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_19
       rect:
         serializedVersion: 2
@@ -225,6 +424,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_20
       rect:
         serializedVersion: 2
@@ -234,6 +434,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_21
       rect:
         serializedVersion: 2
@@ -243,6 +444,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_22
       rect:
         serializedVersion: 2
@@ -252,6 +454,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_23
       rect:
         serializedVersion: 2
@@ -261,6 +464,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_24
       rect:
         serializedVersion: 2
@@ -270,6 +474,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_25
       rect:
         serializedVersion: 2
@@ -279,6 +484,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_26
       rect:
         serializedVersion: 2
@@ -288,6 +494,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_27
       rect:
         serializedVersion: 2
@@ -297,6 +504,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_28
       rect:
         serializedVersion: 2
@@ -306,6 +514,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_29
       rect:
         serializedVersion: 2
@@ -315,6 +524,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_30
       rect:
         serializedVersion: 2
@@ -324,6 +534,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_31
       rect:
         serializedVersion: 2
@@ -333,6 +544,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_32
       rect:
         serializedVersion: 2
@@ -342,6 +554,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_33
       rect:
         serializedVersion: 2
@@ -351,6 +564,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_34
       rect:
         serializedVersion: 2
@@ -360,6 +574,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_35
       rect:
         serializedVersion: 2
@@ -369,6 +584,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_36
       rect:
         serializedVersion: 2
@@ -378,6 +594,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_37
       rect:
         serializedVersion: 2
@@ -387,6 +604,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_38
       rect:
         serializedVersion: 2
@@ -396,6 +614,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_39
       rect:
         serializedVersion: 2
@@ -405,6 +624,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_40
       rect:
         serializedVersion: 2
@@ -414,6 +634,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_41
       rect:
         serializedVersion: 2
@@ -423,6 +644,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_42
       rect:
         serializedVersion: 2
@@ -432,6 +654,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_43
       rect:
         serializedVersion: 2
@@ -441,6 +664,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_44
       rect:
         serializedVersion: 2
@@ -450,6 +674,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_45
       rect:
         serializedVersion: 2
@@ -459,6 +684,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_46
       rect:
         serializedVersion: 2
@@ -468,6 +694,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_47
       rect:
         serializedVersion: 2
@@ -477,6 +704,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_48
       rect:
         serializedVersion: 2
@@ -486,6 +714,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_49
       rect:
         serializedVersion: 2
@@ -495,6 +724,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_50
       rect:
         serializedVersion: 2
@@ -504,6 +734,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_51
       rect:
         serializedVersion: 2
@@ -513,6 +744,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_52
       rect:
         serializedVersion: 2
@@ -522,6 +754,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_53
       rect:
         serializedVersion: 2
@@ -531,6 +764,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_54
       rect:
         serializedVersion: 2
@@ -540,6 +774,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_55
       rect:
         serializedVersion: 2
@@ -549,6 +784,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_56
       rect:
         serializedVersion: 2
@@ -558,6 +794,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_57
       rect:
         serializedVersion: 2
@@ -567,6 +804,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_58
       rect:
         serializedVersion: 2
@@ -576,6 +814,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_59
       rect:
         serializedVersion: 2
@@ -585,6 +824,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_60
       rect:
         serializedVersion: 2
@@ -594,6 +834,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_61
       rect:
         serializedVersion: 2
@@ -603,6 +844,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_62
       rect:
         serializedVersion: 2
@@ -612,6 +854,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_63
       rect:
         serializedVersion: 2
@@ -621,6 +864,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_64
       rect:
         serializedVersion: 2
@@ -630,6 +874,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_65
       rect:
         serializedVersion: 2
@@ -639,6 +884,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_66
       rect:
         serializedVersion: 2
@@ -648,6 +894,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_67
       rect:
         serializedVersion: 2
@@ -657,6 +904,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_68
       rect:
         serializedVersion: 2
@@ -666,6 +914,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_69
       rect:
         serializedVersion: 2
@@ -675,6 +924,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_70
       rect:
         serializedVersion: 2
@@ -684,6 +934,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_71
       rect:
         serializedVersion: 2
@@ -693,6 +944,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_72
       rect:
         serializedVersion: 2
@@ -702,6 +954,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_73
       rect:
         serializedVersion: 2
@@ -711,6 +964,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_74
       rect:
         serializedVersion: 2
@@ -720,6 +974,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_75
       rect:
         serializedVersion: 2
@@ -729,6 +984,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_76
       rect:
         serializedVersion: 2
@@ -738,6 +994,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_77
       rect:
         serializedVersion: 2
@@ -747,6 +1004,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_78
       rect:
         serializedVersion: 2
@@ -756,6 +1014,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_79
       rect:
         serializedVersion: 2
@@ -765,6 +1024,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_80
       rect:
         serializedVersion: 2
@@ -774,6 +1034,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_81
       rect:
         serializedVersion: 2
@@ -783,6 +1044,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_82
       rect:
         serializedVersion: 2
@@ -792,6 +1054,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_83
       rect:
         serializedVersion: 2
@@ -801,6 +1064,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_84
       rect:
         serializedVersion: 2
@@ -810,6 +1074,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_85
       rect:
         serializedVersion: 2
@@ -819,6 +1084,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_86
       rect:
         serializedVersion: 2
@@ -828,6 +1094,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_87
       rect:
         serializedVersion: 2
@@ -837,6 +1104,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_88
       rect:
         serializedVersion: 2
@@ -846,6 +1114,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_89
       rect:
         serializedVersion: 2
@@ -855,6 +1124,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_90
       rect:
         serializedVersion: 2
@@ -864,6 +1134,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_91
       rect:
         serializedVersion: 2
@@ -873,6 +1144,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_92
       rect:
         serializedVersion: 2
@@ -882,6 +1154,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_93
       rect:
         serializedVersion: 2
@@ -891,6 +1164,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_94
       rect:
         serializedVersion: 2
@@ -900,6 +1174,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_95
       rect:
         serializedVersion: 2
@@ -909,6 +1184,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_96
       rect:
         serializedVersion: 2
@@ -918,6 +1194,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_97
       rect:
         serializedVersion: 2
@@ -927,6 +1204,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_98
       rect:
         serializedVersion: 2
@@ -936,6 +1214,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_99
       rect:
         serializedVersion: 2
@@ -945,6 +1224,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_100
       rect:
         serializedVersion: 2
@@ -954,6 +1234,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_101
       rect:
         serializedVersion: 2
@@ -963,6 +1244,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_102
       rect:
         serializedVersion: 2
@@ -972,6 +1254,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_103
       rect:
         serializedVersion: 2
@@ -981,6 +1264,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_104
       rect:
         serializedVersion: 2
@@ -990,6 +1274,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_105
       rect:
         serializedVersion: 2
@@ -999,6 +1284,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_106
       rect:
         serializedVersion: 2
@@ -1008,6 +1294,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_107
       rect:
         serializedVersion: 2
@@ -1017,6 +1304,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_108
       rect:
         serializedVersion: 2
@@ -1026,6 +1314,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_109
       rect:
         serializedVersion: 2
@@ -1035,6 +1324,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_110
       rect:
         serializedVersion: 2
@@ -1044,6 +1334,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_111
       rect:
         serializedVersion: 2
@@ -1053,6 +1344,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_112
       rect:
         serializedVersion: 2
@@ -1062,6 +1354,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_113
       rect:
         serializedVersion: 2
@@ -1071,6 +1364,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_114
       rect:
         serializedVersion: 2
@@ -1080,6 +1374,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_115
       rect:
         serializedVersion: 2
@@ -1089,6 +1384,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_116
       rect:
         serializedVersion: 2
@@ -1098,6 +1394,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_117
       rect:
         serializedVersion: 2
@@ -1107,6 +1404,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_118
       rect:
         serializedVersion: 2
@@ -1116,6 +1414,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_119
       rect:
         serializedVersion: 2
@@ -1125,6 +1424,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_120
       rect:
         serializedVersion: 2
@@ -1134,6 +1434,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_121
       rect:
         serializedVersion: 2
@@ -1143,6 +1444,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_122
       rect:
         serializedVersion: 2
@@ -1152,6 +1454,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_123
       rect:
         serializedVersion: 2
@@ -1161,6 +1464,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_124
       rect:
         serializedVersion: 2
@@ -1170,6 +1474,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_125
       rect:
         serializedVersion: 2
@@ -1179,6 +1484,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_126
       rect:
         serializedVersion: 2
@@ -1188,6 +1494,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_127
       rect:
         serializedVersion: 2
@@ -1197,6 +1504,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_128
       rect:
         serializedVersion: 2
@@ -1206,6 +1514,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_129
       rect:
         serializedVersion: 2
@@ -1215,6 +1524,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_130
       rect:
         serializedVersion: 2
@@ -1224,6 +1534,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_131
       rect:
         serializedVersion: 2
@@ -1233,6 +1544,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_132
       rect:
         serializedVersion: 2
@@ -1242,6 +1554,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_133
       rect:
         serializedVersion: 2
@@ -1251,6 +1564,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_134
       rect:
         serializedVersion: 2
@@ -1260,6 +1574,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_135
       rect:
         serializedVersion: 2
@@ -1269,6 +1584,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_136
       rect:
         serializedVersion: 2
@@ -1278,6 +1594,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_137
       rect:
         serializedVersion: 2
@@ -1287,6 +1604,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_138
       rect:
         serializedVersion: 2
@@ -1296,6 +1614,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_139
       rect:
         serializedVersion: 2
@@ -1305,6 +1624,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_140
       rect:
         serializedVersion: 2
@@ -1314,6 +1634,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_141
       rect:
         serializedVersion: 2
@@ -1323,6 +1644,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_142
       rect:
         serializedVersion: 2
@@ -1332,6 +1654,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_143
       rect:
         serializedVersion: 2
@@ -1341,6 +1664,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_144
       rect:
         serializedVersion: 2
@@ -1350,6 +1674,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_145
       rect:
         serializedVersion: 2
@@ -1359,6 +1684,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_146
       rect:
         serializedVersion: 2
@@ -1368,6 +1694,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_147
       rect:
         serializedVersion: 2
@@ -1377,6 +1704,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_148
       rect:
         serializedVersion: 2
@@ -1386,6 +1714,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_149
       rect:
         serializedVersion: 2
@@ -1395,6 +1724,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_150
       rect:
         serializedVersion: 2
@@ -1404,6 +1734,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_151
       rect:
         serializedVersion: 2
@@ -1413,6 +1744,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_152
       rect:
         serializedVersion: 2
@@ -1422,6 +1754,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_153
       rect:
         serializedVersion: 2
@@ -1431,6 +1764,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_154
       rect:
         serializedVersion: 2
@@ -1440,6 +1774,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_155
       rect:
         serializedVersion: 2
@@ -1449,6 +1784,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_156
       rect:
         serializedVersion: 2
@@ -1458,6 +1794,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_157
       rect:
         serializedVersion: 2
@@ -1467,6 +1804,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_158
       rect:
         serializedVersion: 2
@@ -1476,6 +1814,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_159
       rect:
         serializedVersion: 2
@@ -1485,6 +1824,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_160
       rect:
         serializedVersion: 2
@@ -1494,6 +1834,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_161
       rect:
         serializedVersion: 2
@@ -1503,6 +1844,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_162
       rect:
         serializedVersion: 2
@@ -1512,6 +1854,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_163
       rect:
         serializedVersion: 2
@@ -1521,6 +1864,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_164
       rect:
         serializedVersion: 2
@@ -1530,6 +1874,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_165
       rect:
         serializedVersion: 2
@@ -1539,6 +1884,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_166
       rect:
         serializedVersion: 2
@@ -1548,6 +1894,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_167
       rect:
         serializedVersion: 2
@@ -1557,6 +1904,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_168
       rect:
         serializedVersion: 2
@@ -1566,6 +1914,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_169
       rect:
         serializedVersion: 2
@@ -1575,6 +1924,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_170
       rect:
         serializedVersion: 2
@@ -1584,6 +1934,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_171
       rect:
         serializedVersion: 2
@@ -1593,6 +1944,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_172
       rect:
         serializedVersion: 2
@@ -1602,6 +1954,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_173
       rect:
         serializedVersion: 2
@@ -1611,6 +1964,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_174
       rect:
         serializedVersion: 2
@@ -1620,6 +1974,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_175
       rect:
         serializedVersion: 2
@@ -1629,6 +1984,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_176
       rect:
         serializedVersion: 2
@@ -1638,6 +1994,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherLight_177
       rect:
         serializedVersion: 2
@@ -1647,5 +2004,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

@@ -1,6 +1,185 @@
 fileFormatVersion: 2
 guid: 6a8d3f482854d9f46ac4e0a51077c26b
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: ArcherTan_0
+    21300002: ArcherTan_1
+    21300004: ArcherTan_2
+    21300006: ArcherTan_3
+    21300008: ArcherTan_4
+    21300010: ArcherTan_5
+    21300012: ArcherTan_6
+    21300014: ArcherTan_7
+    21300016: ArcherTan_8
+    21300018: ArcherTan_9
+    21300020: ArcherTan_10
+    21300022: ArcherTan_11
+    21300024: ArcherTan_12
+    21300026: ArcherTan_13
+    21300028: ArcherTan_14
+    21300030: ArcherTan_15
+    21300032: ArcherTan_16
+    21300034: ArcherTan_17
+    21300036: ArcherTan_18
+    21300038: ArcherTan_19
+    21300040: ArcherTan_20
+    21300042: ArcherTan_21
+    21300044: ArcherTan_22
+    21300046: ArcherTan_23
+    21300048: ArcherTan_24
+    21300050: ArcherTan_25
+    21300052: ArcherTan_26
+    21300054: ArcherTan_27
+    21300056: ArcherTan_28
+    21300058: ArcherTan_29
+    21300060: ArcherTan_30
+    21300062: ArcherTan_31
+    21300064: ArcherTan_32
+    21300066: ArcherTan_33
+    21300068: ArcherTan_34
+    21300070: ArcherTan_35
+    21300072: ArcherTan_36
+    21300074: ArcherTan_37
+    21300076: ArcherTan_38
+    21300078: ArcherTan_39
+    21300080: ArcherTan_40
+    21300082: ArcherTan_41
+    21300084: ArcherTan_42
+    21300086: ArcherTan_43
+    21300088: ArcherTan_44
+    21300090: ArcherTan_45
+    21300092: ArcherTan_46
+    21300094: ArcherTan_47
+    21300096: ArcherTan_48
+    21300098: ArcherTan_49
+    21300100: ArcherTan_50
+    21300102: ArcherTan_51
+    21300104: ArcherTan_52
+    21300106: ArcherTan_53
+    21300108: ArcherTan_54
+    21300110: ArcherTan_55
+    21300112: ArcherTan_56
+    21300114: ArcherTan_57
+    21300116: ArcherTan_58
+    21300118: ArcherTan_59
+    21300120: ArcherTan_60
+    21300122: ArcherTan_61
+    21300124: ArcherTan_62
+    21300126: ArcherTan_63
+    21300128: ArcherTan_64
+    21300130: ArcherTan_65
+    21300132: ArcherTan_66
+    21300134: ArcherTan_67
+    21300136: ArcherTan_68
+    21300138: ArcherTan_69
+    21300140: ArcherTan_70
+    21300142: ArcherTan_71
+    21300144: ArcherTan_72
+    21300146: ArcherTan_73
+    21300148: ArcherTan_74
+    21300150: ArcherTan_75
+    21300152: ArcherTan_76
+    21300154: ArcherTan_77
+    21300156: ArcherTan_78
+    21300158: ArcherTan_79
+    21300160: ArcherTan_80
+    21300162: ArcherTan_81
+    21300164: ArcherTan_82
+    21300166: ArcherTan_83
+    21300168: ArcherTan_84
+    21300170: ArcherTan_85
+    21300172: ArcherTan_86
+    21300174: ArcherTan_87
+    21300176: ArcherTan_88
+    21300178: ArcherTan_89
+    21300180: ArcherTan_90
+    21300182: ArcherTan_91
+    21300184: ArcherTan_92
+    21300186: ArcherTan_93
+    21300188: ArcherTan_94
+    21300190: ArcherTan_95
+    21300192: ArcherTan_96
+    21300194: ArcherTan_97
+    21300196: ArcherTan_98
+    21300198: ArcherTan_99
+    21300200: ArcherTan_100
+    21300202: ArcherTan_101
+    21300204: ArcherTan_102
+    21300206: ArcherTan_103
+    21300208: ArcherTan_104
+    21300210: ArcherTan_105
+    21300212: ArcherTan_106
+    21300214: ArcherTan_107
+    21300216: ArcherTan_108
+    21300218: ArcherTan_109
+    21300220: ArcherTan_110
+    21300222: ArcherTan_111
+    21300224: ArcherTan_112
+    21300226: ArcherTan_113
+    21300228: ArcherTan_114
+    21300230: ArcherTan_115
+    21300232: ArcherTan_116
+    21300234: ArcherTan_117
+    21300236: ArcherTan_118
+    21300238: ArcherTan_119
+    21300240: ArcherTan_120
+    21300242: ArcherTan_121
+    21300244: ArcherTan_122
+    21300246: ArcherTan_123
+    21300248: ArcherTan_124
+    21300250: ArcherTan_125
+    21300252: ArcherTan_126
+    21300254: ArcherTan_127
+    21300256: ArcherTan_128
+    21300258: ArcherTan_129
+    21300260: ArcherTan_130
+    21300262: ArcherTan_131
+    21300264: ArcherTan_132
+    21300266: ArcherTan_133
+    21300268: ArcherTan_134
+    21300270: ArcherTan_135
+    21300272: ArcherTan_136
+    21300274: ArcherTan_137
+    21300276: ArcherTan_138
+    21300278: ArcherTan_139
+    21300280: ArcherTan_140
+    21300282: ArcherTan_141
+    21300284: ArcherTan_142
+    21300286: ArcherTan_143
+    21300288: ArcherTan_144
+    21300290: ArcherTan_145
+    21300292: ArcherTan_146
+    21300294: ArcherTan_147
+    21300296: ArcherTan_148
+    21300298: ArcherTan_149
+    21300300: ArcherTan_150
+    21300302: ArcherTan_151
+    21300304: ArcherTan_152
+    21300306: ArcherTan_153
+    21300308: ArcherTan_154
+    21300310: ArcherTan_155
+    21300312: ArcherTan_156
+    21300314: ArcherTan_157
+    21300316: ArcherTan_158
+    21300318: ArcherTan_159
+    21300320: ArcherTan_160
+    21300322: ArcherTan_161
+    21300324: ArcherTan_162
+    21300326: ArcherTan_163
+    21300328: ArcherTan_164
+    21300330: ArcherTan_165
+    21300332: ArcherTan_166
+    21300334: ArcherTan_167
+    21300336: ArcherTan_168
+    21300338: ArcherTan_169
+    21300340: ArcherTan_170
+    21300342: ArcherTan_171
+    21300344: ArcherTan_172
+    21300346: ArcherTan_173
+    21300348: ArcherTan_174
+    21300350: ArcherTan_175
+    21300352: ArcherTan_176
+    21300354: ArcherTan_177
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +214,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 64
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +234,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_1
       rect:
         serializedVersion: 2
@@ -63,6 +244,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_2
       rect:
         serializedVersion: 2
@@ -72,6 +254,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_3
       rect:
         serializedVersion: 2
@@ -81,6 +264,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_4
       rect:
         serializedVersion: 2
@@ -90,6 +274,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_5
       rect:
         serializedVersion: 2
@@ -99,6 +284,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_6
       rect:
         serializedVersion: 2
@@ -108,6 +294,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_7
       rect:
         serializedVersion: 2
@@ -117,6 +304,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_8
       rect:
         serializedVersion: 2
@@ -126,6 +314,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_9
       rect:
         serializedVersion: 2
@@ -135,6 +324,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_10
       rect:
         serializedVersion: 2
@@ -144,6 +334,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_11
       rect:
         serializedVersion: 2
@@ -153,6 +344,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_12
       rect:
         serializedVersion: 2
@@ -162,6 +354,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_13
       rect:
         serializedVersion: 2
@@ -171,6 +364,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_14
       rect:
         serializedVersion: 2
@@ -180,6 +374,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_15
       rect:
         serializedVersion: 2
@@ -189,6 +384,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_16
       rect:
         serializedVersion: 2
@@ -198,6 +394,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_17
       rect:
         serializedVersion: 2
@@ -207,6 +404,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_18
       rect:
         serializedVersion: 2
@@ -216,6 +414,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_19
       rect:
         serializedVersion: 2
@@ -225,6 +424,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_20
       rect:
         serializedVersion: 2
@@ -234,6 +434,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_21
       rect:
         serializedVersion: 2
@@ -243,6 +444,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_22
       rect:
         serializedVersion: 2
@@ -252,6 +454,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_23
       rect:
         serializedVersion: 2
@@ -261,6 +464,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_24
       rect:
         serializedVersion: 2
@@ -270,6 +474,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_25
       rect:
         serializedVersion: 2
@@ -279,6 +484,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_26
       rect:
         serializedVersion: 2
@@ -288,6 +494,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_27
       rect:
         serializedVersion: 2
@@ -297,6 +504,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_28
       rect:
         serializedVersion: 2
@@ -306,6 +514,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_29
       rect:
         serializedVersion: 2
@@ -315,6 +524,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_30
       rect:
         serializedVersion: 2
@@ -324,6 +534,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_31
       rect:
         serializedVersion: 2
@@ -333,6 +544,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_32
       rect:
         serializedVersion: 2
@@ -342,6 +554,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_33
       rect:
         serializedVersion: 2
@@ -351,6 +564,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_34
       rect:
         serializedVersion: 2
@@ -360,6 +574,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_35
       rect:
         serializedVersion: 2
@@ -369,6 +584,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_36
       rect:
         serializedVersion: 2
@@ -378,6 +594,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_37
       rect:
         serializedVersion: 2
@@ -387,6 +604,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_38
       rect:
         serializedVersion: 2
@@ -396,6 +614,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_39
       rect:
         serializedVersion: 2
@@ -405,6 +624,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_40
       rect:
         serializedVersion: 2
@@ -414,6 +634,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_41
       rect:
         serializedVersion: 2
@@ -423,6 +644,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_42
       rect:
         serializedVersion: 2
@@ -432,6 +654,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_43
       rect:
         serializedVersion: 2
@@ -441,6 +664,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_44
       rect:
         serializedVersion: 2
@@ -450,6 +674,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_45
       rect:
         serializedVersion: 2
@@ -459,6 +684,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_46
       rect:
         serializedVersion: 2
@@ -468,6 +694,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_47
       rect:
         serializedVersion: 2
@@ -477,6 +704,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_48
       rect:
         serializedVersion: 2
@@ -486,6 +714,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_49
       rect:
         serializedVersion: 2
@@ -495,6 +724,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_50
       rect:
         serializedVersion: 2
@@ -504,6 +734,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_51
       rect:
         serializedVersion: 2
@@ -513,6 +744,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_52
       rect:
         serializedVersion: 2
@@ -522,6 +754,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_53
       rect:
         serializedVersion: 2
@@ -531,6 +764,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_54
       rect:
         serializedVersion: 2
@@ -540,6 +774,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_55
       rect:
         serializedVersion: 2
@@ -549,6 +784,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_56
       rect:
         serializedVersion: 2
@@ -558,6 +794,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_57
       rect:
         serializedVersion: 2
@@ -567,6 +804,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_58
       rect:
         serializedVersion: 2
@@ -576,6 +814,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_59
       rect:
         serializedVersion: 2
@@ -585,6 +824,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_60
       rect:
         serializedVersion: 2
@@ -594,6 +834,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_61
       rect:
         serializedVersion: 2
@@ -603,6 +844,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_62
       rect:
         serializedVersion: 2
@@ -612,6 +854,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_63
       rect:
         serializedVersion: 2
@@ -621,6 +864,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_64
       rect:
         serializedVersion: 2
@@ -630,6 +874,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_65
       rect:
         serializedVersion: 2
@@ -639,6 +884,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_66
       rect:
         serializedVersion: 2
@@ -648,6 +894,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_67
       rect:
         serializedVersion: 2
@@ -657,6 +904,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_68
       rect:
         serializedVersion: 2
@@ -666,6 +914,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_69
       rect:
         serializedVersion: 2
@@ -675,6 +924,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_70
       rect:
         serializedVersion: 2
@@ -684,6 +934,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_71
       rect:
         serializedVersion: 2
@@ -693,6 +944,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_72
       rect:
         serializedVersion: 2
@@ -702,6 +954,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_73
       rect:
         serializedVersion: 2
@@ -711,6 +964,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_74
       rect:
         serializedVersion: 2
@@ -720,6 +974,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_75
       rect:
         serializedVersion: 2
@@ -729,6 +984,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_76
       rect:
         serializedVersion: 2
@@ -738,6 +994,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_77
       rect:
         serializedVersion: 2
@@ -747,6 +1004,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_78
       rect:
         serializedVersion: 2
@@ -756,6 +1014,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_79
       rect:
         serializedVersion: 2
@@ -765,6 +1024,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_80
       rect:
         serializedVersion: 2
@@ -774,6 +1034,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_81
       rect:
         serializedVersion: 2
@@ -783,6 +1044,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_82
       rect:
         serializedVersion: 2
@@ -792,6 +1054,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_83
       rect:
         serializedVersion: 2
@@ -801,6 +1064,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_84
       rect:
         serializedVersion: 2
@@ -810,6 +1074,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_85
       rect:
         serializedVersion: 2
@@ -819,6 +1084,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_86
       rect:
         serializedVersion: 2
@@ -828,6 +1094,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_87
       rect:
         serializedVersion: 2
@@ -837,6 +1104,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_88
       rect:
         serializedVersion: 2
@@ -846,6 +1114,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_89
       rect:
         serializedVersion: 2
@@ -855,6 +1124,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_90
       rect:
         serializedVersion: 2
@@ -864,6 +1134,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_91
       rect:
         serializedVersion: 2
@@ -873,6 +1144,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_92
       rect:
         serializedVersion: 2
@@ -882,6 +1154,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_93
       rect:
         serializedVersion: 2
@@ -891,6 +1164,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_94
       rect:
         serializedVersion: 2
@@ -900,6 +1174,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_95
       rect:
         serializedVersion: 2
@@ -909,6 +1184,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_96
       rect:
         serializedVersion: 2
@@ -918,6 +1194,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_97
       rect:
         serializedVersion: 2
@@ -927,6 +1204,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_98
       rect:
         serializedVersion: 2
@@ -936,6 +1214,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_99
       rect:
         serializedVersion: 2
@@ -945,6 +1224,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_100
       rect:
         serializedVersion: 2
@@ -954,6 +1234,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_101
       rect:
         serializedVersion: 2
@@ -963,6 +1244,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_102
       rect:
         serializedVersion: 2
@@ -972,6 +1254,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_103
       rect:
         serializedVersion: 2
@@ -981,6 +1264,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_104
       rect:
         serializedVersion: 2
@@ -990,6 +1274,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_105
       rect:
         serializedVersion: 2
@@ -999,6 +1284,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_106
       rect:
         serializedVersion: 2
@@ -1008,6 +1294,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_107
       rect:
         serializedVersion: 2
@@ -1017,6 +1304,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_108
       rect:
         serializedVersion: 2
@@ -1026,6 +1314,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_109
       rect:
         serializedVersion: 2
@@ -1035,6 +1324,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_110
       rect:
         serializedVersion: 2
@@ -1044,6 +1334,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_111
       rect:
         serializedVersion: 2
@@ -1053,6 +1344,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_112
       rect:
         serializedVersion: 2
@@ -1062,6 +1354,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_113
       rect:
         serializedVersion: 2
@@ -1071,6 +1364,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_114
       rect:
         serializedVersion: 2
@@ -1080,6 +1374,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_115
       rect:
         serializedVersion: 2
@@ -1089,6 +1384,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_116
       rect:
         serializedVersion: 2
@@ -1098,6 +1394,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_117
       rect:
         serializedVersion: 2
@@ -1107,6 +1404,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_118
       rect:
         serializedVersion: 2
@@ -1116,6 +1414,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_119
       rect:
         serializedVersion: 2
@@ -1125,6 +1424,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_120
       rect:
         serializedVersion: 2
@@ -1134,6 +1434,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_121
       rect:
         serializedVersion: 2
@@ -1143,6 +1444,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_122
       rect:
         serializedVersion: 2
@@ -1152,6 +1454,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_123
       rect:
         serializedVersion: 2
@@ -1161,6 +1464,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_124
       rect:
         serializedVersion: 2
@@ -1170,6 +1474,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_125
       rect:
         serializedVersion: 2
@@ -1179,6 +1484,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_126
       rect:
         serializedVersion: 2
@@ -1188,6 +1494,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_127
       rect:
         serializedVersion: 2
@@ -1197,6 +1504,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_128
       rect:
         serializedVersion: 2
@@ -1206,6 +1514,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_129
       rect:
         serializedVersion: 2
@@ -1215,6 +1524,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_130
       rect:
         serializedVersion: 2
@@ -1224,6 +1534,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_131
       rect:
         serializedVersion: 2
@@ -1233,6 +1544,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_132
       rect:
         serializedVersion: 2
@@ -1242,6 +1554,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_133
       rect:
         serializedVersion: 2
@@ -1251,6 +1564,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_134
       rect:
         serializedVersion: 2
@@ -1260,6 +1574,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_135
       rect:
         serializedVersion: 2
@@ -1269,6 +1584,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_136
       rect:
         serializedVersion: 2
@@ -1278,6 +1594,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_137
       rect:
         serializedVersion: 2
@@ -1287,6 +1604,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_138
       rect:
         serializedVersion: 2
@@ -1296,6 +1614,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_139
       rect:
         serializedVersion: 2
@@ -1305,6 +1624,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_140
       rect:
         serializedVersion: 2
@@ -1314,6 +1634,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_141
       rect:
         serializedVersion: 2
@@ -1323,6 +1644,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_142
       rect:
         serializedVersion: 2
@@ -1332,6 +1654,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_143
       rect:
         serializedVersion: 2
@@ -1341,6 +1664,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_144
       rect:
         serializedVersion: 2
@@ -1350,6 +1674,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_145
       rect:
         serializedVersion: 2
@@ -1359,6 +1684,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_146
       rect:
         serializedVersion: 2
@@ -1368,6 +1694,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_147
       rect:
         serializedVersion: 2
@@ -1377,6 +1704,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_148
       rect:
         serializedVersion: 2
@@ -1386,6 +1714,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_149
       rect:
         serializedVersion: 2
@@ -1395,6 +1724,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_150
       rect:
         serializedVersion: 2
@@ -1404,6 +1734,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_151
       rect:
         serializedVersion: 2
@@ -1413,6 +1744,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_152
       rect:
         serializedVersion: 2
@@ -1422,6 +1754,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_153
       rect:
         serializedVersion: 2
@@ -1431,6 +1764,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_154
       rect:
         serializedVersion: 2
@@ -1440,6 +1774,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_155
       rect:
         serializedVersion: 2
@@ -1449,6 +1784,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_156
       rect:
         serializedVersion: 2
@@ -1458,6 +1794,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_157
       rect:
         serializedVersion: 2
@@ -1467,6 +1804,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_158
       rect:
         serializedVersion: 2
@@ -1476,6 +1814,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_159
       rect:
         serializedVersion: 2
@@ -1485,6 +1824,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_160
       rect:
         serializedVersion: 2
@@ -1494,6 +1834,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_161
       rect:
         serializedVersion: 2
@@ -1503,6 +1844,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_162
       rect:
         serializedVersion: 2
@@ -1512,6 +1854,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_163
       rect:
         serializedVersion: 2
@@ -1521,6 +1864,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_164
       rect:
         serializedVersion: 2
@@ -1530,6 +1874,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_165
       rect:
         serializedVersion: 2
@@ -1539,6 +1884,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_166
       rect:
         serializedVersion: 2
@@ -1548,6 +1894,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_167
       rect:
         serializedVersion: 2
@@ -1557,6 +1904,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_168
       rect:
         serializedVersion: 2
@@ -1566,6 +1914,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_169
       rect:
         serializedVersion: 2
@@ -1575,6 +1924,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_170
       rect:
         serializedVersion: 2
@@ -1584,6 +1934,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_171
       rect:
         serializedVersion: 2
@@ -1593,6 +1944,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_172
       rect:
         serializedVersion: 2
@@ -1602,6 +1954,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_173
       rect:
         serializedVersion: 2
@@ -1611,6 +1964,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_174
       rect:
         serializedVersion: 2
@@ -1620,6 +1974,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_175
       rect:
         serializedVersion: 2
@@ -1629,6 +1984,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_176
       rect:
         serializedVersion: 2
@@ -1638,6 +1994,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: ArcherTan_177
       rect:
         serializedVersion: 2
@@ -1647,5 +2004,6 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
