@@ -51,10 +51,7 @@ public class GomUnit : GomObject {
     private float moveXScale;
 
 	private bool paused;
-<<<<<<< HEAD
 	private float invincibleEndTime;
-=======
->>>>>>> origin/master
 
 	public enum _Type {
 		kBow = 0,
