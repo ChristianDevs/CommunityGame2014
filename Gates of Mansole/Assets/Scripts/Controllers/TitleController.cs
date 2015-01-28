@@ -46,16 +46,20 @@ public class TitleController : MonoBehaviour {
             case "New":
                 Player.resetPlayer(unitTypes, abilities);
                 Application.LoadLevel("LevelSelect");
-                break;
-            case "Continue":
-                Player.loadPlayer(unitTypes, abilities);
-                Application.LoadLevel("LevelSelect");
-                break;
-            case "Quit":
-                Application.Quit();
-                break;
-            default:
-                break;
+			break;
+			case "Continue":
+				Player.loadPlayer(unitTypes, abilities);
+				Application.LoadLevel("LevelSelect");
+				break;
+			case "Credits":
+				Player.loadPlayer(unitTypes, abilities);
+				Application.LoadLevel("Credits");
+				break;
+	        case "Quit":
+	            Application.Quit();
+	            break;
+	        default:
+	            break;
         }
     }
 }
