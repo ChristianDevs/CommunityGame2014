@@ -15,6 +15,8 @@ public class Player : MonoBehaviour {
     static public List<GameObject> abilities;
     static public string nextLevelFile;
     static public List<string> levelFileNames;
+	static public List<Vector2> levelLocs;
+	static public int map;
 
     static public void resetPlayer(GameObject[] newUnitTypes, GameObject[] newAbilities) {
         PlayerPrefs.DeleteAll();

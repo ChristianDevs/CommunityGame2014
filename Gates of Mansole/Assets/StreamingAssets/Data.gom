@@ -1,6 +1,7 @@
-Level1.gom
-Level2.gom
-Level3.gom
-Level4.gom
-Level5.gom
-Level6.gom
+Map:0
+Level1.gom:-2:2
+Level2.gom:3:3
+Level3.gom:2:1.75
+Level4.gom:1:1.5
+Level5.gom:0:1
+Level6.gom:-1:0
