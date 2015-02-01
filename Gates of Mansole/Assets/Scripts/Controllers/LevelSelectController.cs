@@ -6,44 +6,44 @@ public class LevelSelectController : MonoBehaviour {
 
     public GameObject level1;
     public GameObject BeatGameMessage;
+	public GameObject[] Maps;
 
     private List<GameObject> levelButtons;
 
 	// Use this for initialization
 	void Start () {
-        float x;
-        float y;
 
         // Always let the player access level 1
-        level1.SetActive(true);
+		level1.SetActive(true);
+		level1.transform.position = new Vector3 (Player.levelLocs [0].x, Player.levelLocs [0].y, level1.transform.position.z);
         levelButtons = new List<GameObject>();
         levelButtons.Add(level1);
 
-        x = level1.transform.position.x + 3f;
-        y = level1.transform.position.y;
+		foreach (GameObject map in Maps) {
+			map.SetActive(false);
+		}
+		if (Player.map < Maps.Length) {
+			Maps[Player.map].SetActive(true);
+		}
 
         for (int i = 1; i < Player.levelFileNames.Count; i++) {
             if (Player.levelComplete[i - 1] > 0) {
                 levelButtons.Add(Instantiate(level1, level1.transform.position, Quaternion.identity) as GameObject);
-                levelButtons[i].name = "Level " + (i + 1).ToString();
+                levelButtons[i].name = (i + 1).ToString();
                 levelButtons[i].GetComponent<UiButton>().buttonName = levelButtons[i].name;
                 levelButtons[i].GetComponent<UiButton>().textMeshObj.GetComponent<TextMesh>().text = levelButtons[i].name;
                 levelButtons[i].GetComponent<UiButton>().controller = gameObject;
-                levelButtons[i].transform.position = new Vector3(x, y, levelButtons[i].transform.position.z);
-
-                x += 3;
-
-                if (x > 6) {
-                    y -= 1;
-                    x = level1.transform.position.x;
-                }
+				levelButtons[i].transform.position = new Vector3(Player.levelLocs[i].x, Player.levelLocs[i].y, levelButtons[i].transform.position.z);
             }
         }
 
         if (Player.getNumLevelsBeaten() >= Player.levelComplete.Count) {
             BeatGameMessage.SetActive(true);
         } else {
-            BeatGameMessage.SetActive(false);
+			BeatGameMessage.SetActive(false);
+
+			// Make the last level bigger
+			levelButtons [levelButtons.Count - 1].transform.localScale = new Vector3 (0.75f, 0.75f, 1);
         }
 	}
 	
@@ -61,12 +61,10 @@ public class LevelSelectController : MonoBehaviour {
 				Application.LoadLevel("Upgrade");
 				break;
             default:
-                if (buttonName.StartsWith("Level")) {
-                    Player.currentLevel = int.Parse(buttonName.Split(' ')[1]) - 1;
-                    Player.nextLevelFile = Player.levelFileNames[Player.currentLevel];
-                    Debug.Log(Player.nextLevelFile);
-                    Application.LoadLevel("AutoLevel");
-                }
+	            Player.currentLevel = int.Parse(buttonName) - 1;
+	            Player.nextLevelFile = Player.levelFileNames[Player.currentLevel];
+	            Debug.Log(Player.nextLevelFile);
+	            Application.LoadLevel("AutoLevel");
                 break;
         }
     }

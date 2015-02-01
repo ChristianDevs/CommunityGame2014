@@ -19,6 +19,7 @@ public class TitleController : MonoBehaviour {
 		string filePath;
 		string[] levelData;
 		string[] seps = {"\n"};
+		string[] sepsLine = {":"};
 		
 		filePath = Application.streamingAssetsPath + "/Data.gom";
 
@@ -35,9 +36,17 @@ public class TitleController : MonoBehaviour {
 		}
 
 		Player.levelFileNames = new List<string>();
+		Player.levelLocs = new List<Vector2> ();
 		foreach (string ln in levelData) {
-            // Apply web fix to level files
-			Player.levelFileNames.Add(Application.streamingAssetsPath.Replace("Raw", "StreamingAssets") + "/" + ln);
+			if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower() == "map") {
+				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length >= 2) {
+					Player.map = int.Parse(ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1]);
+				}
+			} else if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length >= 3) {
+	            // Apply web fix to level files
+				Player.levelFileNames.Add(Application.streamingAssetsPath.Replace("Raw", "StreamingAssets") + "/" + ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0]);
+				Player.levelLocs.Add(new Vector2(float.Parse(ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1]), float.Parse(ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[2])));
+			}
 		}
 	}
 
