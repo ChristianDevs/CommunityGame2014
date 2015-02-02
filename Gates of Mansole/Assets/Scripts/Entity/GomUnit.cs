@@ -65,8 +65,8 @@ public class GomUnit : GomObject {
         // Whatever - arbitrary damage calculation
         int minDamage = Random.Range(0, 2);  // always a chance of doing something
         int variation = Random.Range(0, attacker.getStats().attack / 5 + 1);
-		int baseDamage = attacker.getStats().attack - this.getStats().defense;
-        float advantageMultiplier = (float)(minDamage + baseDamage + variation)*getMultiplier ();
+		int baseDamage = stats.attack - this.getStats().defense;
+		float advantageMultiplier = (float)(minDamage + baseDamage + variation)*getMultiplier ();
 		Damage ((int)advantageMultiplier);
 	}
 
@@ -159,13 +159,13 @@ public class GomUnit : GomObject {
 	}
 	
 	public int getType(string type) {
-		if (type.Equals("Bow"))
+		if (type.Equals("Shepherd"))
 			return (int)_Type.kBow;
-		else if (type.Equals("Spear"))
+		else if (type.Equals("Evangelist"))
 			return (int)_Type.kSpear;
-		else if (type.Equals("Staff"))
+		else if (type.Equals("Elder"))
 			return (int)_Type.kStaff;
-		else if (type.Equals ("Sword"))
+		else if (type.Equals ("Teacher"))
 			return (int)_Type.kSword;
 		else
 			return (int)_Type.kWand;
@@ -182,24 +182,24 @@ public class GomUnit : GomObject {
 	public float getMultiplier() {
 		float multiplier = 1.0f;
 		switch (attacker.GetComponent<GomUnit>().unitType) {
-		case "Bow":
-			if ((unitType == "Spear") || (unitType == "Wand"))
+		case "Shepherd":
+			if ((unitType == "Evangelist") || (unitType == "Orator"))
 				multiplier+=Random.Range (0.5f,1.0f);
 			break;
-		case "Spear":
-			if ((unitType == "Sword") || (unitType == "Staff"))
+		case "Evangelist":
+			if ((unitType == "Teacher") || (unitType == "Elder"))
 				multiplier+=Random.Range (0.5f,1.0f);
 			break;
-		case "Staff":
-			if ((unitType == "Bow") || (unitType == "Sword"))
+		case "Elder":
+			if ((unitType == "Shepherd") || (unitType == "Teacher"))
 				multiplier+=Random.Range (0.5f,1.0f);
 			break;
-		case "Sword":
-			if ((unitType == "Bow") || (unitType == "Wand"))
+		case "Teacher":
+			if ((unitType == "Shepherd") || (unitType == "Orator"))
 				multiplier+=Random.Range (0.5f,1.0f);
 			break;
-		case "Wand":
-			if ((unitType == "Spear") || (unitType == "Staff"))
+		case "Orator":
+			if ((unitType == "Evangelist") || (unitType == "Elder"))
 				multiplier+=Random.Range (0.5f,1.0f);
 			break;
 		default:
@@ -276,6 +276,8 @@ public class GomUnit : GomObject {
         HpMidBar.transform.parent = transform;
         HpRightBar.transform.parent = transform;
         HpBarFill.transform.parent = transform;
+
+		health = getStats().maxHealth;
 
         updateHealthBars();
 

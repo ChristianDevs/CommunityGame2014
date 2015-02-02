@@ -1,90 +1,95 @@
-AttackersLetThrough:3
+AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Right
 StartShards:21
-Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
 PreDialogue:
     Statement:
-        Speaker:???
-        LeftImage:1
+        Speaker:Carnalsecurity
+        LeftImage:8
         RightImage:None
-        Dialogue:Help! I am being attacked!
+        Dialogue:I've heard very highly of your skill in battle.
     Statement:
-        Speaker:???
-        LeftImage:1
+        Speaker:Carnalsecurity
+        LeftImage:8
         RightImage:None
-        Dialogue:Will you please help me good kind person?
+        Dialogue:I count on you to protect us while we extract every bit of information.
     Statement:
-        Speaker:???
-        LeftImage:1
+        Speaker:Carnalsecurity
+        LeftImage:8
         RightImage:None
-        Dialogue:You will?!?!?
+        Dialogue:What is that? Don't go too hard on him?
     Statement:
-        Speaker:???
-        LeftImage:1
+        Speaker:Carnalsecurity
+        LeftImage:8
         RightImage:None
-        Dialogue:Thank you. Here they come!
+        Dialogue:Ha! I do what I must to get the job done. This is an intolerant man and I will expose him.
+    Statement:
+        Speaker:Carnalsecurity
+        LeftImage:8
+        RightImage:None
+        Dialogue:Now you do yours and keep the guards from reaching us.
 Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:0:0
     WaveUnit:
         Time:1
-        Unit:Shepherd
+        Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:2:2
     WaveUnit:
         Time:2
-        Unit:Evangelist
+        Unit:Shepherd
         SpawnLoc:SpecifiedRow
         Tile:1:1
 Wave:
     WaitTime:10
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:6:6
     WaveUnit:
         Time:1
-        Unit:Shepherd
+        Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:7:7
     WaveUnit:
         Time:2
-        Unit:Evangelist
+        Unit:Shepherd
         SpawnLoc:SpecifiedRow
         Tile:5:5
 Wave:
     WaitTime:20
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Shepherd
         SpawnLoc:SpecifiedRow
         Tile:4:4
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:3:3
     WaveUnit:
         Time:3
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:4:4
     WaveUnit:
         Time:7
-        Unit:Shepherd
+        Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:4:4
     WaveUnit:
@@ -111,12 +116,12 @@ Wave:
         Tile:2:2
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:1:1
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:6:6
     WaveUnit:
@@ -126,7 +131,7 @@ Wave:
         Tile:7:7
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:5:5
     WaveUnit:
@@ -141,47 +146,37 @@ Wave:
         Tile:3:3
 PostDialogue:
     Statement:
-        Speaker:???
-        LeftImage:1
+        Speaker:Mayor Understanding
+        LeftImage:4
         RightImage:None
-        Dialogue:Thank you for saving me from those brutes.
+        Dialogue:...
     Statement:
-        Speaker:???
-        LeftImage:1
+        Speaker:Mayor Understanding
+        LeftImage:4
         RightImage:None
-        Dialogue:My name? I am called Forgetgood.
+        Dialogue:Why? Why have I been putting forth these clearly intolerant policies.
+    Statement:
+        Speaker:Mayor Understanding
+        LeftImage:4
+        RightImage:None
+        Dialogue:No longer! From now on I will make sure to treat all Diabolonians as equals with Mansoul citizens.
+    Statement:
+        Speaker:Carnalsecurity
+        LeftImage:8
+        RightImage:None
+        Dialogue:Rightly so. With this new leaf of tolerance, Mansoul will transform to a new kind of city.
     Statement:
         Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:I did not know such kind people as yourself lived at the city of Mansoul.
+        LeftImage:None
+        RightImage:1
+        Dialogue:I've found the last link in this conspiracy chain. Lady Willbewill is an agent of King Shaddai.
     Statement:
         Speaker:Forgetgood
-        LeftImage:1
+        LeftImage:None
+        RightImage:1
+        Dialogue:With her out of the way we... I mean, everyone will be equal once she sees the error of her ways.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
         RightImage:None
-        Dialogue:Let me introduce you to my friend. This is Diabolus.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:1
-        RightImage:2
-        Dialogue:Greetings. I also offer you my heartfelt thanks.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:1
-        RightImage:2
-        Dialogue:I can see Captain Resistance's bigotry has not infected all who dwell in Mansoul.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:1
-        RightImage:2
-        Dialogue:What? You say Captain Resistance says the Diabolonians do not follow King Shaddai's laws?
-    Statement:
-        Speaker:ForgetGood
-        LeftImage:1
-        RightImage:2
-        Dialogue:She tries to hurt us by alleging these accusations. She does this on purpose to spite us.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:1
-        RightImage:2
-        Dialogue:You don't believe us? Well, I suggest a test. Help us get inside and we can find proof!
+        Dialogue:Good investigating. We will go to her next.

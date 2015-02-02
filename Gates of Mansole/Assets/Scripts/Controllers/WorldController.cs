@@ -190,8 +190,8 @@ public class WorldController : MonoBehaviour {
                 uType = unitType.GetComponent<UiUnitType>();
 
                 if (uType != null) {
-                    uType.getPlayerStats().resetUnitStats();
-					uType.getEnemyStats().resetUnitStats();
+                    uType.getPlayerStats().resetUnitStats(uType);
+					uType.getEnemyStats().resetUnitStats(uType);
                 }
             }
 
@@ -203,7 +203,8 @@ public class WorldController : MonoBehaviour {
 
 			// Place the placeables
 			foreach(WaveList._placeable pl in currentLevel.GetComponent<WaveList>().placeables) {
-				Instantiate(Placeables[pl.num], new Vector3(pl.x, pl.y), Quaternion.identity);
+				Placeables[pl.num] = Instantiate(Placeables[pl.num], new Vector3(pl.x, pl.y), Quaternion.identity) as GameObject;
+				Placeables[pl.num].transform.parent = map.transform;
 			}
 
             Player.spiritShards = Player.totalShards = currentLevel.GetComponent<WaveList>().startShards;

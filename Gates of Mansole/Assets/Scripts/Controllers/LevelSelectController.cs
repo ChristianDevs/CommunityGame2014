@@ -57,7 +57,7 @@ public class LevelSelectController : MonoBehaviour {
 			case "Back":
 				Application.LoadLevel("Title");
 				break;
-			case "UpgradeShop":
+			case "Upgrade":
 				Application.LoadLevel("Upgrade");
 				break;
             default:

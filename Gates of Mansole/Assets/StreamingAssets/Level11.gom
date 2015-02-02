@@ -15,22 +15,32 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue: The command post is guarded by evangelists and orators.
+        Dialogue:Ahead is the Mayor's estate.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:First the evangelists must be dealt with before you can get passed the orators.
+        Dialogue:They have evangelists, elders, and orators defending.
     Statement:
-        Speaker:Forgetgood
-        LeftImage:None
-        RightImage:1
-        Dialogue:Be sure you use the correct units to counter with.
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:So you must excersize more of your good judgment when attacking.
     Statement:
-        Speaker:Forgetgood
+        Speaker:Carnalsecurity
         LeftImage:None
-        RightImage:1
-        Dialogue:I am sure we will find the proof about Captain Resistance's conspiracy here.
+        RightImage:8
+        Dialogue:The mayor's forces won't stand a chance.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:Another friend of mine...
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:Victory will soon be ours.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -113,44 +123,69 @@ Wave:
         Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:7:12
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:SpecifiedTile
+        Tile:0:13
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:SpecifiedTile
+        Tile:1:13
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:SpecifiedTile
+        Tile:2:13
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:SpecifiedTile
+        Tile:3:13
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:SpecifiedTile
+        Tile:4:13
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:SpecifiedTile
+        Tile:5:13
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:SpecifiedTile
+        Tile:6:13
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:SpecifiedTile
+        Tile:7:13
 PostDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Mayor Understanding
+        LeftImage:4
         RightImage:None
-        Dialogue:What? You found something? Let me take a look.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:Hmm...
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:Oh! This is precisely the evidence we need. Diabolus, take a look.
+        Dialogue:Who goes there? State your business.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Yes... yes... Right here. It says Diabolonians are not to enter the city under any circumstances.
+        Dialogue:I am Diabolus and we are here to hear your confession of your wrongdoings.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And it has Captain Resistance's signature on the page.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Mayor Understanding
+        LeftImage:4
         RightImage:None
-        Dialogue:I did some digging and found out that Captain Resistance's house is guarded by Shepherds and Teachers.
+        Dialogue:What wrongdoings? I don't know what you're talking about.
+    Statement:
+        Speaker:Carnalsecurity
+        LeftImage:None
+        RightImage:8
+        Dialogue:You soon will.
     Statement:
         Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Good work, Forgetgood.
-    Statement:
-        SpeakerDiabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Be sure you have elders in your employ. If not, get them from the market.
+        LeftImage:2
+        RightImage:None
+        Dialogue:Watch our backs as we interrogate the mayor.

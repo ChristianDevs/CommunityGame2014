@@ -20,7 +20,7 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:I sure hope you brought some elder units with you. These lines of orator units are thick as fog.
+        Dialogue:I sure hope you brought some elders with you. These lines of shepherds are thick as fog.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -40,82 +40,82 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:0:11
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:1:11
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:2:11
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:3:11
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:4:11
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:5:11
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:6:11
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:7:11
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:0:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:1:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:2:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:3:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:4:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:5:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:6:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:7:12
 PostDialogue:
@@ -124,13 +124,3 @@ PostDialogue:
         LeftImage:0
         RightImage:None
         Dialogue:Great work penetrating their defenses. Now we siege the guard post.
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:My scouts report that they are defending it with elders.
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:The best counter to elders are evangelists because of how quick they are. Go unlock some before we battle them.

@@ -28,12 +28,12 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Long have the Sinians threatened our city. Were it not for our resistance, we would succumb to their assaults.
+        Dialogue:Long have the Diabolonians threatened our city. Were it not for our resistance, we would succumb to their assaults.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:The Sinians do not know King Shaddai as their Lord, nor do they obey His laws.
+        Dialogue:The Diabolonians do not know King Shaddai as their Lord, nor do they obey His laws.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -63,7 +63,7 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:The wicked Sinians reject King Shaddai's laws. As long as Mansoul is a part of King Shaddai's kingdom, they will never have a place here.
+        Dialogue:The wicked Diabolonians reject King Shaddai's laws. As long as Mansoul is a part of King Shaddai's kingdom, they will never have a place here.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -165,4 +165,4 @@ PostDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Before your next task, go to the Upgrade Shop and unlock the orator.
+        Dialogue:Before your next task, go to the Market and unlock the elder.

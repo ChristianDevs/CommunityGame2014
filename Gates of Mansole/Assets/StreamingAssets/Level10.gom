@@ -1,187 +1,172 @@
-AttackersLetThrough:3
+AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Right
 StartShards:21
-Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
 PreDialogue:
     Statement:
-        Speaker:???
+        Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:Help! I am being attacked!
+        Dialogue:We are in the process of... interrogating the judge.
     Statement:
-        Speaker:???
+        Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:Will you please help me good kind person?
-    Statement:
-        Speaker:???
-        LeftImage:1
-        RightImage:None
-        Dialogue:You will?!?!?
-    Statement:
-        Speaker:???
-        LeftImage:1
-        RightImage:None
-        Dialogue:Thank you. Here they come!
+        Dialogue:Keep the judge's guards off our backs while we get a confession out of him.
 Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:0:0
     WaveUnit:
         Time:1
-        Unit:Shepherd
+        Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:2:2
     WaveUnit:
         Time:2
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:1:1
 Wave:
     WaitTime:10
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:6:6
     WaveUnit:
         Time:1
-        Unit:Shepherd
+        Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:7:7
     WaveUnit:
         Time:2
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:5:5
 Wave:
     WaitTime:20
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:4:4
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:3:3
     WaveUnit:
         Time:3
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:4:4
     WaveUnit:
         Time:7
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:4:4
     WaveUnit:
         Time:5
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:3:3
     WaveUnit:
         Time:9
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:3:3
 Wave:
     WaitTime:40
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:0:0
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:2:2
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:1:1
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:6:6
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:7:7
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:5:5
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:4:4
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:3:3
 PostDialogue:
     Statement:
-        Speaker:???
-        LeftImage:1
+        Speaker:Judge Conscience
+        LeftImage:5
         RightImage:None
-        Dialogue:Thank you for saving me from those brutes.
+        Dialogue:...
     Statement:
-        Speaker:???
-        LeftImage:1
+        Speaker:Judge Conscience
+        LeftImage:5
         RightImage:None
-        Dialogue:My name? I am called Forgetgood.
+        Dialogue:I...
+    Statement:
+        Speaker:Judge Conscience
+        LeftImage:5
+        RightImage:None
+        Dialogue:I... I've been so... wrong.
+    Statement:
+        Speaker:Judge Conscience
+        LeftImage:5
+        RightImage:None
+        Dialogue:But now I avow to end my old ways of bigotry and judgmentalism.
     Statement:
         Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:I did not know such kind people as yourself lived at the city of Mansoul.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:Let me introduce you to my friend. This is Diabolus.
+        LeftImage:None
+        RightImage:1
+        Dialogue:As you should, judge. Your conscience is now clear.
     Statement:
         Speaker:Diabolus
-        LeftImage:1
+        LeftImage:None
         RightImage:2
-        Dialogue:Greetings. I also offer you my heartfelt thanks.
+        Dialogue:But we still have more work to do.
     Statement:
         Speaker:Diabolus
-        LeftImage:1
+        LeftImage:None
         RightImage:2
-        Dialogue:I can see Captain Resistance's bigotry has not infected all who dwell in Mansoul.
+        Dialogue:I discovered that even the mayor is in this conspiracy.
     Statement:
         Speaker:Diabolus
-        LeftImage:1
+        LeftImage:None
         RightImage:2
-        Dialogue:What? You say Captain Resistance says the Diabolonians do not follow King Shaddai's laws?
-    Statement:
-        Speaker:ForgetGood
-        LeftImage:1
-        RightImage:2
-        Dialogue:She tries to hurt us by alleging these accusations. She does this on purpose to spite us.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:1
-        RightImage:2
-        Dialogue:You don't believe us? Well, I suggest a test. Help us get inside and we can find proof!
+        Dialogue:Come, we will go interrogate him next.

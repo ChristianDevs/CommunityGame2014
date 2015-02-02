@@ -1,0 +1,232 @@
+AttackersLetThrough:5
+IsPlayerAttacker:False
+AttackerDir:Right
+StartShards:21
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+PreDialogue:
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:The preparations are almost complete for the coronation.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:Good, the sooner we get this done the better.
+    Statement:
+        Speaker:Carnalsecurity
+        LeftImage:8
+        RightImage:None
+        Dialogue:There is a problem, we forgot one of the major lords of the land.
+    Statement:
+        Speaker:Carnalsecurity
+        LeftImage:8
+        RightImage:None
+        Dialogue:He is marching toward the keep with his forces.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:I have a city to prepare to run...
+    Statement:
+        Speaker:Lord Innocence
+        LeftImage:9
+        RightImage:None
+        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
+    Statement:
+        Speaker:Lord Innocence
+        LeftImage:9
+        RightImage:None
+        Dialogue:We must eliminate him before it is too late!
+Wave:
+    WaitTime:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:0:0
+    WaveUnit:
+        Time:1
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:2
+    WaveUnit:
+        Time:2
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:1
+Wave:
+    WaitTime:10
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:6:6
+    WaveUnit:
+        Time:1
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:7:7
+    WaveUnit:
+        Time:2
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:5
+Wave:
+    WaitTime:20
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:4:4
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:SpecifiedRow
+        Tile:3:3
+    WaveUnit:
+        Time:3
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:4:4
+    WaveUnit:
+        Time:7
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:4:4
+    WaveUnit:
+        Time:5
+        Unit:Orator
+        SpawnLoc:SpecifiedRow
+        Tile:3:3
+    WaveUnit:
+        Time:9
+        Unit:Orator
+        SpawnLoc:SpecifiedRow
+        Tile:3:3
+Wave:
+    WaitTime:40
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:0:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:2
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:1
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:6:6
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:7:7
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:5
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:4:4
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:SpecifiedRow
+        Tile:3:3
+PostDialogue:
+    Statement:
+        Speaker:Lord Innocence
+        LeftImage:9
+        RightImage:None
+        Dialogue:No! This cannot happen.
+    Statement:
+        Speaker:Lord Innocence
+        LeftImage:9
+        RightImage:None
+        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
+    Statement:
+        Speaker:Lord Innocence
+        LeftImage:9
+        RightImage:None
+        Dialogue:I remember good ol' Captain Resistance used to say these words...
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:"Resist Diabolus and he will flee from you."
+    Statement:
+        Speaker:Lord Innocence
+        LeftImage:9
+        RightImage:None
+        Dialogue:Alas! Had we resistance left to thwart him.
+    Statement:
+        Speaker:Antisiphone
+        LeftImage:None
+        RightImage:3
+        Dialogue:Are you done flapping yer yapper yet?
+    Statement:
+        Speaker:Antisiphone
+        LeftImage:None
+        RightImage:3
+        Dialogue:Face my arrow! [thwang]
+    Statement:
+        Speaker:Lord Innocence
+        LeftImage:9
+        RightImage:None
+        Dialogue:Aaaahhh!
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:And I will take my place as Mansoul's rightful king.
+    Statement:
+        Speaker:???
+        LeftImage:None
+        RightImage:None
+        Dialogue:...
+    Statement:
+        Speaker:???
+        LeftImage:None
+        RightImage:None
+        Dialogue:But...
+    Statement:
+        Speaker:???
+        LeftImage:None
+        RightImage:None
+        Dialogue:But... the story continues...
