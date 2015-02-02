@@ -507,9 +507,37 @@ public class WorldController : MonoBehaviour {
                 tile = map.GetComponent<UiTiles>().GetMouseOverTile();
 
                 if ((tile.row != -1) && (tile.col != -1)) {
-                    newPos = new Vector3(map.transform.position.x + ((float)tile.col * map.transform.localScale.x),
-                                         map.transform.position.y + ((float)tile.row * map.transform.localScale.y) + TileUnitOffset);
-                    selectedUiUnit.transform.position = newPos;
+					bool unitPlaceValid = false;
+
+					if (isPlayerAttacker == false) {
+						// In Defense mode limit spawning to the player's half of the map
+						if (attackerDir == UnitAnimation._direction.DirLeft) {
+							if (tile.col <= (gridSize.col / 2)) {
+								unitPlaceValid = true;
+							}
+						} else if (attackerDir == UnitAnimation._direction.DirRight) {
+							if (tile.col >= (gridSize.col / 2)) {
+								unitPlaceValid = true;
+							}
+						}
+					} else {
+						// In Assault mode spawn the unit at the end of the row
+						if (attackerDir == UnitAnimation._direction.DirLeft) {
+							if (tile.col >= (gridSize.col / 2)) {
+								unitPlaceValid = true;
+							}
+						} else if (attackerDir == UnitAnimation._direction.DirRight) {
+							if (tile.col <= (gridSize.col / 2)) {
+								unitPlaceValid = true;
+							}
+						}
+					}
+
+					if (unitPlaceValid == true) {
+	                    newPos = new Vector3(map.transform.position.x + ((float)tile.col * map.transform.localScale.x),
+	                                         map.transform.position.y + ((float)tile.row * map.transform.localScale.y) + TileUnitOffset);
+	                    selectedUiUnit.transform.position = newPos;
+					}
                 }
 
                 if (Input.GetMouseButtonUp(0)) {
