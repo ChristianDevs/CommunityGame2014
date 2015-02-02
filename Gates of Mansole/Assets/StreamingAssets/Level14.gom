@@ -1,36 +1,26 @@
-AttackersLetThrough:3
+AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Right
 StartShards:21
-Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
 PreDialogue:
     Statement:
-        Speaker:???
+        Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:Help! I am being attacked!
+        Dialogue:According to my investigation, Lady Willbewill is the last link in this chain of corruption.
     Statement:
-        Speaker:???
+        Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:Will you please help me good kind person?
-    Statement:
-        Speaker:???
-        LeftImage:1
-        RightImage:None
-        Dialogue:You will?!?!?
-    Statement:
-        Speaker:???
-        LeftImage:1
-        RightImage:None
-        Dialogue:Thank you. Here they come!
+        Dialogue:Stand watch and make sure nobody disturbs our interrogation of her.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -40,7 +30,7 @@ Wave:
         Tile:0:0
     WaveUnit:
         Time:1
-        Unit:Shepherd
+        Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:2:2
     WaveUnit:
@@ -52,49 +42,49 @@ Wave:
     WaitTime:10
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:6:6
     WaveUnit:
         Time:1
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:7:7
     WaveUnit:
         Time:2
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:5:5
 Wave:
     WaitTime:20
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Elder
         SpawnLoc:SpecifiedRow
         Tile:4:4
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:3:3
     WaveUnit:
         Time:3
-        Unit:Evangelist
+        Unit:Elder
         SpawnLoc:SpecifiedRow
         Tile:4:4
     WaveUnit:
         Time:7
-        Unit:Shepherd
+        Unit:Elder
         SpawnLoc:SpecifiedRow
         Tile:4:4
     WaveUnit:
         Time:5
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:3:3
     WaveUnit:
         Time:9
-        Unit:Shepherd
+        Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:3:3
 Wave:
@@ -116,72 +106,82 @@ Wave:
         Tile:1:1
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:6:6
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:7:7
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:5:5
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Elder
         SpawnLoc:SpecifiedRow
         Tile:4:4
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:3:3
 PostDialogue:
     Statement:
-        Speaker:???
-        LeftImage:1
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Thank you for saving me from those brutes.
+        Dialogue:I see now. I know where I have gone astray.
     Statement:
-        Speaker:???
-        LeftImage:1
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:My name? I am called Forgetgood.
+        Dialogue:The path King Shaddai set us on is not the right way. I see that now.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:We are now done. The despicable enmity of Diabolonians is starting to wash away.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:But what will the City of Mansoul do? It is throwing off the shackles of King Shaddai.
     Statement:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:I did not know such kind people as yourself lived at the city of Mansoul.
+        Dialogue:Perhaps the citizens could crown you, Diabolus, to be king of Mansoul?
     Statement:
-        Speaker:Forgetgood
+        Speaker:Mayor Understanding
+        LeftImage:None
+        RightImage:4
+        Dialogue:Diabolus as king? I see it as the right move.
+    Statement:
+        Speaker:Judge Conscience
+        LeftImage:5
+        RightImage:None
+        Dialogue:That would be a most just course of action.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:I would follow you Diabolus!
+    Statement:
+        Speaker:Diabolus
         LeftImage:1
         RightImage:None
-        Dialogue:Let me introduce you to my friend. This is Diabolus.
+        Dialogue:It is settled then.
     Statement:
         Speaker:Diabolus
         LeftImage:1
-        RightImage:2
-        Dialogue:Greetings. I also offer you my heartfelt thanks.
+        RightImage:None
+        Dialogue:I shall... reluctantly, but humbly assume the throne of Mansoul.
     Statement:
         Speaker:Diabolus
         LeftImage:1
-        RightImage:2
-        Dialogue:I can see Captain Resistance's bigotry has not infected all who dwell in Mansoul.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:1
-        RightImage:2
-        Dialogue:What? You say Captain Resistance says the Diabolonians do not follow King Shaddai's laws?
-    Statement:
-        Speaker:ForgetGood
-        LeftImage:1
-        RightImage:2
-        Dialogue:She tries to hurt us by alleging these accusations. She does this on purpose to spite us.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:1
-        RightImage:2
-        Dialogue:You don't believe us? Well, I suggest a test. Help us get inside and we can find proof!
+        RightImage:None
+        Dialogue:Let us make preparations.

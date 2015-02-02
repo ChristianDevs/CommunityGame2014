@@ -1,36 +1,26 @@
-AttackersLetThrough:3
+AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Right
 StartShards:21
-Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
 PreDialogue:
     Statement:
-        Speaker:???
-        LeftImage:1
+        Speaker:Diabolus
+        LeftImage:2
         RightImage:None
-        Dialogue:Help! I am being attacked!
+        Dialogue:We need some time for a friend of mine to arrive.
     Statement:
-        Speaker:???
-        LeftImage:1
+        Speaker:Diabolus
+        LeftImage:2
         RightImage:None
-        Dialogue:Will you please help me good kind person?
-    Statement:
-        Speaker:???
-        LeftImage:1
-        RightImage:None
-        Dialogue:You will?!?!?
-    Statement:
-        Speaker:???
-        LeftImage:1
-        RightImage:None
-        Dialogue:Thank you. Here they come!
+        Dialogue:Defend us until he arrives. We will make sure we get a confession out of the captain
 Wave:
     WaitTime:0
     WaveUnit:
@@ -40,7 +30,7 @@ Wave:
         Tile:0:0
     WaveUnit:
         Time:1
-        Unit:Shepherd
+        Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:2:2
     WaveUnit:
@@ -52,17 +42,17 @@ Wave:
     WaitTime:10
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:6:6
     WaveUnit:
         Time:1
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:7:7
     WaveUnit:
         Time:2
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:5:5
 Wave:
@@ -74,7 +64,7 @@ Wave:
         Tile:4:4
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:3:3
     WaveUnit:
@@ -84,17 +74,17 @@ Wave:
         Tile:4:4
     WaveUnit:
         Time:7
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:4:4
     WaveUnit:
         Time:5
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:3:3
     WaveUnit:
         Time:9
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:3:3
 Wave:
@@ -116,17 +106,17 @@ Wave:
         Tile:1:1
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:6:6
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:7:7
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:5:5
     WaveUnit:
@@ -136,52 +126,57 @@ Wave:
         Tile:4:4
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:3:3
 PostDialogue:
     Statement:
-        Speaker:???
-        LeftImage:1
+        Speaker:Diabolus
+        LeftImage:2
         RightImage:None
-        Dialogue:Thank you for saving me from those brutes.
+        Dialogue:Last chance, captain. Do you admit your bigotry and judgmentalism?
     Statement:
-        Speaker:???
-        LeftImage:1
-        RightImage:None
-        Dialogue:My name? I am called Forgetgood.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:I did not know such kind people as yourself lived at the city of Mansoul.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:Let me introduce you to my friend. This is Diabolus.
+        Speaker:Captain Resistance
+        LeftImage:None
+        RightImage:0
+        Dialogue:I won't admit something that isn't true.
     Statement:
         Speaker:Diabolus
-        LeftImage:1
-        RightImage:2
-        Dialogue:Greetings. I also offer you my heartfelt thanks.
+        LeftImage:2
+        RightImage:None
+        Dialogue:Very well, you leave us with no alternative.
+    Statement:
+        Speaker:Antisiphone
+        LeftImage:None
+        RightImage:3
+        Dialogue:[Twwaaannggg]
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:!!!
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:No, I cannot falter...
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Mansoul needs a defend... aaah.
     Statement:
         Speaker:Diabolus
-        LeftImage:1
-        RightImage:2
-        Dialogue:I can see Captain Resistance's bigotry has not infected all who dwell in Mansoul.
+        LeftImage:2
+        RightImage:None
+        Dialogue:What is that? You resent me for such methods?
     Statement:
         Speaker:Diabolus
-        LeftImage:1
-        RightImage:2
-        Dialogue:What? You say Captain Resistance says the Diabolonians do not follow King Shaddai's laws?
-    Statement:
-        Speaker:ForgetGood
-        LeftImage:1
-        RightImage:2
-        Dialogue:She tries to hurt us by alleging these accusations. She does this on purpose to spite us.
+        LeftImage:2
+        RightImage:None
+        Dialogue:You will see in the end that I will be justified.
     Statement:
         Speaker:Diabolus
-        LeftImage:1
-        RightImage:2
-        Dialogue:You don't believe us? Well, I suggest a test. Help us get inside and we can find proof!
+        LeftImage:2
+        RightImage:None
+        Dialogue:Come, we must continue our mission to investigate the corruption going on in this city.!

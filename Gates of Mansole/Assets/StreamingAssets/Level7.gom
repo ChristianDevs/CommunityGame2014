@@ -2,155 +2,150 @@ AttackersLetThrough:5
 IsPlayerAttacker:True
 AttackerDir:Right
 StartShards:21
-Lane:1
-Lane:1
-Lane:1
-Lane:1
-Lane:1
-Lane:1
-Lane:1
-Lane:1
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
+Lane:2
 PreDialogue:
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue: The command post is guarded by evangelists and orators.
+        Dialogue:Elders are good against both shepherds and teachers.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:First the evangelists must be dealt with before you can get passed the orators.
+        Dialogue:I bet Captain Resistance didn't teach you that!
     Statement:
-        Speaker:Forgetgood
-        LeftImage:None
-        RightImage:1
-        Dialogue:Be sure you use the correct units to counter with.
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:There is a lot Captain Resistance hasn't told you.
     Statement:
-        Speaker:Forgetgood
-        LeftImage:None
-        RightImage:1
-        Dialogue:I am sure we will find the proof about Captain Resistance's conspiracy here.
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:Come, make quick work of these defenders so we can confront the... the good captain.
 Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:0:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:1:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:2:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:3:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:4:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:5:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:6:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:7:11
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:0:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:1:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:2:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:3:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:4:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:5:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:6:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:7:12
 PostDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Captain Resistance
+        LeftImage:0
         RightImage:None
-        Dialogue:What? You found something? Let me take a look.
+        Dialogue:What is the meaning of this, lieutenant? Who are these per... NO!
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Captain Resistance
+        LeftImage:0
         RightImage:None
-        Dialogue:Hmm...
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:Oh! This is precisely the evidence we need. Diabolus, take a look.
+        Dialogue:What have you done? You've brought Diabolonians into the city!
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Yes... yes... Right here. It says Diabolonians are not to enter the city under any circumstances.
+        Dialogue:But what about what you've done... captain! Hmph...
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And it has Captain Resistance's signature on the page.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Captain Resistance
+        LeftImage:0
         RightImage:None
-        Dialogue:I did some digging and found out that Captain Resistance's house is guarded by Shepherds and Teachers.
+        Dialogue:Me?! I haven't done anything.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Good work, Forgetgood.
+        Dialogue:Your slander shows just how bigotted and judgmental you are.
     Statement:
-        SpeakerDiabolus
+        Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Be sure you have elders in your employ. If not, get them from the market.
+        Dialogue:You only tell the people of Mansoul your own twisted version of the Diabolonians.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:I will stand for this non-sense no longer. Guards, come help!

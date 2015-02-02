@@ -15,7 +15,7 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:I trust you unlocked the orator units, you will need them.
+        Dialogue:I trust you unlocked the elder units, you will need them.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -25,7 +25,7 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Orators units are great at taking down heavily armored units like teachers.
+        Dialogue:Elders are great at taking down heavily armored units like teachers.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -102,14 +102,14 @@ PostDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:But while you were dealing with the teachers I got a report of Sinians storming a guard post outside of own.
+        Dialogue:But while you were dealing with the teachers I got a report of Diabolonians storming a guard post outside of own.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:They seem to have a lot of orator units, so go unlock some elder units and meet me outside the gate.
+        Dialogue:They seem to have a lot of shepherds so go unlock elders and meet me outside the gate.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Sinians will not take any ground from us. Not while I am captain!
+        Dialogue:Diabolonians will not take any ground from us. Not while I am captain!

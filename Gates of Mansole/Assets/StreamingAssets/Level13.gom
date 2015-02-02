@@ -2,35 +2,30 @@ AttackersLetThrough:5
 IsPlayerAttacker:True
 AttackerDir:Right
 StartShards:21
-Lane:1
-Lane:1
-Lane:1
-Lane:1
-Lane:1
-Lane:1
-Lane:1
-Lane:1
+Lane:0
+Lane:0
+Lane:0
+Lane:0
+Lane:0
+Lane:0
+Lane:0
+Lane:0
 PreDialogue:
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue: The command post is guarded by evangelists and orators.
+        Dialogue:With this last victory we shall have what we came for.
     Statement:
-        Speaker:Diabolus
-        LeftImage:2
+        Speaker:Carnalsecurity
+        LeftImage:None
+        RightImage:8
+        Dialogue:Don't give any mercy here, we must accomplish our mission.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:1
         RightImage:None
-        Dialogue:First the evangelists must be dealt with before you can get passed the orators.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:None
-        RightImage:1
-        Dialogue:Be sure you use the correct units to counter with.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:None
-        RightImage:1
-        Dialogue:I am sure we will find the proof about Captain Resistance's conspiracy here.
+        Dialogue:There are a lot of ranged units here, so be sure to use the appropriate counter.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -75,7 +70,7 @@ Wave:
         Tile:7:11
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:0:12
     WaveUnit:
@@ -85,7 +80,7 @@ Wave:
         Tile:1:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:2:12
     WaveUnit:
@@ -95,7 +90,7 @@ Wave:
         Tile:3:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:4:12
     WaveUnit:
@@ -105,7 +100,7 @@ Wave:
         Tile:5:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:6:12
     WaveUnit:
@@ -115,42 +110,32 @@ Wave:
         Tile:7:12
 PostDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:What? You found something? Let me take a look.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:Hmm...
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:Oh! This is precisely the evidence we need. Diabolus, take a look.
+        Dialogue:Who has come? Make your will be known.
     Statement:
         Speaker:Diabolus
         LeftImage:None
-        RightImage:2
-        Dialogue:Yes... yes... Right here. It says Diabolonians are not to enter the city under any circumstances.
+        RightImage:1
+        Dialogue:I am Diabolus, and my will is your confession of your misdeeds.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And it has Captain Resistance's signature on the page.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:I did some digging and found out that Captain Resistance's house is guarded by Shepherds and Teachers.
+        Dialogue:Misdeeds? I have no misdeeds for you to accuse me of.
     Statement:
         Speaker:Diabolus
         LeftImage:None
-        RightImage:2
-        Dialogue:Good work, Forgetgood.
+        RightImage:1
+        Dialogue:Ha! No misdeeds you say?
     Statement:
-        SpeakerDiabolus
+        Speaker:Diabolus
         LeftImage:None
-        RightImage:2
-        Dialogue:Be sure you have elders in your employ. If not, get them from the market.
+        RightImage:1
+        Dialogue:You oppress the people of the city with the will of King Shaddai.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:1
+        Dialogue:Before this day is through we shall see the end of it.

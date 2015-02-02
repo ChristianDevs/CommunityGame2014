@@ -12,145 +12,130 @@ Lane:1
 Lane:1
 PreDialogue:
     Statement:
-        Speaker:Diabolus
-        LeftImage:2
+        Speaker:Forgetgood
+        LeftImage:1
         RightImage:None
-        Dialogue: The command post is guarded by evangelists and orators.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:2
-        RightImage:None
-        Dialogue:First the evangelists must be dealt with before you can get passed the orators.
+        Dialogue:I have discovered the next person in this conspiracy is the judge.
     Statement:
         Speaker:Forgetgood
-        LeftImage:None
-        RightImage:1
-        Dialogue:Be sure you use the correct units to counter with.
+        LeftImage:1
+        RightImage:None
+        Dialogue:Yes, Judge Conscience has been slandering Diabolonians with hate speech and bigotry.
     Statement:
-        Speaker:Forgetgood
+        Speaker:Diabolus
         LeftImage:None
-        RightImage:1
-        Dialogue:I am sure we will find the proof about Captain Resistance's conspiracy here.
+        RightImage:2
+        Dialogue:We did some snooping around the judge's manor and found he is guarded by elders and teachers.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:Use evangelists to break through so we can confront the judge.
 Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:0:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:1:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:2:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:3:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:4:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:5:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:6:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:7:11
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:0:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:1:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:2:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:3:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:4:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:5:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:6:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:7:12
 PostDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Judge Conscience
+        LeftImage:5
         RightImage:None
-        Dialogue:What? You found something? Let me take a look.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:Hmm...
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:Oh! This is precisely the evidence we need. Diabolus, take a look.
+        Dialogue:What is going on here? Who is it? What do you want?
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Yes... yes... Right here. It says Diabolonians are not to enter the city under any circumstances.
+        Dialogue:We know of the unjust laws you prop up and use to enslave the people of this city.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:And it has Captain Resistance's signature on the page.
+        Dialogue:You use them to hurt the people and keep the Diabolonians out!
+    Statement:
+        Speaker:Judge Conscience
+        LeftImage:5
+        RightImage:None
+        Dialogue:What are you talking about? Get out of here you.
     Statement:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:I did some digging and found out that Captain Resistance's house is guarded by Shepherds and Teachers.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Good work, Forgetgood.
-    Statement:
-        SpeakerDiabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Be sure you have elders in your employ. If not, get them from the market.
+        Dialogue:Do not deny it, we all know your guilt. I will make sure you confess to your deeds.
