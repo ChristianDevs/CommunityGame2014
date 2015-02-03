@@ -141,7 +141,8 @@ public class WorldController : MonoBehaviour {
 				break;
             case _WorldState.PostDialogue:
                 if (handleDialogue(currentLevel.GetComponent<WaveList>().postLevelDialogue)) {
-                    Application.LoadLevel("LevelSelect");
+				dialogueWindow.SetActive(false);
+					winMessage.SetActive(true);
                 }
                 break;
         }
@@ -455,21 +456,19 @@ public class WorldController : MonoBehaviour {
                     }
                 }
             }
-
+			// Handle the level being done
+			if (isLevelDone == true) {
+				if (loseMessage.activeSelf != true) {
+					state = _WorldState.CollectOrbs;
+					if (currentLevel.GetComponent<WaveList>().postLevelDialogue.Count > 0) {
+						dialogueWindow.SetActive(true);
+					}
+				} //else {
+				//Application.LoadLevel("LevelSelect");
+				//}
+			}
             if (Input.GetMouseButtonDown(0)) {
                 RaycastHit hitSquare;
-
-                // Handle the level being done
-                if (isLevelDone == true) {
-                    if (winMessage.activeSelf == true) {
-                        state = _WorldState.CollectOrbs;
-                        if (currentLevel.GetComponent<WaveList>().postLevelDialogue.Count > 0) {
-                            dialogueWindow.SetActive(true);
-                        }
-                    } else {
-                        Application.LoadLevel("LevelSelect");
-                    }
-                }
 
                 // Check Menu Squares
                 if (Physics.Raycast(UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition), out hitSquare)) {
@@ -612,7 +611,6 @@ public class WorldController : MonoBehaviour {
     }
 
 	void winLevel() {
-		winMessage.SetActive(true);
 		ShardCurAmount = Player.totalShards;
 		Player.completeLevel(Player.currentLevel);
 		isLevelDone = true;
