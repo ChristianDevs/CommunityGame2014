@@ -15,11 +15,15 @@ public class UpgradeController : MonoBehaviour {
 	private List<GameObject> upgrades;
 	private List<GameObject> upgradeWindows;
 	private int selectedType;
+	private int maxUnitUpgrades;
+	private int maxAbilityUpgrades;
 
 	// Use this for initialization
 	void Start () {
 		upgrades = new List<GameObject>();
 		upgradeWindows = new List<GameObject>();
+		maxUnitUpgrades = 10;
+		maxAbilityUpgrades = 5;
 
         buildUnitUpgrade();
 		buildAbilityUpgrade();
@@ -104,8 +108,8 @@ public class UpgradeController : MonoBehaviour {
 			break;
 		case "Upgrade":
 			if (selectedType < Player.unitTypes.Count) {
-                int orbCost = (Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel * 2) + 2;
-                if (Player.spiritOrbs >= orbCost) {
+                int orbCost = (Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel * 5) + 5;
+                if ((Player.spiritOrbs >= orbCost) && (Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel < maxUnitUpgrades)  ) {
                     float x = startUnitX + (selectedType * incX);
                     float y = startUnitY;
 
@@ -118,8 +122,8 @@ public class UpgradeController : MonoBehaviour {
                 }
             } else {
 				int abilityIndex = selectedType - Player.unitTypes.Count;
-				int orbCost = (Player.abilities[abilityIndex].GetComponent<Ability>().level * 2) + 2;
-                if (Player.spiritOrbs >= orbCost) {
+				int orbCost = (Player.abilities[abilityIndex].GetComponent<Ability>().level==0) ?  Player.abilities[abilityIndex].GetComponent<Ability>().cost : (Player.abilities[abilityIndex].GetComponent<Ability>().level * 2 + 2);
+                if ((Player.spiritOrbs >= orbCost) && (Player.abilities[abilityIndex].GetComponent<Ability>().level < maxAbilityUpgrades) ) {
 					float x = startAbilityX + (abilityIndex * incX);
                     float y = startAbilityY;
 
@@ -154,7 +158,7 @@ public class UpgradeController : MonoBehaviour {
             textToDisplay += "\n";
 
             textToDisplay += "Upgrade Cost: ";
-            textToDisplay += ut.getPlayerStats().maxLevel * 2 + 2;
+            textToDisplay += ut.getPlayerStats().maxLevel* 5 + 5;
             textToDisplay += "\n";
         } else {
             Ability ab;
@@ -170,7 +174,7 @@ public class UpgradeController : MonoBehaviour {
             textToDisplay += "\n";
 
             textToDisplay += "Upgrade Cost: ";
-            textToDisplay += ab.level * 2 + 2;
+            textToDisplay += ((ab.level==0)?ab.cost:ab.level*5+15);
             textToDisplay += "\n";
         }
 

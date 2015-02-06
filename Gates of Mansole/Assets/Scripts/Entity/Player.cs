@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Player : MonoBehaviour {
 
-	public const float CONVERSION_RATE = 0.2f; // shards to orbs
+	public const float CONVERSION_RATE = 0.1f; // shards to orbs
 
     static public List<int> levelComplete;
     static public int currentLevel;
@@ -26,7 +26,7 @@ public class Player : MonoBehaviour {
         }
 
         spiritOrbs = 0;
-        AddOrbs(10);
+        AddOrbs(0);
 
 		unitTypes = new List<GameObject>();
 		foreach (GameObject ut in newUnitTypes) {
