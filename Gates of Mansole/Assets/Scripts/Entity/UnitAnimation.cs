@@ -63,4 +63,10 @@ public class UnitAnimation : MonoBehaviour {
             }
         }
     }
+
+	void SetColor(Color color) {
+		foreach (GameObject go in animObjects) {
+			go.GetComponent<SpriteRenderer>().color = color;
+		}
+	}
 }

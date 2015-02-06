@@ -4,101 +4,63 @@ using System.Collections.Generic;
 
 public class UpgradeController : MonoBehaviour {
 
-    enum _UpgradeMode {
-        Units,
-        Abilities
-    }
-
 	public TextMesh unitInfoText;
 	public GameObject unitWindow;
 	public float startUnitX;
 	public float startUnitY;
-	public float incUnitX;
-	public float incUnitY;
+	public float startAbilityX;
+	public float startAbilityY;
+	public float incX;
 
 	private List<GameObject> upgrades;
 	private List<GameObject> upgradeWindows;
 	private int selectedType;
-    private _UpgradeMode mode;
 
 	// Use this for initialization
 	void Start () {
-        mode = _UpgradeMode.Units;
+		upgrades = new List<GameObject>();
+		upgradeWindows = new List<GameObject>();
+
         buildUnitUpgrade();
+		buildAbilityUpgrade();
 	}
 
     void buildUnitUpgrade() {
         float x = startUnitX;
         float y = startUnitY;
 
-        if (upgrades != null) {
-            foreach (GameObject upgrade in upgrades) {
-                Destroy(upgrade);
-            }
-        }
-
-        if (upgradeWindows != null) {
-            foreach (GameObject upWin in upgradeWindows) {
-                Destroy(upWin);
-            }
-        }
-
-        upgrades = new List<GameObject>();
-        upgradeWindows = new List<GameObject>();
         for (int i = 0; i < Player.unitTypes.Count; i++) {
             upgradeWindows.Add(Instantiate(unitWindow, new Vector3(x, y), Quaternion.identity) as GameObject);
-            upgradeWindows[upgradeWindows.Count - 1].transform.name = Player.unitTypes[i].GetComponent<UiUnitType>().UnitName + "0";
+			upgradeWindows[upgradeWindows.Count - 1].transform.name = Player.unitTypes[i].GetComponent<UiUnitType>().UnitName;
+			upgradeWindows[upgradeWindows.Count - 1].transform.localScale *= 1.5f;
             upgrades.Add(Instantiate(Player.unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(), new Vector3(x, y), Quaternion.identity) as GameObject);
             upgrades[upgrades.Count - 1].GetComponent<GomUnit>().enabled = false;
+			upgrades[upgrades.Count - 1].transform.localScale *= 1.5f;
 
-            for (int j = 0; j < Player.unitTypes[i].GetComponent<UiUnitType>().getPlayerStats().maxLevel; j++) {
-                y += incUnitY;
+			if (Player.unitTypes[i].GetComponent<UiUnitType>().getPlayerStats().maxLevel == 0) {
+				upgrades[upgrades.Count - 1].SendMessage("SetColor", Color.black, SendMessageOptions.DontRequireReceiver);
+			}
 
-                upgradeWindows.Add(Instantiate(unitWindow, new Vector3(x, y), Quaternion.identity) as GameObject);
-                upgradeWindows[upgradeWindows.Count - 1].transform.name = Player.unitTypes[i].GetComponent<UiUnitType>().UnitName + (j + 1);
-                upgrades.Add(Instantiate(Player.unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(), new Vector3(x, y), Quaternion.identity) as GameObject);
-                upgrades[upgrades.Count - 1].GetComponent<GomUnit>().enabled = false;
-            }
-
-            x += incUnitX;
-            y = startUnitY;
+            x += incX;
         }
     }
 
     void buildAbilityUpgrade() {
-        float x = startUnitX;
-        float y = startUnitY;
-
-        if (upgrades != null) {
-            foreach (GameObject upgrade in upgrades) {
-                Destroy(upgrade);
-            }
-        }
-
-        if (upgradeWindows != null) {
-            foreach (GameObject upWin in upgradeWindows) {
-                Destroy(upWin);
-            }
-        }
-
-        upgrades = new List<GameObject>();
-        upgradeWindows = new List<GameObject>();
+        float x = startAbilityX;
+        float y = startAbilityY;
 
         for (int i = 0; i < Player.abilities.Count; i++) {
             upgradeWindows.Add(Instantiate(unitWindow, new Vector3(x, y), Quaternion.identity) as GameObject);
-            upgradeWindows[upgradeWindows.Count - 1].transform.name = Player.abilities[i].GetComponent<Ability>().abilityName + "0";
-            upgrades.Add(Instantiate(Player.abilities[i].GetComponent<Ability>().sprite, new Vector3(x, y), Quaternion.identity) as GameObject);
+			upgradeWindows[upgradeWindows.Count - 1].transform.name = Player.abilities[i].GetComponent<Ability>().abilityName;
+			upgradeWindows[upgradeWindows.Count - 1].transform.localScale *= 1.5f;
+			upgrades.Add(Instantiate(Player.abilities[i].GetComponent<Ability>().sprite, new Vector3(x, y), Quaternion.identity) as GameObject);
+			upgrades[upgrades.Count - 1].transform.localScale *= 1.5f;
 
-            for (int j = 0; j < Player.abilities[i].GetComponent<Ability>().level; j++) {
-                y += incUnitY;
+			if (Player.abilities[i].GetComponent<Ability>().level == 0) {
+				upgrades[upgrades.Count - 1].GetComponent<SpriteRenderer>().color = Color.black;
+			}
 
-                upgradeWindows.Add(Instantiate(unitWindow, new Vector3(x, y), Quaternion.identity) as GameObject);
-                upgradeWindows[upgradeWindows.Count - 1].transform.name = Player.abilities[i].GetComponent<Ability>().abilityName + (j + 1);
-                upgrades.Add(Instantiate(Player.abilities[i].GetComponent<Ability>().sprite, new Vector3(x, y), Quaternion.identity) as GameObject);
-            }
-
-            x += incUnitX;
-            y = startUnitY;
+            x += incX;
         }
     }
 	
@@ -116,22 +78,19 @@ public class UpgradeController : MonoBehaviour {
 
 						typeName = hitSquare.transform.name.TrimEnd(charsTrim);
 
-                        if (mode == _UpgradeMode.Units) {
-                            for (int j = 0; j < Player.unitTypes.Count; j++) {
-                                if (typeName == Player.unitTypes[j].GetComponent<UiUnitType>().UnitName) {
-                                    selectedType = j;
-                                    UpdateDisplay();
-                                }
-                            }
-                        }
-                        else if (mode == _UpgradeMode.Abilities) {
-                            for (int j = 0; j < Player.abilities.Count; j++) {
-                                if (typeName == Player.abilities[j].GetComponent<Ability>().abilityName) {
-                                    selectedType = j;
-                                    UpdateDisplay();
-                                }
-                            }
-                        }
+	                    for (int j = 0; j < Player.unitTypes.Count; j++) {
+	                        if (typeName == Player.unitTypes[j].GetComponent<UiUnitType>().UnitName) {
+	                            selectedType = j;
+	                            UpdateDisplay();
+	                        }
+	                    }
+
+						for (int j = 0; j < Player.abilities.Count; j++) {
+	                        if (typeName == Player.abilities[j].GetComponent<Ability>().abilityName) {
+								selectedType = j + Player.unitTypes.Count;
+	                            UpdateDisplay();
+	                        }
+						}
 					}
 				}
 			}
@@ -144,57 +103,35 @@ public class UpgradeController : MonoBehaviour {
 			Application.LoadLevel("LevelSelect");
 			break;
 		case "Upgrade":
-            if (mode == _UpgradeMode.Units) {
+			if (selectedType < Player.unitTypes.Count) {
                 int orbCost = (Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel * 2) + 2;
                 if (Player.spiritOrbs >= orbCost) {
-                    float x = startUnitX + (selectedType * incUnitX);
-                    float y = startUnitY + ((Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel + 1) * incUnitY);
+                    float x = startUnitX + (selectedType * incX);
+                    float y = startUnitY;
 
                     Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel++;
                     Player.upgradeUnit(Player.unitTypes[selectedType].GetComponent<UiUnitType>());
                     Debug.Log("Upgraded Unit " + selectedType);
-
-                    upgradeWindows.Add(Instantiate(unitWindow, new Vector3(x, y), Quaternion.identity) as GameObject);
-                    upgradeWindows[upgradeWindows.Count - 1].transform.name =
-                        Player.unitTypes[selectedType].GetComponent<UiUnitType>().UnitName +
-                        Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel;
-                    upgrades.Add(Instantiate(Player.unitTypes[selectedType].GetComponent<UiUnitType>().getRandomUnit(), new Vector3(x, y), Quaternion.identity) as GameObject);
-                    upgrades[upgrades.Count - 1].GetComponent<GomUnit>().enabled = false;
                     Player.AddOrbs(-orbCost);
                     UpdateDisplay();
+					upgrades[selectedType].SendMessage("SetColor", Color.white, SendMessageOptions.DontRequireReceiver);
                 }
-            } else if (mode == _UpgradeMode.Abilities) {
-                int orbCost = (Player.abilities[selectedType].GetComponent<Ability>().level * 2) + 2;
+            } else {
+				int abilityIndex = selectedType - Player.unitTypes.Count;
+				int orbCost = (Player.abilities[abilityIndex].GetComponent<Ability>().level * 2) + 2;
                 if (Player.spiritOrbs >= orbCost) {
-                    float x = startUnitX + (selectedType * incUnitX);
-                    float y = startUnitY + ((Player.abilities[selectedType].GetComponent<Ability>().level + 1) * incUnitY);
+					float x = startAbilityX + (abilityIndex * incX);
+                    float y = startAbilityY;
 
-                    Player.abilities[selectedType].GetComponent<Ability>().level++;
-                    Player.upgradeAbility(Player.abilities[selectedType].GetComponent<Ability>());
-                    Debug.Log("Upgraded Ability " + selectedType);
-
-                    upgradeWindows.Add(Instantiate(unitWindow, new Vector3(x, y), Quaternion.identity) as GameObject);
-                    upgradeWindows[upgradeWindows.Count - 1].transform.name =
-                        Player.abilities[selectedType].GetComponent<Ability>().abilityName +
-                        Player.abilities[selectedType].GetComponent<Ability>().level;
-                    upgrades.Add(Instantiate(Player.abilities[selectedType].GetComponent<Ability>().sprite, new Vector3(x, y), Quaternion.identity) as GameObject);
+					Player.abilities[abilityIndex].GetComponent<Ability>().level++;
+					Player.upgradeAbility(Player.abilities[abilityIndex].GetComponent<Ability>());
+					Debug.Log("Upgraded Ability " + abilityIndex);
                     Player.AddOrbs(-orbCost);
-                    UpdateDisplay();
+					UpdateDisplay();
+					upgrades[selectedType].GetComponent<SpriteRenderer>().color = Color.white;
                 }
             }
 			break;
-        case "Switch":
-            Debug.Log("Switch");
-
-            if (mode == _UpgradeMode.Units) {
-                mode = _UpgradeMode.Abilities;
-                buildAbilityUpgrade();
-            } else if (mode == _UpgradeMode.Abilities) {
-                mode = _UpgradeMode.Units;
-                buildUnitUpgrade();
-            }
-
-            break;
 		default:
 			break;
 		}
@@ -203,12 +140,12 @@ public class UpgradeController : MonoBehaviour {
 	void UpdateDisplay() {
 		string textToDisplay = "";
 
-        if (mode == _UpgradeMode.Units) {
+		if (selectedType < Player.unitTypes.Count) {
             UiUnitType ut;
 
             ut = Player.unitTypes[selectedType].GetComponent<UiUnitType>();
 
-            textToDisplay = "Name: ";
+            textToDisplay = "Unit: ";
             textToDisplay += ut.UnitName;
             textToDisplay += "\n";
 
@@ -219,10 +156,10 @@ public class UpgradeController : MonoBehaviour {
             textToDisplay += "Upgrade Cost: ";
             textToDisplay += ut.getPlayerStats().maxLevel * 2 + 2;
             textToDisplay += "\n";
-        } else if (mode == _UpgradeMode.Abilities) {
+        } else {
             Ability ab;
 
-            ab = Player.abilities[selectedType].GetComponent<Ability>();
+			ab = Player.abilities[selectedType - Player.unitTypes.Count].GetComponent<Ability>();
 
             textToDisplay = "Ability: ";
             textToDisplay += ab.abilityName;
