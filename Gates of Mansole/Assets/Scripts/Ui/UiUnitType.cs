@@ -22,6 +22,6 @@ public class UiUnitType : MonoBehaviour {
 				return null;
 		}
 
-		return Units[Random.Range(0, Units.Length - 1)];
+		return Units[Random.Range(0, Units.Length)];
 	}
 }
