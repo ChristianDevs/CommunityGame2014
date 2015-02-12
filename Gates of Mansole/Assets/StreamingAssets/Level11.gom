@@ -2,14 +2,26 @@ AttackersLetThrough:5
 IsPlayerAttacker:True
 AttackerDir:Right
 StartShards:21
+Lane:5:Disable
+Lane:1
+Lane:1
+Lane:1:Disable
+Lane:1:Disable
 Lane:1
 Lane:1
 Lane:1
-Lane:1
-Lane:1
-Lane:1
-Lane:1
-Lane:1
+Placeable:4:-1.7:0.15
+Placeable:5:4.1:-0.75
+Placeable:4:5.75:0.15
+Placeable:9:1.35:-4.28
+Placeable:9:2.35:-4
+Placeable:9:3.35:-4.28
+Placeable:10:-1:-0.9
+Placeable:10:3.55:0.15
+Placeable:15:6.4:-2.6
+Placeable:15:1.85:2.4
+Placeable:16:4.3:3.35
+Placeable:16:-1.5:-1.65
 PreDialogue:
     Statement:
         Speaker:Diabolus
@@ -47,122 +59,122 @@ Wave:
         Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedTile
-        Tile:0:11
+        Tile:0:10
     WaveUnit:
         Time:0
         Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:1:10
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:2:10
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:3:10
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:4:10
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:5:10
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:6:10
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:7:10
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:SpecifiedTile
+        Tile:0:11
+    WaveUnit:
+        Time:0
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:1:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:2:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:3:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:4:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:5:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:6:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:7:11
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:0:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:1:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:2:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:3:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:4:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:5:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:6:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:7:12
-    WaveUnit:
-        Time:0
-        Unit:Elder
-        SpawnLoc:SpecifiedTile
-        Tile:0:13
-    WaveUnit:
-        Time:0
-        Unit:Elder
-        SpawnLoc:SpecifiedTile
-        Tile:1:13
-    WaveUnit:
-        Time:0
-        Unit:Elder
-        SpawnLoc:SpecifiedTile
-        Tile:2:13
-    WaveUnit:
-        Time:0
-        Unit:Elder
-        SpawnLoc:SpecifiedTile
-        Tile:3:13
-    WaveUnit:
-        Time:0
-        Unit:Elder
-        SpawnLoc:SpecifiedTile
-        Tile:4:13
-    WaveUnit:
-        Time:0
-        Unit:Elder
-        SpawnLoc:SpecifiedTile
-        Tile:5:13
-    WaveUnit:
-        Time:0
-        Unit:Elder
-        SpawnLoc:SpecifiedTile
-        Tile:6:13
-    WaveUnit:
-        Time:0
-        Unit:Elder
-        SpawnLoc:SpecifiedTile
-        Tile:7:13
 PostDialogue:
     Statement:
         Speaker:Mayor Understanding

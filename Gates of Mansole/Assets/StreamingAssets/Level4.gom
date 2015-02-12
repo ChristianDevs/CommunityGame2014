@@ -1,6 +1,6 @@
 AttackersLetThrough:3
 IsPlayerAttacker:True
-AttackerDir:Left
+AttackerDir:Right
 StartShards:18
 Lane:2
 Lane:2

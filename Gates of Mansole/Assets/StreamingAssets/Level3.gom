@@ -2,14 +2,21 @@ AttackersLetThrough:5
 IsPlayerAttacker:True
 AttackerDir:Right
 StartShards:15
+Lane:4:Disable
+Lane:5:Disable
 Lane:0
 Lane:0
 Lane:0
 Lane:0
-Lane:0
-Lane:0
-Lane:0
-Lane:0
+Lane:0:Disable
+Lane:5:Disable
+Placeable:0:-5.25:-1.9
+Placeable:0:-3:-1.9
+Placeable:1:2.5:-1.9
+Placeable:4:5.75:2.15
+Placeable:8:-5:2.15
+Placeable:8:-0.15:2.15
+Placeable:10:0.85:2.15
 PreDialogue:
     Statement:
         Speaker:Captain Resistance
