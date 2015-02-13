@@ -23,6 +23,10 @@ Placeable:17:6.5:0.3
 Placeable:18:3.75:1.4
 Placeable:18:0:3.3
 Placeable:18:7:-0.65
+Placeable:13:4.4:-2.85
+Placeable:14:5.8:-3.5
+Placeable:26:7.47:-2.6
+Placeable:26:6.7:-3.95
 PreDialogue:
     Statement:
         Speaker:Forgetgood
@@ -46,16 +50,6 @@ PreDialogue:
         Dialogue:Use evangelists to break through so we can confront the judge.
 Wave:
     WaitTime:0
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedTile
-        Tile:0:11
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedTile
-        Tile:1:11
     WaveUnit:
         Time:0
         Unit:Teacher

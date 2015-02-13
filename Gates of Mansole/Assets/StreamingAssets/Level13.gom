@@ -13,12 +13,17 @@ Lane:5:Disable
 Placeable:0:-2.4:-2.65
 Placeable:0:1.25:-2.8
 Placeable:1:-5:-2.7
+Placeable:6:1.85:2.6
+Placeable:7:4.6:2.8
 Placeable:9:3.85:-4.25
 Placeable:9:6.15:-4
+Placeable:9:-3:2.6
+Placeable:9:-4.4:3
 Placeable:15:3.45:-1.6
 Placeable:15:1.15:2.35
 Placeable:16:5.5:0.5
 Placeable:16:-1.5:1.35
+Placeable:26:-1.75:-3.8
 PreDialogue:
     Statement:
         Speaker:Diabolus

@@ -59,27 +59,12 @@ Wave:
         Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedTile
-        Tile:0:10
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedTile
         Tile:1:10
     WaveUnit:
         Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedTile
         Tile:2:10
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedTile
-        Tile:3:10
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedTile
-        Tile:4:10
     WaveUnit:
         Time:0
         Unit:Evangelist
@@ -99,27 +84,12 @@ Wave:
         Time:0
         Unit:Orator
         SpawnLoc:SpecifiedTile
-        Tile:0:11
-    WaveUnit:
-        Time:0
-        Unit:Orator
-        SpawnLoc:SpecifiedTile
         Tile:1:11
     WaveUnit:
         Time:0
         Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:2:11
-    WaveUnit:
-        Time:0
-        Unit:Orator
-        SpawnLoc:SpecifiedTile
-        Tile:3:11
-    WaveUnit:
-        Time:0
-        Unit:Orator
-        SpawnLoc:SpecifiedTile
-        Tile:4:11
     WaveUnit:
         Time:0
         Unit:Orator
@@ -139,27 +109,12 @@ Wave:
         Time:0
         Unit:Elder
         SpawnLoc:SpecifiedTile
-        Tile:0:12
-    WaveUnit:
-        Time:0
-        Unit:Elder
-        SpawnLoc:SpecifiedTile
         Tile:1:12
     WaveUnit:
         Time:0
         Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:2:12
-    WaveUnit:
-        Time:0
-        Unit:Elder
-        SpawnLoc:SpecifiedTile
-        Tile:3:12
-    WaveUnit:
-        Time:0
-        Unit:Elder
-        SpawnLoc:SpecifiedTile
-        Tile:4:12
     WaveUnit:
         Time:0
         Unit:Elder

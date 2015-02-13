@@ -2,14 +2,21 @@ AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Right
 StartShards:21
+Lane:7:Disable
 Lane:2
 Lane:2
 Lane:2
 Lane:2
 Lane:2
-Lane:2
-Lane:2
-Lane:2
+Lane:2:Disable
+Lane:7:Disable
+Placeable:20:-6.15:2.4
+Placeable:20:-3.85:2.4
+Placeable:23:-5:2.75
+Placeable:21:0:3
+Placeable:20:6.15:2.4
+Placeable:20:3.85:2.4
+Placeable:23:5:2.75
 PreDialogue:
     Statement:
         Speaker:Forgetgood
@@ -24,11 +31,6 @@ PreDialogue:
 Wave:
     WaitTime:0
     WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:0:0
-    WaveUnit:
         Time:1
         Unit:Orator
         SpawnLoc:SpecifiedRow
@@ -40,16 +42,6 @@ Wave:
         Tile:1:1
 Wave:
     WaitTime:10
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:6:6
-    WaveUnit:
-        Time:1
-        Unit:Orator
-        SpawnLoc:SpecifiedRow
-        Tile:7:7
     WaveUnit:
         Time:2
         Unit:Teacher
@@ -91,11 +83,6 @@ Wave:
     WaitTime:40
     WaveUnit:
         Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:0:0
-    WaveUnit:
-        Time:0
         Unit:Orator
         SpawnLoc:SpecifiedRow
         Tile:2:2
@@ -104,16 +91,6 @@ Wave:
         Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:1:1
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:6:6
-    WaveUnit:
-        Time:0
-        Unit:Orator
-        SpawnLoc:SpecifiedRow
-        Tile:7:7
     WaveUnit:
         Time:0
         Unit:Teacher
