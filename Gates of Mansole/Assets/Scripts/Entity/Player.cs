@@ -127,7 +127,7 @@ public class Player : MonoBehaviour {
     }
 
 	static public void convertShards() {
-		spiritOrbs = (int)Mathf.Floor (totalShards * CONVERSION_RATE);
+		spiritOrbs = (int)Mathf.Ceil (totalShards * CONVERSION_RATE);
 		Debug.Log (spiritOrbs + " orbs gained.");
 		int currentOrbs = PlayerPrefs.GetInt("spiritOrbs", 0);
 		spiritOrbs += currentOrbs;

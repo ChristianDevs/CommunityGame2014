@@ -1,7 +1,7 @@
 AttackersLetThrough:3
 IsPlayerAttacker:False
-AttackerDir:Right
-StartShards:12
+AttackerDir:Left
+StartShards:10
 Lane:1:Disable
 Lane:1
 Lane:1
@@ -28,7 +28,7 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:I trust you unlocked the elder units, you will need them.
+        Dialogue:I trust you unlocked the evangelist units, you will need them.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -38,7 +38,7 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Elders are great at taking down heavily armored units like teachers.
+        Dialogue:Evangelist are great at taking down heavily armored units like teachers.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -51,20 +51,13 @@ Wave:
         Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
-Wave:
-    WaitTime:7
     WaveUnit:
-        Time:0
+        Time:6
         Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:1
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:2
+        Time:9
         Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
@@ -76,12 +69,29 @@ Wave:
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:1
+        Time:3
         Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:1
+        Time:6
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:9
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:12
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
+Wave:
+    WaitTime:30
+    WaveUnit:
+        Time:0
         Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
@@ -91,17 +101,27 @@ Wave:
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:3
+        Time:5
         Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:3
+        Time:8
         Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:3
+        Time:11
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:14
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:15
         Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0

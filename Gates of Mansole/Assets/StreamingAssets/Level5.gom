@@ -1,6 +1,6 @@
 AttackersLetThrough:3
 IsPlayerAttacker:False
-AttackerDir:Right
+AttackerDir:Left
 StartShards:21
 Lane:4:Disable
 Lane:5:Disable
@@ -48,69 +48,116 @@ Wave:
     WaveUnit:
         Time:1
         Unit:Shepherd
-        SpawnLoc:SpecifiedRow
-        Tile:2:2
-Wave:
-    WaitTime:10
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
-        Time:2
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:5:5
+        Time:1
+        Unit:Shepherd
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:1
+        Unit:Shepherd
+        SpawnLoc:RandRow
+        Tile:0:0
 Wave:
-    WaitTime:20
+    WaitTime:13
+    WaveUnit:
+        Time:1
+        Unit:Shepherd
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:1
+        Unit:Shepherd
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:1
+        Unit:Shepherd
+        SpawnLoc:RandRow
+        Tile:0:0
+Wave:
+    WaitTime:26
+    WaveUnit:
+        Time:1
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:7
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:10
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:13
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
+Wave:
+    WaitTime:45
     WaveUnit:
         Time:0
         Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:4:4
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
         Time:0
         Unit:Shepherd
-        SpawnLoc:SpecifiedRow
-        Tile:3:3
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
         Time:3
         Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:4:4
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
-        Time:7
+        Time:3
         Unit:Shepherd
-        SpawnLoc:SpecifiedRow
-        Tile:4:4
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
         Time:5
         Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:3:3
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
-        Time:9
+        Time:5
         Unit:Shepherd
-        SpawnLoc:SpecifiedRow
-        Tile:3:3
+        SpawnLoc:RandRow
+        Tile:0:0
 Wave:
-    WaitTime:40
+    WaitTime:62
     WaveUnit:
         Time:0
         Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:2:2
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
-        Time:0
+        Time:3
         Unit:Shepherd
-        SpawnLoc:SpecifiedRow
-        Tile:5:5
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
-        Time:0
+        Time:4
         Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:4:4
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
-        Time:0
+        Time:6
         Unit:Shepherd
-        SpawnLoc:SpecifiedRow
-        Tile:3:3
+        SpawnLoc:RandRow
+        Tile:0:0
 PostDialogue:
     Statement:
         Speaker:???

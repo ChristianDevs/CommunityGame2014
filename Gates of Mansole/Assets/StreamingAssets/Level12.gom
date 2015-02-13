@@ -1,6 +1,6 @@
 AttackersLetThrough:5
 IsPlayerAttacker:False
-AttackerDir:Right
+AttackerDir:Left
 StartShards:21
 Lane:7:Disable
 Lane:2
@@ -45,79 +45,136 @@ Wave:
     WaveUnit:
         Time:1
         Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:2:2
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
-        Time:2
+        Time:4
         Unit:Shepherd
-        SpawnLoc:SpecifiedRow
-        Tile:1:1
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:4
+        Unit:Shepherd
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:8
+        Unit:Shepherd
+        SpawnLoc:RandRow
+        Tile:0:0
 Wave:
     WaitTime:10
     WaveUnit:
-        Time:2
+        Time:0
         Unit:Shepherd
-        SpawnLoc:SpecifiedRow
-        Tile:5:5
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:2
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:4
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:8
+        Unit:Shepherd
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:12
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
 Wave:
-    WaitTime:20
+    WaitTime:26
     WaveUnit:
         Time:0
         Unit:Shepherd
-        SpawnLoc:SpecifiedRow
-        Tile:4:4
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
         Time:0
         Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:3:3
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
         Time:3
         Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:4:4
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
         Time:7
         Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:4:4
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
         Time:5
         Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:3:3
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
         Time:9
         Unit:Shepherd
-        SpawnLoc:SpecifiedRow
-        Tile:3:3
+        SpawnLoc:RandRow
+        Tile:0:0
 Wave:
     WaitTime:40
     WaveUnit:
         Time:0
         Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:2:2
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
-        Time:0
+        Time:3
         Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:1:1
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
-        Time:0
+        Time:6
         Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:5:5
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
-        Time:0
+        Time:9
         Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:4:4
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:12
+        Unit:Shepherd
+        SpawnLoc:RandRow
+        Tile:0:0
+Wave:
+    WaitTime:57
     WaveUnit:
         Time:0
         Unit:Shepherd
-        SpawnLoc:SpecifiedRow
-        Tile:3:3
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:3
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:6
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:9
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:12
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
 PostDialogue:
     Statement:
         Speaker:Mayor Understanding
