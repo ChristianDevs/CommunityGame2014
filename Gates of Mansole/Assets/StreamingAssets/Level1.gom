@@ -1,7 +1,7 @@
 AttackersLetThrough:3
 IsPlayerAttacker:False
 AttackerDir:Left
-StartShards:9
+StartShards:8
 Lane:4:Disable
 Lane:0
 Lane:0
@@ -71,7 +71,12 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:The wicked Diabolonians reject King Shaddai's laws. As long as Mansoul is a part of King Shaddai's kingdom, they will never have a place here.
+        Dialogue:The wicked Diabolonians reject King Shaddai's laws.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:As long as Mansoul is a part of King Shaddai's kingdom, they will never have a place here.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -102,49 +107,49 @@ Wave:
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:1
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
         Time:2
         Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
 Wave:
-    WaitTime:15
+    WaitTime:22
     WaveUnit:
         Time:0
         Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:1
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:2
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
         Time:3
         Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:3
+        Time:5
         Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:3
+        Time:7
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:8
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:11
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:13
         Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
@@ -173,4 +178,4 @@ PostDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Before your next task, go to the Market and unlock the elder.
+        Dialogue:Before your next task, go to the Market and unlock the evangelist.

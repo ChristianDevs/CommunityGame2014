@@ -1,6 +1,6 @@
 AttackersLetThrough:5
 IsPlayerAttacker:False
-AttackerDir:Right
+AttackerDir:Left
 StartShards:21
 Lane:7:Disable
 Lane:2
@@ -31,81 +31,141 @@ PreDialogue:
 Wave:
     WaitTime:0
     WaveUnit:
-        Time:1
+        Time:0
         Unit:Orator
-        SpawnLoc:SpecifiedRow
-        Tile:2:2
-    WaveUnit:
-        Time:2
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:1:1
-Wave:
-    WaitTime:10
-    WaveUnit:
-        Time:2
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:5:5
-Wave:
-    WaitTime:20
+        SpawnLoc:RandRow
+        Tile:2:11
     WaveUnit:
         Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:4:4
+        Unit:Orator
+        SpawnLoc:RandRow
+        Tile:3:11
     WaveUnit:
         Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:3:3
+        Unit:Orator
+        SpawnLoc:RandRow
+        Tile:4:11
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:RandRow
+        Tile:5:11
+    WaveUnit:
+        Time:8
+        Unit:Orator
+        SpawnLoc:RandRow
+        Tile:6:11
+    WaveUnit:
+        Time:13
+        Unit:Orator
+        SpawnLoc:RandRow
+        Tile:7:11
+    WaveUnit:
+        Time:13
+        Unit:Elder
+        SpawnLoc:RandRow
+        Tile:0:12
+    WaveUnit:
+        Time:16
+        Unit:Elder
+        SpawnLoc:RandRow
+        Tile:1:12
+    WaveUnit:
+        Time:16
+        Unit:Elder
+        SpawnLoc:RandRow
+        Tile:2:12
+    WaveUnit:
+        Time:16
+        Unit:Elder
+        SpawnLoc:RandRow
+        Tile:3:12
+Wave:
+	WaitTime: 25
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:RandRow
+        Tile:0:0
+Wave:
+	WaitTime: 35
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
         Time:3
         Unit:Orator
-        SpawnLoc:SpecifiedRow
-        Tile:4:4
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
-        Time:7
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:4:4
-    WaveUnit:
-        Time:5
-        Unit:Orator
-        SpawnLoc:SpecifiedRow
-        Tile:3:3
+        Time:6
+        Unit:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
         Time:9
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:3:3
+        Unit:Orator
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:9
+        Unit:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:9
+        Unit:Orator
+        SpawnLoc:RandRow
+        Tile:0:0
 Wave:
-    WaitTime:40
+	WaitTime: 55
     WaveUnit:
         Time:0
         Unit:Orator
-        SpawnLoc:SpecifiedRow
-        Tile:2:2
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:1:1
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:5:5
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
         Time:0
         Unit:Orator
-        SpawnLoc:SpecifiedRow
-        Tile:4:4
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
         Time:0
+        Unit:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:5
+        Unit:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:5
         Unit:Orator
-        SpawnLoc:SpecifiedRow
-        Tile:3:3
+        SpawnLoc:RandRow
+        Tile:0:0
 PostDialogue:
     Statement:
         Speaker:Judge Conscience

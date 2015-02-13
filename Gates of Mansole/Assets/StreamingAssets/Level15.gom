@@ -1,6 +1,6 @@
 AttackersLetThrough:5
 IsPlayerAttacker:False
-AttackerDir:Right
+AttackerDir:Left
 StartShards:21
 Lane:2
 Lane:2
@@ -63,89 +63,188 @@ Wave:
     WaveUnit:
         Time:0
         Unit:Evangelist
-        SpawnLoc:SpecifiedRow
+        SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:1
         Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:2:2
-    WaveUnit:
-        Time:2
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:1:1
-Wave:
-    WaitTime:10
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
         Time:2
         Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:5:5
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:3
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:4
+        Unit:Orator
+        SpawnLoc:RandRow
+        Tile:0:0
 Wave:
-    WaitTime:20
+    WaitTime:11
     WaveUnit:
         Time:0
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:3
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:4
+        Unit:Orator
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:6
         Unit:Elder
-        SpawnLoc:SpecifiedRow
-        Tile:4:4
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:7
+        Unit:Shepherd
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:8
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
+Wave:
+    WaitTime:24
+    WaveUnit:
+        Time:0
+        Unit:Shepherd
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:3
+        Unit:Shepherd
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:3
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:3
+        Unit:Orator
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:4
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:6
+        Unit:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
+Wave:
+    WaitTime:35
     WaveUnit:
         Time:0
         Unit:Orator
-        SpawnLoc:SpecifiedRow
-        Tile:3:3
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:1
+        Unit:Shepherd
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Elder
-        SpawnLoc:SpecifiedRow
-        Tile:4:4
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
-        Time:7
-        Unit:Elder
-        SpawnLoc:SpecifiedRow
-        Tile:4:4
+        Time:5
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
         Time:5
         Unit:Orator
-        SpawnLoc:SpecifiedRow
-        Tile:3:3
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
-        Time:9
-        Unit:Orator
-        SpawnLoc:SpecifiedRow
-        Tile:3:3
+        Time:8
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
 Wave:
     WaitTime:40
     WaveUnit:
         Time:0
         Unit:Evangelist
-        SpawnLoc:SpecifiedRow
+        SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:2:2
+        Time:3
+        Unit:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:1:1
+        Time:3
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:3
+        Unit:Shepherd
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:5
+        Unit:Orator
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:7
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
+Wave:
+    WaitTime:40
     WaveUnit:
         Time:0
         Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:5:5
-    WaveUnit:
-        Time:0
-        Unit:Elder
-        SpawnLoc:SpecifiedRow
-        Tile:4:4
+        SpawnLoc:RandRow
+        Tile:0:0
     WaveUnit:
         Time:0
         Unit:Orator
-        SpawnLoc:SpecifiedRow
-        Tile:3:3
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:0
+        Unit:Shepherd
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:3
+        Unit:Teacher
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:3
+        Unit:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:3
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
 PostDialogue:
     Statement:
         Speaker:Lord Innocence
