@@ -17,6 +17,11 @@ Placeable:15:9.4:-1.65
 Placeable:15:0:0.3
 Placeable:16:2.7:-0.6
 Placeable:16:7.25:1.3
+Placeable:6:-1.1:1.95
+Placeable:6:-0.45:1.65
+Placeable:7:-5.15:1.6
+Placeable:26:-1.3:-2.75
+Placeable:14:5.8:2.25
 PreDialogue:
     Statement:
         Speaker:???
@@ -41,32 +46,12 @@ PreDialogue:
 Wave:
     WaitTime:0
     WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:0:0
-    WaveUnit:
         Time:1
         Unit:Shepherd
         SpawnLoc:SpecifiedRow
         Tile:2:2
-    WaveUnit:
-        Time:2
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:1:1
 Wave:
     WaitTime:10
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:6:6
-    WaveUnit:
-        Time:1
-        Unit:Shepherd
-        SpawnLoc:SpecifiedRow
-        Tile:7:7
     WaveUnit:
         Time:2
         Unit:Evangelist
@@ -110,27 +95,7 @@ Wave:
         Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
-        Tile:0:0
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
         Tile:2:2
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:1:1
-    WaveUnit:
-        Time:0
-        Unit:Shepherd
-        SpawnLoc:SpecifiedRow
-        Tile:6:6
-    WaveUnit:
-        Time:0
-        Unit:Shepherd
-        SpawnLoc:SpecifiedRow
-        Tile:7:7
     WaveUnit:
         Time:0
         Unit:Shepherd
@@ -169,26 +134,26 @@ PostDialogue:
         Dialogue:Let me introduce you to my friend. This is Diabolus.
     Statement:
         Speaker:Diabolus
-        LeftImage:1
+        LeftImage:None
         RightImage:2
         Dialogue:Greetings. I also offer you my heartfelt thanks.
     Statement:
         Speaker:Diabolus
-        LeftImage:1
+        LeftImage:None
         RightImage:2
         Dialogue:I can see Captain Resistance's bigotry has not infected all who dwell in Mansoul.
     Statement:
         Speaker:Diabolus
-        LeftImage:1
+        LeftImage:None
         RightImage:2
         Dialogue:What? You say Captain Resistance says the Diabolonians do not follow King Shaddai's laws?
     Statement:
         Speaker:ForgetGood
         LeftImage:1
-        RightImage:2
+        RightImage:None
         Dialogue:She tries to hurt us by alleging these accusations. She does this on purpose to spite us.
     Statement:
         Speaker:Diabolus
-        LeftImage:1
+        LeftImage:None
         RightImage:2
         Dialogue:You don't believe us? Well, I suggest a test. Help us get inside and we can find proof!

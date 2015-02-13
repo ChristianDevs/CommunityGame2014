@@ -8,8 +8,14 @@ Lane:2
 Lane:2
 Lane:2
 Lane:2
-Lane:2
-Lane:2
+Lane:2:Disable
+Lane:7:Disable
+Placeable:25:-1.5:2.4
+Placeable:25:1.5:2.4
+Placeable:25:-4.5:2.4
+Placeable:25:4.5:2.4
+Placeable:23:0:2.75
+Placeable:21:3:3
 PreDialogue:
     Statement:
         Speaker:Forgetgood

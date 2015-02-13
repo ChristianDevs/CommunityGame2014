@@ -2,14 +2,18 @@ AttackersLetThrough:3
 IsPlayerAttacker:True
 AttackerDir:Right
 StartShards:18
+Lane:7:Disable
 Lane:2
 Lane:2
 Lane:2
 Lane:2
 Lane:2
-Lane:2
-Lane:2
-Lane:2
+Lane:2:Disable
+Lane:7:Disable
+Placeable:20:-1.15:2.4
+Placeable:20:1.15:2.4
+Placeable:23:0:2.75
+Placeable:21:-4:3
 PreDialogue:
     Statement:
         Speaker:Captain Resistance
@@ -50,11 +54,6 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedTile
-        Tile:0:11
-    WaveUnit:
-        Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedTile
         Tile:1:11
@@ -82,21 +81,6 @@ Wave:
         Time:0
         Unit:Teacher
         SpawnLoc:SpecifiedTile
-        Tile:6:11
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedTile
-        Tile:7:11
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedTile
-        Tile:0:12
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedTile
         Tile:1:12
     WaveUnit:
         Time:0
@@ -118,16 +102,6 @@ Wave:
         Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:5:12
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedTile
-        Tile:6:12
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedTile
-        Tile:7:12
 PostDialogue:
     Statement:
         Speaker:Captain Resistance

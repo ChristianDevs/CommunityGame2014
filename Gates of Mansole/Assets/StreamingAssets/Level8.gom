@@ -8,8 +8,19 @@ Lane:2
 Lane:2
 Lane:2
 Lane:2
-Lane:2
-Lane:2
+Lane:2:Disable
+Lane:7:Disable
+Placeable:20:-1.15:2.4
+Placeable:20:1.15:2.4
+Placeable:23:0:2.75
+Placeable:20:-5.15:2.4
+Placeable:20:-2.85:2.4
+Placeable:23:-4:2.75
+Placeable:20:5.15:2.4
+Placeable:20:2.85:2.4
+Placeable:23:4:2.75
+Placeable:21:-2:3
+Placeable:21:2:3
 PreDialogue:
     Statement:
         Speaker:Diabolus
@@ -40,16 +51,6 @@ Wave:
         Tile:1:1
 Wave:
     WaitTime:10
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:6:6
-    WaveUnit:
-        Time:1
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:7:7
     WaveUnit:
         Time:2
         Unit:Teacher
@@ -104,16 +105,6 @@ Wave:
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:1:1
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:6:6
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:7:7
     WaveUnit:
         Time:0
         Unit:Teacher
