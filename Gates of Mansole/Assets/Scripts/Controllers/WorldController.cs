@@ -37,7 +37,7 @@ public class WorldController : MonoBehaviour {
 	public List<GameObject> unitTypes;
     public List<GameObject> abilityUIinst;
     public List<GameObject> abilities;
-	private float levelStartTime;
+	public float levelStartTime;
 	public GameObject unitInfoUi;
     private int dialogueIndex;
     public TextMesh dialogueText;
@@ -48,6 +48,7 @@ public class WorldController : MonoBehaviour {
     public Sprite[] Images;
     public float unitMenuInterval;
 	public GameObject[] Placeables;
+	public int CurWave;
 
 	private float OrbCurAmount;
 	private float ShardCurAmount;
@@ -98,6 +99,7 @@ public class WorldController : MonoBehaviour {
         selectedUiUnit = null;
 		freezeEndTime = -1f;
 		origMapPos = map.transform.position;
+		CurWave = 0;
 
         winMessage.SetActive(false);
         loseMessage.SetActive(false);
@@ -336,6 +338,7 @@ public class WorldController : MonoBehaviour {
                 if (wv.waitTime + levelStartTime < Time.time) {
 
 					if (wl.waveStarted[wvInd] == false) {
+						CurWave++;
 						foreach(int upWave in wl.upgradeAtWave) {
 							if (upWave == wvInd) {
 								Debug.Log("Enemy units get stronger");
@@ -350,7 +353,8 @@ public class WorldController : MonoBehaviour {
 
                     // Go through each unit and see if it is time to spawn it
                     foreach (WaveUnit ut in wv.units) {
-                        if (ut.created == false) {
+						if (ut.created == false) {
+
                             if ((wv.waitTime + ut.time + levelStartTime) < Time.time) {
 								bool repeat;
 
@@ -505,42 +509,26 @@ public class WorldController : MonoBehaviour {
 
                 tile = map.GetComponent<UiTiles>().GetMouseOverTile();
 
-                if ((tile.row != -1) && (tile.col != -1)) {
-					bool unitPlaceValid = false;
-
-					if (isPlayerAttacker == false) {
-						// In Defense mode limit spawning to the player's half of the map
-						if (attackerDir == UnitAnimation._direction.DirLeft) {
-							if (tile.col <= (gridSize.col / 2)) {
-								unitPlaceValid = true;
-							}
-						} else if (attackerDir == UnitAnimation._direction.DirRight) {
-							if (tile.col >= (gridSize.col / 2)) {
-								unitPlaceValid = true;
-							}
-						}
-					} else {
-						// In Assault mode spawn the unit at the end of the row
-						if (attackerDir == UnitAnimation._direction.DirLeft) {
-							if (tile.col >= (gridSize.col / 2)) {
-								unitPlaceValid = true;
-							}
-						} else if (attackerDir == UnitAnimation._direction.DirRight) {
-							if (tile.col <= (gridSize.col / 2)) {
-								unitPlaceValid = true;
-							}
-						}
-					}
-
-					if (unitPlaceValid == true) {
-	                    newPos = new Vector3(map.transform.position.x + ((float)tile.col * map.transform.localScale.x),
-	                                         map.transform.position.y + ((float)tile.row * map.transform.localScale.y) + TileUnitOffset);
-	                    selectedUiUnit.transform.position = newPos;
-					}
+				if ((tile.row != -1) && (tile.col != -1) && isPlayerSpawnLocValid(tile)) {
+                    newPos = new Vector3(map.transform.position.x + ((float)tile.col * map.transform.localScale.x),
+                                         map.transform.position.y + ((float)tile.row * map.transform.localScale.y) + TileUnitOffset);
+                    selectedUiUnit.transform.position = newPos;
                 }
 
-                if (Input.GetMouseButtonUp(0)) {
-                    handleSelectedUnitType();
+				if (Input.GetMouseButtonUp(0)) {
+					if (isPlayerSpawnLocValid(tile)) {
+                    	handleSelectedUnitType();
+					} else {
+						for (int i = 0; i < unitsUIinst.Count; ++i) {
+							if (selectedUiUnit == unitsUIinst[i]) {
+								selectedUiUnit.transform.position = new Vector3((float)(-6 + (unitMenuInterval * i)), (float)-5.5, (float)0);
+								break;
+							}
+						}
+
+						selectedUnit = selectedUiUnit;
+						selectedUiUnit = null;
+					}
                 }
             }
 
@@ -609,6 +597,34 @@ public class WorldController : MonoBehaviour {
 			}
 		}
     }
+
+	bool isPlayerSpawnLocValid(UiTile tile) {
+		if (isPlayerAttacker == false) {
+			// In Defense mode limit spawning to the player's half of the map
+			if (attackerDir == UnitAnimation._direction.DirLeft) {
+				if (tile.col <= (gridSize.col / 2)) {
+					return true;
+				}
+			} else if (attackerDir == UnitAnimation._direction.DirRight) {
+				if (tile.col >= (gridSize.col / 2)) {
+					return true;
+				}
+			}
+		} else {
+			// In Assault mode spawn the unit at the end of the row
+			if (attackerDir == UnitAnimation._direction.DirLeft) {
+				if (tile.col >= (gridSize.col / 2)) {
+					return true;
+				}
+			} else if (attackerDir == UnitAnimation._direction.DirRight) {
+				if (tile.col <= (gridSize.col / 2)) {
+					return true;
+				}
+			}
+		}
+
+		return false;
+	}
 
 	void winLevel() {
 		ShardCurAmount = Player.totalShards;
@@ -1233,6 +1249,13 @@ public class WorldController : MonoBehaviour {
 				    Debug.Log("Upgraded " + unitTypes[unitType].GetComponent<UiUnitType>().UnitName);
 					Debug.Log("Shards left " + Player.spiritShards);
                	}
+				break;
+			case "Release":
+				if ((CurWave) < currentLevel.GetComponent<WaveList>().waves.Count) {
+					float nextWaveTime = currentLevel.GetComponent<WaveList>().waves[CurWave].waitTime;
+
+					levelStartTime -= nextWaveTime - (Time.time - levelStartTime);
+				}
 				break;
         }
     }
