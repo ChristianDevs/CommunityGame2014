@@ -4,15 +4,32 @@ using System.Collections.Generic;
 
 public class TitleController : MonoBehaviour {
 
+	public GameObject BlackScreen;
 	public GameObject[] unitTypes;
     public GameObject[] abilities;
 
 	private bool isDone;
+	private float alpha;
 
 	// Use this for initialization
 	void Start () {
+		Color color = Color.black;
 		isDone = false;
 		StartCoroutine (Init ());
+
+		alpha = 1;
+		color.a = alpha;
+		BlackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = color;
+	}
+
+	void Update() {
+		Color color = Color.black;
+
+		if (alpha > 0) {
+			alpha -= 0.025f;
+			color.a = alpha;
+			BlackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = color;
+		}
 	}
 
 	public IEnumerator Init() {

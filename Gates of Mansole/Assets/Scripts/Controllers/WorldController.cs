@@ -275,7 +275,20 @@ public class WorldController : MonoBehaviour {
         }
 
         if (Input.GetMouseButtonDown(0)) {
-            dialogueIndex++;
+			RaycastHit hitSquare;
+			
+			dialogueIndex++;
+
+			if (Physics.Raycast(UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition), out hitSquare)) {
+				if (hitSquare.transform.name == "Back") {
+					// Go backward by cancelling the ++ done earlier and then -- by doing -=2
+					dialogueIndex -= 2;
+
+					if (dialogueIndex < 0) {
+						dialogueIndex = 0;
+					}
+				}
+			}
 
             if (dialogueIndex < dialogue.Count) {
                 dialogueText.text = processDialogue(dialogue[dialogueIndex].Speaker, dialogue[dialogueIndex].dialogue);
@@ -467,9 +480,7 @@ public class WorldController : MonoBehaviour {
 					if (currentLevel.GetComponent<WaveList>().postLevelDialogue.Count > 0) {
 						dialogueWindow.SetActive(true);
 					}
-				} //else {
-				//Application.LoadLevel("LevelSelect");
-				//}
+				}
 			}
             if (Input.GetMouseButtonDown(0)) {
                 RaycastHit hitSquare;
