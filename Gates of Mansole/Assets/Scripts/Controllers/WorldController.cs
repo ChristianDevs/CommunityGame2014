@@ -356,7 +356,7 @@ public class WorldController : MonoBehaviour {
 							if (upWave == wvInd) {
 								Debug.Log("Enemy units get stronger");
 								foreach(GameObject ut in unitTypes) {
-									PropertyStats unitStats = ut.GetComponent<UiUnitType>().getPlayerStats();
+									PropertyStats unitStats = ut.GetComponent<UiUnitType>().getEnemyStats();
 									unitStats.upgradeUnit(ut.GetComponent<UiUnitType>().UnitName);
 								}
 							}

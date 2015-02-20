@@ -10,6 +10,8 @@ Lane:2
 Lane:2
 Lane:2:Disable
 Lane:7:Disable
+UpgradeAtWave:0
+UpgradeAtWave:0
 Placeable:20:-6.15:2.4
 Placeable:20:-3.85:2.4
 Placeable:23:-5:2.75
