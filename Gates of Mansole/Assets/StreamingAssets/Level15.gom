@@ -182,7 +182,7 @@ Wave:
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
-    WaitTime:40
+    WaitTime:48
     WaveUnit:
         Time:0
         Unit:Evangelist
@@ -214,7 +214,7 @@ Wave:
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
-    WaitTime:40
+    WaitTime:60
     WaveUnit:
         Time:0
         Unit:Teacher
