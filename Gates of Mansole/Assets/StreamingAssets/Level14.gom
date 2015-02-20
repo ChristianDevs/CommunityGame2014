@@ -233,16 +233,16 @@ PostDialogue:
         Dialogue:I would follow you Diabolus!
     Statement:
         Speaker:Diabolus
-        LeftImage:1
+        LeftImage:2
         RightImage:None
         Dialogue:It is settled then.
     Statement:
         Speaker:Diabolus
-        LeftImage:1
+        LeftImage:2
         RightImage:None
         Dialogue:I shall... reluctantly, but humbly assume the throne of Mansoul.
     Statement:
         Speaker:Diabolus
-        LeftImage:1
+        LeftImage:2
         RightImage:None
         Dialogue:Let us make preparations.
