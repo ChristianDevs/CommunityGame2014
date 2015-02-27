@@ -18,6 +18,11 @@ public class Player : MonoBehaviour {
     static public List<List<string>> levelFileNames;
 	static public List<List<Vector2>> levelLocs;
 	static public List<int> maps;
+	static public List<string> chapterIntroCinematicFiles;
+	static public List<bool> introCinematicsWatched;
+	static public List<string> chapterExitCinematicFiles;
+	static public List<bool> exitCinematicsWatched;
+	static public bool isWatchingIntro;
 	static public int chapterProgression;
 
     static public void resetPlayer(GameObject[] newUnitTypes, GameObject[] newAbilities) {
@@ -28,6 +33,16 @@ public class Player : MonoBehaviour {
 			foreach (string fileName in chapters) {
 				levelComplete[levelComplete.Count-1].Add(0);
 	        }
+		}
+
+		introCinematicsWatched = new List<bool> ();
+		foreach(string temp in chapterIntroCinematicFiles) {
+			introCinematicsWatched.Add(false);
+		}
+		
+		exitCinematicsWatched = new List<bool> ();
+		foreach(string temp in chapterExitCinematicFiles) {
+			exitCinematicsWatched.Add(false);
 		}
 
         spiritOrbs = 0;
@@ -51,6 +66,7 @@ public class Player : MonoBehaviour {
         }
 
 		chapterProgression = 0;
+		currentChapter = 0;
 		PlayerPrefs.SetInt ("chapterProgression", chapterProgression);
     }
 
@@ -63,6 +79,16 @@ public class Player : MonoBehaviour {
 			}
 		}
 		spiritOrbs = PlayerPrefs.GetInt("spiritOrbs");
+		
+		introCinematicsWatched = new List<bool> ();
+		foreach(string temp in chapterIntroCinematicFiles) {
+			introCinematicsWatched.Add(PlayerPrefs.GetInt(temp) != 0);
+		}
+		
+		exitCinematicsWatched = new List<bool> ();
+		foreach(string temp in chapterExitCinematicFiles) {
+			exitCinematicsWatched.Add(PlayerPrefs.GetInt(temp) != 0);
+		}
 
 		unitTypes = new List<GameObject>();
 		foreach (GameObject ut in newUnitTypes) {
@@ -89,9 +115,20 @@ public class Player : MonoBehaviour {
         }
 
 		chapterProgression = PlayerPrefs.GetInt ("chapterProgression");
+		currentChapter = chapterProgression;
     }
 
-	static void beatChapter() {
+	static public void watchedIntroCinematic() {
+		introCinematicsWatched [currentChapter] = true;
+		PlayerPrefs.SetInt (chapterIntroCinematicFiles [currentChapter], 1);
+	}
+	
+	static public void watchedExitCinematic() {
+		exitCinematicsWatched [currentChapter] = true;
+		PlayerPrefs.SetInt (chapterExitCinematicFiles [currentChapter], 1);
+	}
+
+	static public void beatChapter() {
 		chapterProgression = currentChapter + 1;
 		PlayerPrefs.SetInt ("chapterProgression", chapterProgression);
 	}
@@ -135,7 +172,8 @@ public class Player : MonoBehaviour {
 		levelComplete[currentChapter][currentLevel] = 1;
 		PlayerPrefs.SetInt(levelFileNames[currentChapter][currentLevel], 1);
 
-		if (currentLevel == (levelFileNames[currentChapter].Count - 1)) {
+		if ((currentLevel == (levelFileNames[currentChapter].Count - 1)) &&
+		    (currentChapter == chapterProgression)) {
 			beatChapter();
 		}
     }

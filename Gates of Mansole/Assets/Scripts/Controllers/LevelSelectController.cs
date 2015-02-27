@@ -9,28 +9,24 @@ public class LevelSelectController : MonoBehaviour {
 	public GameObject[] Maps;
 	public GameObject ChapterNumUI;
 
-	private int curChapter;
     private List<GameObject> levelButtons;
 
 	// Use this for initialization
 	void Start () {
-		
-		curChapter = Player.chapterProgression;
-
 		UpdateMap();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		ChapterNumUI.GetComponent<TextMesh> ().text = (curChapter + 1).ToString ();
+		ChapterNumUI.GetComponent<TextMesh> ().text = (Player.currentChapter + 1).ToString ();
 	}
 
 	void UpdateMap() {
 		foreach (GameObject map in Maps) {
 			map.SetActive(false);
 		}
-		if (curChapter < Maps.Length) {
-			Maps[curChapter].SetActive(true);
+		if (Player.currentChapter < Maps.Length) {
+			Maps[Player.maps[Player.currentChapter]].SetActive(true);
 		}
 
 		if (levelButtons != null) {
@@ -41,22 +37,24 @@ public class LevelSelectController : MonoBehaviour {
 		
 		// Always let the player access level 1
 		level1.SetActive(true);
-		level1.transform.position = new Vector3 (Player.levelLocs[curChapter][0].x, Player.levelLocs[curChapter][0].y, level1.transform.position.z);
+		level1.transform.position = new Vector3 (Player.levelLocs[Player.currentChapter][0].x, Player.levelLocs[Player.currentChapter][0].y, level1.transform.position.z);
 		levelButtons = new List<GameObject>();
 		levelButtons.Add(level1);
-		
-		for (int i = 1; i < Player.levelFileNames[curChapter].Count; i++) {
-			if (Player.levelComplete[curChapter][i - 1] > 0) {
+		levelButtons [levelButtons.Count - 1].transform.localScale = new Vector3 (0.6f, 0.6f, 1);
+
+		for (int i = 1; i < Player.levelFileNames[Player.currentChapter].Count; i++) {
+			if (Player.levelComplete[Player.currentChapter][i - 1] > 0) {
 				levelButtons.Add(Instantiate(level1, level1.transform.position, Quaternion.identity) as GameObject);
 				levelButtons[i].name = (i + 1).ToString();
 				levelButtons[i].GetComponent<UiButton>().buttonName = levelButtons[i].name;
 				levelButtons[i].GetComponent<UiButton>().textMeshObj.GetComponent<TextMesh>().text = levelButtons[i].name;
 				levelButtons[i].GetComponent<UiButton>().controller = gameObject;
-				levelButtons[i].transform.position = new Vector3(Player.levelLocs[curChapter][i].x, Player.levelLocs[curChapter][i].y, levelButtons[i].transform.position.z);
+				levelButtons[i].transform.position = new Vector3(Player.levelLocs[Player.currentChapter][i].x, Player.levelLocs[Player.currentChapter][i].y, levelButtons[i].transform.position.z);
+				levelButtons [levelButtons.Count - 1].transform.localScale = new Vector3 (0.6f, 0.6f, 1);
 			}
 		}
 		
-		if (Player.getNumLevelsBeaten(curChapter) >= Player.levelComplete[curChapter].Count) {
+		if (Player.getNumLevelsBeaten(Player.currentChapter) >= Player.levelComplete[Player.currentChapter].Count) {
 			BeatGameMessage.SetActive(true);
 		} else {
 			BeatGameMessage.SetActive(false);
@@ -75,22 +73,27 @@ public class LevelSelectController : MonoBehaviour {
 				Application.LoadLevel("Upgrade");
 			break;
 			case "Previous":
-				if (curChapter > 0) {
-					curChapter--;
+				if (Player.currentChapter > 0) {
+					Player.currentChapter--;
 					UpdateMap();
 				}
 			break;
 			case "Next":
-				if (curChapter < Player.chapterProgression) {
-					curChapter++;
+				if (Player.currentChapter < Player.chapterProgression) {
+					Player.currentChapter++;
 					UpdateMap();
+					if (Player.introCinematicsWatched[Player.currentChapter] == false) {
+						Player.currentChapter = Player.currentChapter;
+						Player.isWatchingIntro = true;
+						Application.LoadLevel("Cinematic");
+					}
 				}
 			break;
             default:
 	            Player.currentLevel = int.Parse(buttonName) - 1;
-				Player.nextLevelFile = Player.levelFileNames[curChapter][Player.currentLevel];
+				Player.nextLevelFile = Player.levelFileNames[Player.currentChapter][Player.currentLevel];
 	            Debug.Log(Player.nextLevelFile);
-	            Application.LoadLevel("AutoLevel");
+				Application.LoadLevel("AutoLevel");
                 break;
         }
     }

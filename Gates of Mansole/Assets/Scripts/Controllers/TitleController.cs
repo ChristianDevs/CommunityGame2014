@@ -55,14 +55,24 @@ public class TitleController : MonoBehaviour {
 		Player.levelFileNames = new List<List<string>>();
 		Player.levelLocs = new List<List<Vector2>> ();
 		Player.maps = new List<int> ();
+		Player.chapterIntroCinematicFiles = new List<string> ();
+		Player.chapterExitCinematicFiles = new List<string> ();
 		foreach (string ln in levelData) {
 			if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower().TrimStart() == "map") {
 				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length >= 2) {
 					Player.maps.Add (int.Parse(ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1]));
 				}
-			} else if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower() == "chapter") {
+			} else if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower().TrimStart() == "chapter") {
 				Player.levelFileNames.Add(new List<string>());
 				Player.levelLocs.Add(new List<Vector2>());
+			} else if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower().TrimStart() == "intro") {
+				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length >= 2) {
+					Player.chapterIntroCinematicFiles.Add (Application.streamingAssetsPath.Replace("Raw", "StreamingAssets") + "/" + ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].TrimStart());
+				}
+			} else if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower().TrimStart() == "exit") {
+				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length >= 2) {
+					Player.chapterExitCinematicFiles.Add (Application.streamingAssetsPath.Replace("Raw", "StreamingAssets") + "/" + ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].TrimStart());
+				}
 			} else if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length >= 3) {
 				if (Player.levelFileNames.Count > 0) {
 		            // Apply web fix to level files
@@ -77,7 +87,8 @@ public class TitleController : MonoBehaviour {
         switch (buttonName) {
             case "New":
                 Player.resetPlayer(unitTypes, abilities);
-                Application.LoadLevel("LevelSelect");
+				Player.isWatchingIntro = true;
+                Application.LoadLevel("Cinematic");
 				break;
 			case "Continue":
 				Player.loadPlayer(unitTypes, abilities);
