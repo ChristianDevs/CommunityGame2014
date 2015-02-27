@@ -1,5 +1,7 @@
-Chapter:0
+Chapter
 	Map:0
+	Intro:Chapter1Intro.gom
+	Exit:Chapter1Exit.gom
 	Level1.gom:-0.75:2.75
 	Level2.gom:2.1:1.8
 	Level3.gom:-1:1.8
@@ -15,8 +17,10 @@ Chapter:0
 	Level13.gom:4.25:1.35
 	Level14.gom:4.35:1.85
 	Level15.gom:4.85:2.4
-Chapter:1
-	Map:0
+Chapter
+	Map:1
+	Intro:Chapter2Intro.gom
+	Exit:Chapter2Exit.gom
 	Level16.gom:-0.75:0.75
 	Level17.gom:2.1:1.8
 	Level18.gom:-1:1.8
@@ -32,8 +36,10 @@ Chapter:1
 	Level28.gom:4.25:1.35
 	Level29.gom:4.35:1.85
 	Level30.gom:4.85:2.4
-Chapter:2
-	Map:0
+Chapter
+	Map:2
+	Intro:Chapter3Intro.gom
+	Exit:Chapter3Exit.gom
 	Level31.gom:-0.75:0.75
 	Level32.gom:2.1:1.8
 	Level33.gom:-1:1.8
@@ -49,8 +55,10 @@ Chapter:2
 	Level43.gom:4.25:1.35
 	Level44.gom:4.35:1.85
 	Level45.gom:4.85:2.4
-Chapter:3
-	Map:0
+Chapter
+	Map:3
+	Intro:Chapter4Intro.gom
+	Exit:Chapter4Exit.gom
 	Level46.gom:-0.75:-1.75
 	Level47.gom:2.1:1.8
 	Level48.gom:-1:1.8

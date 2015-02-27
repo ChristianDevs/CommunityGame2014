@@ -291,6 +291,10 @@ public class WorldController : MonoBehaviour {
 			}
 			
 			if (dialogueIndex < dialogue.Count) {
+				if (dialogue[dialogueIndex].dialogue == null) {
+					return true;
+				}
+
 				dialogueText.text = processDialogue(dialogue[dialogueIndex].Speaker, dialogue[dialogueIndex].dialogue);
 				
 				if (dialogue[dialogueIndex].LeftImage == "None") {
@@ -310,7 +314,7 @@ public class WorldController : MonoBehaviour {
 				return true;
 			}
 		}
-		
+
 		return false;
 	}
 	
@@ -318,9 +322,15 @@ public class WorldController : MonoBehaviour {
 		string newText = "";
 		int lineLenth = 0;
 		char[] seps = { ' ' };
-		
-		newText += speaker;
-		newText += ":\n\n";
+
+		if (speaker != "None") {
+			newText += speaker;
+			newText += ":\n\n";
+		}
+
+		if (text == null) {
+			return newText;
+		}
 		
 		foreach (string word in text.Split(seps)) {
 			if ((lineLenth + word.Length) >= dialogueLineSize) {
@@ -1264,8 +1274,8 @@ public class WorldController : MonoBehaviour {
 		case "Release":
 			// Uncomment out to make the Release button automatically win the level
 			//winLevel();
-			//Application.LoadLevel("LevelSelect");
-			//return;
+			//winMessage.SetActive(true);
+			return;
 			if ((CurWave) < currentLevel.GetComponent<WaveList>().waves.Count) {
 				float nextWaveTime = currentLevel.GetComponent<WaveList>().waves[CurWave].waitTime;
 				
