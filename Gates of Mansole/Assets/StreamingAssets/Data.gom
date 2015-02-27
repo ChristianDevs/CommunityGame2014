@@ -1,16 +1,68 @@
-Map:0
-Level1.gom:-0.75:2.75
-Level2.gom:2.1:1.8
-Level3.gom:-1:1.8
-Level4.gom:-2.55:-0.25
-Level5.gom:-0.65:-1
-Level6.gom:5.3:1.85
-Level7.gom:3.75:0.95
-Level8.gom:2.75:0.3
-Level9.gom:2.5:1.15
-Level10.gom:3.15:1.55
-Level11.gom:2.85:2.05
-Level12.gom:2.4:2.7
-Level13.gom:4.25:1.35
-Level14.gom:4.35:1.85
-Level15.gom:4.85:2.4
+Chapter:0
+	Map:0
+	Level1.gom:-0.75:2.75
+	Level2.gom:2.1:1.8
+	Level3.gom:-1:1.8
+	Level4.gom:-2.55:-0.25
+	Level5.gom:-0.65:-1
+	Level6.gom:5.3:1.85
+	Level7.gom:3.75:0.95
+	Level8.gom:2.75:0.3
+	Level9.gom:2.5:1.15
+	Level10.gom:3.15:1.55
+	Level11.gom:2.85:2.05
+	Level12.gom:2.4:2.7
+	Level13.gom:4.25:1.35
+	Level14.gom:4.35:1.85
+	Level15.gom:4.85:2.4
+Chapter:1
+	Map:0
+	Level16.gom:-0.75:0.75
+	Level17.gom:2.1:1.8
+	Level18.gom:-1:1.8
+	Level19.gom:-2.55:-0.25
+	Level20.gom:-0.65:-1
+	Level21.gom:5.3:1.85
+	Level22.gom:3.75:0.95
+	Level23.gom:2.75:0.3
+	Level24.gom:2.5:1.15
+	Level25.gom:3.15:1.55
+	Level26.gom:2.85:2.05
+	Level27.gom:2.4:2.7
+	Level28.gom:4.25:1.35
+	Level29.gom:4.35:1.85
+	Level30.gom:4.85:2.4
+Chapter:2
+	Map:0
+	Level31.gom:-0.75:0.75
+	Level32.gom:2.1:1.8
+	Level33.gom:-1:1.8
+	Level34.gom:-2.55:-0.25
+	Level35.gom:-0.65:-1
+	Level36.gom:5.3:1.85
+	Level37.gom:3.75:0.95
+	Level38.gom:2.75:0.3
+	Level39.gom:2.5:1.15
+	Level40.gom:3.15:1.55
+	Level41.gom:2.85:2.05
+	Level42.gom:2.4:2.7
+	Level43.gom:4.25:1.35
+	Level44.gom:4.35:1.85
+	Level45.gom:4.85:2.4
+Chapter:3
+	Map:0
+	Level46.gom:-0.75:-1.75
+	Level47.gom:2.1:1.8
+	Level48.gom:-1:1.8
+	Level49.gom:-2.55:-0.25
+	Level50.gom:-0.65:-1
+	Level51.gom:5.3:1.85
+	Level52.gom:3.75:0.95
+	Level53.gom:2.75:0.3
+	Level54.gom:2.5:1.15
+	Level55.gom:3.15:1.55
+	Level56.gom:2.85:2.05
+	Level57.gom:2.4:2.7
+	Level58.gom:4.25:1.35
+	Level59.gom:4.35:1.85
+	Level60.gom:4.85:2.4
