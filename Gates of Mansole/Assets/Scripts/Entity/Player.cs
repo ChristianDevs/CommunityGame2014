@@ -6,24 +6,29 @@ public class Player : MonoBehaviour {
 
 	public const float CONVERSION_RATE = 0.1f; // shards to orbs
 
-    static public List<int> levelComplete;
-    static public int currentLevel;
+    static public List<List<int>> levelComplete;
+    static public int currentLevel;		// Level the player is currently playing
+	static public int currentChapter;	// Chapter of the level the player is currently playing
 	static public int spiritShards; // currency to purchase units/upgrades during gameplay
 	static public int totalShards;  // tracks shards gained during gameplay - used for conversions
 	static public int spiritOrbs;   // currency to purchase upgrades outside of gameplay
 	static public List<GameObject> unitTypes;
     static public List<GameObject> abilities;
     static public string nextLevelFile;
-    static public List<string> levelFileNames;
-	static public List<Vector2> levelLocs;
-	static public int map;
+    static public List<List<string>> levelFileNames;
+	static public List<List<Vector2>> levelLocs;
+	static public List<int> maps;
+	static public int chapterProgression;
 
     static public void resetPlayer(GameObject[] newUnitTypes, GameObject[] newAbilities) {
         PlayerPrefs.DeleteAll();
-        levelComplete = new List<int>();
-        foreach (string fileName in levelFileNames) {
-            levelComplete.Add(0);
-        }
+        levelComplete = new List<List<int>>();
+		foreach(List<string> chapters in levelFileNames) {
+			levelComplete.Add(new List<int>());
+			foreach (string fileName in chapters) {
+				levelComplete[levelComplete.Count-1].Add(0);
+	        }
+		}
 
         spiritOrbs = 0;
         AddOrbs(0);
@@ -44,13 +49,19 @@ public class Player : MonoBehaviour {
             upgradeAbility(ab.GetComponent<Ability>());
             Debug.Log(ab.GetComponent<Ability>().abilityName + ":" + ab.GetComponent<Ability>().level);
         }
+
+		chapterProgression = 0;
+		PlayerPrefs.SetInt ("chapterProgression", chapterProgression);
     }
 
     static public void loadPlayer(GameObject[] newUnitTypes, GameObject[] newAbilities) {
-        levelComplete = new List<int>();
-        foreach (string fileName in levelFileNames) {
-            levelComplete.Add(PlayerPrefs.GetInt(fileName));
-        }
+		levelComplete = new List<List<int>>();
+		foreach(List<string> chapters in levelFileNames) {
+			levelComplete.Add(new List<int>());
+			foreach (string fileName in chapters) {
+				levelComplete[levelComplete.Count-1].Add(PlayerPrefs.GetInt(fileName));
+			}
+		}
 		spiritOrbs = PlayerPrefs.GetInt("spiritOrbs");
 
 		unitTypes = new List<GameObject>();
@@ -76,7 +87,14 @@ public class Player : MonoBehaviour {
             tempAbility = abilities[i].GetComponent<Ability>();
             tempAbility.level = PlayerPrefs.GetInt(tempAbility.abilityName + "level");
         }
+
+		chapterProgression = PlayerPrefs.GetInt ("chapterProgression");
     }
+
+	static void beatChapter() {
+		chapterProgression = currentChapter + 1;
+		PlayerPrefs.SetInt ("chapterProgression", chapterProgression);
+	}
 
     static public void upgradeUnit(UiUnitType upgradeUnit) {
 		for (int i = 0; i < unitTypes.Count; i++) {
@@ -102,22 +120,30 @@ public class Player : MonoBehaviour {
         }
     }
 
-    static public void completeLevel(int levelNum) {
+	static public void completeLevel() {
 		convertShards ();
 
-        if (levelNum >= levelFileNames.Count) {
+		if (currentChapter >= levelFileNames.Count) {
+			return;
+		}
+
+		if (currentLevel >= levelFileNames[currentChapter].Count) {
             return;
         }
 
-        Debug.Log("Completing " + levelFileNames[levelNum]);
-        levelComplete[levelNum] = 1;
-        PlayerPrefs.SetInt(levelFileNames[levelNum], 1);
+		Debug.Log("Completing " + levelFileNames[currentChapter][currentLevel]);
+		levelComplete[currentChapter][currentLevel] = 1;
+		PlayerPrefs.SetInt(levelFileNames[currentChapter][currentLevel], 1);
+
+		if (currentLevel == (levelFileNames[currentChapter].Count - 1)) {
+			beatChapter();
+		}
     }
 
-    static public int getNumLevelsBeaten() {
+	static public int getNumLevelsBeaten(int chapterNum) {
         int num = 0;
 
-        foreach (int lvl in levelComplete) {
+		foreach (int lvl in levelComplete[chapterNum]) {
             if (lvl > 0) {
                 num++;
             }

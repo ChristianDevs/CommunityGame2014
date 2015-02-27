@@ -52,17 +52,23 @@ public class TitleController : MonoBehaviour {
 			levelData = System.IO.File.ReadAllLines(filePath);
 		}
 
-		Player.levelFileNames = new List<string>();
-		Player.levelLocs = new List<Vector2> ();
+		Player.levelFileNames = new List<List<string>>();
+		Player.levelLocs = new List<List<Vector2>> ();
+		Player.maps = new List<int> ();
 		foreach (string ln in levelData) {
-			if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower() == "map") {
+			if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower().TrimStart() == "map") {
 				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length >= 2) {
-					Player.map = int.Parse(ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1]);
+					Player.maps.Add (int.Parse(ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1]));
 				}
+			} else if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower() == "chapter") {
+				Player.levelFileNames.Add(new List<string>());
+				Player.levelLocs.Add(new List<Vector2>());
 			} else if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length >= 3) {
-	            // Apply web fix to level files
-				Player.levelFileNames.Add(Application.streamingAssetsPath.Replace("Raw", "StreamingAssets") + "/" + ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0]);
-				Player.levelLocs.Add(new Vector2(float.Parse(ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1]), float.Parse(ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[2])));
+				if (Player.levelFileNames.Count > 0) {
+		            // Apply web fix to level files
+					Player.levelFileNames[Player.levelFileNames.Count-1].Add(Application.streamingAssetsPath.Replace("Raw", "StreamingAssets") + "/" + ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].TrimStart());
+					Player.levelLocs[Player.levelFileNames.Count-1].Add(new Vector2(float.Parse(ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1]), float.Parse(ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[2])));
+				}
 			}
 		}
 	}
