@@ -52,6 +52,12 @@ public class GomUnit : GomObject {
 
 	private bool paused;
 	private float invincibleEndTime;
+	public PropertyStats miscStats;
+
+	public float fallPercent;
+	public int regenRate;
+	private float nextRegenTick;
+	public bool allLanesAttacking;
 
 	public enum _Type {
 		kBow = 0,
@@ -59,6 +65,7 @@ public class GomUnit : GomObject {
 		kStaff = 2,
 		kSword = 3,
 		kWand = 4,
+		kWall = 5
 	}
 
     public void DamageMelee(PropertyStats stats) {
@@ -88,6 +95,14 @@ public class GomUnit : GomObject {
 
 		if (invincibleEndTime > Time.time) {
 			return;
+		}
+
+		if (fallPercent > 0) {
+			if (((float)health / (float)getStats().maxHealth) < fallPercent) {
+				if (allLanesAttacking == false) {
+					return;
+				}
+			}
 		}
 
         health -= amt;
@@ -135,6 +150,14 @@ public class GomUnit : GomObject {
         float percentLeft;
         float BarXPos;
 
+		if (getStats () == null) {
+			return;
+		}
+
+		if (HpMidBar == null) {
+			return;
+		}
+
         percentLeft = (float)health / (float)getStats().maxHealth;
         BarXPos = HpMidBar.transform.position.x - ((1 - percentLeft) * 0.5f * (HpRightBar.transform.position.x - HpLeftBar.transform.position.x + 0.15f));
         HpBarFill.transform.position = new Vector3(BarXPos, HpMidBar.transform.position.y, HpMidBar.transform.position.z);
@@ -151,7 +174,7 @@ public class GomUnit : GomObject {
 		setBarColor ();
     }
 	
-	void setBarColor() {
+	public void setBarColor() {
 		if (faction == Faction.Player)
 			HpBarColor = BarGreen;
 		else
@@ -159,6 +182,10 @@ public class GomUnit : GomObject {
 	}
 	
 	public int getType(string type) {
+		if (type == null) {
+			return (int)_Type.kWall;
+		}
+
 		if (type.Equals("Shepherd"))
 			return (int)_Type.kBow;
 		else if (type.Equals("Evangelist"))
@@ -167,11 +194,17 @@ public class GomUnit : GomObject {
 			return (int)_Type.kStaff;
 		else if (type.Equals ("Teacher"))
 			return (int)_Type.kSword;
-		else
+		else if (type.Equals ("Wand"))
 			return (int)_Type.kWand;
+		else
+			return (int)_Type.kWall;
 	}
 
 	public PropertyStats getStats() {
+		if (getType (unitType) >= world.GetComponent<WorldController> ().unitTypes.Count) {
+			return miscStats;
+		}
+
 		if (faction == Faction.Player) {
 			return world.GetComponent<WorldController> ().unitTypes [getType (unitType)].GetComponent<UiUnitType> ().getPlayerStats();
 		} else {
@@ -253,6 +286,7 @@ public class GomUnit : GomObject {
         State = _state.Idle;
         NextState = State;
 		paused = false;
+		miscStats = new PropertyStats ();
     }
 
 	void SetInvincible(float duration) {
@@ -265,19 +299,23 @@ public class GomUnit : GomObject {
         HpBarMidScale = 5.75f;
 
         // Instantiate the health bars
-        HpLeftBar = Instantiate(BarEmptyLeft, HpBarPos, Quaternion.identity) as GameObject;
-        HpMidBar = Instantiate(BarEmptyMid, HpBarPos + new Vector3(0.3f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
-        HpRightBar = Instantiate(BarEmptyRight, HpBarPos + new Vector3(0.6f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
-        HpBarFill = Instantiate(HpBarColor, HpBarPos + new Vector3(0.3f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
-        HpBarFill.transform.localScale = new Vector3(HpBarMidScale, 0.4f * transform.localScale.x, 1);
+		if (BarEmptyLeft != null) {
+	        HpLeftBar = Instantiate(BarEmptyLeft, HpBarPos, Quaternion.identity) as GameObject;
+	        HpMidBar = Instantiate(BarEmptyMid, HpBarPos + new Vector3(0.3f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
+	        HpRightBar = Instantiate(BarEmptyRight, HpBarPos + new Vector3(0.6f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
+	        HpBarFill = Instantiate(HpBarColor, HpBarPos + new Vector3(0.3f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
+	        HpBarFill.transform.localScale = new Vector3(HpBarMidScale, 0.4f * transform.localScale.x, 1);
 
-        // Make the health bars follow the unit
-        HpLeftBar.transform.parent = transform;
-        HpMidBar.transform.parent = transform;
-        HpRightBar.transform.parent = transform;
-        HpBarFill.transform.parent = transform;
+	        // Make the health bars follow the unit
+	        HpLeftBar.transform.parent = transform;
+	        HpMidBar.transform.parent = transform;
+	        HpRightBar.transform.parent = transform;
+			HpBarFill.transform.parent = transform;
+		}
 
-		health = getStats().maxHealth;
+		if (getStats() != null) {
+			health = getStats().maxHealth;
+		}
 
         updateHealthBars();
 
@@ -285,9 +323,24 @@ public class GomUnit : GomObject {
 	}
 	
 	void Update() {
+		// Instantiate the health bars
+		if ((HpLeftBar == null) && (BarEmptyLeft != null)) {
+			HpLeftBar = Instantiate(BarEmptyLeft, HpBarPos, Quaternion.identity) as GameObject;
+			HpMidBar = Instantiate(BarEmptyMid, HpBarPos + new Vector3(0.3f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
+			HpRightBar = Instantiate(BarEmptyRight, HpBarPos + new Vector3(0.6f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
+			HpBarFill = Instantiate(HpBarColor, HpBarPos + new Vector3(0.3f * transform.localScale.x, 0, 0), Quaternion.identity) as GameObject;
+			HpBarFill.transform.localScale = new Vector3(HpBarMidScale, 0.4f * transform.localScale.x, 1);
+			
+			// Make the health bars follow the unit
+			HpLeftBar.transform.parent = transform;
+			HpMidBar.transform.parent = transform;
+			HpRightBar.transform.parent = transform;
+			HpBarFill.transform.parent = transform;
+		}
+
 		// Don't update the unit until the animation has been changed
 		if (NextState != State) {
-			if (GetComponent<UnitAnimation>().isAnimationChanged() == true) {
+			if ((GetComponent<UnitAnimation>() != null) && (GetComponent<UnitAnimation>().isAnimationChanged() == true)) {
 				State = NextState;
 			} else {
 				return;
@@ -296,6 +349,22 @@ public class GomUnit : GomObject {
 
 		if (paused) {
 			return;
+		}
+
+		// Apply unit regen
+		if (regenRate > 0) {
+			if (nextRegenTick < Time.time) {
+				if (health < getStats().maxHealth) {
+					health += regenRate;
+
+					if (health > getStats().maxHealth) {
+						health = getStats().maxHealth;
+					}
+
+					updateHealthBars();
+					nextRegenTick = Time.time + 1;
+				}
+			}
 		}
 
 		switch (State) {

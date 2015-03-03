@@ -19,6 +19,7 @@ public class TitleController : MonoBehaviour {
 
 		alpha = 1;
 		color.a = alpha;
+		BlackScreen.SetActive (true);
 		BlackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = color;
 	}
 

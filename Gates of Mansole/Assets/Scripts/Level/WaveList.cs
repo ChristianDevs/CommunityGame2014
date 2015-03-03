@@ -42,6 +42,15 @@ public class WaveList : MonoBehaviour {
 	public List<_placeable> placeables;
 	public List<int> upgradeAtWave;
 
+	// Wall:Col:StartRow:EndRow:Health:FallPercent:HealthRegen
+	public bool usingWall;
+	public int wallCol;
+	public int wallTopRow;
+	public int wallBotRow;
+	public int wallHealth;
+	public float wallFallPercent;
+	public int wallHealthRegen;
+
     private List<GameObject> unitTypes;
 
     public bool loadGameFile(string fileName, List<GameObject> newUnitTypes, int numLanes) {
@@ -104,7 +113,19 @@ public class WaveList : MonoBehaviour {
                     break;
                 case "wave":
                     i = parseAllWaves(levelData, i + 1);
-                    break;
+				break;
+				case "wall":
+					if (levelData[i].Split(seps).Length > 6) {
+						// Wall:Col:StartRow:EndRow:Health:FallPercent:HealthRegen
+						usingWall = true;
+						wallCol = int.Parse(levelData[i].Split(seps)[1].Trim().ToLower());
+						wallBotRow = int.Parse(levelData[i].Split(seps)[2].Trim().ToLower());
+					    wallTopRow = int.Parse(levelData[i].Split(seps)[3].Trim().ToLower());
+					    wallHealth = int.Parse(levelData[i].Split(seps)[4].Trim().ToLower());
+					    wallFallPercent = float.Parse(levelData[i].Split(seps)[5].Trim().ToLower());
+					    wallHealthRegen = int.Parse(levelData[i].Split(seps)[6].Trim().ToLower());
+					}
+				break;
                 case "predialogue":
                     preLevelDialogue = new List<_statement>();
                     i = parseDialogue(levelData, preLevelDialogue, i + 1);

@@ -110,9 +110,6 @@ public class UpgradeController : MonoBehaviour {
 			if (selectedType < Player.unitTypes.Count) {
                 int orbCost = (Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel * 5) + 5;
                 if ((Player.spiritOrbs >= orbCost) && (Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel < maxUnitUpgrades)  ) {
-                    float x = startUnitX + (selectedType * incX);
-                    float y = startUnitY;
-
                     Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel++;
                     Player.upgradeUnit(Player.unitTypes[selectedType].GetComponent<UiUnitType>());
                     Debug.Log("Upgraded Unit " + selectedType);
@@ -124,9 +121,6 @@ public class UpgradeController : MonoBehaviour {
 				int abilityIndex = selectedType - Player.unitTypes.Count;
 				int orbCost = (Player.abilities[abilityIndex].GetComponent<Ability>().level==0) ?  Player.abilities[abilityIndex].GetComponent<Ability>().cost : (Player.abilities[abilityIndex].GetComponent<Ability>().level * 2 + 2);
                 if ((Player.spiritOrbs >= orbCost) && (Player.abilities[abilityIndex].GetComponent<Ability>().level < maxAbilityUpgrades) ) {
-					float x = startAbilityX + (abilityIndex * incX);
-                    float y = startAbilityY;
-
 					Player.abilities[abilityIndex].GetComponent<Ability>().level++;
 					Player.upgradeAbility(Player.abilities[abilityIndex].GetComponent<Ability>());
 					Debug.Log("Upgraded Ability " + abilityIndex);
