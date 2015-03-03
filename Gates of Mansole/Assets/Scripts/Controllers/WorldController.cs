@@ -10,6 +10,9 @@ public class WorldController : MonoBehaviour {
 	public GameObject winMessage;
 	public GameObject loseMessage;
 	public bool isLevelDone;
+	public GameObject VertWallTop;
+	public GameObject VertWallMid;
+	public GameObject VertWallBot;
 	
 	public int totalAI;
 	public int totalAttackers;
@@ -50,10 +53,19 @@ public class WorldController : MonoBehaviour {
 	public GameObject[] Placeables;
 	public int CurWave;
 	
+	public GameObject BarEmptyLeft;
+	public GameObject BarEmptyMid;
+	public GameObject BarEmptyRight;
+	public GameObject BarGreen;
+	public GameObject BarRed;
+	
 	private float OrbCurAmount;
 	private float ShardCurAmount;
 	private float ConvertStepIntervalTime;
 	private float convertTime;
+
+	private GameObject wall;
+	private List<GameObject> wallSegments;
 	
 	// For Unit Freeze ability
 	private List<GameObject> freezeIcons;
@@ -161,6 +173,88 @@ public class WorldController : MonoBehaviour {
 				UnitAI(row, col);
 			}
 		}
+
+		if (wall != null) {
+			WallAI();
+		}
+	}
+
+	void WallAI() {
+		int numAttackers = 0;
+		
+		// Update the wall to see if all lanes have attackers
+		if (isPlayerAttacker == true) {
+			if (curLevelAttackerDir == WaveList._direction.Left) {
+				for (int row = currentLevel.GetComponent<WaveList>().wallBotRow;
+				     row <= currentLevel.GetComponent<WaveList>().wallTopRow;
+				     row++) {
+					
+					if (tileContents[row][currentLevel.GetComponent<WaveList>().wallCol + 1] != null) {
+						GameObject unit;
+						
+						unit = tileContents[row][currentLevel.GetComponent<WaveList>().wallCol + 1];
+						
+						if (unit.GetComponent<GomUnit>().faction == GomObject.Faction.Player) {
+							numAttackers++;
+						}
+					}
+				}
+			} else {
+				for (int row = currentLevel.GetComponent<WaveList>().wallBotRow;
+				     row <= currentLevel.GetComponent<WaveList>().wallTopRow;
+				     row++) {
+					
+					if (tileContents[row][currentLevel.GetComponent<WaveList>().wallCol - 1] != null) {
+						GameObject unit;
+						
+						unit = tileContents[row][currentLevel.GetComponent<WaveList>().wallCol - 1];
+						
+						if (unit.GetComponent<GomUnit>().faction == GomObject.Faction.Player) {
+							numAttackers++;
+						}
+					}
+				}
+			}
+		} else {
+			if (curLevelAttackerDir == WaveList._direction.Left) {
+				for (int row = currentLevel.GetComponent<WaveList>().wallBotRow;
+				     row <= currentLevel.GetComponent<WaveList>().wallTopRow;
+				     row++) {
+
+					if (tileContents[row][currentLevel.GetComponent<WaveList>().wallCol + 1] != null) {
+						GameObject unit;
+
+						unit = tileContents[row][currentLevel.GetComponent<WaveList>().wallCol + 1];
+						
+						if (unit.GetComponent<GomUnit>().faction == GomObject.Faction.Enemy) {
+							numAttackers++;
+						}
+					}
+				}
+			} else {
+				for (int row = currentLevel.GetComponent<WaveList>().wallBotRow;
+				     row <= currentLevel.GetComponent<WaveList>().wallTopRow;
+				     row++) {
+					
+					if (tileContents[row][currentLevel.GetComponent<WaveList>().wallCol - 1] != null) {
+						GameObject unit;
+						
+						unit = tileContents[row][currentLevel.GetComponent<WaveList>().wallCol - 1];
+						
+						if (unit.GetComponent<GomUnit>().faction == GomObject.Faction.Enemy) {
+							numAttackers++;
+						}
+					}
+				}
+			}
+		}
+		
+		int requiredAttackers = currentLevel.GetComponent<WaveList>().wallTopRow - currentLevel.GetComponent<WaveList>().wallBotRow + 1;
+		if (numAttackers >= requiredAttackers) {
+			wall.GetComponent<GomUnit>().allLanesAttacking = true;
+		} else {
+			wall.GetComponent<GomUnit>().allLanesAttacking = false;
+		}
 	}
 	
 	void PauseUnits() {
@@ -244,6 +338,68 @@ public class WorldController : MonoBehaviour {
 			else if (curLevelAttackerDir == WaveList._direction.Right) {
 				attackerDir = UnitAnimation._direction.DirRight;
 				defenderDir = UnitAnimation._direction.DirLeft;
+			}
+
+			// Create Wall
+			if (currentLevel.GetComponent<WaveList>().usingWall == true) {
+				GameObject wallTile = map.GetComponent<UiTiles>().lanes[currentLevel.GetComponent<WaveList>().wallBotRow].GetComponent<UiRow>().rowTiles[currentLevel.GetComponent<WaveList>().wallCol];
+				Vector3 wallPos = new Vector3(wallTile.transform.position.x - 0.125f, wallTile.transform.position.y - 0.25f, 0);
+
+				wall = new GameObject();
+				wallSegments = new List<GameObject>();
+
+				wallSegments.Add(Instantiate(VertWallBot, wallPos, Quaternion.identity) as GameObject);
+				tileContents[currentLevel.GetComponent<WaveList>().wallBotRow][currentLevel.GetComponent<WaveList>().wallCol] = wall;
+
+				int numWallMid = currentLevel.GetComponent<WaveList>().wallTopRow - currentLevel.GetComponent<WaveList>().wallBotRow + 1;
+				for (int wallInd = 1; wallInd < numWallMid; wallInd++) {
+					wallTile = map.GetComponent<UiTiles>().lanes[currentLevel.GetComponent<WaveList>().wallBotRow + wallInd].GetComponent<UiRow>().rowTiles[currentLevel.GetComponent<WaveList>().wallCol];
+					wallPos = new Vector3(wallTile.transform.position.x - 0.125f, wallTile.transform.position.y + 0.375f, 0);
+					wallSegments.Add(Instantiate(VertWallMid, wallPos, Quaternion.identity) as GameObject);
+					tileContents[currentLevel.GetComponent<WaveList>().wallBotRow + wallInd][currentLevel.GetComponent<WaveList>().wallCol] = wall;
+
+					// Don't make walls off the end of the screen;
+					if (wallInd >= 7) {
+						break;
+					}
+				}
+
+				if (currentLevel.GetComponent<WaveList>().wallTopRow < 7) {
+					wallTile = map.GetComponent<UiTiles>().lanes[currentLevel.GetComponent<WaveList>().wallTopRow + 1].GetComponent<UiRow>().rowTiles[currentLevel.GetComponent<WaveList>().wallCol];
+					wallPos = new Vector3(wallTile.transform.position.x - 0.125f, wallTile.transform.position.y + 0.375f, 0);
+					wallSegments.Add(Instantiate(VertWallTop, wallPos, Quaternion.identity) as GameObject);
+					tileContents[currentLevel.GetComponent<WaveList>().wallTopRow][currentLevel.GetComponent<WaveList>().wallCol] = wall;
+				}
+
+				wall.transform.position = wallSegments[wallSegments.Count / 2].transform.position;
+
+				foreach(GameObject ws in wallSegments) {
+					ws.transform.parent = wall.transform;
+				}
+
+				wall.AddComponent<GomUnit>();
+				wall.GetComponent<GomUnit>().world = gameObject;
+				wall.GetComponent<GomUnit>().unitType = "Wall";
+				wall.GetComponent<GomUnit>().getStats().armor = 10;
+				wall.GetComponent<GomUnit>().getStats().attack = 0;
+				wall.GetComponent<GomUnit>().getStats().defense = 10;
+				wall.GetComponent<GomUnit>().getStats().maxHealth = currentLevel.GetComponent<WaveList>().wallHealth;
+				wall.GetComponent<GomUnit>().health = wall.GetComponent<GomUnit>().getStats().maxHealth;
+				wall.GetComponent<GomUnit>().BarEmptyLeft = BarEmptyLeft;
+				wall.GetComponent<GomUnit>().BarEmptyRight = BarEmptyRight;
+				wall.GetComponent<GomUnit>().BarEmptyMid = BarEmptyMid;
+				wall.GetComponent<GomUnit>().BarGreen = BarGreen;
+				wall.GetComponent<GomUnit>().BarRed = BarRed;
+				wall.GetComponent<GomUnit>().regenRate = currentLevel.GetComponent<WaveList>().wallHealthRegen;
+				wall.GetComponent<GomUnit>().fallPercent = currentLevel.GetComponent<WaveList>().wallFallPercent;
+				wall.GetComponent<GomUnit>().alive = true;
+
+				if (isPlayerAttacker == true) {
+					wall.GetComponent<GomUnit>().faction = GomObject.Faction.Enemy;
+				} else {
+					wall.GetComponent<GomUnit>().faction = GomObject.Faction.Player;
+				}
+				wall.GetComponent<GomUnit>().setBarColor ();
 			}
 		}
 	}
@@ -998,6 +1154,10 @@ public class WorldController : MonoBehaviour {
 	public void UnitAI(int row, int col) {
 		// If the tile is not empty then see if the unit needs to do something
 		if (tileContents[row][col] != null) {
+			if (tileContents[row][col].GetComponent<GomUnit>() == null) {
+				return;
+			}
+
 			if (tileContents[row][col].GetComponent<GomUnit>().health <= 0) {
 				// Unit is defeated
 				if (isPlayerAttacker == true) {
@@ -1109,6 +1269,10 @@ public class WorldController : MonoBehaviour {
 			}
 			
 			if (tileContents[row][i] != null) {
+				if (tileContents[row][i].GetComponent<GomUnit>() == null) {
+					break;
+				}
+
 				if ((tileContents[row][i].GetComponent<GomUnit>().faction != attacker.faction) &&
 				    (tileContents[row][i].GetComponent<GomUnit>().health > 0)){
 					return true;
@@ -1124,6 +1288,10 @@ public class WorldController : MonoBehaviour {
 			}
 			
 			if (tileContents[row][i] != null) {
+				if (tileContents[row][i].GetComponent<GomUnit>() == null) {
+					break;
+				}
+
 				if ((tileContents[row][i].GetComponent<GomUnit>().faction != attacker.faction) &&
 				    (tileContents[row][i].GetComponent<GomUnit>().health > 0)){
 					return true;
@@ -1148,6 +1316,10 @@ public class WorldController : MonoBehaviour {
 			}
 			
 			if (tileContents[row][i] != null) {
+				if (tileContents[row][i].GetComponent<GomUnit>() == null) {
+					break;
+				}
+
 				if (tileContents[row][i].GetComponent<GomUnit>().faction != attacker.faction) {
 					GameObject projectile;
 					tileContents[row][i].SendMessage ("SetAttacker", attacker, SendMessageOptions.DontRequireReceiver);
@@ -1275,7 +1447,7 @@ public class WorldController : MonoBehaviour {
 			// Uncomment out to make the Release button automatically win the level
 			//winLevel();
 			//winMessage.SetActive(true);
-			return;
+			//return;
 			if ((CurWave) < currentLevel.GetComponent<WaveList>().waves.Count) {
 				float nextWaveTime = currentLevel.GetComponent<WaveList>().waves[CurWave].waitTime;
 				

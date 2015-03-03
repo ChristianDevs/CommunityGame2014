@@ -83,7 +83,6 @@ public class LevelSelectController : MonoBehaviour {
 					Player.currentChapter++;
 					UpdateMap();
 					if (Player.introCinematicsWatched[Player.currentChapter] == false) {
-						Player.currentChapter = Player.currentChapter;
 						Player.isWatchingIntro = true;
 						Application.LoadLevel("Cinematic");
 					}
