@@ -12,11 +12,17 @@ public class UpgradeController : MonoBehaviour {
 	public float startAbilityY;
 	public float incX;
 
+	public GameObject gutterflowPrefab;
+
 	private List<GameObject> upgrades;
 	private List<GameObject> upgradeWindows;
 	private int selectedType;
 	private int maxUnitUpgrades;
 	private int maxAbilityUpgrades;
+
+	private float nextFlow;
+	private List<GameObject> gutterFlows;
+	private int flowCounter;
 
 	// Use this for initialization
 	void Start () {
@@ -27,6 +33,12 @@ public class UpgradeController : MonoBehaviour {
 
         buildUnitUpgrade();
 		buildAbilityUpgrade();
+
+		gutterFlows = new List<GameObject> ();
+		nextFlow = Random.Range (1, 5) + Time.time;
+		flowCounter = 0;
+
+		unitInfoText.text = "Press Unit or Ability\nto Upgrade it.";
 	}
 
     void buildUnitUpgrade() {
@@ -34,7 +46,7 @@ public class UpgradeController : MonoBehaviour {
         float y = startUnitY;
 
         for (int i = 0; i < Player.unitTypes.Count; i++) {
-            upgradeWindows.Add(Instantiate(unitWindow, new Vector3(x, y), Quaternion.identity) as GameObject);
+            upgradeWindows.Add(Instantiate(unitWindow, new Vector3(x, y - 0.5f), Quaternion.identity) as GameObject);
 			upgradeWindows[upgradeWindows.Count - 1].transform.name = Player.unitTypes[i].GetComponent<UiUnitType>().UnitName;
 			upgradeWindows[upgradeWindows.Count - 1].transform.localScale *= 1.5f;
             upgrades.Add(Instantiate(Player.unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(), new Vector3(x, y), Quaternion.identity) as GameObject);
@@ -99,6 +111,29 @@ public class UpgradeController : MonoBehaviour {
 				}
 			}
 		}
+
+
+		if (Time.time >= nextFlow) {
+			gutterFlows.Add(Instantiate(gutterflowPrefab, new Vector3(-7f, -4.75f), Quaternion.identity) as GameObject);
+			gutterFlows[gutterFlows.Count - 1].name = "GutterFlow" + flowCounter.ToString();
+			nextFlow = Random.Range (3, 8) + Time.time;
+			flowCounter++;
+		}
+
+		GameObject removeFlow = null;
+		foreach (GameObject flow in gutterFlows) {
+			flow.transform.position += new Vector3(Time.deltaTime, 0);
+			
+			if (flow.transform.position.x >= 7) {
+				removeFlow = flow;
+			}
+		}
+
+		// Only need to remove 1 flow at a time
+		if (removeFlow != null) {
+			gutterFlows.Remove(removeFlow);
+			Destroy(removeFlow);
+		}
 	}
 	
 	void buttonPush(string buttonName) {
@@ -119,7 +154,7 @@ public class UpgradeController : MonoBehaviour {
                 }
             } else {
 				int abilityIndex = selectedType - Player.unitTypes.Count;
-				int orbCost = (Player.abilities[abilityIndex].GetComponent<Ability>().level==0) ?  Player.abilities[abilityIndex].GetComponent<Ability>().cost : (Player.abilities[abilityIndex].GetComponent<Ability>().level * 2 + 2);
+				int orbCost = Player.abilities[abilityIndex].GetComponent<Ability>().getUpgradeCost();
                 if ((Player.spiritOrbs >= orbCost) && (Player.abilities[abilityIndex].GetComponent<Ability>().level < maxAbilityUpgrades) ) {
 					Player.abilities[abilityIndex].GetComponent<Ability>().level++;
 					Player.upgradeAbility(Player.abilities[abilityIndex].GetComponent<Ability>());
@@ -152,8 +187,16 @@ public class UpgradeController : MonoBehaviour {
             textToDisplay += "\n";
 
             textToDisplay += "Upgrade Cost: ";
-            textToDisplay += ut.getPlayerStats().maxLevel* 5 + 5;
-            textToDisplay += "\n";
+            textToDisplay += ut.getPlayerStats().maxLevel * 5 + 5;
+			textToDisplay += "\n";
+			
+			textToDisplay += "Health: ";
+			textToDisplay += ut.getPlayerStats().maxHealth + (10 * ut.getPlayerStats().maxLevel);
+			textToDisplay += "\n";
+			
+			textToDisplay += "Damage: ";
+			textToDisplay += ut.getPlayerStats().attack + (5 * ut.getPlayerStats().maxLevel);
+			textToDisplay += "\n";
         } else {
             Ability ab;
 
@@ -168,8 +211,34 @@ public class UpgradeController : MonoBehaviour {
             textToDisplay += "\n";
 
             textToDisplay += "Upgrade Cost: ";
-            textToDisplay += ((ab.level==0)?ab.cost:ab.level*5+15);
-            textToDisplay += "\n";
+            textToDisplay += ab.getUpgradeCost();
+			textToDisplay += "\n";
+
+			switch(ab.abilityType) {
+			case Ability._type.rowDamage:
+				textToDisplay += "Damage: ";
+				textToDisplay += ab.getDamage();
+				textToDisplay += "\n";
+				break;
+			case Ability._type.radiusDamage:
+				textToDisplay += "Damage: ";
+				textToDisplay += ab.getDamage();
+				textToDisplay += "\n";
+				textToDisplay += "Radius: ";
+				textToDisplay += ab.getAreaOfEffect();
+				textToDisplay += "\n";
+				break;
+			case Ability._type.freezeEnemyUnit:
+				textToDisplay += "Duration: ";
+				textToDisplay += ab.getDuration();
+				textToDisplay += "\n";
+				break;
+			case Ability._type.ShieldUnit:
+				textToDisplay += "Duration: ";
+				textToDisplay += ab.getDuration();
+				textToDisplay += "\n";
+				break;
+			}
         }
 
 		unitInfoText.text = textToDisplay;

@@ -8,6 +8,7 @@ public class LevelSelectController : MonoBehaviour {
     public GameObject BeatGameMessage;
 	public GameObject[] Maps;
 	public GameObject ChapterNumUI;
+	public GameObject highlightPS;
 
     private List<GameObject> levelButtons;
 
@@ -61,6 +62,9 @@ public class LevelSelectController : MonoBehaviour {
 			
 			// Make the last level bigger
 			levelButtons [levelButtons.Count - 1].transform.localScale = new Vector3 (0.75f, 0.75f, 1);
+
+			// Particle System to draw user's attention to the new level
+			Instantiate(highlightPS, levelButtons[levelButtons.Count - 1].transform.position, Quaternion.identity);
 		}
 	}
 

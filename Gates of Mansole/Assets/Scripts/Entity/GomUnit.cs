@@ -194,7 +194,7 @@ public class GomUnit : GomObject {
 			return (int)_Type.kStaff;
 		else if (type.Equals ("Teacher"))
 			return (int)_Type.kSword;
-		else if (type.Equals ("Wand"))
+		else if (type.Equals ("Orator"))
 			return (int)_Type.kWand;
 		else
 			return (int)_Type.kWall;

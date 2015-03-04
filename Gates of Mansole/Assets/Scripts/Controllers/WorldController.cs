@@ -619,7 +619,7 @@ public class WorldController : MonoBehaviour {
 						
 						// Check if the player has enough spirit shards to use an ability
 						foreach (GameObject ab in abilities) {
-							if (Player.spiritShards >= ab.GetComponent<Ability>().cost) {
+							if (Player.spiritShards >= ab.GetComponent<Ability>().getUseCost()) {
 								canAfford = true;
 							}
 						}
@@ -660,6 +660,7 @@ public class WorldController : MonoBehaviour {
 							for (int i = 0; i < unitTypes.Count; ++i) {
 								if (hitSquare.transform.name == unitTypes[i].GetComponent<UiUnitType>().UnitName) {
 									selectedUiUnit = unitsUIinst[i];
+									unitInfoUi.SendMessage("MakeSelection", unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(), SendMessageOptions.DontRequireReceiver);
 									break;
 								}
 							}
@@ -668,7 +669,8 @@ public class WorldController : MonoBehaviour {
 							for (int i = 0; i < abilities.Count; ++i) {
 								if (hitSquare.transform.name == abilities[i].GetComponent<Ability>().abilityName) {
 									selectedUiAbility = abilityUIinst[i];
-									selectedAbility = abilities[i];
+									selectedAbility = abilities[i];unitInfoUi.SendMessage("MakeSelection", abilities[i], SendMessageOptions.DontRequireReceiver);
+
 									break;
 								}
 							}
@@ -746,7 +748,7 @@ public class WorldController : MonoBehaviour {
 						}
 						
 						if (ut != null) {
-							unitInfoUi.SendMessage("SelectUnit", ut, SendMessageOptions.DontRequireReceiver);
+							unitInfoUi.SendMessage("MakeSelection", ut, SendMessageOptions.DontRequireReceiver);
 						}
 					}
 				}
@@ -906,13 +908,13 @@ public class WorldController : MonoBehaviour {
 		
 		if (Input.GetMouseButtonUp(0)) {
 			
-			if ((tile.row >= 0) && (tile.row < gridSize.row) && (selectedAbility.GetComponent<Ability>().cost <= Player.spiritShards)) {
+			if ((tile.row >= 0) && (tile.row < gridSize.row) && (selectedAbility.GetComponent<Ability>().getUseCost() <= Player.spiritShards)) {
 				float xTilePos;
 				float yTilePos;
 				
 				Debug.Log(selectedAbility.GetComponent<Ability>().abilityName);
 				
-				Player.spiritShards -= selectedAbility.GetComponent<Ability>().cost;
+				Player.spiritShards -= selectedAbility.GetComponent<Ability>().getUseCost();
 				
 				xTilePos = map.GetComponent<UiTiles>().lanes[tile.row].GetComponent<UiRow>().rowTiles[0].transform.position.x;
 				yTilePos = map.GetComponent<UiTiles>().lanes[tile.row].GetComponent<UiRow>().rowTiles[0].transform.position.y;
@@ -927,7 +929,7 @@ public class WorldController : MonoBehaviour {
 					if (tileContents[tile.row][colInd] != null) {
 						if (tileContents[tile.row][colInd].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy) {
 							tileContents[tile.row][colInd].SendMessage("SetAttackerNoArgs", null, SendMessageOptions.DontRequireReceiver);
-							tileContents[tile.row][colInd].SendMessage("Damage", selectedAbility.GetComponent<Ability>().damage, SendMessageOptions.DontRequireReceiver);
+							tileContents[tile.row][colInd].SendMessage("Damage", selectedAbility.GetComponent<Ability>().getDamage(), SendMessageOptions.DontRequireReceiver);
 						}
 					}
 				}
@@ -959,13 +961,13 @@ public class WorldController : MonoBehaviour {
 		
 		if (Input.GetMouseButtonUp(0)) {
 			
-			if ((tile.row >= 0) && (tile.row < gridSize.row) && (selectedAbility.GetComponent<Ability>().cost <= Player.spiritShards)) {
+			if ((tile.row >= 0) && (tile.row < gridSize.row) && (selectedAbility.GetComponent<Ability>().getUseCost() <= Player.spiritShards)) {
 				float xTilePos;
 				float yTilePos;
 				
 				Debug.Log(selectedAbility.GetComponent<Ability>().abilityName);
 				
-				Player.spiritShards -= selectedAbility.GetComponent<Ability>().cost;
+				Player.spiritShards -= selectedAbility.GetComponent<Ability>().getUseCost();
 				
 				xTilePos = map.GetComponent<UiTiles>().lanes[tile.row].GetComponent<UiRow>().rowTiles[0].transform.position.x;
 				yTilePos = map.GetComponent<UiTiles>().lanes[tile.row].GetComponent<UiRow>().rowTiles[0].transform.position.y;
@@ -977,8 +979,8 @@ public class WorldController : MonoBehaviour {
 				abilityInst.SendMessage("DieTimer", 2f, SendMessageOptions.DontRequireReceiver);
 				
 				// Handle the middle row
-				for (int colInd = tile.col - selectedAbility.GetComponent<Ability>().areaOfEffect;
-				     colInd < tile.col + selectedAbility.GetComponent<Ability>().areaOfEffect + 1;
+				for (int colInd = tile.col - selectedAbility.GetComponent<Ability>().getAreaOfEffect();
+				     colInd < tile.col + selectedAbility.GetComponent<Ability>().getAreaOfEffect() + 1;
 				     colInd++) {
 					
 					if (colInd < 0) {
@@ -988,34 +990,32 @@ public class WorldController : MonoBehaviour {
 					if (colInd >= gridSize.col) {
 						continue;
 					}
-					
-					Debug.Log("Row : " + tile.row + " Col : " + colInd);
+
 					if (tileContents[tile.row][colInd] != null) {
 						if (tileContents[tile.row][colInd].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy) {
 							Debug.Log("Hit Unit : " + tile.row + ":" + colInd);
 							tileContents[tile.row][colInd].SendMessage("SetAttackerNoArgs", null, SendMessageOptions.DontRequireReceiver);
-							tileContents[tile.row][colInd].SendMessage("Damage", selectedAbility.GetComponent<Ability>().damage, SendMessageOptions.DontRequireReceiver);
+							tileContents[tile.row][colInd].SendMessage("Damage", selectedAbility.GetComponent<Ability>().getDamage(), SendMessageOptions.DontRequireReceiver);
 						}
 					}
 				}
 				
 				// Handle each row above the middle
-				for (int rowInd = 1; rowInd <= selectedAbility.GetComponent<Ability>().areaOfEffect; rowInd++) {
-					int rowRange = selectedAbility.GetComponent<Ability>().areaOfEffect - rowInd;
+				for (int rowInd = 1; rowInd <= selectedAbility.GetComponent<Ability>().getAreaOfEffect(); rowInd++) {
+					int rowRange = selectedAbility.GetComponent<Ability>().getAreaOfEffect() - rowInd;
 					
 					if ((rowInd + tile.row) >= gridSize.row) {
 						continue;
 					}
 					
 					for (int colInd = tile.col - rowRange; colInd < tile.col + rowRange + 1; colInd++) {
-						Debug.Log("Row : " + (rowInd + tile.row) + " Col : " + colInd);
 						if ((colInd >= 0) && (colInd < gridSize.col)) {
 							
 							if (tileContents[tile.row + rowInd][colInd] != null) {
 								if (tileContents[tile.row + rowInd][colInd].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy) {
 									Debug.Log("Hit Unit : " + (tile.row + rowInd) + ":" + colInd);
 									tileContents[tile.row + rowInd][colInd].SendMessage("SetAttackerNoArgs", null, SendMessageOptions.DontRequireReceiver);
-									tileContents[tile.row + rowInd][colInd].SendMessage("Damage", selectedAbility.GetComponent<Ability>().damage, SendMessageOptions.DontRequireReceiver);
+									tileContents[tile.row + rowInd][colInd].SendMessage("Damage", selectedAbility.GetComponent<Ability>().getDamage(), SendMessageOptions.DontRequireReceiver);
 								}
 							}
 						}
@@ -1023,23 +1023,20 @@ public class WorldController : MonoBehaviour {
 				}
 				
 				// Handle each row below the middle
-				for (int rowInd = 1; rowInd <= selectedAbility.GetComponent<Ability>().areaOfEffect; rowInd++) {
-					int rowRange = selectedAbility.GetComponent<Ability>().areaOfEffect - rowInd;
+				for (int rowInd = 1; rowInd <= selectedAbility.GetComponent<Ability>().getAreaOfEffect(); rowInd++) {
+					int rowRange = selectedAbility.GetComponent<Ability>().getAreaOfEffect() - rowInd;
 					
 					if ((tile.row - rowInd) < 0) {
 						continue;
 					}
 					
 					for (int colInd = tile.col - rowRange; colInd < tile.col + rowRange + 1; colInd++) {
-						Debug.Log("Row : " + (tile.row - rowInd) + " Col : " + colInd);
-						
 						if ((colInd >= 0) && (colInd < gridSize.col)) {
-							
 							if (tileContents[tile.row - rowInd][colInd] != null) {
 								if (tileContents[tile.row - rowInd][colInd].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy) {
 									Debug.Log("Hit Unit : " + (tile.row - rowInd) + ":" + colInd);
 									tileContents[tile.row - rowInd][colInd].SendMessage("SetAttackerNoArgs", null, SendMessageOptions.DontRequireReceiver);
-									tileContents[tile.row - rowInd][colInd].SendMessage("Damage", selectedAbility.GetComponent<Ability>().damage, SendMessageOptions.DontRequireReceiver);
+									tileContents[tile.row - rowInd][colInd].SendMessage("Damage", selectedAbility.GetComponent<Ability>().getDamage(), SendMessageOptions.DontRequireReceiver);
 								}
 							}
 						}
@@ -1091,10 +1088,12 @@ public class WorldController : MonoBehaviour {
 		}
 		
 		if (Input.GetMouseButtonUp (0)) {
-			
-			if (selectedAbility.GetComponent<Ability>().cost <= Player.spiritShards) {
-				freezeEndTime = Time.time + selectedAbility.GetComponent<Ability>().duration;
-				Player.spiritShards -= selectedAbility.GetComponent<Ability>().cost;
+
+			if ((tile.row != -1) && (tile.col != -1)) {
+				if (selectedAbility.GetComponent<Ability>().getUseCost() <= Player.spiritShards) {
+					freezeEndTime = Time.time + selectedAbility.GetComponent<Ability>().duration;
+					Player.spiritShards -= selectedAbility.GetComponent<Ability>().getUseCost();
+				}
 			}
 			
 			if (freezeIcons != null) {
@@ -1129,12 +1128,14 @@ public class WorldController : MonoBehaviour {
 		}
 		
 		if (Input.GetMouseButtonUp (0)) {
-			
-			if (tileContents[tile.row][tile.col] != null) {
-				if (tileContents[tile.row][tile.col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) {
-					if (selectedAbility.GetComponent<Ability>().cost <= Player.spiritShards) {
-						tileContents[tile.row][tile.col].SendMessage("SetInvincible", selectedAbility.GetComponent<Ability>().duration, SendMessageOptions.DontRequireReceiver);
-						Player.spiritShards -= selectedAbility.GetComponent<Ability>().cost;
+
+			if ((tile.row != -1) && (tile.col != -1)) {
+				if (tileContents[tile.row][tile.col] != null) {
+					if (tileContents[tile.row][tile.col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) {
+						if (selectedAbility.GetComponent<Ability>().getUseCost() <= Player.spiritShards) {
+							tileContents[tile.row][tile.col].SendMessage("SetInvincible", selectedAbility.GetComponent<Ability>().duration, SendMessageOptions.DontRequireReceiver);
+							Player.spiritShards -= selectedAbility.GetComponent<Ability>().getUseCost();
+						}
 					}
 				}
 			}
