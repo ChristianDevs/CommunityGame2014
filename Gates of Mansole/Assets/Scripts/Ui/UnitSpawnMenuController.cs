@@ -48,7 +48,7 @@ public class UnitSpawnMenuController : MonoBehaviour {
             GameObject uiAbility = Instantiate(abilityPrefab[i].GetComponent<Ability>().sprite, new Vector3((float)(-6f + (unitMenuInterval * (i + unitsPrefab.Length))), (float)-5.5, (float)0), Quaternion.identity) as GameObject;
             GameObject abilityCost = Instantiate(shardDisplayPrefab, new Vector3((float)(-6.3f + (unitMenuInterval * (i + unitsPrefab.Length))), (float)-5f, (float)0), Quaternion.identity) as GameObject;
             abilityCost.transform.localScale = new Vector3(0.5f, 0.5f, 1f);
-            abilityCost.transform.SendMessage("SetCustomValue", abilityPrefab[i].GetComponent<Ability>().cost, SendMessageOptions.DontRequireReceiver);
+			abilityCost.transform.SendMessage("SetCustomValue", abilityPrefab[i].GetComponent<Ability>().getUseCost(), SendMessageOptions.DontRequireReceiver);
             square.name = abilityPrefab[i].GetComponent<Ability>().abilityName;
             square.transform.localScale = new Vector3(square.transform.localScale.x, square.transform.localScale.y * 1.5f, 1f);
             world.squares.Add(square);
