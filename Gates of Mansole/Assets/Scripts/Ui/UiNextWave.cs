@@ -5,6 +5,7 @@ public class UiNextWave : MonoBehaviour {
 
 	public GameObject world;
 	public int currentWave;
+	public GameObject releaseCrystals;
 	
 	// Update is called once per frame
 	void Update () {
@@ -21,6 +22,10 @@ public class UiNextWave : MonoBehaviour {
 			nextWaveTime = nextWaveTime - (Time.time - levelStartTime);
 		}
 
-		txt.text = "Next Wave: " + (int)nextWaveTime;
+		txt.text = ": " + (int)nextWaveTime;
+
+		if (releaseCrystals != null) {
+			releaseCrystals.SendMessage("SetCustomValue", world.GetComponent<WorldController>().earlyReleaseShards, SendMessageOptions.DontRequireReceiver);
+		}
 	}
 }
