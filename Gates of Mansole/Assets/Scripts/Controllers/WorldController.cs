@@ -59,6 +59,13 @@ public class WorldController : MonoBehaviour {
 	public GameObject BarGreen;
 	public GameObject BarRed;
 	
+	public int earlyReleaseShards;
+	public GameObject rewardShardPrefab;
+	public GameObject spiritShardUI;
+	private int rwCounter;
+
+	private bool isFirstWin;
+	
 	private float OrbCurAmount;
 	private float ShardCurAmount;
 	private float ConvertStepIntervalTime;
@@ -112,6 +119,9 @@ public class WorldController : MonoBehaviour {
 		freezeEndTime = -1f;
 		origMapPos = map.transform.position;
 		CurWave = 0;
+		earlyReleaseShards = 0;
+		rwCounter = 0;
+		isFirstWin = false;
 		
 		winMessage.SetActive(false);
 		loseMessage.SetActive(false);
@@ -599,6 +609,13 @@ public class WorldController : MonoBehaviour {
 						}
 					}
 				}
+
+				// Give the player bonus shards to release waves early
+				if (CurWave < currentLevel.GetComponent<WaveList>().waves.Count) {
+					float nextWaveTime = currentLevel.GetComponent<WaveList>().waves[CurWave].waitTime - (Time.time - levelStartTime);
+					int nextWaveEnemies = currentLevel.GetComponent<WaveList>().waves[CurWave].units.Length;
+					earlyReleaseShards = (int)((nextWaveTime * nextWaveEnemies) * 0.1f);
+				}
 			}
 			
 			// Check game over conditions
@@ -806,7 +823,18 @@ public class WorldController : MonoBehaviour {
 	}
 	
 	void winLevel() {
+
+		// Wait until all rewards are gone
+		if (GameObject.FindGameObjectWithTag ("reward") != null) {
+			return;
+		}
+
 		ShardCurAmount = Player.totalShards;
+
+		if (Player.levelComplete[Player.currentChapter][Player.currentLevel] == 0) {
+			isFirstWin = true;
+		}
+
 		Player.completeLevel();
 		isLevelDone = true;
 		dialogueText.text = "";
@@ -869,15 +897,32 @@ public class WorldController : MonoBehaviour {
 			}
 			break;
 		case _ConvertState.Converting:
-			if ((convertTime + 0.3f) < Time.time) {
-				OrbCurAmount++;
-				ShardCurAmount -= 1 / Player.CONVERSION_RATE;
+			if (ShardCurAmount > 0) {
+				if ((convertTime + 0.15f) < Time.time) {
+					OrbCurAmount++;
+					ShardCurAmount -= 1 / Player.CONVERSION_RATE;
+					convertTime = Time.time;
+				}
+
+				if (ShardCurAmount <= 0) {
+					ShardCurAmount = 0;
+
+					if ((isFirstWin == false) || (currentLevel.GetComponent<WaveList>().firstTimeBonus <= 0)) {
+						cvState = _ConvertState.Done;
+					}
+				}
+			} else {
+				if ((convertTime + 0.15f) < Time.time) {
+					OrbCurAmount++;
+					currentLevel.GetComponent<WaveList>().firstTimeBonus -= 1;
+					convertTime = Time.time;
+				}
+
+				if (currentLevel.GetComponent<WaveList>().firstTimeBonus <= 0) {
+					cvState = _ConvertState.Done;
+				}
 			}
-			
-			if (ShardCurAmount <= 0) {
-				ShardCurAmount = 0;
-				cvState = _ConvertState.Done;
-			}
+
 			break;
 		case _ConvertState.Done:
 			
@@ -890,6 +935,13 @@ public class WorldController : MonoBehaviour {
 		dialogueText.text = "Total Spirit Shards\n";
 		dialogueText.text += ShardCurAmount;
 		dialogueText.text += "\n";
+
+		if (isFirstWin == true) {
+			dialogueText.text += "First Time Win Bonus\n";
+			dialogueText.text += currentLevel.GetComponent<WaveList>().firstTimeBonus;
+			dialogueText.text += "\n";
+		}
+
 		dialogueText.text += "Gained Spirit Orbs\n";
 		dialogueText.text += OrbCurAmount;
 	}
@@ -1179,7 +1231,19 @@ public class WorldController : MonoBehaviour {
 						defeatedAttackers++;
 					}
 				}
-				
+
+				// Enemies drop shards to pick up
+				if (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy) {
+					GameObject rw = Instantiate(rewardShardPrefab, tileContents[row][col].transform.position, Quaternion.identity) as GameObject;
+					rw.transform.name = "reward" + rwCounter;
+					rw.tag = "reward";
+					rwCounter++;
+					rw.transform.position = new Vector3(rw.transform.position.x, rw.transform.position.y, rw.transform.position.z - 1);
+					rw.GetComponent<RewardSpiritShard>().world = gameObject;
+					rw.GetComponent<RewardSpiritShard>().shardAmount = tileContents[row][col].GetComponent<GomUnit>().value;
+					rw.GetComponent<RewardSpiritShard>().travelPlace = spiritShardUI;
+				}
+
 				tileContents[row][col].SendMessage("Die", null, SendMessageOptions.DontRequireReceiver);
 				tileContents[row][col] = null;
 			}
@@ -1453,6 +1517,7 @@ public class WorldController : MonoBehaviour {
 				float nextWaveTime = currentLevel.GetComponent<WaveList>().waves[CurWave].waitTime;
 				
 				levelStartTime -= nextWaveTime - (Time.time - levelStartTime);
+				Player.spiritShards += earlyReleaseShards;
 			}
 			break;
 		}

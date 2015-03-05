@@ -112,11 +112,6 @@ public class GomUnit : GomObject {
 
             if (attacker != null) {
                 attacker.IncrementKills();
-                attacker.RewardShards(value);
-            } else if (faction == Faction.Enemy) {
-				Player.spiritShards += value;
-				Player.totalShards += value;
-				Debug.Log ("Player now has " + Player.spiritShards + " spirit shards and " + Player.totalShards + " total shards.");
 			}
         }
         updateHealthBars();
@@ -132,14 +127,6 @@ public class GomUnit : GomObject {
 	
 	void IncrementKills() {
 		kills++;
-	}
-
-	void RewardShards(int val) {
-		if (faction == Faction.Player) {
-			Player.spiritShards += val;
-			Player.totalShards += val;
-			Debug.Log ("Player now has " + Player.spiritShards + " spirit shards and " + Player.totalShards + " total shards.");
-		}
 	}
 
     void SetWorld(GameObject newWorld) {
