@@ -41,6 +41,7 @@ public class WaveList : MonoBehaviour {
 	public List<float> enemyLevelUpTimes;
 	public List<_placeable> placeables;
 	public List<int> upgradeAtWave;
+	public int firstTimeBonus;
 
 	// Wall:Col:StartRow:EndRow:Health:FallPercent:HealthRegen
 	public bool usingWall;
@@ -159,6 +160,9 @@ public class WaveList : MonoBehaviour {
                     break;
 				case "upgradeatwave":
 					upgradeAtWave.Add(int.Parse(val));
+					break;
+				case "firsttimebonus":
+					firstTimeBonus = int.Parse(val);
 					break;
                 default:
 					yield return null;
