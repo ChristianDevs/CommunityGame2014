@@ -67,7 +67,7 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:Five landmark gates contributed to the fame of the city: eye, ear, nose, mouth, and feel.
+	Dialogue:Five landmark gates contributed to the fame of the city - eye, ear, nose, mouth, and feel.
 	ShowTime:5
 	Action:0
 entry
@@ -87,7 +87,6 @@ entry
 	Speaker:None
 	Dialogue:However, the threat of evil darkness lies on it's borders.
 	ShowTime:5
-
 entry
 	Music:0
 	Background:0
