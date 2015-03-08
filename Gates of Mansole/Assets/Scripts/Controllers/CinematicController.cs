@@ -9,6 +9,7 @@ public class CinematicController : MonoBehaviour {
 	public SpriteRenderer rightImage;
 	public GameObject dialogueWindow;
 	public int dialogueLineSize;
+	public GameObject blackScreen;
 
 	public GameObject[] BackgroundImages;
 	public Sprite[] CharacterImages;
@@ -16,6 +17,12 @@ public class CinematicController : MonoBehaviour {
 	private string cinFile;
 	private string type;
 	private bool isDone;
+
+	public enum _action {
+		None,
+		FadeFromBlack,
+		FadeToBlack
+	}
 
 	public class _cinematic_entry {
 		public int Music;
@@ -25,11 +32,13 @@ public class CinematicController : MonoBehaviour {
 		public string Speaker;
 		public string Dialogue;
 		public float ShowTime;
+		public _action Action;
 	};
 	public List<_cinematic_entry> Cinematic;
 
 	private int entryIndex;
 	private float entryChangeTime;
+	private float alpha;
 
 	// Use this for initialization
 	void Start () {
@@ -45,6 +54,7 @@ public class CinematicController : MonoBehaviour {
 		}
 		Debug.Log ("Chapter : " + Player.currentChapter.ToString() + " " + type +  " : " + Player.chapterIntroCinematicFiles [Player.currentChapter]);
 
+		blackScreen.SetActive(false);
 		isDone = false;
 		entryIndex = 0;
 		entryChangeTime = 0;
@@ -106,6 +116,11 @@ public class CinematicController : MonoBehaviour {
 					Cinematic[Cinematic.Count - 1].ShowTime = float.Parse(ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].ToLower().TrimStart());
 				}
 				break;
+			case "action":
+				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length > 1) {
+					Cinematic[Cinematic.Count - 1].Action = (_action)int.Parse(ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].ToLower().TrimStart());
+				}
+				break;
 			}
 		}
 
@@ -137,15 +152,19 @@ public class CinematicController : MonoBehaviour {
 				
 				if (Cinematic[entryIndex].ImageRight == "none") {
 					rightImage.sprite = null;
-				}
-				else if (int.Parse(Cinematic[entryIndex].ImageRight) < CharacterImages.Length) {
+				} else if (int.Parse(Cinematic[entryIndex].ImageRight) < CharacterImages.Length) {
 					rightImage.sprite = CharacterImages[int.Parse(Cinematic[entryIndex].ImageRight)];
 				}
 
 				entryIndex++;
+				
+				InitAction(Cinematic[entryIndex-1].Action);
 			} else {
 				Application.LoadLevel ("LevelSelect");
 			}
+		} else {
+			// Update the Action
+			HandleAction(Cinematic[entryIndex-1].Action);
 		}
 	}
 	
@@ -176,5 +195,49 @@ public class CinematicController : MonoBehaviour {
 		}
 		
 		return newText;
+	}
+
+	void HandleAction(_action Action) {
+		Color clr = Color.black;
+
+		switch(Action) {
+		case _action.None:
+			break;
+		case _action.FadeFromBlack:
+			alpha -= Time.deltaTime / Cinematic[entryIndex-1].ShowTime;
+			clr.a = alpha;
+			blackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = clr;
+			break;
+		case _action.FadeToBlack:
+			alpha += Time.deltaTime / Cinematic[entryIndex-1].ShowTime;
+			clr.a = alpha;
+			blackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = clr;
+			break;
+		default:
+			break;
+		}
+	}
+	
+	void InitAction(_action Action) {
+		Color clr = Color.black;
+
+		switch(Action) {
+		case _action.None:
+			break;
+		case _action.FadeFromBlack:
+			blackScreen.SetActive(true);
+			alpha = 1;
+			clr.a = alpha;
+			blackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = clr;
+			break;
+		case _action.FadeToBlack:
+			blackScreen.SetActive(true);
+			alpha = 0;
+			clr.a = alpha;
+			blackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = clr;
+			break;
+		default:
+			break;
+		}
 	}
 }
