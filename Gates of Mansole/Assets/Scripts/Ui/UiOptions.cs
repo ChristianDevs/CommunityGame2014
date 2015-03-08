@@ -34,6 +34,9 @@ public class UiOptions : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-	
+		// If options is open then don't count time for the next wave
+		if (world.activeSelf == false) {
+			world.GetComponent<WorldController>().levelStartTime += Time.deltaTime;
+		}
 	}
 }
