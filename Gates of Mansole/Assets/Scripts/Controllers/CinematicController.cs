@@ -77,6 +77,11 @@ public class CinematicController : MonoBehaviour {
 
 		Cinematic = new List<_cinematic_entry> ();
 		foreach(string ln in levelData) {
+			// Don't try to process empty lines
+			if (ln == "") {
+				continue;
+			}
+
 			switch(ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower().TrimStart()) {
 			case "entry":
 				Cinematic.Add(new _cinematic_entry());
