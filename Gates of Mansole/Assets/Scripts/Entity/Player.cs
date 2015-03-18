@@ -68,6 +68,7 @@ public class Player : MonoBehaviour {
 		chapterProgression = 0;
 		currentChapter = 0;
 		PlayerPrefs.SetInt ("chapterProgression", chapterProgression);
+		PlayerPrefs.Save ();
     }
 
     static public void loadPlayer(GameObject[] newUnitTypes, GameObject[] newAbilities) {
@@ -121,16 +122,19 @@ public class Player : MonoBehaviour {
 	static public void watchedIntroCinematic() {
 		introCinematicsWatched [currentChapter] = true;
 		PlayerPrefs.SetInt (chapterIntroCinematicFiles [currentChapter], 1);
+		PlayerPrefs.Save ();
 	}
 	
 	static public void watchedExitCinematic() {
 		exitCinematicsWatched [currentChapter] = true;
 		PlayerPrefs.SetInt (chapterExitCinematicFiles [currentChapter], 1);
+		PlayerPrefs.Save ();
 	}
 
 	static public void beatChapter() {
 		chapterProgression = currentChapter + 1;
 		PlayerPrefs.SetInt ("chapterProgression", chapterProgression);
+		PlayerPrefs.Save ();
 	}
 
     static public void upgradeUnit(UiUnitType upgradeUnit) {
@@ -143,6 +147,7 @@ public class Player : MonoBehaviour {
 				break;
 			}
 		}
+		PlayerPrefs.Save ();
 	}
 
     static public void upgradeAbility(Ability upgradeAbility) {
@@ -154,7 +159,8 @@ public class Player : MonoBehaviour {
                 PlayerPrefs.SetInt(uiAbility.abilityName + "level", uiAbility.level);
                 break;
             }
-        }
+		}
+		PlayerPrefs.Save ();
     }
 
 	static public void completeLevel() {
@@ -176,6 +182,7 @@ public class Player : MonoBehaviour {
 		    (currentChapter == chapterProgression)) {
 			beatChapter();
 		}
+		PlayerPrefs.Save ();
     }
 
 	static public int getNumLevelsBeaten(int chapterNum) {
@@ -198,10 +205,12 @@ public class Player : MonoBehaviour {
 		PlayerPrefs.SetInt("spiritOrbs", spiritOrbs);
 		spiritShards = 0;
 		totalShards = 0;
+		PlayerPrefs.Save ();
 	}
 
 	static public void AddOrbs(int amt) {
 		spiritOrbs += amt;
 		PlayerPrefs.SetInt("spiritOrbs", spiritOrbs);
+		PlayerPrefs.Save ();
 	}
 }
