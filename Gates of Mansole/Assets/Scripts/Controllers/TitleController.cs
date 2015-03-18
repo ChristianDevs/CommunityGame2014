@@ -59,24 +59,32 @@ public class TitleController : MonoBehaviour {
 		Player.chapterIntroCinematicFiles = new List<string> ();
 		Player.chapterExitCinematicFiles = new List<string> ();
 		foreach (string ln in levelData) {
-			if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower().TrimStart() == "map") {
+			string key = "";
+			
+			if (ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length > 1) {
+				key = ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower().TrimStart();
+			} else {
+				key = ln.ToLower().TrimStart().TrimEnd();
+			}
+			
+			if (key == "map") {
 				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length >= 2) {
 					Player.maps.Add (int.Parse(ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1]));
 				}
-			} else if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower().TrimStart() == "chapter") {
+			} else if (key == "chapter") {
 				Player.levelFileNames.Add(new List<string>());
 				Player.levelLocs.Add(new List<Vector2>());
-			} else if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower().TrimStart() == "intro") {
+			} else if (key == "intro") {
 				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length >= 2) {
 					Player.chapterIntroCinematicFiles.Add (Application.streamingAssetsPath.Replace("Raw", "StreamingAssets") + "/" + ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].TrimStart());
 				}
-			} else if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower().TrimStart() == "exit") {
+			} else if (key == "exit") {
 				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length >= 2) {
 					Player.chapterExitCinematicFiles.Add (Application.streamingAssetsPath.Replace("Raw", "StreamingAssets") + "/" + ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].TrimStart());
 				}
 			} else if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length >= 3) {
 				if (Player.levelFileNames.Count > 0) {
-		            // Apply web fix to level files
+					// Apply web fix to level files
 					Player.levelFileNames[Player.levelFileNames.Count-1].Add(Application.streamingAssetsPath.Replace("Raw", "StreamingAssets") + "/" + ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].TrimStart());
 					Player.levelLocs[Player.levelFileNames.Count-1].Add(new Vector2(float.Parse(ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1]), float.Parse(ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[2])));
 				}

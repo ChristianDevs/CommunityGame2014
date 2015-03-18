@@ -77,53 +77,61 @@ public class CinematicController : MonoBehaviour {
 
 		Cinematic = new List<_cinematic_entry> ();
 		foreach(string ln in levelData) {
+			string key = "";
+
 			// Don't try to process empty lines
 			if (ln == "") {
 				continue;
 			}
-
-			switch(ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower().TrimStart()) {
+			
+			if (ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length > 1) {
+				key = ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[0].ToLower().TrimStart();
+			} else {
+				key = ln.ToLower().TrimStart().TrimEnd();
+			}
+			
+			switch(key) {
 			case "entry":
 				Cinematic.Add(new _cinematic_entry());
 				break;
 			case "music":
 				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length > 1) {
-					Cinematic[Cinematic.Count - 1].Music = int.Parse(ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].ToLower().TrimStart());
+					Cinematic[Cinematic.Count - 1].Music = int.Parse(ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].ToLower().TrimStart().TrimEnd ());
 				}
 				break;
 			case "background":
 				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length > 1) {
-					Cinematic[Cinematic.Count - 1].Background = int.Parse(ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].ToLower().TrimStart());
+					Cinematic[Cinematic.Count - 1].Background = int.Parse(ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].ToLower().TrimStart().TrimEnd ());
 				}
 				break;
 			case "imageleft":
 				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length > 1) {
-					Cinematic[Cinematic.Count - 1].ImageLeft = ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].ToLower().TrimStart();
+					Cinematic[Cinematic.Count - 1].ImageLeft = ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].ToLower().TrimStart().TrimEnd();
 				}
 				break;
 			case "imageright":
 				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length > 1) {
-					Cinematic[Cinematic.Count - 1].ImageRight = ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].ToLower().TrimStart();
+					Cinematic[Cinematic.Count - 1].ImageRight = ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].ToLower().TrimStart().TrimEnd();
 				}
 				break;
 			case "speaker":
 				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length > 1) {
-					Cinematic[Cinematic.Count - 1].Speaker = ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].TrimStart();
+					Cinematic[Cinematic.Count - 1].Speaker = ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].TrimStart().TrimEnd();
 				}
 				break;
 			case "dialogue":
 				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length > 1) {
-					Cinematic[Cinematic.Count - 1].Dialogue = ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].TrimStart();
+					Cinematic[Cinematic.Count - 1].Dialogue = ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].TrimStart().TrimEnd();
 				}
 				break;
 			case "showtime":
 				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length > 1) {
-					Cinematic[Cinematic.Count - 1].ShowTime = float.Parse(ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].ToLower().TrimStart());
+					Cinematic[Cinematic.Count - 1].ShowTime = float.Parse(ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].ToLower().TrimStart().TrimEnd ());
 				}
 				break;
 			case "action":
 				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length > 1) {
-					Cinematic[Cinematic.Count - 1].Action = (_action)int.Parse(ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].ToLower().TrimStart());
+					Cinematic[Cinematic.Count - 1].Action = (_action)int.Parse(ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].ToLower().TrimStart().TrimEnd ());
 				}
 				break;
 			}

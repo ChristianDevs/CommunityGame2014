@@ -144,10 +144,11 @@ public class WorldController : MonoBehaviour {
 		
 		switch (state) {
 		case _WorldState.Setup:
-			handleSetup();
-			state = _WorldState.PreDialogue;
-			dialogueIndex = -1;
-			dialogueWindow.SetActive(true);
+			if (handleSetup() == true) {
+				state = _WorldState.PreDialogue;
+				dialogueIndex = -1;
+				dialogueWindow.SetActive(true);
+			}
 			break;
 		case _WorldState.PreDialogue:
 			if (handleDialogue(currentLevel.GetComponent<WaveList>().preLevelDialogue)) {
@@ -287,10 +288,16 @@ public class WorldController : MonoBehaviour {
 		}
 	}
 	
-	void handleSetup() {
+	bool handleSetup() {
 		if (Player.nextLevelFile != "") {
-			currentLevel.GetComponent<WaveList>().loadGameFile(Player.nextLevelFile, unitTypes, 8);
-			
+			if (currentLevel.GetComponent<WaveList>().unitTypes == null) {
+				currentLevel.GetComponent<WaveList>().loadGameFile(Player.nextLevelFile, unitTypes);
+			}
+
+			if (currentLevel.GetComponent<WaveList>().Lanes.Count == 0) {
+				return false;
+			}
+
 			// Reset all stats
 			foreach (GameObject unitType in unitTypes) {
 				UiUnitType uType;
@@ -412,6 +419,8 @@ public class WorldController : MonoBehaviour {
 				wall.GetComponent<GomUnit>().setBarColor ();
 			}
 		}
+
+			return true;
 	}
 	
 	bool handleDialogue(List<WaveList._statement> dialogue) {
