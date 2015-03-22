@@ -93,7 +93,7 @@ public class WaveList : MonoBehaviour {
 			} else {
 				key = levelData[i].TrimStart().TrimEnd().ToLower();
 			}
-			
+			key = key.Replace(":", "");
 			if (levelData[i].Split(seps).Length > 1) {
 				val = levelData[i].Split(seps)[1].TrimEnd();
 			}
@@ -264,9 +264,9 @@ public class WaveList : MonoBehaviour {
 			if (levelData[i].Split(seps, System.StringSplitOptions.RemoveEmptyEntries).Length > 1) {
 				key = levelData[i].Split(seps)[0].Trim().ToLower();
 			} else {
-				key = levelData[i].TrimStart().TrimEnd();
+				key = levelData[i].TrimStart().ToLower().TrimEnd();
 			}
-			
+			key = key.Replace(":", "");
 			if (levelData[i].Split(seps).Length > 1) {
 				val = levelData[i].Split(seps)[1].TrimStart().TrimEnd();
 			}
