@@ -51,6 +51,7 @@ public class WorldController : MonoBehaviour {
 	public Sprite[] Images;
 	public float unitMenuInterval;
 	public GameObject[] Placeables;
+	public AudioClip[] Music;
 	public int CurWave;
 	
 	public GameObject BarEmptyLeft;
@@ -319,6 +320,11 @@ public class WorldController : MonoBehaviour {
 			foreach(WaveList._placeable pl in currentLevel.GetComponent<WaveList>().placeables) {
 				Placeables[pl.num] = Instantiate(Placeables[pl.num], new Vector3(pl.x, pl.y), Quaternion.identity) as GameObject;
 				Placeables[pl.num].transform.parent = map.transform;
+			}
+			
+			// Play music
+			if ((currentLevel.GetComponent<WaveList>().backGroundMusic >= 0) && (currentLevel.GetComponent<WaveList>().backGroundMusic < Music.Length)) {
+				AudioSource.PlayClipAtPoint(Music[currentLevel.GetComponent<WaveList>().backGroundMusic], transform.position);
 			}
 			
 			Player.spiritShards = Player.totalShards = currentLevel.GetComponent<WaveList>().startShards;

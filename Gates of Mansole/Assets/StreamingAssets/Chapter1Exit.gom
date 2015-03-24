@@ -1,8 +1,106 @@
 entry
 	Music:0
 	Background:0
-	ImageLeft:0
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:2
+	Action:1
+entry
+	Music:0
+	Background:0
+	ImageLeft:4
 	ImageRight:0
-	Speaker:Tester
-	Dialogue:Testing
+	Speaker:Mayor Understanding
+	Dialogue:Now that I've grasped reality, I think it is proper we crown Diabolus king of Mansoul.
 	ShowTime:5
+entry
+	Music:0
+	Background:0
+	ImageLeft:5
+	ImageRight:0
+	Speaker:Judge Conscience
+	Dialogue:I concur, that would seem most prudent at this point.
+	ShowTime:5
+entry
+	Music:0
+	Background:0
+	ImageLeft:7
+	ImageRight:0
+	Speaker:Lady Willbewill
+	Dialogue:Here, here! I whole-heartedly give Diabolus my support.
+	ShowTime:5
+entry
+	Music:0
+	Background:0
+	ImageLeft:0
+	ImageRight:2
+	Speaker:Diabolus
+	Dialogue:I thank you for your kind words. We must all think of the benefit to the people of Mansoul.
+	ShowTime:5
+entry
+	Music:0
+	Background:0
+	ImageLeft:0
+	ImageRight:2
+	Speaker:Diabolus
+	Dialogue:And on that note I humbly accept my nomination as king.
+	ShowTime:5
+entry
+	Music:0
+	Background:0
+	ImageLeft:0
+	ImageRight:2
+	Speaker:Diabolus
+	Dialogue:This is a very wise action for you noble people to take.
+	ShowTime:5
+entry
+	Music:0
+	Background:0
+	ImageLeft:0
+	ImageRight:2
+	Speaker:Diabolus
+	Dialogue:Let it be known that the oppressive reign of King Shaddai has come to an end!
+	ShowTime:5
+entry
+	Music:0
+	Background:0
+	ImageLeft:0
+	ImageRight:2
+	Speaker:Diabolus
+	Dialogue:No longer will there be inequality here in this great city.
+	ShowTime:5
+entry
+	Music:0
+	Background:0
+	ImageLeft:0
+	ImageRight:2
+	Speaker:Diabolus
+	Dialogue:Today marks a bright chapter in Mansoul's history.
+	ShowTime:5
+entry
+	Music:0
+	Background:0
+	ImageLeft:0
+	ImageRight:2
+	Speaker:Diabolus
+	Dialogue:I decree that Diabolonians can freely enter the city and receive all the benefits the sheltered and decadent citizens enjoy.
+	ShowTime:5
+entry
+	Music:0
+	Background:0
+	ImageLeft:0
+	ImageRight:1
+	Speaker:Forgetgood
+	Dialogue:Yes, this will most definately be for the good of all.
+	ShowTime:5
+entry
+	Music:0
+	Background:0
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:2
+	Action:2

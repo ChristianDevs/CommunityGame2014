@@ -42,6 +42,7 @@ public class WaveList : MonoBehaviour {
 	public List<_placeable> placeables;
 	public List<int> upgradeAtWave;
 	public int firstTimeBonus;
+	public int backGroundMusic;
 	
 	// Wall:Col:StartRow:EndRow:Health:FallPercent:HealthRegen
 	public bool usingWall;
@@ -66,7 +67,7 @@ public class WaveList : MonoBehaviour {
 		upgradeAtWave = new List<int> ();
 		waveStarted = new List<bool> ();
 		waves = new List<Wave>();
-
+		backGroundMusic = -1;
 		StartCoroutine (parseLevelFile(fileName));
 		return true;
 	}
@@ -170,6 +171,9 @@ public class WaveList : MonoBehaviour {
 				break;
 			case "firsttimebonus":
 				firstTimeBonus = int.Parse(val);
+				break;
+			case "music":
+				backGroundMusic = int.Parse(val);
 				break;
 			default:
 				break;

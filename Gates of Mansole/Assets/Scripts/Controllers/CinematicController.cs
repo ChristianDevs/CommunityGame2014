@@ -13,10 +13,12 @@ public class CinematicController : MonoBehaviour {
 
 	public GameObject[] BackgroundImages;
 	public Sprite[] CharacterImages;
+	public AudioClip[] Music;
 
 	private string cinFile;
 	private string type;
 	private bool isDone;
+	private int lastMusic;
 
 	public enum _action {
 		None,
@@ -58,6 +60,7 @@ public class CinematicController : MonoBehaviour {
 		isDone = false;
 		entryIndex = 0;
 		entryChangeTime = 0;
+		lastMusic = -1;
 		StartCoroutine (Init (cinFile));
 	}
 
@@ -167,6 +170,14 @@ public class CinematicController : MonoBehaviour {
 					rightImage.sprite = null;
 				} else if (int.Parse(Cinematic[entryIndex].ImageRight) < CharacterImages.Length) {
 					rightImage.sprite = CharacterImages[int.Parse(Cinematic[entryIndex].ImageRight)];
+				}
+				
+				if ((Cinematic[entryIndex].Music >= 0) && (Cinematic[entryIndex].Music < Music.Length)) {
+					if (lastMusic != Cinematic[entryIndex].Music) {
+						Debug.Log("Playing Music");
+						AudioSource.PlayClipAtPoint(Music[Cinematic[entryIndex].Music], transform.position);
+						lastMusic = Cinematic[entryIndex].Music;
+					}
 				}
 
 				entryIndex++;
