@@ -67,7 +67,7 @@ public class WorldController : MonoBehaviour {
 
 	private bool isFirstWin;
 	
-	private float OrbCurAmount;
+	private int OrbCurAmount;
 	private float ShardCurAmount;
 	private float ConvertStepIntervalTime;
 	private float convertTime;
@@ -923,6 +923,7 @@ public class WorldController : MonoBehaviour {
 					ShardCurAmount = 0;
 
 					if ((isFirstWin == false) || (currentLevel.GetComponent<WaveList>().firstTimeBonus <= 0)) {
+						Player.AddOrbs(OrbCurAmount);
 						cvState = _ConvertState.Done;
 					}
 				}
@@ -934,6 +935,7 @@ public class WorldController : MonoBehaviour {
 				}
 
 				if (currentLevel.GetComponent<WaveList>().firstTimeBonus <= 0) {
+					Player.AddOrbs(OrbCurAmount);
 					cvState = _ConvertState.Done;
 				}
 			}

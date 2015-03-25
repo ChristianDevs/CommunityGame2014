@@ -164,7 +164,7 @@ public class Player : MonoBehaviour {
     }
 
 	static public void completeLevel() {
-		convertShards ();
+		//convertShards ();
 
 		if (currentChapter >= levelFileNames.Count) {
 			return;
