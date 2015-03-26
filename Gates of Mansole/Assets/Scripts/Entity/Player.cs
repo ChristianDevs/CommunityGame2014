@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class Player : MonoBehaviour {
 
-	public const float CONVERSION_RATE = 0.1f; // shards to orbs
+	public const float CONVERSION_RATE = 0.05f; // shards to orbs
 
     static public List<List<int>> levelComplete;
     static public int currentLevel;		// Level the player is currently playing
@@ -164,7 +164,7 @@ public class Player : MonoBehaviour {
     }
 
 	static public void completeLevel() {
-		convertShards ();
+		//convertShards ();
 
 		if (currentChapter >= levelFileNames.Count) {
 			return;
