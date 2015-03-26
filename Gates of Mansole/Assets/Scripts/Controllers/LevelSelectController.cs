@@ -11,9 +11,11 @@ public class LevelSelectController : MonoBehaviour {
 	public GameObject highlightPS;
 
     private List<GameObject> levelButtons;
+	private GameObject particleSystem;
 
 	// Use this for initialization
 	void Start () {
+		particleSystem = null;
 		UpdateMap();
 	}
 	
@@ -34,6 +36,10 @@ public class LevelSelectController : MonoBehaviour {
 			for (int i = 1; i < levelButtons.Count; i++) {
 				Destroy(levelButtons[i]);
 			}
+		}
+
+		if (particleSystem != null) {
+			Destroy(particleSystem);
 		}
 		
 		// Always let the player access level 1
@@ -64,7 +70,7 @@ public class LevelSelectController : MonoBehaviour {
 			levelButtons [levelButtons.Count - 1].transform.localScale = new Vector3 (0.75f, 0.75f, 1);
 
 			// Particle System to draw user's attention to the new level
-			Instantiate(highlightPS, levelButtons[levelButtons.Count - 1].transform.position, Quaternion.identity);
+			particleSystem = Instantiate(highlightPS, levelButtons[levelButtons.Count - 1].transform.position, Quaternion.identity) as GameObject;
 		}
 	}
 

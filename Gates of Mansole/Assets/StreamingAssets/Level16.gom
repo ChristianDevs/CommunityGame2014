@@ -2,14 +2,14 @@ AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:21
+Lane:6:Disable
+Lane:6:Disable
 Lane:2
 Lane:2
 Lane:2
 Lane:2
-Lane:2
-Lane:2
-Lane:2:Disable
-Lane:7:Disable
+Lane:6:Disable
+Lane:6:Disable
 UpgradeAtWave:0
 UpgradeAtWave:0
 UpgradeAtWave:0
@@ -23,45 +23,40 @@ Placeable:25:-6:2.5
 Placeable:25:6:2.5
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:Hello sir, since you got promoted to captain I was next in line for Lieutenant.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
+        Dialogue:It is sad to hear of Captain Resistance's fate.
     Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
+        Dialogue:But it seems she has been involved in a discrimination conspiracy.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
+        Dialogue:So maybe it's for the best she isn't around. I will miss her though.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Dialogue:I have reports of Diabolonians starting a fight in the market.
+    Statement:
+        Speaker:Lieutenant Captain
+        LeftImage:10
+        RightImage:None
+        Dialogue:The merchants need help to stay safe so they can sell their goods.
+    Statement:
+        Speaker:Lieutenant Captain
+        LeftImage:10
+        RightImage:None
+        Dialogue:I think we need to keep the Diabolonians away.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -251,72 +246,13 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Merchant
+        LeftImage:11
         RightImage:None
-        Dialogue:No! This cannot happen.
+        Dialogue:Thank you captain, for coming to our aid.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Merchant
+        LeftImage:11
         RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
-    Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
-    Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Aaaahhh!
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
+        Dialogue:These Diabolonians are going too far, I'm being run out of business.
         Dialogue:But... the story continues...
