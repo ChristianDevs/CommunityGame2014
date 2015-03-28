@@ -2,12 +2,13 @@ AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:21
+FirstTimeBonus:6
+Lane:1:Disable
+Lane:1
+Lane:1
+Lane:1
+Lane:1
 Lane:6:Disable
-Lane:6:Disable
-Lane:2
-Lane:2
-Lane:2
-Lane:2
 Lane:6:Disable
 Lane:6:Disable
 UpgradeAtWave:0
@@ -254,5 +255,29 @@ PostDialogue:
         Speaker:Merchant
         LeftImage:11
         RightImage:None
-        Dialogue:These Diabolonians are going too far, I'm being run out of business.
-        Dialogue:But... the story continues...
+        Dialogue:These Diabolonians are going too far, we're being run out of business.
+    Statement:
+        Speaker:Merchant
+        LeftImage:11
+        RightImage:None
+        Dialogue:It would be better for the Diabolonians to learn a tradeskill.
+    Statement:
+        Speaker:Merchant
+        LeftImage:11
+        RightImage:None
+        Dialogue:That way they can contribute to the marketplace.
+    Statement:
+        Speaker:Merchant
+        LeftImage:11
+        RightImage:None
+        Dialogue:But it seems all they know how to do is fight.
+    Statement:
+        Speaker:Lieutenant Captain
+        LeftImage:None
+        RightImage:10
+        Dialogue:We understand. This sounds like something we can bring up to King Diabolus.
+    Statement:
+        Speaker:Merchant
+        LeftImage:11
+        RightImage:None
+        Dialogue:Please! Something needs to change.

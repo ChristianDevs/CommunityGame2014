@@ -23,45 +23,25 @@ Placeable:25:-6:2.5
 Placeable:25:6:2.5
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:Here we are at Nosegate and preparations are ready.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
+        Dialogue:What is this?!
     Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
+        Dialogue:Captain, it looks like the resistance movement is going on the offensive.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Dialogue:Quick! We need to setup a defense and take them down.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -251,72 +231,32 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:No! This cannot happen.
+        Dialogue:Whew, that was a tough battle.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
+        Dialogue:There is something that I just noticed in this battle.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
+        Dialogue:Some of the resistance members we defeated were recognized by our men.
     Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
+        Dialogue:It seems the missing guards went to join the resistance.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
+        Dialogue:Also, I just received a communication from Forgetgood.
     Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
-    Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:Aaaahhh!
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But... the story continues...
+        Dialogue:Eyegate is our next target.

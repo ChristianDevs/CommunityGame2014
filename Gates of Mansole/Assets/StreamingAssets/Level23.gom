@@ -2,6 +2,7 @@ AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:21
+FirstTimeBonus:10
 Lane:2
 Lane:2
 Lane:2
@@ -23,45 +24,35 @@ Placeable:25:-6:2.5
 Placeable:25:6:2.5
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Diabolus
+        LeftImage:2
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:There is one final stronghold I wish to build that will solidify my rule.
     Statement:
         Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        LeftImage:2
         RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
+        Dialogue:The people continue to crave the old ways, so I must provide a substitute.
     Statement:
         Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        LeftImage:2
         RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
+        Dialogue:Loveflesh here will be governor and keep everyone busy.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Speaker:Loveflesh
+        LeftImage:None
+        RightImage:14
+        Dialogue:Whether it be the lust of the eyes or pleasure of the mind...
+    Statement:
+        Speaker:Loveflesh
+        LeftImage:None
+        RightImage:14
+        Dialogue:I will make sure that the people are content with your rule.
+    Statement:
+        Speaker:Loveflesh
+        LeftImage:None
+        RightImage:14
+        Dialogue:Captain, watch the backs of our workers while the stronghold is built.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -251,72 +242,32 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Loveflesh
+        LeftImage:14
         RightImage:None
-        Dialogue:No! This cannot happen.
+        Dialogue:It is completed!
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Loveflesh
+        LeftImage:14
         RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
-    Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
-    Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Aaaahhh!
+        Dialogue:My new stronghold... This "Sweet Sin Hold" will do nicely.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
+        Dialogue:Yes! These should cement my rule. Not even that old king can get in my way now.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
+        Dialogue:Captain, on to the next item of business.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
+        Dialogue:Forgetgood has made a troublesome discovery. There may be some more resistance.
     Statement:
-        Speaker:???
+        Speaker:Diabolus
         LeftImage:None
-        RightImage:None
-        Dialogue:...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But... the story continues...
+        RightImage:2
+        Dialogue:Go and help her resolve the issue.

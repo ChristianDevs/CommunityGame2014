@@ -2,6 +2,7 @@ AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:21
+FirstTimeBonus:10
 Lane:2
 Lane:2
 Lane:2
@@ -23,45 +24,30 @@ Placeable:25:-6:2.5
 Placeable:25:6:2.5
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Diabolus
+        LeftImage:2
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:Now there is another stronghold I wish to build.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
+        Dialogue:I want to ensure that the people forget the old king and the old ways and their history.
     Statement:
         Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        LeftImage:2
         RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
+        Dialogue:The governor here will be Lovenolight.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Speaker:Lovenolight
+        LeftImage:None
+        RightImage:13
+        Dialogue:I will do my best to ensure the people only see what you want them to.
+    Statement:
+        Speaker:Lovenolight
+        LeftImage:None
+        RightImage:13
+        Dialogue:Captain, protect the builders as we erect this stronghold.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -251,72 +237,17 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lovenolight
+        LeftImage:13
         RightImage:None
-        Dialogue:No! This cannot happen.
+        Dialogue:As expected, you're help allowed us to complete our fortress.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lovenolight
+        LeftImage:13
         RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
+        Dialogue:This stronghold shall be called "Midnight Hold".
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lovenolight
+        LeftImage:13
         RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
-    Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
-    Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Aaaahhh!
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But... the story continues...
+        Dialogue:The past is the past. We will only progress forward now!
