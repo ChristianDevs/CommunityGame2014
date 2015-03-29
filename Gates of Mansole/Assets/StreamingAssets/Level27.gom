@@ -13,16 +13,12 @@ Lane:2:Disable
 Lane:7:Disable
 UpgradeAtWave:0
 UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:4
-Placeable:24:-2:2.4
-Placeable:24:2:2.4
+UpgradeAtWave:3
+Placeable:25:-1.5:2.4
+Placeable:25:1.5:2.4
 Placeable:23:0:2.75
-Placeable:21:-4:3
 Placeable:21:4:3
-Placeable:25:-6:2.5
-Placeable:25:6:2.5
-Wall:10:1:5:100:0.10:2
+Wall:10:0:5:100:0.10:2
 PreDialogue:
     Statement:
         Speaker:Lieutenant Captain
