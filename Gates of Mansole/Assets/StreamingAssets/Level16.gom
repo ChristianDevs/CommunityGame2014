@@ -2,66 +2,64 @@ AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:21
-Lane:2
-Lane:2
-Lane:2
-Lane:2
-Lane:2
-Lane:2
-Lane:2:Disable
-Lane:7:Disable
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:4
-Placeable:24:-2:2.4
-Placeable:24:2:2.4
-Placeable:23:0:2.75
-Placeable:21:-4:3
-Placeable:21:4:3
-Placeable:25:-6:2.5
-Placeable:25:6:2.5
+FirstTimeBonus:6
+Lane:1:Disable
+Lane:1
+Lane:1
+Lane:1
+Lane:1
+Lane:6:Disable
+Lane:6:Disable
+Lane:6:Disable
+Placeable:2:-5.5:3.25
+Placeable:2:-3:3.25
+Placeable:3:2.5:3.25
+Placeable:3:5.75:3.25
+Placeable:15:6:-0.65
+Placeable:8:-0.15:2.15
+Placeable:5:0.85:1.4
+Placeable:4:5.45:-3.9
+Placeable:8:-2.25:-3.75
+Placeable:10:6.3:-3.85
+Placeable:10:-0.9:1.1
+Placeable:6:4.15:0.75
+Placeable:26:0.95:1.05
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:Hello sir, since you got promoted to captain I was next in line for Lieutenant.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
+        Dialogue:It is sad to hear of Captain Resistance's fate.
     Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
+        Dialogue:But it seems she has been involved in a discrimination conspiracy.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
+        Dialogue:So maybe it's for the best she isn't around. I will miss her though.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Dialogue:I have reports of Diabolonians starting a fight in the market.
+    Statement:
+        Speaker:Lieutenant Captain
+        LeftImage:10
+        RightImage:None
+        Dialogue:The merchants need help to stay safe so they can sell their goods.
+    Statement:
+        Speaker:Lieutenant Captain
+        LeftImage:10
+        RightImage:None
+        Dialogue:I think we need to keep the Diabolonians away.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -251,72 +249,37 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Merchant
+        LeftImage:11
         RightImage:None
-        Dialogue:No! This cannot happen.
+        Dialogue:Thank you captain, for coming to our aid.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Merchant
+        LeftImage:11
         RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
+        Dialogue:These Diabolonians are going too far, we're being run out of business.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Merchant
+        LeftImage:11
         RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
+        Dialogue:It would be better for the Diabolonians to learn a tradeskill.
     Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
+        Speaker:Merchant
+        LeftImage:11
         RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
+        Dialogue:That way they can contribute to the marketplace.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Merchant
+        LeftImage:11
         RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
+        Dialogue:But it seems all they know how to do is fight.
     Statement:
-        Speaker:Antisiphone
+        Speaker:Lieutenant Captain
         LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
+        RightImage:10
+        Dialogue:We understand. This sounds like something we can bring up to King Diabolus.
     Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Merchant
+        LeftImage:11
         RightImage:None
-        Dialogue:Aaaahhh!
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But... the story continues...
+        Dialogue:Please! Something needs to change.

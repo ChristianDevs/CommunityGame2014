@@ -1,322 +1,165 @@
 AttackersLetThrough:5
-IsPlayerAttacker:False
-AttackerDir:Left
+IsPlayerAttacker:True
+AttackerDir:Right
 StartShards:21
-Lane:2
-Lane:2
-Lane:2
-Lane:2
-Lane:2
-Lane:2
-Lane:2:Disable
-Lane:7:Disable
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:4
-Placeable:24:-2:2.4
-Placeable:24:2:2.4
-Placeable:23:0:2.75
-Placeable:21:-4:3
-Placeable:21:4:3
-Placeable:25:-6:2.5
-Placeable:25:6:2.5
+FirstTimeBonus:11
+Lane:1:Disable
+Lane:1
+Lane:1
+Lane:1
+Lane:1
+Lane:1
+Lane:6:Disable
+Lane:6:Disable
+Placeable:2:-5.5:4.25
+Placeable:2:-3:4.25
+Placeable:3:2.5:4.25
+Placeable:3:5.75:4.25
+Placeable:15:6:1.65
+Placeable:8:-0.15:3.15
+Placeable:5:0.85:2.4
+Placeable:4:5.45:-3.9
+Placeable:8:-2.25:-3.75
+Placeable:10:6.3:-3.85
+Placeable:10:-0.9:2.1
+Placeable:6:4.15:1.75
+Placeable:26:0.95:2.05
 PreDialogue:
     Statement:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:Good you've come. I heard you did excellent ensuring the strongholds were built.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        Speaker:Forgetgood
+        LeftImage:1
         RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
+        Dialogue:To the task at hand, I've received several reports of an underground resistance to Diabolus.
     Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        Speaker:Forgetgood
+        LeftImage:1
         RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
+        Dialogue:The best information right now points to a small tavern in one of the city neighborhoods.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Forgetgood
+        LeftImage:1
         RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Dialogue:Your orders are to raid the tavern and get as much information as possible.
 Wave:
     WaitTime:0
     WaveUnit:
         Time:0
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:2
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:3
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:4
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:11
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:3
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:4
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:6
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:7
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:8
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:24
-    WaveUnit:
-        Time:0
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:4
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:6
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:35
-    WaveUnit:
-        Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:8
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:48
+        SpawnLoc:SpecifiedTile
+        Tile:0:11
     WaveUnit:
         Time:0
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:7
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:60
+        SpawnLoc:SpecifiedTile
+        Tile:1:11
     WaveUnit:
         Time:0
         Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedTile
+        Tile:2:11
     WaveUnit:
         Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:0
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedTile
+        Tile:3:11
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedTile
+        Tile:4:11
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedTile
+        Tile:5:11
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedTile
+        Tile:0:12
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedTile
+        Tile:1:12
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:2:12
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedTile
+        Tile:3:12
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:4:12
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:5:12
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:No! This cannot happen.
+        Dialogue:Captain! We captured a woman we think knows something.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
-    Statement:
-        Speaker:Antisiphone
+        Speaker:Forgetgood
         LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
+        RightImage:1
+        Dialogue:Let me talk to her. I have a way with people that a sword does not.
     Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:Aaaahhh!
+        Dialogue:Captain, while Forgetgood is talking with her I wanted to mention.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:...
+        Dialogue:A number of city guards haven't shown up for duty in the last couple days.
     Statement:
-        Speaker:???
-        LeftImage:None
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:But...
+        Dialogue:At first we didn't report it because we thought it was a coincidence...
     Statement:
-        Speaker:???
-        LeftImage:None
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:But... the story continues...
+        Dialogue:And there were enough spare guards with the new ones Diabolus added to our ranks.
+    Statement:
+        Speaker:Lieutenant Captain
+        LeftImage:10
+        RightImage:None
+        Dialogue:But it seems something else may be going on.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:I have the information we need. This woman is part of a resistance movement.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:There are cells of resistance at each of the five gates into the city.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:We must crush this movement so there is no threat to Diabolus' power.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:Start at Eargate and eliminate anyone who resists the will of King Diabolus.

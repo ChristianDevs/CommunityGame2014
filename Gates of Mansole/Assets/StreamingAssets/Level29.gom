@@ -1,7 +1,8 @@
 AttackersLetThrough:5
-IsPlayerAttacker:False
-AttackerDir:Left
+IsPlayerAttacker:True
+AttackerDir:Right
 StartShards:21
+FirstTimeBonus:12
 Lane:2
 Lane:2
 Lane:2
@@ -12,311 +13,133 @@ Lane:2:Disable
 Lane:7:Disable
 UpgradeAtWave:0
 UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:4
-Placeable:24:-2:2.4
-Placeable:24:2:2.4
+UpgradeAtWave:3
+Placeable:25:-1.5:2.4
+Placeable:25:1.5:2.4
 Placeable:23:0:2.75
-Placeable:21:-4:3
 Placeable:21:4:3
-Placeable:25:-6:2.5
-Placeable:25:6:2.5
+Wall:10:0:5:100:0.10:2
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:Here we are, captain. Mouthgate - The last bastion of resistance.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Dialogue:Once we end the resistance here Diabolus can act uncontested.
 Wave:
     WaitTime:0
     WaveUnit:
         Time:0
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:2
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:3
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:4
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:11
+        SpawnLoc:SpecifiedTile
+        Tile:1:11
     WaveUnit:
         Time:0
         Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:3
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:4
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:6
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:7
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:8
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:24
-    WaveUnit:
-        Time:0
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:4
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:6
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:35
-    WaveUnit:
-        Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:8
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:48
+        SpawnLoc:SpecifiedTile
+        Tile:2:11
     WaveUnit:
         Time:0
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:7
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:60
+        SpawnLoc:SpecifiedTile
+        Tile:3:11
     WaveUnit:
         Time:0
         Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedTile
+        Tile:4:11
     WaveUnit:
         Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:0
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
         Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedTile
+        Tile:1:12
     WaveUnit:
-        Time:3
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
+        Time:0
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedTile
+        Tile:2:12
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedTile
+        Tile:3:12
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:4:12
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Diabolus
+        LeftImage:2
         RightImage:None
-        Dialogue:No! This cannot happen.
+        Dialogue:Very good job, captain. I've heard no more reports of resistance.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
-    Statement:
-        Speaker:Antisiphone
+        Speaker:Forgetgood
         LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
+        RightImage:1
+        Dialogue:Yes yes, good good. Now we can fully enact our agenda.
     Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Diabolus
+        LeftImage:2
         RightImage:None
-        Dialogue:Aaaahhh!
+        Dialogue:You've earned a good rest, captain.
+    Statement:
+        Speaker:Lieutenant Captain
+        LeftImage:None
+        RightImage:10
+        Dialogue:Captain, King Diabolus... I have additional information to report.
+    Statement:
+        Speaker:Lieutenant Captain
+        LeftImage:10
+        RightImage:None
+        Dialogue:After questioning some of the resistance, there are rumors that King Shaddai is ma-
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
+        Dialogue:Hold your tongue! I decreed that name shall not be spoken anymore.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
+        Dialogue:My appologies King Diabolus. It shall not happen again.
+    Statement:
+        Speaker:Lieutenant Captain
+        LeftImage:10
+        RightImage:None
+        Dialogue:But... the rumor is that the old king is mustering an army to retake the city.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:What?!
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
         Dialogue:...
     Statement:
-        Speaker:???
+        Speaker:Diabolus
         LeftImage:None
-        RightImage:None
-        Dialogue:But...
+        RightImage:2
+        Dialogue:... ...
     Statement:
-        Speaker:???
+        Speaker:Diabolus
         LeftImage:None
-        RightImage:None
-        Dialogue:But... the story continues...
+        RightImage:2
+        Dialogue:... ... ...
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:I shall not allow my city to fall back into his hands.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:Let me consult my advisors that I may come a course of action.

@@ -1,322 +1,171 @@
 AttackersLetThrough:5
-IsPlayerAttacker:False
-AttackerDir:Left
+IsPlayerAttacker:True
+AttackerDir:Right
 StartShards:21
-Lane:2
-Lane:2
-Lane:2
-Lane:2
-Lane:2
-Lane:2
-Lane:2:Disable
-Lane:7:Disable
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:4
-Placeable:24:-2:2.4
-Placeable:24:2:2.4
-Placeable:23:0:2.75
-Placeable:21:-4:3
-Placeable:21:4:3
-Placeable:25:-6:2.5
-Placeable:25:6:2.5
+FirstTimeBonus:8
+Lane:1:Disable
+Lane:1
+Lane:1
+Lane:1
+Lane:1
+Lane:6:Disable
+Lane:6:Disable
+Lane:6:Disable
+Placeable:2:-5.5:3.25
+Placeable:2:-3:3.25
+Placeable:3:2.5:3.25
+Placeable:3:5.75:3.25
+Placeable:15:6:-0.65
+Placeable:8:-0.15:2.15
+Placeable:5:0.85:1.4
+Placeable:4:5.45:-3.9
+Placeable:8:-2.25:-3.75
+Placeable:10:6.3:-3.85
+Placeable:10:-0.9:1.1
+Placeable:6:4.15:0.75
+Placeable:26:0.95:1.05
+Wall:10:1:4:100:0.10:2
 PreDialogue:
     Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:Yes? You want to talk to me about something, Captain?
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:Hmm? ... Hmmm...
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:Have I misjudged you? I thought you cared about the plight of the Diabolonians.
+    Statement:
         Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        LeftImage:None
+        RightImage:1
+        Dialogue:Don't you realize how much the Diabolonians have suffered at the hands of Mansoul?
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:This needs to happen to balance out what happened with them.
     Statement:
         Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        LeftImage:2
         RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
+        Dialogue:Do not worry. I understand you may have doubts from time to time. I understand.
     Statement:
         Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
+        LeftImage:2
+        RightImage:None
+        Dialogue:There is another group of merchants refusing to comply with my decree.
     Statement:
         Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:Defeat their hired defenders and enforce my new law.
+    Statement:
+        Speaker:Lieutenant Captain
         LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
+        RightImage:10
+        Dialogue:Captain, looks like the merchants are using a wall to defend against.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
+        Speaker:Lieutenant Captain
+        LeftImage:None
+        RightImage:10
+        Dialogue:Since they will rebuild the wall over time, it will regain health slowly.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Speaker:Lieutenant Captain
+        LeftImage:None
+        RightImage:10
+        Dialogue:And we must make sure we attack all segments of the wall for it to fall.
+    Statement:
+        Speaker:Lieutenant Captain
+        LeftImage:None
+        RightImage:10
+        Dialogue:Otherwise we won't be able to pass it.
 Wave:
     WaitTime:0
     WaveUnit:
         Time:0
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:2
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:3
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:4
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:11
+        SpawnLoc:SpecifiedTile
+        Tile:1:11
     WaveUnit:
         Time:0
         Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:3
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:4
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:6
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:7
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:8
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:24
-    WaveUnit:
-        Time:0
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:4
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:6
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:35
-    WaveUnit:
-        Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:8
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:48
+        SpawnLoc:SpecifiedTile
+        Tile:2:11
     WaveUnit:
         Time:0
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:7
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:60
+        SpawnLoc:SpecifiedTile
+        Tile:3:11
     WaveUnit:
         Time:0
         Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedTile
+        Tile:4:11
     WaveUnit:
         Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:0
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
         Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedTile
+        Tile:1:12
     WaveUnit:
-        Time:3
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
+        Time:0
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedTile
+        Tile:2:12
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedTile
+        Tile:3:12
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:4:12
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Merchant
+        LeftImage:11
         RightImage:None
-        Dialogue:No! This cannot happen.
+        Dialogue:What are you doing to us? We can't afford to give special prices to the Diabolonians.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
-    Statement:
-        Speaker:Antisiphone
+        Speaker:Forgetgood
         LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
+        RightImage:1
+        Dialogue:Do not forget who you are and where you came from.
     Statement:
-        Speaker:Antisiphone
+        Speaker:Forgetgood
         LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
+        RightImage:1
+        Dialogue:You've already gained much from your position of privilege.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:Now it is time for you to sacrifice to make the Diabolonians equal.
+    Statement:
+        Speaker:Merchant
+        LeftImage:11
         RightImage:None
-        Dialogue:Aaaahhh!
+        Dialogue:But this plan won't work. You will only succeed in making everyone miserable.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
+        Speaker:Merchant
+        LeftImage:11
         RightImage:None
-        Dialogue:...
+        Dialogue:Why not train the Diabolonians in productive tradeskills so they can contribute?
     Statement:
-        Speaker:???
+        Speaker:Forgetgood
         LeftImage:None
-        RightImage:None
-        Dialogue:But...
+        RightImage:1
+        Dialogue:Silence! You're being influenced by your previous attitude under the old king.
     Statement:
-        Speaker:???
+        Speaker:Forgetgood
         LeftImage:None
-        RightImage:None
-        Dialogue:But... the story continues...
+        RightImage:1
+        Dialogue:We won't allow our progress to be hindered. We will help you understand... One way or another.

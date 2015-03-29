@@ -2,7 +2,8 @@ AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:21
-Lane:2
+FirstTimeBonus:9
+Lane:7:Disable
 Lane:2
 Lane:2
 Lane:2
@@ -12,56 +13,29 @@ Lane:2:Disable
 Lane:7:Disable
 UpgradeAtWave:0
 UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:4
-Placeable:24:-2:2.4
-Placeable:24:2:2.4
-Placeable:23:0:2.75
-Placeable:21:-4:3
-Placeable:21:4:3
-Placeable:25:-6:2.5
-Placeable:25:6:2.5
+Placeable:20:-6.15:2.4
+Placeable:20:-3.85:2.4
+Placeable:23:-5:2.75
+Placeable:21:0:3
+Placeable:20:6.15:2.4
+Placeable:20:3.85:2.4
+Placeable:23:5:2.75
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
-    Statement:
-        Speaker:Diabolus
+        Speaker:Lieutenant Captain
         LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
+        RightImage:10
+        Dialogue:This is your last chance judge, come with us peaceably.
     Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        Speaker:Judge Conscience
+        LeftImage:5
         RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
+        Dialogue:I will not go with you!
     Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        Speaker:Judge Conscience
+        LeftImage:5
         RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Dialogue:Soldiers who still want to observe the old laws, rally to me!
 Wave:
     WaitTime:0
     WaveUnit:
@@ -251,72 +225,67 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:No! This cannot happen.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
-    Statement:
-        Speaker:Antisiphone
+        Speaker:Lieutenant Captain
         LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
+        RightImage:10
+        Dialogue:Now, you will come with us. We will take you to the new king.
     Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Judge Conscience
+        LeftImage:5
         RightImage:None
-        Dialogue:Aaaahhh!
+        Dialogue:We mustn't forget the old ways. The laws helped the people and kept the peace.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
+        Dialogue:No no no... Those words simply won't do at all. What should we do with you Judge?
+    Statement:
+        Speaker:Carnalsecurity
+        LeftImage:None
+        RightImage:8
+        Dialogue:I know what must be done for the judge's wrongdoing.
+    Statement:
+        Speaker:Carnalsecurity
+        LeftImage:None
+        RightImage:8
+        Dialogue:We give him what he wants.
+    Statement:
+        Speaker:Judge Conscience
+        LeftImage:5
+        RightImage:None
+        Dialogue:What.. I... want...? What do you mean?
+    Statement:
+        Speaker:Carnalsecurity
+        LeftImage:None
+        RightImage:8
+        Dialogue:I know all about what you want. Look what I have here.
+    Statement:
+        Speaker:Judge Conscience
+        LeftImage:5
+        RightImage:None
+        Dialogue:I... well... is that the latest fashion in clothes?
+    Statement:
+        Speaker:Judge Conscience
+        LeftImage:5
+        RightImage:None
+        Dialogue:I had been meaning to buy to it, but haven't had the time yet.
+    Statement:
+        Speaker:Carnalsecurity
+        LeftImage:None
+        RightImage:8
+        Dialogue:I am giving it to you. Take it home and try it on.
+    Statement:
+        Speaker:Judge Conscience
+        LeftImage:5
+        RightImage:None
+        Dialogue:I shall. What a nice color this one has...
+    Statement:
+        Speaker:Carnalsecurity
+        LeftImage:None
+        RightImage:8
+        Dialogue:Heh, we won't be having any more trouble from the good judge.
     Statement:
         Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
+        LeftImage:2
         RightImage:None
-        Dialogue:...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But... the story continues...
+        Dialogue:Well done my servants. Now Captain, there is another matter I will discuss with you later.

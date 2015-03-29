@@ -2,66 +2,54 @@ AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:21
-Lane:2
-Lane:2
-Lane:2
-Lane:2
-Lane:2
-Lane:2
-Lane:2:Disable
-Lane:7:Disable
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:4
-Placeable:24:-2:2.4
-Placeable:24:2:2.4
-Placeable:23:0:2.75
-Placeable:21:-4:3
-Placeable:21:4:3
-Placeable:25:-6:2.5
-Placeable:25:6:2.5
+FirstTimeBonus:13
+Lane:5:Disable
+Lane:0
+Lane:0
+Lane:0
+Lane:0
+Lane:0
+Lane:0
+Lane:5:Disable
+Placeable:0:-5.25:-2.65
+Placeable:0:-3:-3
+Placeable:1:2.5:-2.75
+Placeable:18:5.75:0.15
+Placeable:18:-5:2.15
+Placeable:18:-0.15:1.15
+Placeable:6:0.85:2.15
+Placeable:7:-2.15:2.35
 PreDialogue:
     Statement:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:Captain, while Diabolus and his advisors are talking I've received a disturbing report.
     Statement:
-        Speaker:Diabolus
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:Advance scouts are marching through mountain pass.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:Stop them before they can ascertain any information in the city.
+    Statement:
+        Speaker:Lieutenant Captain
         LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
+        RightImage:10
+        Dialogue:If the old king is mustering an army, can mere city guards stand against them.
     Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        Speaker:Forgetgood
+        LeftImage:1
         RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
+        Dialogue:You must stand against them, that is your mission.
     Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        Speaker:Forgetgood
+        LeftImage:1
         RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Dialogue:Now quit wasting time and go!
 Wave:
     WaitTime:0
     WaveUnit:
@@ -251,72 +239,37 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:No! This cannot happen.
+        Dialogue:Whew, we defeated the advance scouts.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
+        Dialogue:But scouts that I sent out earlier tell me that a large force is coming through the mountain pass.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
+        Dialogue:There isn't time to go back to the city and muster a bigger army.
     Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
+        Dialogue:You agree?
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
+        Dialogue:You want us to march into the mountains and see what we can do?
     Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
-    Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:Aaaahhh!
+        Dialogue:Very well captain, I shall follow your orders.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But... the story continues...
+        Dialogue:I will tell the men to pack up and get ready to march.

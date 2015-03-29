@@ -2,66 +2,64 @@ AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:21
-Lane:2
-Lane:2
-Lane:2
-Lane:2
-Lane:2
-Lane:2
-Lane:2:Disable
-Lane:7:Disable
+FirstTimeBonus:10
+Lane:1
+Lane:1
+Lane:1
+Lane:1
+Lane:1
+Lane:1
+Lane:6:Disable
+Lane:6:Disable
 UpgradeAtWave:0
 UpgradeAtWave:0
 UpgradeAtWave:0
 UpgradeAtWave:4
-Placeable:24:-2:2.4
-Placeable:24:2:2.4
-Placeable:23:0:2.75
-Placeable:21:-4:3
-Placeable:21:4:3
-Placeable:25:-6:2.5
-Placeable:25:6:2.5
+Placeable:27:4:1.75
+Placeable:8:7:2.4
+Placeable:8:2:2.6
+Placeable:5:-.4:3
+Placeable:9:-6:1.8
+Placeable:9:-4.25:1.9
+Placeable:9:-2:2.8
+Placeable:9:-0.6:1.75
+Placeable:10:2.25:2.9
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Diabolus
+        LeftImage:2
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:I have just completed my designs for a stronghold within the city.
     Statement:
         Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        LeftImage:2
         RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
+        Dialogue:It is possible the former king may try to retake the city, so I want to be ready.
     Statement:
         Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
+        LeftImage:2
+        RightImage:None
+        Dialogue:However, with the recent upheaval I worry some in the city may sabotage the effort.
     Statement:
         Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:So I task you with guarding the stronghold until it is finished.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:So I task you with guarding the stronghold until it is finished.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:I am naming Spitegood as governor.
+    Statement:
+        Speaker:Spitegood
         LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        RightImage:12
+        Dialogue:We shall make sure the grasp of the old king doesn't take hold here again.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -251,72 +249,17 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Spitegood
+        LeftImage:12
         RightImage:None
-        Dialogue:No! This cannot happen.
+        Dialogue:Well done, the stronghold is now complete.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Spitegood
+        LeftImage:12
         RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
+        Dialogue:I heareby name this sturdy bastion "Hold of Defiance".
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Spitegood
+        LeftImage:12
         RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
-    Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
-    Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Aaaahhh!
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But... the story continues...
+        Dialogue:For we will surely continue to defy the former king.

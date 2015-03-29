@@ -10,48 +10,48 @@ entry
 entry
 	Music:0
 	Background:1
-	ImageLeft:0
-	ImageRight:0
+	ImageLeft:None
+	ImageRight:None
 	Speaker:None
 	Dialogue:A week passes and Diabolonians fill the city.
 	ShowTime:5
 entry
 	Music:0
 	Background:1
-	ImageLeft:0
-	ImageRight:0
+	ImageLeft:None
+	ImageRight:None
 	Speaker:None
 	Dialogue:Diabolus decreed a new law that requires merchants to sell to Diabolonians at lower prices.
 	ShowTime:5
 entry
 	Music:0
 	Background:1
-	ImageLeft:0
-	ImageRight:0
+	ImageLeft:None
+	ImageRight:None
 	Speaker:None
 	Dialogue:The Diabolonians take advantage of that every chance they get.
 	ShowTime:5
 entry
 	Music:0
 	Background:1
-	ImageLeft:0
-	ImageRight:0
+	ImageLeft:None
+	ImageRight:None
 	Speaker:None
 	Dialogue:The Diabolonians have also brought crime into the city.
 	ShowTime:5
 entry
 	Music:0
 	Background:1
-	ImageLeft:0
-	ImageRight:0
+	ImageLeft:None
+	ImageRight:None
 	Speaker:None
 	Dialogue:Many citizens fear for their safety when they go out at night.
 	ShowTime:5
 entry
 	Music:0
 	Background:1
-	ImageLeft:0
-	ImageRight:0
+	ImageLeft:None
+	ImageRight:None
 	Speaker:None
 	Dialogue:Will the people continue to stand for this?
 	ShowTime:5
