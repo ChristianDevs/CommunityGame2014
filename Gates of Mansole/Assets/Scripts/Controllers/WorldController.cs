@@ -403,9 +403,9 @@ public class WorldController : MonoBehaviour {
 				wall.AddComponent<GomUnit>();
 				wall.GetComponent<GomUnit>().world = gameObject;
 				wall.GetComponent<GomUnit>().unitType = "Wall";
-				wall.GetComponent<GomUnit>().getStats().armor = 10;
+				wall.GetComponent<GomUnit>().getStats().armor = 0;
 				wall.GetComponent<GomUnit>().getStats().attack = 0;
-				wall.GetComponent<GomUnit>().getStats().defense = 10;
+				wall.GetComponent<GomUnit>().getStats().defense = 0;
 				wall.GetComponent<GomUnit>().getStats().maxHealth = currentLevel.GetComponent<WaveList>().wallHealth;
 				wall.GetComponent<GomUnit>().health = wall.GetComponent<GomUnit>().getStats().maxHealth;
 				wall.GetComponent<GomUnit>().BarEmptyLeft = BarEmptyLeft;
@@ -1249,8 +1249,9 @@ public class WorldController : MonoBehaviour {
 					}
 				}
 
-				// Enemies drop shards to pick up
-				if (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy) {
+				// Non-wall Enemies drop shards to pick up
+				if ((tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy) &&
+				    (tileContents[row][col] != wall)) {
 					GameObject rw = Instantiate(rewardShardPrefab, tileContents[row][col].transform.position, Quaternion.identity) as GameObject;
 					rw.transform.name = "reward" + rwCounter;
 					rw.tag = "reward";
