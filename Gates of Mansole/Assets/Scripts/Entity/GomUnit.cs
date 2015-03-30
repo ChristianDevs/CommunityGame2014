@@ -98,7 +98,7 @@ public class GomUnit : GomObject {
 		}
 
 		if (fallPercent > 0) {
-			if (((float)health / (float)getStats().maxHealth) < fallPercent) {
+			if (((float)(health - amt) / (float)getStats().maxHealth) < fallPercent) {
 				if (allLanesAttacking == false) {
 					return;
 				}
