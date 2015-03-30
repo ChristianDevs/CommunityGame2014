@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class GomProjectile : GomObject {
@@ -31,11 +31,12 @@ public class GomProjectile : GomObject {
             newX = -1;
         }
 
-        if (tgt.transform.position.y > transform.position.y) {
-            newY = 1;
-        } else if (tgt.transform.position.y < transform.position.y) {
-            newY = -1;
-        }
+		// No more attacking targets up or down
+        //if (tgt.transform.position.y > transform.position.y) {
+        //    newY = 1;
+        //} else if (tgt.transform.position.y < transform.position.y) {
+        //    newY = -1;
+        //}
 
         dir = new Vector3(newX, newY, 0);
 	}
@@ -69,7 +70,7 @@ public class GomProjectile : GomObject {
 			return;
 		}
 
-		if (Vector3.Distance (transform.position, tgt.transform.position) < 1) {
+		if (Mathf.Abs(transform.position.x - tgt.transform.position.x) < 1) {
 			tgt.SendMessage("DamageMelee", stats, SendMessageOptions.DontRequireReceiver);
 			Destroy(gameObject);
 			return;
