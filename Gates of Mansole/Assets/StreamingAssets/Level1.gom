@@ -87,28 +87,18 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Wait until you see the whites of their eyes, then drag and drop a shepherd to resist them.
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
         Dialogue:Take heart! I know you will succeed. May the grace of King Shaddai go with you.
 Wave:
     WaitTime:0
     WaveUnit:
         Time:0
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedRow
+        Tile:2:2
 Wave:
-    WaitTime:7
+    WaitTime:15
     WaveUnit:
         Time:0
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:2
         Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
@@ -117,8 +107,13 @@ Wave:
         Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
+    WaveUnit:
+        Time:8
+        Unit:Evangelist
+        SpawnLoc:RandRow
+        Tile:0:0
 Wave:
-    WaitTime:22
+    WaitTime:40
     WaveUnit:
         Time:0
         Unit:Evangelist
@@ -130,12 +125,7 @@ Wave:
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:5
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:7
+        Time:6
         Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
@@ -145,12 +135,12 @@ Wave:
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:11
+        Time:10
         Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:13
+        Time:11
         Unit:Evangelist
         SpawnLoc:RandRow
         Tile:0:0

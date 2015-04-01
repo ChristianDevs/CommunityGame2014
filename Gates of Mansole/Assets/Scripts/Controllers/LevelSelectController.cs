@@ -9,14 +9,34 @@ public class LevelSelectController : MonoBehaviour {
 	public GameObject[] Maps;
 	public GameObject ChapterNumUI;
 	public GameObject highlightPS;
+	public GameObject CursorPrefab;
 
     private List<GameObject> levelButtons;
 	private GameObject particleSystem;
+	private GameObject cursorInst;
+	private bool inTutorial;
 
 	// Use this for initialization
 	void Start () {
 		particleSystem = null;
+		inTutorial = false;
 		UpdateMap();
+		
+		// Show player to click the level
+		if ((Player.tutorialState == 0) && (inTutorial == false)) {
+			cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+			cursorInst.transform.position = levelButtons[0].transform.position;
+			cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
+			inTutorial = true;
+		}
+		
+		// Show player to click the market
+		if ((Player.tutorialState == 3) && (inTutorial == false)) {
+			cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+			cursorInst.transform.position = new Vector3(5.2f, 4.6f, 0);
+			cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
+			inTutorial = true;
+		}
 	}
 	
 	// Update is called once per frame
@@ -80,6 +100,18 @@ public class LevelSelectController : MonoBehaviour {
 				Application.LoadLevel("Title");
 				break;
 			case "Upgrade":
+				// End Tutorial when player clicks the market
+				if ((Player.tutorialState == 3) && (inTutorial)) {
+					inTutorial = false;
+					
+					if (cursorInst != null) {
+						Destroy(cursorInst);
+						cursorInst = null;
+					}
+					
+					Player.completeTutorialState();
+				}
+
 				Application.LoadLevel("Upgrade");
 			break;
 			case "Previous":
@@ -98,7 +130,19 @@ public class LevelSelectController : MonoBehaviour {
 					}
 				}
 			break;
-            default:
+		default:
+				// End Tutorial when player clicks the fist level
+				if ((Player.tutorialState == 0) && (inTutorial)) {
+					inTutorial = false;
+					
+					if (cursorInst != null) {
+						Destroy(cursorInst);
+						cursorInst = null;
+					}
+					
+					Player.completeTutorialState();
+				}
+
 	            Player.currentLevel = int.Parse(buttonName) - 1;
 				Player.nextLevelFile = Player.levelFileNames[Player.currentChapter][Player.currentLevel];
 	            Debug.Log(Player.nextLevelFile);

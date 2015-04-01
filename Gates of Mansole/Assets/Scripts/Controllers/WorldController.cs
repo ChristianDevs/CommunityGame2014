@@ -13,6 +13,7 @@ public class WorldController : MonoBehaviour {
 	public GameObject VertWallTop;
 	public GameObject VertWallMid;
 	public GameObject VertWallBot;
+	public GameObject CursorPrefab;
 	
 	public int totalAI;
 	public int totalAttackers;
@@ -80,6 +81,10 @@ public class WorldController : MonoBehaviour {
 	private float freezeEndTime;
 	private float camNextMoveTime;
 	private Vector3 origMapPos;
+
+	private bool inTutorial;
+	private GameObject cursorInst;
+	private float tutorialTime;
 	
 	private enum _ConvertState {
 		PreWait,
@@ -123,6 +128,9 @@ public class WorldController : MonoBehaviour {
 		earlyReleaseShards = 0;
 		rwCounter = 0;
 		isFirstWin = false;
+		inTutorial = false;
+		tutorialTime = 0;
+		cursorInst = null;
 		
 		winMessage.SetActive(false);
 		loseMessage.SetActive(false);
@@ -142,6 +150,20 @@ public class WorldController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		// End Tutorial after a specific time
+		if (inTutorial) {
+			if (tutorialTime < Time.time) {
+				inTutorial = false;
+
+				if (cursorInst != null) {
+					Destroy(cursorInst);
+					cursorInst = null;
+				}
+
+				Player.completeTutorialState();
+			}
+		}
 		
 		switch (state) {
 		case _WorldState.Setup:
@@ -587,7 +609,16 @@ public class WorldController : MonoBehaviour {
 										break;
 									case WaveUnit._spawnLocType.SpecifiedRow:
 										row = (int)ut.Tile.x;
-										col = 0;
+
+										if (isPlayerAttacker == true) {
+											col = 0;
+										} else {
+											if (attackerDir == UnitAnimation._direction.DirRight) {
+												col = 0;
+											} else {
+												col = gridSize.col - 1;
+											}
+										}
 										break;
 									case WaveUnit._spawnLocType.SpecifiedTile:
 										row = (int)ut.Tile.x;
@@ -597,6 +628,13 @@ public class WorldController : MonoBehaviour {
 										row = 0;
 										col = 0;
 										break;
+									}
+									
+									// Show the player how to spawn a unit
+									if ((Player.tutorialState == 1) && (inTutorial == false)) {
+										cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+										tutorialTime = Time.time + 6.2f;
+										inTutorial = true;
 									}
 									
 									ut.created = true;
@@ -1260,6 +1298,15 @@ public class WorldController : MonoBehaviour {
 					rw.GetComponent<RewardSpiritShard>().world = gameObject;
 					rw.GetComponent<RewardSpiritShard>().shardAmount = tileContents[row][col].GetComponent<GomUnit>().value;
 					rw.GetComponent<RewardSpiritShard>().travelPlace = spiritShardUI;
+				}
+				
+				// Show the player to click on the spirit shard
+				if ((Player.tutorialState == 2) && (inTutorial == false) && (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy)) {
+					cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+					cursorInst.transform.position = tileContents[row][col].transform.position;
+					cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
+					tutorialTime = Time.time + 4;
+					inTutorial = true;
 				}
 
 				tileContents[row][col].SendMessage("Die", null, SendMessageOptions.DontRequireReceiver);

@@ -149,6 +149,13 @@ public class CinematicController : MonoBehaviour {
 			return;
 		}
 
+		// Increment non-action Cinematic Entries on button press
+		if (Input.GetMouseButtonDown(0)) {
+			if (Cinematic[entryIndex-1].Action == _action.None) {
+				entryChangeTime = 0;
+			}
+		}
+
 		if (Time.time > entryChangeTime) {
 			if (entryIndex < Cinematic.Count) {
 				entryChangeTime = Time.time + Cinematic[entryIndex].ShowTime;

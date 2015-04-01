@@ -13,6 +13,7 @@ public class UpgradeController : MonoBehaviour {
 	public float incX;
 
 	public GameObject gutterflowPrefab;
+	public GameObject CursorPrefab;
 
 	private List<GameObject> upgrades;
 	private List<GameObject> upgradeWindows;
@@ -23,6 +24,8 @@ public class UpgradeController : MonoBehaviour {
 	private float nextFlow;
 	private List<GameObject> gutterFlows;
 	private int flowCounter;
+	private GameObject cursorInst;
+	private bool inTutorial;
 
 	// Use this for initialization
 	void Start () {
@@ -37,6 +40,14 @@ public class UpgradeController : MonoBehaviour {
 		gutterFlows = new List<GameObject> ();
 		nextFlow = Random.Range (1, 5) + Time.time;
 		flowCounter = 0;
+		
+		// Show the player how to spawn a unit
+		if ((Player.tutorialState == 4) && (inTutorial == false)) {
+			cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+			cursorInst.transform.position = upgradeWindows[1].transform.position;
+			cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
+			inTutorial = true;
+		}
 
 		unitInfoText.text = "Press Unit or Ability\nto Upgrade it.";
 	}
@@ -107,6 +118,11 @@ public class UpgradeController : MonoBehaviour {
 	                            UpdateDisplay();
 	                        }
 						}
+
+						// End Tutorial when player clicks the unit
+						if ((Player.tutorialState == 4) && (inTutorial)) {
+							cursorInst.transform.position = new Vector3(2.37f, 3.66f, 0);
+						}
 					}
 				}
 			}
@@ -151,6 +167,18 @@ public class UpgradeController : MonoBehaviour {
                     Player.AddOrbs(-orbCost);
                     UpdateDisplay();
 					upgrades[selectedType].SendMessage("SetColor", Color.white, SendMessageOptions.DontRequireReceiver);
+					
+					// End Tutorial when player upgrades the unit
+					if ((Player.tutorialState == 4) && (inTutorial)) {
+						inTutorial = false;
+						
+						if (cursorInst != null) {
+							Destroy(cursorInst);
+							cursorInst = null;
+						}
+						
+						Player.completeTutorialState();
+					}
                 }
             } else {
 				int abilityIndex = selectedType - Player.unitTypes.Count;

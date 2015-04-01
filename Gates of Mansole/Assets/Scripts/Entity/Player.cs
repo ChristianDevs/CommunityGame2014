@@ -24,6 +24,7 @@ public class Player : MonoBehaviour {
 	static public List<bool> exitCinematicsWatched;
 	static public bool isWatchingIntro;
 	static public int chapterProgression;
+	static public int tutorialState;
 
     static public void resetPlayer(GameObject[] newUnitTypes, GameObject[] newAbilities) {
         PlayerPrefs.DeleteAll();
@@ -47,6 +48,8 @@ public class Player : MonoBehaviour {
 
         spiritOrbs = 0;
         AddOrbs(0);
+
+		tutorialState = 0;
 
 		unitTypes = new List<GameObject>();
 		foreach (GameObject ut in newUnitTypes) {
@@ -117,6 +120,8 @@ public class Player : MonoBehaviour {
 
 		chapterProgression = PlayerPrefs.GetInt ("chapterProgression");
 		currentChapter = chapterProgression;
+
+		tutorialState = PlayerPrefs.GetInt ("tutorialstate");
     }
 
 	static public void watchedIntroCinematic() {
@@ -212,5 +217,10 @@ public class Player : MonoBehaviour {
 		spiritOrbs += amt;
 		PlayerPrefs.SetInt("spiritOrbs", spiritOrbs);
 		PlayerPrefs.Save ();
+	}
+
+	static public void completeTutorialState() {
+		tutorialState++;
+		PlayerPrefs.SetInt ("tutorialstate", tutorialState);
 	}
 }
