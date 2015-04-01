@@ -30,7 +30,7 @@ Placeable:13:4.4:-2.85
 Placeable:14:5.8:-3.5
 Placeable:26:7.47:-2.6
 Placeable:26:6.7:-3.95
-Wall:10:2:7:100:0.10:2
+Wall:10:2:7:100:0.10:10
 PreDialogue:
     Statement:
         Speaker:Lieutenant Captain
@@ -66,9 +66,9 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Elder
         SpawnLoc:SpecifiedTile
-        Tile:1:11
+        Tile:5:11
     WaveUnit:
         Time:0
         Unit:Teacher
@@ -86,9 +86,9 @@ Wave:
         Tile:4:11
     WaveUnit:
         Time:0
-        Unit:Teacher
+        Unit:Elder
         SpawnLoc:SpecifiedTile
-        Tile:1:12
+        Tile:5:12
     WaveUnit:
         Time:0
         Unit:Evangelist

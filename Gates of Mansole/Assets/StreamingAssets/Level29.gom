@@ -18,7 +18,7 @@ Placeable:25:-1.5:2.4
 Placeable:25:1.5:2.4
 Placeable:23:0:2.75
 Placeable:21:4:3
-Wall:10:0:5:100:0.10:2
+Wall:10:0:5:100:0.10:50
 PreDialogue:
     Statement:
         Speaker:Lieutenant Captain
@@ -32,6 +32,11 @@ PreDialogue:
         Dialogue:Once we end the resistance here Diabolus can act uncontested.
 Wave:
     WaitTime:0
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedTile
+        Tile:0:11
     WaveUnit:
         Time:0
         Unit:Evangelist
@@ -54,7 +59,17 @@ Wave:
         Tile:4:11
     WaveUnit:
         Time:0
-        Unit:Teacher
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:5:11
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:SpecifiedTile
+        Tile:0:12
+    WaveUnit:
+        Time:0
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:1:12
     WaveUnit:
@@ -72,6 +87,11 @@ Wave:
         Unit:Evangelist
         SpawnLoc:SpecifiedTile
         Tile:4:12
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedTile
+        Tile:5:12
 PostDialogue:
     Statement:
         Speaker:Diabolus
