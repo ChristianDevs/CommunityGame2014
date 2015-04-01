@@ -56,6 +56,10 @@ public class CinematicController : MonoBehaviour {
 		}
 		Debug.Log ("Chapter : " + Player.currentChapter.ToString() + " " + type +  " : " + Player.chapterIntroCinematicFiles [Player.currentChapter]);
 
+		foreach (GameObject bg in BackgroundImages) {
+			bg.SetActive(false);
+		}
+
 		blackScreen.SetActive(false);
 		isDone = false;
 		entryIndex = 0;
@@ -159,6 +163,14 @@ public class CinematicController : MonoBehaviour {
 		if (Time.time > entryChangeTime) {
 			if (entryIndex < Cinematic.Count) {
 				entryChangeTime = Time.time + Cinematic[entryIndex].ShowTime;
+
+				foreach (GameObject bg in BackgroundImages) {
+					bg.SetActive(false);
+				}
+
+				if ((Cinematic[entryIndex].Background >= 0) && (Cinematic[entryIndex].Background < BackgroundImages.Length)) {
+					BackgroundImages[Cinematic[entryIndex].Background].SetActive(true);
+				}
 
 				if (Cinematic[entryIndex].Dialogue != "None") {
 					dialogueWindow.SetActive(true);
