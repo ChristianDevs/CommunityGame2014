@@ -44,12 +44,12 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:1:11
     WaveUnit:
         Time:0
-        Unit:Teacher
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:2:11
     WaveUnit:

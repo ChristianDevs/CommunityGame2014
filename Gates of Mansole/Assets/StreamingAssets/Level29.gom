@@ -64,12 +64,12 @@ Wave:
         Tile:5:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:0:12
     WaveUnit:
         Time:0
-        Unit:Teacher
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:1:12
     WaveUnit:

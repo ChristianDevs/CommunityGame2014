@@ -50,22 +50,17 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedTile
-        Tile:0:11
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:1:11
     WaveUnit:
         Time:0
-        Unit:Teacher
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:2:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:3:11
     WaveUnit:
@@ -78,11 +73,6 @@ Wave:
         Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:5:11
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedTile
-        Tile:0:12
     WaveUnit:
         Time:0
         Unit:Teacher

@@ -59,7 +59,7 @@ Wave:
         Tile:2:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:3:11
     WaveUnit:
