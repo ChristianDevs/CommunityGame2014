@@ -11,6 +11,13 @@ Lane:0
 Lane:0
 Lane:0
 Lane:5:Disable
+UpgradeAtWave:0
+UpgradeAtWave:1
+UpgradeAtWave:2
+UpgradeAtWave:3
+UpgradeAtWave:4
+UpgradeAtWave:5
+UpgradeAtWave:6
 Placeable:0:-5.25:-2.65
 Placeable:0:-3:-3
 Placeable:1:2.5:-2.75
