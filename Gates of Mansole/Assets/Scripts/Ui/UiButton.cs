@@ -10,6 +10,7 @@ public class UiButton : MonoBehaviour {
 	public GameObject controller;
 	public bool isPressed;
     public GameObject textMeshObj;
+	public AudioClip ButtonPush;
 
 	void Start () {
 		isPressed = false;
@@ -59,6 +60,10 @@ public class UiButton : MonoBehaviour {
 					if ((hitButton.transform.name == buttonName) &&
 					    (controller != null)) {
 						controller.SendMessage("buttonPush", name, SendMessageOptions.DontRequireReceiver);
+					}
+
+					if (ButtonPush != null) {
+						AudioSource.PlayClipAtPoint(ButtonPush, transform.position);
 					}
 				}
 			}

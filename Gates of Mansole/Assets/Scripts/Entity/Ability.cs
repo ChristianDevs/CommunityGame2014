@@ -25,6 +25,8 @@ public class Ability : MonoBehaviour {
 	public int incUpgradeCost;
 	public int incUseCost;
 
+	public AudioClip sound;
+
 	public int getDamage() {
 		return damage + (incDamage * level);
 	}

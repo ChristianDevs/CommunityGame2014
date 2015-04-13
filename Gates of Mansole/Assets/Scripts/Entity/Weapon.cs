@@ -3,7 +3,7 @@ using System.Collections;
 
 [RequireComponent(typeof(AudioSource))]
 public class Weapon : MonoBehaviour {
-    public AudioClip[] sounds;
+    public AudioClip sound;
     public float rechargeTime = 1.0f;
 	public float recharge { get; set; }
 	public int range;
