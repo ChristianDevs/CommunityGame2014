@@ -66,6 +66,12 @@ public class WorldController : MonoBehaviour {
 	public GameObject spiritShardUI;
 	private int rwCounter;
 
+	public GameObject UnitCounterPrefab;
+	private GameObject UnitCounterInst;
+
+	public AudioClip AttCrossClip;
+	public AudioClip UnitDieClip;
+
 	private bool isFirstWin;
 	
 	private int OrbCurAmount;
@@ -131,6 +137,7 @@ public class WorldController : MonoBehaviour {
 		inTutorial = false;
 		tutorialTime = 0;
 		cursorInst = null;
+		UnitCounterInst = null;
 		
 		winMessage.SetActive(false);
 		loseMessage.SetActive(false);
@@ -731,6 +738,13 @@ public class WorldController : MonoBehaviour {
 								if (hitSquare.transform.name == unitTypes[i].GetComponent<UiUnitType>().UnitName) {
 									selectedUiUnit = unitsUIinst[i];
 									unitInfoUi.SendMessage("MakeSelection", unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(), SendMessageOptions.DontRequireReceiver);
+
+									if (UnitCounterInst != null) {
+										Destroy(UnitCounterInst);
+									}
+
+									UnitCounterInst = Instantiate (UnitCounterPrefab, selectedUiUnit.transform.position, Quaternion.identity) as GameObject;
+									UnitCounterInst.GetComponent<UiUnitCounter> ().SetCounterDisplay (unitTypes[i], Player.unitTypes, false);
 									break;
 								}
 							}
@@ -808,19 +822,37 @@ public class WorldController : MonoBehaviour {
 				if ((tile.col < gridSize.col) && (tile.row < gridSize.row) && (tile.col >= 0) && (tile.row >= 0)) {
 					if (tileContents[(int)tile.row][(int)tile.col] != null) {
 						GameObject ut = null;
+						GameObject ui_ut = null;
 						
 						foreach (GameObject unit in unitTypes) {
-							Debug.Log(tileContents[(int)tile.row][(int)tile.col].GetComponent<GomUnit>().unitType + "::" + unit.GetComponent<UiUnitType>().UnitName);
 							if (tileContents[(int)tile.row][(int)tile.col].GetComponent<GomUnit>().unitType == unit.GetComponent<UiUnitType>().UnitName) {
 								ut = unit.GetComponent<UiUnitType>().getRandomUnit();
+								ui_ut = unit;
 								break;
 							}
 						}
 						
 						if (ut != null) {
 							unitInfoUi.SendMessage("MakeSelection", ut, SendMessageOptions.DontRequireReceiver);
+
+							if (UnitCounterInst != null) {
+								Destroy(UnitCounterInst);
+							}
+
+							Vector3 counterPos;
+
+							counterPos = tileContents[(int)tile.row][(int)tile.col].transform.position;
+							UnitCounterInst = Instantiate (UnitCounterPrefab, counterPos, Quaternion.identity) as GameObject;
+							UnitCounterInst.GetComponent<UiUnitCounter>().SetCounterDisplay (ui_ut, Player.unitTypes, false);
+							UnitCounterInst.transform.parent = tileContents[(int)tile.row][(int)tile.col].transform;
 						}
 					}
+				}
+			}
+			
+			if (Input.GetMouseButtonUp(0)) {
+				if (UnitCounterInst != null) {
+					Destroy(UnitCounterInst);
 				}
 			}
 		}
@@ -1040,6 +1072,10 @@ public class WorldController : MonoBehaviour {
 						}
 					}
 				}
+
+				if (selectedAbility.GetComponent<Ability>().sound != null) {
+					AudioSource.PlayClipAtPoint(selectedAbility.GetComponent<Ability>().sound, transform.position);
+				}
 			}
 			
 			for (int i = 0; i < abilityUIinst.Count; ++i) {
@@ -1149,6 +1185,10 @@ public class WorldController : MonoBehaviour {
 						}
 					}
 				}
+				
+				if (selectedAbility.GetComponent<Ability>().sound != null) {
+					AudioSource.PlayClipAtPoint(selectedAbility.GetComponent<Ability>().sound, transform.position);
+				}
 			}
 			
 			for (int i = 0; i < abilityUIinst.Count; ++i) {
@@ -1200,6 +1240,10 @@ public class WorldController : MonoBehaviour {
 				if (selectedAbility.GetComponent<Ability>().getUseCost() <= Player.spiritShards) {
 					freezeEndTime = Time.time + selectedAbility.GetComponent<Ability>().duration;
 					Player.spiritShards -= selectedAbility.GetComponent<Ability>().getUseCost();
+					
+					if (selectedAbility.GetComponent<Ability>().sound != null) {
+						AudioSource.PlayClipAtPoint(selectedAbility.GetComponent<Ability>().sound, transform.position);
+					}
 				}
 			}
 			
@@ -1242,6 +1286,10 @@ public class WorldController : MonoBehaviour {
 						if (selectedAbility.GetComponent<Ability>().getUseCost() <= Player.spiritShards) {
 							tileContents[tile.row][tile.col].SendMessage("SetInvincible", selectedAbility.GetComponent<Ability>().duration, SendMessageOptions.DontRequireReceiver);
 							Player.spiritShards -= selectedAbility.GetComponent<Ability>().getUseCost();
+							
+							if (selectedAbility.GetComponent<Ability>().sound != null) {
+								AudioSource.PlayClipAtPoint(selectedAbility.GetComponent<Ability>().sound, transform.position);
+							}
 						}
 					}
 				}
@@ -1309,6 +1357,10 @@ public class WorldController : MonoBehaviour {
 					inTutorial = true;
 				}
 
+				if (UnitDieClip != null) {
+					AudioSource.PlayClipAtPoint(UnitDieClip, transform.position);
+				}
+
 				tileContents[row][col].SendMessage("Die", null, SendMessageOptions.DontRequireReceiver);
 				tileContents[row][col] = null;
 			}
@@ -1329,6 +1381,10 @@ public class WorldController : MonoBehaviour {
 								Destroy(tileContents[row][col]);
 								tileContents[row][col] = null;
 								letThroughAttackers++;
+
+								if (AttCrossClip != null) {
+									AudioSource.PlayClipAtPoint(AttCrossClip, transform.position);
+								}
 							}
 							else {
 								if (tileContents[row][col + 1] == null) {
@@ -1348,6 +1404,10 @@ public class WorldController : MonoBehaviour {
 								Destroy(tileContents[row][col]);
 								tileContents[row][col] = null;
 								letThroughAttackers++;
+								
+								if (AttCrossClip != null) {
+									AudioSource.PlayClipAtPoint(AttCrossClip, transform.position);
+								}
 							}
 							else {
 								if (tileContents[row][col - 1] == null) {
@@ -1461,6 +1521,10 @@ public class WorldController : MonoBehaviour {
 					} else {
 						tileContents[row][i].SendMessage("DamageMelee", attacker.getStats(), SendMessageOptions.DontRequireReceiver);
 					}
+
+					if (attacker.weapon.sound != null) {
+						AudioSource.PlayClipAtPoint(attacker.weapon.sound, transform.position);
+					}
 					
 					return;
 				}
@@ -1486,6 +1550,10 @@ public class WorldController : MonoBehaviour {
 						projectile.transform.Rotate(new Vector3(0, 0, 180));
 					} else {
 						tileContents[row][i].SendMessage("DamageMelee", attacker.getStats(), SendMessageOptions.DontRequireReceiver);
+					}
+					
+					if (attacker.weapon.sound != null) {
+						AudioSource.PlayClipAtPoint(attacker.weapon.sound, transform.position);
 					}
 					
 					return;

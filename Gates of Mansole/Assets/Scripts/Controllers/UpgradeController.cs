@@ -14,6 +14,7 @@ public class UpgradeController : MonoBehaviour {
 
 	public GameObject gutterflowPrefab;
 	public GameObject CursorPrefab;
+	public GameObject unitCounterPrefab;
 
 	private List<GameObject> upgrades;
 	private List<GameObject> upgradeWindows;
@@ -26,6 +27,7 @@ public class UpgradeController : MonoBehaviour {
 	private int flowCounter;
 	private GameObject cursorInst;
 	private bool inTutorial;
+	private GameObject unitCounterInst;
 
 	// Use this for initialization
 	void Start () {
@@ -109,6 +111,7 @@ public class UpgradeController : MonoBehaviour {
 	                        if (typeName == Player.unitTypes[j].GetComponent<UiUnitType>().UnitName) {
 	                            selectedType = j;
 	                            UpdateDisplay();
+								UpdateCounter();
 	                        }
 	                    }
 
@@ -270,5 +273,13 @@ public class UpgradeController : MonoBehaviour {
         }
 
 		unitInfoText.text = textToDisplay;
+	}
+
+	void UpdateCounter() {
+		if (unitCounterInst == null) {
+			unitCounterInst = Instantiate (unitCounterPrefab, new Vector3(-0.5f,-0.25f,0), Quaternion.identity) as GameObject;
+		}
+
+		unitCounterInst.GetComponent<UiUnitCounter> ().SetCounterDisplay (Player.unitTypes[selectedType], Player.unitTypes, true);
 	}
 }
