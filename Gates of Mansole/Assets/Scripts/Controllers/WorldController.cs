@@ -69,6 +69,9 @@ public class WorldController : MonoBehaviour {
 	public GameObject UnitCounterPrefab;
 	private GameObject UnitCounterInst;
 
+	public GameObject ReleaseButton;
+	private int numUnitsSpawnedLeftInWave;
+
 	public AudioClip AttCrossClip;
 	public AudioClip UnitDieClip;
 
@@ -138,6 +141,9 @@ public class WorldController : MonoBehaviour {
 		tutorialTime = 0;
 		cursorInst = null;
 		UnitCounterInst = null;
+
+		ReleaseButton.SetActive(false);
+		numUnitsSpawnedLeftInWave = 0;
 		
 		winMessage.SetActive(false);
 		loseMessage.SetActive(false);
@@ -563,6 +569,13 @@ public class WorldController : MonoBehaviour {
 			WaveList wl;
 			
 			wl = currentLevel.GetComponent<WaveList>();
+
+			// Check if Release Button should be enabled
+			if ((numUnitsSpawnedLeftInWave == 0) &&
+			    (ReleaseButton.activeSelf == false) &&
+			    (CurWave < wl.waves.Count)) {
+				ReleaseButton.SetActive(true);
+			}
 			
 			// Go through each wave and see if it is time to start that wave
 			for (int wvInd = 0; wvInd < wl.waves.Count; wvInd++) {
@@ -572,6 +585,7 @@ public class WorldController : MonoBehaviour {
 					
 					if (wl.waveStarted[wvInd] == false) {
 						CurWave++;
+						numUnitsSpawnedLeftInWave = wv.units.Length;
 						foreach(int upWave in wl.upgradeAtWave) {
 							if (upWave == wvInd) {
 								Debug.Log("Enemy units get stronger");
@@ -650,12 +664,14 @@ public class WorldController : MonoBehaviour {
 											if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
 												tileContents[row][col].SendMessage("SetIdleDirection", defenderDir, SendMessageOptions.DontRequireReceiver);
 												totalDefenders++;
+												numUnitsSpawnedLeftInWave--;
 											}
 										}
 										else {
 											if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
 												tileContents[row][col].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
 												totalAttackers++;
+												numUnitsSpawnedLeftInWave--;
 											} else {
 												// Retry placing the attacking enemy
 												if (ut.SpawnLocType == WaveUnit._spawnLocType.RandRow) {
@@ -1651,6 +1667,7 @@ public class WorldController : MonoBehaviour {
 				
 				levelStartTime -= nextWaveTime - (Time.time - levelStartTime);
 				Player.spiritShards += earlyReleaseShards;
+				ReleaseButton.SetActive(false);
 			}
 			break;
 		}
