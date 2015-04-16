@@ -25,6 +25,7 @@ Placeable:10:-0.9:1.1
 Placeable:6:4.15:0.75
 Placeable:26:0.95:1.05
 Wall:10:1:4:100:0.10:2
+Music:4
 PreDialogue:
     Statement:
         Speaker:Diabolus

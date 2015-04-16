@@ -25,6 +25,7 @@ Placeable:10:-0.9:2.1
 Placeable:6:4.15:1.75
 Placeable:26:0.95:2.05
 Wall:10:1:5:100:0.10:2
+Music:4
 PreDialogue:
     Statement:
         Speaker:Forgetgood
@@ -144,6 +145,11 @@ PostDialogue:
         LeftImage:None
         RightImage:1
         Dialogue:There are cells of resistance at each of the five gates into the city.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:As you know the five landmark gates - eye, ear, nose, mouth, and feel - are key points of the city.
     Statement:
         Speaker:Forgetgood
         LeftImage:None

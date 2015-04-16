@@ -22,7 +22,7 @@ Placeable:21:-4:3
 Placeable:21:4:3
 Placeable:25:-6:2.5
 Placeable:25:6:2.5
-Music:0
+Music:4
 PreDialogue:
     Statement:
         Speaker:Forgetgood
@@ -58,12 +58,12 @@ PreDialogue:
         Speaker:Lord Innocence
         LeftImage:9
         RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
+        Dialogue:The great King Shaddai built the city for his own delight and the we were charged with it's keeping.
     Statement:
         Speaker:Lord Innocence
         LeftImage:9
         RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul while I still have breath.
 Wave:
     WaitTime:0
     WaveUnit:

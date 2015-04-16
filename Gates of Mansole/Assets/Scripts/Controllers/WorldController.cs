@@ -74,6 +74,8 @@ public class WorldController : MonoBehaviour {
 
 	public AudioClip AttCrossClip;
 	public AudioClip UnitDieClip;
+	public AudioClip VictoryClip;
+	public AudioClip DefeatClip;
 
 	private bool isFirstWin;
 	

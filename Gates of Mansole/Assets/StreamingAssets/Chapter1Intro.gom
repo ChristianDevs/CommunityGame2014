@@ -22,7 +22,7 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:The people living there vary much in their complexion and culture.
+	Dialogue:The people living there vary much in their complexion and culture. Dwelling betwixt flowing rivers lies a city known as Mansoul.
 	ShowTime:5
 	Action:0
 entry
@@ -31,43 +31,7 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:Dwelling betwixt flowing rivers lies a city known as Mansoul.
-	ShowTime:5
-	Action:0
-entry
-	Music:0
-	Background:0
-	ImageLeft:None
-	ImageRight:None
-	Speaker:None
-	Dialogue:This city, with buildings so curious... With situations so commodius...
-	ShowTime:5
-	Action:0
-entry
-	Music:0
-	Background:0
-	ImageLeft:None
-	ImageRight:None
-	Speaker:None
-	Dialogue:And privileges so advantageous, was without equal in the land.
-	ShowTime:5
-	Action:0
-entry
-	Music:0
-	Background:0
-	ImageLeft:None
-	ImageRight:None
-	Speaker:None
-	Dialogue:The great King Shaddai built the city for his own delight and the citizens of the city were charged with it's keeping.
-	ShowTime:5
-	Action:0
-entry
-	Music:0
-	Background:0
-	ImageLeft:None
-	ImageRight:None
-	Speaker:None
-	Dialogue:Five landmark gates contributed to the fame of the city - eye, ear, nose, mouth, and feel.
+	Dialogue:This city, with buildings so curious, situations so commodius, and privileges so advantageous, was without equal in the land.
 	ShowTime:5
 	Action:0
 entry
@@ -85,15 +49,33 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:However, the threat of evil darkness lies on it's borders.
+	Dialogue:However, the threat of evil darkness lies on it's borders. Can the people of Mansoul remain good and true?
 	ShowTime:5
 entry
 	Music:0
 	Background:0
-	ImageLeft:None
+	ImageLeft:0
 	ImageRight:None
-	Speaker:None
-	Dialogue:Can the people of Mansoul remain good and true?
+	Speaker:Captain Resistance
+	Dialogue:Congratulations on your promotion to lieutenant captain! Of course with a new title comes new responsibility.
+	ShowTime:5
+	Action:0
+entry
+	Music:0
+	Background:0
+	ImageLeft:0
+	ImageRight:None
+	Speaker:Captain Resistance
+	Dialogue:Defending the City of Mansoul from dangers both within and without is our duty. And we must carry it out to the best of our abilities.
+	ShowTime:5
+	Action:0
+entry
+	Music:0
+	Background:0
+	ImageLeft:0
+	ImageRight:None
+	Speaker:Captain Resistance
+	Dialogue:Long have the Diabolonians threatened our city. Now, come with me that we may resist their efforts.
 	ShowTime:5
 	Action:0
 entry
