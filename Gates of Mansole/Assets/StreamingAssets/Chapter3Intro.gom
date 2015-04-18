@@ -1,24 +1,24 @@
 entry
 	Music:0
-	Background:0
-	ImageLeft:0
-	ImageRight:0
+	Background:None
+	ImageLeft:None
+	ImageRight:None
 	Speaker:None
 	Dialogue:When you come to, no light is there to greet you.
 	ShowTime:5
 entry
 	Music:0
-	Background:0
-	ImageLeft:0
-	ImageRight:0
+	Background:None
+	ImageLeft:None
+	ImageRight:None
 	Speaker:None
 	Dialogue:A moist and musty smell permeates the air.
 	ShowTime:5
 entry
 	Music:0
-	Background:0
-	ImageLeft:0
-	ImageRight:0
+	Background:None
+	ImageLeft:None
+	ImageRight:None
 	Speaker:None
 	Dialogue:Finally, someone lights a torch.
 	ShowTime:5

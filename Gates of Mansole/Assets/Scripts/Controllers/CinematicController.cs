@@ -28,7 +28,7 @@ public class CinematicController : MonoBehaviour {
 
 	public class _cinematic_entry {
 		public int Music;
-		public int Background;
+		public string Background;
 		public string ImageLeft;
 		public string ImageRight;
 		public string Speaker;
@@ -108,7 +108,7 @@ public class CinematicController : MonoBehaviour {
 				break;
 			case "background":
 				if (ln.Split (sepsLine, System.StringSplitOptions.RemoveEmptyEntries).Length > 1) {
-					Cinematic[Cinematic.Count - 1].Background = int.Parse(ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].ToLower().TrimStart().TrimEnd ());
+					Cinematic[Cinematic.Count - 1].Background = ln.Split(sepsLine, System.StringSplitOptions.RemoveEmptyEntries)[1].ToLower().TrimStart().TrimEnd ();
 				}
 				break;
 			case "imageleft":
@@ -168,8 +168,10 @@ public class CinematicController : MonoBehaviour {
 					bg.SetActive(false);
 				}
 
-				if ((Cinematic[entryIndex].Background >= 0) && (Cinematic[entryIndex].Background < BackgroundImages.Length)) {
-					BackgroundImages[Cinematic[entryIndex].Background].SetActive(true);
+				if ((Cinematic[entryIndex].Background.ToLower().TrimEnd() != "none") &&
+					(int.Parse(Cinematic[entryIndex].Background) >= 0) &&
+				    (int.Parse(Cinematic[entryIndex].Background) < BackgroundImages.Length)) {
+					BackgroundImages[int.Parse(Cinematic[entryIndex].Background)].SetActive(true);
 				}
 
 				if (Cinematic[entryIndex].Dialogue != "None") {
