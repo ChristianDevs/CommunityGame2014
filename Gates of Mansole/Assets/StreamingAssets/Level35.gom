@@ -21,48 +21,28 @@ Placeable:21:-4:3
 Placeable:21:4:3
 Placeable:25:-6:2.5
 Placeable:25:6:2.5
-Music:4
+Music:3
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:Prince, about Kign Diabolus, but perhaps he was so overcome by his conviction.
     Statement:
-        Speaker:Diabolus
+        Speaker:Lieutenant Captain
+        LeftImage:10
+        RightImage:None
+        Dialogue:His concern for everyone is evident. Perhaps he tried to make changes and had no alternative.
+    Statement:
+        Speaker:Prince Emmanuel
         LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
+        RightImage:17
+        Dialogue:That idea is preposterous. We questioned him fully and concluded that his conviction was only self-interest.
     Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        Speaker:Captain Boanurges
+        LeftImage:12
         RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Dialogue:Another patrol approaches ready our forces to defend!
 Wave:
     WaitTime:0
     WaveUnit:
@@ -252,72 +232,32 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:Captain, I am interested in you're thoughts on the current happennings in the city of Mansoul.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:Hmm? You like Diabolus' goal of helping people but don't like his methods?
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:You think they are doing more harm to the city of Mansoul than good? I see...
+    Statement:
+        Speaker:Lieutenant Captain
         LeftImage:9
         RightImage:None
-        Dialogue:No! This cannot happen.
+        Dialogue:Sometimes you have to break a few eggs to make an omellete.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
+        Dialogue:I can tell by the look on the Captain's face that he doesn't share that sentiment.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
-    Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
-    Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Aaaahhh!
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But... the story continues...
+        Dialogue:But we need to keep moving forward to get out of here.

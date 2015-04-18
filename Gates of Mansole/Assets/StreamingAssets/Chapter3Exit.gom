@@ -84,6 +84,14 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
+	Dialogue:To be continued...
+	ShowTime:5
+entry
+	Music:0
+	Background:0
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
 	Dialogue:None
 	ShowTime:2
 	Action:2

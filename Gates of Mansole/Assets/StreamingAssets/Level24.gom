@@ -25,7 +25,7 @@ Placeable:10:-0.9:2.1
 Placeable:6:4.15:1.75
 Placeable:26:0.95:2.05
 Wall:10:1:5:100:0.10:2
-Music:4
+Music:3
 PreDialogue:
     Statement:
         Speaker:Forgetgood

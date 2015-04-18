@@ -19,7 +19,7 @@ Placeable:25:1.5:2.4
 Placeable:23:0:2.75
 Placeable:21:4:3
 Wall:10:0:5:100:0.10:10
-Music:4
+Music:3
 PreDialogue:
     Statement:
         Speaker:Lieutenant Captain

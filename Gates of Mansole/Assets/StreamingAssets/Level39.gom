@@ -21,48 +21,43 @@ Placeable:21:-4:3
 Placeable:21:4:3
 Placeable:25:-6:2.5
 Placeable:25:6:2.5
-Music:4
+Music:3
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:Prince Emmanuel, may I ask you another question?
     Statement:
-        Speaker:Diabolus
+        Speaker:Prince Emmanuel
         LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
+        RightImage:17
+        Dialogue:Of course, what is it you want to know?
     Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        Speaker:Lieutenant Captain
+        LeftImage:10
         RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
+        Dialogue:Isn't it true that King Shaddai made a law preventing Diabolonians in the city?
     Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
-    Statement:
-        Speaker:Diabolus
+        Speaker:Prince Emmanuel
         LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
+        RightImage:17
+        Dialogue:Yes it is true, we can't have them influencing the citizens of the city.
     Statement:
-        Speaker:Diabolus
+        Speaker:Lieutenant Captain
+        LeftImage:10
+        RightImage:None
+        Dialogue:So then you admit you're being close-minded about the Diabolonians!
+    Statement:
+        Speaker:Prince Emmanuel
         LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
+        RightImage:17
+        Dialogue:No, if you really know what the...
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Captain Boanurges
+        LeftImage:12
         RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Dialogue:Orc Ambush! Prepare our defenses.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -252,72 +247,32 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:No! This cannot happen.
+        Dialogue:As I was saying, it might seem close-minded, but it is really for the citizens' protection.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
+        Dialogue:The ways of the Diabolonians cause strife and suffering. Even among their own!
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
+        Dialogue:The laws were written so the people of our city may live in peace and prosperity.
     Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
+        Dialogue:What captain? You've seen more unrest since Diabolus has taken power?
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
-    Statement:
-        Speaker:Antisiphone
+        Speaker:Lieutenant Captain
         LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
+        RightImage:10
+        Dialogue:Perhaps his new laws just need more time for the people to get used to them.
     Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:Aaaahhh!
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But... the story continues...
+        Dialogue:... Perhaps...
