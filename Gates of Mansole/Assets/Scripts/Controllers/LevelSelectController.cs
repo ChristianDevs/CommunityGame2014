@@ -10,14 +10,23 @@ public class LevelSelectController : MonoBehaviour {
 	public GameObject ChapterNumUI;
 	public GameObject highlightPS;
 	public GameObject CursorPrefab;
+	public GameObject BlackScreen;
 
     private List<GameObject> levelButtons;
 	private GameObject particleSystem;
 	private GameObject cursorInst;
 	private bool inTutorial;
+	private float alpha;
 
 	// Use this for initialization
 	void Start () {
+		Color color = Color.black;
+		
+		alpha = 1;
+		color.a = alpha;
+		BlackScreen.SetActive (true);
+		BlackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = color;
+
 		particleSystem = null;
 		inTutorial = false;
 		UpdateMap();
@@ -41,7 +50,15 @@ public class LevelSelectController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		Color color = Color.black;
+
 		ChapterNumUI.GetComponent<TextMesh> ().text = (Player.currentChapter + 1).ToString ();
+		
+		if (alpha > 0) {
+			alpha -= Time.deltaTime;
+			color.a = alpha;
+			BlackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = color;
+		}
 	}
 
 	void UpdateMap() {

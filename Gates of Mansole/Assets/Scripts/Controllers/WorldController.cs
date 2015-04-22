@@ -77,6 +77,9 @@ public class WorldController : MonoBehaviour {
 	public AudioClip VictoryClip;
 	public AudioClip DefeatClip;
 
+	public GameObject enemyUpgradeMsg;
+	public float enemyUpgradeMsgTimeout;
+
 	private bool isFirstWin;
 	
 	private int OrbCurAmount;
@@ -96,6 +99,16 @@ public class WorldController : MonoBehaviour {
 	private bool inTutorial;
 	private GameObject cursorInst;
 	private float tutorialTime;
+
+	struct _projectileEntry {
+		public GameObject projectile;
+		public float relTime;
+		public Vector3 startLoc;
+		public GameObject target;
+		public bool rotate180;
+		public AudioClip sound;
+	}
+	private List<_projectileEntry> projList;
 	
 	private enum _ConvertState {
 		PreWait,
@@ -144,11 +157,16 @@ public class WorldController : MonoBehaviour {
 		cursorInst = null;
 		UnitCounterInst = null;
 
+		projList = new List<_projectileEntry> ();
+
 		ReleaseButton.SetActive(false);
 		numUnitsSpawnedLeftInWave = 0;
 		
 		winMessage.SetActive(false);
 		loseMessage.SetActive(false);
+
+		enemyUpgradeMsg.SetActive(false);
+		enemyUpgradeMsgTimeout = 0;
 		
 		levelStartTime = 0;
 		state = _WorldState.Setup;
@@ -566,6 +584,16 @@ public class WorldController : MonoBehaviour {
 	}
 	
 	void handlePlay() {
+		// Fire Projectiles
+		fireProjectiles ();
+
+		if (enemyUpgradeMsgTimeout > 0) {
+			if (enemyUpgradeMsgTimeout <= Time.time) {
+				enemyUpgradeMsg.SetActive(false);
+				enemyUpgradeMsgTimeout = 0;
+			}
+		}
+
 		// Check if any waves need releasing
 		if (currentLevel != null) {
 			WaveList wl;
@@ -590,7 +618,11 @@ public class WorldController : MonoBehaviour {
 						numUnitsSpawnedLeftInWave = wv.units.Length;
 						foreach(int upWave in wl.upgradeAtWave) {
 							if (upWave == wvInd) {
-								Debug.Log("Enemy units get stronger");
+								// Tell the player the enemy was upgraded
+								enemyUpgradeMsg.SetActive(true);
+								enemyUpgradeMsgTimeout = Time.time + 3f;
+
+								// Upgrade the enemy units
 								foreach(GameObject ut in unitTypes) {
 									PropertyStats unitStats = ut.GetComponent<UiUnitType>().getEnemyStats();
 									unitStats.upgradeUnit(ut.GetComponent<UiUnitType>().UnitName);
@@ -699,7 +731,8 @@ public class WorldController : MonoBehaviour {
 			// Check game over conditions
 			if (isLevelDone == false) {
 				if (isPlayerAttacker == true) {
-					if (letThroughAttackers >= wl.AttackersLetThrough) {
+					if ((letThroughAttackers >= wl.AttackersLetThrough) &&
+					    (totalAttackers == 0)) {
 						// Player got enough attackers through
 						winLevel();
 					} else if (totalAttackers == 0) {
@@ -945,11 +978,15 @@ public class WorldController : MonoBehaviour {
 		rightImage.sprite = null;
 		cvState = _ConvertState.PreWait;
 		convertTime = Time.time;
+
+		ClearAllUnits ();
 	}
 	
 	void loseLevel() {
 		loseMessage.SetActive(true);
 		isLevelDone = true;
+
+		ClearAllUnits ();
 	}
 	
 	void handleSelectedUnitType() {
@@ -958,20 +995,20 @@ public class WorldController : MonoBehaviour {
 		tile = map.GetComponent<UiTiles>().GetMouseOverTile();
 		
 		if ((tile.col < gridSize.col) && (tile.row < gridSize.row) && (tile.col >= 0) && (tile.row >= 0)) {
-			UnitAnimation._direction dir;
-			
-			if (isPlayerAttacker == true) {
-				totalAttackers++;
-				dir = attackerDir;
-			}
-			else {
-				totalDefenders++;
-				dir = defenderDir;
-			}
-			
 			for (int i = 0; i < unitsUIinst.Count; ++i) {
 				if (selectedUiUnit == unitsUIinst[i]) {
 					if (SpawnUnit(unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(), (int)tile.row, (int)tile.col, GomObject.Faction.Player)) {
+						UnitAnimation._direction dir;
+						
+						if (isPlayerAttacker == true) {
+							totalAttackers++;
+							dir = attackerDir;
+						}
+						else {
+							totalDefenders++;
+							dir = defenderDir;
+						}
+
 						tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
 					}
 					break;
@@ -1399,6 +1436,7 @@ public class WorldController : MonoBehaviour {
 								Destroy(tileContents[row][col]);
 								tileContents[row][col] = null;
 								letThroughAttackers++;
+								totalAttackers--;
 
 								if (AttCrossClip != null) {
 									AudioSource.PlayClipAtPoint(AttCrossClip, transform.position);
@@ -1422,6 +1460,7 @@ public class WorldController : MonoBehaviour {
 								Destroy(tileContents[row][col]);
 								tileContents[row][col] = null;
 								letThroughAttackers++;
+								totalAttackers--;
 								
 								if (AttCrossClip != null) {
 									AudioSource.PlayClipAtPoint(AttCrossClip, transform.position);
@@ -1534,13 +1573,15 @@ public class WorldController : MonoBehaviour {
 					attacker.SendMessage("Attack", null, SendMessageOptions.DontRequireReceiver);
 					
 					if ((attacker.weapon != null) && (attacker.weapon.projectile != null)) {
-						projectile = Instantiate(attacker.weapon.projectile, attacker.transform.position, Quaternion.identity) as GameObject;
-						projectile.SendMessage("SetTarget", tileContents[row][i], SendMessageOptions.DontRequireReceiver);
+						_projectileEntry pe = new _projectileEntry();
+						pe.projectile = attacker.weapon.projectile;
+						pe.startLoc = attacker.transform.position;
+						pe.target = tileContents[row][i];
+						pe.relTime = Time.time + attacker.weapon.projFireDelay;
+						pe.sound = attacker.weapon.sound;
+						projList.Add(pe);
 					} else {
 						tileContents[row][i].SendMessage("DamageMelee", attacker.getStats(), SendMessageOptions.DontRequireReceiver);
-					}
-
-					if (attacker.weapon.sound != null) {
 						AudioSource.PlayClipAtPoint(attacker.weapon.sound, transform.position);
 					}
 					
@@ -1563,14 +1604,16 @@ public class WorldController : MonoBehaviour {
 					attacker.SendMessage("Attack", null, SendMessageOptions.DontRequireReceiver);
 					
 					if ((attacker.weapon != null) && (attacker.weapon.projectile != null)) {
-						projectile = Instantiate(attacker.weapon.projectile, attacker.transform.position, Quaternion.identity) as GameObject;
-						projectile.SendMessage("SetTarget", tileContents[row][i], SendMessageOptions.DontRequireReceiver);
-						projectile.transform.Rotate(new Vector3(0, 0, 180));
+						_projectileEntry pe = new _projectileEntry();
+						pe.projectile = attacker.weapon.projectile;
+						pe.startLoc = attacker.transform.position;
+						pe.target = tileContents[row][i];
+						pe.relTime = Time.time + attacker.weapon.projFireDelay;
+						pe.sound = attacker.weapon.sound;
+						pe.rotate180 = true;
+						projList.Add(pe);
 					} else {
 						tileContents[row][i].SendMessage("DamageMelee", attacker.getStats(), SendMessageOptions.DontRequireReceiver);
-					}
-					
-					if (attacker.weapon.sound != null) {
 						AudioSource.PlayClipAtPoint(attacker.weapon.sound, transform.position);
 					}
 					
@@ -1672,6 +1715,36 @@ public class WorldController : MonoBehaviour {
 				ReleaseButton.SetActive(false);
 			}
 			break;
+		}
+	}
+
+	void fireProjectiles() {
+		foreach(_projectileEntry pe in projList) {
+			if (pe.relTime <= Time.time) {
+				GameObject projectile;
+				projectile = Instantiate(pe.projectile, pe.startLoc, Quaternion.identity) as GameObject;
+				projectile.SendMessage("SetTarget", pe.target, SendMessageOptions.DontRequireReceiver);
+
+				if (pe.rotate180 == true) {
+					projectile.transform.Rotate(new Vector3(0, 0, 180));
+				}
+
+				AudioSource.PlayClipAtPoint(pe.sound, transform.position);
+				projList.Remove(pe);
+				return;
+			}
+		}
+	}
+
+	void ClearAllUnits() {
+		// Destroy units in the tiles
+		for (int row = 0; row < gridSize.row; row++) {
+			for (int col = 0; col < gridSize.col; col++) {
+				if (tileContents[row][col] != null) {
+					Destroy (tileContents[row][col]);
+					tileContents[row][col] = null;
+				}
+			}
 		}
 	}
 }
