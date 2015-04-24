@@ -48,6 +48,12 @@ public class RewardSpiritShard : MonoBehaviour {
 						isClicked = true;
 					}
 				}
+
+				if ((world != null) &&
+				    (world.GetComponent<WorldController>() != null)) {
+
+					world.GetComponent<WorldController>().advanceTutorial = true;
+				}
 			}
 		} else {
 			transform.position = Vector3.Lerp(transform.position, travelPlace.transform.position, Time.deltaTime * 4);

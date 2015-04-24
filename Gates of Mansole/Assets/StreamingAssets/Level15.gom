@@ -92,7 +92,7 @@ Wave:
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
-    WaitTime:11
+    WaitTime:12
     WaveUnit:
         Time:0
         Unit:Teacher
@@ -124,7 +124,7 @@ Wave:
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
-    WaitTime:24
+    WaitTime:27
     WaveUnit:
         Time:0
         Unit:Shepherd
@@ -156,7 +156,7 @@ Wave:
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
-    WaitTime:35
+    WaitTime:40
     WaveUnit:
         Time:0
         Unit:Orator
@@ -188,7 +188,7 @@ Wave:
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
-    WaitTime:48
+    WaitTime:53
     WaveUnit:
         Time:0
         Unit:Evangelist
@@ -220,7 +220,7 @@ Wave:
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
-    WaitTime:60
+    WaitTime:68
     WaveUnit:
         Time:0
         Unit:Teacher

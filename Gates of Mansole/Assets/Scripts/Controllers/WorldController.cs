@@ -14,6 +14,9 @@ public class WorldController : MonoBehaviour {
 	public GameObject VertWallMid;
 	public GameObject VertWallBot;
 	public GameObject CursorPrefab;
+	public GameObject SpiritShardMsgTutorial;
+	public GameObject AttackerBarMsgTutorial;
+	public GameObject UnitUpgradeMsgTutorial;
 	
 	public int totalAI;
 	public int totalAttackers;
@@ -77,6 +80,9 @@ public class WorldController : MonoBehaviour {
 	public AudioClip VictoryClip;
 	public AudioClip DefeatClip;
 
+	public GameObject enemyUpgradeMsg;
+	public float enemyUpgradeMsgTimeout;
+
 	private bool isFirstWin;
 	
 	private int OrbCurAmount;
@@ -95,7 +101,17 @@ public class WorldController : MonoBehaviour {
 
 	private bool inTutorial;
 	private GameObject cursorInst;
-	private float tutorialTime;
+	public bool advanceTutorial;
+
+	struct _projectileEntry {
+		public GameObject projectile;
+		public float relTime;
+		public Vector3 startLoc;
+		public GameObject target;
+		public bool rotate180;
+		public AudioClip sound;
+	}
+	private List<_projectileEntry> projList;
 	
 	private enum _ConvertState {
 		PreWait,
@@ -140,15 +156,21 @@ public class WorldController : MonoBehaviour {
 		rwCounter = 0;
 		isFirstWin = false;
 		inTutorial = false;
-		tutorialTime = 0;
 		cursorInst = null;
 		UnitCounterInst = null;
+
+		Debug.Log (Player.tutorialState);
+
+		projList = new List<_projectileEntry> ();
 
 		ReleaseButton.SetActive(false);
 		numUnitsSpawnedLeftInWave = 0;
 		
 		winMessage.SetActive(false);
 		loseMessage.SetActive(false);
+
+		enemyUpgradeMsg.SetActive(false);
+		enemyUpgradeMsgTimeout = 0;
 		
 		levelStartTime = 0;
 		state = _WorldState.Setup;
@@ -165,21 +187,6 @@ public class WorldController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		// End Tutorial after a specific time
-		if (inTutorial) {
-			if (tutorialTime < Time.time) {
-				inTutorial = false;
-
-				if (cursorInst != null) {
-					Destroy(cursorInst);
-					cursorInst = null;
-				}
-
-				Player.completeTutorialState();
-			}
-		}
-		
 		switch (state) {
 		case _WorldState.Setup:
 			if (handleSetup() == true) {
@@ -566,6 +573,27 @@ public class WorldController : MonoBehaviour {
 	}
 	
 	void handlePlay() {
+		// Fire Projectiles
+		fireProjectiles ();
+
+		if (enemyUpgradeMsgTimeout > 0) {
+			if (enemyUpgradeMsgTimeout <= Time.time) {
+				enemyUpgradeMsg.SetActive(false);
+				enemyUpgradeMsgTimeout = 0;
+			}
+		}
+
+		if ((Player.tutorialState == 2) &&
+		    (inTutorial == true) &&
+		    (advanceTutorial == true)) {
+
+			Player.completeTutorialState();
+			advanceTutorial = false;
+			Destroy(cursorInst);
+
+			SpiritShardMsgTutorial.SetActive(true);
+		}
+
 		// Check if any waves need releasing
 		if (currentLevel != null) {
 			WaveList wl;
@@ -579,9 +607,26 @@ public class WorldController : MonoBehaviour {
 				ReleaseButton.SetActive(true);
 			}
 			
+			// Show the player how to spawn a unit
+			if ((Player.tutorialState == 1) && (inTutorial == false)) {
+				cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+				inTutorial = true;
+			} else if ((Player.tutorialState == 10) && (inTutorial == false)) {
+				cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+				inTutorial = true;
+			}
+			
 			// Go through each wave and see if it is time to start that wave
 			for (int wvInd = 0; wvInd < wl.waves.Count; wvInd++) {
 				Wave wv = wl.waves[wvInd];
+				
+				if ((Player.tutorialState == 0) ||
+				    (Player.tutorialState == 1) ||
+				    (Player.tutorialState == 3) ||
+				    (Player.tutorialState == 4)) {
+					levelStartTime += Time.deltaTime;
+					break;
+				}
 				
 				if (wv.waitTime + levelStartTime < Time.time) {
 					
@@ -590,7 +635,11 @@ public class WorldController : MonoBehaviour {
 						numUnitsSpawnedLeftInWave = wv.units.Length;
 						foreach(int upWave in wl.upgradeAtWave) {
 							if (upWave == wvInd) {
-								Debug.Log("Enemy units get stronger");
+								// Tell the player the enemy was upgraded
+								enemyUpgradeMsg.SetActive(true);
+								enemyUpgradeMsgTimeout = Time.time + 3f;
+
+								// Upgrade the enemy units
 								foreach(GameObject ut in unitTypes) {
 									PropertyStats unitStats = ut.GetComponent<UiUnitType>().getEnemyStats();
 									unitStats.upgradeUnit(ut.GetComponent<UiUnitType>().UnitName);
@@ -653,13 +702,6 @@ public class WorldController : MonoBehaviour {
 										break;
 									}
 									
-									// Show the player how to spawn a unit
-									if ((Player.tutorialState == 1) && (inTutorial == false)) {
-										cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
-										tutorialTime = Time.time + 6.2f;
-										inTutorial = true;
-									}
-									
 									ut.created = true;
 									if ((row < gridSize.row) && (col < gridSize.col)) {
 										if (isPlayerAttacker == true) {
@@ -699,7 +741,8 @@ public class WorldController : MonoBehaviour {
 			// Check game over conditions
 			if (isLevelDone == false) {
 				if (isPlayerAttacker == true) {
-					if (letThroughAttackers >= wl.AttackersLetThrough) {
+					if ((letThroughAttackers >= wl.AttackersLetThrough) &&
+					    (totalAttackers == 0)) {
 						// Player got enough attackers through
 						winLevel();
 					} else if (totalAttackers == 0) {
@@ -745,6 +788,20 @@ public class WorldController : MonoBehaviour {
 			}
 			if (Input.GetMouseButtonDown(0)) {
 				RaycastHit hitSquare;
+				
+				if ((Player.tutorialState == 3) &&
+				    (inTutorial == true)) {
+					
+					Player.completeTutorialState();
+					SpiritShardMsgTutorial.SetActive(false);
+					AttackerBarMsgTutorial.SetActive(true);
+				} else if ((Player.tutorialState == 4) &&
+				           (inTutorial == true)) {
+					
+					Player.completeTutorialState();
+					AttackerBarMsgTutorial.SetActive(false);
+					inTutorial = false;
+				}
 				
 				// Check Menu Squares
 				if (Physics.Raycast(UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition), out hitSquare)) {
@@ -945,11 +1002,15 @@ public class WorldController : MonoBehaviour {
 		rightImage.sprite = null;
 		cvState = _ConvertState.PreWait;
 		convertTime = Time.time;
+
+		ClearAllUnits ();
 	}
 	
 	void loseLevel() {
 		loseMessage.SetActive(true);
 		isLevelDone = true;
+
+		ClearAllUnits ();
 	}
 	
 	void handleSelectedUnitType() {
@@ -958,21 +1019,32 @@ public class WorldController : MonoBehaviour {
 		tile = map.GetComponent<UiTiles>().GetMouseOverTile();
 		
 		if ((tile.col < gridSize.col) && (tile.row < gridSize.row) && (tile.col >= 0) && (tile.row >= 0)) {
-			UnitAnimation._direction dir;
-			
-			if (isPlayerAttacker == true) {
-				totalAttackers++;
-				dir = attackerDir;
-			}
-			else {
-				totalDefenders++;
-				dir = defenderDir;
-			}
-			
 			for (int i = 0; i < unitsUIinst.Count; ++i) {
 				if (selectedUiUnit == unitsUIinst[i]) {
 					if (SpawnUnit(unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(), (int)tile.row, (int)tile.col, GomObject.Faction.Player)) {
+						UnitAnimation._direction dir;
+						
+						if (isPlayerAttacker == true) {
+							totalAttackers++;
+							dir = attackerDir;
+						}
+						else {
+							totalDefenders++;
+							dir = defenderDir;
+						}
+
 						tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
+						
+						if ((Player.tutorialState == 1) && (inTutorial == true)) {
+							if ((tile.col == 0 && tile.row == 2)) {
+								Player.completeTutorialState();
+								inTutorial = false;
+								Destroy(cursorInst);
+							}
+						} else if ((Player.tutorialState == 10) && (inTutorial == true)) {
+							cursorInst.transform.position = new Vector3(5.5f,-6f, 0);
+							cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
+						}
 					}
 					break;
 				}
@@ -1371,7 +1443,6 @@ public class WorldController : MonoBehaviour {
 					cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
 					cursorInst.transform.position = tileContents[row][col].transform.position;
 					cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
-					tutorialTime = Time.time + 4;
 					inTutorial = true;
 				}
 
@@ -1399,6 +1470,7 @@ public class WorldController : MonoBehaviour {
 								Destroy(tileContents[row][col]);
 								tileContents[row][col] = null;
 								letThroughAttackers++;
+								totalAttackers--;
 
 								if (AttCrossClip != null) {
 									AudioSource.PlayClipAtPoint(AttCrossClip, transform.position);
@@ -1422,6 +1494,7 @@ public class WorldController : MonoBehaviour {
 								Destroy(tileContents[row][col]);
 								tileContents[row][col] = null;
 								letThroughAttackers++;
+								totalAttackers--;
 								
 								if (AttCrossClip != null) {
 									AudioSource.PlayClipAtPoint(AttCrossClip, transform.position);
@@ -1534,13 +1607,15 @@ public class WorldController : MonoBehaviour {
 					attacker.SendMessage("Attack", null, SendMessageOptions.DontRequireReceiver);
 					
 					if ((attacker.weapon != null) && (attacker.weapon.projectile != null)) {
-						projectile = Instantiate(attacker.weapon.projectile, attacker.transform.position, Quaternion.identity) as GameObject;
-						projectile.SendMessage("SetTarget", tileContents[row][i], SendMessageOptions.DontRequireReceiver);
+						_projectileEntry pe = new _projectileEntry();
+						pe.projectile = attacker.weapon.projectile;
+						pe.startLoc = attacker.transform.position;
+						pe.target = tileContents[row][i];
+						pe.relTime = Time.time + attacker.weapon.projFireDelay;
+						pe.sound = attacker.weapon.sound;
+						projList.Add(pe);
 					} else {
 						tileContents[row][i].SendMessage("DamageMelee", attacker.getStats(), SendMessageOptions.DontRequireReceiver);
-					}
-
-					if (attacker.weapon.sound != null) {
 						AudioSource.PlayClipAtPoint(attacker.weapon.sound, transform.position);
 					}
 					
@@ -1563,14 +1638,16 @@ public class WorldController : MonoBehaviour {
 					attacker.SendMessage("Attack", null, SendMessageOptions.DontRequireReceiver);
 					
 					if ((attacker.weapon != null) && (attacker.weapon.projectile != null)) {
-						projectile = Instantiate(attacker.weapon.projectile, attacker.transform.position, Quaternion.identity) as GameObject;
-						projectile.SendMessage("SetTarget", tileContents[row][i], SendMessageOptions.DontRequireReceiver);
-						projectile.transform.Rotate(new Vector3(0, 0, 180));
+						_projectileEntry pe = new _projectileEntry();
+						pe.projectile = attacker.weapon.projectile;
+						pe.startLoc = attacker.transform.position;
+						pe.target = tileContents[row][i];
+						pe.relTime = Time.time + attacker.weapon.projFireDelay;
+						pe.sound = attacker.weapon.sound;
+						pe.rotate180 = true;
+						projList.Add(pe);
 					} else {
 						tileContents[row][i].SendMessage("DamageMelee", attacker.getStats(), SendMessageOptions.DontRequireReceiver);
-					}
-					
-					if (attacker.weapon.sound != null) {
 						AudioSource.PlayClipAtPoint(attacker.weapon.sound, transform.position);
 					}
 					
@@ -1658,6 +1735,12 @@ public class WorldController : MonoBehaviour {
 				Debug.Log("Upgraded " + unitTypes[unitType].GetComponent<UiUnitType>().UnitName);
 				Debug.Log("Shards left " + Player.spiritShards);
 			}
+
+			if ((Player.tutorialState == 10) && (inTutorial == true)) {
+				Player.completeTutorialState();
+				inTutorial = false;
+				Destroy(cursorInst);
+			}
 			break;
 		case "Release":
 			// Uncomment out to make the Release button automatically win the level
@@ -1672,6 +1755,36 @@ public class WorldController : MonoBehaviour {
 				ReleaseButton.SetActive(false);
 			}
 			break;
+		}
+	}
+
+	void fireProjectiles() {
+		foreach(_projectileEntry pe in projList) {
+			if (pe.relTime <= Time.time) {
+				GameObject projectile;
+				projectile = Instantiate(pe.projectile, pe.startLoc, Quaternion.identity) as GameObject;
+				projectile.SendMessage("SetTarget", pe.target, SendMessageOptions.DontRequireReceiver);
+
+				if (pe.rotate180 == true) {
+					projectile.transform.Rotate(new Vector3(0, 0, 180));
+				}
+
+				AudioSource.PlayClipAtPoint(pe.sound, transform.position);
+				projList.Remove(pe);
+				return;
+			}
+		}
+	}
+
+	void ClearAllUnits() {
+		// Destroy units in the tiles
+		for (int row = 0; row < gridSize.row; row++) {
+			for (int col = 0; col < gridSize.col; col++) {
+				if (tileContents[row][col] != null) {
+					Destroy (tileContents[row][col]);
+					tileContents[row][col] = null;
+				}
+			}
 		}
 	}
 }

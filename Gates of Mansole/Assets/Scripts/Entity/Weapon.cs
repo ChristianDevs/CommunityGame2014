@@ -10,4 +10,5 @@ public class Weapon : MonoBehaviour {
 	public int damageRadius;
 	public UnitAnimation._action actionAnim;
 	public GameObject projectile;
+	public float projFireDelay = 0f;
 }

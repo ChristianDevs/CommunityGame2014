@@ -24,6 +24,27 @@ public class Player : MonoBehaviour {
 	static public List<bool> exitCinematicsWatched;
 	static public bool isWatchingIntro;
 	static public int chapterProgression;
+
+	// Tutorials
+	// ------------------------------------------------------------
+	// 0) Click the level 1 button						- LevelSelect
+	// 1) Place a unit									- AutoLevel
+	// 2) Collect Spirit Shard							- AutoLevel
+	// 3) Explain Spirit Shards							- AutoLevel
+	// 4) Explain Attacker Bar							- AutoLevel
+	// 5) Click the Market button						- LevelSelect
+	// 6) Click the Evangelist Unit						- Market
+	// 7) Click the Upgrade Button						- Market
+	// 8) Explain the Unit Counters						- Market
+	// 9) Explain Spirit Orbs							- Market
+	// 10) Click the Shepherd button					- Market
+	// 11) Click the Upgrade button						- Market
+	// 12) Explain unlocking unit upgrades				- Market
+	// 13) Click the back button						- Market
+	// 14) Click level 2 button							- LevelSelect
+	// 15) Place a unit									- AutoLevel
+	// 16) Click the upgrade button						- AutoLevel
+	// 17) Explain upgrading units makes them stronger	- AutoLevel
 	static public int tutorialState;
 
     static public void resetPlayer(GameObject[] newUnitTypes, GameObject[] newAbilities) {
