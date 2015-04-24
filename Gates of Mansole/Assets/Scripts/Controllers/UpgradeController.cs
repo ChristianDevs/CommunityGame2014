@@ -14,6 +14,9 @@ public class UpgradeController : MonoBehaviour {
 
 	public GameObject gutterflowPrefab;
 	public GameObject CursorPrefab;
+	public GameObject UnitCounterMsgTutorial;
+	public GameObject SpiritOrbMsgTutorial;
+	public GameObject UnitUpgradeMsgTutorial;
 	public GameObject unitCounterPrefab;
 
 	private List<GameObject> upgrades;
@@ -36,6 +39,12 @@ public class UpgradeController : MonoBehaviour {
 		maxUnitUpgrades = 10;
 		maxAbilityUpgrades = 5;
 
+		Debug.Log (Player.tutorialState);
+		UnitCounterMsgTutorial.SetActive (false);
+		SpiritOrbMsgTutorial.SetActive (false);
+		UnitUpgradeMsgTutorial.SetActive (false);
+
+
         buildUnitUpgrade();
 		buildAbilityUpgrade();
 
@@ -44,7 +53,7 @@ public class UpgradeController : MonoBehaviour {
 		flowCounter = 0;
 		
 		// Show the player how to spawn a unit
-		if ((Player.tutorialState == 4) && (inTutorial == false)) {
+		if ((Player.tutorialState == 5) && (inTutorial == false)) {
 			cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
 			cursorInst.transform.position = upgradeWindows[1].transform.position;
 			cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
@@ -97,6 +106,26 @@ public class UpgradeController : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButtonDown(0)) {
 			RaycastHit hitSquare;
+
+			if ((Player.tutorialState == 6) && (inTutorial)) {
+				Player.completeTutorialState();
+				UnitCounterMsgTutorial.SetActive(false);
+				SpiritOrbMsgTutorial.SetActive(true);
+			} else if ((Player.tutorialState == 7) && (inTutorial)) {
+				Player.completeTutorialState();
+				SpiritOrbMsgTutorial.SetActive(false);
+
+				cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+				cursorInst.transform.position = upgradeWindows[0].transform.position;
+				cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
+			} else if ((Player.tutorialState == 9) && (inTutorial)) {
+				Player.completeTutorialState();
+				UnitUpgradeMsgTutorial.SetActive(false);
+				
+				cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+				cursorInst.transform.position = new Vector3(-5.29f, 4.19f, 0f);
+				cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
+			}
 			
 			if (Physics.Raycast(UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition), out hitSquare)) {
 				for(int i = 0; i < upgradeWindows.Count; i++) {
@@ -122,8 +151,11 @@ public class UpgradeController : MonoBehaviour {
 	                        }
 						}
 
-						// End Tutorial when player clicks the unit
-						if ((Player.tutorialState == 4) && (inTutorial)) {
+						if ((Player.tutorialState == 5) && (inTutorial)) {
+							cursorInst.transform.position = new Vector3(2.37f, 3.66f, 0);
+						}
+						
+						if ((Player.tutorialState == 8) && (inTutorial)) {
 							cursorInst.transform.position = new Vector3(2.37f, 3.66f, 0);
 						}
 					}
@@ -170,17 +202,25 @@ public class UpgradeController : MonoBehaviour {
                     Player.AddOrbs(-orbCost);
                     UpdateDisplay();
 					upgrades[selectedType].SendMessage("SetColor", Color.white, SendMessageOptions.DontRequireReceiver);
-					
-					// End Tutorial when player upgrades the unit
-					if ((Player.tutorialState == 4) && (inTutorial)) {
-						inTutorial = false;
-						
+
+					if ((Player.tutorialState == 5) && (inTutorial)) {						
 						if (cursorInst != null) {
 							Destroy(cursorInst);
 							cursorInst = null;
 						}
 						
 						Player.completeTutorialState();
+
+						UnitCounterMsgTutorial.SetActive(true);
+					} else if ((Player.tutorialState == 8) && (inTutorial)) {						
+						if (cursorInst != null) {
+							Destroy(cursorInst);
+							cursorInst = null;
+						}
+						
+						Player.completeTutorialState();
+						
+						UnitUpgradeMsgTutorial.SetActive(true);
 					}
                 }
             } else {

@@ -14,6 +14,9 @@ public class WorldController : MonoBehaviour {
 	public GameObject VertWallMid;
 	public GameObject VertWallBot;
 	public GameObject CursorPrefab;
+	public GameObject SpiritShardMsgTutorial;
+	public GameObject AttackerBarMsgTutorial;
+	public GameObject UnitUpgradeMsgTutorial;
 	
 	public int totalAI;
 	public int totalAttackers;
@@ -98,7 +101,7 @@ public class WorldController : MonoBehaviour {
 
 	private bool inTutorial;
 	private GameObject cursorInst;
-	private float tutorialTime;
+	public bool advanceTutorial;
 
 	struct _projectileEntry {
 		public GameObject projectile;
@@ -153,9 +156,10 @@ public class WorldController : MonoBehaviour {
 		rwCounter = 0;
 		isFirstWin = false;
 		inTutorial = false;
-		tutorialTime = 0;
 		cursorInst = null;
 		UnitCounterInst = null;
+
+		Debug.Log (Player.tutorialState);
 
 		projList = new List<_projectileEntry> ();
 
@@ -183,21 +187,6 @@ public class WorldController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		// End Tutorial after a specific time
-		if (inTutorial) {
-			if (tutorialTime < Time.time) {
-				inTutorial = false;
-
-				if (cursorInst != null) {
-					Destroy(cursorInst);
-					cursorInst = null;
-				}
-
-				Player.completeTutorialState();
-			}
-		}
-		
 		switch (state) {
 		case _WorldState.Setup:
 			if (handleSetup() == true) {
@@ -594,6 +583,17 @@ public class WorldController : MonoBehaviour {
 			}
 		}
 
+		if ((Player.tutorialState == 2) &&
+		    (inTutorial == true) &&
+		    (advanceTutorial == true)) {
+
+			Player.completeTutorialState();
+			advanceTutorial = false;
+			Destroy(cursorInst);
+
+			SpiritShardMsgTutorial.SetActive(true);
+		}
+
 		// Check if any waves need releasing
 		if (currentLevel != null) {
 			WaveList wl;
@@ -607,9 +607,26 @@ public class WorldController : MonoBehaviour {
 				ReleaseButton.SetActive(true);
 			}
 			
+			// Show the player how to spawn a unit
+			if ((Player.tutorialState == 1) && (inTutorial == false)) {
+				cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+				inTutorial = true;
+			} else if ((Player.tutorialState == 10) && (inTutorial == false)) {
+				cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+				inTutorial = true;
+			}
+			
 			// Go through each wave and see if it is time to start that wave
 			for (int wvInd = 0; wvInd < wl.waves.Count; wvInd++) {
 				Wave wv = wl.waves[wvInd];
+				
+				if ((Player.tutorialState == 0) ||
+				    (Player.tutorialState == 1) ||
+				    (Player.tutorialState == 3) ||
+				    (Player.tutorialState == 4)) {
+					levelStartTime += Time.deltaTime;
+					break;
+				}
 				
 				if (wv.waitTime + levelStartTime < Time.time) {
 					
@@ -683,13 +700,6 @@ public class WorldController : MonoBehaviour {
 										row = 0;
 										col = 0;
 										break;
-									}
-									
-									// Show the player how to spawn a unit
-									if ((Player.tutorialState == 1) && (inTutorial == false)) {
-										cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
-										tutorialTime = Time.time + 6.2f;
-										inTutorial = true;
 									}
 									
 									ut.created = true;
@@ -778,6 +788,20 @@ public class WorldController : MonoBehaviour {
 			}
 			if (Input.GetMouseButtonDown(0)) {
 				RaycastHit hitSquare;
+				
+				if ((Player.tutorialState == 3) &&
+				    (inTutorial == true)) {
+					
+					Player.completeTutorialState();
+					SpiritShardMsgTutorial.SetActive(false);
+					AttackerBarMsgTutorial.SetActive(true);
+				} else if ((Player.tutorialState == 4) &&
+				           (inTutorial == true)) {
+					
+					Player.completeTutorialState();
+					AttackerBarMsgTutorial.SetActive(false);
+					inTutorial = false;
+				}
 				
 				// Check Menu Squares
 				if (Physics.Raycast(UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition), out hitSquare)) {
@@ -1010,6 +1034,17 @@ public class WorldController : MonoBehaviour {
 						}
 
 						tileContents[(int)tile.row][(int)tile.col].SendMessage("SetIdleDirection", dir, SendMessageOptions.DontRequireReceiver);
+						
+						if ((Player.tutorialState == 1) && (inTutorial == true)) {
+							if ((tile.col == 0 && tile.row == 2)) {
+								Player.completeTutorialState();
+								inTutorial = false;
+								Destroy(cursorInst);
+							}
+						} else if ((Player.tutorialState == 10) && (inTutorial == true)) {
+							cursorInst.transform.position = new Vector3(5.5f,-6f, 0);
+							cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
+						}
 					}
 					break;
 				}
@@ -1408,7 +1443,6 @@ public class WorldController : MonoBehaviour {
 					cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
 					cursorInst.transform.position = tileContents[row][col].transform.position;
 					cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
-					tutorialTime = Time.time + 4;
 					inTutorial = true;
 				}
 
@@ -1700,6 +1734,12 @@ public class WorldController : MonoBehaviour {
 				unitStats.upgradeUnit(unitTypes[unitType].GetComponent<UiUnitType>().UnitName);
 				Debug.Log("Upgraded " + unitTypes[unitType].GetComponent<UiUnitType>().UnitName);
 				Debug.Log("Shards left " + Player.spiritShards);
+			}
+
+			if ((Player.tutorialState == 10) && (inTutorial == true)) {
+				Player.completeTutorialState();
+				inTutorial = false;
+				Destroy(cursorInst);
 			}
 			break;
 		case "Release":

@@ -1,7 +1,7 @@
 AttackersLetThrough:3
 IsPlayerAttacker:False
 AttackerDir:Left
-StartShards:10
+StartShards:12
 FirstTimeBonus:3
 Lane:1:Disable
 Lane:1
@@ -50,6 +50,13 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:2
+Wave:
+    WaitTime:10
+    WaveUnit:
+        Time:0
         Unit:Teacher
         SpawnLoc:RandRow
         Tile:0:0
@@ -64,7 +71,7 @@ Wave:
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
-    WaitTime:15
+    WaitTime:25
     WaveUnit:
         Time:0
         Unit:Teacher
@@ -91,7 +98,7 @@ Wave:
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
-    WaitTime:30
+    WaitTime:40
     WaveUnit:
         Time:0
         Unit:Teacher
