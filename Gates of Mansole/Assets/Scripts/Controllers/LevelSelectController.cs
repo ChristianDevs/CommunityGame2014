@@ -30,6 +30,12 @@ public class LevelSelectController : MonoBehaviour {
 		particleSystem = null;
 		inTutorial = false;
 		UpdateMap();
+
+		if (Player.currentChapter < 2) {
+			foreach(GameObject btn in ChapterButtons) {
+				btn.SetActive(false);
+			}
+		}
 		
 		// Show player to click the level
 		if ((Player.tutorialState == 0) && (inTutorial == false)) {

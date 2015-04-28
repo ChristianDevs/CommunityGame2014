@@ -603,7 +603,7 @@ public class WorldController : MonoBehaviour {
 			// Check if Release Button should be enabled
 			if ((numUnitsSpawnedLeftInWave == 0) &&
 			    (ReleaseButton.activeSelf == false) &&
-			    (CurWave < wl.waves.Count)) {
+			    (CurWave < (wl.waves.Count - 1))) {
 				ReleaseButton.SetActive(true);
 			}
 			
@@ -643,6 +643,11 @@ public class WorldController : MonoBehaviour {
 								foreach(GameObject ut in unitTypes) {
 									PropertyStats unitStats = ut.GetComponent<UiUnitType>().getEnemyStats();
 									unitStats.upgradeUnit(ut.GetComponent<UiUnitType>().UnitName);
+								}
+
+								// Disable the Wave Release button after the last wave is released
+								if (wvInd == (wl.waves.Count - 1)) {
+									ReleaseButton.SetActive(false);
 								}
 							}
 						}
