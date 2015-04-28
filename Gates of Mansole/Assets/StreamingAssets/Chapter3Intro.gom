@@ -5,7 +5,7 @@ entry
 	ImageRight:None
 	Speaker:None
 	Dialogue:When you come to, no light is there to greet you.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:None
@@ -13,7 +13,7 @@ entry
 	ImageRight:None
 	Speaker:None
 	Dialogue:A moist and musty smell permeates the air.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:None
@@ -21,7 +21,7 @@ entry
 	ImageRight:None
 	Speaker:None
 	Dialogue:Finally, someone lights a torch.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -38,7 +38,7 @@ entry
 	ImageRight:None
 	Speaker:Lieutenant Captain
 	Dialogue:Sir... Sir, captain. Are you alright?
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -46,7 +46,7 @@ entry
 	ImageRight:None
 	Speaker:Lieutenant Captain
 	Dialogue:You are? Good, I... wait, who is over there?
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -54,7 +54,7 @@ entry
 	ImageRight:17
 	Speaker:Prince Emmanuel
 	Dialogue:I am Emmanuel, prince of King Shaddai. Who are you?
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -62,7 +62,7 @@ entry
 	ImageRight:None
 	Speaker:Lieutenant Captain
 	Dialogue:He is the captain of the city of Mansoul.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -70,7 +70,7 @@ entry
 	ImageRight:17
 	Speaker:Prince Emmanuel
 	Dialogue:Then you are the leader of the band who opposed me before the avalanche.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -78,7 +78,7 @@ entry
 	ImageRight:None
 	Speaker:Lieutenant Captain
 	Dialogue:Captain! This is our chance! Let us get rid of the prince now.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -86,7 +86,7 @@ entry
 	ImageRight:17
 	Speaker:Prince Emmanuel
 	Dialogue:Get rid of me? Do you think it will be that easy?
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -94,7 +94,7 @@ entry
 	ImageRight:None
 	Speaker:Captain Boanurges
 	Dialogue:Prince! The cave goes on for a ways and what's more, there are bands of monsters.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -102,7 +102,7 @@ entry
 	ImageRight:17
 	Speaker:Prince Emmanuel
 	Dialogue:Bands of monsters you say, Captain Boanurges. Captain, let me make a proposition.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -110,7 +110,7 @@ entry
 	ImageRight:17
 	Speaker:Prince Emmanuel
 	Dialogue:Let us join forces until we escape this network of caves.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -118,7 +118,7 @@ entry
 	ImageRight:None
 	Speaker:Lieutenant Captain
 	Dialogue:Captain, this may be our only chance to strike out. What say you?
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -126,7 +126,7 @@ entry
 	ImageRight:None
 	Speaker:Lieutenant Captain
 	Dialogue:Join him? Very well, let us ally with Emmanuel for now.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0

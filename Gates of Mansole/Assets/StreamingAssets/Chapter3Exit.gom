@@ -14,7 +14,7 @@ entry
 	ImageRight:None
 	Speaker:Prince Emmanuel
 	Dialogue:So, Captain of the City of Mansoul. Shall you join with me?
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -22,7 +22,7 @@ entry
 	ImageRight:None
 	Speaker:Prince Emmanuel
 	Dialogue:You will? Wise choice. Together we shall retake Mansoul for King Shaddai.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -30,7 +30,7 @@ entry
 	ImageRight:10
 	Speaker:Lieutenant Captain
 	Dialogue:You can't be serious, captain? How can you join with Emmanuel?
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -38,7 +38,7 @@ entry
 	ImageRight:10
 	Speaker:Lieutenant Captain
 	Dialogue:We were told they are all bigoted and oppressing diabolophobes.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -46,6 +46,7 @@ entry
 	ImageRight:10
 	Speaker:Lieutenant Captain
 	Dialogue:What Captain? You don't think those are true anymore?
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -53,7 +54,7 @@ entry
 	ImageRight:10
 	Speaker:Lieutenant Captain
 	Dialogue:If that's how it is then I'm going back to Diabolus!
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -61,7 +62,7 @@ entry
 	ImageRight:None
 	Speaker:Captain Boanurges
 	Dialogue: My prince, shall I lead a band to go capture him?
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -69,7 +70,7 @@ entry
 	ImageRight:17
 	Speaker:Prince Emmanuel
 	Dialogue:Nay good captain, we must focus on drawing plans to siege the city.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -77,7 +78,7 @@ entry
 	ImageRight:None
 	Speaker:Prince Emmanuel
 	Dialogue:Let him go report back to his master. They shall tremble in their boots at my coming.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -85,7 +86,7 @@ entry
 	ImageRight:None
 	Speaker:None
 	Dialogue:To be continued...
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0

@@ -14,7 +14,7 @@ entry
 	ImageRight:0
 	Speaker:None
 	Dialogue:And so the captain courageously leads his band of city guards to oppose the army of King Shaddai.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:1
@@ -22,7 +22,7 @@ entry
 	ImageRight:0
 	Speaker:None
 	Dialogue:Into the cold and snowy mountains they march.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:1
@@ -30,7 +30,7 @@ entry
 	ImageRight:0
 	Speaker:None
 	Dialogue:Finally, the great host of King Shaddai comes into view.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:1
@@ -38,7 +38,7 @@ entry
 	ImageRight:0
 	Speaker:None
 	Dialogue:At first the men of the guard of the city of Mansoul tremble at the sight.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:1
@@ -46,7 +46,7 @@ entry
 	ImageRight:0
 	Speaker:None
 	Dialogue:But the captain inspires them with words of courage.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:1
@@ -54,7 +54,7 @@ entry
 	ImageRight:0
 	Speaker:None
 	Dialogue:They fight for the Diabolonians' right to freely enter the city of Mansoul.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:1
@@ -62,7 +62,7 @@ entry
 	ImageRight:0
 	Speaker:None
 	Dialogue:They fight to oppose the tyranny of King Shaddai.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:1
@@ -70,7 +70,7 @@ entry
 	ImageRight:0
 	Speaker:None
 	Dialogue:However, just before the two forces clash a huge avalanche covers the field of battle.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:1
@@ -78,7 +78,7 @@ entry
 	ImageRight:0
 	Speaker:None
 	Dialogue:Both sides are now confused and in disarray.
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:1
@@ -86,7 +86,7 @@ entry
 	ImageRight:0
 	Speaker:None
 	Dialogue:What shall come of things now?
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:1

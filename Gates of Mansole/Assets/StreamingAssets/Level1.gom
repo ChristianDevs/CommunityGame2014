@@ -37,22 +37,12 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:But the citizens have placed King Shaddai's laws above them and strive to obey them.
+        Dialogue:But they strive to obey with the rewards of peace, harmony, and the joy of a wonderful city.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:And it gives us all the rewards of peace, harmony, and the joy of a wonderful city.
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:The wicked Diabolonians reject King Shaddai's laws.
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:As long as Mansoul is a part of King Shaddai's kingdom, they will never have a place here.
+        Dialogue:The wicked Diabolonians reject King Shaddai's laws. And so... they will never have a place here.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0

@@ -35,7 +35,7 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Defend us until he arrives. We will make sure we get a confession out of the captain
+        Dialogue:Defend us until he arrives. We will make sure we get a confession out of the captain.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -204,4 +204,4 @@ PostDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Come, we must continue our mission to investigate the corruption going on in this city.!
+        Dialogue:Come, we must continue our mission to investigate the corruption going on in this city!

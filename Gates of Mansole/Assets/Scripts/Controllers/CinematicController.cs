@@ -66,6 +66,7 @@ public class CinematicController : MonoBehaviour {
 		entryChangeTime = 0;
 		lastMusic = -1;
 		StartCoroutine (Init (cinFile));
+		dialogueWindow.SetActive(false);
 	}
 
 	public IEnumerator Init(string filePath) {

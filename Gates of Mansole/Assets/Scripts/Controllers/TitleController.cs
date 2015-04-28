@@ -7,6 +7,9 @@ public class TitleController : MonoBehaviour {
 	public GameObject BlackScreen;
 	public GameObject[] unitTypes;
     public GameObject[] abilities;
+	public GameObject Background;
+	public GameObject Logo;
+	public GameObject[] Buttons;
 
 	private bool isDone;
 	private float alpha;
@@ -21,15 +24,27 @@ public class TitleController : MonoBehaviour {
 		color.a = alpha;
 		BlackScreen.SetActive (true);
 		BlackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = color;
+		Logo.SetActive (false);
+		foreach(GameObject btn in Buttons) {
+			btn.SetActive(false);
+		}
 	}
 
 	void Update() {
 		Color color = Color.black;
 
 		if (alpha > 0) {
-			alpha -= 0.025f;
+			alpha -= 0.03f;
 			color.a = alpha;
 			BlackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = color;
+		} else if (alpha < 0) {
+			Logo.SetActive (true);
+			foreach(GameObject btn in Buttons) {
+				btn.SetActive(true);
+			}
+			alpha = 0;
+		} else if (Background.transform.position.y > -20.5f) {
+			Background.transform.position -= new Vector3(0, Time.deltaTime * 0.5f, 0);
 		}
 	}
 
