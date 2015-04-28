@@ -14,7 +14,7 @@ entry
 	ImageRight:None
 	Speaker:None
 	Dialogue:In the world known as Universe lies a land richly adorned with rivers and valleys with a very sweet air.
-	ShowTime:5
+	ShowTime:10
 	Action:0
 entry
 	Music:0
@@ -23,7 +23,7 @@ entry
 	ImageRight:None
 	Speaker:None
 	Dialogue:The people living there vary much in their complexion and culture. Dwelling betwixt flowing rivers lies a city known as Mansoul.
-	ShowTime:5
+	ShowTime:10
 	Action:0
 entry
 	Music:0
@@ -32,7 +32,7 @@ entry
 	ImageRight:None
 	Speaker:None
 	Dialogue:This city, with buildings so curious, situations so commodius, and privileges so advantageous, was without equal in the land.
-	ShowTime:5
+	ShowTime:10
 	Action:0
 entry
 	Music:0
@@ -41,7 +41,7 @@ entry
 	ImageRight:None
 	Speaker:None
 	Dialogue:With a sufficiency of provision, the hearts of the citizens within were good and true.
-	ShowTime:5
+	ShowTime:10
 	Action:0
 entry
 	Music:0
@@ -50,7 +50,7 @@ entry
 	ImageRight:None
 	Speaker:None
 	Dialogue:However, the threat of evil darkness lies on it's borders. Can the people of Mansoul remain good and true?
-	ShowTime:5
+	ShowTime:10
 entry
 	Music:0
 	Background:0
@@ -58,7 +58,7 @@ entry
 	ImageRight:None
 	Speaker:Captain Resistance
 	Dialogue:Congratulations on your promotion to lieutenant captain! Of course with a new title comes new responsibility.
-	ShowTime:5
+	ShowTime:10
 	Action:0
 entry
 	Music:0
@@ -67,7 +67,7 @@ entry
 	ImageRight:None
 	Speaker:Captain Resistance
 	Dialogue:Defending the City of Mansoul from dangers both within and without is our duty. And we must carry it out to the best of our abilities.
-	ShowTime:5
+	ShowTime:10
 	Action:0
 entry
 	Music:0
@@ -76,7 +76,7 @@ entry
 	ImageRight:None
 	Speaker:Captain Resistance
 	Dialogue:Long have the Diabolonians threatened our city. Now, come with me that we may resist their efforts.
-	ShowTime:5
+	ShowTime:10
 	Action:0
 entry
 	Music:0
