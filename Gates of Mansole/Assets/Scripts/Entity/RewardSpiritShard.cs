@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class RewardSpiritShard : MonoBehaviour {
@@ -9,13 +9,11 @@ public class RewardSpiritShard : MonoBehaviour {
 	public GameObject world;
 
 	private bool isClicked;
-	private bool isMouseDown;
 
 	// Use this for initialization
 	void Start () {
 		createTime = Time.time;
 		isClicked = false;
-		isMouseDown = false;
 	}
 	
 	// Update is called once per frame
@@ -32,15 +30,7 @@ public class RewardSpiritShard : MonoBehaviour {
 		}
 
 		if (isClicked == false) {
-			if (Input.GetMouseButtonDown(0)) {
-				isMouseDown = true;
-			}
-
-			if (Input.GetMouseButtonUp(0)) {
-				isMouseDown = false;
-			}
-
-			if (isMouseDown == true) {
+			if (Input.GetMouseButton(0) == true) {
 				RaycastHit hitObj;
 
 				if (Physics.Raycast(UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition), out hitObj)) {
