@@ -11,6 +11,7 @@ public class LevelSelectController : MonoBehaviour {
 	public GameObject highlightPS;
 	public GameObject CursorPrefab;
 	public GameObject BlackScreen;
+	public GameObject[] ChapterButtons;
 
     private List<GameObject> levelButtons;
 	private GameObject particleSystem;

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -68,6 +68,7 @@ public class UpgradeController : MonoBehaviour {
         float y = startUnitY;
 
         for (int i = 0; i < Player.unitTypes.Count; i++) {
+			if(Player.unitAvailable[i]){
             upgradeWindows.Add(Instantiate(unitWindow, new Vector3(x, y - 0.5f), Quaternion.identity) as GameObject);
 			upgradeWindows[upgradeWindows.Count - 1].transform.name = Player.unitTypes[i].GetComponent<UiUnitType>().UnitName;
 			upgradeWindows[upgradeWindows.Count - 1].transform.localScale *= 1.5f;
@@ -80,6 +81,7 @@ public class UpgradeController : MonoBehaviour {
 			}
 
             x += incX;
+			}
         }
     }
 
