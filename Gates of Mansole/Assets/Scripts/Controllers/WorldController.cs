@@ -83,6 +83,12 @@ public class WorldController : MonoBehaviour {
 	public GameObject enemyUpgradeMsg;
 	public float enemyUpgradeMsgTimeout;
 
+	public GameObject swipeExtraRewardTextPrefab;
+	public int maxExtraSwipeShard;
+	public float extraSwipeShardTimeout;
+	public float lastShardPickupTime;
+	public int totalSwipeShards;
+
 	private bool isFirstWin;
 	
 	private int OrbCurAmount;
@@ -158,6 +164,8 @@ public class WorldController : MonoBehaviour {
 		inTutorial = false;
 		cursorInst = null;
 		UnitCounterInst = null;
+		lastShardPickupTime = 0;
+		totalSwipeShards = 0;
 
 		Debug.Log (Player.tutorialState);
 
