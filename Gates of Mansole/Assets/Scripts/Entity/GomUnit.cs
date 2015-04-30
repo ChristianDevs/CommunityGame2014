@@ -173,15 +173,15 @@ public class GomUnit : GomObject {
 			return (int)_Type.kWall;
 		}
 
-		if (type.Equals("Shepherd"))
+		if (type.Equals("Shepherd")||type.Equals("OrcArcher"))
 			return (int)_Type.kBow;
-		else if (type.Equals("Evangelist"))
+		else if (type.Equals("Evangelist")||type.Equals("OrcSpear"))
 			return (int)_Type.kSpear;
-		else if (type.Equals("Elder"))
+		else if (type.Equals("Elder")||type.Equals("OrcStaff"))
 			return (int)_Type.kStaff;
-		else if (type.Equals ("Teacher"))
+		else if (type.Equals ("Teacher")||type.Equals("OrcSword"))
 			return (int)_Type.kSword;
-		else if (type.Equals ("Orator"))
+		else if (type.Equals ("Orator")||type.Equals("OrcWand"))
 			return (int)_Type.kWand;
 		else
 			return (int)_Type.kWall;
@@ -202,24 +202,29 @@ public class GomUnit : GomObject {
 	public float getMultiplier() {
 		float multiplier = 1.0f;
 		switch (attacker.GetComponent<GomUnit>().unitType) {
+		case "OrcArcher":
 		case "Shepherd":
-			if ((unitType == "Evangelist") || (unitType == "Orator"))
+			if ((unitType == "Evangelist") || (unitType == "Orator")||(unitType == "OrcSpear") || (unitType == "OrcWand"))
 				multiplier+=Random.Range (0.5f,1.0f);
 			break;
+		case "OrcSpear":
 		case "Evangelist":
-			if ((unitType == "Teacher") || (unitType == "Elder"))
+			if ((unitType == "Teacher") || (unitType == "Elder")||(unitType == "OrcSword") || (unitType == "OrcStaff"))
 				multiplier+=Random.Range (0.5f,1.0f);
 			break;
+		case "OrcStaff":
 		case "Elder":
-			if ((unitType == "Shepherd") || (unitType == "Teacher"))
+			if ((unitType == "Shepherd") || (unitType == "Teacher")||(unitType == "OrcArcher") || (unitType == "OrcSword"))
 				multiplier+=Random.Range (0.5f,1.0f);
 			break;
+		case "OrcSword":
 		case "Teacher":
-			if ((unitType == "Shepherd") || (unitType == "Orator"))
+			if ((unitType == "Shepherd") || (unitType == "Orator")||(unitType == "OrcArcher") || (unitType == "OrcWand"))
 				multiplier+=Random.Range (0.5f,1.0f);
 			break;
+		case "OrcWand":
 		case "Orator":
-			if ((unitType == "Evangelist") || (unitType == "Elder"))
+			if ((unitType == "Evangelist") || (unitType == "Elder")||(unitType == "OrcSpear") || (unitType == "OrcStaff"))
 				multiplier+=Random.Range (0.5f,1.0f);
 			break;
 		default:
