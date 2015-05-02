@@ -25,6 +25,12 @@ public class GomProjectile : GomObject {
         newX = 0;
         newY = 0;
 
+		// If target is already destroyed then destroy the projectile
+		if (newTarget == null) {
+			Destroy(gameObject);
+			return;
+		}
+
         if (tgt.transform.position.x > transform.position.x) {
             newX = 1;
         } else if (tgt.transform.position.x < transform.position.x) {
