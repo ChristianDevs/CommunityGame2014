@@ -136,7 +136,7 @@ PostDialogue:
     Statement:
         Speaker:Diabolus
         LeftImage:None
-        RightImage:1
+        RightImage:2
         Dialogue:I am Diabolus, and my will is your confession of your misdeeds.
     Statement:
         Speaker:Lady Willbewill
@@ -146,15 +146,15 @@ PostDialogue:
     Statement:
         Speaker:Diabolus
         LeftImage:None
-        RightImage:1
+        RightImage:2
         Dialogue:Ha! No misdeeds you say?
     Statement:
         Speaker:Diabolus
         LeftImage:None
-        RightImage:1
+        RightImage:2
         Dialogue:You oppress the people of the city with the will of King Shaddai.
     Statement:
         Speaker:Diabolus
         LeftImage:None
-        RightImage:1
+        RightImage:2
         Dialogue:Before this day is through we shall see the end of it.
