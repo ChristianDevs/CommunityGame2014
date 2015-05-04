@@ -604,155 +604,155 @@ public class WorldController : MonoBehaviour {
 
 		// Check if any waves need releasing
 		if (currentLevel != null) {
-			WaveList wl;
-			
-			wl = currentLevel.GetComponent<WaveList>();
-
-			// Check if Release Button should be enabled
-			if ((numUnitsSpawnedLeftInWave == 0) &&
-			    (ReleaseButton.activeSelf == false) &&
-			    (CurWave < (wl.waves.Count - 1))) {
-				ReleaseButton.SetActive(true);
-			}
-			
-			// Show the player how to spawn a unit
-			if ((Player.tutorialState == 1) && (inTutorial == false)) {
-				cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
-				inTutorial = true;
-			} else if ((Player.tutorialState == 10) && (inTutorial == false)) {
-				cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
-				inTutorial = true;
-			}
-			
-			// Go through each wave and see if it is time to start that wave
-			for (int wvInd = 0; wvInd < wl.waves.Count; wvInd++) {
-				Wave wv = wl.waves[wvInd];
+			if (isLevelDone == false) {
+				WaveList wl;
 				
-				if ((Player.tutorialState == 0) ||
-				    (Player.tutorialState == 1) ||
-				    (Player.tutorialState == 3) ||
-				    (Player.tutorialState == 4)) {
-					levelStartTime += Time.deltaTime;
-					break;
+				wl = currentLevel.GetComponent<WaveList>();
+
+				// Check if Release Button should be enabled
+				if ((numUnitsSpawnedLeftInWave == 0) &&
+				    (ReleaseButton.activeSelf == false) &&
+				    (CurWave < (wl.waves.Count - 1))) {
+					ReleaseButton.SetActive(true);
 				}
 				
-				if (wv.waitTime + levelStartTime < Time.time) {
+				// Show the player how to spawn a unit
+				if ((Player.tutorialState == 1) && (inTutorial == false)) {
+					cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+					inTutorial = true;
+				} else if ((Player.tutorialState == 10) && (inTutorial == false)) {
+					cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+					inTutorial = true;
+				}
+				
+				// Go through each wave and see if it is time to start that wave
+				for (int wvInd = 0; wvInd < wl.waves.Count; wvInd++) {
+					Wave wv = wl.waves[wvInd];
 					
-					if (wl.waveStarted[wvInd] == false) {
-						CurWave++;
-						numUnitsSpawnedLeftInWave = wv.units.Length;
-						foreach(int upWave in wl.upgradeAtWave) {
-							if (upWave == wvInd) {
-								// Tell the player the enemy was upgraded
-								enemyUpgradeMsg.SetActive(true);
-								enemyUpgradeMsgTimeout = Time.time + 3f;
-
-								// Upgrade the enemy units
-								foreach(GameObject ut in unitTypes) {
-									PropertyStats unitStats = ut.GetComponent<UiUnitType>().getEnemyStats();
-									unitStats.upgradeUnit(ut.GetComponent<UiUnitType>().UnitName);
-								}
-
-								// Disable the Wave Release button after the last wave is released
-								if (wvInd == (wl.waves.Count - 1)) {
-									ReleaseButton.SetActive(false);
-								}
-							}
-						}
-						wl.waveStarted[wvInd] = true;
+					if ((Player.tutorialState == 0) ||
+					    (Player.tutorialState == 1) ||
+					    (Player.tutorialState == 3) ||
+					    (Player.tutorialState == 4)) {
+						levelStartTime += Time.deltaTime;
+						break;
 					}
 					
-					// Go through each unit and see if it is time to spawn it
-					foreach (WaveUnit ut in wv.units) {
-						if (ut.created == false) {
-							
-							if ((wv.waitTime + ut.time + levelStartTime) < Time.time) {
-								bool repeat;
-								
-								do {
-									int row;
-									int col;
-									
-									repeat = false;
-									
-									switch (ut.SpawnLocType) {
-									case WaveUnit._spawnLocType.RandRow:
-										if (curLevelAttackerDir == WaveList._direction.Right) {
-											col = 0;
-										}
-										else if (curLevelAttackerDir == WaveList._direction.Left) {
-											col = gridSize.col - 1;
-										}
-										else {
-											col = 0;
-										}
-										row = Random.Range(0, (int)gridSize.row);
-										break;
-									case WaveUnit._spawnLocType.RandTile:
-										row = 0;
-										col = 0;
-										break;
-									case WaveUnit._spawnLocType.SpecifiedRow:
-										row = (int)ut.Tile.x;
+					if (wv.waitTime + levelStartTime < Time.time) {
+						
+						if (wl.waveStarted[wvInd] == false) {
+							CurWave++;
+							numUnitsSpawnedLeftInWave = wv.units.Length;
+							foreach(int upWave in wl.upgradeAtWave) {
+								if (upWave == wvInd) {
+									// Tell the player the enemy was upgraded
+									enemyUpgradeMsg.SetActive(true);
+									enemyUpgradeMsgTimeout = Time.time + 3f;
 
-										if (isPlayerAttacker == true) {
-											col = 0;
-										} else {
-											if (attackerDir == UnitAnimation._direction.DirRight) {
+									// Upgrade the enemy units
+									foreach(GameObject ut in unitTypes) {
+										PropertyStats unitStats = ut.GetComponent<UiUnitType>().getEnemyStats();
+										unitStats.upgradeUnit(ut.GetComponent<UiUnitType>().UnitName);
+									}
+
+									// Disable the Wave Release button after the last wave is released
+									if (wvInd == (wl.waves.Count - 1)) {
+										ReleaseButton.SetActive(false);
+									}
+								}
+							}
+							wl.waveStarted[wvInd] = true;
+						}
+						
+						// Go through each unit and see if it is time to spawn it
+						foreach (WaveUnit ut in wv.units) {
+							if (ut.created == false) {
+								
+								if ((wv.waitTime + ut.time + levelStartTime) < Time.time) {
+									bool repeat;
+									
+									do {
+										int row;
+										int col;
+										
+										repeat = false;
+										
+										switch (ut.SpawnLocType) {
+										case WaveUnit._spawnLocType.RandRow:
+											if (curLevelAttackerDir == WaveList._direction.Right) {
 												col = 0;
-											} else {
+											}
+											else if (curLevelAttackerDir == WaveList._direction.Left) {
 												col = gridSize.col - 1;
 											}
-										}
-										break;
-									case WaveUnit._spawnLocType.SpecifiedTile:
-										row = (int)ut.Tile.x;
-										col = (int)ut.Tile.y;
-										break;
-									default:
-										row = 0;
-										col = 0;
-										break;
-									}
-									
-									ut.created = true;
-									if ((row < gridSize.row) && (col < gridSize.col)) {
-										if (isPlayerAttacker == true) {
-											if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
-												tileContents[row][col].SendMessage("SetIdleDirection", defenderDir, SendMessageOptions.DontRequireReceiver);
-												totalDefenders++;
-												numUnitsSpawnedLeftInWave--;
+											else {
+												col = 0;
 											}
-										}
-										else {
-											if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
-												tileContents[row][col].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
-												totalAttackers++;
-												numUnitsSpawnedLeftInWave--;
+											row = Random.Range(0, (int)gridSize.row);
+											break;
+										case WaveUnit._spawnLocType.RandTile:
+											row = 0;
+											col = 0;
+											break;
+										case WaveUnit._spawnLocType.SpecifiedRow:
+											row = (int)ut.Tile.x;
+
+											if (isPlayerAttacker == true) {
+												col = 0;
 											} else {
-												// Retry placing the attacking enemy
-												if (ut.SpawnLocType == WaveUnit._spawnLocType.RandRow) {
-													repeat = true;
+												if (attackerDir == UnitAnimation._direction.DirRight) {
+													col = 0;
+												} else {
+													col = gridSize.col - 1;
+												}
+											}
+											break;
+										case WaveUnit._spawnLocType.SpecifiedTile:
+											row = (int)ut.Tile.x;
+											col = (int)ut.Tile.y;
+											break;
+										default:
+											row = 0;
+											col = 0;
+											break;
+										}
+										
+										ut.created = true;
+										if ((row < gridSize.row) && (col < gridSize.col)) {
+											if (isPlayerAttacker == true) {
+												if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
+													tileContents[row][col].SendMessage("SetIdleDirection", defenderDir, SendMessageOptions.DontRequireReceiver);
+													totalDefenders++;
+													numUnitsSpawnedLeftInWave--;
+												}
+											}
+											else {
+												if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
+													tileContents[row][col].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
+													totalAttackers++;
+													numUnitsSpawnedLeftInWave--;
+												} else {
+													// Retry placing the attacking enemy
+													if (ut.SpawnLocType == WaveUnit._spawnLocType.RandRow) {
+														repeat = true;
+													}
 												}
 											}
 										}
-									}
-								} while (repeat);
+									} while (repeat);
+								}
 							}
 						}
 					}
+
+					// Give the player bonus shards to release waves early
+					if (CurWave < currentLevel.GetComponent<WaveList>().waves.Count) {
+						float nextWaveTime = currentLevel.GetComponent<WaveList>().waves[CurWave].waitTime - (Time.time - levelStartTime);
+						int nextWaveEnemies = currentLevel.GetComponent<WaveList>().waves[CurWave].units.Length;
+						earlyReleaseShards = (int)((nextWaveTime * nextWaveEnemies) * 0.1f);
+					}
 				}
 
-				// Give the player bonus shards to release waves early
-				if (CurWave < currentLevel.GetComponent<WaveList>().waves.Count) {
-					float nextWaveTime = currentLevel.GetComponent<WaveList>().waves[CurWave].waitTime - (Time.time - levelStartTime);
-					int nextWaveEnemies = currentLevel.GetComponent<WaveList>().waves[CurWave].units.Length;
-					earlyReleaseShards = (int)((nextWaveTime * nextWaveEnemies) * 0.1f);
-				}
-			}
-			
-			// Check game over conditions
-			if (isLevelDone == false) {
+				// Check game over conditions
 				if (isPlayerAttacker == true) {
 					if ((letThroughAttackers >= wl.AttackersLetThrough) &&
 					    (totalAttackers == 0)) {
@@ -789,9 +789,8 @@ public class WorldController : MonoBehaviour {
 						winLevel();
 					}
 				}
-			}
-			// Handle the level being done
-			if (isLevelDone == true) {
+			} else {
+				// Handle the level being done
 				if (loseMessage.activeSelf != true) {
 					state = _WorldState.CollectOrbs;
 					if (currentLevel.GetComponent<WaveList>().postLevelDialogue.Count > 0) {
@@ -799,6 +798,7 @@ public class WorldController : MonoBehaviour {
 					}
 				}
 			}
+
 			if (Input.GetMouseButtonDown(0)) {
 				RaycastHit hitSquare;
 				
