@@ -620,9 +620,19 @@ public class WorldController : MonoBehaviour {
 				if ((Player.tutorialState == 1) && (inTutorial == false)) {
 					cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
 					inTutorial = true;
+					UiTile blinkTile = new UiTile();
+
+					blinkTile.col = 0;
+					blinkTile.row = 2;
+					map.SendMessage("blinkTile", blinkTile, SendMessageOptions.DontRequireReceiver);
 				} else if ((Player.tutorialState == 10) && (inTutorial == false)) {
 					cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
 					inTutorial = true;
+					UiTile blinkTile = new UiTile();
+					
+					blinkTile.col = 0;
+					blinkTile.row = 2;
+					map.SendMessage("blinkTile", blinkTile, SendMessageOptions.DontRequireReceiver);
 				}
 				
 				// Go through each wave and see if it is time to start that wave
@@ -1052,11 +1062,13 @@ public class WorldController : MonoBehaviour {
 							if ((tile.col == 0 && tile.row == 2)) {
 								Player.completeTutorialState();
 								inTutorial = false;
+								map.SendMessage("stopBlink", null, SendMessageOptions.DontRequireReceiver);
 								Destroy(cursorInst);
 							}
 						} else if ((Player.tutorialState == 10) && (inTutorial == true)) {
 							cursorInst.transform.position = new Vector3(5.5f,-6f, 0);
 							cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
+							map.SendMessage("stopBlink", null, SendMessageOptions.DontRequireReceiver);
 						}
 					}
 					break;

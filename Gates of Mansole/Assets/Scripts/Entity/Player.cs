@@ -105,6 +105,8 @@ public class Player : MonoBehaviour {
 		chapterProgression = 0;
 		currentChapter = 0;
 		PlayerPrefs.SetInt ("chapterProgression", chapterProgression);
+		PlayerPrefs.SetFloat ("LastLogon", 0);
+		PlayerPrefs.SetInt ("NumberConsecutiveLogons", 0);
 		PlayerPrefs.Save ();
     }
 
@@ -271,5 +273,28 @@ public class Player : MonoBehaviour {
 	static public void completeTutorialState() {
 		tutorialState++;
 		PlayerPrefs.SetInt ("tutorialstate", tutorialState);
+	}
+
+	static public int getNumConsLogons() {
+		return PlayerPrefs.GetInt ("NumberConsecutiveLogons");
+	}
+
+	static public string getLastLogon() {
+		return PlayerPrefs.GetString ("LastLogon");
+	}
+
+	static public void addLogon() {
+		int lastLogon;
+
+		lastLogon = getNumConsLogons ();
+		lastLogon++;
+
+		PlayerPrefs.SetInt ("NumberConsecutiveLogons", lastLogon);
+		PlayerPrefs.SetString ("LastLogon", System.DateTime.Parse(getLastLogon()).AddDays(1).ToString());
+	}
+
+	static public void resetLogon() {
+		PlayerPrefs.SetInt ("NumberConsecutiveLogons", 0);
+		PlayerPrefs.SetString ("LastLogon", System.DateTime.Now.ToString());
 	}
 }

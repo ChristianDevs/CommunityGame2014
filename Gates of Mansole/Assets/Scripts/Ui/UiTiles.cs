@@ -12,12 +12,34 @@ public class UiTiles : MonoBehaviour {
 	private Vector2 downTile;
 	private Vector2 upTile;
 
+	private UiTile BlinkTile;
+	private Color blinkColor;
+	private float blinkTime;
+
 	// Use this for initialization
 	void Start () {
+		BlinkTile = new UiTile();
+		BlinkTile.row = -1;
+		BlinkTile.col = -1;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if ((BlinkTile.row >= 0) && (BlinkTile.col >= 0)) {
+			if (blinkTime < Time.time) {
+				if (blinkColor == Color.gray) {
+					blinkColor = Color.white;
+				} else {
+					blinkColor = Color.gray;
+				}
+
+				foreach(SpriteRenderer sr in lanes[BlinkTile.row].GetComponent<UiRow>().rowTiles[BlinkTile.col].GetComponentsInChildren<SpriteRenderer>()) {
+					sr.color = blinkColor;
+				}
+
+				blinkTime = Time.time + 0.5f;
+			}
+		}
 	}
 
 	public void CreateLane(int terrainType) {
@@ -58,4 +80,19 @@ public class UiTiles : MonoBehaviour {
 
         return retTile;
     }
+
+	public void blinkTile(UiTile tile) {
+		blinkTime = 0;
+		BlinkTile.col = tile.col;
+		BlinkTile.row = tile.row;
+	}
+
+	public void stopBlink() {
+		foreach(SpriteRenderer sr in lanes[BlinkTile.row].GetComponent<UiRow>().rowTiles[BlinkTile.col].GetComponentsInChildren<SpriteRenderer>()) {
+			sr.color = Color.white;
+		}
+
+		BlinkTile.row = -1;
+		BlinkTile.col = -1;
+	}
 }
