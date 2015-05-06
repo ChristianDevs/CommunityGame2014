@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -19,6 +19,9 @@ public class CinematicController : MonoBehaviour {
 	private string type;
 	private bool isDone;
 	private int lastMusic;
+	private string dialogueItem;
+	private int dialogueLetterIndex;
+	private float dialogueAddLetterTime;
 
 	public enum _action {
 		None,
@@ -67,6 +70,9 @@ public class CinematicController : MonoBehaviour {
 		lastMusic = -1;
 		StartCoroutine (Init (cinFile));
 		dialogueWindow.SetActive(false);
+		dialogueItem = "";
+		dialogueLetterIndex = 0;
+		dialogueAddLetterTime = 0;
 	}
 
 	public IEnumerator Init(string filePath) {
@@ -156,7 +162,10 @@ public class CinematicController : MonoBehaviour {
 
 		// Increment non-action Cinematic Entries on button press
 		if (Input.GetMouseButtonDown(0)) {
-			if (Cinematic[entryIndex-1].Action == _action.None) {
+			if (dialogueLetterIndex < dialogueItem.Length) {
+				dialogueText.text += dialogueItem.Substring(dialogueLetterIndex);
+				dialogueLetterIndex = dialogueItem.Length;
+			} else if (Cinematic[entryIndex-1].Action == _action.None) {
 				entryChangeTime = 0;
 			}
 		}
@@ -177,7 +186,8 @@ public class CinematicController : MonoBehaviour {
 
 				if (Cinematic[entryIndex].Dialogue != "None") {
 					dialogueWindow.SetActive(true);
-					dialogueText.text = processDialogue(Cinematic[entryIndex].Speaker, Cinematic[entryIndex].Dialogue);
+					dialogueItem = processDialogue(Cinematic[entryIndex].Speaker, Cinematic[entryIndex].Dialogue,dialogueText);
+					dialogueLetterIndex = 0;
 				} else {
 					dialogueWindow.SetActive(false);
 				}
@@ -212,16 +222,20 @@ public class CinematicController : MonoBehaviour {
 			// Update the Action
 			HandleAction(Cinematic[entryIndex-1].Action);
 		}
+
+		AddLetter();
 	}
-	
-	string processDialogue(string speaker, string text) {
+
+	string processDialogue(string speaker, string text, TextMesh outText) {
 		string newText = "";
 		int lineLenth = 0;
 		char[] seps = { ' ' };
-
+		
+		outText.text = "";
+		
 		if (speaker != "None") {
-			newText += speaker;
-			newText += ":\n\n";
+			outText.text += speaker;
+			outText.text += ":\n\n";
 		}
 		
 		if (text == null) {
@@ -284,6 +298,15 @@ public class CinematicController : MonoBehaviour {
 			break;
 		default:
 			break;
+		}
+	}
+
+	void AddLetter() {
+		if ((dialogueLetterIndex < dialogueItem.Length) &&
+		    (dialogueAddLetterTime <= Time.time)) {
+			dialogueText.text += dialogueItem[dialogueLetterIndex];
+			dialogueLetterIndex++;
+			dialogueAddLetterTime = Time.time + 0.05f;
 		}
 	}
 }

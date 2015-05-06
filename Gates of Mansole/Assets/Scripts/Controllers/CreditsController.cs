@@ -35,7 +35,7 @@ public class CreditsController : MonoBehaviour {
 		Credits.Add ("Raul Rivera \n Lead Graphic Artist");
 		Credits.Add ("Arron Swan \n Graphic Artist");
 		Credits.Add ("Josh Niehenke \n Programmer \n Level Designer");
-		Credits.Add ("Stephen Sleeper \n Musical Score Composition");
+		Credits.Add ("Stephen Sleeper \n Musical Score Composition\n \"Victorius\" \"Defeat\"\n \"Gates of Mansoul\"\n \"Take Action\"");
 		Credits.Add ("Ricardo Lee \n Graphic Artist");
 		Credits.Add ("Brandon McCowan \n Programmer");
 		Credits.Add ("b-o \n Graphic Artist");
