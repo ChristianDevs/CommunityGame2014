@@ -108,6 +108,11 @@ public class WorldController : MonoBehaviour {
 	private bool inTutorial;
 	private GameObject cursorInst;
 	public bool advanceTutorial;
+	private int unitsToRelease;
+
+	private string dialogueItem;
+	private int dialogueLetterIndex;
+	private float dialogueAddLetterTime;
 
 	struct _projectileEntry {
 		public GameObject projectile;
@@ -166,6 +171,10 @@ public class WorldController : MonoBehaviour {
 		UnitCounterInst = null;
 		lastShardPickupTime = 0;
 		totalSwipeShards = 0;
+		unitsToRelease = -1;
+		dialogueItem = "";
+		dialogueLetterIndex = 0;
+		dialogueAddLetterTime = 0;
 
 		Debug.Log (Player.tutorialState);
 
@@ -492,7 +501,8 @@ public class WorldController : MonoBehaviour {
 		
 		if (dialogueIndex == -1) {
 			dialogueIndex = 0;
-			dialogueText.text = processDialogue(dialogue[dialogueIndex].Speaker, dialogue[dialogueIndex].dialogue);
+			dialogueItem = processDialogue(dialogue[dialogueIndex].Speaker, dialogue[dialogueIndex].dialogue, dialogueText);
+			dialogueLetterIndex = 0;
 			
 			if (dialogue[dialogueIndex].LeftImage == "None") {
 				leftImage.sprite = null;
@@ -528,37 +538,56 @@ public class WorldController : MonoBehaviour {
 					return true;
 				}
 
-				dialogueText.text = processDialogue(dialogue[dialogueIndex].Speaker, dialogue[dialogueIndex].dialogue);
-				
-				if (dialogue[dialogueIndex].LeftImage == "None") {
-					leftImage.sprite = null;
-				}
-				else if (int.Parse(dialogue[dialogueIndex].LeftImage) < Images.Length) {
-					leftImage.sprite = Images[int.Parse(dialogue[dialogueIndex].LeftImage)];
-				}
-				
-				if (dialogue[dialogueIndex].RightImage == "None") {
-					rightImage.sprite = null;
-				}
-				else if (int.Parse(dialogue[dialogueIndex].RightImage) < Images.Length) {
-					rightImage.sprite = Images[int.Parse(dialogue[dialogueIndex].RightImage)];
+				if (dialogueLetterIndex < dialogueItem.Length) {
+					dialogueText.text += dialogueItem.Substring(dialogueLetterIndex);
+					dialogueLetterIndex = dialogueItem.Length;
+				} else {
+					dialogueItem = processDialogue(dialogue[dialogueIndex].Speaker, dialogue[dialogueIndex].dialogue, dialogueText);
+					dialogueLetterIndex = 0;
+					
+					if (dialogue[dialogueIndex].LeftImage == "None") {
+						leftImage.sprite = null;
+					}
+					else if (int.Parse(dialogue[dialogueIndex].LeftImage) < Images.Length) {
+						leftImage.sprite = Images[int.Parse(dialogue[dialogueIndex].LeftImage)];
+					}
+					
+					if (dialogue[dialogueIndex].RightImage == "None") {
+						rightImage.sprite = null;
+					}
+					else if (int.Parse(dialogue[dialogueIndex].RightImage) < Images.Length) {
+						rightImage.sprite = Images[int.Parse(dialogue[dialogueIndex].RightImage)];
+					}
 				}
 			} else {
 				return true;
 			}
 		}
 
+		AddLetter();
+
 		return false;
 	}
 	
-	string processDialogue(string speaker, string text) {
+	void AddLetter() {
+		if ((dialogueLetterIndex < dialogueItem.Length) &&
+		    (dialogueAddLetterTime <= Time.time)) {
+			dialogueText.text += dialogueItem[dialogueLetterIndex];
+			dialogueLetterIndex++;
+			dialogueAddLetterTime = Time.time + 0.05f;
+		}
+	}
+	
+	string processDialogue(string speaker, string text, TextMesh outText) {
 		string newText = "";
 		int lineLenth = 0;
 		char[] seps = { ' ' };
 
+		outText.text = "";
+
 		if (speaker != "None") {
-			newText += speaker;
-			newText += ":\n\n";
+			outText.text += speaker;
+			outText.text += ":\n\n";
 		}
 
 		if (text == null) {
@@ -598,7 +627,7 @@ public class WorldController : MonoBehaviour {
 			Player.completeTutorialState();
 			advanceTutorial = false;
 			Destroy(cursorInst);
-
+			unitsToRelease = -1;
 			SpiritShardMsgTutorial.SetActive(true);
 		}
 
@@ -625,6 +654,7 @@ public class WorldController : MonoBehaviour {
 					blinkTile.col = 0;
 					blinkTile.row = 2;
 					map.SendMessage("blinkTile", blinkTile, SendMessageOptions.DontRequireReceiver);
+					unitsToRelease = 1;
 				} else if ((Player.tutorialState == 10) && (inTutorial == false)) {
 					cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
 					inTutorial = true;
@@ -633,6 +663,7 @@ public class WorldController : MonoBehaviour {
 					blinkTile.col = 0;
 					blinkTile.row = 2;
 					map.SendMessage("blinkTile", blinkTile, SendMessageOptions.DontRequireReceiver);
+					unitsToRelease = 1;
 				}
 				
 				// Go through each wave and see if it is time to start that wave
@@ -643,6 +674,11 @@ public class WorldController : MonoBehaviour {
 					    (Player.tutorialState == 1) ||
 					    (Player.tutorialState == 3) ||
 					    (Player.tutorialState == 4)) {
+						levelStartTime += Time.deltaTime;
+						break;
+					}
+
+					if (unitsToRelease == 0) {
 						levelStartTime += Time.deltaTime;
 						break;
 					}
@@ -733,6 +769,10 @@ public class WorldController : MonoBehaviour {
 													tileContents[row][col].SendMessage("SetIdleDirection", defenderDir, SendMessageOptions.DontRequireReceiver);
 													totalDefenders++;
 													numUnitsSpawnedLeftInWave--;
+
+													if ( unitsToRelease > 0) {
+														unitsToRelease--;
+													}
 												}
 											}
 											else {
@@ -740,6 +780,10 @@ public class WorldController : MonoBehaviour {
 													tileContents[row][col].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
 													totalAttackers++;
 													numUnitsSpawnedLeftInWave--;
+													
+													if ( unitsToRelease > 0) {
+														unitsToRelease--;
+													}
 												} else {
 													// Retry placing the attacking enemy
 													if (ut.SpawnLocType == WaveUnit._spawnLocType.RandRow) {
@@ -1044,7 +1088,31 @@ public class WorldController : MonoBehaviour {
 		if ((tile.col < gridSize.col) && (tile.row < gridSize.row) && (tile.col >= 0) && (tile.row >= 0)) {
 			for (int i = 0; i < unitsUIinst.Count; ++i) {
 				if (selectedUiUnit == unitsUIinst[i]) {
-					if (SpawnUnit(unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(), (int)tile.row, (int)tile.col, GomObject.Faction.Player)) {
+					bool spawnSuccess;
+
+					spawnSuccess = SpawnUnit(unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(),
+					                         (int)tile.row, (int)tile.col,
+					                         GomObject.Faction.Player);
+
+					// If spawn fails try spawning to the left
+					if (spawnSuccess == false) {
+						tile.col -= 1;
+						
+						spawnSuccess = SpawnUnit(unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(),
+						                         (int)tile.row, (int)tile.col,
+						                         GomObject.Faction.Player);
+					}
+
+					// Try again to the right
+					if (spawnSuccess == false) {
+						tile.col += 2;
+						
+						spawnSuccess = SpawnUnit(unitTypes[i].GetComponent<UiUnitType>().getRandomUnit(),
+						                         (int)tile.row, (int)tile.col,
+						                         GomObject.Faction.Player);
+					}
+
+					if (spawnSuccess) {
 						UnitAnimation._direction dir;
 						
 						if (isPlayerAttacker == true) {
