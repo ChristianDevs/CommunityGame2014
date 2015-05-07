@@ -32,9 +32,13 @@ public class LevelSelectController : MonoBehaviour {
 		inTutorial = false;
 		UpdateMap();
 
-		if (Player.currentChapter < 2) {
+		if (Player.levelComplete[0][14] <= 0) {
 			foreach(GameObject btn in ChapterButtons) {
 				btn.SetActive(false);
+			}
+		} else {
+			foreach(GameObject btn in ChapterButtons) {
+				btn.SetActive(true);
 			}
 		}
 		
@@ -110,8 +114,11 @@ public class LevelSelectController : MonoBehaviour {
 				}
 			}
 		}
-		
-		if (Player.getNumLevelsBeaten(Player.currentChapter) >= Player.levelComplete[Player.currentChapter].Count) {
+
+		//if (Player.chapterProgression >= Player.levelFileNames.Count) {
+		if (Player.chapterProgression >= 3) {
+			// Chapter 3 is the latest implemented, use commented out if statement when ch4 is implemented
+			// And change the message to indicate the game has been won.
 			BeatGameMessage.SetActive(true);
 		} else {
 			BeatGameMessage.SetActive(false);

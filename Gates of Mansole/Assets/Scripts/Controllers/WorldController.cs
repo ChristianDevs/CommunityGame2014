@@ -1803,6 +1803,11 @@ public class WorldController : MonoBehaviour {
 	void buttonPush(string buttonName) {
 		switch(buttonName) {
 		case "Upgrade":
+			// Uncomment out to make the Release button automatically win the level
+			//winLevel();
+			//winMessage.SetActive(true);
+			//return;
+
 			int unitType = -1;
 			
 			if (selectedUnit == null) {
@@ -1836,10 +1841,6 @@ public class WorldController : MonoBehaviour {
 			}
 			break;
 		case "Release":
-			// Uncomment out to make the Release button automatically win the level
-			//winLevel();
-			//winMessage.SetActive(true);
-			//return;
 			if ((CurWave) < currentLevel.GetComponent<WaveList>().waves.Count) {
 				float nextWaveTime = currentLevel.GetComponent<WaveList>().waves[CurWave].waitTime;
 				
