@@ -32,9 +32,13 @@ public class LevelSelectController : MonoBehaviour {
 		inTutorial = false;
 		UpdateMap();
 
-		if (Player.currentChapter < 2) {
+		if (Player.levelComplete[0][14] <= 0) {
 			foreach(GameObject btn in ChapterButtons) {
 				btn.SetActive(false);
+			}
+		} else {
+			foreach(GameObject btn in ChapterButtons) {
+				btn.SetActive(true);
 			}
 		}
 		
