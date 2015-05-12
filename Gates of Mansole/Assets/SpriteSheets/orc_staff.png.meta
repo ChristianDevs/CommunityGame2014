@@ -1,427 +1,189 @@
 fileFormatVersion: 2
-guid: 179bb29e17176504aa2fd51f917206bd
+guid: 97bfbc9b3feaf03408f2f573a2cbcb60
 TextureImporter:
   fileIDToRecycleName:
-    21300000: orc_swordsman_0
-    21300002: orc_swordsman_1
-    21300004: orc_swordsman_2
-    21300006: orc_swordsman_3
-    21300008: orc_swordsman_4
-    21300010: orc_swordsman_5
-    21300012: orc_swordsman_6
-    21300014: orc_swordsman_7
-    21300016: orc_swordsman_8
-    21300018: orc_swordsman_9
-    21300020: orc_swordsman_10
-    21300022: orc_swordsman_11
-    21300024: orc_swordsman_12
-    21300026: orc_swordsman_13
-    21300028: orc_swordsman_14
-    21300030: orc_swordsman_15
-    21300032: orc_swordsman_16
-    21300034: orc_swordsman_17
-    21300036: orc_swordsman_18
-    21300038: orc_swordsman_19
-    21300040: orc_swordsman_20
-    21300042: orc_swordsman_21
-    21300044: orc_swordsman_22
-    21300046: orc_swordsman_23
-    21300048: orc_swordsman_24
-    21300050: orc_swordsman_25
-    21300052: orc_swordsman_26
-    21300054: orc_swordsman_27
-    21300056: orc_swordsman_28
-    21300058: orc_swordsman_29
-    21300060: orc_swordsman_30
-    21300062: orc_swordsman_31
-    21300064: orc_swordsman_32
-    21300066: orc_swordsman_33
-    21300068: orc_swordsman_34
-    21300070: orc_swordsman_35
-    21300072: orc_swordsman_36
-    21300074: orc_swordsman_37
-    21300076: orc_swordsman_38
-    21300078: orc_swordsman_39
-    21300080: orc_swordsman_40
-    21300082: orc_swordsman_41
-    21300084: orc_swordsman_42
-    21300086: orc_swordsman_43
-    21300088: orc_swordsman_44
-    21300090: orc_swordsman_45
-    21300092: orc_swordsman_46
-    21300094: orc_swordsman_47
-    21300096: orc_swordsman_48
-    21300098: orc_swordsman_49
-    21300100: orc_swordsman_50
-    21300102: orc_swordsman_51
-    21300104: orc_swordsman_52
-    21300106: orc_swordsman_53
-    21300108: orc_swordsman_54
-    21300110: orc_swordsman_55
-    21300112: orc_swordsman_56
-    21300114: orc_swordsman_57
-    21300116: orc_swordsman_58
-    21300118: orc_swordsman_59
-    21300120: orc_swordsman_60
-    21300122: orc_swordsman_61
-    21300124: orc_swordsman_62
-    21300126: orc_swordsman_63
-    21300128: orc_swordsman_64
-    21300130: orc_swordsman_65
-    21300132: orc_swordsman_66
-    21300134: orc_swordsman_67
-    21300136: orc_swordsman_68
-    21300138: orc_swordsman_69
-    21300140: orc_swordsman_70
-    21300142: orc_swordsman_71
-    21300144: orc_swordsman_72
-    21300146: orc_swordsman_73
-    21300148: orc_swordsman_74
-    21300150: orc_swordsman_75
-    21300152: orc_swordsman_76
-    21300154: orc_swordsman_77
-    21300156: orc_swordsman_78
-    21300158: orc_swordsman_79
-    21300160: orc_swordsman_80
-    21300162: orc_swordsman_81
-    21300164: orc_swordsman_82
-    21300166: orc_swordsman_83
-    21300168: orc_swordsman_84
-    21300170: orc_swordsman_85
-    21300172: orc_swordsman_86
-    21300174: orc_swordsman_87
-    21300176: orc_swordsman_88
-    21300178: orc_swordsman_89
-    21300180: orc_swordsman_90
-    21300182: orc_swordsman_91
-    21300184: orc_swordsman_92
-    21300186: orc_swordsman_93
-    21300188: orc_swordsman_94
-    21300190: orc_swordsman_95
-    21300192: orc_swordsman_96
-    21300194: orc_swordsman_97
-    21300196: orc_swordsman_98
-    21300198: orc_swordsman_99
-    21300200: orc_swordsman_100
-    21300202: orc_swordsman_101
-    21300204: orc_swordsman_102
-    21300206: orc_swordsman_103
-    21300208: orc_swordsman_104
-    21300210: orc_swordsman_105
-    21300212: orc_swordsman_106
-    21300214: orc_swordsman_107
-    21300216: orc_swordsman_108
-    21300218: orc_swordsman_109
-    21300220: orc_swordsman_110
-    21300222: orc_swordsman_111
-    21300224: orc_swordsman_112
-    21300226: orc_swordsman_113
-    21300228: orc_swordsman_114
-    21300230: orc_swordsman_115
-    21300232: orc_swordsman_116
-    21300234: orc_swordsman_117
-    21300236: orc_swordsman_118
-    21300238: orc_swordsman_119
-    21300240: orc_swordsman_120
-    21300242: orc_swordsman_121
-    21300244: orc_swordsman_122
-    21300246: orc_swordsman_123
-    21300248: orc_swordsman_124
-    21300250: orc_swordsman_125
-    21300252: orc_swordsman_126
-    21300254: orc_swordsman_127
-    21300256: orc_swordsman_128
-    21300258: orc_swordsman_129
-    21300260: orc_swordsman_130
-    21300262: orc_swordsman_131
-    21300264: orc_swordsman_132
-    21300266: orc_swordsman_133
-    21300268: orc_swordsman_134
-    21300270: orc_swordsman_135
-    21300272: orc_swordsman_136
-    21300274: orc_swordsman_137
-    21300276: orc_swordsman_138
-    21300278: orc_swordsman_139
-    21300280: orc_swordsman_140
-    21300282: orc_swordsman_141
-    21300284: orc_swordsman_142
-    21300286: orc_swordsman_143
-    21300288: orc_swordsman_144
-    21300290: orc_swordsman_145
-    21300292: orc_swordsman_146
-    21300294: orc_swordsman_147
-    21300296: orc_swordsman_148
-    21300298: orc_swordsman_149
-    21300300: orc_swordsman_150
-    21300302: orc_swordsman_151
-    21300304: orc_swordsman_152
-    21300306: orc_swordsman_153
-    21300308: orc_swordsman_154
-    21300310: orc_swordsman_155
-    21300312: orc_swordsman_156
-    21300314: orc_swordsman_157
-    21300316: orc_swordsman_158
-    21300318: orc_swordsman_159
-    21300320: orc_swordsman_160
-    21300322: orc_swordsman_161
-    21300324: orc_swordsman_162
-    21300326: orc_swordsman_163
-    21300328: orc_swordsman_164
-    21300330: orc_swordsman_165
-    21300332: orc_swordsman_166
-    21300334: orc_swordsman_167
-    21300336: orc_swordsman_168
-    21300338: orc_swordsman_169
-    21300340: orc_swordsman_170
-    21300342: orc_swordsman_171
-    21300344: orc_swordsman_172
-    21300346: orc_swordsman_173
-    21300348: orc_swordsman_174
-    21300350: orc_swordsman_175
-    21300352: orc_swordsman_176
-    21300354: orc_swordsman_177
-    21300356: orc_swordsman_178
-    21300358: orc_swordsman_179
-    21300360: orc_swordsman_180
-    21300362: orc_swordsman_181
-    21300364: orc_swordsman_182
-    21300366: orc_swordsman_183
-    21300368: orc_swordsman_184
-    21300370: orc_swordsman_185
-    21300372: orc_swordsman_186
-    21300374: orc_swordsman_187
-    21300376: orc_swordsman_188
-    21300378: orc_swordsman_189
-    21300380: orc_swordsman_190
-    21300382: orc_swordsman_191
-    21300384: orc_swordsman_192
-    21300386: orc_swordsman_193
-    21300388: orc_swordsman_194
-    21300390: orc_swordsman_195
-    21300392: orc_swordsman_196
-    21300394: orc_swordsman_197
-    21300396: orc_swordsman_198
-    21300398: orc_swordsman_199
-    21300400: orc_swordsman_200
-    21300402: orc_swordsman_201
-    21300404: orc_swordsman_202
-    21300406: orc_swordsman_203
-    21300408: orc_swordsman_204
-    21300410: orc_swordsman_205
-    21300412: orc_swordsman_206
-    21300414: orc_swordsman_207
-    21300416: orc_swordsman_208
-    21300418: orc_swordsman_209
-    21300420: orc_swordsman_210
-    21300422: orc_swordsman_211
-    21300424: orc_swordsman_212
-    21300426: orc_swordsman_213
-    21300428: orc_swordsman_214
-    21300430: orc_swordsman_215
-    21300432: orc_swordsman_216
-    21300434: orc_swordsman_217
-    21300436: orc_swordsman_218
-    21300438: orc_swordsman_219
-    21300440: orc_swordsman_220
-    21300442: orc_swordsman_221
-    21300444: orc_swordsman_222
-    21300446: orc_swordsman_223
-    21300448: orc_swordsman_224
-    21300450: orc_swordsman_225
-    21300452: orc_swordsman_226
-    21300454: orc_swordsman_227
-    21300456: orc_swordsman_228
-    21300458: orc_swordsman_229
-    21300460: orc_sword_0
-    21300462: orc_sword_1
-    21300464: orc_sword_2
-    21300466: orc_sword_3
-    21300468: orc_sword_4
-    21300470: orc_sword_5
-    21300472: orc_sword_6
-    21300474: orc_sword_7
-    21300476: orc_sword_8
-    21300478: orc_sword_9
-    21300480: orc_sword_10
-    21300482: orc_sword_11
-    21300484: orc_sword_12
-    21300486: orc_sword_13
-    21300488: orc_sword_14
-    21300490: orc_sword_15
-    21300492: orc_sword_16
-    21300494: orc_sword_17
-    21300496: orc_sword_18
-    21300498: orc_sword_19
-    21300500: orc_sword_20
-    21300502: orc_sword_21
-    21300504: orc_sword_22
-    21300506: orc_sword_23
-    21300508: orc_sword_24
-    21300510: orc_sword_25
-    21300512: orc_sword_26
-    21300514: orc_sword_27
-    21300516: orc_sword_28
-    21300518: orc_sword_29
-    21300520: orc_sword_30
-    21300522: orc_sword_31
-    21300524: orc_sword_32
-    21300526: orc_sword_33
-    21300528: orc_sword_34
-    21300530: orc_sword_35
-    21300532: orc_sword_36
-    21300534: orc_sword_37
-    21300536: orc_sword_38
-    21300538: orc_sword_39
-    21300540: orc_sword_40
-    21300542: orc_sword_41
-    21300544: orc_sword_42
-    21300546: orc_sword_43
-    21300548: orc_sword_44
-    21300550: orc_sword_45
-    21300552: orc_sword_46
-    21300554: orc_sword_47
-    21300556: orc_sword_48
-    21300558: orc_sword_49
-    21300560: orc_sword_50
-    21300562: orc_sword_51
-    21300564: orc_sword_52
-    21300566: orc_sword_53
-    21300568: orc_sword_54
-    21300570: orc_sword_55
-    21300572: orc_sword_56
-    21300574: orc_sword_57
-    21300576: orc_sword_58
-    21300578: orc_sword_59
-    21300580: orc_sword_60
-    21300582: orc_sword_61
-    21300584: orc_sword_62
-    21300586: orc_sword_63
-    21300588: orc_sword_64
-    21300590: orc_sword_65
-    21300592: orc_sword_66
-    21300594: orc_sword_67
-    21300596: orc_sword_68
-    21300598: orc_sword_69
-    21300600: orc_sword_70
-    21300602: orc_sword_71
-    21300604: orc_sword_72
-    21300606: orc_sword_73
-    21300608: orc_sword_74
-    21300610: orc_sword_75
-    21300612: orc_sword_76
-    21300614: orc_sword_77
-    21300616: orc_sword_78
-    21300618: orc_sword_79
-    21300620: orc_sword_80
-    21300622: orc_sword_81
-    21300624: orc_sword_82
-    21300626: orc_sword_83
-    21300628: orc_sword_84
-    21300630: orc_sword_85
-    21300632: orc_sword_86
-    21300634: orc_sword_87
-    21300636: orc_sword_88
-    21300638: orc_sword_89
-    21300640: orc_sword_90
-    21300642: orc_sword_91
-    21300644: orc_sword_92
-    21300646: orc_sword_93
-    21300648: orc_sword_94
-    21300650: orc_sword_95
-    21300652: orc_sword_96
-    21300654: orc_sword_97
-    21300656: orc_sword_98
-    21300658: orc_sword_99
-    21300660: orc_sword_100
-    21300662: orc_sword_101
-    21300664: orc_sword_102
-    21300666: orc_sword_103
-    21300668: orc_sword_104
-    21300670: orc_sword_105
-    21300672: orc_sword_106
-    21300674: orc_sword_107
-    21300676: orc_sword_108
-    21300678: orc_sword_109
-    21300680: orc_sword_110
-    21300682: orc_sword_111
-    21300684: orc_sword_112
-    21300686: orc_sword_113
-    21300688: orc_sword_114
-    21300690: orc_sword_115
-    21300692: orc_sword_116
-    21300694: orc_sword_117
-    21300696: orc_sword_118
-    21300698: orc_sword_119
-    21300700: orc_sword_120
-    21300702: orc_sword_121
-    21300704: orc_sword_122
-    21300706: orc_sword_123
-    21300708: orc_sword_124
-    21300710: orc_sword_125
-    21300712: orc_sword_126
-    21300714: orc_sword_127
-    21300716: orc_sword_128
-    21300718: orc_sword_129
-    21300720: orc_sword_130
-    21300722: orc_sword_131
-    21300724: orc_sword_132
-    21300726: orc_sword_133
-    21300728: orc_sword_134
-    21300730: orc_sword_135
-    21300732: orc_sword_136
-    21300734: orc_sword_137
-    21300736: orc_sword_138
-    21300738: orc_sword_139
-    21300740: orc_sword_140
-    21300742: orc_sword_141
-    21300744: orc_sword_142
-    21300746: orc_sword_143
-    21300748: orc_sword_144
-    21300750: orc_sword_145
-    21300752: orc_sword_146
-    21300754: orc_sword_147
-    21300756: orc_sword_148
-    21300758: orc_sword_149
-    21300760: orc_sword_150
-    21300762: orc_sword_151
-    21300764: orc_sword_152
-    21300766: orc_sword_153
-    21300768: orc_sword_154
-    21300770: orc_sword_155
-    21300772: orc_sword_156
-    21300774: orc_sword_157
-    21300776: orc_sword_158
-    21300778: orc_sword_159
-    21300780: orc_sword_160
-    21300782: orc_sword_161
-    21300784: orc_sword_162
-    21300786: orc_sword_163
-    21300788: orc_sword_164
-    21300790: orc_sword_165
-    21300792: orc_sword_166
-    21300794: orc_sword_167
-    21300796: orc_sword_168
-    21300798: orc_sword_169
-    21300800: orc_sword_170
-    21300802: orc_sword_171
-    21300804: orc_sword_172
-    21300806: orc_sword_173
-    21300808: orc_sword_174
-    21300810: orc_sword_175
-    21300812: orc_sword_176
-    21300814: orc_sword_177
-    21300816: orc_sword_178
-    21300818: orc_sword_179
-    21300820: orc_sword_180
-    21300822: orc_sword_181
-    21300824: orc_sword_182
-    21300826: orc_sword_183
-    21300828: orc_sword_184
-    21300830: orc_sword_185
+    21300000: orc_staff_0
+    21300002: orc_staff_1
+    21300004: orc_staff_2
+    21300006: orc_staff_3
+    21300008: orc_staff_4
+    21300010: orc_staff_5
+    21300012: orc_staff_6
+    21300014: orc_staff_7
+    21300016: orc_staff_8
+    21300018: orc_staff_9
+    21300020: orc_staff_10
+    21300022: orc_staff_11
+    21300024: orc_staff_12
+    21300026: orc_staff_13
+    21300028: orc_staff_14
+    21300030: orc_staff_15
+    21300032: orc_staff_16
+    21300034: orc_staff_17
+    21300036: orc_staff_18
+    21300038: orc_staff_19
+    21300040: orc_staff_20
+    21300042: orc_staff_21
+    21300044: orc_staff_22
+    21300046: orc_staff_23
+    21300048: orc_staff_24
+    21300050: orc_staff_25
+    21300052: orc_staff_26
+    21300054: orc_staff_27
+    21300056: orc_staff_28
+    21300058: orc_staff_29
+    21300060: orc_staff_30
+    21300062: orc_staff_31
+    21300064: orc_staff_32
+    21300066: orc_staff_33
+    21300068: orc_staff_34
+    21300070: orc_staff_35
+    21300072: orc_staff_36
+    21300074: orc_staff_37
+    21300076: orc_staff_38
+    21300078: orc_staff_39
+    21300080: orc_staff_40
+    21300082: orc_staff_41
+    21300084: orc_staff_42
+    21300086: orc_staff_43
+    21300088: orc_staff_44
+    21300090: orc_staff_45
+    21300092: orc_staff_46
+    21300094: orc_staff_47
+    21300096: orc_staff_48
+    21300098: orc_staff_49
+    21300100: orc_staff_50
+    21300102: orc_staff_51
+    21300104: orc_staff_52
+    21300106: orc_staff_53
+    21300108: orc_staff_54
+    21300110: orc_staff_55
+    21300112: orc_staff_56
+    21300114: orc_staff_57
+    21300116: orc_staff_58
+    21300118: orc_staff_59
+    21300120: orc_staff_60
+    21300122: orc_staff_61
+    21300124: orc_staff_62
+    21300126: orc_staff_63
+    21300128: orc_staff_64
+    21300130: orc_staff_65
+    21300132: orc_staff_66
+    21300134: orc_staff_67
+    21300136: orc_staff_68
+    21300138: orc_staff_69
+    21300140: orc_staff_70
+    21300142: orc_staff_71
+    21300144: orc_staff_72
+    21300146: orc_staff_73
+    21300148: orc_staff_74
+    21300150: orc_staff_75
+    21300152: orc_staff_76
+    21300154: orc_staff_77
+    21300156: orc_staff_78
+    21300158: orc_staff_79
+    21300160: orc_staff_80
+    21300162: orc_staff_81
+    21300164: orc_staff_82
+    21300166: orc_staff_83
+    21300168: orc_staff_84
+    21300170: orc_staff_85
+    21300172: orc_staff_86
+    21300174: orc_staff_87
+    21300176: orc_staff_88
+    21300178: orc_staff_89
+    21300180: orc_staff_90
+    21300182: orc_staff_91
+    21300184: orc_staff_92
+    21300186: orc_staff_93
+    21300188: orc_staff_94
+    21300190: orc_staff_95
+    21300192: orc_staff_96
+    21300194: orc_staff_97
+    21300196: orc_staff_98
+    21300198: orc_staff_99
+    21300200: orc_staff_100
+    21300202: orc_staff_101
+    21300204: orc_staff_102
+    21300206: orc_staff_103
+    21300208: orc_staff_104
+    21300210: orc_staff_105
+    21300212: orc_staff_106
+    21300214: orc_staff_107
+    21300216: orc_staff_108
+    21300218: orc_staff_109
+    21300220: orc_staff_110
+    21300222: orc_staff_111
+    21300224: orc_staff_112
+    21300226: orc_staff_113
+    21300228: orc_staff_114
+    21300230: orc_staff_115
+    21300232: orc_staff_116
+    21300234: orc_staff_117
+    21300236: orc_staff_118
+    21300238: orc_staff_119
+    21300240: orc_staff_120
+    21300242: orc_staff_121
+    21300244: orc_staff_122
+    21300246: orc_staff_123
+    21300248: orc_staff_124
+    21300250: orc_staff_125
+    21300252: orc_staff_126
+    21300254: orc_staff_127
+    21300256: orc_staff_128
+    21300258: orc_staff_129
+    21300260: orc_staff_130
+    21300262: orc_staff_131
+    21300264: orc_staff_132
+    21300266: orc_staff_133
+    21300268: orc_staff_134
+    21300270: orc_staff_135
+    21300272: orc_staff_136
+    21300274: orc_staff_137
+    21300276: orc_staff_138
+    21300278: orc_staff_139
+    21300280: orc_staff_140
+    21300282: orc_staff_141
+    21300284: orc_staff_142
+    21300286: orc_staff_143
+    21300288: orc_staff_144
+    21300290: orc_staff_145
+    21300292: orc_staff_146
+    21300294: orc_staff_147
+    21300296: orc_staff_148
+    21300298: orc_staff_149
+    21300300: orc_staff_150
+    21300302: orc_staff_151
+    21300304: orc_staff_152
+    21300306: orc_staff_153
+    21300308: orc_staff_154
+    21300310: orc_staff_155
+    21300312: orc_staff_156
+    21300314: orc_staff_157
+    21300316: orc_staff_158
+    21300318: orc_staff_159
+    21300320: orc_staff_160
+    21300322: orc_staff_161
+    21300324: orc_staff_162
+    21300326: orc_staff_163
+    21300328: orc_staff_164
+    21300330: orc_staff_165
+    21300332: orc_staff_166
+    21300334: orc_staff_167
+    21300336: orc_staff_168
+    21300338: orc_staff_169
+    21300340: orc_staff_170
+    21300342: orc_staff_171
+    21300344: orc_staff_172
+    21300346: orc_staff_173
+    21300348: orc_staff_174
+    21300350: orc_staff_175
+    21300352: orc_staff_176
+    21300354: orc_staff_177
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -441,7 +203,7 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: 1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -459,7 +221,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: orc_sword_0
+    - name: orc_staff_0
       rect:
         serializedVersion: 2
         x: 0
@@ -469,7 +231,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_1
+    - name: orc_staff_1
       rect:
         serializedVersion: 2
         x: 64
@@ -479,7 +241,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_2
+    - name: orc_staff_2
       rect:
         serializedVersion: 2
         x: 128
@@ -489,7 +251,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_3
+    - name: orc_staff_3
       rect:
         serializedVersion: 2
         x: 192
@@ -499,7 +261,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_4
+    - name: orc_staff_4
       rect:
         serializedVersion: 2
         x: 256
@@ -509,7 +271,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_5
+    - name: orc_staff_5
       rect:
         serializedVersion: 2
         x: 320
@@ -519,7 +281,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_6
+    - name: orc_staff_6
       rect:
         serializedVersion: 2
         x: 384
@@ -529,7 +291,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_7
+    - name: orc_staff_7
       rect:
         serializedVersion: 2
         x: 0
@@ -539,7 +301,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_8
+    - name: orc_staff_8
       rect:
         serializedVersion: 2
         x: 64
@@ -549,7 +311,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_9
+    - name: orc_staff_9
       rect:
         serializedVersion: 2
         x: 128
@@ -559,7 +321,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_10
+    - name: orc_staff_10
       rect:
         serializedVersion: 2
         x: 192
@@ -569,7 +331,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_11
+    - name: orc_staff_11
       rect:
         serializedVersion: 2
         x: 256
@@ -579,7 +341,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_12
+    - name: orc_staff_12
       rect:
         serializedVersion: 2
         x: 320
@@ -589,7 +351,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_13
+    - name: orc_staff_13
       rect:
         serializedVersion: 2
         x: 384
@@ -599,7 +361,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_14
+    - name: orc_staff_14
       rect:
         serializedVersion: 2
         x: 0
@@ -609,7 +371,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_15
+    - name: orc_staff_15
       rect:
         serializedVersion: 2
         x: 64
@@ -619,7 +381,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_16
+    - name: orc_staff_16
       rect:
         serializedVersion: 2
         x: 128
@@ -629,7 +391,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_17
+    - name: orc_staff_17
       rect:
         serializedVersion: 2
         x: 192
@@ -639,7 +401,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_18
+    - name: orc_staff_18
       rect:
         serializedVersion: 2
         x: 256
@@ -649,7 +411,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_19
+    - name: orc_staff_19
       rect:
         serializedVersion: 2
         x: 320
@@ -659,7 +421,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_20
+    - name: orc_staff_20
       rect:
         serializedVersion: 2
         x: 384
@@ -669,7 +431,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_21
+    - name: orc_staff_21
       rect:
         serializedVersion: 2
         x: 0
@@ -679,7 +441,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_22
+    - name: orc_staff_22
       rect:
         serializedVersion: 2
         x: 64
@@ -689,7 +451,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_23
+    - name: orc_staff_23
       rect:
         serializedVersion: 2
         x: 128
@@ -699,7 +461,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_24
+    - name: orc_staff_24
       rect:
         serializedVersion: 2
         x: 192
@@ -709,7 +471,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_25
+    - name: orc_staff_25
       rect:
         serializedVersion: 2
         x: 256
@@ -719,7 +481,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_26
+    - name: orc_staff_26
       rect:
         serializedVersion: 2
         x: 320
@@ -729,7 +491,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_27
+    - name: orc_staff_27
       rect:
         serializedVersion: 2
         x: 384
@@ -739,7 +501,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_28
+    - name: orc_staff_28
       rect:
         serializedVersion: 2
         x: 0
@@ -749,7 +511,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_29
+    - name: orc_staff_29
       rect:
         serializedVersion: 2
         x: 64
@@ -759,7 +521,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_30
+    - name: orc_staff_30
       rect:
         serializedVersion: 2
         x: 128
@@ -769,7 +531,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_31
+    - name: orc_staff_31
       rect:
         serializedVersion: 2
         x: 192
@@ -779,7 +541,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_32
+    - name: orc_staff_32
       rect:
         serializedVersion: 2
         x: 256
@@ -789,7 +551,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_33
+    - name: orc_staff_33
       rect:
         serializedVersion: 2
         x: 320
@@ -799,7 +561,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_34
+    - name: orc_staff_34
       rect:
         serializedVersion: 2
         x: 384
@@ -809,7 +571,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_35
+    - name: orc_staff_35
       rect:
         serializedVersion: 2
         x: 448
@@ -819,7 +581,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_36
+    - name: orc_staff_36
       rect:
         serializedVersion: 2
         x: 0
@@ -829,7 +591,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_37
+    - name: orc_staff_37
       rect:
         serializedVersion: 2
         x: 64
@@ -839,7 +601,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_38
+    - name: orc_staff_38
       rect:
         serializedVersion: 2
         x: 128
@@ -849,7 +611,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_39
+    - name: orc_staff_39
       rect:
         serializedVersion: 2
         x: 192
@@ -859,7 +621,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_40
+    - name: orc_staff_40
       rect:
         serializedVersion: 2
         x: 256
@@ -869,7 +631,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_41
+    - name: orc_staff_41
       rect:
         serializedVersion: 2
         x: 320
@@ -879,7 +641,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_42
+    - name: orc_staff_42
       rect:
         serializedVersion: 2
         x: 384
@@ -889,7 +651,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_43
+    - name: orc_staff_43
       rect:
         serializedVersion: 2
         x: 448
@@ -899,7 +661,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_44
+    - name: orc_staff_44
       rect:
         serializedVersion: 2
         x: 0
@@ -909,7 +671,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_45
+    - name: orc_staff_45
       rect:
         serializedVersion: 2
         x: 64
@@ -919,7 +681,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_46
+    - name: orc_staff_46
       rect:
         serializedVersion: 2
         x: 128
@@ -929,7 +691,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_47
+    - name: orc_staff_47
       rect:
         serializedVersion: 2
         x: 192
@@ -939,7 +701,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_48
+    - name: orc_staff_48
       rect:
         serializedVersion: 2
         x: 256
@@ -949,7 +711,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_49
+    - name: orc_staff_49
       rect:
         serializedVersion: 2
         x: 320
@@ -959,7 +721,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_50
+    - name: orc_staff_50
       rect:
         serializedVersion: 2
         x: 384
@@ -969,7 +731,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_51
+    - name: orc_staff_51
       rect:
         serializedVersion: 2
         x: 448
@@ -979,7 +741,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_52
+    - name: orc_staff_52
       rect:
         serializedVersion: 2
         x: 0
@@ -989,7 +751,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_53
+    - name: orc_staff_53
       rect:
         serializedVersion: 2
         x: 64
@@ -999,7 +761,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_54
+    - name: orc_staff_54
       rect:
         serializedVersion: 2
         x: 128
@@ -1009,7 +771,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_55
+    - name: orc_staff_55
       rect:
         serializedVersion: 2
         x: 192
@@ -1019,7 +781,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_56
+    - name: orc_staff_56
       rect:
         serializedVersion: 2
         x: 256
@@ -1029,7 +791,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_57
+    - name: orc_staff_57
       rect:
         serializedVersion: 2
         x: 320
@@ -1039,7 +801,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_58
+    - name: orc_staff_58
       rect:
         serializedVersion: 2
         x: 384
@@ -1049,7 +811,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_59
+    - name: orc_staff_59
       rect:
         serializedVersion: 2
         x: 448
@@ -1059,7 +821,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_60
+    - name: orc_staff_60
       rect:
         serializedVersion: 2
         x: 0
@@ -1069,7 +831,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_61
+    - name: orc_staff_61
       rect:
         serializedVersion: 2
         x: 64
@@ -1079,7 +841,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_62
+    - name: orc_staff_62
       rect:
         serializedVersion: 2
         x: 128
@@ -1089,7 +851,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_63
+    - name: orc_staff_63
       rect:
         serializedVersion: 2
         x: 192
@@ -1099,7 +861,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_64
+    - name: orc_staff_64
       rect:
         serializedVersion: 2
         x: 256
@@ -1109,7 +871,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_65
+    - name: orc_staff_65
       rect:
         serializedVersion: 2
         x: 320
@@ -1119,7 +881,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_66
+    - name: orc_staff_66
       rect:
         serializedVersion: 2
         x: 384
@@ -1129,7 +891,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_67
+    - name: orc_staff_67
       rect:
         serializedVersion: 2
         x: 448
@@ -1139,7 +901,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_68
+    - name: orc_staff_68
       rect:
         serializedVersion: 2
         x: 512
@@ -1149,7 +911,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_69
+    - name: orc_staff_69
       rect:
         serializedVersion: 2
         x: 0
@@ -1159,7 +921,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_70
+    - name: orc_staff_70
       rect:
         serializedVersion: 2
         x: 64
@@ -1169,7 +931,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_71
+    - name: orc_staff_71
       rect:
         serializedVersion: 2
         x: 128
@@ -1179,7 +941,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_72
+    - name: orc_staff_72
       rect:
         serializedVersion: 2
         x: 192
@@ -1189,7 +951,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_73
+    - name: orc_staff_73
       rect:
         serializedVersion: 2
         x: 256
@@ -1199,7 +961,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_74
+    - name: orc_staff_74
       rect:
         serializedVersion: 2
         x: 320
@@ -1209,7 +971,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_75
+    - name: orc_staff_75
       rect:
         serializedVersion: 2
         x: 384
@@ -1219,7 +981,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_76
+    - name: orc_staff_76
       rect:
         serializedVersion: 2
         x: 448
@@ -1229,7 +991,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_77
+    - name: orc_staff_77
       rect:
         serializedVersion: 2
         x: 512
@@ -1239,7 +1001,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_78
+    - name: orc_staff_78
       rect:
         serializedVersion: 2
         x: 0
@@ -1249,7 +1011,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_79
+    - name: orc_staff_79
       rect:
         serializedVersion: 2
         x: 64
@@ -1259,7 +1021,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_80
+    - name: orc_staff_80
       rect:
         serializedVersion: 2
         x: 128
@@ -1269,7 +1031,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_81
+    - name: orc_staff_81
       rect:
         serializedVersion: 2
         x: 192
@@ -1279,7 +1041,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_82
+    - name: orc_staff_82
       rect:
         serializedVersion: 2
         x: 256
@@ -1289,7 +1051,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_83
+    - name: orc_staff_83
       rect:
         serializedVersion: 2
         x: 320
@@ -1299,7 +1061,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_84
+    - name: orc_staff_84
       rect:
         serializedVersion: 2
         x: 384
@@ -1309,7 +1071,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_85
+    - name: orc_staff_85
       rect:
         serializedVersion: 2
         x: 448
@@ -1319,7 +1081,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_86
+    - name: orc_staff_86
       rect:
         serializedVersion: 2
         x: 512
@@ -1329,7 +1091,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_87
+    - name: orc_staff_87
       rect:
         serializedVersion: 2
         x: 0
@@ -1339,7 +1101,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_88
+    - name: orc_staff_88
       rect:
         serializedVersion: 2
         x: 64
@@ -1349,7 +1111,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_89
+    - name: orc_staff_89
       rect:
         serializedVersion: 2
         x: 128
@@ -1359,7 +1121,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_90
+    - name: orc_staff_90
       rect:
         serializedVersion: 2
         x: 192
@@ -1369,7 +1131,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_91
+    - name: orc_staff_91
       rect:
         serializedVersion: 2
         x: 256
@@ -1379,7 +1141,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_92
+    - name: orc_staff_92
       rect:
         serializedVersion: 2
         x: 320
@@ -1389,7 +1151,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_93
+    - name: orc_staff_93
       rect:
         serializedVersion: 2
         x: 384
@@ -1399,7 +1161,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_94
+    - name: orc_staff_94
       rect:
         serializedVersion: 2
         x: 448
@@ -1409,7 +1171,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_95
+    - name: orc_staff_95
       rect:
         serializedVersion: 2
         x: 512
@@ -1419,7 +1181,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_96
+    - name: orc_staff_96
       rect:
         serializedVersion: 2
         x: 0
@@ -1429,7 +1191,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_97
+    - name: orc_staff_97
       rect:
         serializedVersion: 2
         x: 64
@@ -1439,7 +1201,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_98
+    - name: orc_staff_98
       rect:
         serializedVersion: 2
         x: 128
@@ -1449,7 +1211,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_99
+    - name: orc_staff_99
       rect:
         serializedVersion: 2
         x: 192
@@ -1459,7 +1221,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_100
+    - name: orc_staff_100
       rect:
         serializedVersion: 2
         x: 256
@@ -1469,7 +1231,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_101
+    - name: orc_staff_101
       rect:
         serializedVersion: 2
         x: 320
@@ -1479,7 +1241,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_102
+    - name: orc_staff_102
       rect:
         serializedVersion: 2
         x: 0
@@ -1489,7 +1251,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_103
+    - name: orc_staff_103
       rect:
         serializedVersion: 2
         x: 64
@@ -1499,7 +1261,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_104
+    - name: orc_staff_104
       rect:
         serializedVersion: 2
         x: 128
@@ -1509,7 +1271,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_105
+    - name: orc_staff_105
       rect:
         serializedVersion: 2
         x: 192
@@ -1519,7 +1281,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_106
+    - name: orc_staff_106
       rect:
         serializedVersion: 2
         x: 256
@@ -1529,7 +1291,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_107
+    - name: orc_staff_107
       rect:
         serializedVersion: 2
         x: 320
@@ -1539,7 +1301,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_108
+    - name: orc_staff_108
       rect:
         serializedVersion: 2
         x: 0
@@ -1549,7 +1311,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_109
+    - name: orc_staff_109
       rect:
         serializedVersion: 2
         x: 64
@@ -1559,7 +1321,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_110
+    - name: orc_staff_110
       rect:
         serializedVersion: 2
         x: 128
@@ -1569,7 +1331,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_111
+    - name: orc_staff_111
       rect:
         serializedVersion: 2
         x: 192
@@ -1579,7 +1341,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_112
+    - name: orc_staff_112
       rect:
         serializedVersion: 2
         x: 256
@@ -1589,7 +1351,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_113
+    - name: orc_staff_113
       rect:
         serializedVersion: 2
         x: 320
@@ -1599,7 +1361,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_114
+    - name: orc_staff_114
       rect:
         serializedVersion: 2
         x: 0
@@ -1609,7 +1371,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_115
+    - name: orc_staff_115
       rect:
         serializedVersion: 2
         x: 64
@@ -1619,7 +1381,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_116
+    - name: orc_staff_116
       rect:
         serializedVersion: 2
         x: 128
@@ -1629,7 +1391,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_117
+    - name: orc_staff_117
       rect:
         serializedVersion: 2
         x: 192
@@ -1639,7 +1401,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_118
+    - name: orc_staff_118
       rect:
         serializedVersion: 2
         x: 256
@@ -1649,7 +1411,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_119
+    - name: orc_staff_119
       rect:
         serializedVersion: 2
         x: 320
@@ -1659,17 +1421,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_120
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 320
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_121
+    - name: orc_staff_120
       rect:
         serializedVersion: 2
         x: 0
@@ -1679,7 +1431,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_122
+    - name: orc_staff_121
       rect:
         serializedVersion: 2
         x: 64
@@ -1689,7 +1441,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_123
+    - name: orc_staff_122
       rect:
         serializedVersion: 2
         x: 128
@@ -1699,7 +1451,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_124
+    - name: orc_staff_123
       rect:
         serializedVersion: 2
         x: 192
@@ -1709,7 +1461,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_125
+    - name: orc_staff_124
       rect:
         serializedVersion: 2
         x: 256
@@ -1719,7 +1471,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_126
+    - name: orc_staff_125
       rect:
         serializedVersion: 2
         x: 320
@@ -1729,7 +1481,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_127
+    - name: orc_staff_126
       rect:
         serializedVersion: 2
         x: 384
@@ -1739,7 +1491,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_128
+    - name: orc_staff_127
       rect:
         serializedVersion: 2
         x: 448
@@ -1749,7 +1501,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_129
+    - name: orc_staff_128
       rect:
         serializedVersion: 2
         x: 512
@@ -1759,7 +1511,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_130
+    - name: orc_staff_129
       rect:
         serializedVersion: 2
         x: 576
@@ -1769,7 +1521,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_131
+    - name: orc_staff_130
       rect:
         serializedVersion: 2
         x: 640
@@ -1779,7 +1531,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_132
+    - name: orc_staff_131
       rect:
         serializedVersion: 2
         x: 704
@@ -1789,7 +1541,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_133
+    - name: orc_staff_132
       rect:
         serializedVersion: 2
         x: 768
@@ -1799,7 +1551,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_134
+    - name: orc_staff_133
       rect:
         serializedVersion: 2
         x: 0
@@ -1809,7 +1561,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_135
+    - name: orc_staff_134
       rect:
         serializedVersion: 2
         x: 64
@@ -1819,7 +1571,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_136
+    - name: orc_staff_135
       rect:
         serializedVersion: 2
         x: 128
@@ -1829,7 +1581,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_137
+    - name: orc_staff_136
       rect:
         serializedVersion: 2
         x: 192
@@ -1839,7 +1591,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_138
+    - name: orc_staff_137
       rect:
         serializedVersion: 2
         x: 256
@@ -1849,7 +1601,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_139
+    - name: orc_staff_138
       rect:
         serializedVersion: 2
         x: 320
@@ -1859,7 +1611,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_140
+    - name: orc_staff_139
       rect:
         serializedVersion: 2
         x: 384
@@ -1869,7 +1621,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_141
+    - name: orc_staff_140
       rect:
         serializedVersion: 2
         x: 448
@@ -1879,7 +1631,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_142
+    - name: orc_staff_141
       rect:
         serializedVersion: 2
         x: 512
@@ -1889,7 +1641,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_143
+    - name: orc_staff_142
       rect:
         serializedVersion: 2
         x: 576
@@ -1899,7 +1651,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_144
+    - name: orc_staff_143
       rect:
         serializedVersion: 2
         x: 640
@@ -1909,7 +1661,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_145
+    - name: orc_staff_144
       rect:
         serializedVersion: 2
         x: 704
@@ -1919,7 +1671,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_146
+    - name: orc_staff_145
       rect:
         serializedVersion: 2
         x: 768
@@ -1929,7 +1681,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_147
+    - name: orc_staff_146
       rect:
         serializedVersion: 2
         x: 0
@@ -1939,7 +1691,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_148
+    - name: orc_staff_147
       rect:
         serializedVersion: 2
         x: 64
@@ -1949,7 +1701,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_149
+    - name: orc_staff_148
       rect:
         serializedVersion: 2
         x: 128
@@ -1959,7 +1711,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_150
+    - name: orc_staff_149
       rect:
         serializedVersion: 2
         x: 192
@@ -1969,7 +1721,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_151
+    - name: orc_staff_150
       rect:
         serializedVersion: 2
         x: 256
@@ -1979,7 +1731,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_152
+    - name: orc_staff_151
       rect:
         serializedVersion: 2
         x: 320
@@ -1989,7 +1741,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_153
+    - name: orc_staff_152
       rect:
         serializedVersion: 2
         x: 384
@@ -1999,7 +1751,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_154
+    - name: orc_staff_153
       rect:
         serializedVersion: 2
         x: 448
@@ -2009,7 +1761,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_155
+    - name: orc_staff_154
       rect:
         serializedVersion: 2
         x: 512
@@ -2019,7 +1771,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_156
+    - name: orc_staff_155
       rect:
         serializedVersion: 2
         x: 576
@@ -2029,7 +1781,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_157
+    - name: orc_staff_156
       rect:
         serializedVersion: 2
         x: 640
@@ -2039,7 +1791,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_158
+    - name: orc_staff_157
       rect:
         serializedVersion: 2
         x: 704
@@ -2049,7 +1801,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_159
+    - name: orc_staff_158
       rect:
         serializedVersion: 2
         x: 768
@@ -2059,7 +1811,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_160
+    - name: orc_staff_159
       rect:
         serializedVersion: 2
         x: 0
@@ -2069,7 +1821,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_161
+    - name: orc_staff_160
       rect:
         serializedVersion: 2
         x: 64
@@ -2079,7 +1831,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_162
+    - name: orc_staff_161
       rect:
         serializedVersion: 2
         x: 128
@@ -2089,7 +1841,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_163
+    - name: orc_staff_162
       rect:
         serializedVersion: 2
         x: 192
@@ -2099,7 +1851,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_164
+    - name: orc_staff_163
       rect:
         serializedVersion: 2
         x: 256
@@ -2109,7 +1861,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_165
+    - name: orc_staff_164
       rect:
         serializedVersion: 2
         x: 320
@@ -2119,7 +1871,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_166
+    - name: orc_staff_165
       rect:
         serializedVersion: 2
         x: 384
@@ -2129,7 +1881,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_167
+    - name: orc_staff_166
       rect:
         serializedVersion: 2
         x: 448
@@ -2139,7 +1891,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_168
+    - name: orc_staff_167
       rect:
         serializedVersion: 2
         x: 512
@@ -2149,7 +1901,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_169
+    - name: orc_staff_168
       rect:
         serializedVersion: 2
         x: 576
@@ -2159,7 +1911,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_170
+    - name: orc_staff_169
       rect:
         serializedVersion: 2
         x: 640
@@ -2169,7 +1921,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_171
+    - name: orc_staff_170
       rect:
         serializedVersion: 2
         x: 704
@@ -2179,7 +1931,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_172
+    - name: orc_staff_171
       rect:
         serializedVersion: 2
         x: 768
@@ -2189,7 +1941,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_173
+    - name: orc_staff_172
       rect:
         serializedVersion: 2
         x: 0
@@ -2199,7 +1951,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_174
+    - name: orc_staff_173
       rect:
         serializedVersion: 2
         x: 64
@@ -2209,7 +1961,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_175
+    - name: orc_staff_174
       rect:
         serializedVersion: 2
         x: 128
@@ -2219,7 +1971,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_176
+    - name: orc_staff_175
       rect:
         serializedVersion: 2
         x: 192
@@ -2229,7 +1981,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_177
+    - name: orc_staff_176
       rect:
         serializedVersion: 2
         x: 256
@@ -2239,80 +1991,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_178
+    - name: orc_staff_177
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_179
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_180
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_181
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_182
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_183
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_184
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: orc_sword_185
-      rect:
-        serializedVersion: 2
-        x: 768
         y: 0
         width: 64
         height: 64
