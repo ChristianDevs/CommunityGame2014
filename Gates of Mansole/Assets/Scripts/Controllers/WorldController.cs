@@ -1837,6 +1837,7 @@ public class WorldController : MonoBehaviour {
 				Player.completeTutorialState();
 				inTutorial = false;
 				Destroy(cursorInst);
+				unitsToRelease = -1;
 			}
 			break;
 		case "Release":
