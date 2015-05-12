@@ -40,21 +40,21 @@ Chapter
 	Map:2
 	Intro:Chapter3Intro.gom
 	Exit:Chapter3Exit.gom
-	Level31.gom:-0.75:0.75
-	Level32.gom:2.1:1.8
-	Level33.gom:-1:1.8
-	Level34.gom:-2.55:-0.25
-	Level35.gom:-0.65:-1
-	Level36.gom:5.3:1.85
-	Level37.gom:3.75:0.95
-	Level38.gom:2.75:0.3
-	Level39.gom:2.5:1.15
-	Level40.gom:3.15:1.55
-	Level41.gom:2.85:2.05
-	Level42.gom:2.4:2.7
-	Level43.gom:4.25:1.35
-	Level44.gom:4.35:1.85
-	Level45.gom:4.85:2.4
+	Level31.gom:-1.4:2.9
+	Level32.gom:-2.45:2.65
+	Level33.gom:-3.65:2.1
+	Level34.gom:-3.3:1.05
+	Level35.gom:-1.5:1.55
+	Level36.gom:-0.05:1.6
+	Level37.gom:2.1:-0.25
+	Level38.gom:1.1:-1
+	Level39.gom:0.15:-0.55
+	Level40.gom:-1.7:-0.5
+	Level41.gom:-5:-2.55
+	Level42.gom:-4.25:-0.6
+	Level43.gom:-0.9:-2.5
+	Level44.gom:3.15:-1.4
+	Level45.gom:4.5:-4.1
 Chapter
 	Map:3
 	Intro:Chapter4Intro.gom

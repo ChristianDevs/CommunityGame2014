@@ -520,7 +520,7 @@ public class WorldController : MonoBehaviour {
 		if (Input.GetMouseButtonDown(0)) {
 			RaycastHit hitSquare;
 			
-			dialogueIndex++;
+
 			
 			if (Physics.Raycast(UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition), out hitSquare)) {
 				if (hitSquare.transform.name == "Back") {
@@ -532,32 +532,31 @@ public class WorldController : MonoBehaviour {
 					}
 				}
 			}
-			
-			if (dialogueIndex < dialogue.Count) {
+
+			if (dialogueLetterIndex < dialogueItem.Length) {
+				dialogueText.text += dialogueItem.Substring(dialogueLetterIndex);
+				dialogueLetterIndex = dialogueItem.Length;
+			} else if (dialogueIndex < (dialogue.Count - 1)) {
 				if (dialogue[dialogueIndex].dialogue == null) {
 					return true;
 				}
 
-				if (dialogueLetterIndex < dialogueItem.Length) {
-					dialogueText.text += dialogueItem.Substring(dialogueLetterIndex);
-					dialogueLetterIndex = dialogueItem.Length;
-				} else {
-					dialogueItem = processDialogue(dialogue[dialogueIndex].Speaker, dialogue[dialogueIndex].dialogue, dialogueText);
-					dialogueLetterIndex = 0;
-					
-					if (dialogue[dialogueIndex].LeftImage == "None") {
-						leftImage.sprite = null;
-					}
-					else if (int.Parse(dialogue[dialogueIndex].LeftImage) < Images.Length) {
-						leftImage.sprite = Images[int.Parse(dialogue[dialogueIndex].LeftImage)];
-					}
-					
-					if (dialogue[dialogueIndex].RightImage == "None") {
-						rightImage.sprite = null;
-					}
-					else if (int.Parse(dialogue[dialogueIndex].RightImage) < Images.Length) {
-						rightImage.sprite = Images[int.Parse(dialogue[dialogueIndex].RightImage)];
-					}
+				dialogueIndex++;
+				dialogueItem = processDialogue(dialogue[dialogueIndex].Speaker, dialogue[dialogueIndex].dialogue, dialogueText);
+				dialogueLetterIndex = 0;
+				
+				if (dialogue[dialogueIndex].LeftImage == "None") {
+					leftImage.sprite = null;
+				}
+				else if (int.Parse(dialogue[dialogueIndex].LeftImage) < Images.Length) {
+					leftImage.sprite = Images[int.Parse(dialogue[dialogueIndex].LeftImage)];
+				}
+				
+				if (dialogue[dialogueIndex].RightImage == "None") {
+					rightImage.sprite = null;
+				}
+				else if (int.Parse(dialogue[dialogueIndex].RightImage) < Images.Length) {
+					rightImage.sprite = Images[int.Parse(dialogue[dialogueIndex].RightImage)];
 				}
 			} else {
 				return true;
@@ -1803,6 +1802,11 @@ public class WorldController : MonoBehaviour {
 	void buttonPush(string buttonName) {
 		switch(buttonName) {
 		case "Upgrade":
+			// Uncomment out to make the Release button automatically win the level
+			//winLevel();
+			//winMessage.SetActive(true);
+			//return;
+
 			int unitType = -1;
 			
 			if (selectedUnit == null) {
@@ -1836,10 +1840,6 @@ public class WorldController : MonoBehaviour {
 			}
 			break;
 		case "Release":
-			// Uncomment out to make the Release button automatically win the level
-			//winLevel();
-			//winMessage.SetActive(true);
-			//return;
 			if ((CurWave) < currentLevel.GetComponent<WaveList>().waves.Count) {
 				float nextWaveTime = currentLevel.GetComponent<WaveList>().waves[CurWave].waitTime;
 				

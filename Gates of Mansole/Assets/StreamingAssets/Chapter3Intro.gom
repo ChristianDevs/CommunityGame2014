@@ -24,7 +24,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:2
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
@@ -33,7 +33,7 @@ entry
 	Action:1
 entry
 	Music:0
-	Background:0
+	Background:2
 	ImageLeft:10
 	ImageRight:None
 	Speaker:Lieutenant Captain
@@ -41,7 +41,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:2
 	ImageLeft:10
 	ImageRight:None
 	Speaker:Lieutenant Captain
@@ -49,7 +49,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:2
 	ImageLeft:None
 	ImageRight:17
 	Speaker:Prince Emmanuel
@@ -57,7 +57,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:2
 	ImageLeft:10
 	ImageRight:None
 	Speaker:Lieutenant Captain
@@ -65,7 +65,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:2
 	ImageLeft:None
 	ImageRight:17
 	Speaker:Prince Emmanuel
@@ -73,7 +73,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:2
 	ImageLeft:10
 	ImageRight:None
 	Speaker:Lieutenant Captain
@@ -81,7 +81,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:2
 	ImageLeft:None
 	ImageRight:17
 	Speaker:Prince Emmanuel
@@ -89,7 +89,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:2
 	ImageLeft:12
 	ImageRight:None
 	Speaker:Captain Boanurges
@@ -97,7 +97,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:2
 	ImageLeft:None
 	ImageRight:17
 	Speaker:Prince Emmanuel
@@ -105,7 +105,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:2
 	ImageLeft:None
 	ImageRight:17
 	Speaker:Prince Emmanuel
@@ -113,7 +113,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:2
 	ImageLeft:10
 	ImageRight:None
 	Speaker:Lieutenant Captain
@@ -121,7 +121,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:2
 	ImageLeft:10
 	ImageRight:None
 	Speaker:Lieutenant Captain
@@ -129,7 +129,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:2
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
