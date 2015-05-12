@@ -60,187 +60,135 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:OrcWand
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:1
-        Unit:Evangelist
+        Unit:OrcWand
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:2
-        Unit:Teacher
+        Unit:OrcWand
         SpawnLoc:RandRow
         Tile:0:0
 	WaveUnit:
         Time:3
-        Unit:Teacher
+        Unit:OrcWand
         SpawnLoc:RandRow
         Tile:0:0
 	WaveUnit:
         Time:4
-        Unit:Orator
+        Unit:OrcWand
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
     WaitTime:11
     WaveUnit:
         Time:0
-        Unit:Teacher
+        Unit:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:1
+        Unit:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+	WaveUnit:
+        Time:2
+        Unit:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
 	WaveUnit:
         Time:3
-        Unit:Teacher
+        Unit:OrcArcher
         SpawnLoc:RandRow
         Tile:0:0
 	WaveUnit:
         Time:4
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:6
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:7
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:8
-        Unit:Evangelist
+        Unit:OrcWand
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
     WaitTime:24
     WaveUnit:
         Time:0
-        Unit:Shepherd
+        Unit:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Shepherd
+        Unit:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Evangelist
+        Unit:OrcWand
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Orator
+        Unit:OrcWand
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:4
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:6
-        Unit:Elder
+        Unit:OrcArcher
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
     WaitTime:35
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:OrcWand
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:1
-        Unit:Shepherd
+        Unit:OrcArcher
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Evangelist
+        Unit:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:5
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:8
-        Unit:Teacher
+        Unit:OrcSword
         SpawnLoc:RandRow
         Tile:0:0
 Wave:
     WaitTime:48
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:OrcSword
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Elder
+        Unit:OrcSword
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Teacher
+        Unit:OrcSword
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3
-        Unit:Shepherd
+        Unit:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:5
-        Unit:Orator
+        Unit:OrcSpear
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:7
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:60
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:0
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Evangelist
+        Unit:OrcSword
         SpawnLoc:RandRow
         Tile:0:0
 PostDialogue:
