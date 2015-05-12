@@ -160,8 +160,3 @@ PostDialogue:
         LeftImage:17
         RightImage:None
         Dialogue:All discipline seems severe at the time, but afterwards it is useful for training in right behavior.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
