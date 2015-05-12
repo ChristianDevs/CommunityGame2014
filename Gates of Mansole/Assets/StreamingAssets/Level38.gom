@@ -298,7 +298,7 @@ PostDialogue:
         Speaker:Lieutenant Captain
         LeftImage:10
         RightImage:None
-        Dialogue:Destroy it? But if you're goal is to retake Mansoul why not save it and us it?
+        Dialogue:Destroy it? But if you're goal is to retake Mansoul why not save it and use it?
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
