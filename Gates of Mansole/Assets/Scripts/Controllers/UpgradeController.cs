@@ -167,7 +167,7 @@ public class UpgradeController : MonoBehaviour {
 
 
 		if (Time.time >= nextFlow) {
-			gutterFlows.Add(Instantiate(gutterflowPrefab, new Vector3(-7f, -4.75f), Quaternion.identity) as GameObject);
+			gutterFlows.Add(Instantiate(gutterflowPrefab, new Vector3(-7f, -4.8f), Quaternion.identity) as GameObject);
 			gutterFlows[gutterFlows.Count - 1].name = "GutterFlow" + flowCounter.ToString();
 			nextFlow = Random.Range (3, 8) + Time.time;
 			flowCounter++;
