@@ -44,6 +44,7 @@ public class WorldController : MonoBehaviour {
 	public List<GameObject> unitTypes;
 	public List<GameObject> abilityUIinst;
 	public List<GameObject> abilities;
+	public List<Vector3> abilityOrigLocs;
 	public float levelStartTime;
 	public GameObject unitInfoUi;
 	private int dialogueIndex;
@@ -1262,7 +1263,7 @@ public class WorldController : MonoBehaviour {
 			
 			for (int i = 0; i < abilityUIinst.Count; ++i) {
 				if (selectedUiAbility == abilityUIinst[i]) {
-					selectedUiAbility.transform.position = new Vector3((float)(-6 + (unitMenuInterval * (unitsUIinst.Count + i))), (float)-5.5, (float)0);
+					selectedUiAbility.transform.position = abilityOrigLocs[i];
 					break;
 				}
 			}
@@ -1375,7 +1376,7 @@ public class WorldController : MonoBehaviour {
 			
 			for (int i = 0; i < abilityUIinst.Count; ++i) {
 				if (selectedUiAbility == abilityUIinst[i]) {
-					selectedUiAbility.transform.position = new Vector3((float)(-6 + (unitMenuInterval * (unitsUIinst.Count + i))), (float)-5.5, (float)0);
+					selectedUiAbility.transform.position = abilityOrigLocs[i];
 					break;
 				}
 			}
@@ -1438,7 +1439,7 @@ public class WorldController : MonoBehaviour {
 			
 			for (int i = 0; i < abilityUIinst.Count; ++i) {
 				if (selectedUiAbility == abilityUIinst[i]) {
-					selectedUiAbility.transform.position = new Vector3((float)(-6 + (unitMenuInterval * (unitsUIinst.Count + i))), (float)-5.5, (float)0);
+					selectedUiAbility.transform.position = abilityOrigLocs[i];
 					break;
 				}
 			}
@@ -1479,7 +1480,7 @@ public class WorldController : MonoBehaviour {
 			
 			for (int i = 0; i < abilityUIinst.Count; ++i) {
 				if (selectedUiAbility == abilityUIinst[i]) {
-					selectedUiAbility.transform.position = new Vector3((float)(-6 + (unitMenuInterval * (unitsUIinst.Count + i))), (float)-5.5, (float)0);
+					selectedUiAbility.transform.position = abilityOrigLocs[i];
 					break;
 				}
 			}
