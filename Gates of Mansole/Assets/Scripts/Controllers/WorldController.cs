@@ -1526,7 +1526,7 @@ public class WorldController : MonoBehaviour {
 					rw.tag = "reward";
 					rwCounter++;
 					rw.transform.position = new Vector3(rw.transform.position.x, rw.transform.position.y, rw.transform.position.z - 1);
-					rw.GetComponent<RewardSpiritShard>().world = gameObject;
+					rw.GetComponent<RewardSpiritShard>().world = gameObject.GetComponent<WorldController>();
 					rw.GetComponent<RewardSpiritShard>().shardAmount = tileContents[row][col].GetComponent<GomUnit>().value;
 					rw.GetComponent<RewardSpiritShard>().travelPlace = spiritShardUI;
 				}
