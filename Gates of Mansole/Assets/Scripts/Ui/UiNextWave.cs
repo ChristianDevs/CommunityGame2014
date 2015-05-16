@@ -10,22 +10,22 @@ public class UiNextWave : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		TextMesh txt = this.GetComponent<TextMesh> ();
+		WorldController wc;
 		float nextWaveTime = 0;
 		float levelStartTime = 0;
-		//int currentWave = 0;
 
-		currentWave = world.GetComponent<WorldController> ().CurWave;
-		levelStartTime = world.GetComponent<WorldController> ().levelStartTime;
+		wc = world.GetComponent<WorldController> ();
 
-		if ((levelStartTime > 0) && ((currentWave) < world.GetComponent<WorldController>().currentLevel.GetComponent<WaveList>().waves.Count)) {
-			nextWaveTime = world.GetComponent<WorldController>().currentLevel.GetComponent<WaveList>().waves[currentWave].waitTime;
-			nextWaveTime = nextWaveTime - (Time.time - levelStartTime);
-		}
+		currentWave = wc.CurWave;
+		levelStartTime = wc.levelStartTime;
 
-		txt.text = ": " + (int)nextWaveTime;
+		nextWaveTime = wc.currentLevel.GetComponent<WaveList>().waves[currentWave].waitTime;
+		nextWaveTime = nextWaveTime - (Time.time - levelStartTime);
+
+		txt.text = ":" + (int)nextWaveTime;
 
 		if (releaseCrystals != null) {
-			releaseCrystals.SendMessage("SetCustomValue", world.GetComponent<WorldController>().earlyReleaseShards, SendMessageOptions.DontRequireReceiver);
+			releaseCrystals.SendMessage("SetCustomValue", wc.earlyReleaseShards, SendMessageOptions.DontRequireReceiver);
 		}
 	}
 }

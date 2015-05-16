@@ -637,13 +637,6 @@ public class WorldController : MonoBehaviour {
 				WaveList wl;
 				
 				wl = currentLevel.GetComponent<WaveList>();
-
-				// Check if Release Button should be enabled
-				if ((numUnitsSpawnedLeftInWave == 0) &&
-				    (ReleaseButton.activeSelf == false) &&
-				    (CurWave < (wl.waves.Count - 1))) {
-					ReleaseButton.SetActive(true);
-				}
 				
 				// Show the player how to spawn a unit
 				if ((Player.tutorialState == 1) && (inTutorial == false)) {
@@ -804,6 +797,15 @@ public class WorldController : MonoBehaviour {
 						int nextWaveEnemies = currentLevel.GetComponent<WaveList>().waves[CurWave].units.Length;
 						earlyReleaseShards = (int)((nextWaveTime * nextWaveEnemies) * 0.1f);
 					}
+				}
+				
+				// Check if Release Button should be enabled
+				if ((numUnitsSpawnedLeftInWave == 0) &&
+				    (ReleaseButton.activeSelf == false) &&
+				    (CurWave < wl.waves.Count)) {
+					
+					Debug.Log("Enabling Release");
+					ReleaseButton.SetActive(true);
 				}
 
 				// Check game over conditions
