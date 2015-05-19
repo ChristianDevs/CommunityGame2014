@@ -90,6 +90,10 @@ public class WorldController : MonoBehaviour {
 	public float lastShardPickupTime;
 	public int totalSwipeShards;
 
+	public GameObject validBoxPrefab;
+	public GameObject InvalidboxPrefab;
+	private List<GameObject> placementBoxes;
+
 	private bool isFirstWin;
 	
 	private int OrbCurAmount;
@@ -176,6 +180,7 @@ public class WorldController : MonoBehaviour {
 		dialogueItem = "";
 		dialogueLetterIndex = 0;
 		dialogueAddLetterTime = 0;
+		placementBoxes = null;
 
 		Debug.Log (Player.tutorialState);
 
@@ -802,9 +807,9 @@ public class WorldController : MonoBehaviour {
 				// Check if Release Button should be enabled
 				if ((numUnitsSpawnedLeftInWave == 0) &&
 				    (ReleaseButton.activeSelf == false) &&
-				    (CurWave < wl.waves.Count)) {
-					
-					Debug.Log("Enabling Release");
+				    (CurWave < wl.waves.Count) &&
+				    (Player.tutorialState > 10)) {
+
 					ReleaseButton.SetActive(true);
 				}
 
@@ -887,6 +892,21 @@ public class WorldController : MonoBehaviour {
 										Destroy(UnitCounterInst);
 									}
 
+									placementBoxes = new List<GameObject>();
+									for (int row = 0; row < gridSize.row; row++) {
+										for (int col = 0; col < gridSize.col; col++) {
+											Vector3 boxLoc = map.GetComponent<UiTiles>().lanes[row].GetComponent<UiRow>().rowTiles[col].transform.position;
+
+											boxLoc += new Vector3(0, 0.25f, 0);
+											if ((currentLevel.GetComponent<WaveList>().laneEnable[row]) &&
+											    (col < (gridSize.col * 0.5f))){
+												placementBoxes.Add(Instantiate(validBoxPrefab, boxLoc, Quaternion.identity) as GameObject);
+											} else {
+												placementBoxes.Add(Instantiate(InvalidboxPrefab, boxLoc, Quaternion.identity) as GameObject);
+											}
+										}
+									}
+
 									UnitCounterInst = Instantiate (UnitCounterPrefab, selectedUiUnit.transform.position, Quaternion.identity) as GameObject;
 									UnitCounterInst.GetComponent<UiUnitCounter> ().SetCounterDisplay (unitTypes[i], Player.unitTypes, false);
 									break;
@@ -916,7 +936,9 @@ public class WorldController : MonoBehaviour {
 				
 				tile = map.GetComponent<UiTiles>().GetMouseOverTile();
 				
-				if ((tile.row != -1) && (tile.col != -1) && isPlayerSpawnLocValid(tile)) {
+				if ((tile.row != -1) && (tile.col != -1) &&
+				    (currentLevel.GetComponent<WaveList>().laneEnable[tile.row]) &&
+				    isPlayerSpawnLocValid(tile)) {
 					newPos = new Vector3(map.transform.position.x + ((float)tile.col * map.transform.localScale.x),
 					                     map.transform.position.y + ((float)tile.row * map.transform.localScale.y) + TileUnitOffset);
 					selectedUiUnit.transform.position = newPos;
@@ -997,6 +1019,13 @@ public class WorldController : MonoBehaviour {
 			if (Input.GetMouseButtonUp(0)) {
 				if (UnitCounterInst != null) {
 					Destroy(UnitCounterInst);
+				}
+
+				if (placementBoxes != null) {
+					for (int i = 0; i < placementBoxes.Count; i++) {
+						Destroy(placementBoxes[i]);
+					}
+					placementBoxes.Clear();
 				}
 			}
 		}
