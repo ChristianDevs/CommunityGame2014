@@ -19,13 +19,15 @@ public class UiNextWave : MonoBehaviour {
 		currentWave = wc.CurWave;
 		levelStartTime = wc.levelStartTime;
 
-		nextWaveTime = wc.currentLevel.GetComponent<WaveList>().waves[currentWave].waitTime;
-		nextWaveTime = nextWaveTime - (Time.time - levelStartTime);
+		if (currentWave < wc.currentLevel.GetComponent<WaveList>().waves.Count) {
+			nextWaveTime = wc.currentLevel.GetComponent<WaveList>().waves[currentWave].waitTime;
+			nextWaveTime = nextWaveTime - (Time.time - levelStartTime);
 
-		txt.text = ":" + (int)nextWaveTime;
+			txt.text = ":" + (int)nextWaveTime;
 
-		if (releaseCrystals != null) {
-			releaseCrystals.SendMessage("SetCustomValue", wc.earlyReleaseShards, SendMessageOptions.DontRequireReceiver);
+			if (releaseCrystals != null) {
+				releaseCrystals.SendMessage("SetCustomValue", wc.earlyReleaseShards, SendMessageOptions.DontRequireReceiver);
+			}
 		}
 	}
 }

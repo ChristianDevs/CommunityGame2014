@@ -1,7 +1,7 @@
 AttackersLetThrough:5
-IsPlayerAttacker:True
-AttackerDir:Right
-StartShards:15
+IsPlayerAttacker:False
+AttackerDir:Left
+StartShards:16
 FirstTimeBonus:3
 Lane:4:Disable
 Lane:5:Disable
@@ -11,6 +11,7 @@ Lane:0
 Lane:0
 Lane:0:Disable
 Lane:5:Disable
+UpgradeAtWave:4
 Placeable:0:-5.25:-1.9
 Placeable:0:-3:-1.9
 Placeable:1:2.5:-1.9
@@ -46,48 +47,294 @@ PreDialogue:
         LeftImage:0
         RightImage:None
         Dialogue:May the grace of King Shaddai go with us.
-Wave:
+Wave:0
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Shepherd
-        SpawnLoc:SpecifiedTile
-        Tile:2:11
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+Wave:1
+    WaitTime:15
     WaveUnit:
         Time:0
-        Unit:Shepherd
-        SpawnLoc:SpecifiedTile
-        Tile:3:11
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+Wave:2
+    WaitTime:35
     WaveUnit:
         Time:0
-        Unit:Shepherd
-        SpawnLoc:SpecifiedTile
-        Tile:4:11
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+Wave:3
+    WaitTime:55
     WaveUnit:
         Time:0
-        Unit:Shepherd
-        SpawnLoc:SpecifiedTile
-        Tile:5:11
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+Wave:4
+    WaitTime:80
     WaveUnit:
         Time:0
-        Unit:Shepherd
-        SpawnLoc:SpecifiedTile
-        Tile:2:12
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+Wave:5
+    WaitTime:105
     WaveUnit:
         Time:0
-        Unit:Shepherd
-        SpawnLoc:SpecifiedTile
-        Tile:3:12
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
     WaveUnit:
         Time:0
-        Unit:Shepherd
-        SpawnLoc:SpecifiedTile
-        Tile:4:12
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+Wave:6
+    WaitTime:130
     WaveUnit:
         Time:0
-        Unit:Shepherd
-        SpawnLoc:SpecifiedTile
-        Tile:5:12
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:15
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:15
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:15
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:15
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+Wave:7
+    WaitTime:160
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:15
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:15
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:15
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:15
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+Wave:8
+    WaitTime:190
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:15
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:15
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:15
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:15
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
 PostDialogue:
     Statement:
         Speaker:Captain Resistance

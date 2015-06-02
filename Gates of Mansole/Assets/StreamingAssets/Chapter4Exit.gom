@@ -1,8 +1,178 @@
 entry
 	Music:0
-	Background:0
-	ImageLeft:0
+	Background:3
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:2
+	Action:1
+entry
+	Music:0
+	Background:3
+	ImageLeft:None
+	ImageRight:16
+	Speaker:Captain Goodhope
+	Dialogue:Prince, I bring good news we have routed Diabolus' army and have taken captive all of his supporters.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:12
+	ImageRight:2
+	Speaker:Captain Execution
+	Dialogue:I have captured Diabolus, shall we execute his sentance now? He's done enough ill to the people of the city.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:2
+	Speaker:Prince Emmanuel
+	Dialogue:He has, the evil corrupting the city is gone, but the effects will be long-lasting.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:2
+	Speaker:Prince Emmanuel
+	Dialogue:Strip him of his armor and bind him in chains! I will personally escort him out of the city.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:None
+	ImageRight:11
+	Speaker:Merchant
+	Dialogue:Prince! Prince Emmanuel, I... I am sorry for going along with Diabolus. I was wrong, please forgive me.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:None
+	Speaker:Prince Emmanuel
+	Dialogue:I will forgive you, worry not about your passed wrongs for they are gone.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:None
+	ImageRight:5
+	Speaker:Judge Conscience
+	Dialogue:I want to offer my heartfelt appologies. I knew your laws and ways but I was not strong enough to hold onto them.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:None
+	Speaker:Prince Emmanuel
+	Dialogue:Fear not, my strength will be enough for you. Your past wrongdoings are forgiven and I reinstate you as judge.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:None
+	ImageRight:4
+	Speaker:Mayor Understanding
+	Dialogue:Prince Emmanuel. Thank you for your mercies. We were stuck in Diabolus' rule with no way of freeing ourselves.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:None
+	ImageRight:5
+	Speaker:Judge Conscience
+	Dialogue:Indeed, I was a prisoner in my own mind, unable to free myself from my vanity.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:None
+	ImageRight:4
+	Speaker:Mayor Understanding
+	Dialogue:I beg you, forgive the rebellion of your city and restore us. Remember us when you go back in your kingdom to your father.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:None
+	Speaker:Prince Emmanuel
+	Dialogue:My heart sings for joy at hearing these words from you. This city shall be restored.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:None
+	Speaker:Prince Emmanuel
+	Dialogue:All who accept me and follow my ways will be fully restored in my kingdom.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:None
+	Speaker:Prince Emmanuel
+	Dialogue:I can see a bright future for Mansoul. The damage from Diabolus be healed and Mansoul will be all the stronger.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:9
+	Speaker:Prince Emmanuel
+	Dialogue:I go, now, to my father and his kingdom. But I promise that one day I shall return and complete your restoration to glory.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:None
+	Speaker:Prince Emmanuel
+	Dialogue:I implore every citizen of Mansoul to remember what has happened here this day. Remember those who've fallen.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
 	ImageRight:0
-	Speaker:Tester
-	Dialogue:Testing
-	ShowTime:5
+	Speaker:Captain Resistance
+	Dialogue:Be firm in your loyalty and resist any false teaching, though they be cloaked in goodwill.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:None
+	Speaker:Lord Innocence
+	Dialogue:The Diabolonians will follow their ways outside the city you shall be innocent of it.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:None
+	Speaker:Prince Emmanuel
+	Dialogue:I love all you people here in my city. There is no length I wouldn't go to get you back. You are my very own.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:None
+	Speaker:Prince Emmanuel
+	Dialogue:Till next we meet... Fare thee well.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:2
+	Action:2

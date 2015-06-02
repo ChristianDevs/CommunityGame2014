@@ -810,7 +810,8 @@ public class WorldController : MonoBehaviour {
 				    (CurWave < wl.waves.Count) &&
 				    (Player.tutorialState > 10)) {
 
-					ReleaseButton.SetActive(true);
+					// Don't enable release until bug is fixed
+					//ReleaseButton.SetActive(true);
 				}
 
 				// Check game over conditions
@@ -842,6 +843,7 @@ public class WorldController : MonoBehaviour {
 						}
 					}
 				} else {
+					//Debug.Log(defeatedAttackers + "+" + letThroughAttackers + "=" + totalAI);
 					if (letThroughAttackers >= wl.AttackersLetThrough) {
 						// Player let too many attackers through
 						loseLevel();

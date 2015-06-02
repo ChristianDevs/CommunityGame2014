@@ -1,7 +1,7 @@
 AttackersLetThrough:5
 IsPlayerAttacker:True
 AttackerDir:Right
-StartShards:21
+StartShards:45
 FirstTimeBonus:3
 Lane:5:Disable
 Lane:1
@@ -11,9 +11,6 @@ Lane:1
 Lane:1
 Lane:1
 Lane:5:Disable
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
 Placeable:0:-2.4:-2.65
 Placeable:0:1.25:-2.8
 Placeable:1:-5:-2.7
@@ -51,82 +48,92 @@ Wave:
         Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedTile
-        Tile:0:11
+        Tile:1:10
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedTile
+        Tile:2:10
     WaveUnit:
         Time:0
         Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:3:10
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedTile
+        Tile:4:10
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:5:10
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedTile
+        Tile:6:10
+    WaveUnit:
+        Time:0
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:1:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:2:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:3:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:4:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:5:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:6:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedTile
-        Tile:7:11
-    WaveUnit:
-        Time:0
         Unit:Elder
-        SpawnLoc:SpecifiedTile
-        Tile:0:12
-    WaveUnit:
-        Time:0
-        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:1:12
     WaveUnit:
         Time:0
-        Unit:Elder
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:2:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:3:12
     WaveUnit:
         Time:0
-        Unit:Elder
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:4:12
     WaveUnit:
         Time:0
-        Unit:Orator
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:5:12
     WaveUnit:
         Time:0
-        Unit:Elder
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:6:12
-    WaveUnit:
-        Time:0
-        Unit:Orator
-        SpawnLoc:SpecifiedTile
-        Tile:7:12
 PostDialogue:
     Statement:
         Speaker:Lady Willbewill

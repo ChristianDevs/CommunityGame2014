@@ -1,7 +1,7 @@
 AttackersLetThrough:3
 IsPlayerAttacker:False
 AttackerDir:Left
-StartShards:12
+StartShards:14
 FirstTimeBonus:3
 Lane:1:Disable
 Lane:1
@@ -11,6 +11,7 @@ Lane:1
 Lane:6:Disable
 Lane:6:Disable
 Lane:6:Disable
+UpgradeAtWave:2
 Placeable:2:-5.5:3.25
 Placeable:2:-3:3.25
 Placeable:3:2.5:3.25
@@ -46,94 +47,217 @@ PreDialogue:
         LeftImage:0
         RightImage:None
         Dialogue:Use them to protect the good citizens of the town. And may the grace of King Shaddai go with you.
-Wave:
+Wave:0
     WaitTime:0
     WaveUnit:
         Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
-        Tile:2:2
-Wave:
-    WaitTime:10
+        Tile:2:0
+Wave:1
+    WaitTime:15
     WaveUnit:
         Time:0
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:6
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:9
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:25
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:6
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:9
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:12
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:40
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:2
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
     WaveUnit:
         Time:5
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+Wave:2
+    WaitTime:35
     WaveUnit:
-        Time:8
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
     WaveUnit:
-        Time:11
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
     WaveUnit:
-        Time:14
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
     WaveUnit:
-        Time:15
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+Wave:3
+    WaitTime:50
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:10
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+Wave:4
+    WaitTime:75
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:10
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+Wave:5
+    WaitTime:100
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:10
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:10
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+Wave:6
+    WaitTime:125
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:10
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:10
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+Wave:7
+    WaitTime:150
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
 PostDialogue:
     Statement:
         Speaker:Captain Resistance

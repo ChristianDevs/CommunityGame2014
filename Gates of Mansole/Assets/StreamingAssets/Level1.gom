@@ -53,62 +53,110 @@ PreDialogue:
         LeftImage:0
         RightImage:None
         Dialogue:Take heart! I know you will succeed. May the grace of King Shaddai go with you.
-Wave:
+Wave:0
     WaitTime:0
     WaveUnit:
         Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
-        Tile:2:2
-Wave:
+        Tile:2:0
+Wave:1
     WaitTime:15
     WaveUnit:
         Time:0
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:8
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:40
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+Wave:2
+    WaitTime:30
     WaveUnit:
         Time:0
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
     WaveUnit:
-        Time:3
+        Time:5
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+Wave:3
+    WaitTime:50
     WaveUnit:
-        Time:6
+        Time:0
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
     WaveUnit:
-        Time:8
+        Time:0
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+Wave:4
+    WaitTime:65
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+Wave:5
+    WaitTime:85
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+Wave:6
+    WaitTime:100
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
     WaveUnit:
         Time:10
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
     WaveUnit:
-        Time:11
+        Time:10
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:15
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:15
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
 PostDialogue:
     Statement:
         Speaker:Captain Resistance

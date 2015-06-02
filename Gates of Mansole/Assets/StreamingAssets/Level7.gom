@@ -1,7 +1,7 @@
 AttackersLetThrough:5
 IsPlayerAttacker:True
 AttackerDir:Right
-StartShards:21
+StartShards:16
 FirstTimeBonus:3
 Lane:2
 Lane:2
@@ -11,7 +11,6 @@ Lane:2
 Lane:2
 Lane:2:Disable
 Lane:7:Disable
-UpgradeAtWave:1
 Placeable:20:-1.15:2.4
 Placeable:20:1.15:2.4
 Placeable:25:-4:2.4
@@ -40,7 +39,7 @@ PreDialogue:
         LeftImage:2
         RightImage:None
         Dialogue:Come, make quick work of these defenders so we can confront the... the good captain.
-Wave:
+Wave:0
     WaitTime:0
     WaveUnit:
         Time:0

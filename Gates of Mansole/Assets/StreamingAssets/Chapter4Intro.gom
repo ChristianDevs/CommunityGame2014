@@ -1,8 +1,130 @@
 entry
 	Music:0
-	Background:0
-	ImageLeft:0
-	ImageRight:0
-	Speaker:Tester
-	Dialogue:Testing
-	ShowTime:5
+	Background:3
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:2
+	Action:1
+entry
+	Music:0
+	Background:3
+	ImageLeft:12
+	ImageRight:None
+	Speaker:Captain Boanurges
+	Dialogue:My prince, there she lies. The once shining gem of Mansoul. Now ruined by Diabolus' influence.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:None
+	ImageRight:17
+	Speaker:Prince Emmanuel
+	Dialogue:Indeed, the city is but a shadow of the glory it once was. But that will soon change...
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:13
+	ImageRight:None
+	Speaker:Captain Conviction
+	Dialogue:Prince Emmanuel, preparations are complete for the siege of the city. Just say the word and-
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:20
+	ImageRight:None
+	Speaker:Captain Patience
+	Dialogue:News from the city, prince. Diabolus awaits for negotiations at Mouthgate.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:None
+	ImageRight:17
+	Speaker:Prince Emmanuel
+	Dialogue:Come, let us go meet this villain head on. Take care not to let yourselves believe his lies.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:2
+	ImageRight:None
+	Speaker:Diabolus
+	Dialogue:Greetings prince Emmanuel, Lord of all the world. I know you are the son of the great Shaddai.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:2
+	ImageRight:None
+	Speaker:Diabolus
+	Dialogue:Why have you come to torment me? This city of Mansoul is mine by rights of conquest and election.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:None
+	ImageRight:17
+	Speaker:Prince Emmanuel
+	Dialogue:You deceiver! You pretend lawful right, but your entrance is through deception and falsehood.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:None
+	ImageRight:17
+	Speaker:Prince Emmanuel
+	Dialogue:You lied to the people and pretend they chose you. As heir to my father, this city is by all lawful rights mine.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:2
+	ImageRight:None
+	Speaker:Diabolus
+	Dialogue:Come now, they have rejected you and accept me as their king. You are just and holy and should do no iniquity.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:2
+	ImageRight:None
+	Speaker:Diabolus
+	Dialogue:Leave me to my just inheritance in peace.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:None
+	ImageRight:17
+	Speaker:Prince Emmanuel
+	Dialogue:Because of you, Mansoul is a miserable and wretched place! You ahve defaced my father's image and setup your own.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:None
+	ImageRight:17
+	Speaker:Prince Emmanuel
+	Dialogue:What thief, tyrant or devil conquers like you? No, you must be tried in my father's court.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:2
+	ImageRight:None
+	Speaker:Diabolus
+	Dialogue:Do not cross me! I will have Mansoul as my own or see her burned to the ground in ashes.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:2
+	Action:2

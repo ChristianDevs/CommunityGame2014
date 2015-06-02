@@ -1,7 +1,7 @@
 AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Left
-StartShards:21
+StartShards:26
 FirstTimeBonus:6
 Lane:7:Disable
 Lane:2
@@ -11,8 +11,8 @@ Lane:2
 Lane:2
 Lane:2:Disable
 Lane:7:Disable
-UpgradeAtWave:0
-UpgradeAtWave:0
+UpgradeAtWave:4
+UpgradeAtWave:9
 Placeable:20:-6.15:2.4
 Placeable:20:-3.85:2.4
 Placeable:23:-5:2.75
@@ -32,144 +32,456 @@ PreDialogue:
         LeftImage:1
         RightImage:None
         Dialogue:Keep the judge's guards off our backs while we get a confession out of him.
-Wave:
+Wave:0
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:2:11
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
     WaveUnit:
-        Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:3:11
+        Time:4
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
     WaveUnit:
-        Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:4:11
-    WaveUnit:
-        Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:5:11
+        Time:4
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
     WaveUnit:
         Time:8
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:6:11
-    WaveUnit:
-        Time:13
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:7:11
-    WaveUnit:
-        Time:13
         Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:12
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
     WaveUnit:
-        Time:16
+        Time:8
         Unit:Elder
-        SpawnLoc:RandRow
-        Tile:1:12
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+Wave:1
+    WaitTime:22
     WaveUnit:
-        Time:16
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:2:12
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
     WaveUnit:
-        Time:16
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:3:12
-Wave:
-	WaitTime: 25
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:8
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:8
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+Wave:2
+    WaitTime:44
     WaveUnit:
         Time:0
         Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
     WaveUnit:
         Time:0
         Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:4
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:4
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:8
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+Wave:3
+    WaitTime:66
     WaveUnit:
         Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-	WaitTime: 35
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:8
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+Wave:4
+    WaitTime:88
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:8
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:8
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:8
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+Wave:5
+    WaitTime:110
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
     WaveUnit:
         Time:0
         Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:6
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:9
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:9
-        Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:9
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-	WaitTime: 55
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
     WaveUnit:
         Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
     WaveUnit:
         Time:0
         Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
     WaveUnit:
         Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:4
         Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:5
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:4
         Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:5
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:4
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+Wave:6
+    WaitTime:128
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:4
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:8
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:8
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:8
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:8
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:12
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:12
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+Wave:7
+    WaitTime:142
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:4
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:8
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:8
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:8
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:8
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:12
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:12
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+Wave:8
+    WaitTime:164
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:8
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:8
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:8
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:12
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:12
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:12
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:12
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:12
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+Wave:9
+    WaitTime:190
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:4
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:8
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:8
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:8
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:8
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:8
+        Unit:Elder
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
 PostDialogue:
     Statement:
         Speaker:Judge Conscience
