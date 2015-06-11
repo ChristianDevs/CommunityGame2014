@@ -12,45 +12,35 @@ Lane:2
 Lane:2
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Captain Judgement
+        LeftImage:15
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:Up ahead is the last stronghold. We must excersize caution here.
     Statement:
-        Speaker:Diabolus
+        Speaker:Loveflesh
         LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
+        RightImage:25
+        Dialogue:Haha! You had better excersize caution. Although it will not avail you here.
     Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
-    Statement:
-        Speaker:Diabolus
+        Speaker:Loveflesh
         LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
+        RightImage:25
+        Dialogue:What? You defeated my brother at Midnight Hold? That proves nothing.
     Statement:
-        Speaker:Diabolus
+        Speaker:Loveflesh
         LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
+        RightImage:25
+        Dialogue:Welcome to Sweet Sin Hold. Nobody held in the firm grasp of sweet sin is ever let go.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Captain Judgement
+        LeftImage:15
         RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
+        Dialogue:Perhaps, but we have a secret weapon. We come with the power of King Shaddai.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Captain Judgement
+        LeftImage:15
         RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Dialogue:King Shaddai and his son, prince Emmanuel will break your grasp.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -240,72 +230,22 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:No! This cannot happen.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
-    Statement:
-        Speaker:Antisiphone
+        Speaker:Loveflesh
         LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
+        RightImage:25
+        Dialogue:No! Sin and disobedience cannot lose to the likes of you.
     Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Captain Judgement
+        LeftImage:15
         RightImage:None
-        Dialogue:Aaaahhh!
+        Dialogue:Your power is broken. Now it is time for you to face judgment.
     Statement:
-        Speaker:Diabolus
+        Speaker:Prince Emmanuel
         LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
+        RightImage:17
+        Dialogue:You all have done well. Sin will no longer hold the people of Mansoul prisoner.
     Statement:
-        Speaker:Diabolus
+        Speaker:Prince Emmanuel
         LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But... the story continues...
+        RightImage:17
+        Dialogue:Behold, the keep lies before us. We are almost finished.

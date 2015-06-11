@@ -26,45 +26,35 @@ Placeable:16:8.8:-0.57
 Placeable:16:3.75:0.38
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:That betrayer enfuriates me so! Acting cordial and yet spewing such fifth.
     Statement:
-        Speaker:Diabolus
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:We shall defeat his army of Diabolonians and then crush its head.
+    Statement:
+        Speaker:Captain Boanurges
         LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
+        RightImage:12
+        Dialogue:Prince, our army is ready to siege mouthgate. We only await your command.
     Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
-    Statement:
-        Speaker:Diabolus
+        Speaker:Captain Patience
         LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
+        RightImage:20
+        Dialogue:I bear news from the front lines, Prince Emmanuel.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
+        Dialogue:Speak quickly, my good captain.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Dialogue:You heard him captain, defeat this advance so we can siege the gate.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -254,72 +244,42 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:No! This cannot happen.
+        Dialogue:Well done on this victory. The whole of the city will surely be ours.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
-    Statement:
-        Speaker:Antisiphone
+        Speaker:Captain Patience
         LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
+        RightImage:20
+        Dialogue:Prince, a messenger comes from Diabolus.
     Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:Aaaahhh!
+        Dialogue:Perhaps he sees the folly of his stubborness. Let him speak.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
+        Speaker:Compromise
+        LeftImage:17
+        RightImage:21
+        Dialogue:Greetings Prince Emmanuel, I come bearing a proposition from my lord Diabolus.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
+        Speaker:Compromise
+        LeftImage:17
+        RightImage:21
+        Dialogue:Diabolus can see your prowess is great on the battlefield. He is willing to surrender half of the city to you.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:21
+        Dialogue:Half? Half?! I will not relent until all of Mansoul is mine. Diabolus shall not occupy one corner of the city.
     Statement:
-        Speaker:???
-        LeftImage:None
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:21
+        Dialogue:Go and tell your lord that I will eliminate all traces of him from Mansoul.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But... the story continues...
+        Dialogue:Captain, ready the troops. We go to begin our siege at Eargate.

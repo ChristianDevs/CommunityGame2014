@@ -24,45 +24,45 @@ Placeable:16:4.3:3.35
 Placeable:16:-1.5:-1.65
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:Here we are, the gates of the keep. Victory here is victory at the very heart of Mansoul.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
+        Dialogue:Victory? Are you so bent on war that negotiations have escaped your mind?
     Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
+        Dialogue:I suppose you have negotiations you wish make?
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
+        Dialogue:Indeed I do, I have nothing but the peace and dignity of the people here in mind.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:I have a city to prepare to run...
+        Dialogue:I could enter into your employ and persuade the people here to take back your laws and ways.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:Many of the people here despise you and your king, but they would trust me.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Dialogue:Enough of your lies! Do not act as though the changing of my people's hearts and minds was not your doing.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:You played upon their weaknesses and took them captive. I will see you bound and gagged so your influence becomes no more.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -252,72 +252,37 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
-        Dialogue:No! This cannot happen.
+        Dialogue:Prince, look who I found among the Diabolonians.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
-    Statement:
-        Speaker:Antisiphone
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
+        RightImage:23
+        Dialogue:Let go of me! I don't want to go with you. I... I... Prince Emmanuel?
     Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:Aaaahhh!
+        Dialogue:Lady, it has been a while. You used to be my advocate in Mansoul, but I heard reports your heart changed.
     Statement:
-        Speaker:Diabolus
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
+        RightImage:23
+        Dialogue:No, my heart didn't change. My eyes were opened to the truth.
     Statement:
-        Speaker:Diabolus
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
+        RightImage:23
+        Dialogue:Diabolus showed me what it is like to live free of the old ways and I don't want to go back.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:...
+        Dialogue:That being the case, we will bind you and take you away for judgment in my father's court.
     Statement:
-        Speaker:???
-        LeftImage:None
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:But...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But... the story continues...
+        Dialogue:Captain, now that we've stormed the castle we need to take the armory next

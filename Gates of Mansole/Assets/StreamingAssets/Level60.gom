@@ -26,45 +26,50 @@ Placeable:25:-2:-1.25
 Placeable:25:-2:0.75
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:Everyone, search around for Diabolus.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:He shouldn't be far from the throne room. That is the place he wants the most.
+    Statement:
+        Speaker:Captain Goodhope
+        LeftImage:None
+        RightImage:16
+        Dialogue:Yes, my prince. If he is nearby he won't escape.
+    Statement:
+        Speaker:Captain Patience
+        LeftImage:None
+        RightImage:20
+        Dialogue:Prince, something is wrong with the door leading out of the throne room. It won't open!
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:What? Have a few more soldiers give it a good shove.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
+        Dialogue:Ha, ha, ha! It won't budge no matter how many soldiers push on it.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
+        Dialogue:You are in my lair now and will pour out my malice and cruelty to defeat you.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:I have a city to prepare to run...
+        Dialogue:Long have I desired the kingdom of Shaddai for myself.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:By killing you, the heir to the throne, I can steal your inheritance and take the kingdom as my right.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -254,72 +259,52 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:No! This cannot happen.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
-    Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
-    Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Aaaahhh!
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
         Dialogue:...
     Statement:
-        Speaker:???
-        LeftImage:None
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:But...
+        Dialogue:Diabolus, come into my presence.
     Statement:
-        Speaker:???
+        Speaker:Diabolus
         LeftImage:None
+        RightImage:2
+        Dialogue:...
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:Here I am, Prince Emmanuel.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:But... the story continues...
+        Dialogue:Your deceptive reign of self-service is at an end.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:You will come with me and face the consequences of your actions.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:...
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:What is that captain? You feel as though a burden has been lifted? That is good.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:Live as carefree as the flowers of the field or the birds of the air.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:Come, let us go into the city and declare victory.

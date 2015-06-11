@@ -20,45 +20,40 @@ Placeable:20:-2:-2.25
 Placeable:20:-2:0.75
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Captain Boanurges
+        LeftImage:12
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:We are at the throne room... CHARGE!
     Statement:
-        Speaker:Diabolus
+        Speaker:Captain Boanurges
+        LeftImage:12
+        RightImage:None
+        Dialogue:What? There is nobody here?
+    Statement:
+        Speaker:???
         LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
         RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
+        Dialogue:Oh... but there is. You're sense are too just too dull to detect me.
     Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
-    Statement:
-        Speaker:Diabolus
+        Speaker:ForgetGood
         LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
+        RightImage:1
+        Dialogue:Well, the mighty Prince Emmanuel and all of his captains have come to pay homage to my lord.
     Statement:
-        Speaker:Diabolus
+        Speaker:ForgetGood
         LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
+        RightImage:1
+        Dialogue:So many captains I see, and yet one of them is not like the other. You really do belong with me... We serve the same master.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
+        Dialogue:No longer! I have bestoyed mercy and grace and forgiveness. The rule of your lord ends this day.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        Speaker:ForgetGood
+        LeftImage:None
+        RightImage:1
+        Dialogue:Bold words. Come and get me if you dare.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -248,72 +243,32 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
-        Dialogue:No! This cannot happen.
+        Dialogue:We have defeated you and your guards. Now take us to Diabolus.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
-    Statement:
-        Speaker:Antisiphone
+        Speaker:ForgetGood
         LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
+        RightImage:1
+        Dialogue:I refuse.
     Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:Aaaahhh!
+        Dialogue:Continue to disobey and I will bestoy judgment on you right here and right now.
     Statement:
-        Speaker:Diabolus
+        Speaker:ForgetGood
         LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
+        RightImage:1
         Dialogue:...
     Statement:
-        Speaker:???
-        LeftImage:None
+        Speaker:Prince Emmanuel
+        LeftImage:17
         RightImage:None
-        Dialogue:But...
+        Dialogue:Very well, this was your own choice. Captain Judgment, show her what happens disobedient Diabolonians.
     Statement:
-        Speaker:???
-        LeftImage:None
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
-        Dialogue:But... the story continues...
+        Dialogue:As you command, my prince. ... YAAAA!

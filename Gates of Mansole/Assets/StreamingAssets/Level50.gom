@@ -33,45 +33,30 @@ Placeable:16:6.8:-1.65
 Placeable:16:5.1:1.3
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:Good you arrived, captain. A Diabolonian named Antisiphone is giving me some trouble.
     Statement:
-        Speaker:Diabolus
+        Speaker:Captain Judgment
+        LeftImage:15
+        RightImage:None
+        Dialogue:What is that? You know Antisiphone?
+    Statement:
+        Speaker:Captain Judgment
+        LeftImage:15
+        RightImage:None
+        Dialogue:He killed Captain Resistance before Diabolus took over? We must do something about him-
+    Statement:
+        Speaker:None
+        LeftImage:15
+        RightImage:None
+        Dialogue:[TWANG!]
+    Statement:
+        Speaker:Antisiphone
         LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
-    Statement:
-        Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        RightImage:3
+        Dialogue:I missed? Don't worry, I shall not miss next time.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -261,72 +246,32 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:No! This cannot happen.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
+        Speaker:Antisiphone
+        LeftImage:None
+        RightImage:3
+        Dialogue:Ha! I may go down, captain, but I'm taking you with me.
     Statement:
         Speaker:Antisiphone
         LeftImage:None
         RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
+        Dialogue:I will get revenge on you for changing allegience and betraying Diabol-
+    Statement:
+        Speaker:Captain Judgment
+        LeftImage:15
+        RightImage:None
+        Dialogue:YAAAAA!
     Statement:
         Speaker:Antisiphone
         LeftImage:None
         RightImage:3
-        Dialogue:Face my arrow! [thwang]
+        Dialogue:Aaaauuuuggg...
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
-        Dialogue:Aaaahhh!
+        Dialogue:Whew, what a long winded man... for a Diabolonian.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
-        Dialogue:...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But... the story continues...
+        Dialogue:Hmm? You want to thank me for saving your life? Think nothing of it. We are comrades in arms now.

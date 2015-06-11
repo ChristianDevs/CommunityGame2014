@@ -17,45 +17,30 @@ Placeable:25:4.5:2.4
 Placeable:23:0:2.75
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
-    Statement:
-        Speaker:Diabolus
+        Speaker:LovenoLight
         LeftImage:None
-        RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
+        RightImage:26
+        Dialogue:Look who has come. I remember you stood over this ground to protect the building of this Midnight Hold.
     Statement:
-        Speaker:Carnalsecurity
+        Speaker:LovenoLight
+        LeftImage:None
+        RightImage:26
+        Dialogue:Now, the traitor has come to try and tear it down.
+    Statement:
+        Speaker:Captain Conviction
         LeftImage:8
         RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
+        Dialogue:The captain here was a traitor when he helped you and your Lord gain power in the city.
     Statement:
-        Speaker:Carnalsecurity
+        Speaker:Captain Conviction
         LeftImage:8
         RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
+        Dialogue:But he is a traitor no longer for he is now on the side of righteousness.
     Statement:
-        Speaker:Diabolus
+        Speaker:LovenoLight
         LeftImage:None
-        RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:I have a city to prepare to run...
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I shall not allow Diabolus to take over this fine City of Mansoul.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:We must eliminate him before it is too late!
+        RightImage:26
+        Dialogue:Your words matter not, I shall throw your lines into chaos and defeat your measly army.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -245,72 +230,27 @@ Wave:
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:No! This cannot happen.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Mark my words. If Diabolus becomes king of Mansoul the city will come into ruin.
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:I remember good ol' Captain Resistance used to say these words...
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:"Resist Diabolus and he will flee from you."
-    Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
-        RightImage:None
-        Dialogue:Alas! Had we resistance left to thwart him.
-    Statement:
-        Speaker:Antisiphone
+        Speaker:LovenoLight
         LeftImage:None
-        RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
+        RightImage:26
+        Dialogue:Grrr... even though you defeat me here, you won't get passed my brother.
     Statement:
-        Speaker:Antisiphone
+        Speaker:LovenoLight
         LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
+        RightImage:26
+        Dialogue:I've known nobody who can stand against LoveFlesh.
     Statement:
-        Speaker:Lord Innocence
-        LeftImage:9
+        Speaker:Captain Conviction
+        LeftImage:8
         RightImage:None
-        Dialogue:Aaaahhh!
+        Dialogue:Your brother shall be defeated and suffer the same fate as you.
     Statement:
-        Speaker:Diabolus
+        Speaker:Prince Emmanuel
         LeftImage:None
-        RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
+        RightImage:17
+        Dialogue:And captain, worry not. All here with me has a past they must overcome.
     Statement:
-        Speaker:Diabolus
+        Speaker:Prince Emmanuel
         LeftImage:None
-        RightImage:2
-        Dialogue:We will expunge all traces of King Shaddai and his laws from this city.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But...
-    Statement:
-        Speaker:???
-        LeftImage:None
-        RightImage:None
-        Dialogue:But... the story continues...
+        RightImage:17
+        Dialogue:The destruction of this hold is a new dawn the people will see.
