@@ -737,6 +737,11 @@ public class WorldController : MonoBehaviour {
 						
 						// Go through each unit and see if it is time to spawn it
 						foreach (WaveUnit ut in wv.units) {
+							if ((ut.RespawnTime > 0) && (ut.DeathTime != -1) && (Time.time >= (ut.DeathTime + ut.RespawnTime + levelStartTime))) {
+								ut.created = false;
+								ut.DeathTime = -1;
+							}
+
 							if (ut.created == false) {
 								
 								if ((wv.waitTime + ut.time + levelStartTime) < Time.time) {
@@ -1567,6 +1572,12 @@ public class WorldController : MonoBehaviour {
 					}
 					else {
 						totalDefenders--;
+
+						foreach (WaveUnit wu in currentLevel.GetComponent<WaveList>().waves[0].units) {
+							if ((wu.Tile.x == row) && (wu.Tile.y == col)) {
+								wu.DeathTime = Time.time;
+							}
+						}
 					}
 				}
 				else {

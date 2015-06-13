@@ -100,7 +100,7 @@ public class LevelSelectController : MonoBehaviour {
 		levelButtons [levelButtons.Count - 1].transform.localScale = new Vector3 (0.6f, 0.6f, 1);
 
 		for (int i = 1; i < Player.levelFileNames[Player.currentChapter].Count; i++) {
-			if (Player.levelComplete[Player.currentChapter][i - 1] > 0) {
+			//if (Player.levelComplete[Player.currentChapter][i - 1] > 0) {
 				levelButtons.Add(Instantiate(level1, level1.transform.position, Quaternion.identity) as GameObject);
 				levelButtons[i].name = (i + 1).ToString();
 				levelButtons[i].GetComponent<UiButton>().buttonName = levelButtons[i].name;
@@ -112,7 +112,7 @@ public class LevelSelectController : MonoBehaviour {
 				if ((Player.tutorialState == 5) && (i == 1)) {
 					levelButtons[i].SetActive(false);
 				}
-			}
+			//}
 		}
 
 		if (Player.chapterProgression >= Player.levelFileNames.Count) {

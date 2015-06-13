@@ -17,4 +17,6 @@ public class WaveUnit {
 	public bool created = false;
 	public _spawnLocType SpawnLocType;
 	public Vector2 Tile;
+	public float RespawnTime;
+	public float DeathTime;
 }

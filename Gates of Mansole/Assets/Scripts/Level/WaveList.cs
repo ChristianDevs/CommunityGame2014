@@ -310,6 +310,8 @@ public class WaveList : MonoBehaviour {
 		int i;
 		bool isDone = false;
 		
+		fileUnit.DeathTime = -1;
+		
 		for (i = index; i < levelData.Length; i++) {
 			string key = "";
 			string val = "";
@@ -364,6 +366,9 @@ public class WaveList : MonoBehaviour {
 				
 				fileUnit.Tile.x = float.Parse(val);
 				fileUnit.Tile.y = float.Parse(val2);
+				break;
+			case "respawntime":
+				fileUnit.RespawnTime = float.Parse(val);
 				break;
 			default:
 				isDone = true;

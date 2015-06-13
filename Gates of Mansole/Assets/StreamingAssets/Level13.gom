@@ -51,91 +51,109 @@ Wave:
         Unit:Evangelist
         SpawnLoc:SpecifiedTile
         Tile:1:10
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:2:10
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedTile
         Tile:3:10
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:4:10
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedTile
         Tile:5:10
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Teacher
         SpawnLoc:SpecifiedTile
         Tile:6:10
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:1:11
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:2:11
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:3:11
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:4:11
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:5:11
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:6:11
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:1:12
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:2:12
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:3:12
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:4:12
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:5:12
+        RespawnTime:10
     WaveUnit:
         Time:0
         Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:6:12
+        RespawnTime:10
 PostDialogue:
     Statement:
         Speaker:Lady Willbewill
