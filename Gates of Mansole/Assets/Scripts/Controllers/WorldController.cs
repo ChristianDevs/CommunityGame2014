@@ -95,6 +95,7 @@ public class WorldController : MonoBehaviour {
 	private List<GameObject> placementBoxes;
 
 	private bool isFirstWin;
+	private List<bool> isTimeUpgradeApplied;
 	
 	private int OrbCurAmount;
 	private float ShardCurAmount;
@@ -375,6 +376,12 @@ public class WorldController : MonoBehaviour {
 					uType.getPlayerStats().resetUnitStats(uType);
 					uType.getEnemyStats().resetUnitStats(uType);
 				}
+			}
+
+			// Initialize Upgrade Applied list
+			isTimeUpgradeApplied = new List<bool>();
+			foreach(float upTime in currentLevel.GetComponent<WaveList>().upgradeAtTime) {
+				isTimeUpgradeApplied.Add(false);
 			}
 			
 			// Generate map lanes
@@ -662,6 +669,27 @@ public class WorldController : MonoBehaviour {
 					blinkTile.row = 2;
 					map.SendMessage("blinkTile", blinkTile, SendMessageOptions.DontRequireReceiver);
 					unitsToRelease = 1;
+				}
+
+				// Check time for upgrades
+				List<float> upTimeList = currentLevel.GetComponent<WaveList>().upgradeAtTime;
+				for(int upTimeInd = 0; upTimeInd < upTimeList.Count; upTimeInd++) {
+					if ((isTimeUpgradeApplied[upTimeInd] == false) &&
+					    (Time.time >= (upTimeList[upTimeInd] + levelStartTime))) {
+
+						// Mark as upgrade applied
+						isTimeUpgradeApplied[upTimeInd] = true;
+
+						// Tell the player the enemy was upgraded
+						enemyUpgradeMsg.SetActive(true);
+						enemyUpgradeMsgTimeout = Time.time + 3f;
+						
+						// Upgrade the enemy units
+						foreach(GameObject ut in unitTypes) {
+							PropertyStats unitStats = ut.GetComponent<UiUnitType>().getEnemyStats();
+							unitStats.upgradeUnit(ut.GetComponent<UiUnitType>().UnitName);
+						}
+					}
 				}
 				
 				// Go through each wave and see if it is time to start that wave

@@ -11,6 +11,7 @@ Lane:1:Disable
 Lane:1
 Lane:1
 Lane:1
+UpgradeAtTime:30
 Placeable:4:-1.7:0.15
 Placeable:5:4.1:-0.75
 Placeable:4:5.75:0.15

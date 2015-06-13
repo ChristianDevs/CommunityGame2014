@@ -40,6 +40,7 @@ public class WaveList : MonoBehaviour {
 	public List<bool> laneEnable;
 	public List<float> enemyLevelUpTimes;
 	public List<_placeable> placeables;
+	public List<float> upgradeAtTime;
 	public List<int> upgradeAtWave;
 	public int firstTimeBonus;
 	public int backGroundMusic;
@@ -64,6 +65,7 @@ public class WaveList : MonoBehaviour {
 		unitTypes = newUnitTypes;
 		Lanes = new List<int>();
 		placeables = new List<_placeable> ();
+		upgradeAtTime = new List<float> ();
 		upgradeAtWave = new List<int> ();
 		waveStarted = new List<bool> ();
 		waves = new List<Wave>();
@@ -168,6 +170,9 @@ public class WaveList : MonoBehaviour {
 				break;
 			case "upgradeatwave":
 				upgradeAtWave.Add(int.Parse(val));
+				break;
+			case "upgradeattime":
+				upgradeAtTime.Add(float.Parse(val));
 				break;
 			case "firsttimebonus":
 				firstTimeBonus = int.Parse(val);
