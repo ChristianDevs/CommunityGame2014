@@ -320,8 +320,18 @@ public class WaveList : MonoBehaviour {
 				fileUnit.time = float.Parse(val);
 				break;
 			case "unit":
+				List<string> unitList;
+				string selUnit;
+
+				unitList = new List<string>();
+				for (int unitListInd = 1; unitListInd < levelData[i].Split(seps).Length; unitListInd++) {
+					unitList.Add(levelData[i].Split(seps)[unitListInd]);
+				}
+
+				selUnit = unitList[Random.Range(0, unitList.Count)];
+
 				foreach (GameObject ut in unitTypes) {
-					if (val == ut.GetComponent<UiUnitType>().UnitName) {
+					if (selUnit == ut.GetComponent<UiUnitType>().UnitName) {
 						fileUnit.prefab = ut.GetComponent<UiUnitType>().getRandomUnit();
 					}
 				}
