@@ -65,15 +65,35 @@ Wave:0
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:2:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:15
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
 Wave:1
-    WaitTime:20
+    WaitTime:30
     WaveUnit:
         Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:5
         Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:4:0
     WaveUnit:
         Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:10
         Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:5:0
@@ -88,9 +108,9 @@ Wave:2
         Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
-        Tile:3:0
+        Tile:2:0
     WaveUnit:
-        Time:5
+        Time:0
         Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:4:0
@@ -98,51 +118,66 @@ Wave:2
         Time:5
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
-        Tile:2:0
+        Tile:1:0
     WaveUnit:
-        Time:10
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:5
         Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:5:0
-    WaveUnit:
-        Time:10
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:1:0
 Wave:3
-    WaitTime:60
+    WaitTime:75
     WaveUnit:
         Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:2:0
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:4:0
-    WaveUnit:
-        Time:5
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:1:0
-    WaveUnit:
-        Time:5
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:3:0
     WaveUnit:
-        Time:5
+        Time:0
         Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:5:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:10
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:10
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:15
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
 Wave:4
-    WaitTime:90
+    WaitTime:105
     WaveUnit:
         Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
-        Tile:3:0
+        Tile:1:0
     WaveUnit:
         Time:0
         Unit:Teacher
@@ -155,14 +190,14 @@ Wave:4
         Tile:2:0
     WaveUnit:
         Time:5
-        Unit:Evangelist
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:4:0
     WaveUnit:
         Time:10
-        Unit:Teacher
+        Unit:Evangelist
         SpawnLoc:SpecifiedRow
-        Tile:5:0
+        Tile:1:0
     WaveUnit:
         Time:10
         Unit:Evangelist
@@ -170,16 +205,31 @@ Wave:4
         Tile:3:0
     WaveUnit:
         Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:15
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
-        Tile:1:0
+        Tile:2:0
     WaveUnit:
         Time:15
         Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:4:0
+    WaveUnit:
+        Time:20
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:20
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
 Wave:5
-    WaitTime:120
+    WaitTime:140
     WaveUnit:
         Time:0
         Unit:Evangelist
@@ -187,56 +237,51 @@ Wave:5
         Tile:1:0
     WaveUnit:
         Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:5:0
-    WaveUnit:
-        Time:5
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:2:0
     WaveUnit:
-        Time:5
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:4:0
-    WaveUnit:
-        Time:10
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:1:0
-    WaveUnit:
-        Time:10
+        Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:3:0
     WaveUnit:
-        Time:10
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:5:0
-    WaveUnit:
-        Time:15
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:2:0
-    WaveUnit:
-        Time:15
+        Time:0
         Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:4:0
     WaveUnit:
-        Time:20
+        Time:0
         Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:1:0
     WaveUnit:
-        Time:20
+        Time:5
         Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:5:0
 Wave:6
-    WaitTime:155
+    WaitTime:160
     WaveUnit:
         Time:0
         Unit:Evangelist
@@ -246,17 +291,7 @@ Wave:6
         Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
-        Tile:2:0
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
         Tile:3:0
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:4:0
     WaveUnit:
         Time:0
         Unit:Teacher
@@ -264,108 +299,66 @@ Wave:6
         Tile:5:0
     WaveUnit:
         Time:5
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:5
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+    WaveUnit:
+        Time:10
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:1:0
     WaveUnit:
-        Time:5
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:2:0
-    WaveUnit:
-        Time:5
+        Time:10
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:3:0
     WaveUnit:
-        Time:5
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:5:0
+    WaveUnit:
+        Time:15
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:15
         Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:4:0
     WaveUnit:
-        Time:5
+        Time:20
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:1:0
+    WaveUnit:
+        Time:20
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:20
         Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:5:0
+    WaveUnit:
+        Time:25
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:2:0
+    WaveUnit:
+        Time:25
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
 Wave:7
-    WaitTime:175
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:1:0
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:3:0
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:5:0
-    WaveUnit:
-        Time:5
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:2:0
-    WaveUnit:
-        Time:5
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:4:0
-    WaveUnit:
-        Time:10
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:1:0
-    WaveUnit:
-        Time:10
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:3:0
-    WaveUnit:
-        Time:10
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:5:0
-    WaveUnit:
-        Time:15
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:2:0
-    WaveUnit:
-        Time:15
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:4:0
-    WaveUnit:
-        Time:20
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:1:0
-    WaveUnit:
-        Time:20
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:3:0
-    WaveUnit:
-        Time:20
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:5:0
-    WaveUnit:
-        Time:25
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:2:0
-    WaveUnit:
-        Time:25
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:4:0
-Wave:8
-    WaitTime:215
+    WaitTime:200
     WaveUnit:
         Time:0
         Unit:Evangelist

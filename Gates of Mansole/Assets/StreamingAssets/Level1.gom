@@ -103,20 +103,18 @@ Wave:4
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:3:0
-Wave:5
-    WaitTime:85
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:4:0
     WaveUnit:
         Time:5
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:4:0
-Wave:6
-    WaitTime:100
+    WaveUnit:
+        Time:10
+        Unit:Evangelist
+        SpawnLoc:SpecifiedRow
+        Tile:4:0
+Wave:5
+    WaitTime:90
     WaveUnit:
         Time:0
         Unit:Evangelist

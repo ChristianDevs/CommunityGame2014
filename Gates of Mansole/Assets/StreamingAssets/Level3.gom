@@ -54,20 +54,18 @@ Wave:0
         Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:4:0
-Wave:1
-    WaitTime:15
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedRow
-        Tile:3:0
     WaveUnit:
         Time:5
         Unit:Teacher
         SpawnLoc:SpecifiedRow
+        Tile:3:0
+    WaveUnit:
+        Time:10
+        Unit:Teacher
+        SpawnLoc:SpecifiedRow
         Tile:2:0
 Wave:2
-    WaitTime:35
+    WaitTime:25
     WaveUnit:
         Time:0
         Unit:Teacher
@@ -84,7 +82,7 @@ Wave:2
         SpawnLoc:SpecifiedRow
         Tile:3:0
 Wave:3
-    WaitTime:55
+    WaitTime:45
     WaveUnit:
         Time:0
         Unit:Teacher
@@ -101,7 +99,7 @@ Wave:3
         SpawnLoc:SpecifiedRow
         Tile:2:0
 Wave:4
-    WaitTime:80
+    WaitTime:70
     WaveUnit:
         Time:0
         Unit:Teacher
@@ -128,7 +126,7 @@ Wave:4
         SpawnLoc:SpecifiedRow
         Tile:4:0
 Wave:5
-    WaitTime:105
+    WaitTime:95
     WaveUnit:
         Time:0
         Unit:Teacher
@@ -170,7 +168,7 @@ Wave:5
         SpawnLoc:SpecifiedRow
         Tile:5:0
 Wave:6
-    WaitTime:130
+    WaitTime:120
     WaveUnit:
         Time:0
         Unit:Teacher
@@ -222,7 +220,7 @@ Wave:6
         SpawnLoc:SpecifiedRow
         Tile:5:0
 Wave:7
-    WaitTime:160
+    WaitTime:150
     WaveUnit:
         Time:0
         Unit:Teacher
@@ -274,7 +272,7 @@ Wave:7
         SpawnLoc:SpecifiedRow
         Tile:5:0
 Wave:8
-    WaitTime:190
+    WaitTime:180
     WaveUnit:
         Time:0
         Unit:Teacher
