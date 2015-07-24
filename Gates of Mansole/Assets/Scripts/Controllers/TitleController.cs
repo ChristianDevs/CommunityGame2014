@@ -23,7 +23,7 @@ public class TitleController : MonoBehaviour {
 		alpha = 1;
 		color.a = alpha;
 		BlackScreen.SetActive (true);
-		BlackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = color;
+		BlackScreen.GetComponent<SpriteRenderer> ().GetComponent<Renderer>().material.color = color;
 		Logo.SetActive (false);
 		foreach(GameObject btn in Buttons) {
 			btn.SetActive(false);
@@ -36,7 +36,7 @@ public class TitleController : MonoBehaviour {
 		if (alpha > 0) {
 			alpha -= 0.03f;
 			color.a = alpha;
-			BlackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = color;
+			BlackScreen.GetComponent<SpriteRenderer> ().GetComponent<Renderer>().material.color = color;
 		} else if (alpha < 0) {
 			Logo.SetActive (true);
 			foreach(GameObject btn in Buttons) {

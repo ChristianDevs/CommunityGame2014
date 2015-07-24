@@ -266,12 +266,12 @@ public class CinematicController : MonoBehaviour {
 		case _action.FadeFromBlack:
 			alpha -= Time.deltaTime / Cinematic[entryIndex-1].ShowTime;
 			clr.a = alpha;
-			blackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = clr;
+			blackScreen.GetComponent<SpriteRenderer> ().GetComponent<Renderer>().material.color = clr;
 			break;
 		case _action.FadeToBlack:
 			alpha += Time.deltaTime / Cinematic[entryIndex-1].ShowTime;
 			clr.a = alpha;
-			blackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = clr;
+			blackScreen.GetComponent<SpriteRenderer> ().GetComponent<Renderer>().material.color = clr;
 			break;
 		default:
 			break;
@@ -288,13 +288,13 @@ public class CinematicController : MonoBehaviour {
 			blackScreen.SetActive(true);
 			alpha = 1;
 			clr.a = alpha;
-			blackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = clr;
+			blackScreen.GetComponent<SpriteRenderer> ().GetComponent<Renderer>().material.color = clr;
 			break;
 		case _action.FadeToBlack:
 			blackScreen.SetActive(true);
 			alpha = 0;
 			clr.a = alpha;
-			blackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = clr;
+			blackScreen.GetComponent<SpriteRenderer> ().GetComponent<Renderer>().material.color = clr;
 			break;
 		default:
 			break;

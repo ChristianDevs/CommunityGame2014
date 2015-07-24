@@ -7,8 +7,8 @@ public class UILayer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		this.renderer.sortingLayerName = sortingLayer;
-		this.renderer.sortingOrder = orderInSortingLayer;
+		this.GetComponent<Renderer>().sortingLayerName = sortingLayer;
+		this.GetComponent<Renderer>().sortingOrder = orderInSortingLayer;
 	}
 	
 	// Update is called once per frame

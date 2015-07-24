@@ -88,7 +88,7 @@ public class CreditsController : MonoBehaviour {
 
 		if (BlackScreen != null) {
 			BlackScreen.SetActive(true);
-			BlackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = clr;
+			BlackScreen.GetComponent<SpriteRenderer> ().GetComponent<Renderer>().material.color = clr;
 		}
 
 		currentCameraWaypoint = 0;
@@ -110,7 +110,7 @@ public class CreditsController : MonoBehaviour {
 				clr.a = alpha;
 				
 				if (BlackScreen != null) {
-					BlackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = clr;
+					BlackScreen.GetComponent<SpriteRenderer> ().GetComponent<Renderer>().material.color = clr;
 				}
 			} else {
 				Application.LoadLevel("Title");
@@ -123,7 +123,7 @@ public class CreditsController : MonoBehaviour {
 			clr.a = alpha;
 
 			if (BlackScreen != null) {
-				BlackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = clr;
+				BlackScreen.GetComponent<SpriteRenderer> ().GetComponent<Renderer>().material.color = clr;
 			}
 		} else {
 

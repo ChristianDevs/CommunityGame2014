@@ -26,7 +26,7 @@ public class LevelSelectController : MonoBehaviour {
 		alpha = 1;
 		color.a = alpha;
 		BlackScreen.SetActive (true);
-		BlackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = color;
+		BlackScreen.GetComponent<SpriteRenderer> ().GetComponent<Renderer>().material.color = color;
 
 		particleSystem = null;
 		inTutorial = false;
@@ -70,7 +70,7 @@ public class LevelSelectController : MonoBehaviour {
 		if (alpha > 0) {
 			alpha -= Time.deltaTime;
 			color.a = alpha;
-			BlackScreen.GetComponent<SpriteRenderer> ().renderer.material.color = color;
+			BlackScreen.GetComponent<SpriteRenderer> ().GetComponent<Renderer>().material.color = color;
 		}
 	}
 

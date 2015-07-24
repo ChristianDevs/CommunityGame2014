@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: b296c1657f5fcb2499f9e5f7374f7fae
+timeCreated: 1437663320
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: terrain_atlas_0
@@ -1042,6 +1044,9 @@ TextureImporter:
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
@@ -1052,6 +1057,7 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
@@ -1059,7 +1065,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 29
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings:
@@ -6932,10 +6938,10 @@ TextureImporter:
     - name: terrain_atlas_586
       rect:
         serializedVersion: 2
-        x: 448
-        y: 417
-        width: 31
-        height: 31
+        x: 450
+        y: 424
+        width: 28
+        height: 24
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7252,10 +7258,10 @@ TextureImporter:
     - name: terrain_atlas_618
       rect:
         serializedVersion: 2
-        x: 448
-        y: 385
-        width: 31
-        height: 31
+        x: 450
+        y: 410
+        width: 28
+        height: 14
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7572,10 +7578,10 @@ TextureImporter:
     - name: terrain_atlas_650
       rect:
         serializedVersion: 2
-        x: 448
-        y: 353
-        width: 31
-        height: 31
+        x: 450
+        y: 368
+        width: 28
+        height: 42
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -11251,3 +11257,5 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
