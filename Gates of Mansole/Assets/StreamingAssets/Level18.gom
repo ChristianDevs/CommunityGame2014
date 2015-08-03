@@ -1,8 +1,8 @@
-AttackersLetThrough:5
+AttackersLetThrough:500
 IsPlayerAttacker:True
 AttackerDir:Right
-StartShards:21
-FirstTimeBonus:8
+StartShards:45
+FirstTimeBonus:9
 Lane:7:Disable
 Lane:2
 Lane:2
@@ -11,14 +11,13 @@ Lane:2
 Lane:2
 Lane:2:Disable
 Lane:7:Disable
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:3
+UpgradeAtTime:30
+UpgradeAtTime:60
 Placeable:25:-1.5:2.4
 Placeable:25:1.5:2.4
 Placeable:23:0:2.75
 Placeable:21:4:3
-Wall:10:1:5:100:0.10:2
+Wall:9:1:5:100:0.10:2
 Music:3
 PreDialogue:
     Statement:
@@ -65,44 +64,94 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Elder
+        Unit:Orator
+        SpawnLoc:SpecifiedTile
+        Tile:1:10
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:SpecifiedTile
+        Tile:2:10
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:SpecifiedTile
+        Tile:3:10
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:SpecifiedTile
+        Tile:4:10
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:SpecifiedTile
+        Tile:5:10
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:1:11
+        RespawnTime:15
     WaveUnit:
         Time:0
-        Unit:Teacher
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:2:11
+        RespawnTime:15
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:3:11
+        RespawnTime:15
     WaveUnit:
         Time:0
-        Unit:Teacher
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:4:11
+        RespawnTime:15
     WaveUnit:
         Time:0
-        Unit:Teacher
+        Unit:Shepherd
+        SpawnLoc:SpecifiedTile
+        Tile:5:11
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:1:12
+        RespawnTime:15
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:2:12
+        RespawnTime:15
     WaveUnit:
         Time:0
-        Unit:Teacher
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:3:12
+        RespawnTime:15
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:4:12
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:SpecifiedTile
+        Tile:5:12
+        RespawnTime:15
 PostDialogue:
     Statement:
         Speaker:Mayor Understanding

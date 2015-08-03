@@ -1,8 +1,8 @@
-AttackersLetThrough:5
+AttackersLetThrough:500
 IsPlayerAttacker:True
 AttackerDir:Right
-StartShards:21
-FirstTimeBonus:9
+StartShards:45
+FirstTimeBonus:10
 Lane:6:Disable
 Lane:6:Disable
 Lane:1
@@ -11,8 +11,8 @@ Lane:1
 Lane:1
 Lane:1
 Lane:1
-UpgradeAtWave:0
-UpgradeAtWave:0
+UpgradeAtTime:30
+UpgradeAtTime:60
 Placeable:3:-5.25:-1.8
 Placeable:2:-2.75:-1.8
 Placeable:2:0:-1.8
@@ -30,7 +30,7 @@ Placeable:13:4.4:-2.85
 Placeable:14:5.8:-3.5
 Placeable:26:7.47:-2.6
 Placeable:26:6.7:-3.95
-Wall:10:2:7:100:0.10:10
+Wall:9:2:7:100:0.10:10
 Music:3
 PreDialogue:
     Statement:
@@ -67,44 +67,112 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Elder
+        Unit:Evangelist
         SpawnLoc:SpecifiedTile
-        Tile:5:11
-    WaveUnit:
-        Time:0
-        Unit:Teacher
-        SpawnLoc:SpecifiedTile
-        Tile:2:11
+        Tile:2:10
+        RespawnTime:15
     WaveUnit:
         Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedTile
-        Tile:3:11
+        Tile:3:10
+        RespawnTime:15
     WaveUnit:
         Time:0
-        Unit:Teacher
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:4:10
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:5:10
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:6:10
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:7:10
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:SpecifiedTile
+        Tile:2:11
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:SpecifiedTile
+        Tile:3:11
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:4:11
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Shepherd
+        SpawnLoc:SpecifiedTile
+        Tile:5:11
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:SpecifiedTile
+        Tile:6:11
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:SpecifiedTile
+        Tile:7:11
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:SpecifiedTile
+        Tile:2:12
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Shepherd
+        SpawnLoc:SpecifiedTile
+        Tile:3:12
+        RespawnTime:15
+    WaveUnit:
+        Time:0
+        Unit:Elder
+        SpawnLoc:SpecifiedTile
+        Tile:4:12
+        RespawnTime:15
     WaveUnit:
         Time:0
         Unit:Elder
         SpawnLoc:SpecifiedTile
         Tile:5:12
+        RespawnTime:15
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
-        Tile:2:12
+        Tile:6:12
+        RespawnTime:15
     WaveUnit:
         Time:0
-        Unit:Teacher
+        Unit:Elder
         SpawnLoc:SpecifiedTile
-        Tile:3:12
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedTile
-        Tile:4:12
+        Tile:7:12
+        RespawnTime:15
 PostDialogue:
     Statement:
         Speaker:Lieutenant Captain

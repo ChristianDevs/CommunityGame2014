@@ -1,7 +1,7 @@
-AttackersLetThrough:5
+AttackersLetThrough:500
 IsPlayerAttacker:True
 AttackerDir:Right
-StartShards:21
+StartShards:45
 FirstTimeBonus:8
 Lane:1:Disable
 Lane:1
@@ -11,6 +11,8 @@ Lane:1
 Lane:6:Disable
 Lane:6:Disable
 Lane:6:Disable
+UpgradeAtTime:30
+UpgradeAtTime:60
 Placeable:2:-5.5:3.25
 Placeable:2:-3:3.25
 Placeable:3:2.5:3.25
@@ -24,7 +26,7 @@ Placeable:10:6.3:-3.85
 Placeable:10:-0.9:1.1
 Placeable:6:4.15:0.75
 Placeable:26:0.95:1.05
-Wall:10:1:4:100:0.10:2
+Wall:9:1:4:100:0.10:2
 Music:3
 PreDialogue:
     Statement:
@@ -91,44 +93,76 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Teacher
+        SpawnLoc:SpecifiedTile
+        Tile:1:10
+        RespawnTime:13
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedTile
+        Tile:2:10
+        RespawnTime:13
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedTile
+        Tile:3:10
+        RespawnTime:13
+    WaveUnit:
+        Time:0
+        Unit:Teacher
+        SpawnLoc:SpecifiedTile
+        Tile:4:10
+        RespawnTime:13
+    WaveUnit:
+        Time:0
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:1:11
+        RespawnTime:13
     WaveUnit:
         Time:0
-        Unit:Teacher
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:2:11
+        RespawnTime:13
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:3:11
+        RespawnTime:13
     WaveUnit:
         Time:0
-        Unit:Teacher
+        Unit:Orator
         SpawnLoc:SpecifiedTile
         Tile:4:11
+        RespawnTime:13
     WaveUnit:
         Time:0
-        Unit:Teacher
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:1:12
+        RespawnTime:13
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:2:12
+        RespawnTime:13
     WaveUnit:
         Time:0
-        Unit:Teacher
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:3:12
+        RespawnTime:13
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:4:12
+        RespawnTime:13
 PostDialogue:
     Statement:
         Speaker:Merchant

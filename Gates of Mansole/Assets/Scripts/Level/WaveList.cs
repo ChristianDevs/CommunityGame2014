@@ -282,7 +282,7 @@ public class WaveList : MonoBehaviour {
 			
 			switch (key) {
 			case "waittime":
-				wv.waitTime = int.Parse(val);
+				wv.waitTime = float.Parse(val);
 				break;
 			case "waveunit":
 				i = parseWaveUnit(levelData, i + 1, fileUnits);

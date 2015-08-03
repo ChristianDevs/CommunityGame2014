@@ -142,7 +142,8 @@ public class WorldController : MonoBehaviour {
 		PreDialogue,
 		Play,
 		CollectOrbs,
-		PostDialogue
+		PostDialogue,
+		Lose
 	}
 	_WorldState state;
 	
@@ -238,6 +239,8 @@ public class WorldController : MonoBehaviour {
 				dialogueWindow.SetActive(false);
 				winMessage.SetActive(true);
 			}
+			break;
+		case _WorldState.Lose:
 			break;
 		}
 	}
@@ -1142,6 +1145,7 @@ public class WorldController : MonoBehaviour {
 	void loseLevel() {
 		loseMessage.SetActive(true);
 		isLevelDone = true;
+		state = _WorldState.Lose;
 
 		ClearAllUnits ();
 	}
