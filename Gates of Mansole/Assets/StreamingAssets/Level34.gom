@@ -2,6 +2,7 @@ AttackersLetThrough:5
 IsPlayerAttacker:True
 AttackerDir:Right
 StartShards:21
+FirstTimeBonus:12
 Lane:10:Disable
 Lane:10
 Lane:10
@@ -10,10 +11,9 @@ Lane:10
 Lane:10
 Lane:10
 Lane:10:Disable
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
+UpgradeAtTime:25
+UpgradeAtTime:50
+UpgradeAtTime:75
 Placeable:31:5.2:-3.2
 Placeable:31:6:-1.85
 Placeable:31:3.95:-2.45
@@ -29,6 +29,7 @@ Placeable:34:-1.9:2.6
 Placeable:34:-4.5:3.1
 Placeable:34:-1.35:-4.2
 Placeable:34:3.3:-3.7
+Wall:9:1:6:150:0.10:2
 Music:3
 PreDialogue:
     Statement:
@@ -55,94 +56,112 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:OrcStaff
-        SpawnLoc:SpecifiedTile
-        Tile:1:12
-    WaveUnit:
-        Time:0
-        Unit:OrcStaff
-        SpawnLoc:SpecifiedTile
-        Tile:2:12
-    WaveUnit:
-        Time:0
-        Unit:OrcStaff
-        SpawnLoc:SpecifiedTile
-        Tile:3:12
-    WaveUnit:
-        Time:0
-        Unit:OrcStaff
-        SpawnLoc:SpecifiedTile
-        Tile:4:12
-    WaveUnit:
-        Time:0
-        Unit:OrcStaff
-        SpawnLoc:SpecifiedTile
-        Tile:5:12
-    WaveUnit:
-        Time:0
-        Unit:OrcStaff
-        SpawnLoc:SpecifiedTile
-        Tile:6:12
-    WaveUnit:
-        Time:0
         Unit:OrcSword
-        SpawnLoc:SpecifiedTile
-        Tile:1:11
-    WaveUnit:
-        Time:0
-        Unit:OrcSword
-        SpawnLoc:SpecifiedTile
-        Tile:2:11
-    WaveUnit:
-        Time:0
-        Unit:OrcSword
-        SpawnLoc:SpecifiedTile
-        Tile:3:11
-    WaveUnit:
-        Time:0
-        Unit:OrcSword
-        SpawnLoc:SpecifiedTile
-        Tile:4:11
-    WaveUnit:
-        Time:0
-        Unit:OrcSword
-        SpawnLoc:SpecifiedTile
-        Tile:5:11
-    WaveUnit:
-        Time:0
-        Unit:OrcSword
-        SpawnLoc:SpecifiedTile
-        Tile:6:11
-    WaveUnit:
-        Time:0
-        Unit:OrcSpear
         SpawnLoc:SpecifiedTile
         Tile:1:10
+        RespawnTime:12
     WaveUnit:
         Time:0
-        Unit:OrcSpear
+        Unit:OrcSword
         SpawnLoc:SpecifiedTile
         Tile:2:10
+        RespawnTime:12
     WaveUnit:
         Time:0
-        Unit:OrcSpear
+        Unit:OrcSword
         SpawnLoc:SpecifiedTile
         Tile:3:10
+        RespawnTime:12
     WaveUnit:
         Time:0
-        Unit:OrcSpear
+        Unit:OrcSword
         SpawnLoc:SpecifiedTile
         Tile:4:10
+        RespawnTime:12
     WaveUnit:
         Time:0
-        Unit:OrcSpear
+        Unit:OrcSword
         SpawnLoc:SpecifiedTile
         Tile:5:10
+        RespawnTime:12
     WaveUnit:
         Time:0
-        Unit:OrcSpear
+        Unit:OrcSword
         SpawnLoc:SpecifiedTile
         Tile:6:10
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcWand
+        SpawnLoc:SpecifiedTile
+        Tile:1:11
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcWand
+        SpawnLoc:SpecifiedTile
+        Tile:2:11
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcWand
+        SpawnLoc:SpecifiedTile
+        Tile:3:11
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcWand
+        SpawnLoc:SpecifiedTile
+        Tile:4:11
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcWand
+        SpawnLoc:SpecifiedTile
+        Tile:5:11
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcWand
+        SpawnLoc:SpecifiedTile
+        Tile:6:11
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:1:12
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:2:12
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:3:12
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:4:12
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:5:12
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:6:12
+        RespawnTime:12
 PostDialogue:
     Statement:
         Speaker:Prince Emmanuel

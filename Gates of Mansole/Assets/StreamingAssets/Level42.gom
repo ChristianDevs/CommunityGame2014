@@ -1,7 +1,8 @@
 AttackersLetThrough:5
 IsPlayerAttacker:True
 AttackerDir:Right
-StartShards:21
+StartShards:50
+FirstTimeBonus:13
 Lane:11:Disable
 Lane:14:Disable
 Lane:12
@@ -10,15 +11,9 @@ Lane:12
 Lane:12
 Lane:12
 Lane:16:Disable
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
+UpgradeAtTime:25
+UpgradeAtTime:50
+UpgradeAtTime:75
 Placeable:35:0:1.95
 Placeable:35:-0.25:0.95
 Placeable:35:2:0.95
@@ -28,6 +23,7 @@ Placeable:35:-1.95:0.95
 Placeable:35:4.6:1.95
 Placeable:35:3:-0.05
 Placeable:35:-1:1.95
+Wall:9:3:6:200:0.10:2
 Music:3
 PreDialogue:
     Statement:
@@ -54,79 +50,106 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:OrcStaff
+        Unit:OrcSpear
         SpawnLoc:SpecifiedTile
-        Tile:2:12
+        Tile:2:8
+        RespawnTime:12
     WaveUnit:
         Time:0
-        Unit:OrcStaff
+        Unit:OrcSword
         SpawnLoc:SpecifiedTile
-        Tile:3:12
-    WaveUnit:
-        Time:0
-        Unit:OrcStaff
-        SpawnLoc:SpecifiedTile
-        Tile:4:12
-    WaveUnit:
-        Time:0
-        Unit:OrcStaff
-        SpawnLoc:SpecifiedTile
-        Tile:5:12
-    WaveUnit:
-        Time:0
-        Unit:OrcStaff
-        SpawnLoc:SpecifiedTile
-        Tile:6:12
-    WaveUnit:
-        Time:0
-        Unit:OrcArcher
-        SpawnLoc:SpecifiedTile
-        Tile:2:11
-    WaveUnit:
-        Time:0
-        Unit:OrcArcher
-        SpawnLoc:SpecifiedTile
-        Tile:3:11
-    WaveUnit:
-        Time:0
-        Unit:OrcArcher
-        SpawnLoc:SpecifiedTile
-        Tile:4:11
-    WaveUnit:
-        Time:0
-        Unit:OrcArcher
-        SpawnLoc:SpecifiedTile
-        Tile:5:11
-    WaveUnit:
-        Time:0
-        Unit:OrcArcher
-        SpawnLoc:SpecifiedTile
-        Tile:6:11
+        Tile:2:9
+        RespawnTime:12
     WaveUnit:
         Time:0
         Unit:OrcWand
         SpawnLoc:SpecifiedTile
         Tile:2:10
+        RespawnTime:12
     WaveUnit:
         Time:0
-        Unit:OrcWand
+        Unit:OrcSword
         SpawnLoc:SpecifiedTile
         Tile:3:10
+        RespawnTime:12
     WaveUnit:
         Time:0
-        Unit:OrcWand
+        Unit:OrcSword
         SpawnLoc:SpecifiedTile
         Tile:4:10
+        RespawnTime:12
     WaveUnit:
         Time:0
-        Unit:OrcWand
+        Unit:OrcSword
         SpawnLoc:SpecifiedTile
         Tile:5:10
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcSword
+        SpawnLoc:SpecifiedTile
+        Tile:6:10
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:2:11
+        RespawnTime:12
     WaveUnit:
         Time:0
         Unit:OrcWand
         SpawnLoc:SpecifiedTile
-        Tile:6:10
+        Tile:3:11
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcWand
+        SpawnLoc:SpecifiedTile
+        Tile:4:11
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcWand
+        SpawnLoc:SpecifiedTile
+        Tile:5:11
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcWand
+        SpawnLoc:SpecifiedTile
+        Tile:6:11
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcStaff
+        SpawnLoc:SpecifiedTile
+        Tile:2:12
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:3:12
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:4:12
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:5:12
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:6:12
+        RespawnTime:12
 PostDialogue:
     Statement:
         Speaker:Prince Emmanuel

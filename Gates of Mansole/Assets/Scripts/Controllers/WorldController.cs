@@ -736,6 +736,7 @@ public class WorldController : MonoBehaviour {
 								}
 							}
 							wl.waveStarted[wvInd] = true;
+							Debug.Log("Wave: " + wvInd);
 						}
 						
 						// Go through each unit and see if it is time to spawn it
@@ -823,6 +824,7 @@ public class WorldController : MonoBehaviour {
 													if (ut.SpawnLocType == WaveUnit._spawnLocType.RandRow) {
 														repeat = true;
 													}
+													Debug.Log("Spawn Failed for time: " + ut.time);
 												}
 											}
 										}
@@ -1834,24 +1836,24 @@ public class WorldController : MonoBehaviour {
 		
 		// 2 units cannot occupy the same tile
 		if (tileContents[tileRow][tileCol] != null) {
-			Debug.Log ("another unit is already occupying this tile!");
+			Debug.Log ("Tile Already Occupied - " + tileRow + ":" + tileCol);
 			return false;
 		}
 		
 		if (unitPrefab == null) {
-			Debug.Log("Prefab is null");
+			Debug.Log("Prefab is null" + tileRow + ":" + tileCol);
 			return false;
 		}
 		
 		if (currentLevel.GetComponent<WaveList> ().laneEnable [tileRow] == false) {
-			Debug.Log("Unit attempted to spawn on a disabled lane");
+			Debug.Log("Unit attempted to spawn on a disabled lane" + tileRow);
 			return false;
 		}
 		
 		// Charge player for the unit
 		if (faction == GomObject.Faction.Player) {
 			if (unitPrefab.GetComponent<GomUnit>().cost > Player.spiritShards) {
-				Debug.Log ("don't have enough Spirit Shards!");
+				Debug.Log ("Not enough Spirit Shards");
 				return false;
 			}
 			else {

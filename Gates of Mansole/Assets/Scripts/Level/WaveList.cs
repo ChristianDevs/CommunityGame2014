@@ -359,13 +359,18 @@ public class WaveList : MonoBehaviour {
 				break;
 			case "tile":
 				string val2 = "";
+				float tempY = 0;
 				
 				if (levelData[i].Split(seps).Length > 2) {
 					val2 = levelData[i].Split(seps)[2];
 				}
+
+				if (float.TryParse(val2, out tempY) == false) {
+					Debug.Log("Cannot convert line " + i);
+				}
 				
 				fileUnit.Tile.x = float.Parse(val);
-				fileUnit.Tile.y = float.Parse(val2);
+				fileUnit.Tile.y = tempY;
 				break;
 			case "respawntime":
 				fileUnit.RespawnTime = float.Parse(val);

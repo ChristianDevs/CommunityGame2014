@@ -1,7 +1,8 @@
 AttackersLetThrough:5
 IsPlayerAttacker:True
 AttackerDir:Right
-StartShards:21
+StartShards:50
+FirstTimeBonus:14
 Lane:11:Disable
 Lane:14:Disable
 Lane:12
@@ -10,12 +11,9 @@ Lane:12
 Lane:12
 Lane:12
 Lane:12
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
-UpgradeAtWave:0
+UpgradeAtTime:25
+UpgradeAtTime:50
+UpgradeAtTime:75
 Placeable:35:-0.75:2.95
 Placeable:35:-2:2.95
 Placeable:35:-3.5:1.95
@@ -34,6 +32,7 @@ Placeable:35:-4.5:-1
 Placeable:35:3.1:-2.05
 Placeable:35:5.85:0.95
 Placeable:35:5.1:2.95
+Wall:8:1:6:200:0.10:2
 Music:3
 PreDialogue:
     Statement:
@@ -60,94 +59,148 @@ Wave:
     WaitTime:0
     WaveUnit:
         Time:0
+        Unit:OrcSword
+        SpawnLoc:SpecifiedTile
+        Tile:7:9
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcSword
+        SpawnLoc:SpecifiedTile
+        Tile:2:9
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcSword
+        SpawnLoc:SpecifiedTile
+        Tile:3:9
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcSword
+        SpawnLoc:SpecifiedTile
+        Tile:4:9
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcSword
+        SpawnLoc:SpecifiedTile
+        Tile:5:9
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcSword
+        SpawnLoc:SpecifiedTile
+        Tile:6:9
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcWand
+        SpawnLoc:SpecifiedTile
+        Tile:7:10
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcWand
+        SpawnLoc:SpecifiedTile
+        Tile:2:10
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcWand
+        SpawnLoc:SpecifiedTile
+        Tile:3:10
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcWand
+        SpawnLoc:SpecifiedTile
+        Tile:4:10
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcWand
+        SpawnLoc:SpecifiedTile
+        Tile:5:10
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcWand
+        SpawnLoc:SpecifiedTile
+        Tile:6:10
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:7:11
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:2:11
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:3:11
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:4:11
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:5:11
+        RespawnTime:12
+    WaveUnit:
+        Time:0
+        Unit:OrcBow
+        SpawnLoc:SpecifiedTile
+        Tile:6:11
+        RespawnTime:12
+    WaveUnit:
+        Time:0
         Unit:OrcStaff
         SpawnLoc:SpecifiedTile
         Tile:7:12
+        RespawnTime:12
     WaveUnit:
         Time:0
         Unit:OrcStaff
         SpawnLoc:SpecifiedTile
         Tile:2:12
+        RespawnTime:12
     WaveUnit:
         Time:0
         Unit:OrcStaff
         SpawnLoc:SpecifiedTile
         Tile:3:12
+        RespawnTime:12
     WaveUnit:
         Time:0
         Unit:OrcStaff
         SpawnLoc:SpecifiedTile
         Tile:4:12
+        RespawnTime:12
     WaveUnit:
         Time:0
         Unit:OrcStaff
         SpawnLoc:SpecifiedTile
         Tile:5:12
+        RespawnTime:12
     WaveUnit:
         Time:0
         Unit:OrcStaff
         SpawnLoc:SpecifiedTile
         Tile:6:12
-    WaveUnit:
-        Time:0
-        Unit:OrcSword
-        SpawnLoc:SpecifiedTile
-        Tile:7:11
-    WaveUnit:
-        Time:0
-        Unit:OrcSword
-        SpawnLoc:SpecifiedTile
-        Tile:2:11
-    WaveUnit:
-        Time:0
-        Unit:OrcSword
-        SpawnLoc:SpecifiedTile
-        Tile:3:11
-    WaveUnit:
-        Time:0
-        Unit:OrcSword
-        SpawnLoc:SpecifiedTile
-        Tile:4:11
-    WaveUnit:
-        Time:0
-        Unit:OrcSword
-        SpawnLoc:SpecifiedTile
-        Tile:5:11
-    WaveUnit:
-        Time:0
-        Unit:OrcSword
-        SpawnLoc:SpecifiedTile
-        Tile:6:11
-    WaveUnit:
-        Time:0
-        Unit:OrcSpear
-        SpawnLoc:SpecifiedTile
-        Tile:7:10
-    WaveUnit:
-        Time:0
-        Unit:OrcSpear
-        SpawnLoc:SpecifiedTile
-        Tile:2:10
-    WaveUnit:
-        Time:0
-        Unit:OrcSpear
-        SpawnLoc:SpecifiedTile
-        Tile:3:10
-    WaveUnit:
-        Time:0
-        Unit:OrcSpear
-        SpawnLoc:SpecifiedTile
-        Tile:4:10
-    WaveUnit:
-        Time:0
-        Unit:OrcSpear
-        SpawnLoc:SpecifiedTile
-        Tile:5:10
-    WaveUnit:
-        Time:0
-        Unit:OrcSpear
-        SpawnLoc:SpecifiedTile
-        Tile:6:10
+        RespawnTime:12
 PostDialogue:
     Statement:
         Speaker:Captain Boanurges
