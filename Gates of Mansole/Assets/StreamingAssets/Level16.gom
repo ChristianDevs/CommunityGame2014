@@ -361,68 +361,6 @@ Wave:9
         Unit:Elder
         SpawnLoc:SpecifiedRow
         Tile:4:0
-Wave:10
-    WaitTime:209
-    WaveUnit:
-        Time:0
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:0.5
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1.5
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:2
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:2.5
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3.5
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:4
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:4.5
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5.5
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
 PostDialogue:
     Statement:
         Speaker:Merchant

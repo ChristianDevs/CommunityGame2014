@@ -1,7 +1,8 @@
 AttackersLetThrough:5
-IsPlayerAttacker:False
-AttackerDir:Left
-StartShards:21
+IsPlayerAttacker:True
+AttackerDir:Right
+StartShards:55
+FirstTimeBonus:15
 Lane:4:Disable
 Lane:0:Disable
 Lane:0
@@ -10,6 +11,11 @@ Lane:0
 Lane:0
 Lane:5:Disable
 Lane:5:Disable
+UpgradeAtTime:17.5
+UpgradeAtTime:35
+UpgradeAtTime:52.5
+UpgradeAtTime:70
+UpgradeAtTime:87.5
 Placeable:9:5.55:-0.82
 Placeable:9:-2:-2.83
 Placeable:0:6:3
@@ -17,7 +23,7 @@ Placeable:0:-5.3:3
 Placeable:0:-5.15:3
 Placeable:0:-2.3:3
 Placeable:38:1:4.15
-Placeable:39:1.65:3.15
+Placeable:39:3.65:3.15
 Placeable:15:9.3:-1.6
 Placeable:15:-0.15:-0.6
 Placeable:16:5.35:0.5
@@ -26,6 +32,7 @@ Placeable:16:4.4:-1.67
 Placeable:8:0.2:-2.85
 Placeable:4:-5.3:-2.79
 Placeable:5:5:-2.9
+Wall:8:2:5:250:0.10:2
 PreDialogue:
     Statement:
         Speaker:Prince Emmanuel
@@ -47,188 +54,99 @@ Wave:
     WaveUnit:
         Time:0
         Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:2
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:3
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:4
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:11
+        SpawnLoc:SpecifiedTile
+        Tile:2:9
+        RespawnTime:11
     WaveUnit:
         Time:0
         Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:3
+        SpawnLoc:SpecifiedTile
+        Tile:3:9
+        RespawnTime:11
+    WaveUnit:
+        Time:0
+        Unit:Evangelist
+        SpawnLoc:SpecifiedTile
+        Tile:4:9
+        RespawnTime:11
+    WaveUnit:
+        Time:0
         Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:4
+        SpawnLoc:SpecifiedTile
+        Tile:5:9
+        RespawnTime:11
+    WaveUnit:
+        Time:0
         Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:6
+        SpawnLoc:SpecifiedTile
+        Tile:2:10
+        RespawnTime:11
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:SpecifiedTile
+        Tile:3:10
+        RespawnTime:11
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:SpecifiedTile
+        Tile:4:10
+        RespawnTime:11
+    WaveUnit:
+        Time:0
+        Unit:Orator
+        SpawnLoc:SpecifiedTile
+        Tile:5:10
+        RespawnTime:11
+    WaveUnit:
+        Time:0
+        Unit:Shepherd
+        SpawnLoc:SpecifiedTile
+        Tile:2:11
+        RespawnTime:11
+    WaveUnit:
+        Time:0
+        Unit:Shepherd
+        SpawnLoc:SpecifiedTile
+        Tile:3:11
+        RespawnTime:11
+    WaveUnit:
+        Time:0
+        Unit:Shepherd
+        SpawnLoc:SpecifiedTile
+        Tile:4:11
+        RespawnTime:11
+    WaveUnit:
+        Time:0
+        Unit:Shepherd
+        SpawnLoc:SpecifiedTile
+        Tile:5:11
+        RespawnTime:11
+    WaveUnit:
+        Time:0
         Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:7
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-	WaveUnit:
-        Time:8
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:24
+        SpawnLoc:SpecifiedTile
+        Tile:2:12
+        RespawnTime:11
     WaveUnit:
         Time:0
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:4
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:6
         Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:35
+        SpawnLoc:SpecifiedTile
+        Tile:3:12
+        RespawnTime:11
     WaveUnit:
         Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:8
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:48
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
         Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:7
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-Wave:
-    WaitTime:60
+        SpawnLoc:SpecifiedTile
+        Tile:4:12
+        RespawnTime:11
     WaveUnit:
         Time:0
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:0
-        Unit:Orator
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:0
-        Unit:Shepherd
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Teacher
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
         Unit:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3
-        Unit:Evangelist
-        SpawnLoc:RandRow
-        Tile:0:0
+        SpawnLoc:SpecifiedTile
+        Tile:5:12
+        RespawnTime:11
 PostDialogue:
     Statement:
         Speaker:Prince Emmanuel

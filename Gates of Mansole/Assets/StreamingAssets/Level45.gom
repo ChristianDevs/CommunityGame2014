@@ -687,101 +687,111 @@ Wave:7
     WaitTime:164
     WaveUnit:
         Time:0
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:0.35
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:0.7
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1.05
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:1.4
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1.75
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:2.1
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:2.45
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:2.8
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3.15
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3.5
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3.85
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:4.2
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:4.55
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:4.9
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5.25
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:5.6
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5.95
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:6.3
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:7.0
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:7.7
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:8.4
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:9.1
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:9.8
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:10.5
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:11.2
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:11.9
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:12.6
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:13.3
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:14.0
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
 Wave:8
-    WaitTime:185
+    WaitTime:190
     WaveUnit:
         Time:0
         Unit:OrcSpear
@@ -933,7 +943,7 @@ Wave:8
         SpawnLoc:SpecifiedRow
         Tile:6:0
 Wave:9
-    WaitTime:214
+    WaitTime:219
     WaveUnit:
         Time:0
         Unit:OrcSpear
@@ -1075,7 +1085,7 @@ Wave:9
         SpawnLoc:SpecifiedRow
         Tile:7:0
 Wave:10
-    WaitTime:240
+    WaitTime:245
     WaveUnit:
         Time:0
         Unit:OrcSpear
@@ -1247,7 +1257,7 @@ Wave:10
         SpawnLoc:SpecifiedRow
         Tile:7:0
 Wave:11
-    WaitTime:272
+    WaitTime:277
     WaveUnit:
         Time:0
         Unit:OrcSpear
@@ -1419,7 +1429,7 @@ Wave:11
         SpawnLoc:SpecifiedRow
         Tile:6:0
 Wave:12
-    WaitTime:298
+    WaitTime:303
     WaveUnit:
         Time:0
         Unit:OrcSpear
@@ -1581,7 +1591,7 @@ Wave:12
         SpawnLoc:SpecifiedRow
         Tile:7:0
 Wave:13
-    WaitTime:330
+    WaitTime:335
     WaveUnit:
         Time:0
         Unit:OrcSpear
@@ -1793,130 +1803,110 @@ Wave:13
         SpawnLoc:SpecifiedRow
         Tile:7:0
 Wave:14
-    WaitTime:365
+    WaitTime:370
     WaveUnit:
         Time:0
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:0.3
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:0.6
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:0.9
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:1.2
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1.5
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:1.8
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:2.1
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:2.4
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:2.7
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3.0
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3.3
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Time:3
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:3.6
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:3.9
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:4.2
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:4.5
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:4.8
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:5.1
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
         Time:5.4
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
-        Tile:0:0
         Tile:0:0
     WaveUnit:
-        Time:5.7
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Time:6
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
-        Tile:0:0
-        Tile:0:0
-    WaveUnit:
-        Time:6.0
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-        Tile:0:0
-    WaveUnit:
-        Time:6.3
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
         Tile:0:0
     WaveUnit:
         Time:6.6
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
+    WaveUnit:
+        Time:7.2
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:6.9
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        Time:7.8
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:8.4
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:9
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:9.6
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:10.2
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:10.8
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:11.4
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:12
+        Unit:OrcSpear:OrcSword:OrcBow:OrcWand:OrcStaff
         SpawnLoc:RandRow
         Tile:0:0
 PostDialogue:

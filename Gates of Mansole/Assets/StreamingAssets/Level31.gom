@@ -26,7 +26,7 @@ PreDialogue:
     Statement:
         Speaker:Captain Boanurges
         LeftImage:12
-        RightImage:18
+        RightImage:None
         Dialogue:My prince, I'm not sure I like the idea of working with those who oppose you.
     Statement:
         Speaker:Lieutenant Captain

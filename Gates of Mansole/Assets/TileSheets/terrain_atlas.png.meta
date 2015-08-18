@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: b296c1657f5fcb2499f9e5f7374f7fae
-timeCreated: 1437663320
+timeCreated: 1439833886
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -7368,10 +7368,10 @@ TextureImporter:
     - name: terrain_atlas_629
       rect:
         serializedVersion: 2
-        x: 800
+        x: 801
         y: 385
-        width: 31
-        height: 31
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7380,18 +7380,18 @@ TextureImporter:
         serializedVersion: 2
         x: 832
         y: 385
-        width: 31
-        height: 31
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: terrain_atlas_631
       rect:
         serializedVersion: 2
-        x: 864
+        x: 863
         y: 385
-        width: 31
-        height: 31
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7688,30 +7688,30 @@ TextureImporter:
     - name: terrain_atlas_661
       rect:
         serializedVersion: 2
-        x: 800
-        y: 353
-        width: 31
-        height: 31
+        x: 802
+        y: 355
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: terrain_atlas_662
       rect:
         serializedVersion: 2
-        x: 832
-        y: 353
-        width: 31
-        height: 31
+        x: 833
+        y: 354
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: terrain_atlas_663
       rect:
         serializedVersion: 2
-        x: 864
-        y: 353
-        width: 31
-        height: 31
+        x: 863
+        y: 355
+        width: 29
+        height: 30
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

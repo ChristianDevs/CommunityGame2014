@@ -46,26 +46,31 @@ public class UiUnitCounter : MonoBehaviour {
 		SelText.text = SelUnit.GetComponent<UiUnitType>().UnitName;
 
 		switch(SelUnit.GetComponent<UiUnitType>().UnitName) {
+		case "OrcBow":
 		case "Shepherd":
 			// Shepherd counters Evangelist and Orator
 			Beat1Inst = Instantiate(getUnitByType("Evangelist", unitTypes).getRandomUnit(), Beat1Loc.position, Quaternion.identity) as GameObject;
 			Beat2Inst = Instantiate(getUnitByType("Orator", unitTypes).getRandomUnit(), Beat2Loc.position, Quaternion.identity) as GameObject;
 			break;
+		case "OrcWand":
 		case "Orator":
 			// Orator counters Evangelist and Elder
 			Beat1Inst = Instantiate(getUnitByType("Evangelist", unitTypes).getRandomUnit(), Beat1Loc.position, Quaternion.identity) as GameObject;
 			Beat2Inst = Instantiate(getUnitByType("Elder", unitTypes).getRandomUnit(), Beat2Loc.position, Quaternion.identity) as GameObject;
 			break;
+		case "OrcSword":
 		case "Teacher":
 			// Teacher counters Shepherd and Orator
 			Beat1Inst = Instantiate(getUnitByType("Shepherd", unitTypes).getRandomUnit(), Beat1Loc.position, Quaternion.identity) as GameObject;
 			Beat2Inst = Instantiate(getUnitByType("Orator", unitTypes).getRandomUnit(), Beat2Loc.position, Quaternion.identity) as GameObject;
 			break;
+		case "OrcSpear":
 		case "Evangelist":
 			// Evangelist counters Teacher and Elder
 			Beat1Inst = Instantiate(getUnitByType("Teacher", unitTypes).getRandomUnit(), Beat1Loc.position, Quaternion.identity) as GameObject;
 			Beat2Inst = Instantiate(getUnitByType("Elder", unitTypes).getRandomUnit(), Beat2Loc.position, Quaternion.identity) as GameObject;
 			break;
+		case "OrcStaff":
 		case "Elder":
 			// Elder counters Shepherd and Teacher
 			Beat1Inst = Instantiate(getUnitByType("Shepherd", unitTypes).getRandomUnit(), Beat1Loc.position, Quaternion.identity) as GameObject;
@@ -77,6 +82,15 @@ public class UiUnitCounter : MonoBehaviour {
 		Beat2Text.text = Beat2Inst.GetComponent<GomUnit>().unitType;
 		Beat1Inst.GetComponent<GomUnit>().enabled = false;
 		Beat2Inst.GetComponent<GomUnit>().enabled = false;
+
+		foreach (SpriteRenderer sr in Beat1Inst.GetComponentsInChildren<SpriteRenderer>()) {
+			sr.sortingLayerName = "UI";
+			sr.sortingOrder = 5;
+		}
+		foreach (SpriteRenderer sr in Beat2Inst.GetComponentsInChildren<SpriteRenderer>()) {
+			sr.sortingLayerName = "UI";
+			sr.sortingOrder = 5;
+		}
 
 		if (SelUnitInst != null) {
 			SelUnitInst.transform.parent = transform;

@@ -768,17 +768,7 @@ Wave:11
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:0.4
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
         Time:0.8
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:1.2
         Unit:Evangelist:Teacher:Shepherd:Orator:Elder
         SpawnLoc:RandRow
         Tile:0:0
@@ -788,17 +778,7 @@ Wave:11
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:2.0
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
         Time:2.4
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:2.8
         Unit:Evangelist:Teacher:Shepherd:Orator:Elder
         SpawnLoc:RandRow
         Tile:0:0
@@ -808,17 +788,7 @@ Wave:11
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:3.6
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
         Time:4.0
-        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
-        SpawnLoc:RandRow
-        Tile:0:0
-    WaveUnit:
-        Time:4.4
         Unit:Evangelist:Teacher:Shepherd:Orator:Elder
         SpawnLoc:RandRow
         Tile:0:0
@@ -828,12 +798,42 @@ Wave:11
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:5.2
+        Time:5.6
         Unit:Evangelist:Teacher:Shepherd:Orator:Elder
         SpawnLoc:RandRow
         Tile:0:0
     WaveUnit:
-        Time:5.6
+        Time:6.4
+        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:7.2
+        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:8.0
+        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:8.8
+        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:9.6
+        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:10.4
+        Unit:Evangelist:Teacher:Shepherd:Orator:Elder
+        SpawnLoc:RandRow
+        Tile:0:0
+    WaveUnit:
+        Time:11.2
         Unit:Evangelist:Teacher:Shepherd:Orator:Elder
         SpawnLoc:RandRow
         Tile:0:0

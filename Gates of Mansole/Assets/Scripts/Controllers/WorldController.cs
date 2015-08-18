@@ -1227,17 +1227,33 @@ public class WorldController : MonoBehaviour {
 	}
 	
 	void handleCollectOrbs() {
+		if (Input.GetMouseButtonDown(0) && (cvState != _ConvertState.Done)) {
+			while (ShardCurAmount > 0) {
+				OrbCurAmount++;
+				ShardCurAmount -= 1 / Player.CONVERSION_RATE;
+			}
+			ShardCurAmount = 0;
+			
+			while (currentLevel.GetComponent<WaveList>().firstTimeBonus > 0) {
+				OrbCurAmount++;
+				currentLevel.GetComponent<WaveList>().firstTimeBonus -= 1;
+			}
+			
+			cvState = _ConvertState.Converting;
+		}
 		
 		switch(cvState) {
 		case _ConvertState.PreWait:
-			if ((convertTime + 2f) < Time.time) {
+			if ((convertTime + 1.5f) < Time.time) {
 				cvState = _ConvertState.Converting;
 				OrbCurAmount = 0;
 				convertTime = Time.time;
 			}
 			break;
 		case _ConvertState.Converting:
-			if (ShardCurAmount > 0) {
+			if ((ShardCurAmount <= 0) && (currentLevel.GetComponent<WaveList>().firstTimeBonus <= 0)) {
+				cvState = _ConvertState.Done;
+			} else if (ShardCurAmount > 0) {
 				if ((convertTime + 0.15f) < Time.time) {
 					OrbCurAmount++;
 					ShardCurAmount -= 1 / Player.CONVERSION_RATE;
