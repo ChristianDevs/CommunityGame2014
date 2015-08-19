@@ -36,22 +36,22 @@ PreDialogue:
         LeftImage:2
         RightImage:None
         Dialogue:Defend us until he arrives. We will make sure we get a confession out of the captain.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:Her guards are teachers, evangelists and shepherds. It is more difficult to take on different soldier types.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:Wait until you see the soldiers approaching and decide how best to counter them.
 Wave:0
     WaitTime:0
     WaveUnit:
         Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
-        Tile:0:0
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
-        Tile:1:0
-    WaveUnit:
-        Time:0
-        Unit:Evangelist
-        SpawnLoc:SpecifiedRow
         Tile:2:0
 	WaveUnit:
         Time:0
@@ -60,12 +60,12 @@ Wave:0
         Tile:3:0
 	WaveUnit:
         Time:5
-        Unit:Shepherd
+        Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:0:0
 	WaveUnit:
         Time:5
-        Unit:Shepherd
+        Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:1:0
 	WaveUnit:
@@ -79,12 +79,12 @@ Wave:0
         SpawnLoc:SpecifiedRow
         Tile:3:0
 	WaveUnit:
-        Time:5
+        Time:0
         Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:4:0
 	WaveUnit:
-        Time:5
+        Time:0
         Unit:Teacher
         SpawnLoc:SpecifiedRow
         Tile:5:0
@@ -751,7 +751,12 @@ PostDialogue:
         RightImage:None
         Dialogue:You will see in the end that I will be justified.
     Statement:
-        Speaker:Diabolus
-        LeftImage:2
-        RightImage:None
-        Dialogue:Come, we must continue our mission to investigate the corruption going on in this city!
+        Speaker:ForgetGood
+        LeftImage:None
+        RightImage:1
+        Dialogue:Diabolus, I've discovered that Judge Conscience is the next link in the chain of hatred.
+    Statement:
+        Speaker:ForgetGood
+        LeftImage:None
+        RightImage:1
+        Dialogue:He is guarded by teachers and elders. I recommend acquiring evangelists to punch through their lines.

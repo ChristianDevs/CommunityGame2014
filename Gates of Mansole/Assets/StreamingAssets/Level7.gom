@@ -28,17 +28,22 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:I bet Captain Resistance didn't teach you that!
+        Dialogue:I bet Captain Resistance didn't teach you that! There is much she hasn't told you.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:2
+        RightImage:None
+        Dialogue:Assault them by making line formation of the elders. They will outrange both teachers and shepherds.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:What was that person running? They must be getting better weapons and armor.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:There is a lot Captain Resistance hasn't told you.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:2
-        RightImage:None
-        Dialogue:Come, make quick work of these defenders so we can confront the... the good captain.
+        Dialogue:That means the more time you take, the stonger they will get. Let's get going!
 Wave:0
     WaitTime:0
     WaveUnit:
@@ -137,3 +142,13 @@ PostDialogue:
         LeftImage:0
         RightImage:None
         Dialogue:I will stand for this non-sense no longer. Guards, come help!
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:Lieutenant captain, there are teachers coming to assail us among the guards.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:Orators are a good defense against them. They shall stand strong.

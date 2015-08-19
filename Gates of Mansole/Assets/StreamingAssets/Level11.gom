@@ -45,17 +45,22 @@ PreDialogue:
         Speaker:Carnalsecurity
         LeftImage:None
         RightImage:8
-        Dialogue:The mayor's forces won't stand a chance.
+        Dialogue:I bring some news, they sent word out to request reinforcements.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Another friend of mine...
+        Dialogue:Another friend of mine, what is the status on the reinforcements?
+    Statement:
+        Speaker:Carnalsecurity
+        LeftImage:None
+        RightImage:8
+        Dialogue:Fifteen seconds after a soldier is defeated a new one will take his place.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Victory will soon be ours.
+        Dialogue:So, be quick and victory will be ours!
 Wave:
     WaitTime:0
     WaveUnit:

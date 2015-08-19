@@ -22,15 +22,30 @@ Placeable:21:3:3
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Diabolus
+        LeftImage:2
         RightImage:None
-        Dialogue:According to my investigation, Lady Willbewill is the last link in this chain of corruption.
+        Dialogue:According to my investigation, Lady Willbewill is the last link in the chain.
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Diabolus
+        LeftImage:2
         RightImage:None
         Dialogue:Stand watch and make sure nobody disturbs our interrogation of her.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:Lietenant, be on your guard. They are likely to throw all their strength at the last wave.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:The enemy will come on unexpected lanes in very fast succession.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:Do not lose your head and do your best.
 Wave:0
     WaitTime:0
     WaveUnit:

@@ -31,25 +31,25 @@ Placeable:26:6.7:-3.95
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Diabolus
+        LeftImage:2
         RightImage:None
-        Dialogue:I have discovered the next person in this conspiracy is the judge.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:Yes, Judge Conscience has been slandering Diabolonians with hate speech and bigotry.
+        Dialogue:Judge Conscience has been slandering Diabolonians with hate speech and bigotry.
     Statement:
         Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:You must defeat his guards so we can confront him.
+    Statement:
+        Speaker:ForgetGood
         LeftImage:None
-        RightImage:2
+        RightImage:1
         Dialogue:We did some snooping around the judge's manor and found he is guarded by elders and teachers.
     Statement:
-        Speaker:Diabolus
+        Speaker:ForgetGood
         LeftImage:None
-        RightImage:2
-        Dialogue:Use evangelists to break through so we can confront the judge.
+        RightImage:1
+        Dialogue:Use your evangelists to break through their lines.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -148,3 +148,8 @@ PostDialogue:
         LeftImage:1
         RightImage:None
         Dialogue:Do not deny it, we all know your guilt. I will make sure you confess to your deeds.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:Lieutenant captain, make sure you have access to orators to round out your fighting force.

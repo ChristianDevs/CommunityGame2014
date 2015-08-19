@@ -31,7 +31,7 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:I sure hope you brought some elders with you. These lines of shepherds are thick as fog.
+        Dialogue:I sure hope you brought some evangelists with you. These lines of teachers are thick as fog.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -338,4 +338,9 @@ PostDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Great work penetrating their defenses. Now we siege the guard post.
+        Dialogue:Great work penetrating their defenses. Evangelists have a tactical advantage against Teachers.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Next we retake the guard post and ensure the Diabolonians leave our land.

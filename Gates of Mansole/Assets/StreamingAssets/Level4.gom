@@ -47,12 +47,12 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:If you see a teacher coming counter with a Shepherd.
+        Dialogue:If you see a teacher coming counter with an evangelist.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:And counter the evangelists with teachers.
+        Dialogue:And use the range of the shepherd to defeat evangelists.
 Wave:0
     WaitTime:0
     WaveUnit:

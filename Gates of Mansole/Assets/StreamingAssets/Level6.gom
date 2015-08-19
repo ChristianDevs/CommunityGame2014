@@ -31,22 +31,37 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue: The command post is guarded by evangelists and orators.
-    Statement:
+        Dialogue:
+    Statement:Place your soldiers on the field and they will march over and attack the enemy defenses.
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:First the evangelists must be dealt with before you can get passed the orators.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:None
-        RightImage:1
-        Dialogue:Be sure you use the correct units to counter with.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:None
-        RightImage:1
         Dialogue:I am sure we will find the proof about Captain Resistance's conspiracy here.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:The command post is guarded by evangelists and shepherds.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:Sending down shepherds will defeat the evangelists with their range.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:But you may need to send a second shepherd to finish off their shepherd.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:You only need to send soldiers down one lane to win, but...
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:Defeating more enemies will earn greater reward.
 Wave:0
     WaitTime:0
     WaveUnit:

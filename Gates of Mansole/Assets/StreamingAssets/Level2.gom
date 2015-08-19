@@ -31,17 +31,17 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:I trust you unlocked the evangelist units, you will need them.
+        Dialogue:I trust you unlocked an upgrade for your shepherds, you will need it.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:There are numerous reports of a band of wayward teachers causing problems in the town square.
+        Dialogue:There are numerous reports of a band of wayward evangelists causing problems in the town square.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Evangelist are great at taking down heavily armored units like teachers.
+        Dialogue:Upgrading units will make them more formidable in combat.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -261,19 +261,19 @@ PostDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:You sure made quick work of those teachers. I am sure they will think twice before causing problems here again.
+        Dialogue:You sure made quick work of those evangelists. I am sure they will think twice before causing problems here again.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:But while you were dealing with the teachers I got a report of Diabolonians storming a guard post outside of own.
+        Dialogue:But while you were dealing with them I got a report of Diabolonians storming a guard post outside of own.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:They seem to have a lot of shepherds so go unlock elders and meet me outside the gate.
+        Dialogue:They have a lot of teachers so go unlock evangelists and meet me outside the gate.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Diabolonians will not take any ground from us. Not while I am captain!
+        Dialogue:Diabolonians will not keep any ground from us. Not while I am captain!

@@ -23,15 +23,30 @@ Placeable:23:5:2.75
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Diabolus
+        LeftImage:2
         RightImage:None
         Dialogue:We are in the process of... interrogating the judge.
     Statement:
         Speaker:Forgetgood
-        LeftImage:1
+        LeftImage:None
+        RightImage:1
+        Dialogue:Looks like it is evangelists and elders coming to his aid.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:Orators are good against both of those.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:If you place an orator right in front of an advancing elder then you eliminate the elder's advantage of range.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
         RightImage:None
-        Dialogue:Keep the judge's guards off our backs while we get a confession out of him.
+        Dialogue:Keep them off our backs while we get a confession out of him.
 Wave:0
     WaitTime:0
     WaveUnit:
