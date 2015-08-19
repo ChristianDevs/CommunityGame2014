@@ -47,10 +47,15 @@ PreDialogue:
         RightImage:13
         Dialogue:Orcs block us at the end of the secret passage up ahead.
     Statement:
+        Speaker:Captain Boanurges
+        LeftImage:12
+        RightImage:None
+        Dialogue:Looks like we have a choice. Either assail the wall, or try to punch through a large force.
+    Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Push through them! We've no time to lose.
+        Dialogue:The choice is your captain. Make it quick and follow through.
 Wave:
     WaitTime:0
     WaveUnit:
