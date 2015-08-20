@@ -1230,7 +1230,12 @@ public class WorldController : MonoBehaviour {
 		if (Input.GetMouseButtonDown(0) && (cvState != _ConvertState.Done)) {
 			while (ShardCurAmount > 0) {
 				OrbCurAmount++;
-				ShardCurAmount -= 1 / Player.CONVERSION_RATE;
+
+				if (isPlayerAttacker == false) {
+					ShardCurAmount -= 1 / Player.DEFEND_CONVERSION_RATE;
+				} else {
+					ShardCurAmount -= 1 / Player.ASSAULT_CONVERSION_RATE;
+				}
 			}
 			ShardCurAmount = 0;
 			
@@ -1248,6 +1253,7 @@ public class WorldController : MonoBehaviour {
 				cvState = _ConvertState.Converting;
 				OrbCurAmount = 0;
 				convertTime = Time.time;
+				ShardCurAmount -= currentLevel.GetComponent<WaveList>().startShards;
 			}
 			break;
 		case _ConvertState.Converting:
@@ -1256,7 +1262,13 @@ public class WorldController : MonoBehaviour {
 			} else if (ShardCurAmount > 0) {
 				if ((convertTime + 0.15f) < Time.time) {
 					OrbCurAmount++;
-					ShardCurAmount -= 1 / Player.CONVERSION_RATE;
+					
+					if (isPlayerAttacker == false) {
+						ShardCurAmount -= 1 / Player.DEFEND_CONVERSION_RATE;
+					} else {
+						ShardCurAmount -= 1 / Player.ASSAULT_CONVERSION_RATE;
+					}
+
 					convertTime = Time.time;
 				}
 
@@ -1868,12 +1880,20 @@ public class WorldController : MonoBehaviour {
 		
 		// Charge player for the unit
 		if (faction == GomObject.Faction.Player) {
-			if (unitPrefab.GetComponent<GomUnit>().cost > Player.spiritShards) {
+			int level = 1;
+
+			for (int i = 0; i < unitTypes.Count; i++) {
+				if (unitTypes[i].GetComponent<UiUnitType>().UnitName == unitPrefab.GetComponent<GomUnit>().unitType) {
+					level = unitTypes[i].GetComponent<UiUnitType>().getPlayerStats().level;
+				}
+			}
+
+			if ((unitPrefab.GetComponent<GomUnit>().cost * level) > Player.spiritShards) {
 				Debug.Log ("Not enough Spirit Shards");
 				return false;
 			}
 			else {
-				Player.spiritShards -= unitPrefab.GetComponent<GomUnit>().cost;
+				Player.spiritShards -= unitPrefab.GetComponent<GomUnit>().cost * level;
 				Debug.Log (Player.spiritShards + " shards left.");
 			}
 		}
@@ -1920,12 +1940,11 @@ public class WorldController : MonoBehaviour {
 			
 			PropertyStats unitStats = unitTypes[unitType].GetComponent<UiUnitType>().getPlayerStats();
 			
-			if ((Player.spiritShards >= unitStats.upgradeCost) &&
+			if ((Player.spiritShards >= (unitStats.upgradeCost * unitStats.level)) &&
 			    (unitStats.level < unitStats.maxLevel)){
-				Player.spiritShards -= unitStats.upgradeCost;
+				Player.spiritShards -= unitStats.upgradeCost * unitStats.level;
 				unitStats.upgradeUnit(unitTypes[unitType].GetComponent<UiUnitType>().UnitName);
-				Debug.Log("Upgraded " + unitTypes[unitType].GetComponent<UiUnitType>().UnitName);
-				Debug.Log("Shards left " + Player.spiritShards);
+				GameObject.Find("UnitSpawnMenu").GetComponent<UnitSpawnMenuController>().updateGUIOnUpgrade(unitTypes[unitType].GetComponent<UiUnitType>().UnitName, unitTypes[unitType].GetComponent<UiUnitType>().getRandomUnit().GetComponent<GomUnit>().cost * unitStats.level);
 			}
 
 			if ((Player.tutorialState == 10) && (inTutorial == true)) {

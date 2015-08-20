@@ -2,7 +2,7 @@ AttackersLetThrough:500
 IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:32
-FirstTimeBonus:8
+FirstTimeBonus:10
 Lane:1
 Lane:1
 Lane:1

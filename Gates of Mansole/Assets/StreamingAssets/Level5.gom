@@ -2,7 +2,7 @@ AttackersLetThrough:3
 IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:16
-FirstTimeBonus:5
+FirstTimeBonus:6
 Lane:4:Disable
 Lane:5:Disable
 Lane:0
@@ -653,3 +653,8 @@ PostDialogue:
         LeftImage:None
         RightImage:2
         Dialogue:You don't believe us? Then I suggest a test. Help us get inside and we can find proof!
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:Get access to teachers from the market and we will be ready.

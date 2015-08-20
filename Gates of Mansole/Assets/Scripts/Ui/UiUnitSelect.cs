@@ -38,7 +38,7 @@ public class UiUnitSelect : MonoBehaviour {
 					stats = uut.getEnemyStats();
 
 		        nameText.GetComponent<TextMesh>().text = "Name: " + gom.unitType;
-		        upgradeText.GetComponent<TextMesh>().text = "To Upgrade: " + stats.upgradeCost;
+		        upgradeText.GetComponent<TextMesh>().text = "To Upgrade: " + (stats.upgradeCost * stats.level);
 		        expText.GetComponent<TextMesh>().text = "Lvl: " + stats.level;
 		        attackText.GetComponent<TextMesh>().text = "x" + stats.attack;
 		        defenseText.GetComponent<TextMesh>().text = "x" + stats.defense;

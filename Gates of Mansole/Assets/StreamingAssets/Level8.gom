@@ -2,7 +2,7 @@ AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:24
-FirstTimeBonus:5
+FirstTimeBonus:6
 Lane:2
 Lane:2
 Lane:2
@@ -755,8 +755,3 @@ PostDialogue:
         LeftImage:None
         RightImage:1
         Dialogue:Diabolus, I've discovered that Judge Conscience is the next link in the chain of hatred.
-    Statement:
-        Speaker:ForgetGood
-        LeftImage:None
-        RightImage:1
-        Dialogue:He is guarded by teachers and elders. I recommend acquiring evangelists to punch through their lines.

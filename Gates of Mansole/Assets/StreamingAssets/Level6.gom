@@ -2,7 +2,7 @@ AttackersLetThrough:6
 IsPlayerAttacker:True
 AttackerDir:Right
 StartShards:10
-FirstTimeBonus:3
+FirstTimeBonus:5
 Lane:1
 Lane:6:Disable
 Lane:6:Disable
@@ -66,22 +66,22 @@ Wave:0
     WaitTime:0
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:0:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:4:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:5:11
     WaveUnit:
         Time:0
-        Unit:Evangelist
+        Unit:Shepherd
         SpawnLoc:SpecifiedTile
         Tile:6:11
     WaveUnit:

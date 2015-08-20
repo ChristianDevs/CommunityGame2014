@@ -4,7 +4,8 @@ using System.Collections.Generic;
 
 public class Player : MonoBehaviour {
 
-	public const float CONVERSION_RATE = 0.05f; // shards to orbs
+	public const float DEFEND_CONVERSION_RATE = 0.05f; // 20 shards for 1 orb
+	public const float ASSAULT_CONVERSION_RATE = 0.5f; // 2 shards for 1 orb
 
     static public List<List<int>> levelComplete;
     static public int currentLevel;		// Level the player is currently playing
@@ -252,17 +253,6 @@ public class Player : MonoBehaviour {
 
         return num;
     }
-
-	static public void convertShards() {
-		spiritOrbs = (int)Mathf.Ceil (totalShards * CONVERSION_RATE);
-		Debug.Log (spiritOrbs + " orbs gained.");
-		int currentOrbs = PlayerPrefs.GetInt("spiritOrbs", 0);
-		spiritOrbs += currentOrbs;
-		PlayerPrefs.SetInt("spiritOrbs", spiritOrbs);
-		spiritShards = 0;
-		totalShards = 0;
-		PlayerPrefs.Save ();
-	}
 
 	static public void AddOrbs(int amt) {
 		spiritOrbs += amt;
