@@ -13,9 +13,12 @@ public class UnitSpawnMenuController : MonoBehaviour {
     public GameObject shardDisplayPrefab;
 
 	private List<GameObject> units;
+	private Dictionary<string, GameObject> unitCostsDict;
 
 	void Start(){
 		int numVisibleSpawns = 0;
+
+		unitCostsDict = new Dictionary<string, GameObject> ();
 
 		//Load each unit
 		world.unitsUIinst = new List<GameObject>();
@@ -31,6 +34,7 @@ public class UnitSpawnMenuController : MonoBehaviour {
 			world.squares.Add(square);
             uiUnit.GetComponent<GomUnit>().enabled = false;
             unitCost.transform.SendMessage("SetCustomValue", uiUnit.GetComponent<GomUnit>().cost, SendMessageOptions.DontRequireReceiver);
+			unitCostsDict.Add(square.name, unitCost);
             world.unitsUIinst.Add(uiUnit);
 			world.unitTypes.Add(unitsPrefab[i]);
 			units.Add(uiUnit);
@@ -72,5 +76,14 @@ public class UnitSpawnMenuController : MonoBehaviour {
         }
 
         world.unitMenuInterval = unitMenuInterval;
+	}
+
+	public void updateGUIOnUpgrade(string unitName, int cost) {
+		if (unitCostsDict.ContainsKey(unitName)) {
+			GameObject unitCost;
+
+			unitCostsDict.TryGetValue(unitName, out unitCost);
+			unitCost.SendMessage("SetCustomValue", cost , SendMessageOptions.DontRequireReceiver);
+		}
 	}
 }
