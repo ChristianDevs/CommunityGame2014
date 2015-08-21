@@ -1,7 +1,7 @@
 AttackersLetThrough:3
 IsPlayerAttacker:False
 AttackerDir:Left
-StartShards:14
+StartShards:24
 FirstTimeBonus:3
 Lane:1:Disable
 Lane:1

@@ -182,6 +182,7 @@ public class WorldController : MonoBehaviour {
 		dialogueItem = "";
 		dialogueLetterIndex = 0;
 		dialogueAddLetterTime = 0;
+		OrbCurAmount = 0;
 		placementBoxes = null;
 
 		Debug.Log (Player.tutorialState);
@@ -915,6 +916,7 @@ public class WorldController : MonoBehaviour {
 					Player.completeTutorialState();
 					AttackerBarMsgTutorial.SetActive(false);
 					inTutorial = false;
+					levelStartTime -= 13;
 				}
 				
 				// Check Menu Squares
@@ -1251,13 +1253,13 @@ public class WorldController : MonoBehaviour {
 		case _ConvertState.PreWait:
 			if ((convertTime + 1.5f) < Time.time) {
 				cvState = _ConvertState.Converting;
-				OrbCurAmount = 0;
 				convertTime = Time.time;
 				ShardCurAmount -= currentLevel.GetComponent<WaveList>().startShards;
 			}
 			break;
 		case _ConvertState.Converting:
 			if ((ShardCurAmount <= 0) && (currentLevel.GetComponent<WaveList>().firstTimeBonus <= 0)) {
+				Player.AddOrbs(OrbCurAmount);
 				cvState = _ConvertState.Done;
 			} else if (ShardCurAmount > 0) {
 				if ((convertTime + 0.15f) < Time.time) {
