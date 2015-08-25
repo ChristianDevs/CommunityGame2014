@@ -80,7 +80,7 @@ public class Player : MonoBehaviour {
 			if (ut.GetComponent<UiUnitType>().UnitName.Equals("Shepherd")){
 				ut.GetComponent<UiUnitType>().getPlayerStats().maxLevel=1;
 				unitAvailable.Add (true);
-			} else if(ut.GetComponent<UiUnitType>().UnitName.Equals("OrcArcher")||
+			} else if(ut.GetComponent<UiUnitType>().UnitName.Equals("OrcBow")||
 			        ut.GetComponent<UiUnitType>().UnitName.Equals("OrcSpear")||
 			        ut.GetComponent<UiUnitType>().UnitName.Equals("OrcStaff")||
 			        ut.GetComponent<UiUnitType>().UnitName.Equals("OrcSword")||
@@ -114,7 +114,7 @@ public class Player : MonoBehaviour {
 	static public void loadPlayer(GameObject[] newUnitTypes, GameObject[] newAbilities) {
 		unitAvailable = new List<bool>();
 		foreach (GameObject ut in newUnitTypes) {
-			if(ut.GetComponent<UiUnitType>().UnitName.Equals("OrcArcher")||
+			if(ut.GetComponent<UiUnitType>().UnitName.Equals("OrcBow")||
 			        ut.GetComponent<UiUnitType>().UnitName.Equals("OrcSpear")||
 			        ut.GetComponent<UiUnitType>().UnitName.Equals("OrcStaff")||
 			        ut.GetComponent<UiUnitType>().UnitName.Equals("OrcSword")||

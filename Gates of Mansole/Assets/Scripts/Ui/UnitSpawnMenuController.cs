@@ -14,6 +14,7 @@ public class UnitSpawnMenuController : MonoBehaviour {
 
 	private List<GameObject> units;
 	private Dictionary<string, GameObject> unitCostsDict;
+	private List<int> abilityCosts;
 
 	void Start(){
 		int numVisibleSpawns = 0;
@@ -34,10 +35,11 @@ public class UnitSpawnMenuController : MonoBehaviour {
 			world.squares.Add(square);
             uiUnit.GetComponent<GomUnit>().enabled = false;
             unitCost.transform.SendMessage("SetCustomValue", uiUnit.GetComponent<GomUnit>().cost, SendMessageOptions.DontRequireReceiver);
-			unitCostsDict.Add(square.name, unitCost);
             world.unitsUIinst.Add(uiUnit);
 			world.unitTypes.Add(unitsPrefab[i]);
 			units.Add(uiUnit);
+
+			unitCostsDict.Add(square.name, unitCost);
 			
 			if (unitsPrefab[i].GetComponent<UiUnitType>().getPlayerStats().maxLevel <= 0){
 				square.SetActive(false);
@@ -52,6 +54,7 @@ public class UnitSpawnMenuController : MonoBehaviour {
         world.abilityUIinst = new List<GameObject>();
         world.abilities = new List<GameObject>();
 		world.abilityOrigLocs = new List<Vector3>();
+		abilityCosts = new List<int> ();
 		Debug.Log (numVisibleSpawns);
         for (int i = 0; i < abilityPrefab.Length; ++i) {
 			GameObject square = Instantiate(menuPrefab, new Vector3((float)(-6 + (unitMenuInterval * numVisibleSpawns)), (float)-5.45, (float)0), Quaternion.identity) as GameObject;
@@ -59,6 +62,7 @@ public class UnitSpawnMenuController : MonoBehaviour {
 			GameObject abilityCost = Instantiate(shardDisplayPrefab, new Vector3((float)(-6.3f + (unitMenuInterval * numVisibleSpawns)), (float)-5f, (float)0), Quaternion.identity) as GameObject;
             abilityCost.transform.localScale = new Vector3(0.5f, 0.5f, 1f);
 			abilityCost.transform.SendMessage("SetCustomValue", abilityPrefab[i].GetComponent<Ability>().getUseCost(), SendMessageOptions.DontRequireReceiver);
+			abilityCosts.Add(abilityPrefab[i].GetComponent<Ability>().getUseCost());
             square.name = abilityPrefab[i].GetComponent<Ability>().abilityName;
             square.transform.localScale = new Vector3(square.transform.localScale.x, square.transform.localScale.y * 1.5f, 1f);
             world.squares.Add(square);
@@ -84,6 +88,32 @@ public class UnitSpawnMenuController : MonoBehaviour {
 
 			unitCostsDict.TryGetValue(unitName, out unitCost);
 			unitCost.SendMessage("SetCustomValue", cost , SendMessageOptions.DontRequireReceiver);
+		}
+	}
+
+	void Update() {
+		// Black out units the player can't afford
+		for (int i = 0; i < world.unitTypes.Count; i++) {
+			int cost = unitCostsDict[world.unitTypes[i].GetComponent<UiUnitType>().UnitName].GetComponent<UiSpiritShard>().m_val;
+
+			if (Player.spiritShards < cost) {
+				foreach(GameObject ob in units[i].GetComponent<UnitAnimation>().animObjects) {
+					ob.GetComponent<SpriteRenderer>().color = Color.black;
+				}
+			} else {
+				foreach(GameObject ob in units[i].GetComponent<UnitAnimation>().animObjects) {
+					ob.GetComponent<SpriteRenderer>().color = Color.white;
+				}
+			}
+		}
+
+		// Black out abilities the player can't afford
+		for (int i = 0; i < abilityCosts.Count; i++) {			
+			if (Player.spiritShards < abilityCosts[i]) {
+				world.abilityUIinst[i].GetComponent<SpriteRenderer>().color = Color.black;
+			} else {
+				world.abilityUIinst[i].GetComponent<SpriteRenderer>().color = Color.white;
+			}
 		}
 	}
 }

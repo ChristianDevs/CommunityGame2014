@@ -196,7 +196,12 @@ public class UpgradeController : MonoBehaviour {
 			break;
 		case "Upgrade":
 			if (selectedType < Player.unitTypes.Count) {
-                int orbCost = (Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel * 5) + 5;
+                int orbCost = Player.unitTypes[selectedType].GetComponent<UiUnitType>().getUpgradeCost();
+
+				if (Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().level >= Player.unitTypes[selectedType].GetComponent<UiUnitType>().UpgradeCosts.Length) {
+					return;
+				}
+
                 if ((Player.spiritOrbs >= orbCost) && (Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel < maxUnitUpgrades)  ) {
                     Player.unitTypes[selectedType].GetComponent<UiUnitType>().getPlayerStats().maxLevel++;
                     Player.upgradeUnit(Player.unitTypes[selectedType].GetComponent<UiUnitType>());
@@ -228,6 +233,11 @@ public class UpgradeController : MonoBehaviour {
             } else {
 				int abilityIndex = selectedType - Player.unitTypes.Count;
 				int orbCost = Player.abilities[abilityIndex].GetComponent<Ability>().getUpgradeCost();
+
+				if (Player.abilities[abilityIndex].GetComponent<Ability>().level >= Player.abilities[abilityIndex].GetComponent<Ability>().upgradeCost.Length) {
+					return;
+				}
+
                 if ((Player.spiritOrbs >= orbCost) && (Player.abilities[abilityIndex].GetComponent<Ability>().level < maxAbilityUpgrades) ) {
 					Player.abilities[abilityIndex].GetComponent<Ability>().level++;
 					Player.upgradeAbility(Player.abilities[abilityIndex].GetComponent<Ability>());
@@ -260,7 +270,7 @@ public class UpgradeController : MonoBehaviour {
             textToDisplay += "\n";
 
             textToDisplay += "Upgrade Cost: ";
-            textToDisplay += ut.getPlayerStats().maxLevel * 5 + 5;
+            textToDisplay += ut.getUpgradeCost();
 			textToDisplay += "\n";
 			
 			textToDisplay += "Health: ";

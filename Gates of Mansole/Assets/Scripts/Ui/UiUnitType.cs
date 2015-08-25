@@ -9,6 +9,8 @@ public class UiUnitType : MonoBehaviour {
 	public PropertyStats playerStats;
 	public PropertyStats enemyStats;
 
+	public int[] UpgradeCosts;
+
 	public PropertyStats getPlayerStats() {
 		return playerStats;
 	}
@@ -23,5 +25,9 @@ public class UiUnitType : MonoBehaviour {
 		}
 
 		return Units[Random.Range(0, Units.Length)];
+	}
+
+	public int getUpgradeCost() {
+		return UpgradeCosts[playerStats.maxLevel];
 	}
 }

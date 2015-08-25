@@ -18,33 +18,64 @@ public class PropertyStats {
 
 	public void upgradeUnit(string unit) {
 		level++;
-		attack += 5;
-		maxHealth += 10;
+
+		switch (unit) {
+		case "OrcArcher":
+		case "Shepherd": // bow
+			attack += 5;
+			maxHealth += 6;
+			break;
+		case "OrcSpear":
+		case "Evangelist": // spear
+			attack += 10;
+			maxHealth += 5;
+			break;
+		case "OrcStaff":
+		case "Elder": // staff
+			attack += 4;
+			maxHealth += 5;
+			break;
+		case "OrcSword":
+		case "Teacher": // sword
+			attack += 5;
+			maxHealth += 10;
+			break;
+		case "OrcWand":
+		case "Orator": // wand
+			attack += 6;
+			maxHealth += 7;
+			break;
+		}
 	}
 
 	public void resetUnitStats(UiUnitType ut) {
 		// NOTE: if property stats are changed in the prefabs, these must be changed as well
 		level = 1;
 		switch (ut.UnitName) {
+				case "OrcArcher":
 				case "Shepherd": // bow
-						maxHealth = 60;
-						attack = 4;
+						maxHealth = 50;
+						attack = 5;
 						break;
+				case "OrcSpear":
 				case "Evangelist": // spear
-						maxHealth = 50;
-						attack = 10;
-						break;
-				case "Elder": // staff
 						maxHealth = 60;
+						attack = 8;
+						break;
+				case "OrcStaff":
+				case "Elder": // staff
+						maxHealth = 40;
 						attack = 4;
 						break;
+				case "OrcSword":
 				case "Teacher": // sword
-						maxHealth = 50;
-						attack = 10;
+						maxHealth = 70;
+						attack = 7;
 						break;
+				case "OrcWand":
 				case "Orator": // wand
 						maxHealth = 60;
-						attack = 4;
+						attack = 6;
 						break;
 				}
 	}

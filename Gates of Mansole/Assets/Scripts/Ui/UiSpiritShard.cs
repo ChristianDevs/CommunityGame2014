@@ -7,6 +7,7 @@ public class UiSpiritShard : MonoBehaviour {
 	public GameObject textTexture;
 
     private bool showCustom = false;
+	public int m_val;
 
 
 	// Use this for initialization
@@ -22,6 +23,7 @@ public class UiSpiritShard : MonoBehaviour {
 
     void SetCustomValue(int val) {
         showCustom = true;
+		m_val = val;
         textTexture.GetComponent<TextMesh>().text = "x" + val;
     }
 }

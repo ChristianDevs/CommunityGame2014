@@ -15,14 +15,13 @@ public class Ability : MonoBehaviour {
     public int damage;
     public int duration;
     public int areaOfEffect;
-    public int upgradeCost;
+    public int[] upgradeCost;
 	public int useCost;
     public int level;
 
 	public int incDamage;
 	public int incDuration;
 	public int incAreaOfEffect;
-	public int incUpgradeCost;
 	public int incUseCost;
 
 	public AudioClip sound;
@@ -40,7 +39,7 @@ public class Ability : MonoBehaviour {
 	}
 
 	public int getUpgradeCost() {
-		return upgradeCost + (incUpgradeCost * level);
+		return upgradeCost[level];
 	}
 
 	public int getUseCost() {
