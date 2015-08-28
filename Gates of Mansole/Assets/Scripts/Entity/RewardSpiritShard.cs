@@ -41,7 +41,8 @@ public class RewardSpiritShard : MonoBehaviour {
 						isClicked = true;
 						
 						if (world != null) {
-							if (Player.tutorialState == 2) {
+							if ((Player.tutorialState == 1) && (world.GetComponent<WorldController>().shardTutorial == true)) {
+								world.GetComponent<WorldController>().shardTutorial = false;
 								world.GetComponent<WorldController>().advanceTutorial = true;
 							}
 

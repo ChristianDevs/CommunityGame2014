@@ -28,24 +28,29 @@ public class Player : MonoBehaviour {
 	static public List<bool> unitAvailable;
 	// Tutorials
 	// ------------------------------------------------------------
-	// 0) Click the level 1 button						- LevelSelect
-	// 1) Place a unit									- AutoLevel
-	// 2) Collect Spirit Shard							- AutoLevel
-	// 3) Explain Spirit Shards							- AutoLevel
-	// 4) Explain Attacker Bar							- AutoLevel
-	// 5) Click the Market button						- LevelSelect
-	// 6) Click the Evangelist Unit						- Market
-	// 7) Click the Upgrade Button						- Market
-	// 8) Explain the Unit Counters						- Market
-	// 9) Explain Spirit Orbs							- Market
-	// 10) Click the Shepherd button					- Market
-	// 11) Click the Upgrade button						- Market
-	// 12) Explain unlocking unit upgrades				- Market
-	// 13) Click the back button						- Market
-	// 14) Click level 2 button							- LevelSelect
-	// 15) Place a unit									- AutoLevel
-	// 16) Click the upgrade button						- AutoLevel
-	// 17) Explain upgrading units makes them stronger	- AutoLevel
+	// 1) Click Level 1
+	//  a) Place a Shepherd
+	//  b) Explain unit will attack when enemies in range
+	//  c) Pickup a Spirit Shard
+	//  d) Explain Spirit Shards
+	//  e) Explain the Attacker Bar
+	//  f) Explain the Wave Bar
+	// 2) Go to the Market
+	//  a) Select the shepherd
+	//  b) Upgrade the shepherd
+	// 3) Explain Spirit Orbs
+	// 4) Explain Unit Counters
+	//  a) Exit the Market
+	// 5) Click Level 2
+	// a) Place a shepherd
+	//  b) Upgrade the shepherd
+	//  c) Explain the early release
+	//  d) Explain shard swiping for bonus
+	//  e) Go to the Market
+	// 6) Unlock the evangelist
+	//  a) Exit the Market
+	// 7) At level 6 explain that placed units will advance
+	// 8) At level 17 explain the wall needs all lanes occupied to bring it down
 	static public int tutorialState;
 
     static public void resetPlayer(GameObject[] newUnitTypes, GameObject[] newAbilities) {
@@ -263,6 +268,7 @@ public class Player : MonoBehaviour {
 	static public void completeTutorialState() {
 		tutorialState++;
 		PlayerPrefs.SetInt ("tutorialstate", tutorialState);
+		Debug.Log ("Tutorial : " + tutorialState);
 	}
 
 	static public int getNumConsLogons() {

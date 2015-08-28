@@ -17,6 +17,12 @@ public class WorldController : MonoBehaviour {
 	public GameObject SpiritShardMsgTutorial;
 	public GameObject AttackerBarMsgTutorial;
 	public GameObject UnitUpgradeMsgTutorial;
+	public GameObject WallMsgTutorial;
+	public GameObject AssaultMsgTutorial;
+	public GameObject ShardSwipingMsgTutorial;
+	public GameObject EarlyReleaseMsgTutorial;
+	public GameObject UnitAttackMsgTutorial;
+	public GameObject WaveTrackerMsgTutorial;
 	
 	public int totalAI;
 	public int totalAttackers;
@@ -114,11 +120,16 @@ public class WorldController : MonoBehaviour {
 	private bool inTutorial;
 	private GameObject cursorInst;
 	public bool advanceTutorial;
-	private int unitsToRelease;
+	private UiTile blinkTile;
+	public bool shardTutorial;
+	private bool spawnUnitsReady;
+	private bool isBlinkTile;
+	private bool doSpiritShardTutorial;
 
 	private string dialogueItem;
 	private int dialogueLetterIndex;
 	private float dialogueAddLetterTime;
+
 
 	struct _projectileEntry {
 		public GameObject projectile;
@@ -178,14 +189,15 @@ public class WorldController : MonoBehaviour {
 		UnitCounterInst = null;
 		lastShardPickupTime = 0;
 		totalSwipeShards = 0;
-		unitsToRelease = -1;
 		dialogueItem = "";
 		dialogueLetterIndex = 0;
 		dialogueAddLetterTime = 0;
 		OrbCurAmount = 0;
 		placementBoxes = null;
+		blinkTile = null;
+		shardTutorial = false;
 
-		Debug.Log (Player.tutorialState);
+		Debug.Log(Player.currentLevel + ":" + Player.currentChapter + ":" + Player.tutorialState);
 
 		projList = new List<_projectileEntry> ();
 
@@ -208,6 +220,19 @@ public class WorldController : MonoBehaviour {
 		}
 		else {
 			currentLevel = null;
+		}
+		
+		if (Player.tutorialState == 1) {
+			spawnUnitsReady = false;
+			isBlinkTile = true;
+			doSpiritShardTutorial = true;
+		} else if (Player.tutorialState == 5) {
+			spawnUnitsReady = false;
+			isBlinkTile = true;
+		} else {
+			spawnUnitsReady = true;
+			isBlinkTile = false;
+			doSpiritShardTutorial = false;
 		}
 	}
 	
@@ -624,6 +649,146 @@ public class WorldController : MonoBehaviour {
 		
 		return newText;
 	}
+
+	void SpawnWave(WaveList wl) {
+		
+		// Go through each wave and see if it is time to start that wave
+		for (int wvInd = 0; wvInd < wl.waves.Count; wvInd++) {
+			Wave wv = wl.waves[wvInd];
+			
+			if (spawnUnitsReady == false) {
+				levelStartTime += Time.deltaTime;
+				break;
+			}
+			
+			if (wv.waitTime + levelStartTime < Time.time) {
+				
+				if (wl.waveStarted[wvInd] == false) {
+					CurWave++;
+					numUnitsSpawnedLeftInWave = wv.units.Length;
+					foreach(int upWave in wl.upgradeAtWave) {
+						if (upWave == wvInd) {
+							// Tell the player the enemy was upgraded
+							enemyUpgradeMsg.SetActive(true);
+							enemyUpgradeMsgTimeout = Time.time + 3f;
+							
+							// Upgrade the enemy units
+							foreach(GameObject ut in unitTypes) {
+								PropertyStats unitStats = ut.GetComponent<UiUnitType>().getEnemyStats();
+								unitStats.upgradeUnit(ut.GetComponent<UiUnitType>().UnitName);
+							}
+							
+							// Disable the Wave Release button after the last wave is released
+							if (wvInd == (wl.waves.Count - 1)) {
+								ReleaseButton.SetActive(false);
+							}
+						}
+					}
+					wl.waveStarted[wvInd] = true;
+					Debug.Log("Wave: " + wvInd);
+				}
+				
+				// Go through each unit and see if it is time to spawn it
+				foreach (WaveUnit ut in wv.units) {
+					if ((ut.RespawnTime > 0) && (ut.DeathTime != -1) && (Time.time >= (ut.DeathTime + ut.RespawnTime + levelStartTime))) {
+						ut.created = false;
+						ut.DeathTime = -1;
+					}
+					
+					if (ut.created == false) {
+						
+						if ((wv.waitTime + ut.time + levelStartTime) < Time.time) {
+							bool repeat;
+							
+							do {
+								int row;
+								int col;
+								
+								repeat = false;
+								
+								switch (ut.SpawnLocType) {
+								case WaveUnit._spawnLocType.RandRow:
+									if (curLevelAttackerDir == WaveList._direction.Right) {
+										col = 0;
+									}
+									else if (curLevelAttackerDir == WaveList._direction.Left) {
+										col = gridSize.col - 1;
+									}
+									else {
+										col = 0;
+									}
+									row = Random.Range(0, (int)gridSize.row);
+									break;
+								case WaveUnit._spawnLocType.RandTile:
+									row = 0;
+									col = 0;
+									break;
+								case WaveUnit._spawnLocType.SpecifiedRow:
+									row = (int)ut.Tile.x;
+									
+									if (isPlayerAttacker == true) {
+										col = 0;
+									} else {
+										if (attackerDir == UnitAnimation._direction.DirRight) {
+											col = 0;
+										} else {
+											col = gridSize.col - 1;
+										}
+									}
+									break;
+								case WaveUnit._spawnLocType.SpecifiedTile:
+									row = (int)ut.Tile.x;
+									col = (int)ut.Tile.y;
+									break;
+								default:
+									row = 0;
+									col = 0;
+									break;
+								}
+								
+								// Hold off releasing units if they are backed up
+								if (tileContents[row][col] != null) {
+									levelStartTime += Time.deltaTime;
+									return;
+								}
+								
+								ut.created = true;
+								if ((row < gridSize.row) && (col < gridSize.col)) {
+									if (isPlayerAttacker == true) {
+										if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
+											tileContents[row][col].SendMessage("SetIdleDirection", defenderDir, SendMessageOptions.DontRequireReceiver);
+											totalDefenders++;
+											numUnitsSpawnedLeftInWave--;
+										}
+									}
+									else {
+										if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
+											tileContents[row][col].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
+											totalAttackers++;
+											numUnitsSpawnedLeftInWave--;
+										} else {
+											// Retry placing the attacking enemy
+											if (ut.SpawnLocType == WaveUnit._spawnLocType.RandRow) {
+												repeat = true;
+											}
+											Debug.Log("Spawn Failed for time: " + ut.time);
+										}
+									}
+								}
+							} while (repeat);
+						}
+					}
+				}
+			}
+			
+			// Give the player bonus shards to release waves early
+			if (CurWave < currentLevel.GetComponent<WaveList>().waves.Count) {
+				float nextWaveTime = currentLevel.GetComponent<WaveList>().waves[CurWave].waitTime - (Time.time - levelStartTime);
+				int nextWaveEnemies = currentLevel.GetComponent<WaveList>().waves[CurWave].units.Length;
+				earlyReleaseShards = (int)((nextWaveTime * nextWaveEnemies) * 0.1f);
+			}
+		}
+	}
 	
 	void handlePlay() {
 		// Fire Projectiles
@@ -636,14 +801,12 @@ public class WorldController : MonoBehaviour {
 			}
 		}
 
-		if ((Player.tutorialState == 2) &&
+		if ((Player.tutorialState == 1) &&
 		    (inTutorial == true) &&
 		    (advanceTutorial == true)) {
 
-			Player.completeTutorialState();
 			advanceTutorial = false;
 			Destroy(cursorInst);
-			unitsToRelease = -1;
 			SpiritShardMsgTutorial.SetActive(true);
 		}
 
@@ -655,24 +818,21 @@ public class WorldController : MonoBehaviour {
 				wl = currentLevel.GetComponent<WaveList>();
 				
 				// Show the player how to spawn a unit
-				if ((Player.tutorialState == 1) && (inTutorial == false)) {
+				if (isBlinkTile == true) {
 					cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
 					inTutorial = true;
-					UiTile blinkTile = new UiTile();
+					blinkTile = new UiTile();
 
 					blinkTile.col = 0;
 					blinkTile.row = 2;
 					map.SendMessage("blinkTile", blinkTile, SendMessageOptions.DontRequireReceiver);
-					unitsToRelease = 1;
-				} else if ((Player.tutorialState == 10) && (inTutorial == false)) {
-					cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+					isBlinkTile = false;
+				} else if ((Player.tutorialState == 7) && (inTutorial == false) && (Player.currentLevel == 5)) {
+					AssaultMsgTutorial.SetActive(true);
 					inTutorial = true;
-					UiTile blinkTile = new UiTile();
-					
-					blinkTile.col = 0;
-					blinkTile.row = 2;
-					map.SendMessage("blinkTile", blinkTile, SendMessageOptions.DontRequireReceiver);
-					unitsToRelease = 1;
+				} else if ((Player.tutorialState == 8) && (inTutorial == false) && (Player.currentLevel == 1) && (Player.currentChapter == 1)) {
+					WallMsgTutorial.SetActive(true);
+					inTutorial = true;
 				}
 
 				// Check time for upgrades
@@ -695,153 +855,8 @@ public class WorldController : MonoBehaviour {
 						}
 					}
 				}
-				
-				// Go through each wave and see if it is time to start that wave
-				for (int wvInd = 0; wvInd < wl.waves.Count; wvInd++) {
-					Wave wv = wl.waves[wvInd];
-					
-					if ((Player.tutorialState == 0) ||
-					    (Player.tutorialState == 1) ||
-					    (Player.tutorialState == 3) ||
-					    (Player.tutorialState == 4)) {
-						levelStartTime += Time.deltaTime;
-						break;
-					}
 
-					if (unitsToRelease == 0) {
-						levelStartTime += Time.deltaTime;
-						break;
-					}
-					
-					if (wv.waitTime + levelStartTime < Time.time) {
-						
-						if (wl.waveStarted[wvInd] == false) {
-							CurWave++;
-							numUnitsSpawnedLeftInWave = wv.units.Length;
-							foreach(int upWave in wl.upgradeAtWave) {
-								if (upWave == wvInd) {
-									// Tell the player the enemy was upgraded
-									enemyUpgradeMsg.SetActive(true);
-									enemyUpgradeMsgTimeout = Time.time + 3f;
-
-									// Upgrade the enemy units
-									foreach(GameObject ut in unitTypes) {
-										PropertyStats unitStats = ut.GetComponent<UiUnitType>().getEnemyStats();
-										unitStats.upgradeUnit(ut.GetComponent<UiUnitType>().UnitName);
-									}
-
-									// Disable the Wave Release button after the last wave is released
-									if (wvInd == (wl.waves.Count - 1)) {
-										ReleaseButton.SetActive(false);
-									}
-								}
-							}
-							wl.waveStarted[wvInd] = true;
-							Debug.Log("Wave: " + wvInd);
-						}
-						
-						// Go through each unit and see if it is time to spawn it
-						foreach (WaveUnit ut in wv.units) {
-							if ((ut.RespawnTime > 0) && (ut.DeathTime != -1) && (Time.time >= (ut.DeathTime + ut.RespawnTime + levelStartTime))) {
-								ut.created = false;
-								ut.DeathTime = -1;
-							}
-
-							if (ut.created == false) {
-								
-								if ((wv.waitTime + ut.time + levelStartTime) < Time.time) {
-									bool repeat;
-									
-									do {
-										int row;
-										int col;
-										
-										repeat = false;
-										
-										switch (ut.SpawnLocType) {
-										case WaveUnit._spawnLocType.RandRow:
-											if (curLevelAttackerDir == WaveList._direction.Right) {
-												col = 0;
-											}
-											else if (curLevelAttackerDir == WaveList._direction.Left) {
-												col = gridSize.col - 1;
-											}
-											else {
-												col = 0;
-											}
-											row = Random.Range(0, (int)gridSize.row);
-											break;
-										case WaveUnit._spawnLocType.RandTile:
-											row = 0;
-											col = 0;
-											break;
-										case WaveUnit._spawnLocType.SpecifiedRow:
-											row = (int)ut.Tile.x;
-
-											if (isPlayerAttacker == true) {
-												col = 0;
-											} else {
-												if (attackerDir == UnitAnimation._direction.DirRight) {
-													col = 0;
-												} else {
-													col = gridSize.col - 1;
-												}
-											}
-											break;
-										case WaveUnit._spawnLocType.SpecifiedTile:
-											row = (int)ut.Tile.x;
-											col = (int)ut.Tile.y;
-											break;
-										default:
-											row = 0;
-											col = 0;
-											break;
-										}
-										
-										ut.created = true;
-										if ((row < gridSize.row) && (col < gridSize.col)) {
-											if (isPlayerAttacker == true) {
-												if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
-													tileContents[row][col].SendMessage("SetIdleDirection", defenderDir, SendMessageOptions.DontRequireReceiver);
-													totalDefenders++;
-													numUnitsSpawnedLeftInWave--;
-
-													if ( unitsToRelease > 0) {
-														unitsToRelease--;
-													}
-												}
-											}
-											else {
-												if (SpawnUnit(ut.prefab, row, col, GomObject.Faction.Enemy)) {
-													tileContents[row][col].SendMessage("SetIdleDirection", attackerDir, SendMessageOptions.DontRequireReceiver);
-													totalAttackers++;
-													numUnitsSpawnedLeftInWave--;
-													
-													if ( unitsToRelease > 0) {
-														unitsToRelease--;
-													}
-												} else {
-													// Retry placing the attacking enemy
-													if (ut.SpawnLocType == WaveUnit._spawnLocType.RandRow) {
-														repeat = true;
-													}
-													Debug.Log("Spawn Failed for time: " + ut.time);
-												}
-											}
-										}
-									} while (repeat);
-								}
-							}
-						}
-					}
-
-					// Give the player bonus shards to release waves early
-					if (CurWave < currentLevel.GetComponent<WaveList>().waves.Count) {
-						float nextWaveTime = currentLevel.GetComponent<WaveList>().waves[CurWave].waitTime - (Time.time - levelStartTime);
-						int nextWaveEnemies = currentLevel.GetComponent<WaveList>().waves[CurWave].units.Length;
-						earlyReleaseShards = (int)((nextWaveTime * nextWaveEnemies) * 0.1f);
-					}
-				}
+				SpawnWave(wl);
 				
 				// Check if Release Button should be enabled
 				if ((numUnitsSpawnedLeftInWave == 0) &&
@@ -903,20 +918,48 @@ public class WorldController : MonoBehaviour {
 
 			if (Input.GetMouseButtonDown(0)) {
 				RaycastHit hitSquare;
-				
-				if ((Player.tutorialState == 3) &&
+
+				if ((Player.tutorialState == 1) &&
 				    (inTutorial == true)) {
-					
-					Player.completeTutorialState();
-					SpiritShardMsgTutorial.SetActive(false);
-					AttackerBarMsgTutorial.SetActive(true);
-				} else if ((Player.tutorialState == 4) &&
+
+					if (SpiritShardMsgTutorial.activeSelf == true) {
+						SpiritShardMsgTutorial.SetActive(false);
+						AttackerBarMsgTutorial.SetActive(true);
+					} else if (AttackerBarMsgTutorial.activeSelf == true) {
+						AttackerBarMsgTutorial.SetActive(false);
+						WaveTrackerMsgTutorial.SetActive(true);
+					} else if (WaveTrackerMsgTutorial.activeSelf == true) {
+						WaveTrackerMsgTutorial.SetActive(false);
+						inTutorial = false;
+						levelStartTime -= 13;
+						spawnUnitsReady = true;
+					} else if (blinkTile == null) {
+						UnitAttackMsgTutorial.SetActive(false);
+						spawnUnitsReady = true;
+					}
+				} else if ((Player.tutorialState == 5) &&
+			           (inTutorial == true)) {
+				
+					if (EarlyReleaseMsgTutorial.activeSelf == true) {
+						EarlyReleaseMsgTutorial.SetActive(false);
+						ShardSwipingMsgTutorial.SetActive(true);
+					} else if (ShardSwipingMsgTutorial.activeSelf == true) {
+						ShardSwipingMsgTutorial.SetActive(false);
+						inTutorial = false;
+						spawnUnitsReady = true;
+					}
+				} else if ((Player.tutorialState == 7) &&
 				           (inTutorial == true)) {
 					
 					Player.completeTutorialState();
-					AttackerBarMsgTutorial.SetActive(false);
+					AssaultMsgTutorial.SetActive(false);
 					inTutorial = false;
-					levelStartTime -= 13;
+				} else if ((Player.tutorialState == 8) &&
+				           (inTutorial == true)) {
+					
+					Player.completeTutorialState();
+					WallMsgTutorial.SetActive(false);
+					inTutorial = false;
 				}
 				
 				// Check Menu Squares
@@ -1144,6 +1187,10 @@ public class WorldController : MonoBehaviour {
 		convertTime = Time.time;
 
 		ClearAllUnits ();
+
+		if ((Player.tutorialState == 1) || (Player.tutorialState == 5)) {
+			Player.completeTutorialState();
+		}
 	}
 	
 	void loseLevel() {
@@ -1202,15 +1249,16 @@ public class WorldController : MonoBehaviour {
 						
 						if ((Player.tutorialState == 1) && (inTutorial == true)) {
 							if ((tile.col == 0 && tile.row == 2)) {
-								Player.completeTutorialState();
-								inTutorial = false;
 								map.SendMessage("stopBlink", null, SendMessageOptions.DontRequireReceiver);
 								Destroy(cursorInst);
+								UnitAttackMsgTutorial.SetActive(true);
+								blinkTile = null;
 							}
-						} else if ((Player.tutorialState == 10) && (inTutorial == true)) {
+						} else if ((Player.tutorialState == 5) && (inTutorial == true)) {
 							cursorInst.transform.position = new Vector3(5.5f,-6f, 0);
 							cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
 							map.SendMessage("stopBlink", null, SendMessageOptions.DontRequireReceiver);
+							blinkTile = null;
 						}
 					}
 					break;
@@ -1640,11 +1688,16 @@ public class WorldController : MonoBehaviour {
 				}
 				
 				// Show the player to click on the spirit shard
-				if ((Player.tutorialState == 2) && (inTutorial == false) && (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy)) {
+				if ((Player.tutorialState == 1) &&
+				    (doSpiritShardTutorial == true) &&
+				    (tileContents[row][col].GetComponent<GomUnit>().faction == GomObject.Faction.Enemy)) {
 					cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
 					cursorInst.transform.position = tileContents[row][col].transform.position;
 					cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
 					inTutorial = true;
+					shardTutorial = true;
+					spawnUnitsReady = false;
+					doSpiritShardTutorial = false;
 				}
 
 				if (UnitDieClip != null) {
@@ -1757,7 +1810,14 @@ public class WorldController : MonoBehaviour {
 
 				if ((tileContents[row][i].GetComponent<GomUnit>().faction != attacker.faction) &&
 				    (tileContents[row][i].GetComponent<GomUnit>().health > 0)){
-					return true;
+
+					if ((i == (col - attacker.weapon.range)) &&
+					    ((tileContents[row][i].GetComponent<GomUnit>().NextState == GomUnit._state.SetupMove) ||
+					     (tileContents[row][i].GetComponent<GomUnit>().NextState == GomUnit._state.Move))) {
+						return false;
+					} else {
+						return true;
+					}
 				}
 			}
 		}
@@ -1776,7 +1836,14 @@ public class WorldController : MonoBehaviour {
 
 				if ((tileContents[row][i].GetComponent<GomUnit>().faction != attacker.faction) &&
 				    (tileContents[row][i].GetComponent<GomUnit>().health > 0)){
-					return true;
+
+					if ((i == (col + attacker.weapon.range)) &&
+					    ((tileContents[row][i].GetComponent<GomUnit>().NextState == GomUnit._state.SetupMove) ||
+					 	 (tileContents[row][i].GetComponent<GomUnit>().NextState == GomUnit._state.Move))) {
+						return false;
+					} else {
+						return true;
+					}
 				}
 			}
 		}
@@ -1949,11 +2016,10 @@ public class WorldController : MonoBehaviour {
 				GameObject.Find("UnitSpawnMenu").GetComponent<UnitSpawnMenuController>().updateGUIOnUpgrade(unitTypes[unitType].GetComponent<UiUnitType>().UnitName, unitTypes[unitType].GetComponent<UiUnitType>().getRandomUnit().GetComponent<GomUnit>().cost * unitStats.level);
 			}
 
-			if ((Player.tutorialState == 10) && (inTutorial == true)) {
-				Player.completeTutorialState();
-				inTutorial = false;
+			if ((Player.tutorialState == 5) && (inTutorial == true)) {
 				Destroy(cursorInst);
-				unitsToRelease = -1;
+
+				EarlyReleaseMsgTutorial.SetActive(true);
 			}
 			break;
 		case "Release":

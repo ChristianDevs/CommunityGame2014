@@ -43,19 +43,24 @@ public class LevelSelectController : MonoBehaviour {
 		}
 		
 		// Show player to click the level
-		if ((Player.tutorialState == 0) && (inTutorial == false)) {
+		if ((Player.tutorialState < 2) && (inTutorial == false)) {
 			cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
 			cursorInst.transform.position = levelButtons[0].transform.position;
 			cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
 			inTutorial = true;
-		} else if ((Player.tutorialState == 5) && (inTutorial == false)) {
+		} else if ((Player.tutorialState >= 2) && (Player.tutorialState < 5) && (inTutorial == false)) {
 			cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
 			cursorInst.transform.position = new Vector3(5.2f, 4.6f, 0);
 			cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
 			inTutorial = true;
-		} else if ((Player.tutorialState == 10) && (inTutorial == false)) {
+		} else if ((Player.tutorialState == 5) && (inTutorial == false)) {
 			cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
 			cursorInst.transform.position = new Vector3(2.1f, 1.8f, 0);
+			cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
+			inTutorial = true;
+		} else if ((Player.tutorialState == 6) && (inTutorial == false)) {
+			cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+			cursorInst.transform.position = new Vector3(5.2f, 4.6f, 0);
 			cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
 			inTutorial = true;
 		}
@@ -109,7 +114,9 @@ public class LevelSelectController : MonoBehaviour {
 				levelButtons[i].transform.position = new Vector3(Player.levelLocs[Player.currentChapter][i].x, Player.levelLocs[Player.currentChapter][i].y, levelButtons[i].transform.position.z);
 				levelButtons [levelButtons.Count - 1].transform.localScale = new Vector3 (0.6f, 0.6f, 1);
 
-				if ((Player.tutorialState == 5) && (i == 1)) {
+				if ((Player.tutorialState == 2) && (i == 1)) {
+					levelButtons[i].SetActive(false);
+				} else if ((Player.tutorialState == 6) && (i == 2)) {
 					levelButtons[i].SetActive(false);
 				}
 			}
@@ -125,7 +132,7 @@ public class LevelSelectController : MonoBehaviour {
 			// Make the last level bigger
 			levelButtons [levelButtons.Count - 1].transform.localScale = new Vector3 (0.75f, 0.75f, 1);
 
-			if (Player.tutorialState != 5) {
+			if ((Player.tutorialState != 2) && (Player.tutorialState != 6)) {
 				// Particle System to draw user's attention to the new level
 				particleSystem = Instantiate(highlightPS, levelButtons[levelButtons.Count - 1].transform.position, Quaternion.identity) as GameObject;
 			}
@@ -138,27 +145,6 @@ public class LevelSelectController : MonoBehaviour {
 				Application.LoadLevel("Title");
 				break;
 			case "Upgrade":
-				// End Tutorial when player clicks the market
-				if ((Player.tutorialState == 3) && (inTutorial)) {
-					inTutorial = false;
-					
-					if (cursorInst != null) {
-						Destroy(cursorInst);
-						cursorInst = null;
-					}
-					
-					Player.completeTutorialState();
-				} else if ((Player.tutorialState == 10) && (inTutorial)) {
-					inTutorial = false;
-					
-					if (cursorInst != null) {
-						Destroy(cursorInst);
-						cursorInst = null;
-					}
-					
-					Player.completeTutorialState();
-				}
-
 				Application.LoadLevel("Upgrade");
 			break;
 			case "Previous":
