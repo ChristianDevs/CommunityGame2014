@@ -3,14 +3,14 @@ IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:40
 FirstTimeBonus:12
-Lane:14:Disable
+Lane:11:Disable
 Lane:12
 Lane:12
 Lane:12
 Lane:12
 Lane:12
 Lane:12
-Lane:16:Disable
+Lane:11:Disable
 UpgradeAtWave:0
 UpgradeAtWave:3
 UpgradeAtWave:6

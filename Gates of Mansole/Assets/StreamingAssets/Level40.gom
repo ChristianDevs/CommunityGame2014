@@ -3,7 +3,7 @@ IsPlayerAttacker:True
 AttackerDir:Right
 StartShards:50
 FirstTimeBonus:14
-Lane:11:Disable
+Lane:15:Disable
 Lane:14:Disable
 Lane:12
 Lane:12
@@ -32,7 +32,7 @@ Placeable:35:-4.5:-1
 Placeable:35:3.1:-2.05
 Placeable:35:5.85:0.95
 Placeable:35:5.1:2.95
-Wall:8:1:6:200:0.10:2
+Wall:8:2:7:200:0.10:2
 Music:3
 PreDialogue:
     Statement:
