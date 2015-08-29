@@ -62,7 +62,7 @@ public class UiButton : MonoBehaviour {
 						controller.SendMessage("buttonPush", name, SendMessageOptions.DontRequireReceiver);
 					}
 
-					if (ButtonPush != null) {
+					if ((ButtonPush != null) && (Player.SoundEnable == true)) {
 						AudioSource.PlayClipAtPoint(ButtonPush, transform.position);
 					}
 				}

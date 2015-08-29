@@ -30,6 +30,11 @@ public class TitleController : MonoBehaviour {
 		}
 	}
 
+	void Awake() {
+		Player.MusicEnable = true;
+		Player.SoundEnable = true;
+	}
+
 	void Update() {
 		Color color = Color.black;
 

@@ -53,6 +53,9 @@ public class Player : MonoBehaviour {
 	// 8) At level 17 explain the wall needs all lanes occupied to bring it down
 	static public int tutorialState;
 
+	static public bool MusicEnable;
+	static public bool SoundEnable;
+
     static public void resetPlayer(GameObject[] newUnitTypes, GameObject[] newAbilities) {
         PlayerPrefs.DeleteAll();
         levelComplete = new List<List<int>>();

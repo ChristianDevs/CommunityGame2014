@@ -427,7 +427,9 @@ public class WorldController : MonoBehaviour {
 			
 			// Play music
 			if ((currentLevel.GetComponent<WaveList>().backGroundMusic >= 0) && (currentLevel.GetComponent<WaveList>().backGroundMusic < Music.Length)) {
-				AudioSource.PlayClipAtPoint(Music[currentLevel.GetComponent<WaveList>().backGroundMusic], transform.position);
+				if (Player.MusicEnable == true) {
+					AudioSource.PlayClipAtPoint(Music[currentLevel.GetComponent<WaveList>().backGroundMusic], transform.position);
+				}
 			}
 			
 			Player.spiritShards = Player.totalShards = currentLevel.GetComponent<WaveList>().startShards;
@@ -1406,7 +1408,7 @@ public class WorldController : MonoBehaviour {
 					}
 				}
 
-				if (selectedAbility.GetComponent<Ability>().sound != null) {
+				if ((selectedAbility.GetComponent<Ability>().sound != null) && (Player.SoundEnable == true)) {
 					AudioSource.PlayClipAtPoint(selectedAbility.GetComponent<Ability>().sound, transform.position);
 				}
 			}
@@ -1519,7 +1521,7 @@ public class WorldController : MonoBehaviour {
 					}
 				}
 				
-				if (selectedAbility.GetComponent<Ability>().sound != null) {
+				if ((selectedAbility.GetComponent<Ability>().sound != null)  && (Player.SoundEnable == true)) {
 					AudioSource.PlayClipAtPoint(selectedAbility.GetComponent<Ability>().sound, transform.position);
 				}
 			}
@@ -1574,7 +1576,7 @@ public class WorldController : MonoBehaviour {
 					freezeEndTime = Time.time + selectedAbility.GetComponent<Ability>().duration;
 					Player.spiritShards -= selectedAbility.GetComponent<Ability>().getUseCost();
 					
-					if (selectedAbility.GetComponent<Ability>().sound != null) {
+					if ((selectedAbility.GetComponent<Ability>().sound != null)  && (Player.SoundEnable == true)) {
 						AudioSource.PlayClipAtPoint(selectedAbility.GetComponent<Ability>().sound, transform.position);
 					}
 				}
@@ -1620,7 +1622,7 @@ public class WorldController : MonoBehaviour {
 							tileContents[tile.row][tile.col].SendMessage("SetInvincible", selectedAbility.GetComponent<Ability>().duration, SendMessageOptions.DontRequireReceiver);
 							Player.spiritShards -= selectedAbility.GetComponent<Ability>().getUseCost();
 							
-							if (selectedAbility.GetComponent<Ability>().sound != null) {
+							if ((selectedAbility.GetComponent<Ability>().sound != null)  && (Player.SoundEnable == true)) {
 								AudioSource.PlayClipAtPoint(selectedAbility.GetComponent<Ability>().sound, transform.position);
 							}
 						}
@@ -1700,7 +1702,7 @@ public class WorldController : MonoBehaviour {
 					doSpiritShardTutorial = false;
 				}
 
-				if (UnitDieClip != null) {
+				if ((UnitDieClip != null)  && (Player.SoundEnable == true)) {
 					AudioSource.PlayClipAtPoint(UnitDieClip, transform.position);
 				}
 
@@ -1726,7 +1728,7 @@ public class WorldController : MonoBehaviour {
 								letThroughAttackers++;
 								totalAttackers--;
 
-								if (AttCrossClip != null) {
+								if ((AttCrossClip != null)  && (Player.SoundEnable == true)) {
 									AudioSource.PlayClipAtPoint(AttCrossClip, transform.position);
 								}
 							}
@@ -1750,7 +1752,7 @@ public class WorldController : MonoBehaviour {
 								letThroughAttackers++;
 								totalAttackers--;
 								
-								if (AttCrossClip != null) {
+								if ((AttCrossClip != null) && (Player.SoundEnable == true)) {
 									AudioSource.PlayClipAtPoint(AttCrossClip, transform.position);
 								}
 							}
@@ -1884,7 +1886,10 @@ public class WorldController : MonoBehaviour {
 						projList.Add(pe);
 					} else {
 						tileContents[row][i].SendMessage("DamageMelee", attacker.getStats(), SendMessageOptions.DontRequireReceiver);
-						AudioSource.PlayClipAtPoint(attacker.weapon.sound, transform.position);
+
+						if (Player.SoundEnable == true) {
+							AudioSource.PlayClipAtPoint(attacker.weapon.sound, transform.position);
+						}
 					}
 					
 					return;
@@ -1916,7 +1921,10 @@ public class WorldController : MonoBehaviour {
 						projList.Add(pe);
 					} else {
 						tileContents[row][i].SendMessage("DamageMelee", attacker.getStats(), SendMessageOptions.DontRequireReceiver);
-						AudioSource.PlayClipAtPoint(attacker.weapon.sound, transform.position);
+
+						if (Player.SoundEnable == true) {
+							AudioSource.PlayClipAtPoint(attacker.weapon.sound, transform.position);
+						}
 					}
 					
 					return;
@@ -2045,7 +2053,10 @@ public class WorldController : MonoBehaviour {
 					projectile.transform.Rotate(new Vector3(0, 0, 180));
 				}
 
-				AudioSource.PlayClipAtPoint(pe.sound, transform.position);
+				if (Player.SoundEnable == true) {
+					AudioSource.PlayClipAtPoint(pe.sound, transform.position);
+				}
+
 				projList.Remove(pe);
 				return;
 			}
