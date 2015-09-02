@@ -27,32 +27,37 @@ PreDialogue:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:The preparations are almost complete for the coronation.
+        Dialogue:The preparations are almost complete for your coronation, my king-to-be.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Good, the sooner we get this done the better.
+        Dialogue:Good, the sooner we complete the ceremony and take control the better.
     Statement:
         Speaker:Carnalsecurity
         LeftImage:8
         RightImage:None
-        Dialogue:There is a problem, we forgot one of the major lords of the land.
+        Dialogue:There is a problem, one of the major lords of the land is not falling in line with everyone else.
     Statement:
         Speaker:Carnalsecurity
         LeftImage:8
         RightImage:None
-        Dialogue:He is marching toward the keep with his forces.
+        Dialogue:Lord innocent marches on the keep with his forces.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:What are you standing there for? Go out and meet him in battle. I cannot be bothered further.
+        Dialogue:I cannot be bothered by such trifles. Lieutenant, take your soldiers and stop him in his tracks.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:I have a city to prepare to run...
+        Dialogue:There is a city here that won't run itself! It needs my help and I will not disappoint.
+    Statement:
+        Speaker:Lord Innocence
+        LeftImage:9
+        RightImage:None
+        Dialogue:The things going on lately are a shame to the city and the whole of the kingdom.
     Statement:
         Speaker:Lord Innocence
         LeftImage:9
@@ -997,7 +1002,7 @@ PostDialogue:
         Speaker:Lord Innocence
         LeftImage:9
         RightImage:None
-        Dialogue:No! This cannot happen.
+        Dialogue:No! How can King Shaddai's rule here fade? We canot fail.
     Statement:
         Speaker:Lord Innocence
         LeftImage:9
@@ -1022,22 +1027,22 @@ PostDialogue:
         Speaker:Antisiphone
         LeftImage:None
         RightImage:3
-        Dialogue:Are you done flapping yer yapper yet?
-    Statement:
-        Speaker:Antisiphone
-        LeftImage:None
-        RightImage:3
-        Dialogue:Face my arrow! [thwang]
+        Dialogue:[Twwaaannggg]
     Statement:
         Speaker:Lord Innocence
         LeftImage:9
         RightImage:None
         Dialogue:Aaaahhh!
     Statement:
+        Speaker:Antisiphone
+        LeftImage:None
+        RightImage:3
+        Dialogue:I grew weary of hearing that man's wretched cries. Best to put old dogs out of the misery.
+    Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Yes, with the preparations done and Lord innocence out of the way we can proceed.
+        Dialogue:Innocence is now dead in the city. With preparations complete we can proceed according to plan.
     Statement:
         Speaker:Diabolus
         LeftImage:None
@@ -1047,4 +1052,4 @@ PostDialogue:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:And I will take my place as Mansoul's rightful king.
+        Dialogue:And I shall take my place as Mansoul's rightful king, elected by the people to rule over them.

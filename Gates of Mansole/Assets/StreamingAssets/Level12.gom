@@ -28,7 +28,7 @@ PreDialogue:
         Speaker:Carnalsecurity
         LeftImage:8
         RightImage:None
-        Dialogue:I'll count on you to protect us while we extract every bit of information.
+        Dialogue:We're counting on you to protect us while we break the mayor from his pattern of bigotry.
     Statement:
         Speaker:Carnalsecurity
         LeftImage:8
@@ -38,12 +38,12 @@ PreDialogue:
         Speaker:Carnalsecurity
         LeftImage:8
         RightImage:None
-        Dialogue:Ha! I do what I must to get the job done. This is an intolerant man and I will expose him.
+        Dialogue:Ha! This is an intolerant man and I will expose him. I do what I must to get the job done.
     Statement:
         Speaker:Carnalsecurity
         LeftImage:8
         RightImage:None
-        Dialogue:Now you do yours and keep the guards from reaching us.
+        Dialogue:Now you do yours and keep his guards from reaching us.
 Wave:0
     WaitTime:0
     WaveUnit:
@@ -594,7 +594,7 @@ PostDialogue:
         Speaker:Mayor Understanding
         LeftImage:4
         RightImage:None
-        Dialogue:...
+        Dialogue:Why?
     Statement:
         Speaker:Mayor Understanding
         LeftImage:4
@@ -607,21 +607,31 @@ PostDialogue:
         Dialogue:No longer! From now on I will make sure to treat all Diabolonians as equals with Mansoul citizens.
     Statement:
         Speaker:Carnalsecurity
-        LeftImage:8
-        RightImage:None
-        Dialogue:Rightly so. With this new leaf of tolerance, Mansoul will transform to a new kind of city.
-    Statement:
-        Speaker:Forgetgood
         LeftImage:None
-        RightImage:1
-        Dialogue:I've found the last link in this conspiracy chain. Lady Willbewill is an agent of King Shaddai.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:None
-        RightImage:1
-        Dialogue:With her out of the way we... I mean, everyone will be equal once she sees the error of her ways.
+        RightImage:8
+        Dialogue:As you should. Because Diabolonians really are equal with Mansoul citizens.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Good investigating. We will go to her next.
+        Dialogue:With this new leaf of tolerance, Mansoul will transform to a new kind of city.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:While... talking with the mayor I feel the last link in this chain of conspiracy against us.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:Lady Willbewill is an agent of King Shaddai, curse him, who makes the King's will known.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:With her conformed to our side we will be poised to overthrow King Shaddia's oppression.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:Let us go to her to do the work of persuasion.

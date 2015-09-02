@@ -1,4 +1,4 @@
-AttackersLetThrough:5
+AttackersLetThrough:4
 IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:30
@@ -25,27 +25,37 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:According to my investigation, Lady Willbewill is the last link in the chain.
+        Dialogue:You, Lady Willbewill, shall fall in line just like the mayor and the judge.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Mayor Understanding and Judge Conscience? What have you done to them?
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Stand watch and make sure nobody disturbs our interrogation of her.
+        Dialogue:We haven't harmed them. I merely showed them the error of their ways.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:And by the time we are done you will see the wisdom of the path I shall show you.
     Statement:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:Lietenant, be on your guard. They are likely to throw all their strength at the last wave.
+        Dialogue:Lietenant, Lady Willbewill's guards are approaching, don't let them interfere with us.
     Statement:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:The enemy will come on unexpected lanes in very fast succession.
+        Dialogue:They will likely get desparate at the end and rush at your lines out of formation.
     Statement:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:Do not lose your head and do your best.
+        Dialogue:Don't lose your head and I feel you'll do just fine.
 Wave:0
     WaitTime:0
     WaveUnit:
@@ -763,7 +773,12 @@ PostDialogue:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:We are now done. The despicable enmity of Diabolonians is starting to wash away.
+        Dialogue:I can sense it now. The enmity of Diabolonians is starting to wash away.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:The despicable practice of treating the Diabolonians as inferior is coming to an end.
     Statement:
         Speaker:Diabolus
         LeftImage:None
@@ -788,12 +803,12 @@ PostDialogue:
         Speaker:Lady Willbewill
         LeftImage:None
         RightImage:7
-        Dialogue:I would follow you Diabolus!
+        Dialogue:I would follow you, Diabolus!
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:It is settled then.
+        Dialogue:It appears I have been nominated! I cannot leave the city I have helped leaderless.
     Statement:
         Speaker:Diabolus
         LeftImage:2
@@ -803,4 +818,4 @@ PostDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Let us make preparations.
+        Dialogue:Let us make preparations for my rule. We have work to do.

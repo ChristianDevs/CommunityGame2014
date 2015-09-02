@@ -22,22 +22,12 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:My scouts report they are defending the entrance of the post with teachers and evangelists.
+        Dialogue:My scouts report the Diabolonians have both teachers and evangelists occupying our guard post.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:It should be easy to pick them off at range.
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:Wait, what is that I see?
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
-        Dialogue:They are marching against us now! They must have seen us preparing an assault.
+        Dialogue:That means you need to place a mix of soldiers on the battlefield.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -52,7 +42,17 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:And use the range of the shepherd to defeat evangelists.
+        Dialogue:And use the range of the shepherd to defeat advancing evangelists.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:What is that I see? They are marching against us now! They must have seen us preparing an assault.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:May the grace of King Shaddai go into battle with us.
 Wave:0
     WaitTime:0
     WaveUnit:
@@ -439,22 +439,27 @@ PostDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Congratulations on defeating the Diabolonians and retaking the guard post.
+        Dialogue:Well done, you making a fine lieutenant captain. And your collar isn't even muffled this time!
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:But, know that our work to resist the craftiness of the Diabolonians continues.
+        Dialogue:Even though we won victory here, our battle with the Diabolonians continues.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:We must continue protecting the city of Mansoul from threats without as well as within.
+        Dialogue:Protecting the city of Mansoul is a tireless... and sometimes... thankless duty.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:But you did good work today.
+        Dialogue:But we must muster the courage and strength to diligently perform it all the same.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:In any case, you've done good work on the field of battle this day.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -464,9 +469,14 @@ PostDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:You can use this ability on a unit to prevent it from being damaged for a short time.
+        Dialogue:You can use this ability on a soldier to prevent it from being damaged for a short time.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Rest until next time you are needed.
+        Dialogue:But for now, enjoy a short time of resting and training until I give you word of your next task.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:May the grace of King Shaddai go with you.

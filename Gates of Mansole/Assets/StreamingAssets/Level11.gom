@@ -30,22 +30,22 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Ahead is the Mayor's estate.
+        Dialogue:Look at that estate, standing tall and proud. You'd never suspect that a vile villain dwells inside.
     Statement:
-        Speaker:Diabolus
-        LeftImage:2
-        RightImage:None
-        Dialogue:They have evangelists, elders, and orators defending.
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:I found out they have evangelists, elders, and orators defending.
     Statement:
-        Speaker:Diabolus
-        LeftImage:2
-        RightImage:None
-        Dialogue:So you must excersize more of your good judgment when attacking.
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:I feel you must use a dose of your good judgment when attacking.
     Statement:
         Speaker:Carnalsecurity
         LeftImage:None
         RightImage:8
-        Dialogue:I bring some news, they sent word out to request reinforcements.
+        Dialogue:I bring some news, Lord Diabolus, they sent word out to request reinforcements.
     Statement:
         Speaker:Diabolus
         LeftImage:2
@@ -60,7 +60,7 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:So, be quick and victory will be ours!
+        Dialogue:Do you know what that means Lieutenant? The quicker you move your soldiers in the better.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -163,19 +163,24 @@ PostDialogue:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:I am Diabolus and we are here to hear your confession of your wrongdoings.
+        Dialogue:I am Diabolus and our business is to witness the confession of your wrongdoings.
     Statement:
         Speaker:Mayor Understanding
         LeftImage:4
         RightImage:None
-        Dialogue:What wrongdoings? I don't know what you're talking about.
+        Dialogue:Wrongdoings? I've made no wrongdoings, Judge Conscience will attest to that.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:The judge has already confessed his hatefulness and avowed to change his ways.
+    Statement:
+        Speaker:Mayor Understanding
+        LeftImage:4
+        RightImage:None
+        Dialogue:Hatefulness? Changed his ways? I don't understand what you're talking about.
     Statement:
         Speaker:Carnalsecurity
         LeftImage:None
         RightImage:8
-        Dialogue:You soon will.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:2
-        RightImage:None
-        Dialogue:Watch our backs as we interrogate the mayor.
+        Dialogue:You soon will. I'll ensure you are fully aware of your actions.

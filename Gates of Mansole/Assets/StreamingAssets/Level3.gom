@@ -26,22 +26,22 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Welcome to the battlefield lieutenant captain.
+        Dialogue:Welcome to the battlefield lieutenant captain. The ranks of teachers are thick as fog.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:I sure hope you brought some evangelists with you. These lines of teachers are thick as fog.
+        Dialogue:The shepherds can attack the teachers at range, but will inflict minimal damage.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:You can see the enemy has already made their formation. All you need is to get 5 units through their lines.
+        Dialogue:However, let not your composure falter. Everyone has their own weakness and teachers are no exception.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:But the more of the enemy you defeat on the battlefield, the more Spirit Orbs you gain.
+        Dialogue:The evangelists you unlocked will be your key to victory. Use them well.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -338,9 +338,29 @@ PostDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Great work penetrating their defenses. Evangelists have a tactical advantage against Teachers.
+        Dialogue:The collar on your uniform was thrown up during the battle, let me fix it for you...
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Next we retake the guard post and ensure the Diabolonians leave our land.
+        Dialogue:Mmm... Hmm... Yes, now you look like a proper lieutenant captain.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:I recommend visiting the Market frequently to unlock more units and upgrades.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Behold! Up ahead stands the guard post of Mount grace standing tall and strong.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Our next objective is to retake it and drive the Diabolonian forces from our lands.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue:Often have the hordes of the Diabolonians occupied that post, but never for long.

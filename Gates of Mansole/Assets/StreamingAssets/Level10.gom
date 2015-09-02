@@ -1,4 +1,4 @@
-AttackersLetThrough:5
+AttackersLetThrough:1
 IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:26
@@ -26,27 +26,27 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:We are in the process of... interrogating the judge.
+        Dialogue:We are in the process of... interrogating the good judge. I need just a little more time to pursuade him.
     Statement:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:Looks like it is evangelists and elders coming to his aid.
+        Dialogue:Lieutenant capgain, look! Evangelists and elders are coming to help him.
     Statement:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:Orators are good against both of those.
+        Dialogue:Orators are good against both of those. I feel you'll do superb with them.
     Statement:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:If you place an orator right in front of an advancing elder then you eliminate the elder's advantage of range.
+        Dialogue:If you place an orator right in front of an advancing elder then you take away the elder's advantage of range.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Keep them off our backs while we get a confession out of him.
+        Dialogue:Hold them here while we finish the job. Do not let a single soldier get passed you.
 Wave:0
     WaitTime:0
     WaveUnit:
@@ -519,22 +519,22 @@ PostDialogue:
         RightImage:None
         Dialogue:But now I avow to end my old ways of bigotry and judgmentalism.
     Statement:
-        Speaker:Forgetgood
+        Speaker:Diabolus
         LeftImage:None
-        RightImage:1
+        RightImage:2
         Dialogue:As you should, judge. Your conscience is now clear.
     Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:But we still have more work to do.
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:Diabolus, take a look here. While going through the judge's things I found some more hateful scribblings.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:This looks like a letter. It is from... Mayor Understanding!
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:I discovered that even the mayor is in this conspiracy.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Come, we will go interrogate him next.
+        Dialogue:Lieutenant captain, do you see how pervasive these bigoted attitudes are? It goes straight to the top!

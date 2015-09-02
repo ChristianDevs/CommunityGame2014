@@ -33,17 +33,37 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:With this last victory we shall have what we came for.
+        Dialogue:How repulsive! King Shaddai's insignia is prevalent moreso here than elsewhere in the city.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:It infuriates me just looking at them! As though they laugh at us.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:Don't worry, those filthy things will be the first things torn down.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:But let us not lose sight what we have to do to get there.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:What do we know about Lady Willbewill's manor and guards.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:There are a lot of ranged units here, so I feel using the right counter is very important.
     Statement:
         Speaker:Carnalsecurity
         LeftImage:None
         RightImage:8
-        Dialogue:Don't give any mercy to Lady Willbewill, we must accomplish our mission.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:There are a lot of ranged units here, so be sure to use the appropriate counter.
+        Dialogue:Show no mercy to Lady Willbewill and her hired minions. We must break through and confront her.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -159,7 +179,7 @@ PostDialogue:
         Speaker:Lady Willbewill
         LeftImage:7
         RightImage:None
-        Dialogue:Who has come? Make your will be known.
+        Dialogue:Who has come to my home? Make your will be known.
     Statement:
         Speaker:Diabolus
         LeftImage:None
@@ -169,19 +189,24 @@ PostDialogue:
         Speaker:Lady Willbewill
         LeftImage:7
         RightImage:None
-        Dialogue:Misdeeds? I have no misdeeds for you to accuse me of.
+        Dialogue:What Misdeeds? I have no misdeeds for you to accuse me of.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Ha! No misdeeds you say?
+        Dialogue:Ha! No misdeeds you say? You oppress the people of the city with the will of King Shaddai.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:The will of King Shaddai? Oppress? Don't you know that the will of King Shaddai is freeing?
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Who are you to question King Shaddai? Guards! Throw these people out. I won't listen to such nonsense.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:You oppress the people of the city with the will of King Shaddai.
-    Statement:
-        Speaker:Diabolus
-        LeftImage:None
-        RightImage:2
-        Dialogue:Before this day is through we shall see the end of it.
+        Dialogue:You WILL listen to me. Lieutenant, setup a perimeter while we work our techniques of persuasion.

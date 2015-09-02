@@ -31,22 +31,22 @@ PreDialogue:
         Speaker:???
         LeftImage:1
         RightImage:None
-        Dialogue:Help! I am being attacked!
+        Dialogue:Help! I'm being attacked! Won't anyone help me?
     Statement:
         Speaker:???
         LeftImage:1
         RightImage:None
-        Dialogue:Will you please help me good kind person?
+        Dialogue:You, kind officer? Would you come to the defense of a woman in need?
     Statement:
         Speaker:???
         LeftImage:1
         RightImage:None
-        Dialogue:You will?!?!?
+        Dialogue:You will?!?!? I can feel you're a good person, unlike those villagers.
     Statement:
         Speaker:???
         LeftImage:1
         RightImage:None
-        Dialogue:Thank you. Here they come!
+        Dialogue:Look out! Here they come...
 Wave:0
     WaitTime:0
     WaveUnit:
@@ -612,49 +612,54 @@ PostDialogue:
         Speaker:???
         LeftImage:1
         RightImage:None
-        Dialogue:Thank you for saving me from those brutes.
+        Dialogue:Those bigoted brutes were no match for an talented officer like yourself.
     Statement:
         Speaker:???
         LeftImage:1
         RightImage:None
-        Dialogue:My name? I am called Forgetgood.
+        Dialogue:My name? I am called Forgetgood and I am new in this land.
     Statement:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:I did not know such kind people as yourself lived at the city of Mansoul.
+        Dialogue:I feel that kind people like you are rare in the city of Mansoul.
     Statement:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:Let me introduce you to my friend. This is Diabolus.
+        Dialogue:Let me introduce you to another kind person. This is my friend Diabolus.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Greetings. I also offer you my heartfelt thanks.
+        Dialogue:Greetings officer. I can tell you have much skill in battle, you must be a general for the city!
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:I can see Captain Resistance's bigotry has not infected all who dwell in Mansoul.
+        Dialogue:Lieutenant captain, only? You deserve better. But I offer heartfelt gratitude for saving my travelling companion.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:What? You say Captain Resistance says the Diabolonians do not follow King Shaddai's laws?
+        Dialogue:Did not I tell you Forgetgood? Captain Resistance's bigotry has yet to infect all who dwell within Mansoul.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:What lieutenant captain? Captain Resistance says the Diabolonians do not obey King Shaddai's laws?
     Statement:
         Speaker:ForgetGood
         LeftImage:1
         RightImage:None
-        Dialogue:She tries to hurt us by alleging these accusations. She does this on purpose to spite us.
+        Dialogue:They are lies and false accusations. She does this on purpose to spite us.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:You don't believe us? Then I suggest a test. Help us get inside and we can find proof!
+        Dialogue:You do not believe our story? Then I suggest a test. Help us get inside the city and we will show you proof!
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Get access to teachers from the market and we will be ready.
+        Dialogue:I think you will need to unlock teachers from the market first, however. Once you do meet me at the barracks.

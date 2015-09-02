@@ -153,6 +153,14 @@ public class CinematicController : MonoBehaviour {
 
 		isDone = true;
 	}
+
+	void buttonPush(string buttonName) {
+		switch(buttonName) {
+		case "Skip":
+			Application.LoadLevel ("LevelSelect");
+			break;
+		}
+	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -204,9 +212,8 @@ public class CinematicController : MonoBehaviour {
 					rightImage.sprite = CharacterImages[int.Parse(Cinematic[entryIndex].ImageRight)];
 				}
 				
-				if ((Cinematic[entryIndex].Music >= 0) && (Cinematic[entryIndex].Music < Music.Length)) {
+				if ((Cinematic[entryIndex].Music >= 0) && (Cinematic[entryIndex].Music < Music.Length) && (Player.MusicEnable)) {
 					if (lastMusic != Cinematic[entryIndex].Music) {
-						Debug.Log("Playing Music");
 						AudioSource.PlayClipAtPoint(Music[Cinematic[entryIndex].Music], transform.position);
 						lastMusic = Cinematic[entryIndex].Music;
 					}

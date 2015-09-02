@@ -13,7 +13,7 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:In the world known as Universe lies a land richly adorned with rivers and valleys with a very sweet air.
+	Dialogue:In the world known as Universe lies a land richly adorned with rivers and valleys, and a very sweet air.
 	ShowTime:10
 	Action:0
 entry
@@ -22,7 +22,16 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:The people living there vary much in their complexion and culture. Dwelling betwixt flowing rivers lies a city known as Mansoul.
+	Dialogue:The people living there vary much in their complexion and culture. And yet, with such differences, live harmoniously.
+	ShowTime:10
+	Action:0
+entry
+	Music:0
+	Background:0
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:Dwelling betwixt flowing rivers lies a marvelous city known as Mansoul that rises up among the plains as a lofty hill.
 	ShowTime:10
 	Action:0
 entry
@@ -49,7 +58,23 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:However, the threat of evil darkness lies on it's borders. Can the people of Mansoul remain good and true?
+	Dialogue:But almost out of mind of the citizens, an evil threat of darkness looms on it's borders.
+	ShowTime:10
+entry
+	Music:0
+	Background:0
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:With this growing and gray cloud of uncertain future, can the people of Mansoul remain good and true?
+	ShowTime:10
+entry
+	Music:0
+	Background:0
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:Only time will tell...
 	ShowTime:10
 entry
 	Music:0
@@ -57,7 +82,25 @@ entry
 	ImageLeft:0
 	ImageRight:None
 	Speaker:Captain Resistance
-	Dialogue:Congratulations on your promotion to lieutenant captain! Of course with a new title comes new responsibility.
+	Dialogue:My sincerest congratulations on your promotion... Lieutenant Captain. You look very nice in that uniform.
+	ShowTime:10
+	Action:0
+entry
+	Music:0
+	Background:0
+	ImageLeft:0
+	ImageRight:None
+	Speaker:Captain Resistance
+	Dialogue:The blue symbolizes the peace we have in King Shaddai's kingdom, and the white trim is for purity in His laws.
+	ShowTime:10
+	Action:0
+entry
+	Music:0
+	Background:0
+	ImageLeft:0
+	ImageRight:None
+	Speaker:Captain Resistance
+	Dialogue:But this position isn't just for show. With a new title comes new responsibility.
 	ShowTime:10
 	Action:0
 entry
@@ -75,7 +118,7 @@ entry
 	ImageLeft:0
 	ImageRight:None
 	Speaker:Captain Resistance
-	Dialogue:Long have the Diabolonians threatened our city. Now, come with me that we may resist their efforts.
+	Dialogue:Long have the Diabolonians threatened our city and way of life. Come, and I will teach you how to resist their efforts.
 	ShowTime:10
 	Action:0
 entry

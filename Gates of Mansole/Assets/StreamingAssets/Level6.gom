@@ -35,30 +35,30 @@ Placeable:12:5.4:-1.57
 Music:3
 PreDialogue:
     Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:The command post is guarded by shepherds, as you know they can attack at range.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:Teachers take little damage from shepherds but must cross the distance to attack them.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:Support your teachers with a shepherd and you are sure to beat them.
+    Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:
-    Statement:Place your soldiers on the field and they will march over and attack the enemy defenses.
+        Dialogue:Place your soldiers on the field and they will march over and attack the enemy defenses.
+    Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:I am sure we will find the proof about Captain Resistance's conspiracy here.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:None
-        RightImage:1
-        Dialogue:The command post is guarded by evangelists and shepherds.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:None
-        RightImage:1
-        Dialogue:Sending down shepherds will defeat the evangelists with their range.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:None
-        RightImage:1
-        Dialogue:But you may need to send a second shepherd to finish off their shepherd.
+        Dialogue:I am certainf we will find the proof about Captain Resistance's conspiracy here.
     Statement:
         Speaker:Forgetgood
         LeftImage:None
@@ -68,7 +68,7 @@ PreDialogue:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:Defeating more enemies will earn greater reward.
+        Dialogue:Defeating more enemies will earn more Spirit Orbs you can spend at the market.
 Wave:0
     WaitTime:0
     WaveUnit:
@@ -116,7 +116,7 @@ PostDialogue:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:What? You found something? Let me take a look.
+        Dialogue:What? You found something? Let me take a look!
     Statement:
         Speaker:Forgetgood
         LeftImage:1
@@ -126,29 +126,29 @@ PostDialogue:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:Oh! This is precisely the evidence we need. Diabolus, take a look.
+        Dialogue:Oh! I feel this is exactly what we need. Diabolus, you must see this.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Yes... yes... Right here. It says Diabolonians are not to enter the city under any circumstances.
+        Dialogue:Alright... yes... Right here. The document says the Diabolonians are not to enter the city under any circumstances.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:And it has Captain Resistance's signature on the page.
+        Dialogue:And Captain Resistance's loathesome signature adorns the bottom of the page. This is our evidence.
     Statement:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:I did some digging and found out that Captain Resistance's house is guarded by Shepherds and Teachers.
+        Dialogue:I did some digging and found out that Captain Resistance guards her house with shepherds and teachers.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Good work, Forgetgood.
+        Dialogue:Good work, Forgetgood. Lieutenant captain, I trust you have elders in your employ?
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Be sure you have elders in your employ. If not, get them from the market.
+        Dialogue:No? Then you'll need to unlock them at the market. Meet me at her residence after you do.

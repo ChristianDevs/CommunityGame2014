@@ -31,22 +31,22 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:I trust you unlocked an upgrade for your shepherds, you will need it.
-    Statement:
-        Speaker:Captain Resistance
-        LeftImage:0
-        RightImage:None
         Dialogue:There are numerous reports of a band of wayward evangelists causing problems in the town square.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Upgrading units will make them more formidable in combat.
+        Dialogue:Good, I see you unlocked the shepherd upgrade. Upgrading units will make them more formidable in combat.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Use them to protect the good citizens of the town. And may the grace of King Shaddai go with you.
+        Dialogue:Place a shepherd and upgrade it. You can watch how the health and attack of the shepherd increases.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:0
+        RightImage:None
+        Dialogue: Protect the good citizens of the town while maintaining order among them. May the grace of King Shaddai go with you.
 Wave:0
     WaitTime:0
     WaveUnit:
@@ -261,19 +261,19 @@ PostDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:You sure made quick work of those evangelists. I am sure they will think twice before causing problems here again.
+        Dialogue:You made quick work of those evangelists. They will surely think twice before causing problems again.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:But while you were dealing with them I got a report of Diabolonians storming a guard post outside of own.
+        Dialogue:But while you were dealing with them I got a report of Diabolonians storming a guard post outside of town.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:They have a lot of teachers so go unlock evangelists and meet me outside the gate.
+        Dialogue:They have a lot of teachers so go unlock evangelists from the Market and meet me outside the at the post.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Diabolonians will not keep any ground from us. Not while I am captain!
+        Dialogue: The Diabolonians will not hold any of King Shaddai's possessions. Not while I have strength left!

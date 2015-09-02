@@ -27,32 +27,32 @@ PreDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:About the Diabolonians, they do not know King Shaddai as their Lord nor do they obey His laws.
+        Dialogue:About the Diabolonians, they do not hold King Shaddai as their Lord nor do they obey His laws.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Granted sometimes Mansoul citizens don't obey His laws either.
+        Dialogue:Granted sometimes the citizens of Mansoul don't obey all His laws either.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:But they strive to obey with the rewards of peace, harmony, and the joy of a wonderful city.
+        Dialogue:But at least we strive to obey them with the promised rewards of peace, harmony, and the joy of a wonderful city.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:The wicked Diabolonians reject King Shaddai's laws. And so... they will never have a place here.
+        Dialogue:Those wicked Diabolonians reject King Shaddai's laws. And so... they will never have a place here.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:I have just received a report of Diabolonians attacking the countryside. Take some shepherds and repel their attack.
+        Dialogue:I have just received a report of Diabolonian evangelists attacking the countryside. Repel their attack with shepherds.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Take heart! I know you will succeed. May the grace of King Shaddai go with you.
+        Dialogue:Take heart! I know you shall succeed. May the grace of King Shaddai go with you.
 Wave:0
     WaitTime:0
     WaveUnit:
@@ -175,7 +175,7 @@ PostDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Victory will yield Spirit Orbs. Those may be exchanged to unlock more soldiers and abilities.
+        Dialogue:Victory is rewarded with Spirit Orbs. Those may be exchanged to unlock upgrades, more soldiers and new abilities.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0

@@ -30,22 +30,42 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:We need some time for a friend of mine to arrive.
+        Dialogue:I ask you once more, Captain Resistance. Take back your hateful words and policies towards the Diabolonians or else.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:None
+        RightImage:0
+        Dialogue:There is nothing hateful about what I have said or done. You are twisting my words and actions.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Defend us until he arrives. We will make sure we get a confession out of the captain.
+        Dialogue:Very well, lieutenant captain, keep the captain's guards off our backs while one of my friends comes to help.
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:None
+        RightImage:0
+        Dialogue:No! You cannot really be in league with this Diabolonian! Do you really believe his lies?
+    Statement:
+        Speaker:Captain Resistance
+        LeftImage:None
+        RightImage:0
+        Dialogue:Have you so quickly thrown aside your loyalty to the city, to King Shaddai... and to me?
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:It is no use appealing to your old lieutenant. My enlightenment bestoys the vision to see through such trickery.
     Statement:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:Her guards are teachers, evangelists and shepherds. It is more difficult to take on different soldier types.
+        Dialogue:Lieutentant captain, teachers, evangelists and shepherds are coming. Such a variety is more difficult to counter.
     Statement:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:Wait until you see the soldiers approaching and decide how best to counter them.
+        Dialogue:Be cautious and flexibile. But I feel that someone with your skill I wouldn't get anything less than victory.
 Wave:0
     WaitTime:0
     WaveUnit:
@@ -709,7 +729,7 @@ PostDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Last chance, captain. Do you admit your bigotry and judgmentalism?
+        Dialogue:Captain, this is your last chance. Admit your bigotry and judgmentalism or suffer the consequences.
     Statement:
         Speaker:Captain Resistance
         LeftImage:None
@@ -719,7 +739,7 @@ PostDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Very well, you leave us with no alternative.
+        Dialogue:Very well, you leave us with no alternative. Such resistance to progress cannot be tolerated.
     Statement:
         Speaker:Antisiphone
         LeftImage:None
@@ -729,7 +749,7 @@ PostDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:!!!
+        Dialogue:[Gasp]!!!
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -744,14 +764,29 @@ PostDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:What is that? You resent me for such methods?
+        Dialogue:What a pitiful end she made. If only she had not resisted, but given in to see the error of her ways.
+    Statement:
+        Speaker:Antisiphone
+        LeftImage:None
+        RightImage:3
+        Dialogue:I would've shot her anyway. It's fitting that a Diabolonian should be her doom.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:You will see in the end that I will be justified.
+        Dialogue:Why look at us that way, lieutenant? You do not agree with my methods?
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:Perhaps my means look harsh now, but you shall see that I will be justified in the end.
     Statement:
         Speaker:ForgetGood
         LeftImage:None
         RightImage:1
-        Dialogue:Diabolus, I've discovered that Judge Conscience is the next link in the chain of hatred.
+        Dialogue:Diabolus, I've looked over papers on the captain's desk. I feel that Judge Conscience is the next link in the chain.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:Then let us pay the man of the black robe a visit, shall we?

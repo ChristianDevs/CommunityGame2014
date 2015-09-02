@@ -23,27 +23,37 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Elders are good against both shepherds and teachers.
+        Dialogue:Elders are excellent against both shepherds and teachers. They also have the longest range of any soldier.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:I bet Captain Resistance didn't teach you that! There is much she hasn't told you.
+        Dialogue:I wager Captain Resistance neglected to teach you that!
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:Stay by my side and you will see your skills improve by leaps and bounds.
     Statement:
         Speaker:Forgetgood
         LeftImage:2
         RightImage:None
-        Dialogue:Assault them by making line formation of the elders. They will outrange both teachers and shepherds.
+        Dialogue:All you need to do is place the elders in a line, right? The defenders won't be able to touch them!
     Statement:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:What was that person running? They must be getting better weapons and armor.
+        Dialogue:Wait, there is a man running inside of the house! He must have spotted us plotting to attack.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:That means the more time you take, the stonger they will get. Let's get going!
+        Dialogue:We must be quick to attack. I feel he might bring back better weapons and armor for the defenders.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:After we get through we can confront Captan Resistance with her own hateful words.
 Wave:0
     WaitTime:0
     WaveUnit:
@@ -111,7 +121,7 @@ PostDialogue:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:What is the meaning of this, lieutenant? Who are these per... NO!
+        Dialogue:What is the meaning of this, lieutenant? Who are these per... Diabolonians? Here?
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
@@ -121,34 +131,39 @@ PostDialogue:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:But what about what you've done... captain! Hmph...
+        Dialogue:But what about what you have done... captain! Hmm?
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:Me?! I haven't done anything.
+        Dialogue:Me?! What have I done? I don't know what you're talking about.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Your slander shows just how bigotted and judgmental you are.
+        Dialogue:Your slander shows just how bigotted and judgmental you really are underneath your facade of righteousness.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:You only tell the people of Mansoul your own twisted version of the Diabolonians.
+        Dialogue:You merely tell the people of Mansoul your own version of the Diabolonians so that we will suffer.
     Statement:
         Speaker:Captain Resistance
         LeftImage:0
         RightImage:None
-        Dialogue:I will stand for this non-sense no longer. Guards, come help!
+        Dialogue:I will stand for this non-sense no longer. Guards, take these persons into custody!
     Statement:
-        Speaker:Diabolus
+        Speaker:Forgetgood
         LeftImage:None
-        RightImage:2
+        RightImage:1
         Dialogue:Lieutenant captain, there are teachers coming to assail us among the guards.
     Statement:
-        Speaker:Diabolus
+        Speaker:Forgetgood
         LeftImage:None
-        RightImage:2
-        Dialogue:Orators are a good defense against them. They shall stand strong.
+        RightImage:1
+        Dialogue:Orators are a good defense against them and I feel they will round out your fighting force.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:They don't have the range of elders, but make up for it with firepower and hardiness.

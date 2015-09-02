@@ -34,22 +34,27 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Judge Conscience has been slandering Diabolonians with hate speech and bigotry.
+        Dialogue:To think that such a fine-looking manor would house someone of great bigotry and hate is... irritating to me.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:You must defeat his guards so we can confront him.
+        Dialogue:Judge Conscience will answer for his slander against the Diabolonians.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:But we must first defeat the guards at the gate. You have been a great asset thus far, lieutenant. We must keep going.
     Statement:
         Speaker:ForgetGood
         LeftImage:None
         RightImage:1
-        Dialogue:We did some snooping around the judge's manor and found he is guarded by elders and teachers.
+        Dialogue:As usual, I snooped around the judge's manor. He hires elders and teachers to guard him.
     Statement:
         Speaker:ForgetGood
         LeftImage:None
         RightImage:1
-        Dialogue:Use your evangelists to break through their lines.
+        Dialogue:Evangelists will be a good choice to counter this composition of soldiers. I feel it is no problem for your brilliance.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -127,7 +132,7 @@ PostDialogue:
         Speaker:Judge Conscience
         LeftImage:5
         RightImage:None
-        Dialogue:What is going on here? Who is it? What do you want?
+        Dialogue:What is all this commotion about? Who are you people? What do you want?
     Statement:
         Speaker:Diabolus
         LeftImage:None
@@ -137,19 +142,24 @@ PostDialogue:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:You use them to hurt the people and keep the Diabolonians out!
+        Dialogue:You oppress them and keep the poor Diabolonian people out!
     Statement:
         Speaker:Judge Conscience
         LeftImage:5
         RightImage:None
-        Dialogue:What are you talking about? Get out of here you.
+        Dialogue:What is this nonsense? Everyone knows the laws of King Shaddai are just and noble.
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
+        Speaker:Judge Conscience
+        LeftImage:5
         RightImage:None
-        Dialogue:Do not deny it, we all know your guilt. I will make sure you confess to your deeds.
+        Dialogue:Those like the Diabolonians who don't agree to obey these laws don't have a place here.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Lieutenant captain, make sure you have access to orators to round out your fighting force.
+        Dialogue:These words you now utter betray your heart and condemn you. What a judgmental bigot you are.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:We shall show you the error of your ways and make you change to the right way of thinking.

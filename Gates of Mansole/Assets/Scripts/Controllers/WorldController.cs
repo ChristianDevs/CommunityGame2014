@@ -570,9 +570,10 @@ public class WorldController : MonoBehaviour {
 				if (hitSquare.transform.name == "Back") {
 					// Go backward by cancelling the ++ done earlier and then -- by doing -=2
 					dialogueIndex -= 2;
+					dialogueLetterIndex = dialogueItem.Length;
 					
-					if (dialogueIndex < 0) {
-						dialogueIndex = 0;
+					if (dialogueIndex < -1) {
+						dialogueIndex = -1;
 					}
 				}
 			}
@@ -581,11 +582,12 @@ public class WorldController : MonoBehaviour {
 				dialogueText.text += dialogueItem.Substring(dialogueLetterIndex);
 				dialogueLetterIndex = dialogueItem.Length;
 			} else if (dialogueIndex < (dialogue.Count - 1)) {
+				dialogueIndex++;
+
 				if (dialogue[dialogueIndex].dialogue == null) {
 					return true;
 				}
 
-				dialogueIndex++;
 				dialogueItem = processDialogue(dialogue[dialogueIndex].Speaker, dialogue[dialogueIndex].dialogue, dialogueText);
 				dialogueLetterIndex = 0;
 				
@@ -2037,6 +2039,17 @@ public class WorldController : MonoBehaviour {
 				levelStartTime -= nextWaveTime - (Time.time - levelStartTime);
 				Player.spiritShards += earlyReleaseShards;
 				ReleaseButton.SetActive(false);
+			}
+			break;
+		case "Skip":
+			if (state == _WorldState.PreDialogue) {
+				state = _WorldState.Play;
+				levelStartTime = Time.time;
+				dialogueIndex = -1;
+				dialogueWindow.SetActive(false);
+			} else if (state == _WorldState.PostDialogue) {
+				dialogueWindow.SetActive(false);
+				winMessage.SetActive(true);
 			}
 			break;
 		}

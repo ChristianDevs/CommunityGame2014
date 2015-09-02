@@ -21,7 +21,7 @@ entry
 	ImageLeft:5
 	ImageRight:None
 	Speaker:Judge Conscience
-	Dialogue:I concur, that would seem most prudent at this point.
+	Dialogue:I concur, selecting Diabulus would seem most prudent at this point.
 	ShowTime:10
 entry
 	Music:0
@@ -53,7 +53,7 @@ entry
 	ImageLeft:None
 	ImageRight:2
 	Speaker:Diabolus
-	Dialogue:This is a very wise action for you noble people to take.
+	Dialogue:This is a very wise action for you noble people to take. It shows courage to stand up for what is right.
 	ShowTime:10
 entry
 	Music:0
@@ -69,7 +69,7 @@ entry
 	ImageLeft:0
 	ImageRight:2
 	Speaker:Diabolus
-	Dialogue:No longer will there be inequality here in this great city.
+	Dialogue:No longer will inequality spew forth from this city like a vile poison to the Diabolonians.
 	ShowTime:10
 entry
 	Music:0
@@ -77,7 +77,15 @@ entry
 	ImageLeft:0
 	ImageRight:2
 	Speaker:Diabolus
-	Dialogue:Today marks a bright chapter in Mansoul's history.
+	Dialogue:Today marks a bright new chapter in Mansoul's history. A new legacy begins today!
+	ShowTime:10
+entry
+	Music:0
+	Background:0
+	ImageLeft:None
+	ImageRight:2
+	Speaker:Diabolus
+	Dialogue:Too long have the citizens enjoyed priviledges that others do not. It is time for that to change.
 	ShowTime:10
 entry
 	Music:0
@@ -91,9 +99,17 @@ entry
 	Music:0
 	Background:0
 	ImageLeft:None
-	ImageRight:1
-	Speaker:Forgetgood
-	Dialogue:Yes, this will most definately be for the good of all.
+	ImageRight:2
+	Speaker:Diabolus
+	Dialogue:On behalf of your Diabolonian friends, I announce appreciation of the sacrifice you are making today.
+	ShowTime:10
+entry
+	Music:0
+	Background:0
+	ImageLeft:None
+	ImageRight:2
+	Speaker:Diabolus
+	Dialogue:Let that stir pride in your hearts as the Diabolonians come. Shun the old ways as we walk in this new day together!
 	ShowTime:10
 entry
 	Music:0
