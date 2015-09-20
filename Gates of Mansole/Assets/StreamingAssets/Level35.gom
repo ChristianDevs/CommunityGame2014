@@ -34,20 +34,30 @@ Placeable:26:4.25:0.25
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Prince, about King Diabolus, but perhaps he was so overcome by his conviction.
+        Dialogue:Prince, about King Diabolus, perhaps he did those things because he was so overcome by his conviction.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:His concern for everyone is evident. Perhaps he tried to make changes and had no alternative.
+        Dialogue:His concern for everyone is evident. Perhaps he knew that he was the only one who could sufficiently rule.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:That idea is preposterous. We questioned him fully and concluded that his conviction was only self-interest.
+        Dialogue:Heh, sufficiently rule? Tell me, how is the sufficient rule of Diabolus affecting Mansoul?
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:The fruits of his rule are unhappiness, imprisonment, and death. The concern he shows is just that... a show.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:The only real concern to him is how much power he has. And he will never be satisfied.
     Statement:
         Speaker:Captain Boanurges
         LeftImage:12
@@ -1116,17 +1126,27 @@ PostDialogue:
         RightImage:None
         Dialogue:You think they are doing more harm to the city of Mansoul than good? I see...
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:9
-        RightImage:None
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
         Dialogue:Sometimes you have to break a few eggs to make an omellete.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:I can tell by the look on the Captain's face that he doesn't share that sentiment.
+        Dialogue:And Lady Willbewill, how does it feel to be one his broken eggs?
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:...
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:But we need to keep moving forward to get out of here.
+        Dialogue:I can tell by the look on the Captain's face that it doesn't feel good. Not at all.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:But we need to keep moving forward if we are to get out of here.

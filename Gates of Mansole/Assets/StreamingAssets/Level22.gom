@@ -28,7 +28,7 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Now there is another stronghold I wish to build.
+        Dialogue:This is the site of the next stronghold, very strategically chosen, I must add.
     Statement:
         Speaker:Diabolus
         LeftImage:None
@@ -38,7 +38,7 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:The governor here will be Lovenolight.
+        Dialogue:The governor of this stronghold will be Lovenolight.
     Statement:
         Speaker:Lovenolight
         LeftImage:None
@@ -812,7 +812,7 @@ PostDialogue:
         Speaker:Lovenolight
         LeftImage:13
         RightImage:None
-        Dialogue:As expected, you're help allowed us to complete our fortress.
+        Dialogue:As expected, your help allowed us to complete our fortress on time.
     Statement:
         Speaker:Lovenolight
         LeftImage:13
@@ -823,3 +823,18 @@ PostDialogue:
         LeftImage:13
         RightImage:None
         Dialogue:The past is the past. We will only progress forward now!
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:Yes, we will not look back as though losing something valuable.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:There is nothing valuable in the old ways. They all shall be swallowed up in the fog forgetfulness.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:All that is left is to institutionalize the teaching of the new ways.

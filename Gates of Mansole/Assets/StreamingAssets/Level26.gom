@@ -20,25 +20,35 @@ Placeable:21:4:3
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Here we are at Nosegate and preparations are ready.
+        Dialogue:I remember... the orange trees, with their white flowers, blossomed here last spring.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:What is this?!
+        Dialogue:You could smell their wonderful fragrance all the way to the next gate when the wind caught it up.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Captain, it looks like the resistance movement is going on the offensive.
+        Dialogue:I suppose I won't be smelling them again, now that the trees have been felled.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Quick! We need to setup a defense and take them down.
+        Dialogue:At any rate, start organizing the soldiers to attack the resistance holed up here.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Wait... Captain, it looks like the resistance soldiers are going on the offensive.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Rally our guards and push them back.
 Wave:1
     WaitTime:0
     WaveUnit:
@@ -991,32 +1001,47 @@ Wave:9
         Tile:5:0
 PostDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Whew, that was a tough battle.
+        Dialogue:Whew, that was a tough battle. I was surprised how well organized and armed this band was.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:There is something that I just noticed in this battle.
+        Dialogue:But that fits now that I've put the pieces together. I know where our missing guards are.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Some of the resistance members we defeated were recognized by our men.
+        Dialogue:Some of our guards recognized those in the resistance. It all makes sense now.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:It seems the missing guards went to join the resistance.
+        Dialogue:Some of our own ranks have deserted us! This is a high crime indeed. I will ensure the punishment is severe.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Also, I just received a communication from Forgetgood.
+        Dialogue:Hmm? An errand boy approaches. Seems he brings us a message.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Eyegate is our next target.
+        Dialogue:It is from Forgetgood. She wants us to focus our efforts on Eyegate next.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Very pecular, it is as though she takes us for an army to march against the places of her choosing.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:She seems to be planning something, but of course I'm sharp enough to know not to ask her directly.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:In any case, we must follow orders and eliminate the resistance.

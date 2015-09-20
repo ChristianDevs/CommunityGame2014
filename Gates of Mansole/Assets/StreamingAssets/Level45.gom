@@ -42,25 +42,70 @@ Placeable:31:3.26:1.95
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Captain Boanurges
-        LeftImage:12
+        Speaker:Captain Goodhope
+        LeftImage:16
         RightImage:None
-        Dialogue:Well... It looks like the main force of the orcs has caught up with us.
-    Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
-        RightImage:None
-        Dialogue:Let them come. I am ready to face them.
-    Statement:
-        Speaker:Captain Patience
-        LeftImage:20
-        RightImage:None
-        Dialogue:Wait till you see the whites of their eyes and then attack.
+        Dialogue:Prince, I've done some initial surveying of the land. I believe this is a good defensible location.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:This will be it. Either we shall stand or fall here.
+        Dialogue:Good, we'll want to dig and defend when their main force finally catch up with us.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:I don't think that's the best tactic in this situation. Why not just keep running until we lose them?
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:My goodness, Lady! Didn't you used to trust me? What kind of fresh recruit do you take me for?
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:Our troops need a break from our sprint of escape from out of the mountain.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:We rest here to recover our strength and force the orcs to spend theirs as they try to catch up.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:My strategy and tactics have proven effective so far. Can't you trust me now?
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:I... I don't know... Maybe it was all just coincidence and you've been getting lucky.
+    Statement:
+        Speaker:Captain Boanurges
+        LeftImage:None
+        RightImage:12
+        Dialogue:Well... It looks like the main force of the orcs has finally caught up with us.
+    Statement:
+        Speaker:Captain Judgment
+        LeftImage:None
+        RightImage:15
+        Dialogue:Let them come. My forces are ready to face them.
+    Statement:
+        Speaker:Captain Goodhope
+        LeftImage:None
+        RightImage:12
+        Dialogue:I trust in Prince Emmanuel's decisions. We will surely come out victorious this day.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:Rally, my soldiers! Today is a good day for we've thwarted plans by an unknown foe.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:And I tell you truly, we shall celebrate in Mansoul before our campaign is over.
 Wave:1
     WaitTime:0
     WaveUnit:
@@ -1911,30 +1956,30 @@ Wave:14
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:[pant] [pant] [pant]. What a tough battle.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:But we survived it all, together.
+        Dialogue:But we survived it all, together. United, we can stand against any force.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:So what do you say captain? Join us? My offer of forgiveness still stands.
+        Dialogue:So what do you say captain? Join us in Unity? My offer of forgiveness stands.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:Captain, don't listen to him. He doesn't care about us or the city. It's just as Diabolus said.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:He only wants to use you to take back the city.
+        Dialogue:He only wants to use you to take back the city for His own and His father.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
@@ -1954,29 +1999,29 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:And I won't allow it to come to ruin and the people in despair and misery at the hand of Diabolus.
+        Dialogue:And I won't allow it to come to ruin and the people to despair and misery at the hands of Diabolus.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:Since my father sent me and I am on my way proves I care about the people.
+        Dialogue:Consider that my father sent me and I am on my way. This helps prove that I care about the people.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:Say what you like. But I'm not persuaded by your words.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:And neither is the captain. Right?
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:...
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Right?
+        Dialogue:Right, captain?

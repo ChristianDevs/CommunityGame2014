@@ -21,20 +21,35 @@ Wall:9:0:5:150:0.10:2
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Here we are at Eargate, Captain.
+        Dialogue:Ah Eargate... I remember the first time I heard Judge Conscience teach the great laws here when I was a child.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Our men have isolated the resistance to inside the gatehouse.
+        Dialogue:Even though he shouted as loud as he could I could barely hear him. There were so many people hanging on his words.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:We'll need to storm get passed the wall and storm the keep.
+        Dialogue:But I suppose the future generations of Mansoul won't get that chance. The old laws being forbidden and all.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:And with good reason! We shouldn't go back to laws that made us such a bigoted and judgmental people.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:The guards have isolated the resistance here to inside of the barricaded gatehouse.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Get passed the wall, defeat the defenders, and storm the keep.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -147,15 +162,30 @@ Wave:
         RespawnTime:13
 PostDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Forgetgood has just arrived and wants to talk with you.
+        Dialogue:Look, I found some tablets of the old laws they were keeping. I can see they are very old by the power they have.
     Statement:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:Nice work, with the resistance at Eargate eliminated the movement should stop growing.
+        Dialogue:Hmph. Power indeed. Smash them on the ground.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Huh? Smash? I... Um... <Sigh>. Very well, I shall destroy these as a symbol of the old laws.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:That's right. We'll smash, destroy, and get rid of everything that reminds people of the old ways.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:And well done quelling the resistance here. With the resistance at Eargate eliminated the movement should stop growing.
     Statement:
         Speaker:Forgetgood
         LeftImage:None

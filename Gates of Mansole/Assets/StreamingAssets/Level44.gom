@@ -35,20 +35,30 @@ Wall:8:2:5:250:0.10:2
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Captain Patience
-        LeftImage:20
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Look! The tunnel up ahead! I see daylight.
-    Statement:
-        Speaker:Captain Boanurges
-        LeftImage:12
-        RightImage:None
-        Dialogue:One more band of orcs to push through before we get there.
+        Dialogue:Well.. I suppose... I should voice my gratitude for not being left behind.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:Keep going! Do not let them stop us.
+        Dialogue:It isn't in my nature to do that. But we mustn't slow down or stop.
+    Statement:
+        Speaker:Captain Goodhope
+        LeftImage:16
+        RightImage:None
+        Dialogue:Look! The tunnel up ahead! I see daylight. We're almost out of the caves.
+    Statement:
+        Speaker:Captain Judgment
+        LeftImage:15
+        RightImage:None
+        Dialogue:One more band of orcs to push through before we get there, though.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:Keep going! Do not let them stop us when we are so close.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -185,15 +195,15 @@ Wave:
         RespawnTime:11
 PostDialogue:
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
+        Speaker:Captain Goodhope
+        LeftImage:16
         RightImage:None
-        Dialogue:Whew, we made it out.
+        Dialogue:Whew, we made it out. I knew you wouldn't let us down, prince.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:Yes we did. Let us rest up here.
+        Dialogue:Yes we did. This is a good spot for us to rest up.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
@@ -205,8 +215,8 @@ PostDialogue:
         RightImage:17
         Dialogue:Would you consider joining us? I'm willing to offer you complete forgiveness for your loyalty.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:What?! Join you? Captain, you aren't really considering that! Are you?
     Statement:

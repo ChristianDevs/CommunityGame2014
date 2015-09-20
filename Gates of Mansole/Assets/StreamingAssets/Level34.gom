@@ -38,18 +38,28 @@ Wall:9:1:6:150:0.10:2
 Music:3
 PreDialogue:
     Statement:
+        Speaker:Captain Judgment
+        LeftImage:15
+        RightImage:None
+        Dialogue:I bring bad news, the pass we were marching through has been totally covered in snow. There is no way over or around it.
+    Statement:
         Speaker:Captain Boanurges
         LeftImage:12
         RightImage:None
-        Dialogue:Bad news Prince. This area is isolated. The only way out is another cave on the other side.
+        Dialogue:Does that mean we're stuck here? There must be something, I feel it.
+    Statement:
+        Speaker:Captain Judgment
+        LeftImage:15
+        RightImage:None
+        Dialogue:There is another cave entrace. However, I don't know where it leads.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:So we make for the cave then.
+        Dialogue:We make for the cave. Staying out in the open cold would be the death of us.
     Statement:
-        Speaker:Captain Boanurges
-        LeftImage:12
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
         Dialogue:That is not all, it is guarded by a large force of orcs.
     Statement:
@@ -177,7 +187,7 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Mayor Understanding was versed in the ways of my father and would often teach others. What of him?
+        Dialogue:Mayor Understanding was full of wisdom and made very sound decisions. What of him?
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
@@ -187,7 +197,7 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:How unfortunate to remove reason in such a way.
+        Dialogue:How convenient for him to remove such a voice of reason in this a way.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
@@ -202,19 +212,19 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:But what of Lady Willbewill? She was one of my father's biggest supporters.
+        Dialogue:But what about you Lady? You were were our agent to uphold my father's interests.
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
-        Dialogue:She supports Diabolus. Even now, she goes about the city assisting adoption of his new laws.
+        RightImage:7
+        Dialogue:Well... I... 
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Truly? That saddens me the most. I would have expected her to remain loyal.
+        Dialogue:Do you truly support Diabolus now? That saddens me the most. I would expect you to remain loyal most of all.
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
-        Dialogue:Things change, get over it.
+        RightImage:7
+        Dialogue:Change happens, get over it.

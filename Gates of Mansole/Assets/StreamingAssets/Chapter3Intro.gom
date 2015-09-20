@@ -4,7 +4,7 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:When you come to, no light is there to greet you.
+	Dialogue:The captain came to with no light around as a greeting. The uncertainty of darkness permeated everything.
 	ShowTime:10
 entry
 	Music:0
@@ -12,7 +12,7 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:A moist and musty smell permeates the air.
+	Dialogue:A moist and musty scent hung on the air like an old cellar not visited in years.
 	ShowTime:10
 entry
 	Music:0
@@ -20,7 +20,7 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:Finally, someone lights a torch.
+	Dialogue:Then the sound of clicks is heard, and finally, a torch is lit.
 	ShowTime:10
 entry
 	Music:0
@@ -34,18 +34,18 @@ entry
 entry
 	Music:0
 	Background:2
-	ImageLeft:10
+	ImageLeft:7
 	ImageRight:None
-	Speaker:Lieutenant Captain
-	Dialogue:Sir... Sir, captain. Are you alright?
+	Speaker:Lady Willbewill
+	Dialogue:Captain... Captain, are you alright?
 	ShowTime:10
 entry
 	Music:0
 	Background:2
-	ImageLeft:10
+	ImageLeft:7
 	ImageRight:None
-	Speaker:Lieutenant Captain
-	Dialogue:You are? Good, I... wait, who is over there?
+	Speaker:Lady Willbewill
+	Dialogue:You are? Good, I... wait, who is over there? Are you friend or foe?
 	ShowTime:10
 entry
 	Music:0
@@ -58,10 +58,10 @@ entry
 entry
 	Music:0
 	Background:2
-	ImageLeft:10
+	ImageLeft:7
 	ImageRight:None
-	Speaker:Lieutenant Captain
-	Dialogue:He is the captain of the city of Mansoul.
+	Speaker:Lady Willbewill
+	Dialogue:I am Lady Willbewill, and this is the captain of the city guard of Mansoul.
 	ShowTime:10
 entry
 	Music:0
@@ -69,14 +69,14 @@ entry
 	ImageLeft:None
 	ImageRight:17
 	Speaker:Prince Emmanuel
-	Dialogue:Then you are the leader of the band who opposed me before the avalanche.
+	Dialogue:Then you are the leaders of the band who ambushed us before the avalanche.
 	ShowTime:10
 entry
 	Music:0
 	Background:2
-	ImageLeft:10
+	ImageLeft:7
 	ImageRight:None
-	Speaker:Lieutenant Captain
+	Speaker:Lady Willbewill
 	Dialogue:Captain! This is our chance! Let us get rid of the prince now.
 	ShowTime:10
 entry
@@ -93,7 +93,7 @@ entry
 	ImageLeft:12
 	ImageRight:None
 	Speaker:Captain Boanurges
-	Dialogue:Prince! The cave goes on for a ways and what's more, there are bands of monsters.
+	Dialogue:Prince! The cave goes on for a ways and what's more, there are bands of orcs about.
 	ShowTime:10
 entry
 	Music:0
@@ -101,7 +101,7 @@ entry
 	ImageLeft:None
 	ImageRight:17
 	Speaker:Prince Emmanuel
-	Dialogue:Bands of monsters you say, Captain Boanurges. Captain, let me make a proposition.
+	Dialogue:Orcs you say, Captain Boanurges. That bodes ill. Captain, let me make a proposition to you.
 	ShowTime:10
 entry
 	Music:0
@@ -109,22 +109,22 @@ entry
 	ImageLeft:None
 	ImageRight:17
 	Speaker:Prince Emmanuel
-	Dialogue:Let us join forces until we escape this network of caves.
+	Dialogue:Let us join forces until we escape this network of caves. It seems we were meant to walk together, at least for a time.
 	ShowTime:10
 entry
 	Music:0
 	Background:2
-	ImageLeft:10
+	ImageLeft:7
 	ImageRight:None
-	Speaker:Lieutenant Captain
-	Dialogue:Captain, this may be our only chance to strike out. What say you?
+	Speaker:Lady Willbewill
+	Dialogue:Captain, this may be our best and only opportunity to strike him down. And yet also best chance at escape. What are your thoughts?
 	ShowTime:10
 entry
 	Music:0
 	Background:2
-	ImageLeft:10
+	ImageLeft:7
 	ImageRight:None
-	Speaker:Lieutenant Captain
+	Speaker:Lady Willbewill
 	Dialogue:Join him? Very well, let us ally with Emmanuel for now.
 	ShowTime:10
 entry

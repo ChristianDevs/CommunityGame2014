@@ -29,8 +29,8 @@ Placeable:30:5.3:0.66
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:Prince Emmanuel, may I ask you another question?
     Statement:
@@ -39,8 +39,8 @@ PreDialogue:
         RightImage:17
         Dialogue:Of course, what is it you want to know?
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:Isn't it true that King Shaddai made a law preventing Diabolonians in the city?
     Statement:
@@ -49,8 +49,8 @@ PreDialogue:
         RightImage:17
         Dialogue:Yes it is true, we can't have them influencing the citizens of the city.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:So then you admit you're being close-minded about the Diabolonians!
     Statement:
@@ -1008,7 +1008,7 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:As I was saying, it might seem close-minded, but it is really for the citizens' protection.
+        Dialogue:As I was saying, maybe it seems close-minded at first, but it is really for the citizens' protection.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
@@ -1025,10 +1025,15 @@ PostDialogue:
         RightImage:None
         Dialogue:What captain? You've seen more unrest since Diabolus has taken power?
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
+        RightImage:7
         Dialogue:Perhaps his new laws just need more time for the people to get used to them.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:...
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17

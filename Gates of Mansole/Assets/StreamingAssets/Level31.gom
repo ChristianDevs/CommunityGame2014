@@ -27,32 +27,37 @@ PreDialogue:
         Speaker:Captain Boanurges
         LeftImage:12
         RightImage:None
-        Dialogue:My prince, I'm not sure I like the idea of working with those who oppose you.
+        Dialogue:My prince, I dislike the idea of fighting alongside those who oppose you.
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
-        Dialogue:On this we agree. Can we really trust them?
+        RightImage:7
+        Dialogue:On this we agree. Can we really trust them? Their laws were the cause of the hatred.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:We are here and must find a way out. Why kill each other now? We must work together.
+        Dialogue:Pardon?! Our laws cause hatred? I simply must hear how those words can be in the same sentance.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:But first, yes, we must work together. We need to find a way out of these caves.
     Statement:
         Speaker:Captain Boanurges
         LeftImage:None
         RightImage:12
         Dialogue:...
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
+        RightImage:7
         Dialogue:...
     Statement:
         Speaker:Captain Boanurges
         LeftImage:None
         RightImage:12
-        Dialogue:Very well, as you say prince. I will trust your wisdom.
+        Dialogue:As you say prince. I will trust your wisdom. It has yet to lead me astray.
     Statement:
         Speaker:Captain Boanurges
         LeftImage:None
@@ -718,14 +723,59 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:We beat them. You have good instincts in combat Captain.
+        Dialogue:We beat them. You have good instincts in combat, captain. But I also see room for improvement.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:But there are still some tools you haven't yet mastered.
+        Dialogue:However, I wanted to address Lady Willbewill's words. Our laws cause hatred, you say? Explain yourself.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:They forced the Diabolonians to be outside the city! They were treated with disdain and animosity.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:Diabolus repealed the laws and now the Diabolonians and their ways are embraced in the city.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:The hatred and bigotry toward them is gone now. Therefore, it must have been the laws as the cause.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:I see your logic, and now I know the situation, though it pains me to hear it.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:Diabolus and the ways of the Diabolonians are not what they seem. You are, all of you, deceived.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:They have been exiled for a reason. It is not out of blind hatred or bigotry, but out of love for my people.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:If you truly knew the ways of the Diabolonians then you would understand the need for these laws.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:However, from reports I've seen, you may already be seeing some of the effects of their ways.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:Hmph..
     Statement:
         Speaker:Captain Boanurges
-        LeftImage:None
-        RightImage:12
-        Dialogue:Let us continue through the tunnel up ahead and search for an exit.
+        LeftImage:12
+        RightImage:None
+        Dialogue:Come, we need to continue through the tunnel up ahead and search for an exit.

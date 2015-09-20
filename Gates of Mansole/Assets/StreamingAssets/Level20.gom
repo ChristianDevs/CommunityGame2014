@@ -24,20 +24,35 @@ Placeable:23:5:2.75
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Judge Conscience
+        LeftImage:5
+        RightImage:None
+        Dialogue:I will not go to the king. Soldiers still loyal to the old laws, rally to me!
+    Statement:
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
-        Dialogue:This is your last chance judge, come with us peaceably.
+        RightImage:7
+        Dialogue:Judge, just come peacably and Forgetgood can fix your problem holding to the old laws.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:We must move forward with new laws and new ideas. The old laws must be done away with.
     Statement:
         Speaker:Judge Conscience
         LeftImage:5
         RightImage:None
-        Dialogue:I will not go with you!
+        Dialogue:I am not willing to give up the old laws. I've spent so much of my life in those laws.
     Statement:
         Speaker:Judge Conscience
         LeftImage:5
         RightImage:None
-        Dialogue:Soldiers who still want to observe the old laws, rally to me!
+        Dialogue:I will not stop teaching them so as long as I have my faculties.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:We shall see about that.
 Wave:1
     WaitTime:0
     WaveUnit:
@@ -839,15 +854,25 @@ Wave:11
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
-        Dialogue:Now, you will come with us. We will take you to the new king.
+        RightImage:7
+        Dialogue:Now, you will come with us to answer to King Diabolus for your crimes.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:Welcome, judge, to my court. Lay your case before me.
     Statement:
         Speaker:Judge Conscience
         LeftImage:5
         RightImage:None
-        Dialogue:We mustn't forget the old ways. The laws helped the people and kept the peace.
+        Dialogue:We mustn't forget the old ways. These laws helped the people and kept the peace.
+    Statement:
+        Speaker:Judge Conscience
+        LeftImage:5
+        RightImage:None
+        Dialogue:Repealing the old laws is causing more violence and more fear. We need them.
     Statement:
         Speaker:Diabolus
         LeftImage:None
@@ -857,32 +882,37 @@ PostDialogue:
         Speaker:Carnalsecurity
         LeftImage:None
         RightImage:8
-        Dialogue:I know what must be done for the judge's wrongdoing.
+        Dialogue:I know what must be done for the judge's wrongdoing. Everything has consequences.
     Statement:
         Speaker:Carnalsecurity
         LeftImage:None
         RightImage:8
-        Dialogue:We give him what he wants.
+        Dialogue:In order to show you the wisdom of our actions we will... give you what you want.
     Statement:
         Speaker:Judge Conscience
         LeftImage:5
         RightImage:None
-        Dialogue:What.. I... want...? What do you mean?
+        Dialogue:What.. I... want...? What do you mean? I want to teach and follow the old laws.
     Statement:
         Speaker:Carnalsecurity
         LeftImage:None
         RightImage:8
-        Dialogue:I know all about what you want. Look what I have here.
+        Dialogue:Oh, I know all about what you want. Let me show you what I have here.
+    Statement:
+        Speaker:Carnalsecurity
+        LeftImage:None
+        RightImage:8
+        Dialogue:The finest blue silk. The softest white feather cuffs. And look at the gold trim!
     Statement:
         Speaker:Judge Conscience
         LeftImage:5
         RightImage:None
-        Dialogue:I... well... is that the latest fashion in clothes?
+        Dialogue:Why... yes... it is a lovely shirt. The latest fashion too, I believe.
     Statement:
         Speaker:Judge Conscience
         LeftImage:5
         RightImage:None
-        Dialogue:I had been meaning to buy to it, but haven't had the time yet.
+        Dialogue:I had been meaning to buy one of these, but haven't had the time yet.
     Statement:
         Speaker:Carnalsecurity
         LeftImage:None
@@ -892,14 +922,24 @@ PostDialogue:
         Speaker:Judge Conscience
         LeftImage:5
         RightImage:None
-        Dialogue:I shall. What a nice color this one has...
+        Dialogue:I shall. Yes, what fine blue silk it is too. Thank you, I can't wait to see how I look in it.
     Statement:
         Speaker:Carnalsecurity
         LeftImage:None
         RightImage:8
         Dialogue:Heh, we won't be having any more trouble from the good judge.
     Statement:
+        Speaker:Carnalsecurity
+        LeftImage:None
+        RightImage:8
+        Dialogue:I have already made arrangements to send a new article of clothing to him every couple days.
+    Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Well done my servants. Now Captain, there is another matter I will discuss with you later.
+        Dialogue:Well done my servants. Now Captain, there is another matter I will discuss with you.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:2
+        RightImage:None
+        Dialogue:Ready your guards because this is of the utmost importance.

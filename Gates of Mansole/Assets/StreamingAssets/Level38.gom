@@ -29,25 +29,30 @@ Placeable:26:8.8:-0.5
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:12
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
-        Dialogue:Prince, orcs are approaching. Can we leave now?
+        Dialogue:Prince, my scouts report that orcs are approaching from where we came. Can we leave now?
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:Captain Patience, what is the status on investigating the device.
+        Dialogue:Captain Goodhope, what are you finished assessing the device yet?
     Statement:
-        Speaker:Captain Patience
-        LeftImage:20
+        Speaker:Captain Goodhope
+        LeftImage:16
         RightImage:None
-        Dialogue:I think I'm on the right track, but I need a little more time.
+        Dialogue:There are no markings or letters to make sense of. I only have the device itself to go on.
+    Statement:
+        Speaker:Captain Goodhope
+        LeftImage:16
+        RightImage:None
+        Dialogue:Whatever it is, I believe it contains much power. I need more time to study it.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:Prepare our defenses. We will weather the storm.
+        Dialogue:Captain, prepare our defenses. We will weather the storm.
 Wave:1
     WaitTime:0
     WaveUnit:
@@ -1030,18 +1035,23 @@ Wave:10
         Tile:6:0
 PostDialogue:
     Statement:
-        Speaker:Captain Patience
-        LeftImage:20
+        Speaker:Captain Goodhope
+        LeftImage:16
         RightImage:None
-        Dialogue:I've done it! I know what this device is for.
+        Dialogue:Finally! I know what the purpose is of this odd mechanical device. Quite clever thinking... for orcs.
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Captain Goodhope
+        LeftImage:16
+        RightImage:None
+        Dialogue:It took some effort, but this information will surely be useful to us.
+    Statement:
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
+        RightImage:7
         Dialogue:Don't keep us waiting, man. What is it?
     Statement:
-        Speaker:Captain Patience
-        LeftImage:20
+        Speaker:Captain Goodhope
+        LeftImage:16
         RightImage:None
         Dialogue:This is a device of destruction. See? This black powder has explosive properties.
     Statement:
@@ -1055,8 +1065,8 @@ PostDialogue:
         RightImage:17
         Dialogue:Captain Boanurges, destroy it. We cannot leave something like this in the hands of the orcs.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:Destroy it? But if you're goal is to retake Mansoul why not save it and use it?
     Statement:
@@ -1065,7 +1075,7 @@ PostDialogue:
         RightImage:17
         Dialogue:As you said, my goal is to retake it... not reduce it to rubble.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:...

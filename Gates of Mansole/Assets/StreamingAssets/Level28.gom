@@ -25,27 +25,32 @@ PreDialogue:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:Captain, with the new information Diabolus wanted to come talk with you directly.
+        Dialogue:Captain, with the information you sent us, Diabolus wanted to come talk with you directly.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Yes... These rumors of King Shaddai must be stopped.
+        Dialogue:Yes... These rumors of the old king must be stopped. We cannot allow this futile talk of a return.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:We cannot allow this futile talk to continue.
+        Dialogue:I've worked too... we've... worked too hard to let this slip through our fingers now.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:This feeling of a return shall pass like a dream in the night. And not remembered the next morning.
     Statement:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:Well spoken, King Diabolus.
+        Dialogue:Well said, King Diabolus. I will make sure to crush all hopes of his return.
     Statement:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:Do not let any of them go captain.
+        Dialogue:Captain, show this resistance that feeling like the old king will return is in vain.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -164,27 +169,77 @@ Wave:
         RespawnTime:10
 PostDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Victory! We won against the resistance.
+        Dialogue:That was a hard won victory, captain. The guards fought bravely and your tactics came out true.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:We should do something for them so they know we appreciate all their efforts.
     Statement:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:Don't celebrate yet. We still have mouthgate to conquer.
+        Dialogue:Don't celebrate yet, lady. We still need to conquer mouthgate to completely end the resustance.
     Statement:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:There should be no more resistance once we squash them there.
+        Dialogue:I'll not allow any deviation from our course until we've met our goal.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Yes, you are correct.
+        Dialogue:But we've been fighting so much for you. Don't we deserve a rest?
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Forgetgood
+        LeftImage:1
         RightImage:None
-        Dialogue:Captain, I will get things prepared for you over there.
+        Dialogue:Rest? You want to give time for the resistance to regroup and get stronger? Ha!
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:No, you'll keep fighting until we've eliminated every last one of them.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:Don't defy me or I'll find some punishment that only your nightmares have thought of.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:No, I didn't mean... What I meant was...
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:<sigh>
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Yes, you're right. Come captain, let us ready the guards to continue fighting.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:You had better. And lady, I had better NOT hear you talk back to me again.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:I feel the captain might easily prove to take your place.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:...
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:Ha ha ha ha.

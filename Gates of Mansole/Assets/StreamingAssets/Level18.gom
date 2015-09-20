@@ -24,17 +24,17 @@ PreDialogue:
         Speaker:Mayor Understanding
         LeftImage:4
         RightImage:None
-        Dialogue:King Diabolus, I must protest.
+        Dialogue:King Diabolus, there are goings-on in the city that I must protest.
     Statement:
         Speaker:Mayor Understanding
         LeftImage:4
         RightImage:None
-        Dialogue:Forcing the price of goods too low will cause problems on the economy of the city.
+        Dialogue:This redistribution of goods is wreaking havoc in our marketplace.
     Statement:
         Speaker:Mayor Understanding
         LeftImage:4
         RightImage:None
-        Dialogue:Something needs to be done about this.
+        Dialogue:Something must to be done to correct this.
     Statement:
         Speaker:Diabolus
         LeftImage:None
@@ -54,12 +54,22 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:No, harming the mayor would not further the cause.
+        Dialogue:No, harming the mayor would only cause more disruption in the city, people look up to him.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:This is true, but it would be much harder to look up to someone arrested for treason.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Captain, go apprehend the mayor so Forgetgood can fix his poor reasoning.
+        Dialogue:Yes... treason... The poor mayor is starting to get treasonous. We must give him appropriate consequences.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:Captain, take your guards and arrest the mayor. Perhaps Forgetgood can correct him again.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -162,12 +172,12 @@ PostDialogue:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:You must see the truth here. What we're doing will help the people.
+        Dialogue:If you'd stop your treasonous lies then all would be well.
     Statement:
         Speaker:Mayor Understanding
         LeftImage:4
         RightImage:None
-        Dialogue:But all I see are the citizens of my city getting poorer and more unhappy.
+        Dialogue:What treason? All I see are the citizens of my city getting poorer and more unhappy.
     Statement:
         Speaker:Forgetgood
         LeftImage:None
@@ -177,22 +187,22 @@ PostDialogue:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:We shall keep you under house arrest.
+        Dialogue:We shall keep you under house arrest. The charge... treason against King Diabolus.
     Statement:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:We cannot allow your dangerous ideas to harm the people.
+        Dialogue:We cannot allow your dangerous ideas to harm the people. I won't allow you to threaten our rule.
     Statement:
         Speaker:Mayor Understanding
         LeftImage:4
         RightImage:None
-        Dialogue:Dangerous?! I'm trying to help the people. Can't you understand?
+        Dialogue:Dangerous?! I'm trying to help the people. Can't you understand that?
     Statement:
         Speaker:Mayor Understanding
         LeftImage:4
         RightImage:None
-        Dialogue:Looking down the path we're treading, all I see is a bad ending.
+        Dialogue:Can't you see that the path we're heading on leads to a cliff? We must change course.
     Statement:
         Speaker:Forgetgood
         LeftImage:None

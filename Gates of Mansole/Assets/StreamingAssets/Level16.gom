@@ -29,40 +29,40 @@ Placeable:26:0.95:1.05
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Hello sir, since you got promoted to captain I was next in line for Lieutenant.
+        Dialogue:It was a shame to learn of Captain Resistance's fate. If she hadn't been so stubborn...
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:It is sad to hear of Captain Resistance's fate.
+        Dialogue:But tangling herself up in that judgmentalism business was a bad move for her, for us all.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:But it seems she has been involved in a discrimination conspiracy.
+        Dialogue:But perhaps it's all for the best. No more hatred and bigotry, that's the new motto.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:So maybe it's for the best she isn't around. I will miss her though.
+        Dialogue:Do you like it? I made it up myself... Well, I suppose it could use some work...
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:I have reports of Diabolonians starting a fight in the market.
+        Dialogue:Anyway, let me get some reports for you. Some of the urgent but easy work we can let the regular guards handle.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:The merchants need help to stay safe so they can sell their goods.
+        Dialogue:Ah! Here is a report from merchants claiming that Diabolonians are taking their goods without paying.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:I think we need to keep the Diabolonians away.
+        Dialogue:Sounds like a big lot of them too! We'd better go teach them a lesson in the law.
 Wave:1
     WaitTime:0
     WaveUnit:
@@ -366,34 +366,34 @@ PostDialogue:
         Speaker:Merchant
         LeftImage:11
         RightImage:None
-        Dialogue:Thank you captain, for coming to our aid.
+        Dialogue:Thank you very much, captain, for coming to our aid. Those Diabolonians have no respect for us!
     Statement:
         Speaker:Merchant
         LeftImage:11
         RightImage:None
-        Dialogue:These Diabolonians are going too far, we're being run out of business.
+        Dialogue:They claim that we owe them our goods as reparations and then take them without our consent.
     Statement:
         Speaker:Merchant
         LeftImage:11
         RightImage:None
-        Dialogue:It would be better for the Diabolonians to learn a tradeskill.
+        Dialogue:When we complain that we need to make money, they say they haven't enough money to pay for it.
     Statement:
         Speaker:Merchant
         LeftImage:11
         RightImage:None
-        Dialogue:That way they can contribute to the marketplace.
+        Dialogue:And when we suggest they learn a tradeskill to earn the money they just dismiss it and take things by force.
     Statement:
         Speaker:Merchant
         LeftImage:11
         RightImage:None
-        Dialogue:But it seems all they know how to do is fight.
+        Dialogue:All they seem to do is complain about their circumstances and start causing mischief.
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Merchant
+        LeftImage:11
+        RightImage:None
+        Dialogue:But this cannot go on. We are being run out of business!
+    Statement:
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
-        Dialogue:We understand. This sounds like something we can bring up to King Diabolus.
-    Statement:
-        Speaker:Merchant
-        LeftImage:11
-        RightImage:None
-        Dialogue:Please! Something needs to change.
+        RightImage:7
+        Dialogue:We understand good sir merchant. We will bring this grievance up to King Diabolus to make it right.

@@ -37,9 +37,9 @@ PreDialogue:
         RightImage:None
         Dialogue:Ah, we are out of the cave. Captain Boanurges, scout out how we can get back to the road.
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
+        RightImage:7
         Dialogue:Um... Prince Emmanuel, if I may be so bold. Perhaps Diabolus had good reasons for what he did.
     Statement:
         Speaker:Prince Emmanuel
@@ -47,13 +47,13 @@ PreDialogue:
         RightImage:None
         Dialogue:Good reasons? For murder?! What reasons could be good enough for that?
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
+        RightImage:7
         Dialogue:Well, I...
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
+        Speaker:Captain Goodhope
+        LeftImage:16
         RightImage:None
         Dialogue:We're under attack! Another orcish patrol has spotted us.
 Wave:1
@@ -721,19 +721,24 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Both captain Resistance and Lord Innocence killed?! What a shame.
+        Dialogue:Both captain Resistance and Lord Innocence killed?! My heart grieves them. It is a heavy loss.
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
-        Dialogue:But Diabolus brought about equality for all!
+        RightImage:7
+        Dialogue:But Diabolus brought about equal treatment for all!
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Ah... what a justification for murder.
+        Dialogue:Ah... a sound justification for murder. If someone is inconveniencing you, just kill them.
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:This is the way of the Diabolonians. From this is what our laws were meant to protect the people.
+    Statement:
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
+        RightImage:7
         Dialogue:...

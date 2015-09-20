@@ -28,7 +28,7 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:I have just completed my designs for a stronghold within the city.
+        Dialogue:Captain, I have just completed my design for a stronghold within the city.
     Statement:
         Speaker:Diabolus
         LeftImage:2
@@ -43,22 +43,22 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:So I task you with guarding the stronghold until it is finished.
+        Dialogue:So I task you with guarding the construction site until it is finished.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:So I task you with guarding the stronghold until it is finished.
+        Dialogue:The governor of the stronghold shall be Spitegod. Come, introduce yourself.
     Statement:
-        Speaker:Diabolus
-        LeftImage:2
-        RightImage:None
-        Dialogue:I am naming Spitegood as governor.
-    Statement:
-        Speaker:Spitegood
+        Speaker:Spitegod
         LeftImage:None
         RightImage:12
-        Dialogue:We shall make sure the grasp of the old king doesn't take hold here again.
+        Dialogue:Captain, your reputation preceeds you. With you guarding and my supervision, we are sure to succeed.
+    Statement:
+        Speaker:Spitegod
+        LeftImage:None
+        RightImage:12
+        Dialogue:That old king, curse his name, shall never again lay claim to this city.
 Wave:1
     WaitTime:0
     WaveUnit:
@@ -729,17 +729,32 @@ Wave:9
         Tile:5:0
 PostDialogue:
     Statement:
-        Speaker:Spitegood
+        Speaker:Spitegod
         LeftImage:12
         RightImage:None
-        Dialogue:Well done, the stronghold is now complete.
+        Dialogue:On schedule, the stronghold is complete. Thanks, captain, for watching our backs.
     Statement:
-        Speaker:Spitegood
+        Speaker:Spitegod
         LeftImage:12
         RightImage:None
         Dialogue:I heareby name this sturdy bastion "Hold of Defiance".
     Statement:
-        Speaker:Spitegood
+        Speaker:Spitegod
         LeftImage:12
         RightImage:None
-        Dialogue:For we will surely continue to defy the former king.
+        Dialogue:For we will surely continue to defy former King Sh-
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:Do not even speak his name. All of the former ways are to be forgotten.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:This stronghold is the first step in the plans I have to solidify my rule.
+    Statement:
+        Speaker:Diabolus
+        LeftImage:None
+        RightImage:2
+        Dialogue:I believe two more strongholds are needed. Let us hurry to work on the second.

@@ -55,7 +55,7 @@ public class LevelSelectController : MonoBehaviour {
 			inTutorial = true;
 		} else if ((Player.tutorialState == 5) && (inTutorial == false)) {
 			cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
-			cursorInst.transform.position = new Vector3(2.1f, 1.8f, 0);
+			cursorInst.transform.position = new Vector3(1.7f, 1.65f, 0);
 			cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
 			inTutorial = true;
 		} else if ((Player.tutorialState == 6) && (inTutorial == false)) {

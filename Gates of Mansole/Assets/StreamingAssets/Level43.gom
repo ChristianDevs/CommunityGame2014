@@ -40,11 +40,41 @@ PreDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Run! Everyone keep running.
+        Dialogue:Run! Everyone keep running. Do not stop or look back!
     Statement:
-        Speaker:Captain Conviction
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:13
+        RightImage:7
+        Dialogue:So you plan to run all the way out? We don't even know where to-
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:GAAAHHH!
+    Statement:
+        Speaker:Captain Goodhope
+        LeftImage:None
+        RightImage:16
+        Dialogue:Prince, Lady Willbewill has tripped and fallen behind.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:Captain Boanurges, lead them on. I will go back and get her.
+    Statement:
+        Speaker:Captain Boanurges
+        LeftImage:None
+        RightImage:12
+        Dialogue:But prince, the orcs are almost upon us and will surely-
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:Who taught you how to handle a sword? Was it not I? Just go and trust me.
+    Statement:
+        Speaker:Captain Judgment
+        LeftImage:None
+        RightImage:15
         Dialogue:Orcs block us at the end of the secret passage up ahead.
     Statement:
         Speaker:Captain Boanurges
@@ -52,8 +82,8 @@ PreDialogue:
         RightImage:None
         Dialogue:Looks like we have a choice. Either assail the wall, or try to punch through a large force.
     Statement:
-        Speaker:Prince Emmanuel
-        LeftImage:17
+        Speaker:Captain Boanurges
+        LeftImage:12
         RightImage:None
         Dialogue:The choice is your captain. Make it quick and follow through.
 Wave:
@@ -180,24 +210,24 @@ Wave:
         RespawnTime:12
 PostDialogue:
     Statement:
-        Speaker:Captain Boanurges
-        LeftImage:12
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
         Dialogue:Haha! What a punishment we doled out to those orcs.
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
+        Speaker:Captain Boanurges
+        LeftImage:12
         RightImage:None
         Dialogue:Truly, we gave them what was coming to them.
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
-        Dialogue:I must disagree. The punishments of King Shaddai are always too severe.
+        RightImage:7
+        Dialogue:I must protest. The punishments of King Shaddai are always too severe.
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
+        RightImage:7
         Dialogue:Diabolus told me that just a simple warning is better. People will listen.
     Statement:
         Speaker:Prince Emmanuel
@@ -219,3 +249,13 @@ PostDialogue:
         LeftImage:17
         RightImage:None
         Dialogue:All discipline seems severe at the time, but afterwards it is useful for training in right behavior.
+    Statement:
+        Speaker:Captain Judgment
+        LeftImage:None
+        RightImage:15
+        Dialogue:Lady, How can you keep questioning the prince? He just risked himself to save you.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:...

@@ -34,35 +34,45 @@ Wall:9:2:7:100:0.10:10
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:Captain, I received reports from Forgetgood about another incident.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:Judge Conscience is leading a group of people to observe former King Shaddai's laws again.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Her orders are to stop him.
+        Dialogue:Her orders are to stop him. Let us try to reason with him first.
     Statement:
         Speaker:Judge Conscience
         LeftImage:None
         RightImage:5
-        Dialogue:Captain, what is it you want?
+        Dialogue:Lady, what is it you want? I am busy instructing my students.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:By decree of the king's right hand, we order you to desist teaching the old laws.
     Statement:
         Speaker:Judge Conscience
         LeftImage:None
         RightImage:5
-        Dialogue:No, I cannot stop from doing what I know is right.
+        Dialogue:Desist teaching the old laws? I know we've changed, but are we to cast aside all that makes us who we are?
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Judge Conscience
+        LeftImage:None
+        RightImage:5
+        Dialogue:There is power for good in these laws. Can't you see it?
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Then we must bring you in, by order of King Diabolus.
+        Dialogue:The old laws are forbidden now. If you don't give them up then we'll take you by force.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -175,17 +185,37 @@ Wave:
         RespawnTime:15
 PostDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Sorry judge, but you will come with us.
+        Dialogue:I suppose old habits are hard to break. But break they will, or you will be broken.
     Statement:
         Speaker:Judge Conscience
         LeftImage:None
         RightImage:5
-        Dialogue:No, I refuse!
+        Dialogue:Me? broken? What are you planning to do to me? I've only been teaching others...
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Yes, teaching what is forbidden. I don't know what Forgetgood has planned for you, but we will find out soon enough.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Diabolus is king now, and we all must obey his every word. I will see to it myself.
     Statement:
         Speaker:Judge Conscience
         LeftImage:None
         RightImage:5
-        Dialogue:I cannot stop observing the laws I know to be true and good.
+        Dialogue:Perhaps some of the laws we shouldn't observe anymore. Perhaps some are linked to hatred and bigotry.
+    Statement:
+        Speaker:Judge Conscience
+        LeftImage:None
+        RightImage:5
+        Dialogue:But is that a reason to throw them all out like moldy bread? I think not.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:This is getting nowhere. Save your rambling for King Diabolus. He'll know what to do with you.

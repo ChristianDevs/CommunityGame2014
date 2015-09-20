@@ -48,6 +48,21 @@ PreDialogue:
         LeftImage:None
         RightImage:17
         Dialogue:Captain, take some of my forces and secure the area.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:You'll trust us to command your forces? I don't understand.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:All my other captains are busy. And I believe your captain to be capable.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:And this is a matter which concerns all who care for the wellbeing of the City of Mansoul.
 Wave:1
     WaitTime:0
     WaveUnit:
@@ -985,22 +1000,32 @@ Wave:10
         Tile:5:0
 PostDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:What... is this thing?
+        Dialogue:What... is this thing? I've never seen it's like in all my years.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:We are about to find out. Captain Patience! We require your skills.
+        Dialogue:We are about to find out. Captain Goodhope! We require your skills as an artificier.
     Statement:
-        Speaker:Captain Patience
-        LeftImage:20
+        Speaker:Captain Goodhope
+        LeftImage:16
         RightImage:None
-        Dialogue:Yes prince, I will give you a report once I've concluded my investigation.
+        Dialogue:Yes prince, I will give you a report once I've concluded my assessment.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:What do you think it is used for?
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:Don't take too long, I am sure there are more orcs about.
+        Dialogue:It must have something to do with their plans for the City of Mansoul.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:But work quick, captain Goodhope. I don't know how much time we have here.

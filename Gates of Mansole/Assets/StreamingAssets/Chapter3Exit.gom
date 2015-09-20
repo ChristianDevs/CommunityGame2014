@@ -13,7 +13,7 @@ entry
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
-	Dialogue:So, Captain of the City of Mansoul. Shall you join with me?
+	Dialogue:It comes down to it now, Captain of the guard of the City of Mansoul. Shall you join with me?
 	ShowTime:10
 entry
 	Music:0
@@ -21,39 +21,39 @@ entry
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
-	Dialogue:You will? Wise choice. Together we shall retake Mansoul for King Shaddai.
+	Dialogue:You will? You've made a wise choice this day. Together we shall retake Mansoul for King Shaddai.
 	ShowTime:10
 entry
 	Music:0
 	Background:2
 	ImageLeft:None
-	ImageRight:10
-	Speaker:Lieutenant Captain
-	Dialogue:You can't be serious, captain? How can you join with Emmanuel?
+	ImageRight:7
+	Speaker:Lady Willbewill
+	Dialogue:You can't be serious, captain? How can you join with... Emmanuel? This is a betrayal of King Diabolus.
 	ShowTime:10
 entry
 	Music:0
 	Background:2
 	ImageLeft:None
-	ImageRight:10
-	Speaker:Lieutenant Captain
-	Dialogue:We were told they are all bigoted and oppressing diabolophobes.
+	ImageRight:7
+	Speaker:Lady Willbewill
+	Dialogue:They taught us that the old king the old ways are of hatred, judgementalism, and bigotry.
 	ShowTime:10
 entry
 	Music:0
 	Background:2
 	ImageLeft:None
-	ImageRight:10
-	Speaker:Lieutenant Captain
-	Dialogue:What Captain? You don't think those are true anymore?
+	ImageRight:7
+	Speaker:Lady Willbewill
+	Dialogue:What is that, captain? You don't think those are right? You think Diabolus isn't telling the truth?
 	ShowTime:10
 entry
 	Music:0
 	Background:2
 	ImageLeft:None
-	ImageRight:10
-	Speaker:Lieutenant Captain
-	Dialogue:If that's how it is then I'm going back to Diabolus!
+	ImageRight:7
+	Speaker:Lady Willbewill
+	Dialogue:If that's how it is then I'm going back to Diabolus! I'm sure I'll be rewarded for giving details on your betrayal.
 	ShowTime:10
 entry
 	Music:0
@@ -61,7 +61,7 @@ entry
 	ImageLeft:12
 	ImageRight:None
 	Speaker:Captain Boanurges
-	Dialogue: My prince, shall I lead a band to go capture him?
+	Dialogue: My prince, shall I lead a band to go capture her?
 	ShowTime:10
 entry
 	Music:0
@@ -77,15 +77,7 @@ entry
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
-	Dialogue:Let him go report back to his master. They shall tremble in their boots at my coming.
-	ShowTime:10
-entry
-	Music:0
-	Background:2
-	ImageLeft:None
-	ImageRight:None
-	Speaker:None
-	Dialogue:To be continued...
+	Dialogue:Let her go report back to her master. They shall tremble in their boots at my coming.
 	ShowTime:10
 entry
 	Music:0

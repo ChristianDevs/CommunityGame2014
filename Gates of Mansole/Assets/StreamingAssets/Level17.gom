@@ -33,62 +33,67 @@ PreDialogue:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Yes? You want to talk to me about something, Captain?
+        Dialogue:Ah captain. Of course I welcome you into my presence. I hope you are enjoying your new station.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Hmm? ... Hmmm...
+        Dialogue:A grievance you say? Diabolonians taking goods from merchants?
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Have I misjudged you? I thought you cared about the plight of the Diabolonians.
+        Dialogue:They are not breaking the law, they are following my decree.
     Statement:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:Don't you realize how much the Diabolonians have suffered at the hands of Mansoul?
+        Dialogue:Captain, didn't you know that in order to build the Diabolonians back up the citizens must be torn down?
     Statement:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:This needs to happen to balance out what happened with them.
+        Dialogue:This is recompense for their long years of hatred and bigotry.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:Do not worry. I understand you may have doubts from time to time. I understand.
+        Dialogue:Worry not, captain. I understand you may have doubts from time to time. I fully understand.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:There is another group of merchants refusing to comply with my decree.
+        Dialogue:But you must understand that things like this must happen to aright the citizenry.
     Statement:
-        Speaker:Diabolus
-        LeftImage:2
-        RightImage:None
-        Dialogue:Defeat their hired defenders and enforce my new law.
-    Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Forgetgood
         LeftImage:None
-        RightImage:10
-        Dialogue:Captain, looks like the merchants are using a wall to defend against.
+        RightImage:1
+        Dialogue:Captain, take a look at this report. There are merchants defying Diabolus' rule.
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Forgetgood
         LeftImage:None
-        RightImage:10
+        RightImage:1
+        Dialogue:They hire soldiers to keep the Diabolonians from getting their due goods.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:Let's go captain, we must eliminate all traces of original bigotry and hatred.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:It seems the merchants have built a wall to keep the Diabolonians out. I charge you to destroy it.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
         Dialogue:Since they will rebuild the wall over time, it will regain health slowly.
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
-        Dialogue:And we must make sure we attack all segments of the wall for it to fall.
-    Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:None
-        RightImage:10
-        Dialogue:Otherwise we won't be able to pass it.
+        RightImage:7
+        Dialogue:You must place soldiers in all lanes for the wall to come down.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -168,7 +173,7 @@ PostDialogue:
         Speaker:Merchant
         LeftImage:11
         RightImage:None
-        Dialogue:What are you doing to us? We can't afford to give special prices to the Diabolonians.
+        Dialogue:What are you doing to us? We can't afford to give away our goods to the Diabolonians.
     Statement:
         Speaker:Forgetgood
         LeftImage:None
@@ -193,7 +198,7 @@ PostDialogue:
         Speaker:Merchant
         LeftImage:11
         RightImage:None
-        Dialogue:Why not train the Diabolonians in productive tradeskills so they can contribute?
+        Dialogue:Why not train the Diabolonians in productive tradeskills so they can contribute to the market?
     Statement:
         Speaker:Forgetgood
         LeftImage:None

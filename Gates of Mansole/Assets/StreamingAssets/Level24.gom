@@ -33,17 +33,27 @@ PreDialogue:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:Good you've come. I heard you did excellent ensuring the strongholds were built.
+        Dialogue:It's about time you've come. You aren't getting lazy are you? Maybe I need to remind you who's the boss around here.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:Please forgive us, Diabolus required our help guarding the builders of his new strongholds.
     Statement:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:To the task at hand, I've received several reports of an underground resistance to Diabolus.
+        Dialogue:Yes? Well, they're done now aren't they? I hate it when people think they can take a break.
     Statement:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:The best information right now points to a small tavern in one of the city neighborhoods.
+        Dialogue:But for your next task, I've received several reports of an underground resistance. They just won't give up!
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:I feel the best information right now points to a small tavern in one of the city neighborhoods.
     Statement:
         Speaker:Forgetgood
         LeftImage:1
@@ -143,8 +153,8 @@ Wave:
         RespawnTime:13
 PostDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:Captain! We captured a woman we think knows something.
     Statement:
@@ -153,35 +163,35 @@ PostDialogue:
         RightImage:1
         Dialogue:Let me talk to her. I have a way with people that a sword does not.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Captain, while Forgetgood is talking with her I wanted to mention.
+        Dialogue:Captain, while Forgetgood is talking with her, there is something I must speak with you about.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:A number of city guards haven't shown up for duty in the last couple days.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:At first we didn't report it because we thought it was a coincidence...
+        Dialogue:I didn't mention it to you because I thought it coincidence, no need to overburden you.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:And there were enough spare guards with the new ones Diabolus added to our ranks.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:But it seems something else may be going on.
+        Dialogue:But I fear something else is going on. I haven't any evidence.. yet. But I will keep looking into it.
     Statement:
         Speaker:Forgetgood
         LeftImage:None
         RightImage:1
-        Dialogue:I have the information we need. This woman is part of a resistance movement.
+        Dialogue:I have the information we need. This woman is indeed part of a resistance movement.
     Statement:
         Speaker:Forgetgood
         LeftImage:None

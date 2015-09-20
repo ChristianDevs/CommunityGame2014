@@ -30,22 +30,32 @@ PreDialogue:
         Speaker:Orcish Warleader
         LeftImage:19
         RightImage:None
-        Dialogue:These artifacts have been filled to the brim with the boom-stones.
+        Dialogue:Finish pouring that last load... yes... It is ready now.
     Statement:
         Speaker:Orcish Warleader
         LeftImage:19
         RightImage:None
-        Dialogue:Move them onto the wagons for our trek to... what have we here?
+        Dialogue:These artifacts are now filled to the brim with the boom-stones. Nothing can stop us.
+    Statement:
+        Speaker:Orcish Warleader
+        LeftImage:19
+        RightImage:None
+        Dialogue:Move them onto the wagons for our trek to... What?! Who are you people? How did you get here?
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:I am Prince Emmanuel, son of King Shaddai. And I will stop your plot to destroy my city.
+        Dialogue:I am Prince Emmanuel, son of King Shaddai. My father owns the city that you are planning to attack.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:I shall not allow you to attack or damage the city we built ourselves for our glory.
     Statement:
         Speaker:Orcish Warleader
         LeftImage:19
         RightImage:None
-        Dialogue:King Shaddai?! How did he learn our aims? Defend the artifacts at all costs!
+        Dialogue:King Shaddai?! How did he learn of our aims? Defend the artifacts at all costs!
 Wave:
     WaitTime:0
     WaveUnit:
@@ -155,7 +165,7 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Your diabolical plot ends now. Face your end.
+        Dialogue:Your diabolical plot shall not come to pass. Face your end now.
     Statement:
         Speaker:Orcish Warleader
         LeftImage:None
@@ -165,17 +175,27 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Captain Boanurges, Captain Conviction, Captain Patience, throw these devices in the pool of lava.
+        Dialogue:Captain Boanurges, Captain Goodhope, and Captain Judgment, throw these devices in the lake of fire below.
     Statement:
         Speaker:Captain Boanurges
         LeftImage:None
         RightImage:12
-        Dialogue:As you command, my prince.
+        Dialogue:As you command, my prince. Not a one of these will harm the citizens of Mansoul or be used to breach the city.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Uh oh, the other orcs realize we're here and are coming for us.
+        Dialogue:Now we're in trouble, the other orcs realize we're here and are coming for us.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Didn't you have a plan for what to do next?
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:Of course I do. I always have a plan. Don't think so little of me.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None

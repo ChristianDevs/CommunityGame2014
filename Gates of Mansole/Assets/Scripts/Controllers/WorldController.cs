@@ -937,7 +937,7 @@ public class WorldController : MonoBehaviour {
 						inTutorial = false;
 						levelStartTime -= 13;
 						spawnUnitsReady = true;
-					} else if (blinkTile == null) {
+					} else if (UnitAttackMsgTutorial.activeSelf == true) {
 						UnitAttackMsgTutorial.SetActive(false);
 						spawnUnitsReady = true;
 					}

@@ -33,16 +33,16 @@ PreDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Captain, I understand Diabolus has taken over the city of Mansoul.
+        Dialogue:I see that Diabolus has taken over the city of Mansoul and has started changing our laws.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:But do you know who Diabolus is?
+        Dialogue:But do you really know who Diabolus is?
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
+        RightImage:7
         Dialogue:Diabolus cares for everyone and frees people from the oppression of the old laws.
     Statement:
         Speaker:Prince Emmanuel
@@ -50,25 +50,25 @@ PreDialogue:
         RightImage:None
         Dialogue:I mean, do you know where he came from?
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
+        RightImage:7
         Dialogue:Huh? What does that...
     Statement:
         Speaker:Captain Boanurges
         LeftImage:12
         RightImage:None
-        Dialogue:Prince, Captain Conviction has something to report.
+        Dialogue:Prince, Captain Goodhope has something to report.
     Statement:
         Speaker:Captain Conviction
-        LeftImage:13
+        LeftImage:16
         RightImage:None
-        Dialogue:Prince, there is a small orcish encampment up ahead. What should we do?
+        Dialogue:Prince, there is a small orcish encampment up ahead. What are your orders?
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:We attack. Captain, ready the troops.
+        Dialogue:We attack. Rady the troops for the assault.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -158,27 +158,17 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:What is that Captain? You want to know about Diabolus?
+        Dialogue:What is that Captain? You want to know where Diabolus came from?
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:What is that Captain? You want to know about Diabolus?
+        Dialogue:He was once a trusted official in the my father's court. His power and influence were great.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:He was once a trusted official in the king's court.
-    Statement:
-        Speaker:Prince Emmanuel
-        LeftImage:None
-        RightImage:17
-        Dialogue:But his ambition and pride was his undoing.
-    Statement:
-        Speaker:Prince Emmanuel
-        LeftImage:None
-        RightImage:17
-        Dialogue:One night he attempted to assassinate the king and take his place.
+        Dialogue:But his ambition and pride was his undoing. One night he attempted to assassinate the king and take his place.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
@@ -188,4 +178,14 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:Ah, here is the tunnel exit.
+        Dialogue:We suspected he might try take over the kingdom forcefully. And we knew he fled in the direction of Mansoul.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:But we allowed the people of the city to make their own choices, instead of forcing ours upon them.
+    Statement:
+        Speaker:Captain Boanurges
+        LeftImage:12
+        RightImage:None
+        Dialogue:Prince, the tunnel exit lies up ahead.

@@ -35,8 +35,23 @@ Placeable:26:8.8:-0.5
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Are you sure this is a good idea? It would be much safer to just search for a way out.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:That's what we originally intended to do. And, I think, stirring up a hornets nest is a bad idea.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:13
+        Dialogue:It may very well be safer for us. But stopping them now is the right thing to do.
+    Statement:
+        Speaker:Captain Goodhope
+        LeftImage:16
         RightImage:None
         Dialogue:This way prince. We should be safe here, my scouts report tracks are very infrequent.
     Statement:
@@ -50,7 +65,7 @@ PreDialogue:
         RightImage:13
         Dialogue:Very infrequent you say?
     Statement:
-        Speaker:Captain Conviction
+        Speaker:Captain Goodhope
         LeftImage:13
         RightImage:None
         Dialogue:...
@@ -58,7 +73,7 @@ PreDialogue:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:13
-        Dialogue:Captain, prepare our defenses.
+        Dialogue:Captain, prepare our defenses as the orcs attack.
 Wave:1
     WaitTime:0
     WaveUnit:
@@ -996,9 +1011,9 @@ PostDialogue:
         RightImage:None
         Dialogue:Good, we must destroy those devices. I won't tolerate my city being attacked in such a manner.
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
+        RightImage:7
         Dialogue:Oh! That is another thing, tolerance. Should you be more tolerant toward the Diabolonian people?
     Statement:
         Speaker:Prince Emmanuel

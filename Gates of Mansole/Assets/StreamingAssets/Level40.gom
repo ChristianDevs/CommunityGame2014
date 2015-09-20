@@ -44,7 +44,7 @@ PreDialogue:
         Speaker:Captain Boanurges
         LeftImage:12
         RightImage:None
-        Dialogue:They are blocking our path, but we have reason to believe there are other bands nearby.
+        Dialogue:They block our path, but we have reason to believe there are other bands nearby.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
@@ -55,6 +55,31 @@ PreDialogue:
         LeftImage:None
         RightImage:17
         Dialogue:If we only fight one group at a time it will increase our chances of success.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:I don't think it will work. Can you really expect they won't raise an alarm?
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:What do you know about how orcs think? Have you ever faced them in battle?
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Well... no... But in an attack, the first thing I would do is raise an alarm for help to come.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:Orcs tend to be aggressive and will want to distinguish themselves in battle above all else.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:If we bring the battle to them then the thought of raising an alarm won't enter into their minds.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -203,6 +228,16 @@ Wave:
         RespawnTime:12
 PostDialogue:
     Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:Do you see Lady Willbewill? No alarm was raised. Our presence is still not known here.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:I suppose it worked out... but I think a different tactic would have worked better.
+    Statement:
         Speaker:Captain Boanurges
         LeftImage:12
         RightImage:None
@@ -238,12 +273,12 @@ PostDialogue:
         RightImage:None
         Dialogue:We must find a way to destroy them.
     Statement:
-        Speaker:Captain Conviction
+        Speaker:Captain Goodhope
         LeftImage:None
-        RightImage:13
+        RightImage:16
         Dialogue:Prince, I found a secret tunnel that may lead to the up to the ledge.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:This may be our only chance! Let's go.
+        Dialogue:This may be our only chance to thwart their plans! Let's go.

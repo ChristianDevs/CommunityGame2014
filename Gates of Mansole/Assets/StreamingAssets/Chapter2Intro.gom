@@ -13,7 +13,7 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:A week passes and Diabolonians fill the city.
+	Dialogue:A week goes by with each passing day bringing in more Diabolonians until the city brimmed full.
 	ShowTime:10
 entry
 	Music:0
@@ -21,7 +21,7 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:Diabolus decreed a new law that requires merchants to sell to Diabolonians at lower prices.
+	Dialogue:The Diabolonians immediately took full advantage of their newly granted privileges.
 	ShowTime:10
 entry
 	Music:0
@@ -29,7 +29,7 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:The Diabolonians take advantage of that every chance they get.
+	Dialogue:Diabolus took land away from citizens accused of having too much and distributed to the Diabolonians.
 	ShowTime:10
 entry
 	Music:0
@@ -37,7 +37,7 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:The Diabolonians have also brought crime into the city.
+	Dialogue:Tended farms fell into disrepair. Rolling pastures irrigated by the rivers turned brown.
 	ShowTime:10
 entry
 	Music:0
@@ -45,7 +45,7 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:Many citizens fear for their safety when they go out at night.
+	Dialogue:Not only did Diabolus repeal many of King Shaddai's laws, but he forbade the people to practice them at all!
 	ShowTime:10
 entry
 	Music:0
@@ -53,8 +53,64 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:Will the people continue to stand for this?
+	Dialogue:Punishments awaited anyone who prayed in public, called on King Shaddai's name, and taught His laws.
 	ShowTime:10
+entry
+	Music:0
+	Background:1
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:But most notably, the Diabolonians brought crime with them. Theft and extortion were common occurences.
+	ShowTime:10
+entry
+	Music:0
+	Background:1
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:Diabolonian muggers preyed on those who would go out alone too late into the night.
+	ShowTime:10
+entry
+	Music:0
+	Background:1
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:Normally, this would be handled by the guard. But the passing of the captain and internal struggles left them spread thin.
+	ShowTime:10
+entry
+	Music:0
+	Background:1
+	ImageLeft:10
+	ImageRight:None
+	Speaker:Lady Willbewill
+	Dialogue:I am pleased to announce that King Diabolus has chosen you as replacement for captain of the city guard.
+	ShowTime:7
+entry
+	Music:0
+	Background:1
+	ImageLeft:10
+	ImageRight:None
+	Speaker:Lady Willbewill
+	Dialogue:Also, Forgetgood has selected me to handle the internal affairs. I'll sift through the reports and let you know what to do.
+	ShowTime:7
+entry
+	Music:0
+	Background:1
+	ImageLeft:10
+	ImageRight:None
+	Speaker:Lady Willbewill
+	Dialogue:In addition, she selected some of the Diabolonians to work as guards for us. Goodness knows we need the help.
+	ShowTime:7
+entry
+	Music:0
+	Background:1
+	ImageLeft:10
+	ImageRight:None
+	Speaker:Lady Willbewill
+	Dialogue:We have a veritable mountain of reports of misdeeds all around the city. I suppose it is time to look into them.
+	ShowTime:7
 entry
 	Music:0
 	Background:1

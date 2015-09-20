@@ -26,30 +26,40 @@ Placeable:7:-2.15:2.35
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:Captain, while Diabolus and his advisors are talking I've received a disturbing report.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:Advance scouts are marching through mountain pass.
-    Statement:
-        Speaker:Forgetgood
-        LeftImage:1
-        RightImage:None
-        Dialogue:Stop them before they can ascertain any information in the city.
-    Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
+        RightImage:7
+        Dialogue:There goes our much needed rest. I was so looking forward to it.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:Shut your mouth, you petty excuse for a noble. Don't come to me with your complaints.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:Captain, I've discovered that their main force is navigating the western mountains.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:Intercept their advance scouting warparty in the fields and keep them from sending any messengers back.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:1
+        RightImage:None
+        Dialogue:We mustn't allow them to gain any infomation about the city.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
         Dialogue:If the old king is mustering an army, can mere city guards stand against them.
     Statement:
         Speaker:Forgetgood
         LeftImage:1
         RightImage:None
-        Dialogue:You must stand against them, that is your mission.
+        Dialogue:You must stand against them, that is your mission. You will stand or you will die. One way or another.
     Statement:
         Speaker:Forgetgood
         LeftImage:1
@@ -1308,37 +1318,47 @@ Wave:13
         Tile:0:0
 PostDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Whew, we defeated the advance scouts.
+        Dialogue:Whew, the warparty has been defeated and I believe not a one escaped.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:But scouts that I sent out earlier tell me that a large force is coming through the mountain pass.
+        Dialogue:Shall we go back to the city now. We should probably start resting and preparing for the oncoming siege.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
-        RightImage:None
-        Dialogue:There isn't time to go back to the city and muster a bigger army.
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:While I'm preparing our forces for the siege you two will stall their main forces in the mountains.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
-        RightImage:None
-        Dialogue:You agree?
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:This should give me enough time to fortify the city and conscript all the fighters we'll need.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:You want us to march into the mountains and see what we can do?
+        Dialogue:Go to the mountains? But their numbers must many times what we have. How can we survive against such odds?
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
-        RightImage:None
-        Dialogue:Very well captain, I shall follow your orders.
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:As I said, you will die. One way or another. Do your duty and stop delaying me from going back to the city.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:I will tell the men to pack up and get ready to march.
+        Dialogue:Captain? ... Captain, do you really agree we need to do this?
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Yes, I suppose we can't disobey Forgetgood now. She will probably have us executed if we return to the city.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Go tell the guards to pack up their gear and prepare to march.

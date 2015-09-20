@@ -36,35 +36,35 @@ Placeable:26:0.2:-2.5
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
+        Speaker:Captain Goodhope
+        LeftImage:16
         RightImage:None
-        Dialogue:Prince, up ahead is a cavern with a large group of orcs.
+        Dialogue:Prince, up ahead is a cavern with a large group of orcs about some kind of business.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:Do we know what they are doing there?
+        Dialogue:Hmm... How large is the group? What manner of business is it?
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
+        Speaker:Captain Goodhope
+        LeftImage:16
         RightImage:None
-        Dialogue:Not yet but my scouts are...
+        Dialogue:Initial reports from the scouts suggest that...
     Statement:
         Speaker:None
         LeftImage:None
         RightImage:None
         Dialogue:[Crackle]
     Statement:
-        Speaker:Lieutenant Captain
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:10
+        RightImage:7
         Dialogue:Oops. Just some loose rocks I accidently leaned against. The orcs didn't hear, did they?
     Statement:
-        Speaker:Prince Emmanuel
-        LeftImage:17
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
-        Dialogue:Here they come! Get ready for battle!
+        Dialogue:Since they are advancing with weapons at the ready, I assume they did.
 Wave:1
     WaitTime:0
     WaveUnit:
@@ -1000,7 +1000,7 @@ PostDialogue:
         Speaker:Captain Boanurges
         LeftImage:12
         RightImage:None
-        Dialogue:Here, I've captured one of the orcs.
+        Dialogue:During the battle we managed to capture one of the orcs. His injuries are very bad, however.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
@@ -1010,20 +1010,20 @@ PostDialogue:
         Speaker:Orc
         LeftImage:None
         RightImage:18
-        Dialogue:[Grunt] Are you from the city? You are all doomed. We shall crush your heads!
+        Dialogue:[Grunt] Are you from the city? You are all doomed. We shall strike at your heels and defeat you!
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:We shall see about that. How do you intend to do that?
+        Dialogue:Is that so? How do you intend to do that?
     Statement:
-        Speaker:Lizard Folk
+        Speaker:Orc
         LeftImage:None
         RightImage:18
-        Dialogue:I won't reveal our plans to you outsiders!
+        Dialogue:I won't reveal our plans to outsider scum like you!
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
         Dialogue:Speak! You are already at death's door, shall we speed up the process?
     Statement:
@@ -1035,4 +1035,4 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:This bodes ill. Everyone search the area for any hints.
+        Dialogue:This bodes ill. Everyone search the area for any clues of what they might be planning.

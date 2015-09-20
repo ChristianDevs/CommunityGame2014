@@ -22,15 +22,30 @@ Wall:9:1:5:200:0.10:2
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Here we are, captain. Mouthgate - The last bastion of resistance.
+        Dialogue:Well, here we are at Mouthgate, captain. Cold, tired, and hungry.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Once we end the resistance here Diabolus can act uncontested.
+        Dialogue:I hadn't noticed before, but it seems the winter weather is settling into the valley.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:I do so wish for a good hot meal about now. The kitchens around here cooked up the tastiest soup.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:I don't suppose the resistance would cook some up for us before we defeat them, would they?
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:I suppose not. I can only hope we get a long reprieve after this.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -155,45 +170,50 @@ Wave:
         RespawnTime:10
 PostDialogue:
     Statement:
-        Speaker:Diabolus
-        LeftImage:2
-        RightImage:None
-        Dialogue:Very good job, captain. I've heard no more reports of resistance.
-    Statement:
-        Speaker:Forgetgood
+        Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:1
-        Dialogue:Yes yes, good good. Now we can fully enact our agenda.
+        RightImage:7
+        Dialogue:The deed is done, let us report back to Diabolus and Forgetgood.
     Statement:
         Speaker:Diabolus
         LeftImage:2
         RightImage:None
-        Dialogue:You've earned a good rest, captain.
+        Dialogue:Very good job captain and Lady Willbewill. With strongholds built and the resistance gone all shall bend to our will.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:None
-        RightImage:10
-        Dialogue:Captain, King Diabolus... I have additional information to report.
-    Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Diabolus
+        LeftImage:2
         RightImage:None
-        Dialogue:After questioning some of the resistance, there are rumors that King Shaddai is ma-
+        Dialogue:With all the work you've done, I think a little rest is in order. We can't have the city guard too tired to enact new laws.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:Your highness is very kind! We have grown weary, but still fight and win for you.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:At first I was wondering if we'd get any rest. We're accustomed to frequent rest from the old laws of King Shad-
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
         Dialogue:Hold your tongue! I decreed that name shall not be spoken anymore.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:My appologies King Diabolus. It shall not happen again.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
-        RightImage:None
-        Dialogue:But... the rumor is that the old king is mustering an army to retake the city.
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:My Lord, king Diabolus of Mansoul. My scouts outside the city have a disastrous report.
+    Statement:
+        Speaker:Forgetgood
+        LeftImage:None
+        RightImage:1
+        Dialogue:It seems the rumors about a return weren't baseless after all. There is... a small warparty approaching the city.
     Statement:
         Speaker:Diabolus
         LeftImage:None
@@ -218,9 +238,9 @@ PostDialogue:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:I shall not allow my city to fall back into his hands.
+        Dialogue:I shall not allow the city I spent all my efforts to conquer to fall back into his hands.
     Statement:
         Speaker:Diabolus
         LeftImage:None
         RightImage:2
-        Dialogue:Let me consult my advisors that I may come a course of action.
+        Dialogue:Captain, marshall up all the guards and soldiers at our disposal and meet this warparty.

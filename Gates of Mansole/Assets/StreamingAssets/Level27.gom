@@ -22,25 +22,40 @@ Wall:9:1:5:150:0.10:2
 Music:3
 PreDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Captain, we sent some scouts and found out that the resistance is strong here.
+        Dialogue:Captain, I sent some scouts and found out that the resistance is strong here.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:They've put significant resources into their wall.
+        Dialogue:They've put significant resources into their wall. It will be tougher to knock down.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue: I also know that are more guard deserters holding out here.
+        Dialogue: I also know that are more guard deserters holding out here, so expect well trained defenders.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:So we know they've been trained.
+        Dialogue:And I...
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Oh... Pardon me, captain. I just noticed that the rows upon rows of white lilies that once bloomed here are gone.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:I sometimes would come here to see them. But alas it seems they and the golden treasure the bees seek has been looted.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Ah well... The preparations are made. We're ready to advance on the gate.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -159,27 +174,32 @@ Wave:
         RespawnTime:10
 PostDialogue:
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:I have some new information to report.
+        Dialogue:One of our guards found a letter carried by one of the defenders. Let me read it.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:After the battle we found some fragments of letters.
+        Dialogue:This letter indicates they've seen some kind of hope regarding King Shaddai.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:These letters indicate they've seen some kind of hope regarding King Shaddai.
+        Dialogue:News like this must be sent to Forgetgood immediately! I will have our fastest rider take it to her.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:Forgetgood has already sent word to take control of Feelgate.
+        Dialogue:She seems hard on us at best. I hate to see what she does to those who upset her.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
-        Dialogue:I'll go deliver this information to her while you're marshalling the guard to eliminate resistance there.
+        Dialogue:But she's already sent word that we take control of Feelgate. Don't we get any break from this awful fighting?
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:7
+        RightImage:None
+        Dialogue:Such a harsh taskmaster... Of course, you'll keep that from her ears, won't you?
