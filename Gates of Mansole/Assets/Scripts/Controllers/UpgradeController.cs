@@ -239,6 +239,7 @@ public class UpgradeController : MonoBehaviour {
 						cursorInst = Instantiate(CursorPrefab, Vector3.zero, Quaternion.identity) as GameObject;
 						cursorInst.transform.position = new Vector3(-5.29f, 4.19f, 0f);
 						cursorInst.GetComponentInChildren<Animator>().SetTrigger("DoTut2");
+						inTutorial = false;
 					}
                 }
             } else {
