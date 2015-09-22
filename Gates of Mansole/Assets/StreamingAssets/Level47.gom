@@ -27,38 +27,38 @@ Placeable:16:7:0.38
 Wall:9:1:5:200:0.10:2
 PreDialogue:
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
         Dialogue:Prince Emmanuel has sent me to assist the siege. We shall see through our Lord's plan to take back the city.
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
         Dialogue:Victory at Eargate is the first step to winning over the entire city.
     Statement:
-        Speaker:Boasting
+        Speaker:CarnalSecurity
         LeftImage:None
-        RightImage:22
+        RightImage:8
         Dialogue:Ho ho ho, you think you can defeat us. We shall crush your army and repel your invasion.
     Statement:
-        Speaker:Secure
+        Speaker:CarnalSecurity
         LeftImage:None
-        RightImage:23
+        RightImage:8
         Dialogue:We shall hold our defense of the gate. And our Lord Diabolus shall reward us greatly.
     Statement:
         Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:23
-        Dialogue:Don't throw away your lives recklessly. Turn back now.
+        RightImage:7
+        Dialogue:Well, if it isn't the traitor himself. My reward for bringing news was about you was greater title and rank.
     Statement:
         Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:23
-        Dialogue:Captain? You've switched sides I see, curse you! How dare you betray Lord Diabolus. You will be punished more severely.
+        RightImage:7
+        Dialogue:Your punishment captain, or rather former-captain, will be very severe.
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
         Dialogue:No, lady, it is you who will be punished more severaly as you all originally betrayed King Shaddai.
 Wave:
@@ -155,52 +155,52 @@ Wave:
         RespawnTime:12
 PostDialogue:
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
         Dialogue:The power of Shaddai is greater than any other, including your lord, Diabolus. The only true security is in his kingdom.
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
-        Dialogue:The punishment for standing against King Shaddai is execution. What say you for yourselves?
+        Dialogue:The punishment for standing against King Shaddai is to face judgment. What say you for yourselves?
     Statement:
-        Speaker:Boasting
+        Speaker:CarnalSecurity
         LeftImage:None
-        RightImage:22
+        RightImage:8
         Dialogue:I will not acknowledge your wretched king's power. There must have been some trickery.
     Statement:
-        Speaker:Secure
+        Speaker:CarnalSecurity
         LeftImage:None
-        RightImage:23
+        RightImage:8
         Dialogue:No, security comes from myself. I only needed to become stronger.
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
         Dialogue:Very well, suffer your fate.
     Statement:
-        Speaker:Boasting and Secure
-        LeftImage:22
-        RightImage:23
+        Speaker:CarnalSecurity
+        LeftImage:None
+        RightImage:8
         Dialogue:Aaaauuuggg!
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
         Dialogue:Now to deal with Lady Willbewill. Come and let us negotiate your fate.
     Statement:
         Speaker:Lady Willbewill
         LeftImage:None
-        RightImage:23
+        RightImage:7
         Dialogue:No! Maybe you can capture a gate, but you shall not capture me as I retreat to the city.
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
-        Dialogue:Don't let her escape! Take out your bow and shoot her before she gets away.
+        Dialogue:Don't let her escape! Shoot her down with the bow.
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:13
+        Speaker:Captain Judgment
+        LeftImage:15
         RightImage:None
-        Dialogue:Drat... at least we hit her leg so she won't be too difficult to find.
+        Dialogue:Drat... at least we shot her leg. She shouldn't be too much of a threat.

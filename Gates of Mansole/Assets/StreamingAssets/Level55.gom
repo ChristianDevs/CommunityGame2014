@@ -32,7 +32,7 @@ PreDialogue:
         Speaker:Loveflesh
         LeftImage:None
         RightImage:25
-        Dialogue:What? You defeated my brother at Midnight Hold? That proves nothing.
+        Dialogue:What? You defeated my brother at Midnight Hold? I will be sure to exact vengeance on you for that.
     Statement:
         Speaker:Loveflesh
         LeftImage:None
@@ -223,19 +223,94 @@ PostDialogue:
         Speaker:Loveflesh
         LeftImage:None
         RightImage:25
-        Dialogue:No! Sin and disobedience cannot lose to the likes of you.
+        Dialogue:Very well, I shall yield to you. You're sense of justice must be guiding your steady hand.
     Statement:
         Speaker:Captain Judgement
         LeftImage:15
         RightImage:None
-        Dialogue:Your power is broken. Now it is time for you to face judgment.
+        Dialogue:I... well... you do? I suppose it may be. I shall see all of you Diabolonians come to justice.
+    Statement:
+        Speaker:Loveflesh
+        LeftImage:None
+        RightImage:25
+        Dialogue:Yes, I see you are right. If only the other Diabolonians could see your judgment.
+    Statement:
+        Speaker:Captain Judgement
+        LeftImage:15
+        RightImage:None
+        Dialogue:I... Umm... Fear not, they will see it. I will make sure of it.
+    Statement:
+        Speaker:Loveflesh
+        LeftImage:None
+        RightImage:25
+        Dialogue:Nobody will be able to stand against your judgment. All shall fall to their knees before you.
+    Statement:
+        Speaker:Captain Judgement
+        LeftImage:15
+        RightImage:None
+        Dialogue:...
+    Statement:
+        Speaker:Captain Judgement
+        LeftImage:15
+        RightImage:None
+        Dialogue:Yes, they shall.
+    Statement:
+        Speaker:Loveflesh
+        LeftImage:None
+        RightImage:25
+        Dialogue:But are you really able to deal out your full judgment in current position? You must have a lot of distraction.
+    Statement:
+        Speaker:Captain Judgement
+        LeftImage:15
+        RightImage:None
+        Dialogue:Well... yes, there have been distractions. Perhaps I haven't been able to fully deal the judgment I've desired.
+    Statement:
+        Speaker:Loveflesh
+        LeftImage:None
+        RightImage:25
+        Dialogue:Prince Emmanuel isn't being fair to you then. He isn't allowing you to fully use your talents.
+    Statement:
+        Speaker:Captain Judgement
+        LeftImage:15
+        RightImage:None
+        Dialogue:Yes... yes... wait... no. Now I see your mind. You are tempting me against my Prince.
+    Statement:
+        Speaker:Captain Judgement
+        LeftImage:15
+        RightImage:None
+        Dialogue:I shall not disobey. I will trust my Prince uses me for the best. You and your stronghold will be destroyed.
+    Statement:
+        Speaker:Loveflesh
+        LeftImage:None
+        RightImage:25
+        Dialogue:That is what you think. But now that your guard is down I will defeat you here and now.
+    Statement:
+        Speaker:Loveflesh
+        LeftImage:None
+        RightImage:25
+        Dialogue:Taste my blade you-
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:You all have done well. Sin will no longer hold the people of Mansoul prisoner.
+        Dialogue:Not if I have anything to say about it.
+    Statement:
+        Speaker:Loveflesh
+        LeftImage:None
+        RightImage:25
+        Dialogue:AAAaaaauuugggghhh!
+    Statement:
+        Speaker:Captain Judgement
+        LeftImage:15
+        RightImage:None
+        Dialogue:Prince! Thank you for rescuing me. I... Have you been there the entire time?
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None
         RightImage:17
-        Dialogue:Behold, the keep lies before us. We are almost finished.
+        Dialogue:Yes, I have. I wouldn't allow you to be killed. But I wanted to see your confession of faith.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:None
+        RightImage:17
+        Dialogue:Captain, leave Captain Judgment to demolish this stronghold. Come with me to prepare assaulting the keep.

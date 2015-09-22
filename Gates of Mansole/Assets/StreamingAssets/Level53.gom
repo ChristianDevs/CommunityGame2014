@@ -35,15 +35,30 @@ PreDialogue:
         RightImage:None
         Dialogue:You say that Diabolus erected it after he took power? Then we must topple it.
     Statement:
-        Speaker:Spitegood
+        Speaker:Spitegod
         LeftImage:None
         RightImage:24
-        Dialogue:This is the Hold of Defiance and I... Spitegood... am it's governor.
+        Dialogue:This is the Hold of Defiance and I... Spitegod... am it's governor.
     Statement:
-        Speaker:Spitegood
+        Speaker:Spitegod
         LeftImage:None
         RightImage:24
-        Dialogue:Here is were I will defy your king and repay you for the blood of all Diabolonians you have spilled.
+        Dialogue:I will deny your attempts to topple my hold and defy your pathetic king.
+    Statement:
+        Speaker:Spitegod
+        LeftImage:None
+        RightImage:24
+        Dialogue:Curse you, Captain Boanurges. And curse your prince and your king and all of you!
+    Statement:
+        Speaker:Captain Boanurges
+        LeftImage:12
+        RightImage:None
+        Dialogue:I shall not allow you get away with such words! Captain, let's give him a glimpse of Prince Emmanuel's glory.
+    Statement:
+        Speaker:Spitegod
+        LeftImage:None
+        RightImage:24
+        Dialogue:Empty words, I shall gain revenge on you for all of the Diabolonian blood you've shed.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -171,19 +186,34 @@ PostDialogue:
         Speaker:Captain Boanurges
         LeftImage:12
         RightImage:None
-        Dialogue:Spitegood, you said you will repay me for the Diabolonian blood? You have forgotten revenge is not yours to get.
+        Dialogue:Spitegod, you said you will repay me for the Diabolonian blood? You have forgotten revenge is not yours to get.
     Statement:
         Speaker:Captain Boanurges
         LeftImage:12
         RightImage:None
-        Dialogue:Now you will receive your fate as punishment for standing against King Shaddai.
+        Dialogue:Curses you have spewed from your mouth, but they only ended on yourself.
     Statement:
-        Speaker:Spitegood
+        Speaker:Captain Boanurges
+        LeftImage:12
+        RightImage:None
+        Dialogue:Now you shall receive your fate as punishment for standing against King Shaddai.
+    Statement:
+        Speaker:Spitegod
         LeftImage:None
         RightImage:24
-        Dialogue:No! Aaauuuugggg.
+        Dialogue:No! I shall not acknowledge your king. I shall spite him all the way to the end.
+    Statement:
+        Speaker:Spitegod
+        LeftImage:None
+        RightImage:24
+        Dialogue:Aaauuuugggg!
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Well done. With the destruction of this stronghold the people will no longer defy the rule of King Shaddai.
+        Dialogue:Well done, captain. Now we shall tear down this stronghold so the citizens no longer defy King Shaddai.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:Let not one stone stand on another. The only trace of this place will be the rubble left-over.

@@ -42,17 +42,17 @@ PreDialogue:
         Speaker:Captain Judgment
         LeftImage:15
         RightImage:None
-        Dialogue:Good you arrived, captain. A Diabolonian named Antisiphone is giving me some trouble.
+        Dialogue:Good you arrived, captain. A Diabolonian named Antisiphone is fouling the air here at Nosegate.
     Statement:
         Speaker:Captain Judgment
         LeftImage:15
         RightImage:None
-        Dialogue:What is that? You know Antisiphone?
+        Dialogue:What is that? You know Antisiphone? What can you tell me about him?
     Statement:
         Speaker:Captain Judgment
         LeftImage:15
         RightImage:None
-        Dialogue:He killed Captain Resistance before Diabolus took over? We must do something about him-
+        Dialogue:He is the one who killed Captain Resistance when Diabolus took over?! When I get my hands on him I'll-
     Statement:
         Speaker:None
         LeftImage:15
@@ -62,7 +62,27 @@ PreDialogue:
         Speaker:Antisiphone
         LeftImage:None
         RightImage:3
-        Dialogue:I missed? Don't worry, I shall not miss next time.
+        Dialogue:I missed? Must have been a gust of wind. I will hit the mark next time.
+    Statement:
+        Speaker:Antisiphone
+        LeftImage:None
+        RightImage:3
+        Dialogue:The old captain is with you, I see. Word of your betrayal has spread all throughout our ranks.
+    Statement:
+        Speaker:Antisiphone
+        LeftImage:None
+        RightImage:3
+        Dialogue:My arrow of judgment will be swift and cause you great suffering.
+    Statement:
+        Speaker:Captain Judgment
+        LeftImage:15
+        RightImage:None
+        Dialogue:Strong words. But they are in vain. This captain is under the protection of Emmanuel now.
+    Statement:
+        Speaker:Captain Judgment
+        LeftImage:15
+        RightImage:None
+        Dialogue:There is forgiveness for the captain and the promose that your words hold no more power.
 Wave:1
     WaitTime:0
     WaveUnit:
@@ -1817,6 +1837,26 @@ PostDialogue:
         LeftImage:None
         RightImage:3
         Dialogue:Aaaauuuuggg...
+    Statement:
+        Speaker:Antisiphone
+        LeftImage:None
+        RightImage:3
+        Dialogue:Do you really think that prince has forgiven you? He is using you like Diabolus used you.
+    Statement:
+        Speaker:Antisiphone
+        LeftImage:None
+        RightImage:3
+        Dialogue:There... is... no...
+    Statement:
+        Speaker:Antisiphone
+        LeftImage:None
+        RightImage:3
+        Dialogue:...
+    Statement:
+        Speaker:Antisiphone
+        LeftImage:None
+        RightImage:3
+        Dialogue:forgiveness.
     Statement:
         Speaker:Captain Judgment
         LeftImage:15

@@ -38,16 +38,16 @@ PreDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Sally forth! All armies march toward the city center and then we take the keep.
+        Dialogue:Charge through the gates! All armies march toward the city center and then we take the keep.
     Statement:
         Speaker:Captain Goodhope
         LeftImage:None
         RightImage:16
         Dialogue:This looks to be a successful campaign so far. Let us make haste to victory!
     Statement:
-        Speaker:Captain Patience
+        Speaker:Captain Judgment
         LeftImage:None
-        RightImage:20
+        RightImage:15
         Dialogue:We don't have victory yet, don't let your guard down. These Diabolonians are crafty.
     Statement:
         Speaker:Captain Boanurges
@@ -1483,8 +1483,8 @@ Wave:11
         Tile:7:0
 PostDialogue:
     Statement:
-        Speaker:Captain Patience
-        LeftImage:20
+        Speaker:Captain Boanurges
+        LeftImage:12
         RightImage:None
         Dialogue:The city appears to be thinning of Diabolonians. Victory is within sight.
     Statement:
@@ -1493,12 +1493,12 @@ PostDialogue:
         RightImage:16
         Dialogue:Beware the clever Diabolonians. You never know when an army will appear.
     Statement:
-        Speaker:Captain Patience
-        LeftImage:20
+        Speaker:Captain Boanurges
+        LeftImage:12
         RightImage:None
         Dialogue:Ha! Well said, very well, let's keep our guard up until victory is secured.
     Statement:
-        Speaker:Captain Execution
+        Speaker:Captain Judgment
         LeftImage:None
         RightImage:15
         Dialogue:Good news! My army has found and rescued Mayor Understanding and Judge Consience.
@@ -1521,7 +1521,7 @@ PostDialogue:
         Speaker:Mayor Understanding
         LeftImage:4
         RightImage:None
-        Dialogue:She has fully given herself over to Diabolus. She now serves him and his will.
+        Dialogue:She has fully given herself over to Diabolus. She now serves him, enacting his will.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:None

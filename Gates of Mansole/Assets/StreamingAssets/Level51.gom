@@ -38,12 +38,32 @@ PreDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Captain, I am putting you in charge of taking Mouthgate, the last of the five gates.
+        Dialogue:Ah good, you're here. Captain Judgment sent a good report of your victory at Nosegate.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:According to reports from Captain Patience, Diabolus has a concentration of forces here.
+        Dialogue:What is that? You want to know if I really do forgive what you've done?
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:Unlike Diabolus, my word is true and I will not change my mind. Your forgiveness will stand.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:Do not dwell in the passed of darkness and despair. Look forward to bright future.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:Now, I am putting you in charge of taking Mouthgate, the last of the five gates.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:According to reports from Captain Boanurges, Diabolus has a concentration of forces here.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
@@ -167,7 +187,7 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:The people of the city will see it and know that I've come.
+        Dialogue:The people of the city will see it and know that I've come. This is a sign to them.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17

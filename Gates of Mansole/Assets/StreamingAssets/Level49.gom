@@ -44,27 +44,32 @@ PreDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Captain, I hear from Captain Credence that the siege at Feelgate does not go well.
+        Dialogue:Captain, well done at Eargate and Eyegate. These are very important to hold.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Go and provide your expert combat assistance there.
+        Dialogue:What is that? Why not march through one of the gates and then take the city?
     Statement:
-        Speaker:Captain Credence
-        LeftImage:None
-        RightImage:14
-        Dialogue:Well met again. Yes, we are having trouble getting over the wall.
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:These gates each have special powers. While even one is held by Diabolus we cannot rid the city of his corruption
     Statement:
-        Speaker:Captain Credence
-        LeftImage:None
-        RightImage:14
-        Dialogue:What was that? Prince Emmanuel sent you to assist?
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:Eargate holds sway over what the citizen hear and Eyegate influences what they see. This is my Father's design
     Statement:
-        Speaker:Captain Credence
-        LeftImage:None
-        RightImage:14
-        Dialogue:I would welcome all the help I can get.
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:Next, we need to retake Feelgate. Can I trust you to go and siege that gate?
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:I can?! Then go with my blessing and do your best.
 Wave:
     WaitTime:0
     WaveUnit:
@@ -189,16 +194,6 @@ Wave:
         RespawnTime:11
 PostDialogue:
     Statement:
-        Speaker:Captain Credence
-        LeftImage:None
-        RightImage:14
-        Dialogue:Victory! We could not have won had Prince Emmanuel not sent you.
-    Statement:
-        Speaker:Captain Credence
-        LeftImage:None
-        RightImage:14
-        Dialogue:Go and report back to him what has happened here.
-    Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
@@ -207,7 +202,17 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Victory at Feelgate? Excellent news! That means we have taken over half of the gates.
+        Dialogue:Another report of victory? I must say, captain, you proving yourself positively reliable.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:If you keep it up I fear I may send you to lead my armies more frequently, heh.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:We've taken over half of the gates in the name of King Shaddai. But we still have work to do.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17

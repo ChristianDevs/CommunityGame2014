@@ -29,12 +29,22 @@ PreDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Captain, now that we've stormed the castle we need to take the armory next.
+        Dialogue:That crafty serpent will try to wiggle and squeeze for any allowance he can get.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Without their access to the supply of weapons their ability to fight back will be crippled.
+        Dialogue:Cutting off his supply of weapons will criple his ability to fight back.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:My other captains are busy pushing back his forces elsewhere in the keep.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:I've decided to entrust this special mission to you. Go and take the armory.
 Wave:1
     WaitTime:0
     WaveUnit:
@@ -1502,12 +1512,22 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:With the weapons in the armory secure our final task is to storm the throne room.
+        Dialogue:You have the armory secure? Good, now we have a strangehold on Diabolus now.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:What is that? You are worried about facing the one who led you astray?
+        Dialogue:I have received word that we've pushed Diabolus' forces back to the great throne room.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:Thus far, captain, you have served me well. When all is done here I will make sure you are rewarded.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:I know you have your past, but all of my captains have their own past. And none of them are perfect.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17

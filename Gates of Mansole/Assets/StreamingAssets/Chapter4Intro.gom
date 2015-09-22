@@ -13,7 +13,7 @@ entry
 	ImageLeft:12
 	ImageRight:None
 	Speaker:Captain Boanurges
-	Dialogue:My prince, there she lies. The once shining gem of Mansoul. Now ruined by Diabolus' influence.
+	Dialogue:My prince, there she lies. The once shining gem of Mansoul. Now ruined by Diabolus' corrupting influence.
 	ShowTime:10
 entry
 	Music:0
@@ -26,17 +26,17 @@ entry
 entry
 	Music:0
 	Background:3
-	ImageLeft:13
+	ImageLeft:15
 	ImageRight:None
-	Speaker:Captain Conviction
+	Speaker:Captain Judgment
 	Dialogue:Prince Emmanuel, preparations are complete for the siege of the city. Just say the word and-
 	ShowTime:10
 entry
 	Music:0
 	Background:3
-	ImageLeft:20
+	ImageLeft:16
 	ImageRight:None
-	Speaker:Captain Patience
+	Speaker:Captain Goodhope
 	Dialogue:News from the city, prince. Diabolus awaits for negotiations at Mouthgate.
 	ShowTime:10
 entry
@@ -93,7 +93,7 @@ entry
 	ImageLeft:2
 	ImageRight:None
 	Speaker:Diabolus
-	Dialogue:Leave me to my just inheritance in peace.
+	Dialogue:Leave me to my just inheritance in peace. Go away and cause no trouble here.
 	ShowTime:10
 entry
 	Music:0
@@ -101,7 +101,7 @@ entry
 	ImageLeft:None
 	ImageRight:17
 	Speaker:Prince Emmanuel
-	Dialogue:Because of you, Mansoul is a miserable and wretched place! You ahve defaced my father's image and setup your own.
+	Dialogue:Because of you, Mansoul is a miserable and wretched place! You have defaced my father's image and setup your own.
 	ShowTime:10
 entry
 	Music:0

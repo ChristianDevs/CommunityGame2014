@@ -18,9 +18,9 @@ entry
 entry
 	Music:0
 	Background:3
-	ImageLeft:12
+	ImageLeft:15
 	ImageRight:2
-	Speaker:Captain Execution
+	Speaker:Captain Judgment
 	Dialogue:I have captured Diabolus, shall we execute his sentance now? He's done enough ill to the people of the city.
 	ShowTime:10
 entry
@@ -166,6 +166,70 @@ entry
 	ImageRight:None
 	Speaker:Prince Emmanuel
 	Dialogue:Till next we meet... Fare thee well.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:...
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:None
+	Speaker:Prince Emmanuel
+	Dialogue:One more thing, I speak to you, captain of the guard of the city of Mansoul.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:None
+	Speaker:Prince Emmanuel
+	Dialogue:Despite your falling into Diabolus' web of lies, you've proven that really do have faith in me.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:None
+	Speaker:Prince Emmanuel
+	Dialogue:I must say, well done, good and faithful servant. I am glad that made the choice to follow me again.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:None
+	Speaker:Prince Emmanuel
+	Dialogue:And now, I wish to call you away from here. Come with me and serve under me at my father's court.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:None
+	Speaker:Prince Emmanuel
+	Dialogue:There is no lack for meaningful work. And I suspect I have a task which will be perfect for you.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:17
+	ImageRight:None
+	Speaker:Prince Emmanuel
+	Dialogue:But, for now, come and join the other captains in your master's happiness.
+	ShowTime:10
+entry
+	Music:0
+	Background:3
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:The End.
 	ShowTime:10
 entry
 	Music:0

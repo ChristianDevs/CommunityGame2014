@@ -31,15 +31,15 @@ PreDialogue:
         Speaker:LovenoLight
         LeftImage:None
         RightImage:26
-        Dialogue:Now, the traitor has come to try and tear it down.
+        Dialogue:Now, the traitor has come to try and tear it down. I suppose hatred is in your nature.
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:8
+        Speaker:Captain Goodhope
+        LeftImage:16
         RightImage:None
         Dialogue:The captain here was a traitor when he helped you and your Lord gain power in the city.
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:8
+        Speaker:Captain Goodhope
+        LeftImage:16
         RightImage:None
         Dialogue:But he is a traitor no longer for he is now on the side of righteousness.
     Statement:
@@ -47,6 +47,16 @@ PreDialogue:
         LeftImage:None
         RightImage:26
         Dialogue:Your words matter not, I shall throw your lines into chaos and defeat your measly army.
+    Statement:
+        Speaker:LovenoLight
+        LeftImage:None
+        RightImage:26
+        Dialogue:Perhaps you can fight well enough in the light, but you will surely stumble and fall in the darkness.
+    Statement:
+        Speaker:Captain Goodhope
+        LeftImage:16
+        RightImage:None
+        Dialogue:With Prince Emmanuel leading us I shall fear no darkness.
 Wave:1
     WaitTime:0
     WaveUnit:
@@ -1574,24 +1584,29 @@ PostDialogue:
         Speaker:LovenoLight
         LeftImage:None
         RightImage:26
+        Dialogue:Grrr... How could I be defeated by the likes of you?
+    Statement:
+        Speaker:Captain Goodhope
+        LeftImage:16
+        RightImage:None
+        Dialogue:Darkness vanishes when the light comes. The same goes for you and your stronghold.
+    Statement:
+        Speaker:LovenoLight
+        LeftImage:None
+        RightImage:26
         Dialogue:Grrr... even though you defeat me here, you won't get passed my brother.
     Statement:
         Speaker:LovenoLight
         LeftImage:None
         RightImage:26
-        Dialogue:I've known nobody who can stand against LoveFlesh.
+        Dialogue:I've known nobody who can resist the temptations of LoveFlesh.
     Statement:
-        Speaker:Captain Conviction
-        LeftImage:8
+        Speaker:Captain Goodhope
+        LeftImage:16
         RightImage:None
-        Dialogue:Your brother shall be defeated and suffer the same fate as you.
+        Dialogue:Your brother shall be defeated and suffer the same fate as you. Now face your execution.
     Statement:
-        Speaker:Prince Emmanuel
-        LeftImage:None
-        RightImage:17
-        Dialogue:And captain, worry not. All here with me has a past they must overcome.
-    Statement:
-        Speaker:Prince Emmanuel
-        LeftImage:None
-        RightImage:17
-        Dialogue:The destruction of this hold is a new dawn the people will see.
+        Speaker:Captain Goodhope
+        LeftImage:16
+        RightImage:None
+        Dialogue:Captain, I shall see this stronghold is torn down. Go with the Prince to assail the last one.

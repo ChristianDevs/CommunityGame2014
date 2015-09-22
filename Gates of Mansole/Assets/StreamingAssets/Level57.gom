@@ -34,7 +34,7 @@ PreDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Here we are, the gates of the keep. Victory here is victory at the very heart of Mansoul.
+        Dialogue:Here we are, the gates of the keep. Victory here is! Victory at the very heart of Mansoul.
     Statement:
         Speaker:Diabolus
         LeftImage:None
@@ -44,7 +44,7 @@ PreDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:I suppose you have negotiations you wish make?
+        Dialogue:I suppose you have negotiations you wish make then?
     Statement:
         Speaker:Diabolus
         LeftImage:None
@@ -231,7 +231,7 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Lady, it has been a while. You used to be my advocate in Mansoul, but I heard reports your heart changed.
+        Dialogue:Lady, it has been a while. You used to be my advocate in Mansoul, but your heart has changed.
     Statement:
         Speaker:Lady Willbewill
         LeftImage:None
@@ -251,4 +251,4 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Captain, now that we've stormed the castle we need to take the armory next
+        Dialogue:Captain, now that we've breached the gates of the keep we need to take the armory next.

@@ -184,19 +184,39 @@ PostDialogue:
         Speaker:Illpause
         LeftImage:None
         RightImage:6
-        Dialogue:Grrr... I won't let you take control of this gate. Chaaaarrrge!
+        Dialogue:Grrr... I can't lose here. I won't let you take control of this gate. 
     Statement:
         Speaker:Captain Goodhope
         LeftImage:16
         RightImage:None
-        Dialogue:Hah! Taste my steel, foul Diabolonian.
+        Dialogue:Face my cold hard steel, Diabolonian. You're no match for me.
     Statement:
         Speaker:Illpause
         LeftImage:None
         RightImage:6
-        Dialogue:No! Aaaaaauuuggg...
+        Dialogue:Cold hard steel is no good if you haven't the skill to use it.
     Statement:
         Speaker:Captain Goodhope
         LeftImage:16
         RightImage:None
-        Dialogue:Pitiful... Such recklessness always leads to defeat. Well done on the victory captain.
+        Dialogue:And all the skill in the world is no good if you hesitate at the most crucial time.
+    Statement:
+        Speaker:Illpause
+        LeftImage:None
+        RightImage:6
+        Dialogue:?
+    Statement:
+        Speaker:Captain Goodhope
+        LeftImage:16
+        RightImage:None
+        Dialogue:YYYyyaahhh!
+    Statement:
+        Speaker:Illpause
+        LeftImage:None
+        RightImage:6
+        Dialogue:Uuuggccckkk... How... could... I... fall?
+    Statement:
+        Speaker:Captain Goodhope
+        LeftImage:16
+        RightImage:None
+        Dialogue:And that is that. Captain, go and report back to Prince Emmanuel.

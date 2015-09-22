@@ -49,9 +49,9 @@ PreDialogue:
         RightImage:16
         Dialogue:Yes, my prince. If he is nearby he won't escape.
     Statement:
-        Speaker:Captain Patience
+        Speaker:Captain Judgment
         LeftImage:None
-        RightImage:20
+        RightImage:15
         Dialogue:Prince, something is wrong with the door leading out of the throne room. It won't open!
     Statement:
         Speaker:Prince Emmanuel

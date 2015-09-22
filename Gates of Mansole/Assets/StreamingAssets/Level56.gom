@@ -41,9 +41,9 @@ PreDialogue:
         RightImage:12
         Dialogue:Don't take too long now, I see the Diabolonians are rallying against us here.
     Statement:
-        Speaker:Captain Patience
-        LeftImage:17
-        RightImage:20
+        Speaker:Captain Judgment
+        LeftImage:None
+        RightImage:15
         Dialogue:We can't rush the planning. One wrong move and we may face defeat.
     Statement:
         Speaker:Prince Emmanuel
@@ -51,18 +51,18 @@ PreDialogue:
         RightImage:None
         Dialogue:Do not be anxious, my captains. Ready our defenses against the waves of Diabolonian assaults.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:Forward Diabolonians! Hold against the advances of the oppressive rule of the old king.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:You again? Are you still spouting that nonsense? I already told you how your ideas are unfounded.
+        Dialogue:Lady Willbewill? Are you still spouting that nonsense? I already told you how your ideas are unfounded.
     Statement:
-        Speaker:Lieutenant Captain
-        LeftImage:10
+        Speaker:Lady Willbewill
+        LeftImage:7
         RightImage:None
         Dialogue:I won't listen to your lies. Face me on the field of battle.
 Wave:1
@@ -1092,22 +1092,27 @@ PostDialogue:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Someone tell me, what happened to that poor deluded man? The lieutenant captain...
+        Dialogue:Someone tell me, what happened to that poor deluded woman? The Lady Willbewill...
     Statement:
         Speaker:Captain Goodhope
         LeftImage:None
         RightImage:16
-        Dialogue:I know not, I didn't see him after the battle started.
+        Dialogue:After the battle began I lost sight of her. I don't know if she fell or fled.
     Statement:
-        Speaker:Captain Judgment
+        Speaker:Captain Boanurges
         LeftImage:None
-        RightImage:15
-        Dialogue:I saw him. He took an arrow in the chest and fell on the field.
+        RightImage:12
+        Dialogue:I saw her toward the beginning. I think she fled toward the middle of the battle, when it became clear we would win.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Pity... I hoped I could redeem him, but his heart was too hard.
+        Dialogue:Pity... I hoped I could redeem her, but her heart is too hard.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:Regardless of what she had done, if she came to me and asked forgiveness.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17

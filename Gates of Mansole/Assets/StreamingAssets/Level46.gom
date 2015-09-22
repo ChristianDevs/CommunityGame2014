@@ -54,20 +54,20 @@ PreDialogue:
         RightImage:12
         Dialogue:Prince, our army is ready to siege mouthgate. We only await your command.
     Statement:
-        Speaker:Captain Patience
+        Speaker:Captain Judgment
         LeftImage:None
-        RightImage:20
+        RightImage:15
         Dialogue:I bear news from the front lines, Prince Emmanuel.
     Statement:
-        Speaker:Prince Emmanuel
-        LeftImage:17
-        RightImage:None
-        Dialogue:Speak quickly, my good captain.
+        Speaker:Captain Judgment
+        LeftImage:None
+        RightImage:15
+        Dialogue:Diabolus has rallied his Diabolonian soldiers and is marching on our camp as we speak.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:You heard him captain, defeat this advance so we can siege the gate.
+        Dialogue:You heard him captain, defeat this advance so we can begin our siege.
 Wave:1
     WaitTime:0
     WaveUnit:
@@ -1117,15 +1117,15 @@ PostDialogue:
         RightImage:None
         Dialogue:Well done on this victory. The whole of the city will surely be ours.
     Statement:
-        Speaker:Captain Patience
+        Speaker:Captain Goodhope
         LeftImage:None
-        RightImage:20
-        Dialogue:Prince, a messenger comes from Diabolus.
+        RightImage:16
+        Dialogue:Prince, a messenger comes from Diabolus. He wants to speak to you, personally.
     Statement:
         Speaker:Prince Emmanuel
         LeftImage:17
         RightImage:None
-        Dialogue:Perhaps he sees the folly of his stubborness. Let him speak.
+        Dialogue:Perhaps he sees the folly of his stubborness and wishes to surrender? I doubt it. But let him speak.
     Statement:
         Speaker:Compromise
         LeftImage:17
