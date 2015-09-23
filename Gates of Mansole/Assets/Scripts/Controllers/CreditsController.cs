@@ -64,6 +64,7 @@ public class CreditsController : MonoBehaviour {
 		Credits.Add ("Santiago Iborra \n http://opengameart.org/\n content/\n border-patrol \n http://opengameart.org/\n content/\n imperial-guard");
 		Credits.Add ("Kirill777 \n http://opengameart.org/\n content/\n soldier-0 \n http://opengameart.org/\n content/stels");
 		Credits.Add ("Adrix89 \n Recolor Nushio snow");
+		Credits.Add ("Scribe \n http://opengameart.org/\n content/\n background-scene");
 		Credits.Add ("julien-matthy, spookymodem, tinyworlds, reemax \n Misc. Sound Effects");
 		Credits.Add ("** God **");
 
