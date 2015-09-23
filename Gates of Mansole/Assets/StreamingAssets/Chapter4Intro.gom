@@ -1,6 +1,6 @@
 entry
 	Music:0
-	Background:3
+	Background:8
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
@@ -9,7 +9,7 @@ entry
 	Action:1
 entry
 	Music:0
-	Background:3
+	Background:8
 	ImageLeft:12
 	ImageRight:None
 	Speaker:Captain Boanurges
@@ -17,7 +17,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:8
 	ImageLeft:None
 	ImageRight:17
 	Speaker:Prince Emmanuel
@@ -25,7 +25,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:8
 	ImageLeft:15
 	ImageRight:None
 	Speaker:Captain Judgment
@@ -33,7 +33,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:8
 	ImageLeft:16
 	ImageRight:None
 	Speaker:Captain Goodhope
@@ -41,7 +41,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:8
 	ImageLeft:None
 	ImageRight:17
 	Speaker:Prince Emmanuel
@@ -49,7 +49,25 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:8
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:1
+	Action:2
+entry
+	Music:0
+	Background:4
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:1
+	Action:1
+entry
+	Music:0
+	Background:4
 	ImageLeft:2
 	ImageRight:None
 	Speaker:Diabolus
@@ -57,7 +75,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:2
 	ImageRight:None
 	Speaker:Diabolus
@@ -65,7 +83,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:None
 	ImageRight:17
 	Speaker:Prince Emmanuel
@@ -73,7 +91,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:None
 	ImageRight:17
 	Speaker:Prince Emmanuel
@@ -81,7 +99,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:2
 	ImageRight:None
 	Speaker:Diabolus
@@ -89,7 +107,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:2
 	ImageRight:None
 	Speaker:Diabolus
@@ -97,7 +115,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:None
 	ImageRight:17
 	Speaker:Prince Emmanuel
@@ -105,7 +123,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:None
 	ImageRight:17
 	Speaker:Prince Emmanuel
@@ -113,7 +131,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:2
 	ImageRight:None
 	Speaker:Diabolus
@@ -121,7 +139,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None

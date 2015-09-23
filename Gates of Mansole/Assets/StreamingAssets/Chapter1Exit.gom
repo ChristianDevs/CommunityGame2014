@@ -9,7 +9,7 @@ entry
 	Action:1
 entry
 	Music:0
-	Background:0
+	Background:5
 	ImageLeft:4
 	ImageRight:None
 	Speaker:Mayor Understanding
@@ -17,7 +17,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:5
 	ImageLeft:5
 	ImageRight:None
 	Speaker:Judge Conscience
@@ -25,7 +25,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:5
 	ImageLeft:7
 	ImageRight:None
 	Speaker:Lady Willbewill
@@ -41,7 +41,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:5
 	ImageLeft:0
 	ImageRight:2
 	Speaker:Diabolus
@@ -49,7 +49,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:5
 	ImageLeft:None
 	ImageRight:2
 	Speaker:Diabolus
@@ -57,7 +57,33 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:5
+	ImageLeft:None
+	ImageRight:2
+	Speaker:Diabolus
+	Dialogue:It is now time for me to address the people... My people.
+	ShowTime:10
+entry
+	Music:0
+	Background:5
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:1
+	Action:2
+entry
+	Music:0
+	Background:4
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:1
+	Action:1
+entry
+	Music:0
+	Background:4
 	ImageLeft:None
 	ImageRight:2
 	Speaker:Diabolus
@@ -65,23 +91,23 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
-	ImageLeft:0
+	Background:4
+	ImageLeft:None
 	ImageRight:2
 	Speaker:Diabolus
 	Dialogue:No longer will inequality spew forth from this city like a vile poison to the Diabolonians.
 	ShowTime:10
 entry
 	Music:0
-	Background:0
-	ImageLeft:0
+	Background:4
+	ImageLeft:None
 	ImageRight:2
 	Speaker:Diabolus
 	Dialogue:Today marks a bright new chapter in Mansoul's history. A new legacy begins today!
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:4
 	ImageLeft:None
 	ImageRight:2
 	Speaker:Diabolus
@@ -89,7 +115,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:4
 	ImageLeft:None
 	ImageRight:2
 	Speaker:Diabolus
@@ -97,7 +123,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:4
 	ImageLeft:None
 	ImageRight:2
 	Speaker:Diabolus
@@ -105,7 +131,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:4
 	ImageLeft:None
 	ImageRight:2
 	Speaker:Diabolus
@@ -113,7 +139,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:4
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None

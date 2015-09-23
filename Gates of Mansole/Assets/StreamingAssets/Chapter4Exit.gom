@@ -1,6 +1,6 @@
 entry
 	Music:0
-	Background:3
+	Background:5
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
@@ -9,7 +9,7 @@ entry
 	Action:1
 entry
 	Music:0
-	Background:3
+	Background:5
 	ImageLeft:None
 	ImageRight:16
 	Speaker:Captain Goodhope
@@ -17,7 +17,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:5
 	ImageLeft:15
 	ImageRight:2
 	Speaker:Captain Judgment
@@ -25,7 +25,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:5
 	ImageLeft:17
 	ImageRight:2
 	Speaker:Prince Emmanuel
@@ -33,7 +33,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:5
 	ImageLeft:17
 	ImageRight:2
 	Speaker:Prince Emmanuel
@@ -41,7 +41,25 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:5
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:1
+	Action:2
+entry
+	Music:0
+	Background:4
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:1
+	Action:1
+entry
+	Music:0
+	Background:4
 	ImageLeft:None
 	ImageRight:11
 	Speaker:Merchant
@@ -49,7 +67,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
@@ -57,7 +75,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:None
 	ImageRight:5
 	Speaker:Judge Conscience
@@ -65,7 +83,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
@@ -73,7 +91,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:None
 	ImageRight:4
 	Speaker:Mayor Understanding
@@ -81,7 +99,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:None
 	ImageRight:5
 	Speaker:Judge Conscience
@@ -89,7 +107,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:None
 	ImageRight:4
 	Speaker:Mayor Understanding
@@ -97,7 +115,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
@@ -105,7 +123,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
@@ -113,7 +131,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
@@ -121,7 +139,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:17
 	ImageRight:9
 	Speaker:Prince Emmanuel
@@ -129,7 +147,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
@@ -137,7 +155,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:17
 	ImageRight:0
 	Speaker:Captain Resistance
@@ -145,7 +163,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Lord Innocence
@@ -153,7 +171,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
@@ -161,7 +179,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
@@ -169,15 +187,25 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:4
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:...
-	ShowTime:10
+	Dialogue:None
+	ShowTime:1
+	Action:2
 entry
 	Music:0
-	Background:3
+	Background:6
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:1
+	Action:1
+entry
+	Music:0
+	Background:6
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
@@ -185,7 +213,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:6
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
@@ -193,7 +221,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:6
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
@@ -201,7 +229,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:6
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
@@ -209,7 +237,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:6
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
@@ -217,7 +245,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:6
 	ImageLeft:17
 	ImageRight:None
 	Speaker:Prince Emmanuel
@@ -225,7 +253,7 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:6
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
@@ -233,10 +261,10 @@ entry
 	ShowTime:10
 entry
 	Music:0
-	Background:3
+	Background:6
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
 	Dialogue:None
-	ShowTime:2
+	ShowTime:8
 	Action:2

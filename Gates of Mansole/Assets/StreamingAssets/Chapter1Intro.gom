@@ -13,7 +13,7 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:In the world known as Universe lies a land richly adorned with rivers and valleys, and a very sweet air.
+	Dialogue:In the world known as Universe lies a land richly adorned with rivers and valleys, and very sweet air.
 	ShowTime:10
 	Action:0
 entry
@@ -31,12 +31,30 @@ entry
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:Dwelling betwixt flowing rivers lies a marvelous city known as Mansoul that rises up among the plains as a lofty hill.
+	Dialogue:Dwelling between flowing rivers sits a marvelous city known as Mansoul that rises up among the plains as a lofty hill.
 	ShowTime:10
 	Action:0
 entry
 	Music:0
 	Background:0
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:1
+	Action:2
+entry
+	Music:0
+	Background:4
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:1
+	Action:1
+entry
+	Music:0
+	Background:4
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
@@ -45,7 +63,7 @@ entry
 	Action:0
 entry
 	Music:0
-	Background:0
+	Background:4
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
@@ -54,31 +72,49 @@ entry
 	Action:0
 entry
 	Music:0
-	Background:0
+	Background:4
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:But almost out of mind of the citizens, an evil threat of darkness looms on it's borders.
+	Dialogue:But almost out of mind of the citizens, an evil threat of darkness loomed on it's borders.
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:4
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:With this growing and gray cloud of uncertain future, can the people of Mansoul remain good and true?
+	Dialogue:With this growing and gray cloud of uncertain future, could the people of Mansoul remain good and true?
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:4
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
-	Dialogue:Only time will tell...
+	Dialogue:Only time would tell...
 	ShowTime:10
 entry
 	Music:0
-	Background:0
+	Background:4
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:1
+	Action:2
+entry
+	Music:0
+	Background:5
+	ImageLeft:None
+	ImageRight:None
+	Speaker:None
+	Dialogue:None
+	ShowTime:1
+	Action:1
+entry
+	Music:0
+	Background:5
 	ImageLeft:0
 	ImageRight:None
 	Speaker:Captain Resistance
@@ -87,7 +123,7 @@ entry
 	Action:0
 entry
 	Music:0
-	Background:0
+	Background:5
 	ImageLeft:0
 	ImageRight:None
 	Speaker:Captain Resistance
@@ -96,7 +132,7 @@ entry
 	Action:0
 entry
 	Music:0
-	Background:0
+	Background:5
 	ImageLeft:0
 	ImageRight:None
 	Speaker:Captain Resistance
@@ -105,7 +141,7 @@ entry
 	Action:0
 entry
 	Music:0
-	Background:0
+	Background:5
 	ImageLeft:0
 	ImageRight:None
 	Speaker:Captain Resistance
@@ -114,7 +150,7 @@ entry
 	Action:0
 entry
 	Music:0
-	Background:0
+	Background:5
 	ImageLeft:0
 	ImageRight:None
 	Speaker:Captain Resistance
@@ -123,7 +159,7 @@ entry
 	Action:0
 entry
 	Music:0
-	Background:0
+	Background:5
 	ImageLeft:None
 	ImageRight:None
 	Speaker:None
