@@ -335,7 +335,7 @@ public class WaveList : MonoBehaviour {
 					unitList.Add(levelData[i].Split(seps)[unitListInd]);
 				}
 
-				selUnit = unitList[Random.Range(0, unitList.Count)];
+				selUnit = unitList[Random.Range(0, unitList.Count)].TrimStart().TrimEnd();
 
 				foreach (GameObject ut in unitTypes) {
 					if (selUnit == ut.GetComponent<UiUnitType>().UnitName) {
