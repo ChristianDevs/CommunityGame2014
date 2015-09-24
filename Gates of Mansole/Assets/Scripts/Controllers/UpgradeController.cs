@@ -256,7 +256,7 @@ public class UpgradeController : MonoBehaviour {
 					Debug.Log("Upgraded Ability " + abilityIndex);
                     Player.AddOrbs(-orbCost);
 					UpdateDisplay();
-					upgrades[selectedType].GetComponent<SpriteRenderer>().color = Color.white;
+					upgrades[selectedType - 5].GetComponent<SpriteRenderer>().color = Color.white;
                 }
             }
 			break;

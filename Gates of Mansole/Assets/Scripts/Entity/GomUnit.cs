@@ -52,6 +52,7 @@ public class GomUnit : GomObject {
 
 	private bool paused;
 	private float invincibleEndTime;
+	private GameObject invincibleIcon;
 	public PropertyStats miscStats;
 
 	public float fallPercent;
@@ -280,10 +281,19 @@ public class GomUnit : GomObject {
 		invincibleEndTime = Time.time + duration;
 	}
 	
+	void SetInvincibleIcon(GameObject icon) {
+		Color col = Color.white;
+		col.a = 0.5f;
+
+		invincibleIcon = Instantiate(icon, transform.position, Quaternion.identity) as GameObject;
+		invincibleIcon.GetComponent<SpriteRenderer> ().color = col;
+	}
+	
 	// Use this for initialization
 	void Start () {
         HpBarPos = new Vector3(transform.position.x - 0.3f, transform.position.y + 0.4f);
         HpBarMidScale = 5.75f;
+		invincibleIcon = null;
 
         // Instantiate the health bars
 		if (BarEmptyLeft != null) {
@@ -310,6 +320,13 @@ public class GomUnit : GomObject {
 	}
 	
 	void Update() {
+
+		if (invincibleEndTime < Time.time) {
+			if (invincibleIcon != null) {
+				Destroy(invincibleIcon);
+			}
+		}
+
 		// Instantiate the health bars
 		if ((HpLeftBar == null) && (BarEmptyLeft != null)) {
 			HpLeftBar = Instantiate(BarEmptyLeft, HpBarPos, Quaternion.identity) as GameObject;

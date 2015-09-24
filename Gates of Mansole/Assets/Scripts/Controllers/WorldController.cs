@@ -112,7 +112,6 @@ public class WorldController : MonoBehaviour {
 	private List<GameObject> wallSegments;
 	
 	// For Unit Freeze ability
-	private List<GameObject> freezeIcons;
 	private float freezeEndTime;
 	private float camNextMoveTime;
 	private Vector3 origMapPos;
@@ -1376,17 +1375,36 @@ public class WorldController : MonoBehaviour {
 		
 		tile = map.GetComponent<UiTiles>().GetMouseOverTile();
 		
-		if ((tile.row != -1) && (tile.col != -1)) {
+		if ((tile.row != -1) && (tile.col != -1) && (currentLevel.GetComponent<WaveList>().laneEnable[tile.row])) {
 			newPos = new Vector3(map.transform.position.x,
 			                     map.transform.position.y + ((float)tile.row * map.transform.localScale.y) + TileUnitOffset);
 			selectedUiAbility.transform.position = newPos;
+
+			if (placementBoxes != null) {
+				foreach (GameObject pb in placementBoxes) {
+					Destroy(pb);
+				}
+			}
+			
+			placementBoxes = new List<GameObject>();
+			for (int col = 0; col < gridSize.col; col++) {
+				Vector3 boxLoc = map.GetComponent<UiTiles>().lanes[tile.row].GetComponent<UiRow>().rowTiles[col].transform.position;
+				
+				boxLoc += new Vector3(0, 0.25f, 0);
+				placementBoxes.Add(Instantiate(validBoxPrefab, boxLoc, Quaternion.identity) as GameObject);
+			}
 		}
 		
 		if (Input.GetMouseButtonUp(0)) {
 			
-			if ((tile.row >= 0) && (tile.row < gridSize.row) && (selectedAbility.GetComponent<Ability>().getUseCost() <= Player.spiritShards)) {
+			if ((tile.row >= 0) && (tile.row < gridSize.row) && (currentLevel.GetComponent<WaveList>().laneEnable[tile.row]) &&
+			    (selectedAbility.GetComponent<Ability>().getUseCost() <= Player.spiritShards)) {
 				float xTilePos;
 				float yTilePos;
+				
+				foreach (GameObject pb in placementBoxes) {
+					Destroy(pb);
+				}
 				
 				Debug.Log(selectedAbility.GetComponent<Ability>().abilityName);
 				
@@ -1433,17 +1451,87 @@ public class WorldController : MonoBehaviour {
 		
 		tile = map.GetComponent<UiTiles>().GetMouseOverTile();
 		
-		if ((tile.row != -1) && (tile.col != -1)) {
+		if ((tile.row != -1) && (tile.col != -1) && (currentLevel.GetComponent<WaveList>().laneEnable[tile.row])) {
 			newPos = new Vector3(map.transform.position.x + ((float)tile.col * map.transform.localScale.x),
 			                     map.transform.position.y + ((float)tile.row * map.transform.localScale.y) + TileUnitOffset);
 			selectedUiAbility.transform.position = newPos;
+			
+			if (placementBoxes != null) {
+				foreach (GameObject pb in placementBoxes) {
+					Destroy(pb);
+				}
+			}
+			
+			placementBoxes = new List<GameObject>();
+
+			// Handle the middle row
+			for (int colInd = tile.col - selectedAbility.GetComponent<Ability>().getAreaOfEffect();
+			     colInd < tile.col + selectedAbility.GetComponent<Ability>().getAreaOfEffect() + 1;
+			     colInd++) {
+				
+				if (colInd < 0) {
+					continue;
+				}
+				
+				if (colInd >= gridSize.col) {
+					continue;
+				}
+				
+				Vector3 boxLoc = map.GetComponent<UiTiles>().lanes[tile.row].GetComponent<UiRow>().rowTiles[colInd].transform.position;
+				
+				boxLoc += new Vector3(0, 0.25f, 0);
+				placementBoxes.Add(Instantiate(validBoxPrefab, boxLoc, Quaternion.identity) as GameObject);
+			}
+			
+			// Handle each row above the middle
+			for (int rowInd = 1; rowInd <= selectedAbility.GetComponent<Ability>().getAreaOfEffect(); rowInd++) {
+				int rowRange = selectedAbility.GetComponent<Ability>().getAreaOfEffect() - rowInd;
+				
+				if ((rowInd + tile.row) >= gridSize.row) {
+					continue;
+				}
+				
+				for (int colInd = tile.col - rowRange; colInd < tile.col + rowRange + 1; colInd++) {
+					if ((colInd >= 0) && (colInd < gridSize.col)) {
+						Vector3 boxLoc = map.GetComponent<UiTiles>().lanes[rowInd + tile.row].GetComponent<UiRow>().rowTiles[colInd].transform.position;
+						
+						boxLoc += new Vector3(0, 0.25f, 0);
+						placementBoxes.Add(Instantiate(validBoxPrefab, boxLoc, Quaternion.identity) as GameObject);
+					}
+				}
+			}
+			
+			// Handle each row below the middle
+			for (int rowInd = 1; rowInd <= selectedAbility.GetComponent<Ability>().getAreaOfEffect(); rowInd++) {
+				int rowRange = selectedAbility.GetComponent<Ability>().getAreaOfEffect() - rowInd;
+				
+				if ((tile.row - rowInd) < 0) {
+					continue;
+				}
+				
+				for (int colInd = tile.col - rowRange; colInd < tile.col + rowRange + 1; colInd++) {
+					if ((colInd >= 0) && (colInd < gridSize.col)) {
+						Vector3 boxLoc = map.GetComponent<UiTiles>().lanes[tile.row - rowInd].GetComponent<UiRow>().rowTiles[colInd].transform.position;
+						
+						boxLoc += new Vector3(0, 0.25f, 0);
+						placementBoxes.Add(Instantiate(validBoxPrefab, boxLoc, Quaternion.identity) as GameObject);
+					}
+				}
+			}
 		}
 		
 		if (Input.GetMouseButtonUp(0)) {
 			
-			if ((tile.row >= 0) && (tile.row < gridSize.row) && (selectedAbility.GetComponent<Ability>().getUseCost() <= Player.spiritShards)) {
+			if ((tile.row >= 0) && (tile.row < gridSize.row) && (selectedAbility.GetComponent<Ability>().getUseCost() <= Player.spiritShards) &&
+			    (currentLevel.GetComponent<WaveList>().laneEnable[tile.row])) {
 				float xTilePos;
 				float yTilePos;
+
+				if (placementBoxes != null) {
+					foreach (GameObject pb in placementBoxes) {
+						Destroy(pb);
+					}
+				}
 				
 				Debug.Log(selectedAbility.GetComponent<Ability>().abilityName);
 				
@@ -1546,34 +1634,34 @@ public class WorldController : MonoBehaviour {
 		
 		tile = map.GetComponent<UiTiles>().GetMouseOverTile();
 		
-		if ((tile.row != -1) && (tile.col != -1)) {
+		if ((tile.row != -1) && (tile.col != -1) && (currentLevel.GetComponent<WaveList>().laneEnable[tile.row])) {
 			newPos = new Vector3(map.transform.position.x + ((float)tile.col * map.transform.localScale.x),
 			                     map.transform.position.y + ((float)tile.row * map.transform.localScale.y) + TileUnitOffset);
 			selectedUiAbility.transform.position = newPos;
 			
-			if (freezeIcons == null) {
-				freezeIcons = new List<GameObject>();
+			if (placementBoxes == null) {
+				placementBoxes = new List<GameObject>();
 				for (int rowInd = 0; rowInd < gridSize.row; rowInd++) {
 					for (int colInd = 0; colInd < gridSize.col; colInd++) {
-						freezeIcons.Add(Instantiate(selectedAbility.GetComponent<Ability>().sprite,
-						                            new Vector3(map.GetComponent<UiTiles>().lanes[rowInd].GetComponent<UiRow>().rowTiles[colInd].transform.position.x,
-						            map.GetComponent<UiTiles>().lanes[rowInd].GetComponent<UiRow>().rowTiles[colInd].transform.position.y + TileUnitOffset),
-						                            Quaternion.identity) as GameObject);
+						Vector3 boxLoc = map.GetComponent<UiTiles>().lanes[rowInd].GetComponent<UiRow>().rowTiles[colInd].transform.position;
+						
+						boxLoc += new Vector3(0, 0.25f, 0);
+						placementBoxes.Add(Instantiate(validBoxPrefab, boxLoc, Quaternion.identity) as GameObject);
 					}
 				}
 			}
 		} else {
-			if (freezeIcons != null) {
-				foreach(GameObject ic in freezeIcons) {
+			if (placementBoxes != null) {
+				foreach(GameObject ic in placementBoxes) {
 					Destroy(ic);
 				}
-				freezeIcons = null;
+				placementBoxes = null;
 			}
 		}
 		
 		if (Input.GetMouseButtonUp (0)) {
 
-			if ((tile.row != -1) && (tile.col != -1)) {
+			if ((tile.row != -1) && (tile.col != -1) && (currentLevel.GetComponent<WaveList>().laneEnable[tile.row])) {
 				if (selectedAbility.GetComponent<Ability>().getUseCost() <= Player.spiritShards) {
 					freezeEndTime = Time.time + selectedAbility.GetComponent<Ability>().duration;
 					Player.spiritShards -= selectedAbility.GetComponent<Ability>().getUseCost();
@@ -1584,11 +1672,11 @@ public class WorldController : MonoBehaviour {
 				}
 			}
 			
-			if (freezeIcons != null) {
-				foreach(GameObject ic in freezeIcons) {
+			if (placementBoxes != null) {
+				foreach(GameObject ic in placementBoxes) {
 					Destroy(ic);
 				}
-				freezeIcons = null;
+				placementBoxes = null;
 			}
 			
 			for (int i = 0; i < abilityUIinst.Count; ++i) {
@@ -1621,7 +1709,8 @@ public class WorldController : MonoBehaviour {
 				if (tileContents[tile.row][tile.col] != null) {
 					if (tileContents[tile.row][tile.col].GetComponent<GomUnit>().faction == GomObject.Faction.Player) {
 						if (selectedAbility.GetComponent<Ability>().getUseCost() <= Player.spiritShards) {
-							tileContents[tile.row][tile.col].SendMessage("SetInvincible", selectedAbility.GetComponent<Ability>().duration, SendMessageOptions.DontRequireReceiver);
+							tileContents[tile.row][tile.col].SendMessage("SetInvincible", selectedAbility.GetComponent<Ability>().duration, SendMessageOptions.DontRequireReceiver);tileContents[tile.row][tile.col].SendMessage("SetInvincible", selectedAbility.GetComponent<Ability>().duration, SendMessageOptions.DontRequireReceiver);
+							tileContents[tile.row][tile.col].SendMessage("SetInvincibleIcon", selectedUiAbility, SendMessageOptions.DontRequireReceiver);tileContents[tile.row][tile.col].SendMessage("SetInvincible", selectedAbility.GetComponent<Ability>().duration, SendMessageOptions.DontRequireReceiver);
 							Player.spiritShards -= selectedAbility.GetComponent<Ability>().getUseCost();
 							
 							if ((selectedAbility.GetComponent<Ability>().sound != null)  && (Player.SoundEnable == true)) {
