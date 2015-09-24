@@ -11,13 +11,11 @@ public class TitleController : MonoBehaviour {
 	public GameObject Logo;
 	public GameObject[] Buttons;
 
-	private bool isDone;
 	private float alpha;
 
 	// Use this for initialization
 	void Start () {
 		Color color = Color.black;
-		isDone = false;
 		StartCoroutine (Init ());
 
 		alpha = 1;
@@ -115,7 +113,7 @@ public class TitleController : MonoBehaviour {
     void buttonPush(string buttonName) {
         switch (buttonName) {
             case "New":
-                Player.resetPlayer(unitTypes, abilities);
+				Player.resetPlayer(unitTypes, abilities);
 				Player.isWatchingIntro = true;
                 Application.LoadLevel("Cinematic");
 				break;

@@ -865,10 +865,11 @@ public class WorldController : MonoBehaviour {
 				if ((numUnitsSpawnedLeftInWave == 0) &&
 				    (ReleaseButton.activeSelf == false) &&
 				    (CurWave < wl.waves.Count) &&
-				    (Player.tutorialState > 10)) {
+				    (Player.tutorialState > 2) &&
+				    (CurWave > 0)) {
 
 					// Don't enable release until bug is fixed
-					//ReleaseButton.SetActive(true);
+					ReleaseButton.SetActive(true);
 				}
 
 				// Check game over conditions
@@ -1963,7 +1964,6 @@ public class WorldController : MonoBehaviour {
 				}
 
 				if (tileContents[row][i].GetComponent<GomUnit>().faction != attacker.faction) {
-					GameObject projectile;
 					tileContents[row][i].SendMessage ("SetAttacker", attacker, SendMessageOptions.DontRequireReceiver);
 					attacker.SendMessage("Attack", null, SendMessageOptions.DontRequireReceiver);
 					
@@ -1997,7 +1997,6 @@ public class WorldController : MonoBehaviour {
 			
 			if (tileContents[row][i] != null) {
 				if (tileContents[row][i].GetComponent<GomUnit>().faction != attacker.faction) {
-					GameObject projectile;
 					tileContents[row][i].SendMessage ("SetAttacker", attacker, SendMessageOptions.DontRequireReceiver);
 					attacker.SendMessage("Attack", null, SendMessageOptions.DontRequireReceiver);
 					

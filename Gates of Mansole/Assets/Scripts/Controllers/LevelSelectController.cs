@@ -14,7 +14,7 @@ public class LevelSelectController : MonoBehaviour {
 	public GameObject[] ChapterButtons;
 
     private List<GameObject> levelButtons;
-	private GameObject particleSystem;
+	private GameObject levelHighlight;
 	private GameObject cursorInst;
 	private bool inTutorial;
 	private float alpha;
@@ -28,7 +28,7 @@ public class LevelSelectController : MonoBehaviour {
 		BlackScreen.SetActive (true);
 		BlackScreen.GetComponent<SpriteRenderer> ().GetComponent<Renderer>().material.color = color;
 
-		particleSystem = null;
+		levelHighlight = null;
 		inTutorial = false;
 		UpdateMap();
 
@@ -93,8 +93,8 @@ public class LevelSelectController : MonoBehaviour {
 			}
 		}
 
-		if (particleSystem != null) {
-			Destroy(particleSystem);
+		if (levelHighlight != null) {
+			Destroy(levelHighlight);
 		}
 		
 		// Always let the player access level 1
@@ -134,7 +134,7 @@ public class LevelSelectController : MonoBehaviour {
 
 			if ((Player.tutorialState != 2) && (Player.tutorialState != 6)) {
 				// Particle System to draw user's attention to the new level
-				particleSystem = Instantiate(highlightPS, levelButtons[levelButtons.Count - 1].transform.position, Quaternion.identity) as GameObject;
+				levelHighlight = Instantiate(highlightPS, levelButtons[levelButtons.Count - 1].transform.position, Quaternion.identity) as GameObject;
 			}
 		}
 	}
