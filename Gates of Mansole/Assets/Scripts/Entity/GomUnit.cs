@@ -206,22 +206,32 @@ public class GomUnit : GomObject {
 		case "Shepherd":
 			if ((unitType == "Evangelist") || (unitType == "Orator") || (unitType == "OrcSpear") || (unitType == "OrcWand"))
 				multiplier+=Random.Range (0.5f,1.0f);
+			else if ((unitType == "Teacher") || (unitType == "Elder") || (unitType == "OrcSword") || (unitType == "OrcStaff"))
+				multiplier-=Random.Range (0.25f,0.5f);
 			break;
 		case "Evangelist":
 			if ((unitType == "Teacher") || (unitType == "Elder") || (unitType == "OrcSword") || (unitType == "OrcStaff"))
 				multiplier+=Random.Range (0.5f,1.0f);
+			else if ((unitType == "Shepherd") || (unitType == "Orator") || (unitType == "OrcArcher") || (unitType == "OrcWand"))
+				multiplier-=Random.Range (0.25f,0.5f);
 			break;
 		case "Elder":
 			if ((unitType == "Shepherd") || (unitType == "Teacher") || (unitType == "OrcArcher") || (unitType == "OrcSword"))
 				multiplier+=Random.Range (0.5f,1.0f);
+			else if ((unitType == "Orator") || (unitType == "Evangelist") || (unitType == "OrcWand") || (unitType == "OrcSpear"))
+				multiplier-=Random.Range (0.25f,0.5f);
 			break;
 		case "Teacher":
 			if ((unitType == "Shepherd") || (unitType == "Orator") || (unitType == "OrcArcher") || (unitType == "OrcWand"))
 				multiplier+=Random.Range (0.5f,1.0f);
+			else if ((unitType == "Evangelist") || (unitType == "Elder") || (unitType == "OrcSpear") || (unitType == "OrcStaff"))
+				multiplier-=Random.Range (0.25f,0.5f);
 			break;
 		case "Orator":
 			if ((unitType == "Evangelist") || (unitType == "Elder") || (unitType == "OrcSpear") || (unitType == "OrcStaff"))
 				multiplier+=Random.Range (0.5f,1.0f);
+			else if ((unitType == "Shepherd") || (unitType == "Teacher") || (unitType == "OrcArcher") || (unitType == "OrcSword"))
+				multiplier-=Random.Range (0.25f,0.5f);
 			break;
 		default:
 			break;

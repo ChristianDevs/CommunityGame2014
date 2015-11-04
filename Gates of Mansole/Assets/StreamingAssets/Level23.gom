@@ -1,4 +1,4 @@
-AttackersLetThrough:500
+AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:32
@@ -42,17 +42,17 @@ PreDialogue:
     Statement:
         Speaker:Loveflesh
         LeftImage:None
-        RightImage:14
+        RightImage:25
         Dialogue:Whether it be the lust of the eyes or pleasure of the mind I will ensure these people stay busy.
     Statement:
         Speaker:Loveflesh
         LeftImage:None
-        RightImage:14
+        RightImage:25
         Dialogue:I have already crafted plans to implement your charge and merely need a place in which to work.
     Statement:
         Speaker:Loveflesh
         LeftImage:None
-        RightImage:14
+        RightImage:25
         Dialogue:Captain, we rely on your strong arm to withstand the remnant of the old king left in the city.
 Wave:1
     WaitTime:0
@@ -915,12 +915,12 @@ Wave:9
 PostDialogue:
     Statement:
         Speaker:Loveflesh
-        LeftImage:14
+        LeftImage:25
         RightImage:None
         Dialogue:The building is completed and it is time to fill our halls with the sounds of fulfilled lust.
     Statement:
         Speaker:Loveflesh
-        LeftImage:14
+        LeftImage:25
         RightImage:None
         Dialogue:My new stronghold... This "Sweet Sin Hold" shall be all that is needed to sway the bulk of the populace.
     Statement:

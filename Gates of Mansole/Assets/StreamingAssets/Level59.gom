@@ -315,4 +315,34 @@ PostDialogue:
         Speaker:Captain Judgment
         LeftImage:15
         RightImage:None
-        Dialogue:As you command, my prince. ... YAAAA!
+        Dialogue:As you command, my prince. ForgetGood, your time has now come.
+    Statement:
+        Speaker:ForgetGood
+        LeftImage:None
+        RightImage:1
+        Dialogue:I... I shall not succumb to your dishonorable way of executing judgment. I will die with my dignity.
+    Statement:
+        Speaker:ForgetGood
+        LeftImage:None
+        RightImage:1
+        Dialogue:Oh knife, gift from Diabolus. You have served me well. Now serve me one last time.
+    Statement:
+        Speaker:ForgetGood
+        LeftImage:None
+        RightImage:1
+        Dialogue:...
+    Statement:
+        Speaker:Captain Judgment
+        LeftImage:15
+        RightImage:None
+        Dialogue:...
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:A pitiful end for such a wretched soul corrupted and twisted by a cruel deceiver.
+    Statement:
+        Speaker:Prince Emmanuel
+        LeftImage:17
+        RightImage:None
+        Dialogue:Now it is time to meet said cruel deceiver...

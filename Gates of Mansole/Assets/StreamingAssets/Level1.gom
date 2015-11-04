@@ -61,14 +61,14 @@ Wave:0
         SpawnLoc:SpecifiedRow
         Tile:2:0
 Wave:1
-    WaitTime:15
+    WaitTime:20
     WaveUnit:
         Time:0
         Unit:Evangelist
         SpawnLoc:SpecifiedRow
         Tile:1:0
 Wave:2
-    WaitTime:30
+    WaitTime:35
     WaveUnit:
         Time:0
         Unit:Evangelist

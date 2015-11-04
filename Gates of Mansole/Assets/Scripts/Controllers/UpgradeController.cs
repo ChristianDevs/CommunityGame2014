@@ -286,11 +286,21 @@ public class UpgradeController : MonoBehaviour {
 			textToDisplay += "\n";
 			
 			textToDisplay += "Health: ";
-			textToDisplay += ut.getPlayerStats().maxHealth + (10 * ut.getPlayerStats().maxLevel);
+			if (ut.getPlayerStats().maxLevel > 0) {
+				textToDisplay += ut.getPlayerStats().maxHealth + (ut.getPlayerStats().getUnitHealthUpgrade(ut.UnitName) * (ut.getPlayerStats().maxLevel - 1));
+				textToDisplay += " (+" + ut.getPlayerStats().getUnitHealthUpgrade(ut.UnitName) + ")";
+			} else {
+				textToDisplay += ut.getPlayerStats().maxHealth;
+			}
 			textToDisplay += "\n";
 			
 			textToDisplay += "Damage: ";
-			textToDisplay += ut.getPlayerStats().attack + (5 * ut.getPlayerStats().maxLevel);
+			if (ut.getPlayerStats().maxLevel > 0) {
+				textToDisplay += ut.getPlayerStats().attack + (ut.getPlayerStats().getUnitAttackUpgrade(ut.UnitName) * (ut.getPlayerStats().maxLevel - 1));
+				textToDisplay += " (+" + ut.getPlayerStats().getUnitAttackUpgrade(ut.UnitName) + ")";
+			} else {
+				textToDisplay += ut.getPlayerStats().attack;
+			}
 			textToDisplay += "\n";
         } else {
             Ability ab;

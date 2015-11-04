@@ -7,6 +7,7 @@ public class RewardSpiritShard : MonoBehaviour {
 	public float createTime;
 	public int shardAmount;
 	public WorldController world;
+	public GameObject Shard;
 
 	private bool isClicked;
 	private GameObject bonusShardText;
@@ -19,6 +20,12 @@ public class RewardSpiritShard : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if ((Time.time - createTime) > 10) {
+			Color tempCol = Shard.GetComponent<SpriteRenderer>().color;
+			tempCol.a = 0.5f;
+			Shard.GetComponent<SpriteRenderer>().color = tempCol;
+		}
+
 		if ((Time.time - createTime) > 15) {
 			Destroy(gameObject);
 		}

@@ -11,12 +11,14 @@ public class UiUnitSelect : MonoBehaviour {
 	public GameObject speedText;
 	public GameObject world;
 	public GameObject[] unitIcons;
+	public GameObject UpgradeButton;
 
     private GameObject selection;
 
 	// Use this for initialization
 	void Start () {
 		nameText.GetComponent<TextMesh>().text = "Press unit to\nview details";
+		UpgradeButton.SetActive (false);
 
 		foreach(GameObject ui in unitIcons) {
 			ui.SetActive(false);
@@ -44,6 +46,12 @@ public class UiUnitSelect : MonoBehaviour {
 		        defenseText.GetComponent<TextMesh>().text = "x" + stats.defense;
 		        spiritText.GetComponent<TextMesh>().text = "x" + stats.spirit;
 		        speedText.GetComponent<TextMesh>().text = "x" + stats.speed;
+
+				if ((Player.spiritShards < (stats.upgradeCost * stats.level)) || (stats.level >= stats.maxLevel)) {
+					UpgradeButton.SetActive(false);
+				} else {
+					UpgradeButton.SetActive(true);
+				}
 			} else if (ab != null) {
 				nameText.GetComponent<TextMesh>().text = "Ability: " + ab.abilityName;
 				upgradeText.GetComponent<TextMesh>().text = "Lvl: " + ab.level;

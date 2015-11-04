@@ -1,4 +1,4 @@
-AttackersLetThrough:500
+AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:21
@@ -42,12 +42,12 @@ PreDialogue:
     Statement:
         Speaker:Lovenolight
         LeftImage:None
-        RightImage:13
+        RightImage:26
         Dialogue:I will do my best to ensure the people only see what you want them to.
     Statement:
         Speaker:Lovenolight
         LeftImage:None
-        RightImage:13
+        RightImage:26
         Dialogue:Captain, protect the builders as we erect this stronghold.
 Wave:1
     WaitTime:0
@@ -810,17 +810,17 @@ Wave:9
 PostDialogue:
     Statement:
         Speaker:Lovenolight
-        LeftImage:13
+        LeftImage:26
         RightImage:None
         Dialogue:As expected, your help allowed us to complete our fortress on time.
     Statement:
         Speaker:Lovenolight
-        LeftImage:13
+        LeftImage:26
         RightImage:None
         Dialogue:This stronghold shall be called "Midnight Hold".
     Statement:
         Speaker:Lovenolight
-        LeftImage:13
+        LeftImage:26
         RightImage:None
         Dialogue:The past is the past. We will only progress forward now!
     Statement:

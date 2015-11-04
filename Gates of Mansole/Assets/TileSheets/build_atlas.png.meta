@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 0abfd92b1b413164dae2a12bda572b8f
+timeCreated: 1442942435
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: build_atlas_0
@@ -1023,6 +1025,9 @@ TextureImporter:
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
@@ -1033,6 +1038,7 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
@@ -4706,7 +4712,7 @@ TextureImporter:
         x: 960
         y: 641
         width: 31
-        height: 31
+        height: 30
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6114,29 +6120,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 416
-        y: 481
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_507
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 481
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_508
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 481
-        width: 31
-        height: 31
+        y: 354
+        width: 127
+        height: 155
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6410,46 +6396,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_536
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 449
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_537
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 449
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_538
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 449
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_539
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 449
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: build_atlas_540
       rect:
         serializedVersion: 2
@@ -6714,46 +6660,6 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 417
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_567
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 417
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_568
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 417
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_569
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 417
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_570
-      rect:
-        serializedVersion: 2
-        x: 512
         y: 417
         width: 31
         height: 31
@@ -7040,46 +6946,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_599
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 385
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_600
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 385
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_601
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 385
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_602
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 385
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: build_atlas_603
       rect:
         serializedVersion: 2
@@ -7354,46 +7220,6 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 353
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_631
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 353
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_632
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 353
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_633
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 353
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: build_atlas_634
-      rect:
-        serializedVersion: 2
-        x: 512
         y: 353
         width: 31
         height: 31
@@ -10922,3 +10748,5 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

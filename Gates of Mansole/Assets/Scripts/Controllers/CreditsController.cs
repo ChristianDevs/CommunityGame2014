@@ -33,12 +33,14 @@ public class CreditsController : MonoBehaviour {
 		
 		Credits.Add ("Kris Murray \n Project Lead \n Programmer \n Level Designer");
 		Credits.Add ("Raul Rivera \n Lead Graphic Artist");
+		Credits.Add ("Ricardo Lee \n Graphic Artist");
 		Credits.Add ("Arron Swan \n Graphic Artist");
+		Credits.Add ("Clint Fleetwood \n Graphic Artist");
 		Credits.Add ("Josh Niehenke \n Programmer \n Level Designer");
 		Credits.Add ("Stephen Sleeper \n Musical Score Composition\n \"Victorius\" \"Defeat\"\n \"Gates of Mansoul\"\n \"Take Action\"");
-		Credits.Add ("Ricardo Lee \n Graphic Artist");
 		Credits.Add ("Brandon McCowan \n Programmer");
 		Credits.Add ("b-o \n Graphic Artist");
+		Credits.Add ("Samuli Holopainen \n Alpha Tester");
 		Credits.Add ("** God **");
 		Credits.Add ("pix3m \n http://opengameart.org/\n content/\n pixel-fonts-by-pix3m");
 		Credits.Add ("superjoe \n http://opengameart.org/\n content/\n electrical-disintegration-animation");
@@ -98,8 +100,13 @@ public class CreditsController : MonoBehaviour {
 	}
 	
 	void Update() {
-		if (Input.GetKeyDown (KeyCode.Escape) || Input.GetMouseButtonDown(0)) {
+		if (Input.GetKeyDown (KeyCode.Escape)) {
 			isDoneCredits = true;
+		}
+
+		if (Input.GetMouseButtonDown(0)) {
+			alpha = -1;
+			nextCreditTime = Time.time;
 		}
 
 		if (isDoneCredits) {
@@ -200,5 +207,11 @@ public class CreditsController : MonoBehaviour {
 		}
 		
 		return newText;
+	}
+
+	void buttonPush (string btnName) {
+		if (btnName == "Skip") {
+			isDoneCredits = true;
+		}
 	}
 }

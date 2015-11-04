@@ -104,7 +104,7 @@ public class WorldController : MonoBehaviour {
 	private List<bool> isTimeUpgradeApplied;
 	
 	private int OrbCurAmount;
-	private float ShardCurAmount;
+	public float ShardCurAmount;
 	private float ConvertStepIntervalTime;
 	private float convertTime;
 
@@ -996,8 +996,10 @@ public class WorldController : MonoBehaviour {
 										}
 									}
 
-									UnitCounterInst = Instantiate (UnitCounterPrefab, selectedUiUnit.transform.position, Quaternion.identity) as GameObject;
-									UnitCounterInst.GetComponent<UiUnitCounter> ().SetCounterDisplay (unitTypes[i], Player.unitTypes, false);
+									if (Player.tutorialState > 1) {
+										UnitCounterInst = Instantiate (UnitCounterPrefab, selectedUiUnit.transform.position, Quaternion.identity) as GameObject;
+										UnitCounterInst.GetComponent<UiUnitCounter> ().SetCounterDisplay (unitTypes[i], Player.unitTypes, false);
+									}
 									break;
 								}
 							}
@@ -1097,9 +1099,12 @@ public class WorldController : MonoBehaviour {
 							Vector3 counterPos;
 
 							counterPos = tileContents[(int)tile.row][(int)tile.col].transform.position;
-							UnitCounterInst = Instantiate (UnitCounterPrefab, counterPos, Quaternion.identity) as GameObject;
-							UnitCounterInst.GetComponent<UiUnitCounter>().SetCounterDisplay (ui_ut, Player.unitTypes, false);
-							UnitCounterInst.transform.parent = tileContents[(int)tile.row][(int)tile.col].transform;
+
+							if (Player.tutorialState > 1) {
+								UnitCounterInst = Instantiate (UnitCounterPrefab, counterPos, Quaternion.identity) as GameObject;
+								UnitCounterInst.GetComponent<UiUnitCounter>().SetCounterDisplay (ui_ut, Player.unitTypes, false);
+								UnitCounterInst.transform.parent = tileContents[(int)tile.row][(int)tile.col].transform;
+							}
 						}
 					}
 				}
@@ -2084,7 +2089,7 @@ public class WorldController : MonoBehaviour {
 	void buttonPush(string buttonName) {
 		switch(buttonName) {
 		case "Upgrade":
-			// Uncomment out to make the Release button automatically win the level
+			// Uncomment out to make the Upgrade button automatically win the level
 			//winLevel();
 			//winMessage.SetActive(true);
 			//return;

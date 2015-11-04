@@ -36,6 +36,36 @@ Placeable:26:0.2:-2.5
 Music:3
 PreDialogue:
     Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:Captain Judgment, why do you came without weapons? Don't you know it's dangerous here?
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:And why do you carry that hourglass around with you? What is so important about the time.
+    Statement:
+        Speaker:Captain Judgment
+        LeftImage:15
+        RightImage:None
+        Dialogue:Of course I know it's dangerous, it would be stupid to go to war without a weapon. The hourglass IS my weapon.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:How does something so small like that count as a weapon?
+    Statement:
+        Speaker:Captain Judgment
+        LeftImage:15
+        RightImage:None
+        Dialogue:Do you really think I'll throw my pearls to swine? I shall keep my secrets to myself.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:...
+    Statement:
         Speaker:Captain Goodhope
         LeftImage:16
         RightImage:None
@@ -64,7 +94,7 @@ PreDialogue:
         Speaker:Captain Judgment
         LeftImage:15
         RightImage:None
-        Dialogue:Since they are advancing with weapons at the ready, I assume they did.
+        Dialogue:Since they advance quickly on us with weapons at the ready, I assume they did.
 Wave:1
     WaitTime:0
     WaveUnit:

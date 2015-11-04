@@ -1,4 +1,4 @@
-AttackersLetThrough:500
+AttackersLetThrough:5
 IsPlayerAttacker:False
 AttackerDir:Left
 StartShards:32
@@ -52,12 +52,12 @@ PreDialogue:
     Statement:
         Speaker:Spitegod
         LeftImage:None
-        RightImage:12
+        RightImage:24
         Dialogue:Captain, your reputation preceeds you. With you guarding and my supervision, we are sure to succeed.
     Statement:
         Speaker:Spitegod
         LeftImage:None
-        RightImage:12
+        RightImage:24
         Dialogue:That old king, curse his name, shall never again lay claim to this city.
 Wave:1
     WaitTime:0
@@ -730,17 +730,17 @@ Wave:9
 PostDialogue:
     Statement:
         Speaker:Spitegod
-        LeftImage:12
+        LeftImage:24
         RightImage:None
         Dialogue:On schedule, the stronghold is complete. Thanks, captain, for watching our backs.
     Statement:
         Speaker:Spitegod
-        LeftImage:12
+        LeftImage:24
         RightImage:None
         Dialogue:I heareby name this sturdy bastion "Hold of Defiance".
     Statement:
         Speaker:Spitegod
-        LeftImage:12
+        LeftImage:24
         RightImage:None
         Dialogue:For we will surely continue to defy former King Sh-
     Statement:

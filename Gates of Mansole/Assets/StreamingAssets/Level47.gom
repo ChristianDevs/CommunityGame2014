@@ -178,27 +178,42 @@ PostDialogue:
         Speaker:Captain Judgment
         LeftImage:15
         RightImage:None
-        Dialogue:Very well, suffer your fate.
+        Dialogue:Very well, suffer your fate. Lady Willbewill, you asked about my hourglass? Well I shall now show you.
+    Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:An hourglass as a weapon is absurd. Absurd! I-
     Statement:
         Speaker:CarnalSecurity
         LeftImage:None
         RightImage:8
         Dialogue:Aaaauuuggg!
     Statement:
+        Speaker:Lady Willbewill
+        LeftImage:None
+        RightImage:7
+        Dialogue:You... you did... what did you do to him?
+    Statement:
         Speaker:Captain Judgment
         LeftImage:15
         RightImage:None
-        Dialogue:Now to deal with Lady Willbewill. Come and let us negotiate your fate.
+        Dialogue:My hourglass lets me control time. I forced this Diabolonian to age. Every second he ages a year.
+    Statement:
+        Speaker:Captain Judgment
+        LeftImage:15
+        RightImage:None
+        Dialogue:Now to deal with you, Lady Willbewill. Come and let us negotiate your fate.
     Statement:
         Speaker:Lady Willbewill
         LeftImage:None
         RightImage:7
-        Dialogue:No! Maybe you can capture a gate, but you shall not capture me as I retreat to the city.
+        Dialogue:No! Maybe you can capture a gate, but you shall not capture me and use your hideous weapon.
     Statement:
         Speaker:Captain Judgment
         LeftImage:15
         RightImage:None
-        Dialogue:Don't let her escape! Shoot her down with the bow.
+        Dialogue:Don't let her escape! Shoot her down with the bow and arrow.
     Statement:
         Speaker:Captain Judgment
         LeftImage:15

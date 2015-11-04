@@ -16,34 +16,90 @@ public class PropertyStats {
 	public int maxLevel = 0;
 	public int upgradeCost = 10; // in Spirit Shards
 
+	public int incBowAtt = 5;
+	public int incBowHealth = 6;
+	public int incSpearAtt = 10;
+	public int incSpearHealth = 5;
+	public int incStaffAtt = 4;
+	public int incStaffHealth = 5;
+	public int incSwordAtt = 5;
+	public int incSwordHealth = 10;
+	public int incWandAtt = 6;
+	public int incWandHealth = 7;
+
+	public int getUnitHealthUpgrade(string unit) {
+		switch (unit) {
+		case "OrcArcher":
+		case "Shepherd": // bow
+			return incBowHealth;
+		case "OrcSpear":
+		case "Evangelist": // spear
+			return incSpearHealth;
+		case "OrcStaff":
+		case "Elder": // staff
+			return incStaffHealth;
+		case "OrcSword":
+		case "Teacher": // sword
+			return incSwordHealth;
+		case "OrcWand":
+		case "Orator": // wand
+			return incWandHealth;
+		}
+
+		return 0;
+	}
+	
+	public int getUnitAttackUpgrade(string unit) {
+		switch (unit) {
+		case "OrcArcher":
+		case "Shepherd": // bow
+			return incBowAtt;
+		case "OrcSpear":
+		case "Evangelist": // spear
+			return incSpearAtt;
+		case "OrcStaff":
+		case "Elder": // staff
+			return incStaffAtt;
+		case "OrcSword":
+		case "Teacher": // sword
+			return incSwordAtt;
+		case "OrcWand":
+		case "Orator": // wand
+			return incWandAtt;
+		}
+		
+		return 0;
+	}
+
+
 	public void upgradeUnit(string unit) {
 		level++;
 
 		switch (unit) {
 		case "OrcArcher":
 		case "Shepherd": // bow
-			attack += 5;
-			maxHealth += 6;
+			attack += incBowAtt;
+			maxHealth += incBowHealth;
 			break;
 		case "OrcSpear":
 		case "Evangelist": // spear
-			attack += 10;
-			maxHealth += 5;
+			attack += incSpearAtt;
+			maxHealth += incSpearHealth;
 			break;
 		case "OrcStaff":
 		case "Elder": // staff
-			attack += 4;
-			maxHealth += 5;
+			attack += incStaffAtt;
+			maxHealth += incStaffHealth;
 			break;
 		case "OrcSword":
 		case "Teacher": // sword
-			attack += 5;
-			maxHealth += 10;
+			attack += incSwordAtt;
+			maxHealth += incSwordHealth;
 			break;
 		case "OrcWand":
 		case "Orator": // wand
-			attack += 6;
-			maxHealth += 7;
+			attack += incWandAtt;
+			maxHealth += incWandHealth;
 			break;
 		}
 	}
