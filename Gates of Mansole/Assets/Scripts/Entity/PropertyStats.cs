@@ -32,18 +32,23 @@ public class PropertyStats {
 		case "OrcArcher":
 		case "Shepherd": // bow
 			return incBowHealth;
+			break;
 		case "OrcSpear":
 		case "Evangelist": // spear
 			return incSpearHealth;
+			break;
 		case "OrcStaff":
 		case "Elder": // staff
 			return incStaffHealth;
+			break;
 		case "OrcSword":
 		case "Teacher": // sword
 			return incSwordHealth;
+			break;
 		case "OrcWand":
 		case "Orator": // wand
 			return incWandHealth;
+			break;
 		}
 
 		return 0;
@@ -54,18 +59,23 @@ public class PropertyStats {
 		case "OrcArcher":
 		case "Shepherd": // bow
 			return incBowAtt;
+			break;
 		case "OrcSpear":
 		case "Evangelist": // spear
 			return incSpearAtt;
+			break;
 		case "OrcStaff":
 		case "Elder": // staff
 			return incStaffAtt;
+			break;
 		case "OrcSword":
 		case "Teacher": // sword
 			return incSwordAtt;
+			break;
 		case "OrcWand":
 		case "Orator": // wand
 			return incWandAtt;
+			break;
 		}
 		
 		return 0;
